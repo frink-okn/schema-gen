@@ -1,0 +1,71 @@
+# {% if schema.title %}{{ schema.title }}{% else %}{{ schema.name }}{% endif %}
+
+{% if schema.description %}{{ schema.description }}{% endif %}
+
+{% if include_top_level_diagram %}
+
+## Schema Diagram
+
+```{{ gen.mermaid_directive() }}
+{{ gen.mermaid_diagram() }}
+```
+{% endif %}
+
+## IRI prefixes
+
+{% for prefix, expansion in schemaview.namespaces().items() %}* {{ prefix }}: {{ expansion }}
+{% endfor %}
+
+{% if gen.class_objects_present() %}
+## Classes
+
+| Class | Description |
+| --- | --- |{% if gen.hierarchical_class_view -%}{%- for u, v in gen.class_hierarchy_as_tuples() -%}{%- if schemaview.get_class(v).name != 'Any' -%}
+| {{ "&nbsp;"|safe*u*8 }}{{ gen.link(schemaview.get_class(v), True) }} | {{ schemaview.get_class(v).description }}<br/>{%- for note in schemaview.get_class(v).notes -%}{%- if 'occur' in note -%}{{ note }}{%- if not loop.last -%}<br/>{%- endif -%}{%- endif -%}{%- endfor -%} | {% else-%}{%- endif %}
+{% endfor %}
+{% else %}
+{% for c in gen.all_class_objects()|sort(attribute=sort_by) -%}
+| {{gen.link(c, True)}} | {{c.description|enshorten}} |
+{% endfor %}
+{% endif %}
+{% endif %}
+
+{% if gen.slot_objects_present() %}
+## Slots
+
+| Slot | Description |
+| --- | --- |
+{% for s in gen.all_slot_objects()|sort(attribute=sort_by) -%}
+| {{gen.link(s, True)}} | {{s.description|enshorten}}<br/>{%- for comment in s.comments -%}{%- if 'occur' in comment -%}{{ comment }}{%- if not loop.last -%}<br/>{%- endif -%}{%- endif -%}{%- endfor -%} |
+{% endfor %}
+{% endif %}
+
+{% if gen.enum_objects_present() %}
+## Enumerations
+
+| Enumeration | Description |
+| --- | --- |
+{% for e in gen.all_enum_objects()|sort(attribute=sort_by) -%}
+| {{gen.link(e, True)}} | {{e.description|enshorten}} |
+{% endfor %}
+{% endif %}
+
+{% if gen.type_objects_present() %}
+## Types
+
+| Type | Description |
+| --- | --- |
+{% for t in gen.all_type_objects()|sort(attribute=sort_by) -%}
+| {{gen.link(t, True)}} | {{t.description|enshorten}} |
+{% endfor %}
+{% endif %}
+
+{% if gen.subset_objects_present() %}
+## Subsets
+
+| Subset | Description |
+| --- | --- |
+{% for ss in schemaview.all_subsets().values()|sort(attribute='name') -%}
+| {{gen.link(ss, True)}} | {{ss.description|enshorten}} |
+{% endfor %}
+{% endif %}

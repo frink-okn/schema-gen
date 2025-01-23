@@ -1,4 +1,4 @@
 tqdm
 linkml
 rdflib
-rdflib_hdt
+rdflib-hdt
