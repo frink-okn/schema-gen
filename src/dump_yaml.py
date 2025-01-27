@@ -1,22 +1,20 @@
+import datetime
+import json
 import os
 import re
-
+import urllib.parse
 import yaml
-from collections import defaultdict
+from collections import Counter, defaultdict
 from sys import argv
 
-import networkx as nx
 import rdflib
 import tqdm
 from rdflib import URIRef, Namespace
 from rdflib.namespace import XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV
 from rdflib_hdt import HDTStore
 
-from linkml_structures import linkml_schema
+from linkml_structures import linkml_class, linkml_schema, linkml_slot
 from prefix_definitions import replacements
-
-# python3 dump_yaml.py neighborhood-kg neighborhood-information-kg/stable_v0_0_3/hdt
-# python3 docgen-frink.py -v climatepub4-kg.yaml --diagram-type mermaid_class_diagram --directory ~/graph-descriptions/climatepub4-kg --no-mergeimports --subfolder-type-separation --include-top-level-diagram --template-directory docgen-frink
 
 # Schema.org processing
 SDO_graph = rdflib.Graph()
@@ -47,6 +45,18 @@ def get_graph(graph_to_read):
                         continue
                 if not current_file_read:
                     raise RuntimeError('Unable to read ' + current_file_path)
+            elif any(current_file_path.endswith(suffix) for suffix in ['.nq']):
+                g = rdflib.Dataset()
+                current_file_read = False
+                for format in ['trig', 'trix', 'nquads']:
+                    try:
+                        g.parse(current_file_path, format=format)
+                        current_file_read = True
+                        break
+                    except rdflib.exceptions.ParserError:
+                        continue
+                if not current_file_read:
+                    raise RuntimeError('Unable to read ' + current_file_path)                
             elif current_file_path.endswith('.hdt'):
                 g = rdflib.Graph(store=HDTStore(current_file_path))
     return g
@@ -209,7 +219,7 @@ def process_ontologies(graph, schema):
                 current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
                 if not current_slot in schema:
                     schema[current_slot] = [str(obj)]
-                else:
+                elif str(obj) not in schema[current_slot]:
                     schema[current_slot].append(str(obj))
             elif pred in SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY:
                 schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = str(obj)
@@ -233,9 +243,9 @@ def process_classes(graph, schema):
                     schema['classes'][subj_key][SLOTS_TO_PREDICATES_SINGLE[pred]] = str(obj)
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
-                    if not current_slot in schema:
+                    if not current_slot in schema['classes'][subj_key]:
                         schema['classes'][subj_key][current_slot] = [str(obj)]
-                    else:
+                    elif str(obj) not in schema['classes'][subj_key][current_slot]:
                         schema['classes'][subj_key][current_slot].append(str(obj))
                 elif pred in {RDFS.subClassOf}:
                     if obj_key != subj_key:
@@ -260,9 +270,9 @@ def process_slots(graph, schema, restrictions):
                     schema['slots'][subj_key][SLOTS_TO_PREDICATES_SINGLE[pred]] = str(obj)
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
-                    if not current_slot in schema:
+                    if not current_slot in schema['slots'][subj_key][current_slot]:
                         schema['slots'][subj_key][current_slot] = [str(obj)]
-                    else:
+                    elif str(obj) not in schema['slots'][subj_key][current_slot]:
                         schema['slots'][subj_key][current_slot].append(str(obj))
                 elif pred in {RDFS.domain}:
                     schema['slots'][subj_key]['union_of'].add(obj_key)
@@ -287,7 +297,7 @@ SINGLE_VALUE_RESTRICTIONS = {
     OWL.maxQualifiedCardinality: 'maximum_cardinality',
 }
 
-def get_restrictions(graph):
+def process_restrictions(graph):
     restrictions = defaultdict(dict)
     for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, OWL.Restriction)), desc='Restrictions'):
         target_properties = {}
@@ -353,7 +363,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 sdo_graph_key = URIRef(str(subject_type).replace('http:','https:'))
                 try:
                     schema['classes'][subject_type_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
-                    schema['classes'][subject_type_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment)))
+                    schema['classes'][subject_type_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
                 except StopIteration:
                     pass
 
@@ -404,7 +414,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
         elif subject_type is None and object_type is not None:
             entities_without_type.add(subj)
             schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(None, object_type)] += 1
+            schema['slots'][pred_key]['counts'][(None, object_type_key)] += 1
             if (pred, object_type) not in schema['slots'][pred_key]['examples']:
                 schema['slots'][pred_key]['examples'][(None, object_type_key)] = (subj_uri, pred_uri, obj_uri)
             if not object_type_key in schema['slots'][pred_key]['any_of']:
@@ -416,7 +426,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
             object_datatype_key = replace_prefixes(object_datatype, schema['prefixes']).replace(':','_').replace('/','_')
 
             schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(None, object_datatype)] += 1
+            schema['slots'][pred_key]['counts'][(None, object_datatype_key)] += 1
             if (None, object_datatype_key) not in schema['slots'][pred_key]['examples']:
                 schema['slots'][pred_key]['examples'][(None, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
             if not object_datatype_key in schema['slots'][pred_key]['any_of']:
