@@ -1,10 +1,7 @@
-import datetime
-import json
 import os
 import re
-import urllib.parse
 import yaml
-from collections import Counter, defaultdict
+from collections import defaultdict
 from sys import argv
 
 import rdflib
