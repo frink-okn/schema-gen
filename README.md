@@ -23,7 +23,7 @@ The [title](https://linkml.io/linkml-model/latest/docs/title/) of the graph will
 To generate Markdown documentation from the resulting `graph-name.yaml` file, run
 
 ```
-python3 src/docgen-frink.py graph-name.yaml --template-directory src/docgen-frink-templates
+python3 src/docgen-frink.py graph-name.yaml --template-directory src/docgen-frink-templates --directory /path/to/documentation/for/this/graph
 ```
 
 Some options that are recommended to be enabled:
