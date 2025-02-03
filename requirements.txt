@@ -2,3 +2,4 @@ tqdm
 linkml
 rdflib
 rdflib-hdt
+eralchemy
