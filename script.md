@@ -1,61 +1,54 @@
-# README: Schema and Documentation Generation Script
+# README
 
 ## Overview
-
-This script automates the process of generating a schema from a graph data folder and then creating documentation for the generated schema. It also manages versioning by pushing the documentation to a specified GitHub repository.
+This script automates the process of generating schema documentation for a given graph and pushing the updates to a GitHub repository.
 
 ## Prerequisites
-
-Ensure you have the following installed and configured before running the script:
-
-- Python 3
-- Git
-- Necessary Python dependencies for `dump_yaml.py` and `docgen-frink.py`
-- A GitHub repository to store the generated documentation
-- A GitHub personal access token (PAT) stored in the `GITHUB_TOKEN` environment variable
+- Bash shell environment
+- Python 3 installed
+- Git installed and configured
+- GitHub SSH access with a valid deploy key
+- Required Python scripts available: `dump_yaml.py` and `docgen-frink.py`
+- `gh` (GitHub CLI) installed and authenticated
 
 ## Usage
-
-Run the script using the following command:
-
 ```bash
-./script.sh <graph-name> <graph-data-path> [custom-graph-title] [git-branch]
+./script.sh <graph-name> <graph-data-path> <custom-graph-title> <git-branch>
 ```
 
-### Arguments
+### Arguments:
+1. `<graph-name>`: Name of the graph.
+2. `<graph-data-path>`: Path to the graph data.
+3. `<custom-graph-title>`: Custom title for the graph.
+4. `<git-branch>` (optional): Branch to push changes to (defaults to `main`).
 
-- `<graph-name>`: Name of the graph.
-- `<graph-data-path>`: Path to the graph data folder.
-- `[custom-graph-title]` (optional): Custom title for the graph (defaults to `<graph-name>`).
-- `[git-branch]` (optional): The Git branch to push updates to (defaults to `main`).
+## Script Functionality
+1. **Validates Arguments:** Ensures the required arguments are provided.
+2. **Sets Up SSH Configuration:**
+   - Creates `~/.ssh` if not present.
+   - Adds GitHub to `known_hosts`.
+   - Configures and adds the SSH deploy key.
+3. **Configures Git:** Sets user details and SSH command for authentication.
+4. **Clones Repository:**
+   - Clones `git@github.com:frink-okn/graph-descriptions.git`.
+   - Checks out the specified branch or creates it if not existing.
+5. **Runs Schema and Documentation Generation:**
+   - Calls `dump_yaml.py` to generate the schema.
+   - Calls `docgen-frink.py` to generate documentation.
+6. **Commits and Pushes Changes to GitHub:**
+   - Adds and commits updated documentation.
+   - Pushes changes and creates a pull request using GitHub CLI.
 
-## Script Workflow
-
-1. **Authentication**: Ensures `GITHUB_TOKEN` is set and configures Git credentials.
-2. **Clone Repository**: Pulls the latest version of the documentation repository.
-3. **Schema Generation**: Runs `dump_yaml.py` to generate a schema YAML file.
-4. **Documentation Generation**: Runs `docgen-frink.py` to create markdown documentation.
-5. **Push Updates**:
-   - Locates the directory matching `<graph-name>` in the repository.
-   - Clears existing content and replaces it with the new documentation.
-   - Commits and pushes changes to the specified GitHub branch.
-
-## Example
-
-```bash
-export GITHUB_TOKEN=your_personal_access_token
-./script.sh my-graph /path/to/graph/data "My Custom Graph" develop
-```
-
-## Notes
-
-- Ensure `GITHUB_TOKEN` has push access to the repository.
-- The script creates and commits files in the `repo/<graph-name>` directory.
-- Modify the repository URL inside the script before running it.
+## Expected Output
+- Generated schema and documentation stored in the `repo/<graph-name>` directory.
+- A pull request is automatically created for the updates.
 
 ## Troubleshooting
+- Ensure the deploy key is correctly configured and has necessary permissions.
+- Verify that the required Python scripts are available in the `src/` directory.
+- Check GitHub CLI authentication (`gh auth status`).
+- Ensure the correct repository permissions for pushing changes.
 
-- **Authentication Error**: Ensure `GITHUB_TOKEN` is correctly set.
-- **Push Failure**: Verify repository permissions and branch existence.
-- **Missing Dependencies**: Install required Python dependencies before execution.
+## License
+This script is provided under the MIT License.
 
