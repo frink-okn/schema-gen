@@ -56,6 +56,8 @@ def get_graph(graph_to_read):
                     raise RuntimeError('Unable to read ' + current_file_path)                
             elif current_file_path.endswith('.hdt'):
                 g = rdflib.Graph(store=HDTStore(current_file_path))
+                break
+
     return g
 
 replaced_prefixes = set()
@@ -329,13 +331,13 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
     process_slots(g, schema, restrictions)
 
     # ...and starts counting!
-    for subj, pred, obj in tqdm.tqdm(g, total=len(g)):
+    for subj, pred, obj in tqdm.tqdm(g):
         subj_uri = replace_prefixes(subj, schema['prefixes'])
-        subj_key = subj_uri.replace(':','_').replace('/','_')
+        subj_key = subj_uri.replace(':', '_').replace('/', '_')
         pred_uri = replace_prefixes(pred, schema['prefixes'])
-        pred_key = pred_uri.replace(':','_').replace('/','_')
+        pred_key = pred_uri.replace(':', '_').replace('/', '_')
         obj_uri = replace_prefixes(obj, schema['prefixes'])
-        obj_key = obj_uri.replace(':','_').replace('/','_')
+        obj_key = obj_uri.replace(':', '_').replace('/', '_')
 
         if pred == RDF.type and obj not in METADATA_TYPES:
             if obj_key not in schema['classes']:
