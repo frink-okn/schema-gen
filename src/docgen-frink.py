@@ -203,6 +203,7 @@ class DocGenerator(Generator):
             "diagram_type": self.diagram_type.value if self.diagram_type else None,
             "include_top_level_diagram": self.include_top_level_diagram,
         }
+        self._write(self.yaml(sv.schema), f"{directory}", sv.schema.id + '.yaml', quoted=True)
         self.logger.debug("Processing Index")
         template = self._get_template("index")
         out_str = template.render(gen=self, schema=sv.schema, schemaview=sv, **template_vars)
@@ -271,7 +272,7 @@ class DocGenerator(Generator):
             out_str = template.render(gen=self, element=s, schemaview=sv, **template_vars)
             self._write(out_str, f"{directory}/{SUBSET_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
 
-    def _write(self, out_str: str, directory: str, name: str) -> None:
+    def _write(self, out_str: str, directory: str, name: str, quoted: bool=False) -> None:
         """
         Writes a string in desired format (e.g. markdown) to the appropriate file in a directory
 
@@ -282,7 +283,10 @@ class DocGenerator(Generator):
         """
         path = Path(directory)
         path.mkdir(parents=True, exist_ok=True)
-        file_name = f"{name}.{self._file_suffix()}"
+        if quoted:
+            file_name = name
+        else:
+            file_name = f"{name}.{self._file_suffix()}"
         self.logger.debug(f"  Writing file: {file_name}")
         with open(path / file_name, "w", encoding="UTF-8") as stream:
             stream.write(out_str)
