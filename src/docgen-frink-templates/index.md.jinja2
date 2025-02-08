@@ -11,11 +11,6 @@
 ```
 {% endif %}
 
-## IRI prefixes
-
-{% for prefix, expansion in schemaview.namespaces().items() %}* {{ prefix }}: {{ expansion }}
-{% endfor %}
-
 {% if gen.class_objects_present() %}
 ## Classes
 
@@ -69,3 +64,8 @@
 | {{gen.link(ss, True)}} | {{ss.description|enshorten}} |
 {% endfor %}
 {% endif %}
+
+## IRI prefixes
+
+{% for prefix, expansion in schemaview.namespaces().items() %}* {{ prefix }}: {{ expansion }}
+{% endfor %}
