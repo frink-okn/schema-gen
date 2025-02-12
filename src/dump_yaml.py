@@ -253,7 +253,7 @@ def process_classes(graph, schema):
                         schema['classes'][obj_key]['title'] = "No class (type) name specified -- this class is noted as a superclass of another class in this graph but has not itself been defined."
 
 def process_slots(graph, schema, restrictions):
-    for class_type, extra_info in CLASS_TYPES.items():
+    for class_type, extra_info in SLOT_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Predicates'):
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
@@ -261,13 +261,15 @@ def process_slots(graph, schema, restrictions):
 
             for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
                 print(subj, pred, obj)
+                obj_uri = replace_prefixes(entity, schema['prefixes'])
+                obj_key = obj_uri.replace(':','_').replace('/','_')
                 schema['slots'][subj_key]['slot_uri'] = str(subj_uri)
                 schema['slots'][subj_key]['title'] = 'No slot (predicate) name specified'
                 if pred in SLOTS_TO_PREDICATES_SINGLE:
                     schema['slots'][subj_key][SLOTS_TO_PREDICATES_SINGLE[pred]] = str(obj)
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
-                    if not current_slot in schema['slots'][subj_key][current_slot]:
+                    if not current_slot in schema['slots'][subj_key]:
                         schema['slots'][subj_key][current_slot] = [str(obj)]
                     elif str(obj) not in schema['slots'][subj_key][current_slot]:
                         schema['slots'][subj_key][current_slot].append(str(obj))
@@ -340,7 +342,17 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
 
         subject_types = set()
         subject_type_uris_keys = set()
+        skipped_type_found = False
         for subject_type in g.objects(subject=subj, predicate=RDF.type):
+            if (subject_type == OWL.Ontology) or (subject_type in CLASS_TYPES) or (subject_type in SLOT_TYPES):
+                skipped_type_found = True
+                break
+            elif OWL.AllDisjointClasses in subject_types:
+                print(subj, pred, obj)
+                # TODO: handle AllDisjointClasses
+                skipped_type_found = True
+                break
+
             subject_types.add(subject_type)
             subject_type_uri = replace_prefixes(subject_type, schema['prefixes'])
             subject_type_key = subject_type_uri.replace(':','_').replace('/','_')
@@ -361,16 +373,8 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
             # Absolute occurrence count
             schema['classes'][subject_type_key]['annotations']['count'] += 1
 
-            if subject_type == OWL.Ontology:
-                continue
-            elif subject_type in CLASS_TYPES:
-                continue
-            elif subject_type in SLOT_TYPES:
-                continue
-            elif subject_type in [OWL.AllDisjointClasses]:
-                print(subj, pred, obj)
-                # TODO: handle AllDisjointClasses
-                continue
+        if skipped_type_found:
+            continue
 
         if len(subject_types) > 1:
             multiple_typed_object_counts[frozenset(subject_types)] += 1
@@ -466,7 +470,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 entities_without_type.add(subj)
                 if len(object_types) > 0:
                     for object_type_uri, object_type_key in list(object_type_uris_keys):
-                        if counts_key in schema['slots'][pred_key]['annotations']:
+                        if object_type_key in schema['slots'][pred_key]['annotations']:
                             schema['slots'][pred_key]['annotations'][object_type_key] += 1
                         else:
                             schema['slots'][pred_key]['annotations'][object_type_key] = 1
