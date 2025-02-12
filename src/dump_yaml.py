@@ -56,6 +56,8 @@ def get_graph(graph_to_read):
                     raise RuntimeError('Unable to read ' + current_file_path)                
             elif current_file_path.endswith('.hdt'):
                 g = rdflib.Graph(store=HDTStore(current_file_path))
+                break
+
     return g
 
 replaced_prefixes = set()
