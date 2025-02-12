@@ -334,9 +334,11 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
 
     process_slots(g, schema, restrictions)
 
+    multiple_typed_object_counts = defaultdict(int)
+
     # ...and starts counting!
 
-    for subj in g.subjects(unique=True):
+    for subj in tqdm.tqdm(g.subjects(unique=True)):
         subj_uri = replace_prefixes(subj, schema['prefixes'])
         subj_key = subj_uri.replace(':','_').replace('/','_')
 
@@ -373,6 +375,9 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 print(subj, pred, obj)
                 # TODO: handle AllDisjointClasses
                 continue
+
+        if len(subject_types) > 1:
+            multiple_typed_object_counts[frozenset(subject_types)] += 1
 
         for pred, obj in g.predicate_objects(subject=subj):
             if pred == RDF.type:
@@ -482,9 +487,9 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                     object_datatype_key = object_datatype_uri.replace(':','_').replace('/','_')
 
                     if object_datatype_key in schema['slots'][pred_key]['annotations']:
-                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] += 1
+                        schema['slots'][pred_key]['annotations'][object_datatype_key] += 1
                     else:
-                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] = 1
+                        schema['slots'][pred_key]['annotations'][object_datatype_key] = 1
 
                     if (None, object_datatype_key) not in schema['slots'][pred_key]['examples']:
                         schema['slots'][pred_key]['examples'][(None, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
