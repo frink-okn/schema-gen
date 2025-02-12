@@ -74,7 +74,7 @@ def linkml_schema(graph_name, graph_title):
 def linkml_class():
     return {
         'slots': set(),
-        # slot_usage
+        'slot_usage': {},
         # attributes
         'class_uri': "",
         # subclass_of
@@ -109,7 +109,9 @@ def linkml_class():
         # implements
         # instantiates
         # extensions
-        # annotations
+        'annotations': {
+            'count': 0
+        },
         'description': 'No class (type) description specified',
         # alt_descriptions
         'title': "No class (type) name specified",
@@ -143,7 +145,6 @@ def linkml_class():
         # rank
         # categories
         # keywords
-        'count': 0,
     }
 
 def linkml_slot():
@@ -231,7 +232,9 @@ def linkml_slot():
         # implements
         # instantiates
         # extensions
-        # annotations
+        'annotations': {
+            'count': 0
+        },
         'description': 'No slot (predicate) description specified',
         # alt_descriptions
         # title
@@ -265,5 +268,5 @@ def linkml_slot():
         # rank
         # categories
         # keywords
-        'counts': defaultdict(int)
     }
+

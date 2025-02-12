@@ -38,6 +38,10 @@ _{{ element_description_line }}_
 * __NOTE__: this is an abstract slot and should not be populated directly
 {% endif %}
 
+{% if 'count' in element.annotations %}
+This slot occurs {{ element.annotations.count.value }} times.
+{% endif %}
+
 URI: {{ gen.uri_link(element) }}
 
 
@@ -114,6 +118,7 @@ URI: {{ gen.uri_link(element) }}
 ## LinkML Source
 
 <details>
+
 ```yaml
 {{ gen.yaml(element) }}
 ```
