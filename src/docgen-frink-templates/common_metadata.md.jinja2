@@ -10,10 +10,10 @@
 {% if element.examples %}
 ## Examples
 {% if element.any_of or element.range %}
-| Types involved | Subject | Predicate | Object |
-| --- | --- | --- | --- |
+| Subject type | Object type | Example subject | Example object | Occurrences |
+| --- | --- | --- | --- | --- |
 {% for x in element.examples -%}
-| {{ x.description }} | {{ x.object.example_subject }} | {{ x.object.example_predicate }} | {{ x.object.example_object }} |
+| {{ x.object.example_subject_type }} | {{ x.object.example_object_type }} | {{ x.object.example_subject }} | {{ x.object.example_object }} | {% if x.object.example_subject_type == 'None' %}{{ element.annotations[x.object.example_object_type].value }}{% else %}{{ schemaview.get_class(x.object.example_subject_type).slot_usage[element.name].annotations[x.object.example_object_type].value }}{% endif %} |
 {% endfor %}
 {% else %}
 | Value |

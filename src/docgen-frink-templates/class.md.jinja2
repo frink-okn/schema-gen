@@ -41,6 +41,10 @@ _{{ element_description_line }}_
 * __NOTE__: this is an abstract class and should not be instantiated directly
 {% endif %}
 
+{% if 'count' in element.annotations %}
+This class occurs {{ element.annotations.count.value }} times.
+{% endif %}
+
 URI: {{ gen.uri_link(element) }}
 
 
@@ -66,16 +70,16 @@ URI: {{ gen.uri_link(element) }}
 
 ## Slots
 
-| Name | Cardinality and Range | Description | Inheritance |
-| ---  | --- | --- | --- |
+| Name | Cardinality and Range | Description | Inheritance | Occurrences |
+| ---  | --- | --- | --- | --- |
 {% if gen.get_direct_slots(element)|length > 0 %}
 {%- for slot in gen.get_direct_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct | {{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }} |
 {% endfor -%}
 {% endif -%}
 {% if gen.get_indirect_slots(element)|length > 0 %}
 {%- for slot in gen.get_indirect_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} | {{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }} |
 {% endfor -%}
 {% endif %}
 

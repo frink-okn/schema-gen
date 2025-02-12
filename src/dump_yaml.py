@@ -98,22 +98,19 @@ def get_object_datatype(obj):
     return linkml_type_mapping(object_datatype)
 
 def convert_class_dict(class_dict):
-    if 'notes' in class_dict:
-        class_dict['notes'].append(f'Class with {class_dict["count"]} occurrences.')
+    if 'notes' in class_dict and len(class_dict['notes']) == 0:
+        del class_dict['notes']
     if 'slots' in class_dict:
         class_dict['slots'] = list(class_dict['slots'])
 
-    if 'count' in class_dict:
-        del class_dict['count']
+    if 'description' in class_dict:
+        class_dict["description"] = class_dict["description"].replace("\n",'␊')
+
     return class_dict
 
 def convert_slot_dict(slot_dict):
-    for (subject_key, object_key), count in slot_dict['counts'].items():
-        if subject_key is None:
-            slot_dict['comments'].append(f'{count} occurrences with untyped subjects and object type {object_key}.')
-        else:
-            slot_dict['comments'].append(f'{count} occurrences with subject type {subject_key} and object type {object_key}.')
-    if len(slot_dict['counts']) == 0:
+    slot_dict["description"] = slot_dict["description"].replace("\n",'␊')
+    if slot_dict['annotations']['count'] == 0:
         slot_dict['comments'].append('No occurrences of this slot in the graph.')
 
     slot_dict['any_of'] = [{'range': typename} for typename in list(slot_dict['any_of'])]
@@ -133,7 +130,7 @@ def convert_slot_dict(slot_dict):
     new_examples = []
     for (subj_type, obj_type), (ex_subj, ex_pred, ex_obj) in slot_dict['examples'].items():
         new_examples.append({
-            'description': f'{subj_type} → {obj_type}',
+            'description': f'{subj_type}→{obj_type}',
             'object': {
                 'example_subject_type': f'{subj_type}',
                 'example_subject': f'{ex_subj}',
@@ -142,9 +139,11 @@ def convert_slot_dict(slot_dict):
                 'example_object': f'{ex_obj}',
             }
         })
-
     slot_dict['examples'] = new_examples
-    del slot_dict['counts']
+
+    if 'comments' in slot_dict and len(slot_dict['comments']) == 0:
+        del slot_dict['comments']
+
     return slot_dict
 
 CLASS_TYPES = {
@@ -222,8 +221,10 @@ def process_ontologies(graph, schema):
                 schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = str(obj)
 
 def process_classes(graph, schema):
+    subjects_seen = set()
     for class_type, extra_info in CLASS_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Classes'):
+            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['classes'][subj_key] = {**schema['classes'][subj_key], **extra_info}
@@ -255,6 +256,7 @@ def process_classes(graph, schema):
 def process_slots(graph, schema, restrictions):
     for class_type, extra_info in CLASS_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Predicates'):
+            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['slots'][subj_key] = {**schema['slots'][subj_key], **extra_info}
@@ -311,6 +313,8 @@ def process_restrictions(graph):
                     restrictions[target_property][SINGLE_VALUE_RESTRICTIONS[pred]] = obj
     return restrictions
 
+sdo_objects_processed = set()
+
 def get_stats(graph_name, graph_to_read, graph_title=None):
     g = get_graph(graph_to_read)
 
@@ -329,40 +333,33 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
     process_slots(g, schema, restrictions)
 
     # ...and starts counting!
-    for subj, pred, obj in tqdm.tqdm(g, total=len(g)):
+
+    for subj in g.subjects(unique=True):
         subj_uri = replace_prefixes(subj, schema['prefixes'])
         subj_key = subj_uri.replace(':','_').replace('/','_')
-        pred_uri = replace_prefixes(pred, schema['prefixes'])
-        pred_key = pred_uri.replace(':','_').replace('/','_')
-        obj_uri = replace_prefixes(obj, schema['prefixes'])
-        obj_key = obj_uri.replace(':','_').replace('/','_')
 
-        if pred == RDF.type and obj not in METADATA_TYPES:
-            if obj_key not in schema['classes']:
-                schema['classes'][obj_key]['name'] = obj_key
-                schema['classes'][obj_key]['class_uri'] = str(obj_uri)
-                schema['classes'][obj_key]['title'] = "No class name specified"
-                if 'examples' not in schema['classes'][obj_key]:
-                    schema['classes'][obj_key]['examples'] = [{'value': str(subj_uri)}]
-            schema['classes'][obj_key]['count'] += 1
-            continue
+        subject_types = set()
+        subject_type_uris_keys = set()
+        for subject_type in g.objects(subject=subj, predicate=RDF.type):
+            subject_types.add(subject_type)
+            subject_type_uri = replace_prefixes(subject_type, schema['prefixes'])
+            subject_type_key = subject_type_uri.replace(':','_').replace('/','_')
+            subject_type_uris_keys.add((subject_type_uri, subject_type_key))
 
-        subject_type = g.value(subject=subj, predicate=RDF.type)
-        object_type = g.value(subject=obj, predicate=RDF.type)
-
-        subject_type_uri = replace_prefixes(subject_type, schema['prefixes']) if subject_type else None
-        subject_type_key = subject_type_uri.replace(':','_').replace('/','_') if subject_type else None
-        object_type_uri = replace_prefixes(object_type, schema['prefixes']) if object_type else None
-        object_type_key = object_type_uri.replace(':','_').replace('/','_') if object_type else None
-
-        if subject_type:
             if subject_type.startswith(str(SDO)) or subject_type.startswith(str(HSDO)):
-                sdo_graph_key = URIRef(str(subject_type).replace('http:','https:'))
-                try:
-                    schema['classes'][subject_type_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
-                    schema['classes'][subject_type_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
-                except StopIteration:
-                    pass
+                if subject_type not in sdo_objects_processed:
+                    sdo_objects_processed.add(subject_type)
+                    sdo_graph_key = URIRef(str(subject_type).replace('http:','https:'))
+                    try:
+                        schema['classes'][subject_type_key]['name'] = subject_type_key
+                        schema['classes'][subject_type_key]['class_uri'] = str(subject_type_uri)
+                        schema['classes'][subject_type_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
+                        schema['classes'][subject_type_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
+                    except StopIteration:
+                        pass
+
+            # Absolute occurrence count
+            schema['classes'][subject_type_key]['annotations']['count'] += 1
 
             if subject_type == OWL.Ontology:
                 continue
@@ -375,59 +372,123 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 # TODO: handle AllDisjointClasses
                 continue
 
-        if pred in [RDF.first, RDF.rest]:
-            # TODO: handle these predicates
-            continue
+        for pred, obj in g.predicate_objects(subject=subj):
+            if pred == RDF.type:
+                continue
 
-        if re.match(str(RDF) + r'_\d+', str(pred)):
-            # TODO: handle these predicates
-            continue
+            pred_uri = replace_prefixes(pred, schema['prefixes'])
+            pred_key = pred_uri.replace(':','_').replace('/','_')
+            obj_uri = replace_prefixes(obj, schema['prefixes'])
+            obj_key = obj_uri.replace(':','_').replace('/','_')
 
-        if subject_type is not None and object_type is not None:
-            schema['classes'][subject_type_key]['name'] = subject_type_key
-            schema['classes'][subject_type_key]['class_uri'] = str(subject_type_uri)
-            schema['classes'][subject_type_key]['slots'].add(pred_key)
+            if pred == RDF.type and obj not in METADATA_TYPES:
+                if obj_key not in schema['classes']:
+                    schema['classes'][obj_key]['name'] = obj_key
+                    schema['classes'][obj_key]['class_uri'] = str(obj_uri)
+                    schema['classes'][obj_key]['title'] = "No class name specified"
+                    if 'examples' not in schema['classes'][obj_key]:
+                        schema['classes'][obj_key]['examples'] = [{'value': str(subj_uri)}]
+                continue
+
+            if pred in [RDF.first, RDF.rest]:
+                # TODO: handle these predicates
+                continue
+
+            if pred.startswith(str(SDO)) or pred.startswith(str(HSDO)):
+                if pred not in sdo_objects_processed:
+                    sdo_objects_processed.add(pred)
+                    sdo_graph_key = URIRef(str(pred).replace('http:','https:'))
+                    try:
+                        schema['slots'][pred_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
+                        schema['slots'][pred_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
+                    except StopIteration:
+                        pass
+
+            if re.match(str(RDF) + r'_\d+', str(pred)):
+                # TODO: handle these predicates
+                continue
+
+            object_types = set()
+            object_type_uris_keys = set()
+            for object_type in g.objects(subject=obj, predicate=RDF.type):
+                object_types.add(object_type)
+                object_type_uri = replace_prefixes(object_type, schema['prefixes'])
+                object_type_key = object_type_uri.replace(':','_').replace('/','_')
+                object_type_uris_keys.add((object_type_uri, object_type_key))
+
+            # Absolute occurrence count
             schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(subject_type_key, object_type_key)] += 1
-            if (subject_type, object_type) not in schema['slots'][pred_key]['examples']:
-                schema['slots'][pred_key]['examples'][(subject_type_key, object_type_key)] = (subj_uri, pred_uri, obj_uri)
-            if not object_type_key in schema['slots'][pred_key]['any_of']:
-                schema['slots'][pred_key]['any_of'].add(object_type_key)
+            schema['slots'][pred_key]['annotations']['count'] += 1
 
-        elif subject_type is not None and object_type is None:
-            schema['classes'][subject_type_key]['name'] = subject_type_key
-            schema['classes'][subject_type_key]['class_uri'] = str(subject_type_uri)
-            object_datatype = get_object_datatype(obj)
-            object_datatype_key = replace_prefixes(object_datatype, schema['prefixes']).replace(':','_').replace('/','_')
+            if len(subject_types) > 0:
+                for subject_type_uri, subject_type_key in list(subject_type_uris_keys):
+                    schema['classes'][subject_type_key]['name'] = subject_type_key
+                    schema['classes'][subject_type_key]['class_uri'] = str(subject_type_uri)
+                    schema['classes'][subject_type_key]['slots'].add(pred_key)
 
-            schema['classes'][subject_type_key]['slots'].add(pred_key)
-            schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(subject_type_key, object_datatype_key)] += 1
-            if (subject_type_key, object_datatype_key) not in schema['slots'][pred_key]['examples']:
-                schema['slots'][pred_key]['examples'][(subject_type_key, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
-            if not object_datatype_key in schema['slots'][pred_key]['any_of']:
-                schema['slots'][pred_key]['any_of'].add(object_datatype_key)
+                    if len(object_types) > 0:
+                        for object_type_uri, object_type_key in list(object_type_uris_keys):
+                            if pred_key in schema['classes'][subject_type_key]['slot_usage']:
+                                if object_type_key in schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations']:
+                                    schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations'][object_type_key] += 1
+                                else:
+                                    schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations'][object_type_key] = 1
+                            else:
+                                schema['classes'][subject_type_key]['slot_usage'][pred_key] = {'annotations': {object_type_key: 1}}
 
-        elif subject_type is None and object_type is not None:
-            entities_without_type.add(subj)
-            schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(None, object_type_key)] += 1
-            if (pred, object_type) not in schema['slots'][pred_key]['examples']:
-                schema['slots'][pred_key]['examples'][(None, object_type_key)] = (subj_uri, pred_uri, obj_uri)
-            if not object_type_key in schema['slots'][pred_key]['any_of']:
-                schema['slots'][pred_key]['any_of'].add(object_type_key)
+                            if (subject_type_key, object_type_key) not in schema['slots'][pred_key]['examples']:
+                                schema['slots'][pred_key]['examples'][(subject_type_key, object_type_key)] = (subj_uri, pred_uri, obj_uri)
+                            if not object_type_key in schema['slots'][pred_key]['any_of']:
+                                schema['slots'][pred_key]['any_of'].add(object_type_key)
 
-        else:
-            entities_without_type.add(subj)
-            object_datatype = get_object_datatype(obj)
-            object_datatype_key = replace_prefixes(object_datatype, schema['prefixes']).replace(':','_').replace('/','_')
+                    else:
+                        object_datatype = get_object_datatype(obj)
+                        object_datatype_uri = replace_prefixes(object_datatype, schema['prefixes'])
+                        object_datatype_key = object_datatype_uri.replace(':','_').replace('/','_')
 
-            schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
-            schema['slots'][pred_key]['counts'][(None, object_datatype_key)] += 1
-            if (None, object_datatype_key) not in schema['slots'][pred_key]['examples']:
-                schema['slots'][pred_key]['examples'][(None, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
-            if not object_datatype_key in schema['slots'][pred_key]['any_of']:
-                schema['slots'][pred_key]['any_of'].add(object_datatype_key)
+                        if pred_key in schema['classes'][subject_type_key]['slot_usage']:
+                            if object_datatype_key in schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations']:
+                                schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations'][object_datatype_key] += 1
+                            else:
+                                schema['classes'][subject_type_key]['slot_usage'][pred_key]['annotations'][object_datatype_key] = 1
+                        else:
+                            schema['classes'][subject_type_key]['slot_usage'][pred_key] = {'annotations': {object_datatype_key: 1}}
+
+                        if (subject_type_key, object_datatype_key) not in schema['slots'][pred_key]['examples']:
+                            schema['slots'][pred_key]['examples'][(subject_type_key, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
+                        if not object_datatype_key in schema['slots'][pred_key]['any_of']:
+                            schema['slots'][pred_key]['any_of'].add(object_datatype_key)
+
+            else:
+                entities_without_type.add(subj)
+                if len(object_types) > 0:
+                    for object_type_uri, object_type_key in list(object_type_uris_keys):
+                        if counts_key in schema['slots'][pred_key]['annotations']:
+                            schema['slots'][pred_key]['annotations'][object_type_key] += 1
+                        else:
+                            schema['slots'][pred_key]['annotations'][object_type_key] = 1
+
+                        if (pred, object_type_key) not in schema['slots'][pred_key]['examples']:
+                            schema['slots'][pred_key]['examples'][(None, object_type_key)] = (subj_uri, pred_uri, obj_uri)
+
+                        if not object_type_key in schema['slots'][pred_key]['any_of']:
+                            schema['slots'][pred_key]['any_of'].add(object_type_key)
+
+                else:
+                    object_datatype = get_object_datatype(obj)
+                    object_datatype_uri = replace_prefixes(object_datatype, schema['prefixes'])
+                    object_datatype_key = object_datatype_uri.replace(':','_').replace('/','_')
+
+                    if object_datatype_key in schema['slots'][pred_key]['annotations']:
+                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] += 1
+                    else:
+                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] = 1
+
+                    if (None, object_datatype_key) not in schema['slots'][pred_key]['examples']:
+                        schema['slots'][pred_key]['examples'][(None, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
+
+                    if not object_datatype_key in schema['slots'][pred_key]['any_of']:
+                        schema['slots'][pred_key]['any_of'].add(object_datatype_key)
 
     for key, value in schema['classes'].items():
         value = convert_class_dict(value)
