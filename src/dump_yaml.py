@@ -132,7 +132,6 @@ def convert_slot_dict(slot_dict):
     new_examples = []
     for (subj_type, obj_type), (ex_subj, ex_pred, ex_obj) in slot_dict['examples'].items():
         new_examples.append({
-            'description': f'{subj_type}→{obj_type}',
             'object': {
                 'example_subject_type': f'{subj_type}',
                 'example_subject': f'{ex_subj}',
@@ -173,6 +172,7 @@ METADATA_TYPES = {OWL.Ontology, OWL.AllDisjointClasses, OWL.Restriction} | set(C
 SLOTS_TO_PREDICATES_SINGLE = {
     DCTERMS.description: "description",
     SKOS.definition: "description",
+    RDFS.comment: "description",
     DCTERMS.title: "title",
     RDFS.label: "title",
     OWL.deprecated: "deprecated",
@@ -190,7 +190,6 @@ SLOTS_TO_PREDICATES_MULTIPLE_STR = {
     SKOS.editorialNote: "notes",
     SKOS.historyNote: "notes",
     SKOS.scopeNote: "notes",
-    RDFS.comment: "comments",
     RDFS.seeAlso: "see_also",
     SKOS.altLabel: "aliases",
     SKOS.mappingRelation: "mappings",
@@ -223,10 +222,8 @@ def process_ontologies(graph, schema):
                 schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = str(obj)
 
 def process_classes(graph, schema):
-    subjects_seen = set()
     for class_type, extra_info in CLASS_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Classes'):
-            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['classes'][subj_key] = {**schema['classes'][subj_key], **extra_info}
@@ -258,7 +255,6 @@ def process_classes(graph, schema):
 def process_slots(graph, schema, restrictions):
     for class_type, extra_info in CLASS_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Predicates'):
-            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['slots'][subj_key] = {**schema['slots'][subj_key], **extra_info}
