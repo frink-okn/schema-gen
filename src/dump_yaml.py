@@ -132,7 +132,6 @@ def convert_slot_dict(slot_dict):
     new_examples = []
     for (subj_type, obj_type), (ex_subj, ex_pred, ex_obj) in slot_dict['examples'].items():
         new_examples.append({
-            'description': f'{subj_type}→{obj_type}',
             'object': {
                 'example_subject_type': f'{subj_type}',
                 'example_subject': f'{ex_subj}',
@@ -173,6 +172,7 @@ METADATA_TYPES = {OWL.Ontology, OWL.AllDisjointClasses, OWL.Restriction} | set(C
 SLOTS_TO_PREDICATES_SINGLE = {
     DCTERMS.description: "description",
     SKOS.definition: "description",
+    RDFS.comment: "description",
     DCTERMS.title: "title",
     RDFS.label: "title",
     OWL.deprecated: "deprecated",
@@ -190,7 +190,6 @@ SLOTS_TO_PREDICATES_MULTIPLE_STR = {
     SKOS.editorialNote: "notes",
     SKOS.historyNote: "notes",
     SKOS.scopeNote: "notes",
-    RDFS.comment: "comments",
     RDFS.seeAlso: "see_also",
     SKOS.altLabel: "aliases",
     SKOS.mappingRelation: "mappings",
@@ -223,10 +222,8 @@ def process_ontologies(graph, schema):
                 schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = str(obj)
 
 def process_classes(graph, schema):
-    subjects_seen = set()
     for class_type, extra_info in CLASS_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Classes'):
-            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['classes'][subj_key] = {**schema['classes'][subj_key], **extra_info}
@@ -256,22 +253,23 @@ def process_classes(graph, schema):
                         schema['classes'][obj_key]['title'] = "No class (type) name specified -- this class is noted as a superclass of another class in this graph but has not itself been defined."
 
 def process_slots(graph, schema, restrictions):
-    for class_type, extra_info in CLASS_TYPES.items():
+    for class_type, extra_info in SLOT_TYPES.items():
         for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Predicates'):
-            subjects_seen.add(entity)
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
             schema['slots'][subj_key] = {**schema['slots'][subj_key], **extra_info}
 
             for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
                 print(subj, pred, obj)
+                obj_uri = replace_prefixes(entity, schema['prefixes'])
+                obj_key = obj_uri.replace(':','_').replace('/','_')
                 schema['slots'][subj_key]['slot_uri'] = str(subj_uri)
                 schema['slots'][subj_key]['title'] = 'No slot (predicate) name specified'
                 if pred in SLOTS_TO_PREDICATES_SINGLE:
                     schema['slots'][subj_key][SLOTS_TO_PREDICATES_SINGLE[pred]] = str(obj)
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
-                    if not current_slot in schema['slots'][subj_key][current_slot]:
+                    if not current_slot in schema['slots'][subj_key]:
                         schema['slots'][subj_key][current_slot] = [str(obj)]
                     elif str(obj) not in schema['slots'][subj_key][current_slot]:
                         schema['slots'][subj_key][current_slot].append(str(obj))
@@ -334,15 +332,27 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
 
     process_slots(g, schema, restrictions)
 
+    multiple_typed_object_counts = defaultdict(int)
+
     # ...and starts counting!
 
-    for subj in g.subjects(unique=True):
+    for subj in tqdm.tqdm(g.subjects(unique=True)):
         subj_uri = replace_prefixes(subj, schema['prefixes'])
         subj_key = subj_uri.replace(':','_').replace('/','_')
 
         subject_types = set()
         subject_type_uris_keys = set()
+        skipped_type_found = False
         for subject_type in g.objects(subject=subj, predicate=RDF.type):
+            if (subject_type == OWL.Ontology) or (subject_type in CLASS_TYPES) or (subject_type in SLOT_TYPES):
+                skipped_type_found = True
+                break
+            elif OWL.AllDisjointClasses in subject_types:
+                print(subj, pred, obj)
+                # TODO: handle AllDisjointClasses
+                skipped_type_found = True
+                break
+
             subject_types.add(subject_type)
             subject_type_uri = replace_prefixes(subject_type, schema['prefixes'])
             subject_type_key = subject_type_uri.replace(':','_').replace('/','_')
@@ -363,16 +373,11 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
             # Absolute occurrence count
             schema['classes'][subject_type_key]['annotations']['count'] += 1
 
-            if subject_type == OWL.Ontology:
-                continue
-            elif subject_type in CLASS_TYPES:
-                continue
-            elif subject_type in SLOT_TYPES:
-                continue
-            elif subject_type in [OWL.AllDisjointClasses]:
-                print(subj, pred, obj)
-                # TODO: handle AllDisjointClasses
-                continue
+        if skipped_type_found:
+            continue
+
+        if len(subject_types) > 1:
+            multiple_typed_object_counts[frozenset(subject_types)] += 1
 
         for pred, obj in g.predicate_objects(subject=subj):
             if pred == RDF.type:
@@ -465,7 +470,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 entities_without_type.add(subj)
                 if len(object_types) > 0:
                     for object_type_uri, object_type_key in list(object_type_uris_keys):
-                        if counts_key in schema['slots'][pred_key]['annotations']:
+                        if object_type_key in schema['slots'][pred_key]['annotations']:
                             schema['slots'][pred_key]['annotations'][object_type_key] += 1
                         else:
                             schema['slots'][pred_key]['annotations'][object_type_key] = 1
@@ -482,9 +487,9 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                     object_datatype_key = object_datatype_uri.replace(':','_').replace('/','_')
 
                     if object_datatype_key in schema['slots'][pred_key]['annotations']:
-                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] += 1
+                        schema['slots'][pred_key]['annotations'][object_datatype_key] += 1
                     else:
-                        schema['slots'][pred_key]['annotations']['counts'][object_datatype_key] = 1
+                        schema['slots'][pred_key]['annotations'][object_datatype_key] = 1
 
                     if (None, object_datatype_key) not in schema['slots'][pred_key]['examples']:
                         schema['slots'][pred_key]['examples'][(None, object_datatype_key)] = (subj_uri, pred_uri, obj_uri)
