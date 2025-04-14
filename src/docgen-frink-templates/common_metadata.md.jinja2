@@ -13,7 +13,7 @@
 | Subject type | Object type | Example subject | Example object | Occurrences |
 | --- | --- | --- | --- | --- |
 {% for x in element.examples -%}
-| {{ x.object.example_subject_type }} | {{ x.object.example_object_type }} | {{ x.object.example_subject }} | {{ x.object.example_object }} | {% if x.object.example_subject_type == 'None' %}{{ element.annotations[x.object.example_object_type].value }}{% else %}{{ schemaview.get_class(x.object.example_subject_type).slot_usage[element.name].annotations[x.object.example_object_type].value }}{% endif %} |
+| {{ x.object.example_subject_type }} | {{ x.object.example_object_type }} | {{ x.object.example_subject }} | {{ x.object.example_object }} | {% if x.object.example_subject_type == 'None' %}{{ element.annotations[x.object.example_object_type].value }}{% else %}{% if element.name in schemaview.get_class(x.object.example_subject_type).slot_usage %}{{ schemaview.get_class(x.object.example_subject_type).slot_usage[element.name].annotations[x.object.example_object_type].value }}{% else %}{% endif %}{% endif %} |
 {% endfor %}
 {% else %}
 | Value |

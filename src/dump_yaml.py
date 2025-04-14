@@ -1,11 +1,14 @@
+import logging
 import os
 import re
 import yaml
-from collections import defaultdict
+from collections import defaultdict, Counter
 from sys import argv
 
+import linkml_runtime
 import rdflib
 import tqdm
+from linkml_runtime.utils.metamodelcore import URIorCURIE
 from rdflib import URIRef, Namespace
 from rdflib.namespace import XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV
 from rdflib_hdt import HDTStore
@@ -13,9 +16,17 @@ from rdflib_hdt import HDTStore
 from linkml_structures import linkml_class, linkml_schema, linkml_slot
 from prefix_definitions import replacements
 
-# Schema.org processing
-SDO_graph = rdflib.Graph()
-SDO_graph.parse('schemaorg-current-https.jsonld')
+# Schema.org and prov: processing
+SDO_schema = linkml_runtime.SchemaView('schemaorg.yaml')
+PROV_schema = linkml_runtime.SchemaView('prov.yaml')
+URIs_to_classes = {
+    **{current_class.class_uri: current_class for current_class in SDO_schema.all_classes().values()},
+    **{current_class.class_uri: current_class for current_class in PROV_schema.all_classes().values()},
+}
+URIs_to_slots = {
+    **{current_slot.slot_uri: current_slot for current_slot in SDO_schema.all_slots().values()},
+    **{current_slot.slot_uri: current_slot for current_slot in PROV_schema.all_slots().values()},
+}
 HSDO = Namespace("http://schema.org/")
 
 def get_graph(graph_to_read):
@@ -108,6 +119,19 @@ def convert_class_dict(class_dict):
     if 'description' in class_dict:
         class_dict["description"] = class_dict["description"].replace("\n",'␊')
 
+    if 'created_by' in class_dict:
+        if not URIorCURIE.is_valid(class_dict['created_by']):
+            logging.warning('Class %s has a creator that is not a URI or CURIE', class_dict['name'])
+            del class_dict['created_by']
+    if 'contributors' in class_dict:
+        new_contributors = []
+        for contributor in class_dict['contributors']:
+            if not URIorCURIE.is_valid(contributor):
+                logging.warning('Class %s has a contributor that is not a URI or CURIE', class_dict['name'])
+            else:
+                new_contributors.append(contributor)
+        class_dict['contributors'] = new_contributors
+
     return class_dict
 
 def convert_slot_dict(slot_dict):
@@ -144,6 +168,19 @@ def convert_slot_dict(slot_dict):
 
     if 'comments' in slot_dict and len(slot_dict['comments']) == 0:
         del slot_dict['comments']
+
+    if 'created_by' in slot_dict:
+        if not URIorCURIE.is_valid(slot_dict['created_by']):
+            logging.warning('Slot %s has a creator that is not a URI or CURIE', slot_dict['name'])
+            del slot_dict['created_by']
+    if 'contributors' in slot_dict:
+        new_contributors = []
+        for contributor in slot_dict['contributors']:
+            if not URIorCURIE.is_valid(contributor):
+                logging.warning('Slot %s has a contributor that is not a URI or CURIE', slot_dict['name'])
+            else:
+                new_contributors.append(contributor)
+        slot_dict['contributors'] = new_contributors
 
     return slot_dict
 
@@ -209,30 +246,34 @@ SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY = {
 
 def process_ontologies(graph, schema):
     for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, OWL.Ontology)), desc='Ontologies'):
-        for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
+        for subj, pred, obj in graph.triples((entity, None, None)):
+            string_to_store = str(obj).replace("\n",'␊')
             if pred in SLOTS_TO_PREDICATES_SINGLE:
-                schema[SLOTS_TO_PREDICATES_SINGLE[pred]] = str(obj)
+                schema[SLOTS_TO_PREDICATES_SINGLE[pred]] = string_to_store
             elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                 current_slot = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
                 if not current_slot in schema:
-                    schema[current_slot] = [str(obj)]
+                    schema[current_slot] = [string_to_store]
                 elif str(obj) not in schema[current_slot]:
-                    schema[current_slot].append(str(obj))
+                    schema[current_slot].append(string_to_store)
             elif pred in SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY:
-                schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = str(obj)
+                schema[SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY[pred]] = string_to_store
 
 def process_classes(graph, schema):
     for class_type, extra_info in CLASS_TYPES.items():
-        for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Classes'):
+        progress_bar = tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc=f'Classes {str(class_type)}')
+        for (entity, _, _) in progress_bar:
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
+            if subj_key in schema['classes']:
+                continue
             schema['classes'][subj_key] = {**schema['classes'][subj_key], **extra_info}
+            progress_bar.set_postfix(ordered_dict={'num_classes': len(schema['classes'])}, refresh=False)
 
-            for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
+            for subj, pred, obj in graph.triples((entity, None, None)):
                 obj_uri = replace_prefixes(obj, schema['prefixes'])
                 obj_key = obj_uri.replace(':','_').replace('/','_')
 
-                print(subj, pred, obj)
                 schema['classes'][subj_key]['name'] = subj_key
                 schema['classes'][subj_key]['class_uri'] = str(subj_uri)
                 schema['classes'][subj_key]['title'] = "No class (type) name specified"
@@ -253,14 +294,17 @@ def process_classes(graph, schema):
                         schema['classes'][obj_key]['title'] = "No class (type) name specified -- this class is noted as a superclass of another class in this graph but has not itself been defined."
 
 def process_slots(graph, schema, restrictions):
-    for class_type, extra_info in SLOT_TYPES.items():
-        for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, class_type)), desc='Predicates'):
+    for slot_type, extra_info in SLOT_TYPES.items():
+        progress_bar = tqdm.tqdm(graph.triples((None, RDF.type, slot_type)), desc=f'Predicates ({str(slot_type)})')
+        for (entity, _, _) in progress_bar:
             subj_uri = replace_prefixes(entity, schema['prefixes'])
             subj_key = subj_uri.replace(':','_').replace('/','_')
+            if subj_key in schema['slots']:
+                continue
             schema['slots'][subj_key] = {**schema['slots'][subj_key], **extra_info}
+            progress_bar.set_postfix(ordered_dict={'num_slots': len(schema['slots'])}, refresh=False)
 
-            for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
-                print(subj, pred, obj)
+            for subj, pred, obj in graph.triples((entity, None, None)):
                 obj_uri = replace_prefixes(entity, schema['prefixes'])
                 obj_key = obj_uri.replace(':','_').replace('/','_')
                 schema['slots'][subj_key]['slot_uri'] = str(subj_uri)
@@ -299,15 +343,15 @@ SINGLE_VALUE_RESTRICTIONS = {
 def process_restrictions(graph):
     restrictions = defaultdict(dict)
     for (entity, _, _) in tqdm.tqdm(graph.triples((None, RDF.type, OWL.Restriction)), desc='Restrictions'):
-        target_properties = {}
-        target_classes = {}
-        for (_, _, obj) in tqdm.tqdm(graph.triples((entity, OWL.onProperty, None)), leave=False):
+        target_properties = set()
+        target_classes = set()
+        for (_, _, obj) in graph.triples((entity, OWL.onProperty, None)):
             target_properties.add(obj)
 
-        for (_, _, obj) in tqdm.tqdm(graph.triples((entity, OWL.onClass, None)), leave=False):
+        for (_, _, obj) in graph.triples((entity, OWL.onClass, None)):
             target_classes.add(obj)
 
-        for subj, pred, obj in tqdm.tqdm(graph.triples((entity, None, None)), leave=False):
+        for subj, pred, obj in graph.triples((entity, None, None)):
             if pred in SINGLE_VALUE_RESTRICTIONS:
                 for target_property in list(target_properties):
                     restrictions[target_property][SINGLE_VALUE_RESTRICTIONS[pred]] = obj
@@ -342,39 +386,48 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
 
         subject_types = set()
         subject_type_uris_keys = set()
-        skipped_type_found = False
-        for subject_type in g.objects(subject=subj, predicate=RDF.type):
-            if (subject_type == OWL.Ontology) or (subject_type in CLASS_TYPES) or (subject_type in SLOT_TYPES):
-                skipped_type_found = True
-                break
-            elif OWL.AllDisjointClasses in subject_types:
-                print(subj, pred, obj)
-                # TODO: handle AllDisjointClasses
-                skipped_type_found = True
-                break
+        
+        subject_types = set([subject_type for subject_type in g.objects(subject=subj, predicate=RDF.type)])
+        if any(((subject_type == OWL.Ontology) or (subject_type in CLASS_TYPES) or (subject_type in SLOT_TYPES)) for subject_type in list(subject_types)):
+            continue
+        elif OWL.AllDisjointClasses in subject_types:
+            # TODO: handle AllDisjointClasses
+            continue
 
-            subject_types.add(subject_type)
+        for subject_type in subject_types:
             subject_type_uri = replace_prefixes(subject_type, schema['prefixes'])
             subject_type_key = subject_type_uri.replace(':','_').replace('/','_')
             subject_type_uris_keys.add((subject_type_uri, subject_type_key))
 
             if subject_type.startswith(str(SDO)) or subject_type.startswith(str(HSDO)):
-                if subject_type not in sdo_objects_processed:
-                    sdo_objects_processed.add(subject_type)
-                    sdo_graph_key = URIRef(str(subject_type).replace('http:','https:'))
+                schema["imports"].add('./schemaorg')
+                if subject_type.startswith(str(HSDO)):
+                    subject_type_uri = subject_type_uri.replace('hsdo:','schema:')
+                try:
+                    target_class = URIs_to_classes[subject_type_uri]
+                except KeyError:
+                    pass
+                else:
+                    schema['classes'][subject_type_key]['from_schema'] = 'https://raw.githubusercontent.com/linkml/linkml-schemaorg/refs/heads/main/src/linkml/schemaorg'
                     try:
-                        schema['classes'][subject_type_key]['name'] = subject_type_key
-                        schema['classes'][subject_type_key]['class_uri'] = str(subject_type_uri)
-                        schema['classes'][subject_type_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
-                        schema['classes'][subject_type_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
-                    except StopIteration:
+                        schema['classes'][subject_type_key]['description'] = str(target_class._as_dict['comments'][0])
+                    except IndexError:
+                        pass
+            elif subject_type.startswith(str(PROV)):
+                schema["imports"].add('./prov')
+                try:
+                    target_class = URIs_to_classes[subject_type_uri]
+                except KeyError:
+                    pass
+                else:
+                    schema['classes'][subject_type_key]['from_schema'] = 'https://raw.githubusercontent.com/linkml/linkml-prov/refs/heads/main/model/schema/prov'
+                    try:
+                        schema['classes'][subject_type_key]['description'] = str(target_class._as_dict['comments'][0])
+                    except IndexError:
                         pass
 
             # Absolute occurrence count
             schema['classes'][subject_type_key]['annotations']['count'] += 1
-
-        if skipped_type_found:
-            continue
 
         if len(subject_types) > 1:
             multiple_typed_object_counts[frozenset(subject_types)] += 1
@@ -402,13 +455,30 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                 continue
 
             if pred.startswith(str(SDO)) or pred.startswith(str(HSDO)):
-                if pred not in sdo_objects_processed:
-                    sdo_objects_processed.add(pred)
-                    sdo_graph_key = URIRef(str(pred).replace('http:','https:'))
+                schema["imports"].add('./schemaorg')
+                if pred.startswith(str(HSDO)):
+                    pred_uri = pred_uri.replace('hsdo:','schema:')
+                try:
+                    target_slot = URIs_to_slots[pred_uri]
+                except KeyError:
+                    pass
+                else:
+                    schema['slots'][pred_key]['from_schema'] = 'https://raw.githubusercontent.com/linkml/linkml-prov/refs/heads/main/model/schema/prov'
                     try:
-                        schema['slots'][pred_key]['title'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.label)))
-                        schema['slots'][pred_key]['description'] = str(next(object for object in SDO_graph.objects(sdo_graph_key, RDFS.comment))).replace('\n','␊')
-                    except StopIteration:
+                        schema['slots'][pred_key]['description'] = str(target_slot._as_dict['comments'][0])
+                    except IndexError:
+                        pass
+            elif pred.startswith(str(PROV)):
+                schema["imports"].add('./prov')
+                try:
+                    target_slot = URIs_to_slots[pred_uri]
+                except KeyError:
+                    pass
+                else:
+                    schema['slots'][pred_key]['from_schema'] = 'https://raw.githubusercontent.com/linkml/linkml-schemaorg/refs/heads/main/src/linkml/schemaorg'
+                    try:
+                        schema['slots'][pred_key]['description'] = str(target_slot._as_dict['comments'][0])
+                    except IndexError:
                         pass
 
             if re.match(str(RDF) + r'_\d+', str(pred)):
@@ -467,6 +537,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
                             schema['slots'][pred_key]['any_of'].add(object_datatype_key)
 
             else:
+            # TODO: add object datatypes to schema['types']
                 entities_without_type.add(subj)
                 if len(object_types) > 0:
                     for object_type_uri, object_type_key in list(object_type_uris_keys):
@@ -503,8 +574,22 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
     for key, value in schema["slots"].items():
         value = convert_slot_dict(value)
 
-    schema['classes'] = dict(schema['classes'])
+    schema["classes"] = dict(schema["classes"])
     schema["slots"] = dict(schema["slots"])
+    schema["imports"] = list(schema["imports"])
+
+    if 'created_by' in schema:
+        if not URIorCURIE.is_valid(schema['created_by']):
+            logging.warning('Schema %s has a creator that is not a URI or CURIE', schema['name'])
+            del schema['created_by']
+    if 'contributors' in schema:
+        new_contributors = []
+        for contributor in schema['contributors']:
+            if not URIorCURIE.is_valid(contributor):
+                logging.warning('Schema %s has a contributor that is not a URI or CURIE', schema['name'])
+            else:
+                new_contributors.append(contributor)
+        schema['contributors'] = new_contributors
 
     yaml_file_basename = graph_name.replace('/','__')
 

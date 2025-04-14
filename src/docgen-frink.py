@@ -224,7 +224,7 @@ class DocGenerator(Generator):
             )
         self.logger.debug("Processing Classes...")
         template = self._get_template("class")
-        for cn, c in sv.all_classes().items():
+        for cn, c in sv.all_classes(imports=self.render_imports).items():
             if self._is_external(c):
                 continue
             n = self.name(c)
@@ -235,7 +235,7 @@ class DocGenerator(Generator):
             self._write(out_str, f"{directory}/{CLASS_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
         self.logger.debug("Processing Slots...")
         template = self._get_template("slot")
-        for sn, s in sv.all_slots().items():
+        for sn, s in sv.all_slots(imports=self.render_imports).items():
             if self._is_external(s):
                 continue
             n = self.name(s)
@@ -245,7 +245,7 @@ class DocGenerator(Generator):
             self._write(out_str, f"{directory}/{SLOT_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
         self.logger.debug("Processing Enums...")
         template = self._get_template("enum")
-        for en, e in sv.all_enums().items():
+        for en, e in sv.all_enums(imports=self.render_imports).items():
             if self._is_external(e):
                 continue
             n = self.name(e)

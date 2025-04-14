@@ -6,7 +6,7 @@ def linkml_schema(graph_name, graph_title):
     return {
         "id": graph_name,
         "version": "No schema version available",
-        "imports": ['linkml:types'],
+        "imports": set(['linkml:types']),
         "license": "No schema license specified",
         "prefixes": {"linkml": "https://w3id.org/linkml/"},
         # emit_prefixes

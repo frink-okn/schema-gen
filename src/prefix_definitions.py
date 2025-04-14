@@ -12,7 +12,9 @@ replacement_prefixes = {
     'skos': SKOS, # from rdflib.namespace
     'sosa': SOSA, # from rdflib.namespace
     'xsd': XSD, # from rdflib.namespace
-    'kwg': Namespace('https://stko-kwg.geog.ucsb.edu/lod/ontology'), # KnowWhereGraph
+    'kwgos': Namespace('https://stko-kwg.geog.ucsb.edu/lod/ontology'), # KnowWhereGraph ontology
+    'kwgo': Namespace('http://stko-kwg.geog.ucsb.edu/lod/ontology/'), # KnowWhereGraph ontology
+    'kwgr': Namespace('http://stko-kwg.geog.ucsb.edu/lod/resource/'), # KnowWhereGraph resource
     'niem50': Namespace('http://release.niem.gov/niem/niem-core/5.0/'), # NIEM Core 5.0
     'jxdm72': Namespace('http://release.niem.gov/niem/domains/jxdm/7.2/#'), # NIEM Justice 7.2
     'obo': Namespace('http://purl.obolibrary.org/obo/'), # OBO Foundry (general)
@@ -56,7 +58,7 @@ replacement_prefixes = {
     'badwdt': Namespace('https://www.wikidata.org/wiki/Property:'), # Not a real RDF prefix; should be substituted wherever it occurs.
     'dreamkg': Namespace('http://www.semanticweb.org/dreamkg/ijcai/'), # from DREAM-KG; should be substituted with a working IRI prefix.
     'scales': Namespace('http://schemas.scales-okn.org/rdf/scales#'), # from SCALES; should be substituted with a working IRI prefix.
-    'sockg': Namespace('http://www.semanticweb.org/zzy/ontologies/2024/0/soil-carbon-ontology/'), # from SOC-KG; should be substituted with a working IRI prefix.
+    'sockg': Namespace('https://idir.uta.edu/sockg-ontology/docs/'), # from SOC-KG
     'securechain': Namespace('https://w3id.org/secure-chain/'), # from Secure Chain-KG
     'rural': Namespace('http://sail.ua.edu/ruralkg/'), # from RURAL-KG; should be substituted with a working IRI prefix.
     'contaminoso': Namespace('http://sawgraph.spatialai.org/v1/contaminoso#'), # from SAWGRAPH; should be substituted with a working IRI prefix.

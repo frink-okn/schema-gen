@@ -74,12 +74,12 @@ URI: {{ gen.uri_link(element) }}
 | ---  | --- | --- | --- | --- |
 {% if gen.get_direct_slots(element)|length > 0 %}
 {%- for slot in gen.get_direct_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct | {{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }} |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct | {% if slot.name in element.slot_usage %}{{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }}{% endif %} |
 {% endfor -%}
 {% endif -%}
 {% if gen.get_indirect_slots(element)|length > 0 %}
 {%- for slot in gen.get_indirect_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} | {{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }} |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} | {% if slot.name in element.slot_usage %}{{ element.slot_usage[slot.name].annotations.values() | sum(attribute='value') }}{% endif %} |
 {% endfor -%}
 {% endif %}
 

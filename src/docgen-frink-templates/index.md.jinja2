@@ -11,6 +11,13 @@
 ```
 {% endif %}
 
+{% if gen.schema.imports %}
+## Imports
+
+{% for import in gen.schema.imports %}
+* {{ import }}{% endfor %}
+{% endif %}
+
 {% if gen.class_objects_present() %}
 ## Classes
 
