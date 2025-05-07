@@ -596,9 +596,7 @@ def get_stats(graph_name, graph_to_read, graph_title=None):
     with open(yaml_file_basename + '.yaml','w') as f:
         yaml.dump(schema, f)
 
-    with open(yaml_file_basename + '_untyped.txt','w') as f:
-        for entity in list(entities_without_type):
-            f.write(str(entity) + '\n')
+
 
 if __name__ == '__main__':
     # Reads the graphs...
