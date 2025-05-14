@@ -25,6 +25,7 @@ RUN pip install -r requirements.txt
 
 COPY ./script.sh /code/
 COPY ./src/ /code/src/
+COPY ./*yaml ./
 COPY ./schemaorg-current-https.jsonld /code/
 
 
