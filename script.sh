@@ -77,7 +77,7 @@ python3 src/docgen-frink.py "/code/${GRAPH_NAME}.yaml" \
     --no-mergeimports \
     --subfolder-type-separation
 
-cp "${GRAPH_NAME}_untyped.txt" "${DOCS_DIR}"
+
 cp "/code/${GRAPH_NAME}.yaml" "${DOCS_DIR}"
 
 echo "Schema and documentation generation completed successfully."
