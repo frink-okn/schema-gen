@@ -130,7 +130,10 @@ def convert_class_dict(class_dict):
                 logging.warning('Class %s has a contributor that is not a URI or CURIE', class_dict['name'])
             else:
                 new_contributors.append(contributor)
-        class_dict['contributors'] = new_contributors
+        if len(new_contributors) == 0:
+            del class_dict['contributors']
+        else:
+            class_dict['contributors'] = new_contributors
 
     return class_dict
 
