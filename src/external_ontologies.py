@@ -13,5 +13,10 @@ external_ontologies_list = {
         'read_path': './rdf-rdfs',
         'prefixes': ['rdf:', 'rdfs:'],
         'from_path': 'https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/rdf-rdfs'
+    },
+    'owl': {
+        'read_path': './owl',
+        'prefixes': ['owl:'],
+        'from_path': 'https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/owl'
     }
 }

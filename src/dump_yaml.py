@@ -422,6 +422,7 @@ class GraphCharacterizer:
                                     break
             if len(new_imports_found) == 0:
                 break
+            new_imports_found = []
             time.sleep(5)
 
     def characterize(self):
