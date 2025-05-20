@@ -416,14 +416,12 @@ class GraphCharacterizer:
                 for dict_key in ['union_of', 'any_of']:
                     for set_type_uri, set_type_key in list(slot_dict[dict_key]):
                         if set_type_key not in self.schema['classes'] and set_type_key not in self.schema['types']:
-                            print(set_type_key)
                             for prefix, ontology in prefixes_to_ontologies.items():
                                 if self.check_for_import(set_type_uri, set_type_key, prefix, ontology, 'classes') is not None:
                                     new_imports_found.append((set_type_uri, prefix))
                                     break
             if len(new_imports_found) == 0:
                 break
-            print(new_imports_found)
             time.sleep(5)
 
     def characterize(self):
@@ -440,7 +438,6 @@ class GraphCharacterizer:
         for subj in tqdm.tqdm(self.g.subjects(unique=True)):
             subj_uri, subj_key = self.produce_curie_key(subj)
             if subj_uri in URIs_to_classes or subj_uri in URIs_to_slots:
-                print('Skipping triples involving', subj_uri)
                 continue
 
             subject_types = set([subject_type for subject_type in self.g.objects(subject=subj, predicate=RDF.type)])
