@@ -1,0 +1,420 @@
+classes:
+  Any:
+    class_uri: linkml:Any
+    name: Any
+  rdf_Alt:
+    class_uri: rdf:Alt
+    conforms_to: No schema conformance document specified
+    description: The class of containers of alternatives.
+    is_a: rdfs_Container
+    name: rdf_Alt
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: Alt
+  rdf_Bag:
+    class_uri: rdf:Bag
+    conforms_to: No schema conformance document specified
+    description: The class of unordered containers.
+    is_a: rdfs_Container
+    name: rdf_Bag
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: Bag
+  rdf_CompoundLiteral:
+    class_uri: rdf:CompoundLiteral
+    conforms_to: No schema conformance document specified
+    description: A class representing a compound literal.
+    is_a: rdfs_Resource
+    name: rdf_CompoundLiteral
+    see_also:
+    - https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: CompoundLiteral
+  rdf_List:
+    annotations:
+      count: 1
+    class_uri: rdf:List
+    conforms_to: No schema conformance document specified
+    description: The class of RDF Lists.
+    is_a: rdfs_Resource
+    name: rdf_List
+    slot_usage:
+      rdfs_comment:
+        annotations:
+          string: 1
+      rdfs_isDefinedBy:
+        annotations:
+          owl_Ontology: 1
+      rdfs_label:
+        annotations:
+          string: 1
+    slots:
+    - rdfs_comment
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: List
+  rdf_Property:
+    class_uri: rdf:Property
+    conforms_to: No schema conformance document specified
+    description: No class (type) description specified
+    name: rdf_Property
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  rdf_Seq:
+    class_uri: rdf:Seq
+    conforms_to: No schema conformance document specified
+    description: The class of ordered containers.
+    is_a: rdfs_Container
+    name: rdf_Seq
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: Seq
+  rdf_Statement:
+    class_uri: rdf:Statement
+    conforms_to: No schema conformance document specified
+    description: The class of RDF statements.
+    is_a: rdfs_Resource
+    name: rdf_Statement
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: Statement
+  rdfs_Class:
+    class_uri: rdfs:Class
+    conforms_to: No schema conformance document specified
+    description: The class of classes.
+    is_a: rdfs_Resource
+    name: rdfs_Class
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: Class
+  rdfs_Container:
+    class_uri: rdfs:Container
+    conforms_to: No schema conformance document specified
+    description: The class of RDF containers.
+    is_a: rdfs_Resource
+    name: rdfs_Container
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: Container
+  rdfs_ContainerMembershipProperty:
+    class_uri: rdfs:ContainerMembershipProperty
+    conforms_to: No schema conformance document specified
+    description: The class of container membership properties, rdf:_1, rdf:_2, ...,
+      all of which are sub-properties of 'member'.
+    is_a: rdf_Property
+    name: rdfs_ContainerMembershipProperty
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: ContainerMembershipProperty
+  rdfs_Datatype:
+    annotations:
+      count: 5
+    class_uri: rdfs:Datatype
+    conforms_to: No schema conformance document specified
+    description: The class of RDF datatypes.
+    is_a: rdfs_Class
+    name: rdfs_Datatype
+    slot_usage:
+      rdfs_comment:
+        annotations:
+          string: 5
+      rdfs_isDefinedBy:
+        annotations:
+          owl_Ontology: 5
+      rdfs_label:
+        annotations:
+          string: 5
+      rdfs_seeAlso:
+        annotations:
+          uri: 4
+      rdfs_subClassOf:
+        annotations:
+          rdfs_Class: 5
+    slots:
+    - rdfs_comment
+    - rdfs_isDefinedBy
+    - rdfs_seeAlso
+    - rdfs_subClassOf
+    - rdfs_label
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: Datatype
+  rdfs_Literal:
+    class_uri: rdfs:Literal
+    conforms_to: No schema conformance document specified
+    description: The class of literal values, eg. textual strings and integers.
+    is_a: rdfs_Resource
+    name: rdfs_Literal
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: Literal
+  rdfs_Resource:
+    class_uri: rdfs:Resource
+    conforms_to: No schema conformance document specified
+    description: The class resource, everything.
+    name: rdfs_Resource
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: Resource
+conforms_to: No schema conformance document specified
+created_on: '2025-05-01T11:48:34.275440'
+description: This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace,
+  defined in RDF 1.1 Concepts.
+id: rdf-rdfs
+imports:
+- linkml:types
+last_updated_on: '2019-12-16'
+license: No schema license specified
+name: rdf-rdfs
+prefixes:
+  linkml: https://w3id.org/linkml/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+see_also:
+- http://www.w3.org/2000/01/rdf-schema-more
+slots:
+  rdf_direction:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The base direction component of a CompoundLiteral.
+    domain: rdf_CompoundLiteral
+    name: rdf_direction
+    range: Any
+    see_also:
+    - https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties
+    slot_uri: rdf:direction
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: direction
+  rdf_first:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The first item in the subject RDF list.
+    domain: rdf_List
+    name: rdf_first
+    range: rdfs_Resource
+    slot_uri: rdf:first
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: first
+  rdf_language:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The language component of a CompoundLiteral.
+    domain: rdf_CompoundLiteral
+    name: rdf_language
+    range: Any
+    see_also:
+    - https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties
+    slot_uri: rdf:language
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: language
+  rdf_object:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The object of the subject RDF statement.
+    domain: rdf_Statement
+    name: rdf_object
+    range: rdfs_Resource
+    slot_uri: rdf:object
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: object
+  rdf_predicate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The predicate of the subject RDF statement.
+    domain: rdf_Statement
+    name: rdf_predicate
+    range: rdfs_Resource
+    slot_uri: rdf:predicate
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: predicate
+  rdf_rest:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The rest of the subject RDF list after the first item.
+    domain: rdf_List
+    name: rdf_rest
+    range: rdf_List
+    slot_uri: rdf:rest
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: rest
+  rdf_subject:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The subject of the subject RDF statement.
+    domain: rdf_Statement
+    name: rdf_subject
+    range: rdfs_Resource
+    slot_uri: rdf:subject
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: subject
+  rdf_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The subject is an instance of a class.
+    domain: rdfs_Resource
+    name: rdf_type
+    range: rdfs_Class
+    slot_uri: rdf:type
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: type
+  rdf_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Idiomatic property used for structured values.
+    domain: rdfs_Resource
+    name: rdf_value
+    range: rdfs_Resource
+    slot_uri: rdf:value
+    source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+    title: value
+  rdfs_comment:
+    annotations:
+      count: 6
+    any_of:
+    - range: rdfs_Literal
+    - range: string
+    description: A description of the subject resource.
+    domain: rdfs_Resource
+    examples:
+    - object:
+        example_object: The datatype of RDF literals storing fragments of HTML content
+        example_object_type: string
+        example_predicate: rdfs:comment
+        example_subject: rdf:HTML
+        example_subject_type: rdfs_Datatype
+    - object:
+        example_object: The empty list, with no items in it. If the rest of a list
+          is nil then the list has no more items in it.
+        example_object_type: string
+        example_predicate: rdfs:comment
+        example_subject: rdf:nil
+        example_subject_type: rdf_List
+    name: rdfs_comment
+    range: Any
+    slot_uri: rdfs:comment
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: comment
+  rdfs_domain:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A domain of the subject property.
+    domain: rdf_Property
+    name: rdfs_domain
+    range: rdfs_Class
+    slot_uri: rdfs:domain
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: domain
+  rdfs_isDefinedBy:
+    annotations:
+      count: 6
+    any_of:
+    - range: rdfs_Resource
+    - range: owl_Ontology
+    description: The definition of the subject resource.
+    domain: rdfs_Resource
+    examples:
+    - object:
+        example_object: 'rdf:'
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: rdf:HTML
+        example_subject_type: rdfs_Datatype
+    - object:
+        example_object: 'rdf:'
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: rdf:nil
+        example_subject_type: rdf_List
+    name: rdfs_isDefinedBy
+    range: Any
+    slot_uri: rdfs:isDefinedBy
+    source: http://www.w3.org/2000/01/rdf-schema#
+    subproperty_of: rdfs_seeAlso
+    title: isDefinedBy
+  rdfs_label:
+    annotations:
+      count: 6
+    any_of:
+    - range: rdfs_Literal
+    - range: string
+    description: A human-readable name for the subject.
+    domain: rdfs_Resource
+    examples:
+    - object:
+        example_object: HTML
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: rdf:HTML
+        example_subject_type: rdfs_Datatype
+    - object:
+        example_object: nil
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: rdf:nil
+        example_subject_type: rdf_List
+    name: rdfs_label
+    range: Any
+    slot_uri: rdfs:label
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: label
+  rdfs_member:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A member of the subject resource.
+    domain: rdfs_Resource
+    name: rdfs_member
+    range: rdfs_Resource
+    slot_uri: rdfs:member
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: member
+  rdfs_range:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A range of the subject property.
+    domain: rdf_Property
+    name: rdfs_range
+    range: rdfs_Class
+    slot_uri: rdfs:range
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: range
+  rdfs_seeAlso:
+    annotations:
+      count: 4
+    any_of:
+    - range: uri
+    - range: rdfs_Resource
+    description: Further information about the subject resource.
+    domain: rdfs_Resource
+    examples:
+    - object:
+        example_object: http://www.w3.org/TR/rdf11-concepts/#section-html
+        example_object_type: uri
+        example_predicate: rdfs:seeAlso
+        example_subject: rdf:HTML
+        example_subject_type: rdfs_Datatype
+    name: rdfs_seeAlso
+    range: Any
+    slot_uri: rdfs:seeAlso
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: seeAlso
+  rdfs_subClassOf:
+    annotations:
+      count: 5
+    description: The subject is a subclass of a class.
+    domain: rdfs_Class
+    examples:
+    - object:
+        example_object: rdfs:Literal
+        example_object_type: rdfs_Class
+        example_predicate: rdfs:subClassOf
+        example_subject: rdf:HTML
+        example_subject_type: rdfs_Datatype
+    name: rdfs_subClassOf
+    range: rdfs_Class
+    slot_uri: rdfs:subClassOf
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: subClassOf
+  rdfs_subPropertyOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The subject is a subproperty of a property.
+    domain: rdf_Property
+    name: rdfs_subPropertyOf
+    range: rdf_Property
+    slot_uri: rdfs:subPropertyOf
+    source: http://www.w3.org/2000/01/rdf-schema#
+    title: subPropertyOf
+title: The RDF Concepts Vocabulary (RDF)
+version: No schema version available

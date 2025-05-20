@@ -3,7 +3,7 @@ from collections import defaultdict
 
 def linkml_schema(graph_name, graph_title):
     update_time = f"{datetime.datetime.now().isoformat()}"
-    return {
+    output_schema = {
         "id": graph_name,
         "version": "No schema version available",
         "imports": set(['linkml:types']),
@@ -14,7 +14,7 @@ def linkml_schema(graph_name, graph_title):
         # default_prefix
         # default_range
         # subsets
-        # types
+        "types": defaultdict(linkml_type),
         # enums
         "slots": defaultdict(linkml_slot),
         "classes": defaultdict(linkml_class),
@@ -64,6 +64,75 @@ def linkml_schema(graph_name, graph_title):
         # contributors
         "created_on": update_time,
         "last_updated_on": update_time,
+        # modified_by
+        # status
+        # rank
+        # categories
+        # keywords
+    }
+    output_schema['classes']['Any'] = {'name': 'Any', 'class_uri': 'linkml:Any'}
+    return output_schema
+
+def linkml_type():
+    return {
+        # typeof
+        # base
+        'uri': "",
+        # repr
+        # union_of
+        # pattern
+        # structured_pattern
+        # unit
+        # implicit_prefix
+        # equals_string
+        # equals_string_in
+        # equals_number
+        # minimum_value
+        # maximum_value
+        # none_of
+        # exactly_one_of
+        # any_of
+        # all_of
+        'name': "",
+        # id_prefixes
+        # id_prefixes_are_closed
+        # definition_uri
+        # local_names
+        "conforms_to": "No schema conformance document specified",
+        # implements
+        # instantiates
+        # extensions
+        'annotations': {
+            'count': 0
+        },
+        'description': 'No class (type) description specified',
+        # alt_descriptions
+        'title': "No class (type) name specified",
+        # deprecated
+        # todos
+        'notes': [],
+        # comments
+        # examples
+        # in_subset
+        # from_schema
+        # imported_from
+        # source
+        # in_language
+        # see_also
+        # deprecated_element_has_exact_replacement
+        # deprecated_element_has_possible_replacement
+        # aliases
+        # structured_aliases
+        # mappings
+        # exact_mappings
+        # close_mappings
+        # related_mappings
+        # narrow_mappings
+        # broad_mappings
+        # created_by
+        # contributors
+        # created_on
+        # last_updated_on
         # modified_by
         # status
         # rank
