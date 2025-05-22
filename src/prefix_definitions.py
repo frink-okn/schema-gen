@@ -12,9 +12,11 @@ replacement_prefixes = {
     'skos': SKOS, # from rdflib.namespace
     'sosa': SOSA, # from rdflib.namespace
     'xsd': XSD, # from rdflib.namespace
+    'vaem': Namespace('http://www.linkedmodel.org/schema/vaem'), # Vocabulary for Attaching Essential Metadata
     'kwgos': Namespace('https://stko-kwg.geog.ucsb.edu/lod/ontology'), # KnowWhereGraph ontology
     'kwgo': Namespace('http://stko-kwg.geog.ucsb.edu/lod/ontology/'), # KnowWhereGraph ontology
     'kwgr': Namespace('http://stko-kwg.geog.ucsb.edu/lod/resource/'), # KnowWhereGraph resource
+    'dcgeoid': Namespace('https://datacommons.org/browser/geoId/'), # Google DataCommons
     'niem50': Namespace('http://release.niem.gov/niem/niem-core/5.0/'), # NIEM Core 5.0
     'jxdm72': Namespace('http://release.niem.gov/niem/domains/jxdm/7.2/#'), # NIEM Justice 7.2
     'obo': Namespace('http://purl.obolibrary.org/obo/'), # OBO Foundry (general)
@@ -61,19 +63,22 @@ replacement_prefixes = {
     'sockg': Namespace('https://idir.uta.edu/sockg-ontology/docs/'), # from SOC-KG
     'securechain': Namespace('https://w3id.org/secure-chain/'), # from Secure Chain-KG
     'rural': Namespace('http://sail.ua.edu/ruralkg/'), # from RURAL-KG; should be substituted with a working IRI prefix.
-    'contaminoso': Namespace('http://sawgraph.spatialai.org/v1/contaminoso#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'usfrs': Namespace('http://sawgraph.spatialai.org/v1/us-frs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'usfrsdata': Namespace('http://sawgraph.spatialai.org/v1/us-frs-data#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'coso': Namespace('http://w3id.org/coso/v1/contaminoso#'), # from SAWGRAPH
+    'spatial': Namespace('http://purl.org/spatialai/spatial/spatial-full#'), # from SAWGRAPH
+    'stad': Namespace('http://purl.org/spatialai/stad/v2/core/'), # from SAWGRAPH
+    'fio': Namespace('http://w3id.org/fio/v1/fio#'), # from SAWGRAPH
     'naics': Namespace('http://sawgraph.spatialai.org/v1/fio/naics#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'ilisgs': Namespace('http://sawgraph.spatialai.org/v1/il-isgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'meegad': Namespace('http://sawgraph.spatialai.org/v1/me-egad#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'memgs': Namespace('http://sawgraph.spatialai.org/v1/me-mgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'memgs2': Namespace('http://sawgraph.spatialai.org/v1/me_mgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'ussdwis': Namespace('http://sawgraph.spatialai.org/v1/us-sdwis#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'il_isgs': Namespace('http://sawgraph.spatialai.org/v1/il-isgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'il_isgs_data': Namespace('http://sawgraph.spatialai.org/v1/il-isgs-data#'), # from SAWGRAPH: should be substituted with a working IRI prefix.
+    'me_egad': Namespace('http://sawgraph.spatialai.org/v1/me-egad#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'me_egad_data': Namespace('http://sawgraph.spatialai.org/v1/me-egad-data#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'me_mgs': Namespace('http://sawgraph.spatialai.org/v1/me-mgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'me_mgs_data': Namespace('http://sawgraph.spatialai.org/v1/me-mgs-data#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
     'pfas': Namespace('http://sawgraph.spatialai.org/v1/pfas#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'sawwater': Namespace('http://sawgraph.spatialai.org/v1/saw_water#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'fio': Namespace('http://sawgraph.spatialai.org/v1/fio#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
-    'psys': Namespace('http://proton.semanticweb.org/protonsys#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'saw_geo': Namespace('http://sawgraph.spatialai.org/v1/saw_geo#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'us_frs': Namespace('http://sawgraph.spatialai.org/v1/us-frs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'us_frs_data': Namespace('http://sawgraph.spatialai.org/v1/us-frs-data#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'us_sdwis': Namespace('http://sawgraph.spatialai.org/v1/us-sdwis#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
     'io': Namespace('https://spec.industrialontologies.org/ontology/core/Core/'), # Industrial Ontologies Foundry
     'iosc': Namespace('https://spec.industrialontologies.org/ontology/supplychain/SupplyChain/'), # Industrial Ontologies Foundry
     'sudokn': Namespace('http://asu.edu/semantics/SUDOKN/'), # from SUDOKN: should be substituted with a working IRI prefix.

@@ -1,3 +1,6 @@
+# This is a list of LinkML schemas representing external ontologies
+# (i.e. those not defined by LinkML itself or by a Proto-OKN graph).
+
 external_ontologies_list = {
     'sdo': {
         'read_path': './schemaorg',
@@ -18,5 +21,10 @@ external_ontologies_list = {
         'read_path': './owl',
         'prefixes': ['owl:'],
         'from_path': 'https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/owl'
-    }
+    },
+    'qudt': {
+        'read_path': './qudt',
+        'prefixes': ['qudt:'],
+        'from_path': 'https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/qudt'
+    },
 }

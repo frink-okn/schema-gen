@@ -1,5 +1,7 @@
 from linkml_runtime.utils.metamodelcore import URIorCURIE, XSDDateTime
-from rdflib.namespace import XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV, DC
+from rdflib.namespace import Namespace, XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV, DC
+
+SHEX = Namespace("http://www.w3.org/ns/shex#")
 
 CLASS_TYPES = {
     RDFS.Class: {},
@@ -76,21 +78,40 @@ SINGLE_VALUE_RESTRICTIONS = {
     OWL.maxQualifiedCardinality: 'maximum_cardinality',
 }
 
+linkml_prefixes = {"linkml": "https://w3id.org/linkml/"}
+
+# Only mappings to LinkML types are listed here.
 datatype_to_type = {
-    XSD.string: 'string',
-    XSD.integer: 'integer',
-    XSD.int: 'integer',
-    XSD.boolean: 'boolean',
-    XSD.float: 'float',
-    XSD.double: 'double',
-    XSD.decimal: 'decimal',
-    XSD.time: 'time',
-    XSD.date: 'date',
-    XSD.dateTime: 'datetime',
-    XSD.anyUri: 'uri', # remove once no longer encountered
-    XSD.anyURI: 'uri',
+    XSD.string: ['string', 'linkml:types', linkml_prefixes],
+    XSD.integer: ['integer', 'linkml:types', linkml_prefixes],
+    XSD.boolean: ['boolean', 'linkml:types', linkml_prefixes],
+    XSD.float: ['float', 'linkml:types', linkml_prefixes],
+    XSD.double: ['double', 'linkml:types', linkml_prefixes],
+    XSD.decimal: ['decimal', 'linkml:types', linkml_prefixes],
+    XSD.time: ['time', 'linkml:types', linkml_prefixes],
+    XSD.date: ['date', 'linkml:types', linkml_prefixes],
+    XSD.dateTime: ['datetime', 'linkml:types', linkml_prefixes],
+    XSD.anyURI: ['uri', 'linkml:types', linkml_prefixes],
+    # date_or_datetime, uriorcurie, curie
+    XSD.NCName: ['ncname', 'linkml:types', linkml_prefixes],
+    SHEX.iri: ['objectidentifier', 'linkml:types', linkml_prefixes],
+    SHEX.nonLiteral: ['nodeidentifier', 'linkml:types', linkml_prefixes],
+    # jsonpointer, jsonpath, sparqlpath
+
+    # any_number, signedInteger
+    XSD.nonNegativeInteger: ['unsignedInteger', 'linkml:extended_types', linkml_prefixes],
+    XSD.byte: ['int8', 'linkml:extended_types', linkml_prefixes],
+    XSD.short: ['int16', 'linkml:extended_types', linkml_prefixes],
+    XSD.int: ['int32', 'linkml:extended_types', linkml_prefixes],
+    XSD.long: ['int64', 'linkml:extended_types', linkml_prefixes],
+    XSD.unsignedByte: ['uint8', 'linkml:extended_types', linkml_prefixes],
+    XSD.unsignedShort: ['uint16', 'linkml:extended_types', linkml_prefixes],
+    XSD.unsignedInt: ['uint32', 'linkml:extended_types', linkml_prefixes],
+    XSD.unsignedLong: ['uint64', 'linkml:extended_types', linkml_prefixes],
+    # float16, float32, float64
 }
+linkml_type_names = [v[0] for v in datatype_to_type.values()]
 
 def linkml_type_mapping(object_datatype):
     """Substitutes a type with its reference from the LinkML types.yaml file."""
-    return datatype_to_type.get(object_datatype, object_datatype)
+    return datatype_to_type.get(object_datatype, [object_datatype, '', {}])

@@ -11,27 +11,14 @@ import linkml_runtime
 import rdflib
 import tqdm
 from linkml_runtime.utils.metamodelcore import URIorCURIE, XSDDateTime
-from rdflib import URIRef, Namespace
+from rdflib import URIRef, Namespace, BNode
 from rdflib.namespace import XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV
 from rdflib_hdt import HDTStore
 
+from common_functions import *
 from external_ontologies import external_ontologies_list
 from linkml_structures import linkml_class, linkml_schema, linkml_slot
 from predicate_mappings import *
-from prefix_definitions import replacements
-
-def find_prefix(node):
-    """ Replaces a URI prefix with the abbreviation as given in 'replacements' above. """
-    replacement = ''
-    prefix = ''
-    for current_replacement, current_prefix in replacements:
-        removed = node.removeprefix(str(current_prefix))
-        if removed != str(node):
-            replacement = current_replacement
-            prefix = current_prefix
-            removed = replacement + ':' + removed
-            node = removed
-    return node, replacement, prefix
 
 # external ontology processing
 
@@ -331,22 +318,27 @@ class GraphCharacterizer:
                 progress_bar.set_postfix(ordered_dict={'num_slots': len(self.schema['slots'])}, refresh=False)
 
                 for subj, pred, obj in self.g.triples((entity, None, None)):
-                    obj_uri, obj_key = self.produce_curie_key(obj)
+                    obj_curie_key = self.produce_curie_key(obj)
+                    obj_uri, obj_key = obj_curie_key
 
                     if pred in SLOTS_TO_PREDICATES_SINGLE:
                         add_str_to_single(self.schema['slots'][subj_key], pred, str(obj))
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                         add_str_to_multiple(self.schema['slots'][subj_key], pred, str(obj))
                     elif pred in {RDFS.domain}:
-                        normalized_type = linkml_type_mapping(obj)
+                        normalized_type, current_import, current_prefixes = linkml_type_mapping(obj)
                         if normalized_type != obj:
-                            obj_uri, obj_key = self.produce_curie_key(normalized_type)
-                        self.add_to_domain(subj_key, (obj_uri, obj_key))
+                            self.schema['imports'].add(current_import)
+                            self.schema['prefixes'].update(current_prefixes)
+                            obj_curie_key = self.produce_curie_key(normalized_type)
+                        self.add_to_domain(subj_key, obj_curie_key)
                     elif pred in {RDFS.range}:
-                        normalized_type = linkml_type_mapping(obj)
+                        normalized_type, current_import, current_prefixes = linkml_type_mapping(obj)
                         if normalized_type != obj:
-                            obj_uri, obj_key = self.produce_curie_key(normalized_type)
-                        self.add_to_range(subj_key, (obj_uri, obj_key))
+                            self.schema['imports'].add(current_import)
+                            self.schema['prefixes'].update(current_prefixes)
+                            obj_curie_key = self.produce_curie_key(normalized_type)
+                        self.add_to_range(subj_key, obj_curie_key)
                     elif pred in {RDFS.subPropertyOf}:
                         if subj_key != obj_key:
                             self.schema['slots'][subj_key]['subproperty_of'] = obj_key
@@ -416,10 +408,14 @@ class GraphCharacterizer:
                 for dict_key in ['union_of', 'any_of']:
                     for set_type_uri, set_type_key in list(slot_dict[dict_key]):
                         if set_type_key not in self.schema['classes'] and set_type_key not in self.schema['types']:
+                            not_already_found = True
                             for prefix, ontology in prefixes_to_ontologies.items():
                                 if self.check_for_import(set_type_uri, set_type_key, prefix, ontology, 'classes') is not None:
                                     new_imports_found.append((set_type_uri, prefix))
+                                    not_already_found = False
                                     break
+                            if not_already_found and set_type_key not in linkml_type_names:
+                                self.add_class(set_type_key, set_type_uri, "No class (entity type) name specified -- this class is noted as being in the domain or range of a slot in this graph, but the class has not itself been defined.")
             if len(new_imports_found) == 0:
                 break
             new_imports_found = []
@@ -506,8 +502,13 @@ class GraphCharacterizer:
                             self.account_for_triple(None, pred_key, object_type_uri, object_type_key, example)
                 else:
                     # TODO: add object datatypes to self.schema['types']
+                    if isinstance(obj, BNode): # skip blank nodes for now, revisit restrictions in QUDT TTL
+                        continue
                     object_datatype = get_object_datatype(obj)
-                    object_type_mapping = linkml_type_mapping(object_datatype)
+                    object_type_mapping, current_import, current_prefixes = linkml_type_mapping(object_datatype)
+                    if current_import != '':
+                        self.schema['imports'].add(current_import)
+                        self.schema['prefixes'].update(current_prefixes)
                     object_datatype_uri, object_datatype_key = self.produce_curie_key(object_type_mapping)
                     self.add_type(object_datatype, object_datatype_key, object_datatype_uri)
                     if len(subject_types) > 0:

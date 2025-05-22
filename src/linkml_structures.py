@@ -6,9 +6,9 @@ def linkml_schema(graph_name, graph_title):
     output_schema = {
         "id": graph_name,
         "version": "No schema version available",
-        "imports": set(['linkml:types']),
+        "imports": set([]),
         "license": "No schema license specified",
-        "prefixes": {"linkml": "https://w3id.org/linkml/"},
+        "prefixes": {},
         # emit_prefixes
         # default_curi_maps
         # default_prefix
