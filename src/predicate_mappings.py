@@ -99,19 +99,19 @@ datatype_to_type = {
     # jsonpointer, jsonpath, sparqlpath
 
     # any_number, signedInteger
-    XSD.nonNegativeInteger: ['unsignedInteger', 'linkml:extended_types', linkml_prefixes],
-    XSD.byte: ['int8', 'linkml:extended_types', linkml_prefixes],
-    XSD.short: ['int16', 'linkml:extended_types', linkml_prefixes],
-    XSD.int: ['int32', 'linkml:extended_types', linkml_prefixes],
-    XSD.long: ['int64', 'linkml:extended_types', linkml_prefixes],
-    XSD.unsignedByte: ['uint8', 'linkml:extended_types', linkml_prefixes],
-    XSD.unsignedShort: ['uint16', 'linkml:extended_types', linkml_prefixes],
-    XSD.unsignedInt: ['uint32', 'linkml:extended_types', linkml_prefixes],
-    XSD.unsignedLong: ['uint64', 'linkml:extended_types', linkml_prefixes],
+    XSD.nonNegativeInteger: ['unsignedinteger', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.byte: ['int8', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.short: ['int16', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.int: ['int32', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.long: ['int64', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.unsignedByte: ['uint8', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.unsignedShort: ['uint16', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.unsignedInt: ['uint32', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.unsignedLong: ['uint64', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
     # float16, float32, float64
 }
 linkml_type_names = [v[0] for v in datatype_to_type.values()]
 
 def linkml_type_mapping(object_datatype):
-    """Substitutes a type with its reference from the LinkML types.yaml file."""
+    """Substitutes a type with its reference from the LinkML types file."""
     return datatype_to_type.get(object_datatype, [object_datatype, '', {}])

@@ -16,1045 +16,1045 @@ classes:
     name: http___www.linkedmodel.org_schema_dtype#numericUnion
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab1:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab1
+  nd584c290b5bb4622b066da892c701147b1:
+    class_uri: nd584c290b5bb4622b066da892c701147b1
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab1
+    name: nd584c290b5bb4622b066da892c701147b1
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab100:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab100
+  nd584c290b5bb4622b066da892c701147b100:
+    class_uri: nd584c290b5bb4622b066da892c701147b100
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab100
+    name: nd584c290b5bb4622b066da892c701147b100
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab101:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab101
+  nd584c290b5bb4622b066da892c701147b101:
+    class_uri: nd584c290b5bb4622b066da892c701147b101
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab101
+    name: nd584c290b5bb4622b066da892c701147b101
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab102:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab102
+  nd584c290b5bb4622b066da892c701147b102:
+    class_uri: nd584c290b5bb4622b066da892c701147b102
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab102
+    name: nd584c290b5bb4622b066da892c701147b102
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab103:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab103
+  nd584c290b5bb4622b066da892c701147b103:
+    class_uri: nd584c290b5bb4622b066da892c701147b103
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab103
+    name: nd584c290b5bb4622b066da892c701147b103
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab104:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab104
+  nd584c290b5bb4622b066da892c701147b104:
+    class_uri: nd584c290b5bb4622b066da892c701147b104
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab104
+    name: nd584c290b5bb4622b066da892c701147b104
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab105:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab105
+  nd584c290b5bb4622b066da892c701147b105:
+    class_uri: nd584c290b5bb4622b066da892c701147b105
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab105
+    name: nd584c290b5bb4622b066da892c701147b105
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab106:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab106
+  nd584c290b5bb4622b066da892c701147b106:
+    class_uri: nd584c290b5bb4622b066da892c701147b106
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab106
+    name: nd584c290b5bb4622b066da892c701147b106
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab107:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab107
+  nd584c290b5bb4622b066da892c701147b107:
+    class_uri: nd584c290b5bb4622b066da892c701147b107
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab107
+    name: nd584c290b5bb4622b066da892c701147b107
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab108:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab108
+  nd584c290b5bb4622b066da892c701147b108:
+    class_uri: nd584c290b5bb4622b066da892c701147b108
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab108
+    name: nd584c290b5bb4622b066da892c701147b108
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab115:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab115
+  nd584c290b5bb4622b066da892c701147b115:
+    class_uri: nd584c290b5bb4622b066da892c701147b115
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab115
+    name: nd584c290b5bb4622b066da892c701147b115
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab116:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab116
+  nd584c290b5bb4622b066da892c701147b116:
+    class_uri: nd584c290b5bb4622b066da892c701147b116
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab116
+    name: nd584c290b5bb4622b066da892c701147b116
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab117:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab117
+  nd584c290b5bb4622b066da892c701147b117:
+    class_uri: nd584c290b5bb4622b066da892c701147b117
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab117
+    name: nd584c290b5bb4622b066da892c701147b117
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab118:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab118
+  nd584c290b5bb4622b066da892c701147b118:
+    class_uri: nd584c290b5bb4622b066da892c701147b118
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab118
+    name: nd584c290b5bb4622b066da892c701147b118
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab119:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab119
+  nd584c290b5bb4622b066da892c701147b119:
+    class_uri: nd584c290b5bb4622b066da892c701147b119
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab119
+    name: nd584c290b5bb4622b066da892c701147b119
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab120:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab120
+  nd584c290b5bb4622b066da892c701147b120:
+    class_uri: nd584c290b5bb4622b066da892c701147b120
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab120
+    name: nd584c290b5bb4622b066da892c701147b120
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab121:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab121
+  nd584c290b5bb4622b066da892c701147b121:
+    class_uri: nd584c290b5bb4622b066da892c701147b121
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab121
+    name: nd584c290b5bb4622b066da892c701147b121
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab122:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab122
+  nd584c290b5bb4622b066da892c701147b122:
+    class_uri: nd584c290b5bb4622b066da892c701147b122
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab122
+    name: nd584c290b5bb4622b066da892c701147b122
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab123:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab123
+  nd584c290b5bb4622b066da892c701147b123:
+    class_uri: nd584c290b5bb4622b066da892c701147b123
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab123
+    name: nd584c290b5bb4622b066da892c701147b123
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab124:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab124
+  nd584c290b5bb4622b066da892c701147b124:
+    class_uri: nd584c290b5bb4622b066da892c701147b124
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab124
+    name: nd584c290b5bb4622b066da892c701147b124
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab125:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab125
+  nd584c290b5bb4622b066da892c701147b125:
+    class_uri: nd584c290b5bb4622b066da892c701147b125
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab125
+    name: nd584c290b5bb4622b066da892c701147b125
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab126:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab126
+  nd584c290b5bb4622b066da892c701147b126:
+    class_uri: nd584c290b5bb4622b066da892c701147b126
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab126
+    name: nd584c290b5bb4622b066da892c701147b126
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab127:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab127
+  nd584c290b5bb4622b066da892c701147b127:
+    class_uri: nd584c290b5bb4622b066da892c701147b127
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab127
+    name: nd584c290b5bb4622b066da892c701147b127
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab13:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab13
+  nd584c290b5bb4622b066da892c701147b13:
+    class_uri: nd584c290b5bb4622b066da892c701147b13
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab13
+    name: nd584c290b5bb4622b066da892c701147b13
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab132:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab132
+  nd584c290b5bb4622b066da892c701147b132:
+    class_uri: nd584c290b5bb4622b066da892c701147b132
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab132
+    name: nd584c290b5bb4622b066da892c701147b132
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab133:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab133
+  nd584c290b5bb4622b066da892c701147b133:
+    class_uri: nd584c290b5bb4622b066da892c701147b133
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab133
+    name: nd584c290b5bb4622b066da892c701147b133
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab134:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab134
+  nd584c290b5bb4622b066da892c701147b134:
+    class_uri: nd584c290b5bb4622b066da892c701147b134
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab134
+    name: nd584c290b5bb4622b066da892c701147b134
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab135:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab135
+  nd584c290b5bb4622b066da892c701147b135:
+    class_uri: nd584c290b5bb4622b066da892c701147b135
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab135
+    name: nd584c290b5bb4622b066da892c701147b135
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab136:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab136
+  nd584c290b5bb4622b066da892c701147b136:
+    class_uri: nd584c290b5bb4622b066da892c701147b136
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab136
+    name: nd584c290b5bb4622b066da892c701147b136
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab137:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab137
+  nd584c290b5bb4622b066da892c701147b137:
+    class_uri: nd584c290b5bb4622b066da892c701147b137
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab137
+    name: nd584c290b5bb4622b066da892c701147b137
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab138:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab138
+  nd584c290b5bb4622b066da892c701147b138:
+    class_uri: nd584c290b5bb4622b066da892c701147b138
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab138
+    name: nd584c290b5bb4622b066da892c701147b138
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab139:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab139
+  nd584c290b5bb4622b066da892c701147b139:
+    class_uri: nd584c290b5bb4622b066da892c701147b139
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab139
+    name: nd584c290b5bb4622b066da892c701147b139
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab140:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab140
+  nd584c290b5bb4622b066da892c701147b140:
+    class_uri: nd584c290b5bb4622b066da892c701147b140
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab140
+    name: nd584c290b5bb4622b066da892c701147b140
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab141:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab141
+  nd584c290b5bb4622b066da892c701147b141:
+    class_uri: nd584c290b5bb4622b066da892c701147b141
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab141
+    name: nd584c290b5bb4622b066da892c701147b141
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab142:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab142
+  nd584c290b5bb4622b066da892c701147b142:
+    class_uri: nd584c290b5bb4622b066da892c701147b142
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab142
+    name: nd584c290b5bb4622b066da892c701147b142
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab143:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab143
+  nd584c290b5bb4622b066da892c701147b143:
+    class_uri: nd584c290b5bb4622b066da892c701147b143
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab143
+    name: nd584c290b5bb4622b066da892c701147b143
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab144:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab144
+  nd584c290b5bb4622b066da892c701147b144:
+    class_uri: nd584c290b5bb4622b066da892c701147b144
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab144
+    name: nd584c290b5bb4622b066da892c701147b144
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab145:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab145
+  nd584c290b5bb4622b066da892c701147b145:
+    class_uri: nd584c290b5bb4622b066da892c701147b145
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab145
+    name: nd584c290b5bb4622b066da892c701147b145
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab146:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab146
+  nd584c290b5bb4622b066da892c701147b146:
+    class_uri: nd584c290b5bb4622b066da892c701147b146
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab146
+    name: nd584c290b5bb4622b066da892c701147b146
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab147:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab147
+  nd584c290b5bb4622b066da892c701147b147:
+    class_uri: nd584c290b5bb4622b066da892c701147b147
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab147
+    name: nd584c290b5bb4622b066da892c701147b147
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab148:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab148
+  nd584c290b5bb4622b066da892c701147b148:
+    class_uri: nd584c290b5bb4622b066da892c701147b148
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab148
+    name: nd584c290b5bb4622b066da892c701147b148
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab149:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab149
+  nd584c290b5bb4622b066da892c701147b149:
+    class_uri: nd584c290b5bb4622b066da892c701147b149
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab149
+    name: nd584c290b5bb4622b066da892c701147b149
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab150:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab150
+  nd584c290b5bb4622b066da892c701147b150:
+    class_uri: nd584c290b5bb4622b066da892c701147b150
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab150
+    name: nd584c290b5bb4622b066da892c701147b150
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab151:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab151
+  nd584c290b5bb4622b066da892c701147b151:
+    class_uri: nd584c290b5bb4622b066da892c701147b151
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab151
+    name: nd584c290b5bb4622b066da892c701147b151
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab152:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab152
+  nd584c290b5bb4622b066da892c701147b152:
+    class_uri: nd584c290b5bb4622b066da892c701147b152
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab152
+    name: nd584c290b5bb4622b066da892c701147b152
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab153:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab153
+  nd584c290b5bb4622b066da892c701147b153:
+    class_uri: nd584c290b5bb4622b066da892c701147b153
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab153
+    name: nd584c290b5bb4622b066da892c701147b153
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab154:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab154
+  nd584c290b5bb4622b066da892c701147b154:
+    class_uri: nd584c290b5bb4622b066da892c701147b154
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab154
+    name: nd584c290b5bb4622b066da892c701147b154
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab155:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab155
+  nd584c290b5bb4622b066da892c701147b155:
+    class_uri: nd584c290b5bb4622b066da892c701147b155
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab155
+    name: nd584c290b5bb4622b066da892c701147b155
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab156:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab156
+  nd584c290b5bb4622b066da892c701147b156:
+    class_uri: nd584c290b5bb4622b066da892c701147b156
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab156
+    name: nd584c290b5bb4622b066da892c701147b156
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab157:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab157
+  nd584c290b5bb4622b066da892c701147b157:
+    class_uri: nd584c290b5bb4622b066da892c701147b157
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab157
+    name: nd584c290b5bb4622b066da892c701147b157
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab158:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab158
+  nd584c290b5bb4622b066da892c701147b158:
+    class_uri: nd584c290b5bb4622b066da892c701147b158
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab158
+    name: nd584c290b5bb4622b066da892c701147b158
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab160:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab160
+  nd584c290b5bb4622b066da892c701147b160:
+    class_uri: nd584c290b5bb4622b066da892c701147b160
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab160
+    name: nd584c290b5bb4622b066da892c701147b160
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab161:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab161
+  nd584c290b5bb4622b066da892c701147b161:
+    class_uri: nd584c290b5bb4622b066da892c701147b161
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab161
+    name: nd584c290b5bb4622b066da892c701147b161
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab162:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab162
+  nd584c290b5bb4622b066da892c701147b162:
+    class_uri: nd584c290b5bb4622b066da892c701147b162
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab162
+    name: nd584c290b5bb4622b066da892c701147b162
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab163:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab163
+  nd584c290b5bb4622b066da892c701147b163:
+    class_uri: nd584c290b5bb4622b066da892c701147b163
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab163
+    name: nd584c290b5bb4622b066da892c701147b163
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab164:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab164
+  nd584c290b5bb4622b066da892c701147b164:
+    class_uri: nd584c290b5bb4622b066da892c701147b164
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab164
+    name: nd584c290b5bb4622b066da892c701147b164
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab165:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab165
+  nd584c290b5bb4622b066da892c701147b165:
+    class_uri: nd584c290b5bb4622b066da892c701147b165
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab165
+    name: nd584c290b5bb4622b066da892c701147b165
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab166:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab166
+  nd584c290b5bb4622b066da892c701147b166:
+    class_uri: nd584c290b5bb4622b066da892c701147b166
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab166
+    name: nd584c290b5bb4622b066da892c701147b166
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab167:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab167
+  nd584c290b5bb4622b066da892c701147b167:
+    class_uri: nd584c290b5bb4622b066da892c701147b167
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab167
+    name: nd584c290b5bb4622b066da892c701147b167
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab168:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab168
+  nd584c290b5bb4622b066da892c701147b168:
+    class_uri: nd584c290b5bb4622b066da892c701147b168
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab168
+    name: nd584c290b5bb4622b066da892c701147b168
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab169:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab169
+  nd584c290b5bb4622b066da892c701147b169:
+    class_uri: nd584c290b5bb4622b066da892c701147b169
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab169
+    name: nd584c290b5bb4622b066da892c701147b169
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab170:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab170
+  nd584c290b5bb4622b066da892c701147b170:
+    class_uri: nd584c290b5bb4622b066da892c701147b170
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab170
+    name: nd584c290b5bb4622b066da892c701147b170
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab176:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab176
+  nd584c290b5bb4622b066da892c701147b176:
+    class_uri: nd584c290b5bb4622b066da892c701147b176
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab176
+    name: nd584c290b5bb4622b066da892c701147b176
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab177:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab177
+  nd584c290b5bb4622b066da892c701147b177:
+    class_uri: nd584c290b5bb4622b066da892c701147b177
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab177
+    name: nd584c290b5bb4622b066da892c701147b177
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab178:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab178
+  nd584c290b5bb4622b066da892c701147b178:
+    class_uri: nd584c290b5bb4622b066da892c701147b178
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab178
+    name: nd584c290b5bb4622b066da892c701147b178
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab179:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab179
+  nd584c290b5bb4622b066da892c701147b179:
+    class_uri: nd584c290b5bb4622b066da892c701147b179
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab179
+    name: nd584c290b5bb4622b066da892c701147b179
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab18:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab18
+  nd584c290b5bb4622b066da892c701147b18:
+    class_uri: nd584c290b5bb4622b066da892c701147b18
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab18
+    name: nd584c290b5bb4622b066da892c701147b18
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab180:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab180
+  nd584c290b5bb4622b066da892c701147b180:
+    class_uri: nd584c290b5bb4622b066da892c701147b180
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab180
+    name: nd584c290b5bb4622b066da892c701147b180
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab181:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab181
+  nd584c290b5bb4622b066da892c701147b181:
+    class_uri: nd584c290b5bb4622b066da892c701147b181
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab181
+    name: nd584c290b5bb4622b066da892c701147b181
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab182:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab182
+  nd584c290b5bb4622b066da892c701147b182:
+    class_uri: nd584c290b5bb4622b066da892c701147b182
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab182
+    name: nd584c290b5bb4622b066da892c701147b182
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab183:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab183
+  nd584c290b5bb4622b066da892c701147b183:
+    class_uri: nd584c290b5bb4622b066da892c701147b183
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab183
+    name: nd584c290b5bb4622b066da892c701147b183
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab184:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab184
+  nd584c290b5bb4622b066da892c701147b184:
+    class_uri: nd584c290b5bb4622b066da892c701147b184
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab184
+    name: nd584c290b5bb4622b066da892c701147b184
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab185:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab185
+  nd584c290b5bb4622b066da892c701147b185:
+    class_uri: nd584c290b5bb4622b066da892c701147b185
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab185
+    name: nd584c290b5bb4622b066da892c701147b185
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab186:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab186
+  nd584c290b5bb4622b066da892c701147b186:
+    class_uri: nd584c290b5bb4622b066da892c701147b186
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab186
+    name: nd584c290b5bb4622b066da892c701147b186
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab187:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab187
+  nd584c290b5bb4622b066da892c701147b187:
+    class_uri: nd584c290b5bb4622b066da892c701147b187
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab187
+    name: nd584c290b5bb4622b066da892c701147b187
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab188:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab188
+  nd584c290b5bb4622b066da892c701147b188:
+    class_uri: nd584c290b5bb4622b066da892c701147b188
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab188
+    name: nd584c290b5bb4622b066da892c701147b188
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab189:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab189
+  nd584c290b5bb4622b066da892c701147b189:
+    class_uri: nd584c290b5bb4622b066da892c701147b189
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab189
+    name: nd584c290b5bb4622b066da892c701147b189
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab19:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab19
+  nd584c290b5bb4622b066da892c701147b19:
+    class_uri: nd584c290b5bb4622b066da892c701147b19
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab19
+    name: nd584c290b5bb4622b066da892c701147b19
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab190:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab190
+  nd584c290b5bb4622b066da892c701147b190:
+    class_uri: nd584c290b5bb4622b066da892c701147b190
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab190
+    name: nd584c290b5bb4622b066da892c701147b190
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab191:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab191
+  nd584c290b5bb4622b066da892c701147b191:
+    class_uri: nd584c290b5bb4622b066da892c701147b191
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab191
+    name: nd584c290b5bb4622b066da892c701147b191
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab192:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab192
+  nd584c290b5bb4622b066da892c701147b192:
+    class_uri: nd584c290b5bb4622b066da892c701147b192
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab192
+    name: nd584c290b5bb4622b066da892c701147b192
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab193:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab193
+  nd584c290b5bb4622b066da892c701147b193:
+    class_uri: nd584c290b5bb4622b066da892c701147b193
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab193
+    name: nd584c290b5bb4622b066da892c701147b193
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab194:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab194
+  nd584c290b5bb4622b066da892c701147b194:
+    class_uri: nd584c290b5bb4622b066da892c701147b194
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab194
+    name: nd584c290b5bb4622b066da892c701147b194
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab2:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab2
+  nd584c290b5bb4622b066da892c701147b2:
+    class_uri: nd584c290b5bb4622b066da892c701147b2
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab2
+    name: nd584c290b5bb4622b066da892c701147b2
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab20:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab20
+  nd584c290b5bb4622b066da892c701147b20:
+    class_uri: nd584c290b5bb4622b066da892c701147b20
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab20
+    name: nd584c290b5bb4622b066da892c701147b20
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab21:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab21
+  nd584c290b5bb4622b066da892c701147b21:
+    class_uri: nd584c290b5bb4622b066da892c701147b21
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab21
+    name: nd584c290b5bb4622b066da892c701147b21
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab229:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab229
+  nd584c290b5bb4622b066da892c701147b229:
+    class_uri: nd584c290b5bb4622b066da892c701147b229
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab229
+    name: nd584c290b5bb4622b066da892c701147b229
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab230:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab230
+  nd584c290b5bb4622b066da892c701147b230:
+    class_uri: nd584c290b5bb4622b066da892c701147b230
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab230
+    name: nd584c290b5bb4622b066da892c701147b230
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab246:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab246
+  nd584c290b5bb4622b066da892c701147b246:
+    class_uri: nd584c290b5bb4622b066da892c701147b246
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab246
+    name: nd584c290b5bb4622b066da892c701147b246
     title: No class (entity type) name specified
-  n5c7eaf3d722b4c5d8753116e77d7c7cab249:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab249
+  nd584c290b5bb4622b066da892c701147b249:
+    class_uri: nd584c290b5bb4622b066da892c701147b249
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab249
+    name: nd584c290b5bb4622b066da892c701147b249
     title: No class (entity type) name specified
-  n5c7eaf3d722b4c5d8753116e77d7c7cab29:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab29
+  nd584c290b5bb4622b066da892c701147b29:
+    class_uri: nd584c290b5bb4622b066da892c701147b29
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab29
+    name: nd584c290b5bb4622b066da892c701147b29
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab3:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab3
+  nd584c290b5bb4622b066da892c701147b3:
+    class_uri: nd584c290b5bb4622b066da892c701147b3
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab3
+    name: nd584c290b5bb4622b066da892c701147b3
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab30:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab30
+  nd584c290b5bb4622b066da892c701147b30:
+    class_uri: nd584c290b5bb4622b066da892c701147b30
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab30
+    name: nd584c290b5bb4622b066da892c701147b30
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab31:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab31
+  nd584c290b5bb4622b066da892c701147b31:
+    class_uri: nd584c290b5bb4622b066da892c701147b31
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab31
+    name: nd584c290b5bb4622b066da892c701147b31
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab32:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab32
+  nd584c290b5bb4622b066da892c701147b32:
+    class_uri: nd584c290b5bb4622b066da892c701147b32
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab32
+    name: nd584c290b5bb4622b066da892c701147b32
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab33:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab33
+  nd584c290b5bb4622b066da892c701147b33:
+    class_uri: nd584c290b5bb4622b066da892c701147b33
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab33
+    name: nd584c290b5bb4622b066da892c701147b33
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab34:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab34
+  nd584c290b5bb4622b066da892c701147b34:
+    class_uri: nd584c290b5bb4622b066da892c701147b34
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab34
+    name: nd584c290b5bb4622b066da892c701147b34
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab35:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab35
+  nd584c290b5bb4622b066da892c701147b35:
+    class_uri: nd584c290b5bb4622b066da892c701147b35
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab35
+    name: nd584c290b5bb4622b066da892c701147b35
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab36:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab36
+  nd584c290b5bb4622b066da892c701147b36:
+    class_uri: nd584c290b5bb4622b066da892c701147b36
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab36
+    name: nd584c290b5bb4622b066da892c701147b36
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab37:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab37
+  nd584c290b5bb4622b066da892c701147b37:
+    class_uri: nd584c290b5bb4622b066da892c701147b37
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab37
+    name: nd584c290b5bb4622b066da892c701147b37
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab38:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab38
+  nd584c290b5bb4622b066da892c701147b38:
+    class_uri: nd584c290b5bb4622b066da892c701147b38
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab38
+    name: nd584c290b5bb4622b066da892c701147b38
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab39:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab39
+  nd584c290b5bb4622b066da892c701147b39:
+    class_uri: nd584c290b5bb4622b066da892c701147b39
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab39
+    name: nd584c290b5bb4622b066da892c701147b39
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab4:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab4
+  nd584c290b5bb4622b066da892c701147b4:
+    class_uri: nd584c290b5bb4622b066da892c701147b4
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab4
+    name: nd584c290b5bb4622b066da892c701147b4
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab40:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab40
+  nd584c290b5bb4622b066da892c701147b40:
+    class_uri: nd584c290b5bb4622b066da892c701147b40
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab40
+    name: nd584c290b5bb4622b066da892c701147b40
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab41:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab41
+  nd584c290b5bb4622b066da892c701147b41:
+    class_uri: nd584c290b5bb4622b066da892c701147b41
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab41
+    name: nd584c290b5bb4622b066da892c701147b41
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab42:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab42
+  nd584c290b5bb4622b066da892c701147b42:
+    class_uri: nd584c290b5bb4622b066da892c701147b42
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab42
+    name: nd584c290b5bb4622b066da892c701147b42
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab43:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab43
+  nd584c290b5bb4622b066da892c701147b43:
+    class_uri: nd584c290b5bb4622b066da892c701147b43
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab43
+    name: nd584c290b5bb4622b066da892c701147b43
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab44:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab44
+  nd584c290b5bb4622b066da892c701147b44:
+    class_uri: nd584c290b5bb4622b066da892c701147b44
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab44
+    name: nd584c290b5bb4622b066da892c701147b44
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab45:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab45
+  nd584c290b5bb4622b066da892c701147b45:
+    class_uri: nd584c290b5bb4622b066da892c701147b45
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab45
+    name: nd584c290b5bb4622b066da892c701147b45
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab46:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab46
+  nd584c290b5bb4622b066da892c701147b46:
+    class_uri: nd584c290b5bb4622b066da892c701147b46
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab46
+    name: nd584c290b5bb4622b066da892c701147b46
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab47:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab47
+  nd584c290b5bb4622b066da892c701147b47:
+    class_uri: nd584c290b5bb4622b066da892c701147b47
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab47
+    name: nd584c290b5bb4622b066da892c701147b47
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab48:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab48
+  nd584c290b5bb4622b066da892c701147b48:
+    class_uri: nd584c290b5bb4622b066da892c701147b48
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab48
+    name: nd584c290b5bb4622b066da892c701147b48
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab49:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab49
+  nd584c290b5bb4622b066da892c701147b49:
+    class_uri: nd584c290b5bb4622b066da892c701147b49
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab49
+    name: nd584c290b5bb4622b066da892c701147b49
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab5:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab5
+  nd584c290b5bb4622b066da892c701147b5:
+    class_uri: nd584c290b5bb4622b066da892c701147b5
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab5
+    name: nd584c290b5bb4622b066da892c701147b5
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab50:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab50
+  nd584c290b5bb4622b066da892c701147b50:
+    class_uri: nd584c290b5bb4622b066da892c701147b50
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab50
+    name: nd584c290b5bb4622b066da892c701147b50
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab51:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab51
+  nd584c290b5bb4622b066da892c701147b51:
+    class_uri: nd584c290b5bb4622b066da892c701147b51
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab51
+    name: nd584c290b5bb4622b066da892c701147b51
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab52:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab52
+  nd584c290b5bb4622b066da892c701147b52:
+    class_uri: nd584c290b5bb4622b066da892c701147b52
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab52
+    name: nd584c290b5bb4622b066da892c701147b52
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab53:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab53
+  nd584c290b5bb4622b066da892c701147b53:
+    class_uri: nd584c290b5bb4622b066da892c701147b53
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab53
+    name: nd584c290b5bb4622b066da892c701147b53
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab54:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab54
+  nd584c290b5bb4622b066da892c701147b54:
+    class_uri: nd584c290b5bb4622b066da892c701147b54
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab54
+    name: nd584c290b5bb4622b066da892c701147b54
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab55:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab55
+  nd584c290b5bb4622b066da892c701147b55:
+    class_uri: nd584c290b5bb4622b066da892c701147b55
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab55
+    name: nd584c290b5bb4622b066da892c701147b55
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab56:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab56
+  nd584c290b5bb4622b066da892c701147b56:
+    class_uri: nd584c290b5bb4622b066da892c701147b56
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab56
+    name: nd584c290b5bb4622b066da892c701147b56
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab57:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab57
+  nd584c290b5bb4622b066da892c701147b57:
+    class_uri: nd584c290b5bb4622b066da892c701147b57
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab57
+    name: nd584c290b5bb4622b066da892c701147b57
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab58:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab58
+  nd584c290b5bb4622b066da892c701147b58:
+    class_uri: nd584c290b5bb4622b066da892c701147b58
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab58
+    name: nd584c290b5bb4622b066da892c701147b58
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab59:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab59
+  nd584c290b5bb4622b066da892c701147b59:
+    class_uri: nd584c290b5bb4622b066da892c701147b59
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab59
+    name: nd584c290b5bb4622b066da892c701147b59
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab6:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab6
+  nd584c290b5bb4622b066da892c701147b6:
+    class_uri: nd584c290b5bb4622b066da892c701147b6
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab6
+    name: nd584c290b5bb4622b066da892c701147b6
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab60:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab60
+  nd584c290b5bb4622b066da892c701147b60:
+    class_uri: nd584c290b5bb4622b066da892c701147b60
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab60
+    name: nd584c290b5bb4622b066da892c701147b60
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab61:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab61
+  nd584c290b5bb4622b066da892c701147b61:
+    class_uri: nd584c290b5bb4622b066da892c701147b61
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab61
+    name: nd584c290b5bb4622b066da892c701147b61
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab7:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab7
+  nd584c290b5bb4622b066da892c701147b7:
+    class_uri: nd584c290b5bb4622b066da892c701147b7
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab7
+    name: nd584c290b5bb4622b066da892c701147b7
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab72:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab72
+  nd584c290b5bb4622b066da892c701147b72:
+    class_uri: nd584c290b5bb4622b066da892c701147b72
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab72
+    name: nd584c290b5bb4622b066da892c701147b72
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab73:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab73
+  nd584c290b5bb4622b066da892c701147b73:
+    class_uri: nd584c290b5bb4622b066da892c701147b73
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab73
+    name: nd584c290b5bb4622b066da892c701147b73
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab74:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab74
+  nd584c290b5bb4622b066da892c701147b74:
+    class_uri: nd584c290b5bb4622b066da892c701147b74
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab74
+    name: nd584c290b5bb4622b066da892c701147b74
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab75:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab75
+  nd584c290b5bb4622b066da892c701147b75:
+    class_uri: nd584c290b5bb4622b066da892c701147b75
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab75
+    name: nd584c290b5bb4622b066da892c701147b75
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab76:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab76
+  nd584c290b5bb4622b066da892c701147b76:
+    class_uri: nd584c290b5bb4622b066da892c701147b76
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab76
+    name: nd584c290b5bb4622b066da892c701147b76
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab77:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab77
+  nd584c290b5bb4622b066da892c701147b77:
+    class_uri: nd584c290b5bb4622b066da892c701147b77
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab77
+    name: nd584c290b5bb4622b066da892c701147b77
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab78:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab78
+  nd584c290b5bb4622b066da892c701147b78:
+    class_uri: nd584c290b5bb4622b066da892c701147b78
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab78
+    name: nd584c290b5bb4622b066da892c701147b78
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab79:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab79
+  nd584c290b5bb4622b066da892c701147b79:
+    class_uri: nd584c290b5bb4622b066da892c701147b79
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab79
+    name: nd584c290b5bb4622b066da892c701147b79
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab8:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab8
+  nd584c290b5bb4622b066da892c701147b8:
+    class_uri: nd584c290b5bb4622b066da892c701147b8
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab8
+    name: nd584c290b5bb4622b066da892c701147b8
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab80:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab80
+  nd584c290b5bb4622b066da892c701147b80:
+    class_uri: nd584c290b5bb4622b066da892c701147b80
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab80
+    name: nd584c290b5bb4622b066da892c701147b80
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab81:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab81
+  nd584c290b5bb4622b066da892c701147b81:
+    class_uri: nd584c290b5bb4622b066da892c701147b81
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab81
+    name: nd584c290b5bb4622b066da892c701147b81
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab82:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab82
+  nd584c290b5bb4622b066da892c701147b82:
+    class_uri: nd584c290b5bb4622b066da892c701147b82
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab82
+    name: nd584c290b5bb4622b066da892c701147b82
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab83:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab83
+  nd584c290b5bb4622b066da892c701147b83:
+    class_uri: nd584c290b5bb4622b066da892c701147b83
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab83
+    name: nd584c290b5bb4622b066da892c701147b83
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab89:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab89
+  nd584c290b5bb4622b066da892c701147b89:
+    class_uri: nd584c290b5bb4622b066da892c701147b89
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab89
+    name: nd584c290b5bb4622b066da892c701147b89
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab93:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab93
+  nd584c290b5bb4622b066da892c701147b93:
+    class_uri: nd584c290b5bb4622b066da892c701147b93
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab93
+    name: nd584c290b5bb4622b066da892c701147b93
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab94:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab94
+  nd584c290b5bb4622b066da892c701147b94:
+    class_uri: nd584c290b5bb4622b066da892c701147b94
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab94
+    name: nd584c290b5bb4622b066da892c701147b94
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab95:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab95
+  nd584c290b5bb4622b066da892c701147b95:
+    class_uri: nd584c290b5bb4622b066da892c701147b95
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab95
+    name: nd584c290b5bb4622b066da892c701147b95
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab96:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab96
+  nd584c290b5bb4622b066da892c701147b96:
+    class_uri: nd584c290b5bb4622b066da892c701147b96
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab96
+    name: nd584c290b5bb4622b066da892c701147b96
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab97:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab97
+  nd584c290b5bb4622b066da892c701147b97:
+    class_uri: nd584c290b5bb4622b066da892c701147b97
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab97
+    name: nd584c290b5bb4622b066da892c701147b97
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab98:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab98
+  nd584c290b5bb4622b066da892c701147b98:
+    class_uri: nd584c290b5bb4622b066da892c701147b98
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab98
+    name: nd584c290b5bb4622b066da892c701147b98
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
-  n5c7eaf3d722b4c5d8753116e77d7c7cab99:
-    class_uri: n5c7eaf3d722b4c5d8753116e77d7c7cab99
+  nd584c290b5bb4622b066da892c701147b99:
+    class_uri: nd584c290b5bb4622b066da892c701147b99
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    name: n5c7eaf3d722b4c5d8753116e77d7c7cab99
+    name: nd584c290b5bb4622b066da892c701147b99
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
   owl_AnnotationProperty:
@@ -1116,19 +1116,19 @@ classes:
       owl_cardinality:
         annotations:
           int32: 2
-          unsignedInteger: 12
+          unsignedinteger: 12
       owl_maxCardinality:
         annotations:
           int32: 22
           integer: 35
-          unsignedInteger: 27
+          unsignedinteger: 27
       owl_maxQualifiedCardinality:
         annotations:
-          unsignedInteger: 2
+          unsignedinteger: 2
       owl_minCardinality:
         annotations:
           int32: 4
-          unsignedInteger: 34
+          unsignedinteger: 34
       owl_onClass:
         annotations:
           owl_Class: 2
@@ -1144,14 +1144,14 @@ classes:
         annotations:
           string: 1
     slots:
-    - owl_onProperty
-    - owl_minCardinality
-    - owl_cardinality
-    - owl_allValuesFrom
-    - xsd_pattern
-    - owl_maxQualifiedCardinality
-    - owl_onClass
     - owl_maxCardinality
+    - owl_maxQualifiedCardinality
+    - owl_onProperty
+    - owl_cardinality
+    - xsd_pattern
+    - owl_allValuesFrom
+    - owl_minCardinality
+    - owl_onClass
     title: No class (type) name specified
   owl_Thing:
     class_uri: owl:Thing
@@ -1164,7 +1164,7 @@ classes:
     class_uri: qudt:AbstractQuantityKind
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab4
+    is_a: nd584c290b5bb4622b066da892c701147b4
     name: qudt_AbstractQuantityKind
     source: http://qudt.org/schema/qudt
     title: Quantity Kind (abstract)
@@ -1213,8 +1213,8 @@ classes:
     slots:
     - rdfs_isDefinedBy
     - rdfs_comment
-    - rdfs_subClassOf
     - rdfs_label
+    - rdfs_subClassOf
     source: http://qudt.org/schema/qudt
     title: Aspect Class
   qudt_BaseDimensionMagnitude:
@@ -1224,7 +1224,7 @@ classes:
       \ for a base quantiy kind such as mass, length and time.</p>\u240A<p class=\"\
       lm-para\">DEPRECATED - each exponent is expressed as a property. Keep until\
       \ a validaiton of this has been done.</p>"
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab8
+    is_a: nd584c290b5bb4622b066da892c701147b8
     name: qudt_BaseDimensionMagnitude
     source: http://qudt.org/schema/qudt
     title: Base Dimension Magnitude
@@ -1260,8 +1260,8 @@ classes:
         annotations:
           string: 1
     slots:
-    - qudt_bits
     - rdfs_isDefinedBy
+    - qudt_bits
     - rdfs_label
     source: http://qudt.org/schema/qudt
     title: Bit Encoding
@@ -1279,18 +1279,18 @@ classes:
           integer: 1
       qudt_bytes:
         annotations:
-          integer: 2
+          integer: 1
       rdfs_isDefinedBy:
         annotations:
           owl_Ontology: 4
       rdfs_label:
         annotations:
-          string: 3
+          string: 2
     slots:
     - rdfs_isDefinedBy
     - qudt_bits
-    - dc_description
     - rdfs_label
+    - dc_description
     - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Boolean encoding type
@@ -1304,13 +1304,19 @@ classes:
     is_a: qudt_Encoding
     name: qudt_ByteEncodingType
     slot_usage:
+      qudt_bytes:
+        annotations:
+          integer: 1
       rdfs_isDefinedBy:
         annotations:
           owl_Ontology: 1
+      rdfs_label:
+        annotations:
+          string: 1
     slots:
     - rdfs_isDefinedBy
-    - qudt_bytes
     - rdfs_label
+    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Byte Encoding
   qudt_CardinalityType:
@@ -1324,7 +1330,7 @@ classes:
       \  There are two approaches to cardinality: one which compares sets directly\
       \ using bijections and injections,\u240A   and another which uses cardinal numbers.\u240A\
       \  "
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab13
+    is_a: nd584c290b5bb4622b066da892c701147b13
     name: qudt_CardinalityType
     slot_usage:
       dct_description:
@@ -1344,10 +1350,10 @@ classes:
           string: 3
     slots:
     - rdfs_isDefinedBy
-    - http___www.linkedmodel.org_schema_dtype#literal
     - qudt_informativeReference
     - dct_description
     - rdfs_label
+    - http___www.linkedmodel.org_schema_dtype#literal
     source: http://qudt.org/schema/qudt
     title: Cardinality Type
   qudt_CharEncodingType:
@@ -1374,16 +1380,16 @@ classes:
           string: 1
     slots:
     - rdfs_isDefinedBy
-    - qudt_bytes
-    - dc_description
     - rdfs_label
+    - dc_description
+    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Char Encoding Type
   qudt_Citation:
     class_uri: qudt:Citation
     conforms_to: No schema conformance document specified
     description: Provides a simple way of making citations.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab19
+    is_a: nd584c290b5bb4622b066da892c701147b19
     name: qudt_Citation
     source: http://qudt.org/schema/qudt
     title: Citation
@@ -1391,7 +1397,7 @@ classes:
     class_uri: qudt:Comment
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab21
+    is_a: nd584c290b5bb4622b066da892c701147b21
     name: qudt_Comment
     source: http://qudt.org/schema/qudt
     title: Comment
@@ -1406,7 +1412,7 @@ classes:
     class_uri: qudt:ConstantValue
     conforms_to: No schema conformance document specified
     description: Used to specify the values of a constant.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab29
+    is_a: nd584c290b5bb4622b066da892c701147b29
     name: qudt_ConstantValue
     source: http://qudt.org/schema/qudt
     title: Constant value
@@ -1414,7 +1420,7 @@ classes:
     class_uri: qudt:ContextualUnit
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab30
+    is_a: nd584c290b5bb4622b066da892c701147b30
     name: qudt_ContextualUnit
     source: http://qudt.org/schema/qudt
     title: Contextual Unit
@@ -1431,7 +1437,7 @@ classes:
     class_uri: qudt:CurrencyUnit
     conforms_to: No schema conformance document specified
     description: Used for all units that express currency.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab32
+    is_a: nd584c290b5bb4622b066da892c701147b32
     name: qudt_CurrencyUnit
     source: http://qudt.org/schema/qudt
     title: Currency Unit
@@ -1441,7 +1447,7 @@ classes:
     description: <p><em>Data Encoding</em> expresses the properties that specify how
       data is represented at the bit and byte level. These properties are applicable
       to describing raw data.</p>
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab37
+    is_a: nd584c290b5bb4622b066da892c701147b37
     name: qudt_DataEncoding
     source: http://qudt.org/schema/qudt
     title: Data Encoding
@@ -1451,7 +1457,7 @@ classes:
     description: "\u240A  <p>A <em>Data Item</em> holds a value that maybe a scalar\
       \ or structured datatype.\u240A  <em>Quantity Value</em> specifies which case\
       \ applies.\u240A  </p>"
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab39
+    is_a: nd584c290b5bb4622b066da892c701147b39
     name: qudt_DataItem
     source: http://qudt.org/schema/qudt
     title: Data Item
@@ -1467,7 +1473,7 @@ classes:
       \ types (of either kind).\u240A  For example lists, arrays, structures, unions.\
       \ \u240A  Some languages provide strong typing, others allow implicit type conversion\
       \ and/or explicit type conversion.\u240A  </p>"
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab60
+    is_a: nd584c290b5bb4622b066da892c701147b60
     name: qudt_Datatype
     source: http://qudt.org/schema/qudt
     title: QUDT Datatype
@@ -1478,7 +1484,7 @@ classes:
     conforms_to: No schema conformance document specified
     description: Date Time encodings are logical encodings for expressing date/time
       quantities as strings by applying unambiguous formatting and parsing rules.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab61
+    is_a: nd584c290b5bb4622b066da892c701147b61
     name: qudt_DateTimeStringEncodingType
     slot_usage:
       qudt_allowedPattern:
@@ -1555,9 +1561,9 @@ classes:
         annotations:
           string: 2
     slots:
-    - http___www.linkedmodel.org_schema_dtype#literal
     - rdfs_isDefinedBy
     - rdfs_label
+    - http___www.linkedmodel.org_schema_dtype#literal
     source: http://qudt.org/schema/qudt
     title: Endian Type
   qudt_EnumeratedValue:
@@ -1584,7 +1590,7 @@ classes:
       \ a member of an enumeration. This allows enumerations to be enumerated in a\
       \ selection. Enumerations are also subclasses of <em>Scalar Datatype</em>. This\
       \ allows them to be used as the reference of a datatype specification.</p>"
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab76
+    is_a: nd584c290b5bb4622b066da892c701147b76
     name: qudt_Enumeration
     source: http://qudt.org/schema/qudt
     title: Enumeration
@@ -1600,7 +1606,7 @@ classes:
     class_uri: qudt:Figure
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab83
+    is_a: nd584c290b5bb4622b066da892c701147b83
     name: qudt_Figure
     source: http://qudt.org/schema/qudt
     title: Figure
@@ -1625,8 +1631,8 @@ classes:
           string: 3
     slots:
     - rdfs_isDefinedBy
-    - qudt_bytes
     - rdfs_label
+    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Floating Point Encoding
   qudt_IntegerEncodingType:
@@ -1649,8 +1655,8 @@ classes:
           string: 4
     slots:
     - rdfs_isDefinedBy
-    - qudt_bytes
     - rdfs_label
+    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Integer Encoding
   qudt_IntervalScale:
@@ -1730,7 +1736,7 @@ classes:
     class_uri: qudt:OrderedType
     conforms_to: No schema conformance document specified
     description: Describes how a data or information structure is ordered.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab89
+    is_a: nd584c290b5bb4622b066da892c701147b89
     name: qudt_OrderedType
     slot_usage:
       http___www.linkedmodel.org_schema_dtype#literal:
@@ -1746,10 +1752,10 @@ classes:
         annotations:
           string: 3
     slots:
-    - http___www.linkedmodel.org_schema_dtype#literal
     - rdfs_isDefinedBy
     - qudt_plainTextDescription
     - rdfs_label
+    - http___www.linkedmodel.org_schema_dtype#literal
     source: http://qudt.org/schema/qudt
     title: Ordered type
   qudt_OrdinalScale:
@@ -1763,7 +1769,7 @@ classes:
       when measuring truth value, and, on the other hand, non-dichotomous data consisting
       of a spectrum of values, such as 'completely agree', 'mostly agree', 'mostly
       disagree', 'completely disagree' when measuring opinion.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab93
+    is_a: nd584c290b5bb4622b066da892c701147b93
     name: qudt_OrdinalScale
     see_also:
     - http://qudt.org/schema/qudt/IntervalScale
@@ -1775,7 +1781,7 @@ classes:
     class_uri: qudt:Organization
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab94
+    is_a: nd584c290b5bb4622b066da892c701147b94
     name: qudt_Organization
     source: http://qudt.org/schema/qudt
     title: Organization
@@ -1791,7 +1797,7 @@ classes:
       \ permittivity of free space \u03B50, and the elementary charge e. Physical\
       \ constants can take many dimensional forms, or may be dimensionless depending\
       \ on the system of quantities and units used."
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab108
+    is_a: nd584c290b5bb4622b066da892c701147b108
     name: qudt_PhysicalConstant
     source: http://qudt.org/schema/qudt
     title: Physical Constant
@@ -1815,7 +1821,7 @@ classes:
     conforms_to: No schema conformance document specified
     description: <p><em>Quantifiable</em> ascribes to some thing the capability of
       being measured, observed, or counted.</p>
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab127
+    is_a: nd584c290b5bb4622b066da892c701147b127
     name: qudt_Quantifiable
     source: http://qudt.org/schema/qudt
     title: Quantifiable
@@ -1834,7 +1840,7 @@ classes:
       as length, mass, time, force, energy, power, electric charge, etc. Less familiar
       examples include currency, interest rate, price to earning ratio, and information
       capacity.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab146
+    is_a: nd584c290b5bb4622b066da892c701147b146
     name: qudt_QuantityKind
     source: http://qudt.org/schema/qudt
     title: Quantity Kind
@@ -1855,7 +1861,7 @@ classes:
       \ kind $\\it{speed}$ is $\\boxed{length/time}$, $L/T$ or $LT^{-1}$, and the\
       \ dimension of the physical quantity kind force is $\\boxed{mass \\times acceleration}$\
       \ or $\\boxed{mass \\times (length/time)/time}$, $ML/T^2$ or $MLT^{-2}$ respectively.</p>"
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab157
+    is_a: nd584c290b5bb4622b066da892c701147b157
     name: qudt_QuantityKindDimensionVector
     source: http://qudt.org/schema/qudt
     title: Quantity Kind Dimension Vector
@@ -1935,7 +1941,7 @@ classes:
       \ kinds. \u240A  It specializes $\\boxed{dtype:EnumeratedValue}$ by constrinaing\
       \ $\\boxed{dtype:value}$ to instances of $\\boxed{qudt:QuantityKind}$.\u240A\
       \  "
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab158
+    is_a: nd584c290b5bb4622b066da892c701147b158
     name: qudt_QuantityType
     source: http://qudt.org/schema/qudt
     title: Quantity type
@@ -1973,7 +1979,7 @@ classes:
     class_uri: qudt:Rule
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab161
+    is_a: nd584c290b5bb4622b066da892c701147b161
     name: qudt_Rule
     source: http://qudt.org/schema/qudt
     title: Rule
@@ -1991,7 +1997,7 @@ classes:
     description: Scalar data types are those that have a single value. The permissible
       values are defined over a domain that may be integers, float, character or boolean.
       Often a scalar data type is referred to as a primitive data type.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab170
+    is_a: nd584c290b5bb4622b066da892c701147b170
     name: qudt_ScalarDatatype
     source: http://qudt.org/schema/qudt
     title: Scalar Datatype
@@ -2006,7 +2012,7 @@ classes:
     class_uri: qudt:ScaleType
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab178
+    is_a: nd584c290b5bb4622b066da892c701147b178
     name: qudt_ScaleType
     source: http://qudt.org/schema/qudt
     title: Scale type
@@ -2028,9 +2034,9 @@ classes:
         annotations:
           string: 2
     slots:
-    - http___www.linkedmodel.org_schema_dtype#literal
     - rdfs_isDefinedBy
     - rdfs_label
+    - http___www.linkedmodel.org_schema_dtype#literal
     title: No class (type) name specified
   qudt_SolidAngleUnit:
     class_uri: qudt:SolidAngleUnit
@@ -2092,7 +2098,7 @@ classes:
       \ system, then the unit system must define at least one unit for each quantity\
       \ kind.  From a scientific point of view, the division of quantities into base\
       \ quantities and derived quantities is a matter of convention."
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab185
+    is_a: nd584c290b5bb4622b066da892c701147b185
     name: qudt_SystemOfQuantityKinds
     source: http://qudt.org/schema/qudt
     title: System of Quantity Kinds
@@ -2105,7 +2111,7 @@ classes:
       unit not included in the system. If the unit system is explicitly associated
       with a quantity kind system, then the unit system must define at least one unit
       for each quantity kind.
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab194
+    is_a: nd584c290b5bb4622b066da892c701147b194
     name: qudt_SystemOfUnits
     source: http://qudt.org/schema/qudt
     title: System of Units
@@ -2128,7 +2134,7 @@ classes:
     class_uri: qudt:UserQuantityKind
     conforms_to: No schema conformance document specified
     description: No class (type) description specified
-    is_a: n5c7eaf3d722b4c5d8753116e77d7c7cab230
+    is_a: nd584c290b5bb4622b066da892c701147b230
     name: qudt_UserQuantityKind
     source: http://qudt.org/schema/qudt
     title: User Quantity Kind
@@ -2199,14 +2205,14 @@ classes:
           uri: 4
     slots:
     - rdfs_isDefinedBy
-    - owl_onDatatype
-    - rdfs_subClassOf
+    - dct_source
     - rdfs_comment
     - dct_description
-    - rdfs_seeAlso
     - owl_equivalentClass
+    - rdfs_subClassOf
     - rdfs_label
-    - dct_source
+    - rdfs_seeAlso
+    - owl_onDatatype
     title: No class (type) name specified
   vaem_#CatalogEntry:
     annotations:
@@ -2322,34 +2328,34 @@ classes:
         annotations:
           uri: 1
     slots:
-    - dct_creator
-    - qudt_informativeReference
-    - vaem_#namespace
-    - vaem_#owner
+    - vaem_#hasGraphRole
+    - vaem_#namespacePrefix
+    - dct_modified
+    - dct_description
     - vaem_#hasSteward
+    - vaem_#turtleFileURL
+    - dct_created
+    - vaem_#isMetadataFor
+    - vaem_#usesNonImportedResource
+    - vaem_#previousPublishedVersion
+    - dct_rights
     - rdfs_isDefinedBy
+    - dct_subject
+    - vaem_#hasOwner
+    - vaem_#withAttributionTo
+    - vaem_#graphName
+    - vaem_#intent
+    - qudt_informativeReference
+    - vaem_#owner
+    - dct_contributor
+    - owl_versionIRI
+    - dct_creator
+    - vaem_#graphTitle
     - vaem_#logo
     - dct_title
-    - dct_modified
-    - vaem_#withAttributionTo
-    - vaem_#latestPublishedVersion
     - rdfs_label
-    - vaem_#turtleFileURL
-    - owl_versionIRI
-    - dct_contributor
-    - vaem_#graphTitle
-    - vaem_#namespacePrefix
-    - vaem_#isMetadataFor
-    - dct_created
-    - vaem_#hasOwner
-    - vaem_#previousPublishedVersion
-    - dct_description
-    - vaem_#intent
-    - vaem_#usesNonImportedResource
-    - vaem_#hasGraphRole
-    - vaem_#graphName
-    - dct_subject
-    - dct_rights
+    - vaem_#namespace
+    - vaem_#latestPublishedVersion
     title: No class (type) name specified
   vaem_#Party:
     annotations:
@@ -2377,20 +2383,20 @@ classes:
     slots:
     - rdfs_isDefinedBy
     - vaem_#website
+    - vaem_#graphName
     - dct_description
     - rdfs_label
-    - vaem_#graphName
     title: No class (type) name specified
 conforms_to: No schema conformance document specified
-created_on: '2025-05-22T07:17:19.296590'
+created_on: '2025-05-22T08:27:53.049788'
 description: No schema description specified
 id: qudt
 imports:
 - https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/owl
-- https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/rdf-rdfs
-- linkml:types
 - https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types
-last_updated_on: '2025-05-22T07:17:19.296590'
+- linkml:types
+- https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/rdf-rdfs
+last_updated_on: '2025-05-22T08:27:53.049788'
 license: No schema license specified
 name: qudt
 prefixes:
@@ -2478,28 +2484,10 @@ slots:
       count: 6
     any_of:
     - range: rdf_HTML
-    - range: string
     - range: qudt_LatexString
+    - range: string
     description: No slot (predicate) description specified
     examples:
-    - object:
-        example_object: "\n  A set of numbers is called countably infinite if there\
-          \ is a way to enumerate them. \n  Formally this is done with a bijection\
-          \ function that associates each number in the set with exactly one of the\
-          \ positive integers.\n  The set of all fractions is also countably infinite.\n\
-          \  In other words, any set $X$ that has the same cardinality as the set\
-          \ of the natural numbers,\n   or $| X | \\; =  \\; | \\mathbb N | \\; =\
-          \ \\; \\aleph0$, is said to be a countably infinite set.\n  "
-        example_object_type: qudt_LatexString
-        example_predicate: dct:description
-        example_subject: qudt:CT_COUNTABLY-INFINITE
-        example_subject_type: qudt_CardinalityType
-    - object:
-        example_object: QUDT is a non-profit organization that governs the QUDT ontologies.
-        example_object_type: rdf_HTML
-        example_predicate: dct:description
-        example_subject: vaem:#QUDT
-        example_subject_type: vaem_#Party
     - object:
         example_object: '<p class="lm-para">The QUDT, or "Quantity, Unit, Dimension
           and Type" schema defines the base classes properties, and restrictions used
@@ -2536,6 +2524,18 @@ slots:
         example_subject: vaem:#GMD_QUDT-SCHEMA
         example_subject_type: vaem_#GraphMetaData
     - object:
+        example_object: "\n  A set of numbers is called countably infinite if there\
+          \ is a way to enumerate them. \n  Formally this is done with a bijection\
+          \ function that associates each number in the set with exactly one of the\
+          \ positive integers.\n  The set of all fractions is also countably infinite.\n\
+          \  In other words, any set $X$ that has the same cardinality as the set\
+          \ of the natural numbers,\n   or $| X | \\; =  \\; | \\mathbb N | \\; =\
+          \ \\; \\aleph0$, is said to be a countably infinite set.\n  "
+        example_object_type: qudt_LatexString
+        example_predicate: dct:description
+        example_subject: qudt:CT_COUNTABLY-INFINITE
+        example_subject_type: qudt_CardinalityType
+    - object:
         example_object: A datatype that is the union of numeric xsd data types. "numericUnion"
           is equivalent to the xsd specification that uses an xsd:union of memberTypes="xsd:decimal
           xsd:double xsd:float xsd:integer".
@@ -2543,6 +2543,12 @@ slots:
         example_predicate: dct:description
         example_subject: qudt:valueUnion
         example_subject_type: rdfs_Datatype
+    - object:
+        example_object: QUDT is a non-profit organization that governs the QUDT ontologies.
+        example_object_type: rdf_HTML
+        example_predicate: dct:description
+        example_subject: vaem:#QUDT
+        example_subject_type: vaem_#Party
     name: dct_description
     range: Any
     slot_uri: dct:description
@@ -2559,8 +2565,8 @@ slots:
     annotations:
       count: 1
     any_of:
-    - range: date
     - range: datetime
+    - range: date
     description: No slot (predicate) description specified
     examples:
     - object:
@@ -2661,23 +2667,23 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
+        example_object: signed
+        example_object_type: string
+        example_predicate: http://www.linkedmodel.org/schema/dtype#literal
+        example_subject: qudt:SIGNED
+        example_subject_type: qudt_SignednessType
+    - object:
         example_object: countable
         example_object_type: string
         example_predicate: http://www.linkedmodel.org/schema/dtype#literal
         example_subject: qudt:CT_COUNTABLY-INFINITE
         example_subject_type: qudt_CardinalityType
     - object:
-        example_object: unordered
+        example_object: total
         example_object_type: string
         example_predicate: http://www.linkedmodel.org/schema/dtype#literal
-        example_subject: qudt:Unordered
+        example_subject: qudt:TotallyOrdered
         example_subject_type: qudt_OrderedType
-    - object:
-        example_object: unsigned
-        example_object_type: string
-        example_predicate: http://www.linkedmodel.org/schema/dtype#literal
-        example_subject: qudt:UNSIGNED
-        example_subject_type: qudt_SignednessType
     - object:
         example_object: big
         example_object_type: string
@@ -2693,28 +2699,28 @@ slots:
     annotations:
       count: 75
     any_of:
-    - range: uri
     - range: rdfs_Datatype
+    - range: uri
     - range: owl_Class
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: xsd:string
-        example_object_type: uri
-        example_predicate: owl:allValuesFrom
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab135
-        example_subject_type: owl_Restriction
-    - object:
-        example_object: qudt:QuantityKind
+        example_object: qudt:OrderedType
         example_object_type: owl_Class
         example_predicate: owl:allValuesFrom
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab200
+        example_subject: nd584c290b5bb4622b066da892c701147b42
+        example_subject_type: owl_Restriction
+    - object:
+        example_object: xsd:float
+        example_object_type: uri
+        example_predicate: owl:allValuesFrom
+        example_subject: nd584c290b5bb4622b066da892c701147b6
         example_subject_type: owl_Restriction
     - object:
         example_object: qudt:UCUMcs-term
         example_object_type: rdfs_Datatype
         example_predicate: owl:allValuesFrom
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab110
+        example_subject: nd584c290b5bb4622b066da892c701147b110
         example_subject_type: owl_Restriction
     range: Any
     slot_uri: owl:allValuesFrom
@@ -2722,21 +2728,21 @@ slots:
     annotations:
       count: 14
     any_of:
-    - range: unsignedInteger
     - range: int32
+    - range: unsignedinteger
     description: No slot (predicate) description specified
     examples:
     - object:
         example_object: '1'
-        example_object_type: unsignedInteger
+        example_object_type: int32
         example_predicate: owl:cardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab93
+        example_subject: nd584c290b5bb4622b066da892c701147b8
         example_subject_type: owl_Restriction
     - object:
         example_object: '1'
-        example_object_type: int32
+        example_object_type: unsignedinteger
         example_predicate: owl:cardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab8
+        example_subject: nd584c290b5bb4622b066da892c701147b155
         example_subject_type: owl_Restriction
     range: Any
     slot_uri: owl:cardinality
@@ -2749,13 +2755,13 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: n5c7eaf3d722b4c5d8753116e77d7c7cab236
+        example_object: nd584c290b5bb4622b066da892c701147b236
         example_object_type: rdfs_Datatype
         example_predicate: owl:equivalentClass
         example_subject: qudt:floatPercentage
         example_subject_type: rdfs_Datatype
     - object:
-        example_object: n5c7eaf3d722b4c5d8753116e77d7c7cab249
+        example_object: nd584c290b5bb4622b066da892c701147b249
         example_object_type: owl_Class
         example_predicate: owl:equivalentClass
         example_subject: qudt:valueUnion
@@ -2766,28 +2772,28 @@ slots:
     annotations:
       count: 84
     any_of:
-    - range: unsignedInteger
-    - range: integer
     - range: int32
+    - range: integer
+    - range: unsignedinteger
     description: No slot (predicate) description specified
     examples:
     - object:
         example_object: '1'
-        example_object_type: unsignedInteger
-        example_predicate: owl:maxCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab2
-        example_subject_type: owl_Restriction
-    - object:
-        example_object: '1'
         example_object_type: integer
         example_predicate: owl:maxCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab169
+        example_subject: nd584c290b5bb4622b066da892c701147b31
         example_subject_type: owl_Restriction
     - object:
         example_object: '1'
         example_object_type: int32
         example_predicate: owl:maxCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab20
+        example_subject: nd584c290b5bb4622b066da892c701147b215
+        example_subject_type: owl_Restriction
+    - object:
+        example_object: '1'
+        example_object_type: unsignedinteger
+        example_predicate: owl:maxCardinality
+        example_subject: nd584c290b5bb4622b066da892c701147b2
         example_subject_type: owl_Restriction
     range: Any
     slot_uri: owl:maxCardinality
@@ -2798,31 +2804,31 @@ slots:
     examples:
     - object:
         example_object: '1'
-        example_object_type: unsignedInteger
+        example_object_type: unsignedinteger
         example_predicate: owl:maxQualifiedCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab139
+        example_subject: nd584c290b5bb4622b066da892c701147b139
         example_subject_type: owl_Restriction
-    range: unsignedInteger
+    range: unsignedinteger
     slot_uri: owl:maxQualifiedCardinality
   owl_minCardinality:
     annotations:
       count: 38
     any_of:
-    - range: unsignedInteger
     - range: int32
+    - range: unsignedinteger
     description: No slot (predicate) description specified
     examples:
     - object:
         example_object: '0'
-        example_object_type: unsignedInteger
+        example_object_type: unsignedinteger
         example_predicate: owl:minCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab4
+        example_subject: nd584c290b5bb4622b066da892c701147b226
         example_subject_type: owl_Restriction
     - object:
         example_object: '0'
         example_object_type: int32
         example_predicate: owl:minCardinality
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab112
+        example_subject: nd584c290b5bb4622b066da892c701147b71
         example_subject_type: owl_Restriction
     range: Any
     slot_uri: owl:minCardinality
@@ -2835,7 +2841,7 @@ slots:
         example_object: qudt:QuantityKindDimensionVector
         example_object_type: owl_Class
         example_predicate: owl:onClass
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab139
+        example_subject: nd584c290b5bb4622b066da892c701147b139
         example_subject_type: owl_Restriction
     range: owl_Class
     slot_uri: owl:onClass
@@ -2856,49 +2862,49 @@ slots:
     annotations:
       count: 213
     any_of:
-    - range: rdf_Property
-    - range: owl_ObjectProperty
     - range: owl_FunctionalProperty
-    - range: uri
+    - range: owl_ObjectProperty
     - range: owl_DatatypeProperty
+    - range: uri
     - range: qudt_SymmetricRelation
+    - range: rdf_Property
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: qudt:symbol
-        example_object_type: owl_DatatypeProperty
-        example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab2
-        example_subject_type: owl_Restriction
-    - object:
-        example_object: qudt:currencyExponent
+        example_object: qudt:currencyCode
         example_object_type: owl_FunctionalProperty
         example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab32
+        example_subject: nd584c290b5bb4622b066da892c701147b31
         example_subject_type: owl_Restriction
     - object:
-        example_object: qudt:hasQuantityKind
+        example_object: qudt:currencyCode
+        example_object_type: owl_DatatypeProperty
+        example_predicate: owl:onProperty
+        example_subject: nd584c290b5bb4622b066da892c701147b31
+        example_subject_type: owl_Restriction
+    - object:
+        example_object: qudt:cName
+        example_object_type: rdf_Property
+        example_predicate: owl:onProperty
+        example_subject: nd584c290b5bb4622b066da892c701147b46
+        example_subject_type: owl_Restriction
+    - object:
+        example_object: qudt:orderedType
         example_object_type: owl_ObjectProperty
         example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab200
+        example_subject: nd584c290b5bb4622b066da892c701147b42
         example_subject_type: owl_Restriction
     - object:
         example_object: qudt:exactMatch
         example_object_type: qudt_SymmetricRelation
         example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab209
+        example_subject: nd584c290b5bb4622b066da892c701147b109
         example_subject_type: owl_Restriction
     - object:
-        example_object: qudt:ansiSQLName
-        example_object_type: rdf_Property
-        example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab43
-        example_subject_type: owl_Restriction
-    - object:
-        example_object: skos:broader
+        example_object: http://www.linkedmodel.org/schema/dtype#value
         example_object_type: uri
         example_predicate: owl:onProperty
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab1
+        example_subject: nd584c290b5bb4622b066da892c701147b158
         example_subject_type: owl_Restriction
     range: Any
     slot_uri: owl:onProperty
@@ -3136,14 +3142,14 @@ slots:
         example_object: '1'
         example_object_type: integer
         example_predicate: qudt:bits
-        example_subject: qudt:BitEncoding
-        example_subject_type: qudt_BitEncodingType
+        example_subject: qudt:BooleanEncoding
+        example_subject_type: qudt_BooleanEncodingType
     - object:
         example_object: '1'
         example_object_type: integer
         example_predicate: qudt:bits
-        example_subject: qudt:BooleanEncoding
-        example_subject_type: qudt_BooleanEncodingType
+        example_subject: qudt:BitEncoding
+        example_subject_type: qudt_BitEncodingType
     name: qudt_bits
     range: integer
     slot_uri: qudt:bits
@@ -3175,11 +3181,17 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: '64'
+        example_object: '32'
         example_object_type: integer
         example_predicate: qudt:bytes
-        example_subject: qudt:DoublePrecisionEncoding
+        example_subject: qudt:SinglePrecisionRealEncoding
         example_subject_type: qudt_FloatingPointEncodingType
+    - object:
+        example_object: '1'
+        example_object_type: integer
+        example_predicate: qudt:bytes
+        example_subject: qudt:OctetEncoding
+        example_subject_type: qudt_ByteEncodingType
     - object:
         example_object: '8'
         example_object_type: integer
@@ -3187,17 +3199,17 @@ slots:
         example_subject: qudt:LongUnsignedIntegerEncoding
         example_subject_type: qudt_IntegerEncodingType
     - object:
-        example_object: '2'
-        example_object_type: integer
-        example_predicate: qudt:bytes
-        example_subject: qudt:ShortUnsignedIntegerEncoding
-        example_subject_type: qudt_BooleanEncodingType
-    - object:
         example_object: '1'
         example_object_type: integer
         example_predicate: qudt:bytes
         example_subject: qudt:CharEncoding
         example_subject_type: qudt_CharEncodingType
+    - object:
+        example_object: '2'
+        example_object_type: integer
+        example_predicate: qudt:bytes
+        example_subject: qudt:ShortUnsignedIntegerEncoding
+        example_subject_type: qudt_BooleanEncodingType
     name: qudt_bytes
     range: integer
     slot_uri: qudt:bytes
@@ -3966,17 +3978,17 @@ slots:
       information.
     examples:
     - object:
-        example_object: http://www.math.vanderbilt.edu/~schectex/courses/infinity.pdf
-        example_object_type: uri
-        example_predicate: qudt:informativeReference
-        example_subject: qudt:CT_COUNTABLY-INFINITE
-        example_subject_type: qudt_CardinalityType
-    - object:
         example_object: http://unitsofmeasure.org/trac
         example_object_type: uri
         example_predicate: qudt:informativeReference
         example_subject: vaem:#GMD_QUDT-SCHEMA
         example_subject_type: vaem_#GraphMetaData
+    - object:
+        example_object: http://www.math.vanderbilt.edu/~schectex/courses/infinity.pdf
+        example_object_type: uri
+        example_predicate: qudt:informativeReference
+        example_subject: qudt:CT_COUNTABLY-INFINITE
+        example_subject_type: qudt_CardinalityType
     name: qudt_informativeReference
     range: uri
     slot_uri: qudt:informativeReference
@@ -4287,7 +4299,7 @@ slots:
     - No occurrences of this slot in the graph.
     description: No slot (predicate) description specified
     name: qudt_order
-    range: unsignedInteger
+    range: unsignedinteger
     slot_uri: qudt:order
     source: http://qudt.org/schema/qudt
     title: order
@@ -4335,10 +4347,10 @@ slots:
       be appropriate.
     examples:
     - object:
-        example_object: Unordered structure.
+        example_object: Totally ordered structure.
         example_object_type: string
         example_predicate: qudt:plainTextDescription
-        example_subject: qudt:Unordered
+        example_subject: qudt:TotallyOrdered
         example_subject_type: qudt_OrderedType
     name: qudt_plainTextDescription
     range: string
@@ -4615,7 +4627,7 @@ slots:
     description: <p><em>ucumCode</em> associates a QUDT unit with its UCUM code (case-sensitive).
       </p><p>In SHACL the values are derived from specific ucum properties using 'sh:values'.</p>
     name: qudt_ucumCode
-    range: n5c7eaf3d722b4c5d8753116e77d7c7cab246
+    range: nd584c290b5bb4622b066da892c701147b246
     see_also:
     - https://ucum.org/ucum.html
     slot_uri: qudt:ucumCode
@@ -4733,16 +4745,10 @@ slots:
     annotations:
       count: 5
     any_of:
-    - range: string
     - range: rdf_HTML
+    - range: string
     description: No slot (predicate) description specified
     examples:
-    - object:
-        example_object: Lexical pattern for the case-sensitive version of UCUM code
-        example_object_type: string
-        example_predicate: rdfs:comment
-        example_subject: qudt:UCUMcs
-        example_subject_type: rdfs_Datatype
     - object:
         example_object: An aspect class that holds properties that provide external
           knowledge and specifications of a given resource.
@@ -4750,6 +4756,13 @@ slots:
         example_predicate: rdfs:comment
         example_subject: qudt:Verifiable
         example_subject_type: qudt_AspectClass
+    - object:
+        example_object: A type of string in which some characters may be wrapped with
+          '$' and '$ characters for LaTeX rendering.
+        example_object_type: string
+        example_predicate: rdfs:comment
+        example_subject: qudt:LatexString
+        example_subject_type: rdfs_Datatype
     - object:
         example_object: An aspect is an abstract type class that defines properties
           that can be reused.
@@ -4768,61 +4781,7 @@ slots:
         example_object: http://qudt.org/schema/qudt
         example_object_type: owl_Ontology
         example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:ISO8601-UTCDateTime-BasicFormat
-        example_subject_type: qudt_DateTimeStringEncodingType
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:CT_COUNTABLY-INFINITE
-        example_subject_type: qudt_CardinalityType
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:BitEncoding
-        example_subject_type: qudt_BitEncodingType
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: vaem:#QUDT
-        example_subject_type: vaem_#Party
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:UCUMcs
-        example_subject_type: rdfs_Datatype
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry
-        example_subject_type: vaem_#CatalogEntry
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: vaem:#GMD_QUDT-SCHEMA
-        example_subject_type: vaem_#GraphMetaData
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:DoublePrecisionEncoding
-        example_subject_type: qudt_FloatingPointEncodingType
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:Unordered
-        example_subject_type: qudt_OrderedType
-    - object:
-        example_object: http://qudt.org/schema/qudt
-        example_object_type: owl_Ontology
-        example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:UNSIGNED
+        example_subject: qudt:SIGNED
         example_subject_type: qudt_SignednessType
     - object:
         example_object: http://qudt.org/schema/qudt
@@ -4834,13 +4793,55 @@ slots:
         example_object: http://qudt.org/schema/qudt
         example_object_type: owl_Ontology
         example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:LongUnsignedIntegerEncoding
-        example_subject_type: qudt_IntegerEncodingType
+        example_subject: vaem:#GMD_QUDT-SCHEMA
+        example_subject_type: vaem_#GraphMetaData
     - object:
         example_object: http://qudt.org/schema/qudt
         example_object_type: owl_Ontology
         example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:ShortUnsignedIntegerEncoding
+        example_subject: qudt:LatexString
+        example_subject_type: rdfs_Datatype
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:CT_COUNTABLY-INFINITE
+        example_subject_type: qudt_CardinalityType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:ISO8601-UTCDateTime-BasicFormat
+        example_subject_type: qudt_DateTimeStringEncodingType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:SinglePrecisionRealEncoding
+        example_subject_type: qudt_FloatingPointEncodingType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:TotallyOrdered
+        example_subject_type: qudt_OrderedType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:BigEndian
+        example_subject_type: qudt_EndianType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry
+        example_subject_type: vaem_#CatalogEntry
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:OctetEncoding
         example_subject_type: qudt_BooleanEncodingType
     - object:
         example_object: http://qudt.org/schema/qudt
@@ -4852,14 +4853,26 @@ slots:
         example_object: http://qudt.org/schema/qudt
         example_object_type: owl_Ontology
         example_predicate: rdfs:isDefinedBy
+        example_subject: vaem:#QUDT
+        example_subject_type: vaem_#Party
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
+        example_subject: qudt:LongUnsignedIntegerEncoding
+        example_subject_type: qudt_IntegerEncodingType
+    - object:
+        example_object: http://qudt.org/schema/qudt
+        example_object_type: owl_Ontology
+        example_predicate: rdfs:isDefinedBy
         example_subject: qudt:CharEncoding
         example_subject_type: qudt_CharEncodingType
     - object:
         example_object: http://qudt.org/schema/qudt
         example_object_type: owl_Ontology
         example_predicate: rdfs:isDefinedBy
-        example_subject: qudt:BigEndian
-        example_subject_type: qudt_EndianType
+        example_subject: qudt:BitEncoding
+        example_subject_type: qudt_BitEncodingType
     range: owl_Ontology
     slot_uri: rdfs:isDefinedBy
   rdfs_label:
@@ -4868,41 +4881,17 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: ISO 8601 UTC Date Time - Basic Format
+        example_object: Signed
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:ISO8601-UTCDateTime-BasicFormat
-        example_subject_type: qudt_DateTimeStringEncodingType
+        example_subject: qudt:SIGNED
+        example_subject_type: qudt_SignednessType
     - object:
-        example_object: Countably Infinite Cardinality Type
+        example_object: Verifiable
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:CT_COUNTABLY-INFINITE
-        example_subject_type: qudt_CardinalityType
-    - object:
-        example_object: Bit Encoding
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: qudt:BitEncoding
-        example_subject_type: qudt_BitEncodingType
-    - object:
-        example_object: QUDT
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: vaem:#QUDT
-        example_subject_type: vaem_#Party
-    - object:
-        example_object: case-sensitive UCUM code
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: qudt:UCUMcs
-        example_subject_type: rdfs_Datatype
-    - object:
-        example_object: QUDT Schema Catalog Entry
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry
-        example_subject_type: vaem_#CatalogEntry
+        example_subject: qudt:Verifiable
+        example_subject_type: qudt_AspectClass
     - object:
         example_object: QUDT Schema - Version 3.1.1
         example_object_type: string
@@ -4910,29 +4899,65 @@ slots:
         example_subject: vaem:#GMD_QUDT-SCHEMA
         example_subject_type: vaem_#GraphMetaData
     - object:
+        example_object: Latex String
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: qudt:LatexString
+        example_subject_type: rdfs_Datatype
+    - object:
+        example_object: Countably Infinite Cardinality Type
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: qudt:CT_COUNTABLY-INFINITE
+        example_subject_type: qudt_CardinalityType
+    - object:
+        example_object: ISO 8601 UTC Date Time - Basic Format
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: qudt:ISO8601-UTCDateTime-BasicFormat
+        example_subject_type: qudt_DateTimeStringEncodingType
+    - object:
         example_object: Single Precision Real Encoding
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:DoublePrecisionEncoding
+        example_subject: qudt:SinglePrecisionRealEncoding
         example_subject_type: qudt_FloatingPointEncodingType
     - object:
-        example_object: Enumerated Quantity
+        example_object: Totally Ordered
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:EnumeratedQuantity
-        example_subject_type: qudt_AspectClass
-    - object:
-        example_object: Unordered
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: qudt:Unordered
+        example_subject: qudt:TotallyOrdered
         example_subject_type: qudt_OrderedType
     - object:
-        example_object: Unsigned
+        example_object: Big Endian
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:UNSIGNED
-        example_subject_type: qudt_SignednessType
+        example_subject: qudt:BigEndian
+        example_subject_type: qudt_EndianType
+    - object:
+        example_object: QUDT Schema Catalog Entry
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: http://voag.linkedmodel.org/schema/voag#QUDT-SchemaCatalogEntry
+        example_subject_type: vaem_#CatalogEntry
+    - object:
+        example_object: OCTET Encoding
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: qudt:OctetEncoding
+        example_subject_type: qudt_ByteEncodingType
+    - object:
+        example_object: QUDT
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: vaem:#QUDT
+        example_subject_type: vaem_#Party
+    - object:
+        example_object: Boolean Encoding
+        example_object_type: string
+        example_predicate: rdfs:label
+        example_subject: qudt:BooleanEncoding
+        example_subject_type: qudt_BooleanEncodingType
     - object:
         example_object: Long Unsigned Integer Encoding
         example_object_type: string
@@ -4940,23 +4965,17 @@ slots:
         example_subject: qudt:LongUnsignedIntegerEncoding
         example_subject_type: qudt_IntegerEncodingType
     - object:
-        example_object: Short Unsigned Integer Encoding
-        example_object_type: string
-        example_predicate: rdfs:label
-        example_subject: qudt:ShortUnsignedIntegerEncoding
-        example_subject_type: qudt_BooleanEncodingType
-    - object:
         example_object: Char Encoding
         example_object_type: string
         example_predicate: rdfs:label
         example_subject: qudt:CharEncoding
         example_subject_type: qudt_CharEncodingType
     - object:
-        example_object: Big Endian
+        example_object: Bit Encoding
         example_object_type: string
         example_predicate: rdfs:label
-        example_subject: qudt:BigEndian
-        example_subject_type: qudt_EndianType
+        example_subject: qudt:BitEncoding
+        example_subject_type: qudt_BitEncodingType
     range: string
     slot_uri: rdfs:label
   rdfs_seeAlso:
@@ -4976,30 +4995,12 @@ slots:
     annotations:
       count: 14
     any_of:
-    - range: uri
     - range: owl_Restriction
-    - range: owl_Class
     - range: qudt_AspectClass
+    - range: uri
+    - range: owl_Class
     description: No slot (predicate) description specified
     examples:
-    - object:
-        example_object: rdfs:Resource
-        example_object_type: uri
-        example_predicate: rdfs:subClassOf
-        example_subject: qudt:UCUMcs
-        example_subject_type: rdfs_Datatype
-    - object:
-        example_object: qudt:Concept
-        example_object_type: owl_Class
-        example_predicate: rdfs:subClassOf
-        example_subject: qudt:EnumeratedQuantity
-        example_subject_type: qudt_AspectClass
-    - object:
-        example_object: n5c7eaf3d722b4c5d8753116e77d7c7cab66
-        example_object_type: owl_Restriction
-        example_predicate: rdfs:subClassOf
-        example_subject: qudt:EnumeratedQuantity
-        example_subject_type: qudt_AspectClass
     - object:
         example_object: qudt:Aspect
         example_object_type: qudt_AspectClass
@@ -5007,10 +5008,28 @@ slots:
         example_subject: qudt:Verifiable
         example_subject_type: qudt_AspectClass
     - object:
+        example_object: nd584c290b5bb4622b066da892c701147b231
+        example_object_type: owl_Restriction
+        example_predicate: rdfs:subClassOf
+        example_subject: qudt:Verifiable
+        example_subject_type: qudt_AspectClass
+    - object:
+        example_object: xsd:string
+        example_object_type: uri
+        example_predicate: rdfs:subClassOf
+        example_subject: qudt:LatexString
+        example_subject_type: rdfs_Datatype
+    - object:
         example_object: owl:Thing
         example_object_type: uri
         example_predicate: rdfs:subClassOf
         example_subject: qudt:Aspect
+        example_subject_type: qudt_AspectClass
+    - object:
+        example_object: qudt:Concept
+        example_object_type: owl_Class
+        example_predicate: rdfs:subClassOf
+        example_subject: qudt:EnumeratedQuantity
         example_subject_type: qudt_AspectClass
     range: Any
     slot_uri: rdfs:subClassOf
@@ -5029,17 +5048,17 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: qudt.org
-        example_object_type: string
-        example_predicate: vaem:#graphName
-        example_subject: vaem:#QUDT
-        example_subject_type: vaem_#Party
-    - object:
         example_object: qudt
         example_object_type: string
         example_predicate: vaem:#graphName
         example_subject: vaem:#GMD_QUDT-SCHEMA
         example_subject_type: vaem_#GraphMetaData
+    - object:
+        example_object: qudt.org
+        example_object_type: string
+        example_predicate: vaem:#graphName
+        example_subject: vaem:#QUDT
+        example_subject_type: vaem_#Party
     range: string
     slot_uri: vaem:#graphName
   vaem_#graphTitle:
@@ -5232,8 +5251,8 @@ slots:
       count: 10
     any_of:
     - range: uri
-    - range: owl_DatatypeProperty
     - range: rdf_Property
+    - range: owl_DatatypeProperty
     - range: owl_AnnotationProperty
     description: No slot (predicate) description specified
     examples:
@@ -5295,21 +5314,21 @@ slots:
       float: 1
       integer: 1
     any_of:
-    - range: integer
     - range: float
+    - range: integer
     description: No slot (predicate) description specified
     examples:
     - object:
         example_object: '100.0'
         example_object_type: float
         example_predicate: xsd:maxInclusive
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab238
+        example_subject: nd584c290b5bb4622b066da892c701147b238
         example_subject_type: None
     - object:
         example_object: '100'
         example_object_type: integer
         example_predicate: xsd:maxInclusive
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab243
+        example_subject: nd584c290b5bb4622b066da892c701147b243
         example_subject_type: None
     range: Any
     slot_uri: xsd:maxInclusive
@@ -5324,16 +5343,16 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: '0.0'
-        example_object_type: float
-        example_predicate: xsd:minInclusive
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab237
-        example_subject_type: None
-    - object:
         example_object: '0'
         example_object_type: integer
         example_predicate: xsd:minInclusive
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab242
+        example_subject: nd584c290b5bb4622b066da892c701147b242
+        example_subject_type: None
+    - object:
+        example_object: '0.0'
+        example_object_type: float
+        example_predicate: xsd:minInclusive
+        example_subject: nd584c290b5bb4622b066da892c701147b237
         example_subject_type: None
     range: Any
     slot_uri: xsd:minInclusive
@@ -5344,17 +5363,17 @@ slots:
     description: No slot (predicate) description specified
     examples:
     - object:
-        example_object: '[\x21-\x7e]+'
-        example_object_type: string
-        example_predicate: xsd:pattern
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab195
-        example_subject_type: None
-    - object:
         example_object: ^\d{3}$
         example_object_type: string
         example_predicate: xsd:pattern
-        example_subject: n5c7eaf3d722b4c5d8753116e77d7c7cab31
+        example_subject: nd584c290b5bb4622b066da892c701147b31
         example_subject_type: owl_Restriction
+    - object:
+        example_object: '[\x21-\x7e]+'
+        example_object_type: string
+        example_predicate: xsd:pattern
+        example_subject: nd584c290b5bb4622b066da892c701147b195
+        example_subject_type: None
     range: string
     slot_uri: xsd:pattern
 source: http://qudt.org/schema/qudt
