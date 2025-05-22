@@ -2389,7 +2389,7 @@ imports:
 - https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/owl
 - https://raw.githubusercontent.com/frink-okn/schema-gen/refs/heads/main/rdf-rdfs
 - linkml:types
-- linkml:extended_types
+- https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types
 last_updated_on: '2025-05-22T07:17:19.296590'
 license: No schema license specified
 name: qudt
