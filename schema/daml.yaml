@@ -805,7 +805,7 @@ annotations:
             value: daml:Qualification
           daml:Ontology:
             tag: daml:Ontology
-            value: daml:
+            value: http://www.daml.org/2000/10/daml-ont
           daml:Property:
             tag: daml:Property
             value: daml:type
