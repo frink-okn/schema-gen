@@ -1,0 +1,307 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          foaf:Person:
+            tag: foaf:Person
+            value: 1
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 2
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 2
+      slots:
+        tag: slots
+        value:
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 2
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 2
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          foaf:Person:
+            tag: foaf:Person
+            value: http://moustaki.org/foaf.rdf#moustaki
+          owl:Restriction:
+            tag: owl:Restriction
+            value: ncd0c496334844b6a955d56ec7e8c4dffb1
+      pairs:
+        tag: pairs
+        value:
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: event:factor_of
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: ncd0c496334844b6a955d56ec7e8c4dffb2
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: event:Event
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: ncd0c496334844b6a955d56ec7e8c4dffb2
+classes:
+  event_Event:
+    class_uri: event:Event
+    description: "An arbitrary classification of a space/time region, by a \u240A\t\
+      \tcognitive agent. An event may have actively participating agents,\u240A\t\t\
+      passive factors, products, and a location in space/time."
+    name: event_Event
+    title: Event
+  event_Factor:
+    class_uri: event:Factor
+    description: Everything used as a factor in an event
+    name: event_Factor
+    title: Factor
+  event_Product:
+    class_uri: event:Product
+    description: Everything produced by an event
+    name: event_Product
+    title: Product
+comments:
+- 'title: The Event ontology'
+- 'title: The Event ontology'
+created_on: '2025-07-15T20:26:02.991836'
+default_prefix: okn
+description: "\u240A\t\tThis ontology deals with the notion of reified events---\u240A\
+  \t\tevents seen as first-class objects. It only defines one\u240A\t\tconcept: Event,\
+  \ which may have agents (actively\u240A\t\tparticipating), factors (passively participating),\
+  \ products,\u240A\t\tand a location in space and time. \u240A\u240A\t\tRegarding\
+  \ the ontological status of event tokens, they are seen\u240A\t\tas the way cognitive\
+  \ agents classify space/time regions\u240A"
+id: okns:event
+imports:
+- okns:wgs
+- https://purl.org/okn/schema/extended_types
+- okns:owl-rdf-rdfs
+- okns:foaf
+- okns:time
+- okns:wot
+last_updated_on: '2025-07-15T20:26:02.991836'
+name: event
+prefixes:
+  dc: http://purl.org/dc/elements/1.1/
+  event: http://purl.org/NET/c4dm/event.owl#
+  foaf: http://xmlns.com/foaf/0.1/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+  time: http://www.w3.org/2006/time#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
+slots:
+  event_agent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an event to an active agent (a person, a computer, ... :-)
+      )
+    domain: event_Event
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#hasAgent
+    inverse: event_agent_in
+    name: event_agent
+    range: foaf_Agent
+    slot_uri: event:agent
+    title: agent
+  event_agent_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_agent_in
+    range: Any
+    slot_uri: event:agent_in
+  event_factor:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an event to a passive factor (a tool, an instrument, an abstract
+      cause...)
+    domain: event_Event
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#hasFactor
+    inverse: event_factor_of
+    name: event_factor
+    range: Any
+    slot_uri: event:factor
+    title: factor
+  event_factor_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_factor_of
+    range: Any
+    slot_uri: event:factor_of
+  event_hasAgent:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_hasAgent
+    range: Any
+    slot_uri: event:hasAgent
+  event_hasFactor:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_hasFactor
+    range: Any
+    slot_uri: event:hasFactor
+  event_hasLiteralFactor:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_hasLiteralFactor
+    range: Any
+    slot_uri: event:hasLiteralFactor
+  event_hasProduct:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_hasProduct
+    range: Any
+    slot_uri: event:hasProduct
+  event_hasSubEvent:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_hasSubEvent
+    range: Any
+    slot_uri: event:hasSubEvent
+  event_isAgentIn:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#agent_in
+    name: event_isAgentIn
+    range: Any
+    slot_uri: event:isAgentIn
+    title: agent in
+  event_isFactorOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#factor_of
+    name: event_isFactorOf
+    range: Any
+    slot_uri: event:isFactorOf
+    title: factor of
+  event_literal_factor:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates an event to a factor which can be described as a literal.\
+      \ This property\u240A\t\tshould not be used as-is, but should be subsumed by\
+      \ other, more specific, properties\u240A\t\t(like an hypothetic :weatherCelsius,\
+      \ linking an event to a temperature)."
+    domain: event_Event
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#hasLiteralFactor
+    name: event_literal_factor
+    range: Any
+    slot_uri: event:literal_factor
+    title: literal factor
+  event_place:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an event to a spatial object.
+    domain: event_Event
+    name: event_place
+    range: wgs_SpatialThing
+    slot_uri: event:place
+    title: place
+  event_producedIn:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#produced_in
+    name: event_producedIn
+    range: Any
+    slot_uri: event:producedIn
+    title: produced in
+  event_produced_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: event_produced_in
+    range: Any
+    slot_uri: event:produced_in
+  event_product:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an event to something produced during the event---a sound,
+      a pie, whatever...
+    domain: event_Event
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#hasProduct
+    inverse: event_produced_in
+    name: event_product
+    range: Any
+    slot_uri: event:product
+    title: product
+  event_sub_event:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This property provides a way to split a complex event (for example,\
+      \ a performance involving several \u240A\t\tmusicians) into simpler ones (one\
+      \ event per musician)."
+    domain: event_Event
+    exact_mappings:
+    - http://purl.org/NET/c4dm/event.owl#hasSubEvent
+    name: event_sub_event
+    range: event_Event
+    slot_uri: event:sub_event
+    title: sub-event
+  event_time:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates an event to a time object, classifying a time region (either\
+      \ instantaneous or having an extent).\u240A\t\tBy using the Timeline ontology\
+      \ here, you can define event happening on a recorded track or on any \u240A\t\
+      \tmedia with a temporal extent."
+    domain: event_Event
+    name: event_time
+    range: time_TemporalEntity
+    slot_uri: event:time
+    title: time
+title: No schema name specified

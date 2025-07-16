@@ -1,0 +1,1622 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 23
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 7
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 3
+          owl:minQualifiedCardinality:
+            tag: owl:minQualifiedCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 2
+          owl:onClass:
+            tag: owl:onClass
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+          owl:onDataRange:
+            tag: owl:onDataRange
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 21
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 2
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 10
+      slots:
+        tag: slots
+        value:
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 7
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 3
+          owl:minQualifiedCardinality:
+            tag: owl:minQualifiedCardinality
+            value: 2
+          owl:onClass:
+            tag: owl:onClass
+            value: 1
+          owl:onDataRange:
+            tag: owl:onDataRange
+            value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 23
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 11
+          owl:unionOf:
+            tag: owl:unionOf
+            value: 2
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: nea48fbaa38d54bb389fb5be6b2610fbbb3
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: nea48fbaa38d54bb389fb5be6b2610fbbb72
+      pairs:
+        tag: pairs
+        value:
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb19
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb41
+          owl:minQualifiedCardinality:
+            tag: owl:minQualifiedCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:minQualifiedCardinality
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb37
+          owl:onClass:
+            tag: owl:onClass
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: vcard:Kind
+                      predicate:
+                        tag: predicate
+                        value: owl:onClass
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb34
+          owl:onDataRange:
+            tag: owl:onDataRange
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:string
+                      predicate:
+                        tag: predicate
+                        value: owl:onDataRange
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb37
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: vcard:family-name
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb45
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: vcard:hasMember
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb34
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: vcard:Kind
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb33
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:string
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: nea48fbaa38d54bb389fb5be6b2610fbbb45
+classes:
+  vcard_Acquaintance:
+    class_uri: vcard:Acquaintance
+    is_a: vcard_RelatedType
+    name: vcard_Acquaintance
+    source: http://www.w3.org/2006/vcard/ns
+    title: Acquaintance
+  vcard_Address:
+    class_uri: vcard:Address
+    description: To specify the components of the delivery address for the  object
+    name: vcard_Address
+    source: http://www.w3.org/2006/vcard/ns
+    title: Address
+  vcard_AddressBook:
+    class_uri: vcard:AddressBook
+    comments:
+    - 'description: Represents a collection of vCard people and/or vCard groups'
+    - 'description: This class is not part of vCard as defined by the IETF'
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_AddressBook
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: AddressBook
+  vcard_Agent:
+    class_uri: vcard:Agent
+    is_a: vcard_RelatedType
+    name: vcard_Agent
+    source: http://www.w3.org/2006/vcard/ns
+    title: Agent
+  vcard_BBS:
+    class_uri: vcard:BBS
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_TelephoneType
+    name: vcard_BBS
+    source: http://www.w3.org/2006/vcard/ns
+    title: BBS
+  vcard_Car:
+    class_uri: vcard:Car
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_TelephoneType
+    name: vcard_Car
+    source: http://www.w3.org/2006/vcard/ns
+    title: Car
+  vcard_Cell:
+    class_uri: vcard:Cell
+    description: Also called mobile telephone
+    is_a: vcard_TelephoneType
+    name: vcard_Cell
+    source: http://www.w3.org/2006/vcard/ns
+    title: Cell
+  vcard_Child:
+    class_uri: vcard:Child
+    is_a: vcard_RelatedType
+    name: vcard_Child
+    source: http://www.w3.org/2006/vcard/ns
+    title: Child
+  vcard_Colleague:
+    class_uri: vcard:Colleague
+    is_a: vcard_RelatedType
+    name: vcard_Colleague
+    source: http://www.w3.org/2006/vcard/ns
+    title: Colleague
+  vcard_Contact:
+    class_uri: vcard:Contact
+    is_a: vcard_RelatedType
+    name: vcard_Contact
+    source: http://www.w3.org/2006/vcard/ns
+    title: Contact
+  vcard_Coresident:
+    class_uri: vcard:Coresident
+    is_a: vcard_RelatedType
+    name: vcard_Coresident
+    source: http://www.w3.org/2006/vcard/ns
+    title: Coresident
+  vcard_Coworker:
+    class_uri: vcard:Coworker
+    is_a: vcard_RelatedType
+    name: vcard_Coworker
+    source: http://www.w3.org/2006/vcard/ns
+    title: Coworker
+  vcard_Crush:
+    class_uri: vcard:Crush
+    is_a: vcard_RelatedType
+    name: vcard_Crush
+    source: http://www.w3.org/2006/vcard/ns
+    title: Crush
+  vcard_Date:
+    class_uri: vcard:Date
+    is_a: vcard_RelatedType
+    name: vcard_Date
+    source: http://www.w3.org/2006/vcard/ns
+    title: Date
+  vcard_Dom:
+    class_uri: vcard:Dom
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Dom
+    source: http://www.w3.org/2006/vcard/ns
+    title: Dom
+  vcard_Email:
+    class_uri: vcard:Email
+    deprecated: 'true'
+    description: To specify the electronic mail address for communication with the
+      object the vCard represents. Use the hasEmail object property.
+    name: vcard_Email
+    source: http://www.w3.org/2006/vcard/ns
+    title: Email
+  vcard_Emergency:
+    class_uri: vcard:Emergency
+    is_a: vcard_RelatedType
+    name: vcard_Emergency
+    source: http://www.w3.org/2006/vcard/ns
+    title: Emergency
+  vcard_Fax:
+    class_uri: vcard:Fax
+    is_a: vcard_TelephoneType
+    name: vcard_Fax
+    source: http://www.w3.org/2006/vcard/ns
+    title: Fax
+  vcard_Female:
+    class_uri: vcard:Female
+    is_a: vcard_Gender
+    name: vcard_Female
+    source: http://www.w3.org/2006/vcard/ns
+    title: Female
+  vcard_Friend:
+    class_uri: vcard:Friend
+    is_a: vcard_RelatedType
+    name: vcard_Friend
+    source: http://www.w3.org/2006/vcard/ns
+    title: Friend
+  vcard_Gender:
+    class_uri: vcard:Gender
+    description: Used for gender codes. The URI of the gender code must be used as
+      the value for Gender.
+    name: vcard_Gender
+    source: http://www.w3.org/2006/vcard/ns
+    title: Gender
+  vcard_Group:
+    class_uri: vcard:Group
+    description: Object representing a group of persons or entities.  A group object
+      will usually contain hasMember properties to specify the members of the group.
+    is_a: vcard_Kind
+    name: vcard_Group
+    source: http://www.w3.org/2006/vcard/ns
+    title: Group
+  vcard_Home:
+    class_uri: vcard:Home
+    description: This implies that the property is related to an individual's personal
+      life
+    is_a: vcard_Type
+    name: vcard_Home
+    source: http://www.w3.org/2006/vcard/ns
+    title: Home
+  vcard_ISDN:
+    class_uri: vcard:ISDN
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_ISDN
+    source: http://www.w3.org/2006/vcard/ns
+    title: ISDN
+  vcard_Individual:
+    class_uri: vcard:Individual
+    description: An object representing a single person or entity
+    is_a: vcard_Kind
+    name: vcard_Individual
+    source: http://www.w3.org/2006/vcard/ns
+    title: Individual
+  vcard_Internet:
+    class_uri: vcard:Internet
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Internet
+    source: http://www.w3.org/2006/vcard/ns
+    title: Internet
+  vcard_Intl:
+    class_uri: vcard:Intl
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Intl
+    source: http://www.w3.org/2006/vcard/ns
+    title: Intl
+  vcard_Kin:
+    class_uri: vcard:Kin
+    is_a: vcard_RelatedType
+    name: vcard_Kin
+    source: http://www.w3.org/2006/vcard/ns
+    title: Kin
+  vcard_Kind:
+    class_uri: vcard:Kind
+    description: The parent class for all objects
+    name: vcard_Kind
+    source: http://www.w3.org/2006/vcard/ns
+    title: Kind
+  vcard_Label:
+    class_uri: vcard:Label
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Label
+    source: http://www.w3.org/2006/vcard/ns
+    title: Label
+  vcard_Location:
+    class_uri: vcard:Location
+    description: An object representing a named geographical place
+    is_a: vcard_Kind
+    name: vcard_Location
+    source: http://www.w3.org/2006/vcard/ns
+    title: Location
+  vcard_Male:
+    class_uri: vcard:Male
+    is_a: vcard_Gender
+    name: vcard_Male
+    source: http://www.w3.org/2006/vcard/ns
+    title: Male
+  vcard_Me:
+    class_uri: vcard:Me
+    is_a: vcard_RelatedType
+    name: vcard_Me
+    source: http://www.w3.org/2006/vcard/ns
+    title: Me
+  vcard_Met:
+    class_uri: vcard:Met
+    is_a: vcard_RelatedType
+    name: vcard_Met
+    source: http://www.w3.org/2006/vcard/ns
+    title: Met
+  vcard_Modem:
+    class_uri: vcard:Modem
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_TelephoneType
+    name: vcard_Modem
+    source: http://www.w3.org/2006/vcard/ns
+    title: Modem
+  vcard_Msg:
+    class_uri: vcard:Msg
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_TelephoneType
+    name: vcard_Msg
+    source: http://www.w3.org/2006/vcard/ns
+    title: Msg
+  vcard_Muse:
+    class_uri: vcard:Muse
+    is_a: vcard_RelatedType
+    name: vcard_Muse
+    source: http://www.w3.org/2006/vcard/ns
+    title: Muse
+  vcard_Name:
+    class_uri: vcard:Name
+    description: To specify the components of the name of the object
+    name: vcard_Name
+    source: http://www.w3.org/2006/vcard/ns
+    title: Name
+  vcard_Neighbor:
+    class_uri: vcard:Neighbor
+    is_a: vcard_RelatedType
+    name: vcard_Neighbor
+    source: http://www.w3.org/2006/vcard/ns
+    title: Neighbor
+  vcard_None:
+    class_uri: vcard:None
+    is_a: vcard_Gender
+    name: vcard_None
+    source: http://www.w3.org/2006/vcard/ns
+    title: None
+  vcard_Organization:
+    class_uri: vcard:Organization
+    description: An object representing an organization.  An organization is a single
+      entity, and might represent a business or government, a department or division
+      within a business or government, a club, an association, or the like.
+    is_a: vcard_Kind
+    name: vcard_Organization
+    source: http://www.w3.org/2006/vcard/ns
+    title: Organization
+  vcard_Other:
+    class_uri: vcard:Other
+    is_a: vcard_Gender
+    name: vcard_Other
+    source: http://www.w3.org/2006/vcard/ns
+    title: Other
+  vcard_PCS:
+    class_uri: vcard:PCS
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_TelephoneType
+    name: vcard_PCS
+    source: http://www.w3.org/2006/vcard/ns
+    title: PCS
+  vcard_Pager:
+    class_uri: vcard:Pager
+    is_a: vcard_TelephoneType
+    name: vcard_Pager
+    source: http://www.w3.org/2006/vcard/ns
+    title: Pager
+  vcard_Parcel:
+    class_uri: vcard:Parcel
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Parcel
+    source: http://www.w3.org/2006/vcard/ns
+    title: Parcel
+  vcard_Parent:
+    class_uri: vcard:Parent
+    is_a: vcard_RelatedType
+    name: vcard_Parent
+    source: http://www.w3.org/2006/vcard/ns
+    title: Parent
+  vcard_Postal:
+    class_uri: vcard:Postal
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Postal
+    source: http://www.w3.org/2006/vcard/ns
+    title: Postal
+  vcard_Pref:
+    class_uri: vcard:Pref
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_Pref
+    source: http://www.w3.org/2006/vcard/ns
+    title: Pref
+  vcard_RelatedType:
+    class_uri: vcard:RelatedType
+    description: Used for relation type codes. The URI of the relation type code must
+      be used as the value for the Relation Type.
+    name: vcard_RelatedType
+    source: http://www.w3.org/2006/vcard/ns
+    title: Relation Type
+  vcard_Sibling:
+    class_uri: vcard:Sibling
+    is_a: vcard_RelatedType
+    name: vcard_Sibling
+    source: http://www.w3.org/2006/vcard/ns
+    title: Sibling
+  vcard_Spouse:
+    class_uri: vcard:Spouse
+    is_a: vcard_RelatedType
+    name: vcard_Spouse
+    source: http://www.w3.org/2006/vcard/ns
+    title: Spouse
+  vcard_Sweetheart:
+    class_uri: vcard:Sweetheart
+    is_a: vcard_RelatedType
+    name: vcard_Sweetheart
+    source: http://www.w3.org/2006/vcard/ns
+    title: Sweetheart
+  vcard_Tel:
+    class_uri: vcard:Tel
+    deprecated: 'true'
+    description: This class is deprecated. Use the hasTelephone object property.
+    name: vcard_Tel
+    source: http://www.w3.org/2006/vcard/ns
+    title: Tel
+  vcard_TelephoneType:
+    class_uri: vcard:TelephoneType
+    description: Used for telephone type codes. The URI of the telephone type code
+      must be used as the value for the Telephone Type.
+    name: vcard_TelephoneType
+    source: http://www.w3.org/2006/vcard/ns
+    title: Phone
+  vcard_Text:
+    class_uri: vcard:Text
+    description: Also called sms telephone
+    is_a: vcard_TelephoneType
+    name: vcard_Text
+    source: http://www.w3.org/2006/vcard/ns
+    title: Text
+  vcard_TextPhone:
+    class_uri: vcard:TextPhone
+    is_a: vcard_TelephoneType
+    name: vcard_TextPhone
+    source: http://www.w3.org/2006/vcard/ns
+    title: Text phone
+  vcard_Type:
+    class_uri: vcard:Type
+    description: Used for type codes. The URI of the type code must be used as the
+      value for Type.
+    name: vcard_Type
+    source: http://www.w3.org/2006/vcard/ns
+    title: Type
+  vcard_Unknown:
+    class_uri: vcard:Unknown
+    is_a: vcard_Gender
+    name: vcard_Unknown
+    source: http://www.w3.org/2006/vcard/ns
+    title: Unknown
+  vcard_VCard:
+    class_uri: vcard:VCard
+    description: The vCard class is  equivalent to the new Kind class, which is the
+      parent for the four explicit types of vCards (Individual, Organization, Location,
+      Group)
+    name: vcard_VCard
+    source: http://www.w3.org/2006/vcard/ns
+    title: VCard
+  vcard_Video:
+    class_uri: vcard:Video
+    is_a: vcard_TelephoneType
+    name: vcard_Video
+    source: http://www.w3.org/2006/vcard/ns
+    title: Video
+  vcard_Voice:
+    class_uri: vcard:Voice
+    is_a: vcard_TelephoneType
+    name: vcard_Voice
+    source: http://www.w3.org/2006/vcard/ns
+    title: Voice
+  vcard_Work:
+    class_uri: vcard:Work
+    description: This implies that the property is related to an individual's work
+      place
+    is_a: vcard_Type
+    name: vcard_Work
+    source: http://www.w3.org/2006/vcard/ns
+    title: Work
+  vcard_X400:
+    class_uri: vcard:X400
+    deprecated: 'true'
+    description: This class is deprecated
+    is_a: vcard_Type
+    name: vcard_X400
+    source: http://www.w3.org/2006/vcard/ns
+    title: X400
+comments:
+- 'title: Ontology for vCard'
+created_on: '2025-07-15T20:22:15.504793'
+default_prefix: okn
+description: Ontology for vCard based on RFC6350
+id: okns:vcard
+imports:
+- linkml:types
+- https://purl.org/okn/schema/extended_types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-15T20:22:15.504793'
+name: vcard
+prefixes:
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vcard: http://www.w3.org/2006/vcard/ns#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  vcard_WebID:
+    comments:
+    - 'description: The WebID of an Individual'
+    - 'description: This property is not part of vCard as defined by the IETF'
+    - No occurrences of this slot in the graph.
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_WebID
+    range: Any
+    slot_uri: vcard:WebID
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: WebID
+  vcard_additional-name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The additional name associated with the object
+    name: vcard_additional-name
+    range: string
+    slot_uri: vcard:additional-name
+    source: http://www.w3.org/2006/vcard/ns
+    title: additional name
+  vcard_adr:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasAddress
+    name: vcard_adr
+    range: Any
+    slot_uri: vcard:adr
+    source: http://www.w3.org/2006/vcard/ns
+    title: address
+  vcard_agent:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This object property has been deprecated
+    name: vcard_agent
+    range: Any
+    slot_uri: vcard:agent
+    source: http://www.w3.org/2006/vcard/ns
+    title: agent
+  vcard_anniversary:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date of marriage, or equivalent, of the object
+    name: vcard_anniversary
+    range: Any
+    slot_uri: vcard:anniversary
+    source: http://www.w3.org/2006/vcard/ns
+    title: anniversary
+  vcard_bday:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the birth date of the object
+    name: vcard_bday
+    range: Any
+    slot_uri: vcard:bday
+    source: http://www.w3.org/2006/vcard/ns
+    title: birth date
+  vcard_category:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The category information about the object, also known as tags
+    name: vcard_category
+    range: string
+    slot_uri: vcard:category
+    source: http://www.w3.org/2006/vcard/ns
+    title: category
+  vcard_class:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated
+    name: vcard_class
+    range: Any
+    slot_uri: vcard:class
+    source: http://www.w3.org/2006/vcard/ns
+    title: class
+  vcard_country-name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The country name associated with the address of the object
+    name: vcard_country-name
+    range: string
+    slot_uri: vcard:country-name
+    source: http://www.w3.org/2006/vcard/ns
+    title: country name
+  vcard_email:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasEmail
+    name: vcard_email
+    range: Any
+    slot_uri: vcard:email
+    source: http://www.w3.org/2006/vcard/ns
+    title: email
+  vcard_extended-address:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated
+    name: vcard_extended-address
+    range: Any
+    slot_uri: vcard:extended-address
+    source: http://www.w3.org/2006/vcard/ns
+    title: extended address
+  vcard_family-name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The family name associated with the object
+    name: vcard_family-name
+    range: string
+    slot_uri: vcard:family-name
+    source: http://www.w3.org/2006/vcard/ns
+    title: family name
+  vcard_fn:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The formatted text corresponding to the name of the object
+    name: vcard_fn
+    range: string
+    slot_uri: vcard:fn
+    source: http://www.w3.org/2006/vcard/ns
+    title: formatted name
+  vcard_geo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasGeo
+    name: vcard_geo
+    range: Any
+    slot_uri: vcard:geo
+    source: http://www.w3.org/2006/vcard/ns
+    title: geo
+  vcard_given-name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The given name associated with the object
+    name: vcard_given-name
+    range: string
+    slot_uri: vcard:given-name
+    source: http://www.w3.org/2006/vcard/ns
+    title: given name
+  vcard_groupIndex:
+    comments:
+    - 'description: Links an AddressBook to a document containing all its includesGroup
+      properties'
+    - 'description: This property is not part of vCard as defined by the IETF'
+    - No occurrences of this slot in the graph.
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_groupIndex
+    range: Any
+    slot_uri: vcard:groupIndex
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: group index
+  vcard_hasAdditionalName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the additional name data
+      property
+    name: vcard_hasAdditionalName
+    range: Any
+    slot_uri: vcard:hasAdditionalName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has additional name
+  vcard_hasAddress:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the components of the delivery address for the object
+    name: vcard_hasAddress
+    range: vcard_Address
+    slot_uri: vcard:hasAddress
+    source: http://www.w3.org/2006/vcard/ns
+    title: has address
+  vcard_hasCalendarBusy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the busy time associated with the object. (Was called
+      FBURL in RFC6350)
+    name: vcard_hasCalendarBusy
+    range: Any
+    slot_uri: vcard:hasCalendarBusy
+    source: http://www.w3.org/2006/vcard/ns
+    title: has calendar busy
+  vcard_hasCalendarLink:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the calendar associated with the object. (Was called CALURI
+      in RFC6350)
+    name: vcard_hasCalendarLink
+    range: Any
+    slot_uri: vcard:hasCalendarLink
+    source: http://www.w3.org/2006/vcard/ns
+    title: has calendar link
+  vcard_hasCalendarRequest:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the calendar user address to which a scheduling request
+      be sent for the object. (Was called CALADRURI in RFC6350)
+    name: vcard_hasCalendarRequest
+    range: Any
+    slot_uri: vcard:hasCalendarRequest
+    source: http://www.w3.org/2006/vcard/ns
+    title: has calendar request
+  vcard_hasCategory:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the category data property
+    name: vcard_hasCategory
+    range: Any
+    slot_uri: vcard:hasCategory
+    source: http://www.w3.org/2006/vcard/ns
+    title: has category
+  vcard_hasCountryName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the country name data property
+    name: vcard_hasCountryName
+    range: Any
+    slot_uri: vcard:hasCountryName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has country name
+  vcard_hasEmail:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the electronic mail address for communication with the
+      object
+    name: vcard_hasEmail
+    range: vcard_Email
+    slot_uri: vcard:hasEmail
+    source: http://www.w3.org/2006/vcard/ns
+    title: has email
+  vcard_hasFN:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the formatted name data property
+    name: vcard_hasFN
+    range: Any
+    slot_uri: vcard:hasFN
+    source: http://www.w3.org/2006/vcard/ns
+    title: has formatted name
+  vcard_hasFamilyName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the family name data property
+    name: vcard_hasFamilyName
+    range: Any
+    slot_uri: vcard:hasFamilyName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has family name
+  vcard_hasGender:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify  the sex or gender identity of the object. URIs are recommended
+      to enable interoperable sex and gender codes to be used.
+    name: vcard_hasGender
+    range: Any
+    slot_uri: vcard:hasGender
+    source: http://www.w3.org/2006/vcard/ns
+    title: has gender
+  vcard_hasGeo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify information related to the global positioning of the object.
+      May also be used as a property parameter.
+    name: vcard_hasGeo
+    range: Any
+    slot_uri: vcard:hasGeo
+    source: http://www.w3.org/2006/vcard/ns
+    title: has geo
+  vcard_hasGivenName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the given name data property
+    name: vcard_hasGivenName
+    range: Any
+    slot_uri: vcard:hasGivenName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has given name
+  vcard_hasHonorificPrefix:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the honorific prefix data
+      property
+    name: vcard_hasHonorificPrefix
+    range: Any
+    slot_uri: vcard:hasHonorificPrefix
+    source: http://www.w3.org/2006/vcard/ns
+    title: has honorific prefix
+  vcard_hasHonorificSuffix:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the honorific suffix data
+      property
+    name: vcard_hasHonorificSuffix
+    range: Any
+    slot_uri: vcard:hasHonorificSuffix
+    source: http://www.w3.org/2006/vcard/ns
+    title: has honorific suffix
+  vcard_hasInstantMessage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the instant messaging and presence protocol communications
+      with the object. (Was called IMPP in RFC6350)
+    name: vcard_hasInstantMessage
+    range: Any
+    slot_uri: vcard:hasInstantMessage
+    source: http://www.w3.org/2006/vcard/ns
+    title: has messaging
+  vcard_hasKey:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a public key or authentication certificate associated
+      with the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#key
+    name: vcard_hasKey
+    range: Any
+    slot_uri: vcard:hasKey
+    source: http://www.w3.org/2006/vcard/ns
+    title: has key
+  vcard_hasLanguage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the language data property
+    name: vcard_hasLanguage
+    range: Any
+    slot_uri: vcard:hasLanguage
+    source: http://www.w3.org/2006/vcard/ns
+    title: has language
+  vcard_hasLocality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the locality data property
+    name: vcard_hasLocality
+    range: Any
+    slot_uri: vcard:hasLocality
+    source: http://www.w3.org/2006/vcard/ns
+    title: has locality
+  vcard_hasLogo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a graphic image of a logo associated with the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#logo
+    name: vcard_hasLogo
+    range: Any
+    slot_uri: vcard:hasLogo
+    source: http://www.w3.org/2006/vcard/ns
+    title: has logo
+  vcard_hasMember:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To include a member in the group this object represents. (This property
+      can only be used by Group individuals)
+    domain: vcard_Group
+    name: vcard_hasMember
+    range: vcard_Kind
+    slot_uri: vcard:hasMember
+    source: http://www.w3.org/2006/vcard/ns
+    title: has member
+  vcard_hasName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the components of the name of the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#n
+    name: vcard_hasName
+    range: vcard_Name
+    slot_uri: vcard:hasName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has name
+  vcard_hasNickname:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the nickname data property
+    name: vcard_hasNickname
+    range: Any
+    see_also:
+    - http://www.w3.org/2006/vcard/ns#nickname
+    slot_uri: vcard:hasNickname
+    source: http://www.w3.org/2006/vcard/ns
+    title: has nickname
+  vcard_hasNote:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the note data property
+    name: vcard_hasNote
+    range: Any
+    slot_uri: vcard:hasNote
+    source: http://www.w3.org/2006/vcard/ns
+    title: has note
+  vcard_hasOrganizationName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the organization name data
+      property
+    name: vcard_hasOrganizationName
+    range: Any
+    slot_uri: vcard:hasOrganizationName
+    source: http://www.w3.org/2006/vcard/ns
+    title: has organization name
+  vcard_hasOrganizationUnit:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the organization unit name
+      data property
+    name: vcard_hasOrganizationUnit
+    range: Any
+    slot_uri: vcard:hasOrganizationUnit
+    source: http://www.w3.org/2006/vcard/ns
+    title: has organization unit name
+  vcard_hasPhoto:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify an image or photograph information that annotates some
+      aspect of the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#photo
+    name: vcard_hasPhoto
+    range: Any
+    slot_uri: vcard:hasPhoto
+    source: http://www.w3.org/2006/vcard/ns
+    title: has photo
+  vcard_hasPostalCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the postal code data property
+    name: vcard_hasPostalCode
+    range: Any
+    slot_uri: vcard:hasPostalCode
+    source: http://www.w3.org/2006/vcard/ns
+    title: has postal code
+  vcard_hasRegion:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the region data property
+    name: vcard_hasRegion
+    range: Any
+    slot_uri: vcard:hasRegion
+    source: http://www.w3.org/2006/vcard/ns
+    title: has region
+  vcard_hasRelated:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a relationship between another entity and the entity represented
+      by this object
+    name: vcard_hasRelated
+    range: Any
+    slot_uri: vcard:hasRelated
+    source: http://www.w3.org/2006/vcard/ns
+    title: has related
+  vcard_hasRole:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the role data property
+    name: vcard_hasRole
+    range: Any
+    slot_uri: vcard:hasRole
+    source: http://www.w3.org/2006/vcard/ns
+    title: has role
+  vcard_hasSound:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a digital sound content information that annotates some
+      aspect of the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#sound
+    name: vcard_hasSound
+    range: Any
+    slot_uri: vcard:hasSound
+    source: http://www.w3.org/2006/vcard/ns
+    title: has sound
+  vcard_hasSource:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To identify the source of directory information of the object
+    name: vcard_hasSource
+    range: Any
+    slot_uri: vcard:hasSource
+    source: http://www.w3.org/2006/vcard/ns
+    title: has source
+  vcard_hasStreetAddress:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the street address data property
+    name: vcard_hasStreetAddress
+    range: Any
+    slot_uri: vcard:hasStreetAddress
+    source: http://www.w3.org/2006/vcard/ns
+    title: has street address
+  vcard_hasTelephone:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the telephone number for telephony communication with
+      the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#tel
+    name: vcard_hasTelephone
+    range: Any
+    slot_uri: vcard:hasTelephone
+    source: http://www.w3.org/2006/vcard/ns
+    title: has telephone
+  vcard_hasTitle:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to support property parameters for the title data property
+    name: vcard_hasTitle
+    range: Any
+    slot_uri: vcard:hasTitle
+    source: http://www.w3.org/2006/vcard/ns
+    title: has title
+  vcard_hasUID:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a value that represents a globally unique identifier corresponding
+      to the object
+    name: vcard_hasUID
+    range: Any
+    slot_uri: vcard:hasUID
+    source: http://www.w3.org/2006/vcard/ns
+    title: has uid
+  vcard_hasURL:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify a uniform resource locator associated with the object
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#url
+    name: vcard_hasURL
+    range: Any
+    slot_uri: vcard:hasURL
+    source: http://www.w3.org/2006/vcard/ns
+    title: has url
+  vcard_hasValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to indicate the resource value of an object property that requires
+      property parameters
+    name: vcard_hasValue
+    range: Any
+    slot_uri: vcard:hasValue
+    source: http://www.w3.org/2006/vcard/ns
+    title: has value
+  vcard_honorific-prefix:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The honorific prefix of the name associated with the object
+    name: vcard_honorific-prefix
+    range: string
+    slot_uri: vcard:honorific-prefix
+    source: http://www.w3.org/2006/vcard/ns
+    title: honorific prefix
+  vcard_honorific-suffix:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The honorific suffix of the name associated with the object
+    name: vcard_honorific-suffix
+    range: string
+    slot_uri: vcard:honorific-suffix
+    source: http://www.w3.org/2006/vcard/ns
+    title: honorific suffix
+  vcard_inAddressBook:
+    comments:
+    - 'description: Indicates that an Individual appears in an AddressBook'
+    - 'description: This property is not part of vCard as defined by the IETF'
+    - No occurrences of this slot in the graph.
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_inAddressBook
+    range: Any
+    slot_uri: vcard:inAddressBook
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: in AddressBook
+  vcard_includesGroup:
+    comments:
+    - 'description: When included in the group index document of an AddressBook, adds
+      the group to the AddressBook'
+    - 'description: This property is not part of vCard as defined by the IETF'
+    - No occurrences of this slot in the graph.
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_includesGroup
+    range: Any
+    slot_uri: vcard:includesGroup
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: includes group
+  vcard_key:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasKey
+    name: vcard_key
+    range: Any
+    slot_uri: vcard:key
+    source: http://www.w3.org/2006/vcard/ns
+    title: key
+  vcard_label:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated
+    name: vcard_label
+    range: Any
+    slot_uri: vcard:label
+    source: http://www.w3.org/2006/vcard/ns
+    title: label
+  vcard_language:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the language that may be used for contacting the object.
+      May also be used as a property parameter.
+    name: vcard_language
+    range: Any
+    slot_uri: vcard:language
+    source: http://www.w3.org/2006/vcard/ns
+    title: language
+  vcard_latitude:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated. See hasGeo
+    name: vcard_latitude
+    range: Any
+    slot_uri: vcard:latitude
+    source: http://www.w3.org/2006/vcard/ns
+    title: latitude
+  vcard_locality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The locality (e.g. city or town) associated with the address of the
+      object
+    name: vcard_locality
+    range: string
+    slot_uri: vcard:locality
+    source: http://www.w3.org/2006/vcard/ns
+    title: locality
+  vcard_logo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasLogo
+    name: vcard_logo
+    range: Any
+    slot_uri: vcard:logo
+    source: http://www.w3.org/2006/vcard/ns
+    title: logo
+  vcard_longitude:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated. See hasGeo
+    name: vcard_longitude
+    range: Any
+    slot_uri: vcard:longitude
+    source: http://www.w3.org/2006/vcard/ns
+    title: longitude
+  vcard_mailer:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated
+    name: vcard_mailer
+    range: Any
+    slot_uri: vcard:mailer
+    source: http://www.w3.org/2006/vcard/ns
+    title: mailer
+  vcard_n:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasName
+    name: vcard_n
+    range: Any
+    slot_uri: vcard:n
+    source: http://www.w3.org/2006/vcard/ns
+    title: name
+  vcard_nameEmailIndex:
+    comments:
+    - 'description: Links an AddressBook to a document containing Individuals that
+      appear in it'
+    - 'description: This property is not part of vCard as defined by the IETF'
+    - No occurrences of this slot in the graph.
+    description: This term is not part of vCard as defined by the IETF
+    name: vcard_nameEmailIndex
+    range: Any
+    slot_uri: vcard:nameEmailIndex
+    source: https://raw.githack.com/solid/contacts/refs/heads/main/vcard-extension-addressbook.ttl
+    title: name email index
+  vcard_nickname:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The nick name associated with the object
+    name: vcard_nickname
+    range: string
+    slot_uri: vcard:nickname
+    source: http://www.w3.org/2006/vcard/ns
+    title: nickname
+  vcard_note:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A note associated with the object
+    name: vcard_note
+    range: string
+    slot_uri: vcard:note
+    source: http://www.w3.org/2006/vcard/ns
+    title: note
+  vcard_org:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped. Use the organization-name data
+      property.
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#organization-name
+    name: vcard_org
+    range: Any
+    slot_uri: vcard:org
+    source: http://www.w3.org/2006/vcard/ns
+    title: organization
+  vcard_organization-name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the organizational name associated with the object
+    name: vcard_organization-name
+    range: string
+    slot_uri: vcard:organization-name
+    source: http://www.w3.org/2006/vcard/ns
+    title: organization name
+  vcard_organization-unit:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the organizational unit name associated with the object
+    name: vcard_organization-unit
+    range: string
+    slot_uri: vcard:organization-unit
+    source: http://www.w3.org/2006/vcard/ns
+    subproperty_of: vcard_organization-name
+    title: organizational unit name
+  vcard_photo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasPhoto
+    name: vcard_photo
+    range: Any
+    slot_uri: vcard:photo
+    source: http://www.w3.org/2006/vcard/ns
+    title: photo
+  vcard_post-office-box:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This data property has been deprecated
+    name: vcard_post-office-box
+    range: Any
+    slot_uri: vcard:post-office-box
+    source: http://www.w3.org/2006/vcard/ns
+    title: post office box
+  vcard_postal-code:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The postal code associated with the address of the object
+    name: vcard_postal-code
+    range: string
+    slot_uri: vcard:postal-code
+    source: http://www.w3.org/2006/vcard/ns
+    title: postal code
+  vcard_prodid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the identifier for the product that created the object
+    name: vcard_prodid
+    range: string
+    slot_uri: vcard:prodid
+    source: http://www.w3.org/2006/vcard/ns
+    title: product id
+  vcard_region:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The region (e.g. state or province) associated with the address of
+      the object
+    name: vcard_region
+    range: string
+    slot_uri: vcard:region
+    source: http://www.w3.org/2006/vcard/ns
+    title: region
+  vcard_rev:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify revision information about the object
+    name: vcard_rev
+    range: datetime
+    slot_uri: vcard:rev
+    source: http://www.w3.org/2006/vcard/ns
+    title: revision
+  vcard_role:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the function or part played in a particular situation
+      by the object
+    name: vcard_role
+    range: string
+    slot_uri: vcard:role
+    source: http://www.w3.org/2006/vcard/ns
+    title: role
+  vcard_sort-string:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the string to be used for national-language-specific sorting.
+      Used as a property parameter only.
+    name: vcard_sort-string
+    range: string
+    slot_uri: vcard:sort-string
+    source: http://www.w3.org/2006/vcard/ns
+    title: sort as
+  vcard_sound:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasSound
+    name: vcard_sound
+    range: Any
+    slot_uri: vcard:sound
+    source: http://www.w3.org/2006/vcard/ns
+    title: sound
+  vcard_street-address:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The street address associated with the address of the object
+    name: vcard_street-address
+    range: string
+    slot_uri: vcard:street-address
+    source: http://www.w3.org/2006/vcard/ns
+    title: street address
+  vcard_tel:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasTelephone
+    name: vcard_tel
+    range: Any
+    slot_uri: vcard:tel
+    source: http://www.w3.org/2006/vcard/ns
+    title: telephone
+  vcard_title:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To specify the position or job of the object
+    name: vcard_title
+    range: string
+    slot_uri: vcard:title
+    source: http://www.w3.org/2006/vcard/ns
+    title: title
+  vcard_tz:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: To indicate time zone information that is specific to the object.
+      May also be used as a property parameter.
+    name: vcard_tz
+    range: string
+    slot_uri: vcard:tz
+    source: http://www.w3.org/2006/vcard/ns
+    title: time zone
+  vcard_url:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This object property has been mapped
+    exact_mappings:
+    - http://www.w3.org/2006/vcard/ns#hasURL
+    name: vcard_url
+    range: Any
+    slot_uri: vcard:url
+    source: http://www.w3.org/2006/vcard/ns
+    title: url
+  vcard_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to indicate the literal value of a data property that requires
+      property parameters
+    name: vcard_value
+    range: Any
+    slot_uri: vcard:value
+    source: http://www.w3.org/2006/vcard/ns
+    title: value
+title: No schema name specified

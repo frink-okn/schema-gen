@@ -1,0 +1,79 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+      slots:
+        tag: slots
+        value: {}
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+classes: {}
+comments:
+- 'title: SemWeb Vocab Status ontology'
+- 'description: This vocabulary was created in the FOAF project, based on experience
+  with FOAF, Dublin Core and other early RDF vocabularies. Deployment experience shows
+  that changing namespace URIs is expensive and unrewarding, so this vocabulary provides
+  terms to support in-place evolution of structured data vocabularies. By indicating
+  status at the level of terms rather than vocabularies, dictionary-style, fine grained
+  improvements become easier. Different organizations and parties can agree or disagree
+  on the status of a vocabulary term; however the status published alongside the term
+  may deserve special attention. Future work could include patterns for citing announcements
+  and decisions, or using SKOS to decentralise the extension of the basic status levels.'
+created_on: '2025-07-15T20:24:01.856179'
+default_prefix: okn
+description: An RDF vocabulary for relating SW vocabulary terms to their status.
+id: okns:swvs
+imports:
+- https://purl.org/okn/schema/extended_types
+last_updated_on: '2025-07-15T20:24:01.856179'
+name: swvs
+prefixes:
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+slots:
+  swvs_moreinfo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: more information about the status etc of a term, typically human
+      oriented
+    name: swvs_moreinfo
+    range: Any
+    slot_uri: swvs:moreinfo
+    source: http://www.w3.org/2003/06/sw-vocab-status/ns#
+    title: more info
+  swvs_term_status:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: the status of a vocabulary term, expressed as a short symbolic string;
+      known values include 'unstable','testing', 'stable' and 'archaic'
+    name: swvs_term_status
+    range: Any
+    slot_uri: swvs:term_status
+    source: http://www.w3.org/2003/06/sw-vocab-status/ns#
+    title: term status
+  swvs_userdocs:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: human-oriented documentation, examples etc for use of this term
+    name: swvs_userdocs
+    range: Any
+    slot_uri: swvs:userdocs
+    source: http://www.w3.org/2003/06/sw-vocab-status/ns#
+    title: user docs
+title: No schema name specified

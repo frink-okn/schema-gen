@@ -1,0 +1,292 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value:
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 5
+          foaf:name:
+            tag: foaf:name
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 5
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+          schema:affiliation:
+            tag: schema:affiliation
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          foaf:homepage:
+            tag: foaf:homepage
+            value: 5
+          foaf:name:
+            tag: foaf:name
+            value: 5
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value: 3
+          schema:affiliation:
+            tag: schema:affiliation
+            value: 2
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value:
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://ies.jrc.ec.europa.eu/DE
+                      predicate:
+                        tag: predicate
+                        value: foaf:homepage
+                      subject:
+                        tag: subject
+                        value: n883b669bda5c4adaacfa94d17803dab6b3
+          foaf:name:
+            tag: foaf:name
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'European Commission, Joint Research Centre '
+                      predicate:
+                        tag: predicate
+                        value: foaf:name
+                      subject:
+                        tag: subject
+                        value: n883b669bda5c4adaacfa94d17803dab6b3
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://andrea-perego.name/foaf/#me
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: n883b669bda5c4adaacfa94d17803dab6b2
+          schema:affiliation:
+            tag: schema:affiliation
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/data#W3C
+                      predicate:
+                        tag: predicate
+                        value: schema:affiliation
+                      subject:
+                        tag: subject
+                        value: n883b669bda5c4adaacfa94d17803dab6b1
+classes:
+  regorg_RegisteredOrganization:
+    class_uri: regorg:RegisteredOrganization
+    description: "rov:RegisteredOrganization is the key class for the Registered Organization\
+      \ vocabulary and represents \u240A    an organization that is legally registered.\
+      \ In many countries there is a single registry although in others, such \u240A\
+      \    as Spain and Germany, multiple registries exist. A Registered Organization\
+      \ is able to trade, is legally liable for \u240A    its actions, accounts, tax\
+      \ affairs etc. Legal entity status is conferred by the act of registration cf.\
+      \ \u240A    org:FormalOrganization that applies to any legal entity, including\
+      \ those created by other legal means.\u240A    This makes registered organizations\
+      \ distinct from the broader concept of organizations, groups or, in \u240A \
+      \   some jurisdictions, sole traders. Many organizations exist that are not\
+      \ legal entities yet to the outside world \u240A    they have staff, hierarchies,\
+      \ locations etc. Other organizations exist that are an umbrella for several\
+      \ legal entities \u240A    (universities are often good examples of this). This\
+      \ vocabulary is concerned solely with registered organizations.\u240A    In\
+      \ RDF, Registered Organization is a sub class of the Organization Ontology's\
+      \ org:FormalOrganization which is itself a \u240A    sub class of the more general\
+      \ 'Agent' class found in FOAF and Dublin Core that does encompass organizations,\
+      \ \u240A    natural persons, groups etc. - i.e. an Agent is any entity that\
+      \ is able to carry out actions.</p>"
+    is_a: org_FormalOrganization
+    name: regorg_RegisteredOrganization
+    source: http://www.w3.org/TR/vocab-regorg/
+    title: Registered Organization
+comments:
+- 'created_by: n883b669bda5c4adaacfa94d17803dab6b2'
+- 'created_by: n883b669bda5c4adaacfa94d17803dab6b4'
+- 'last_updated_on: 2013-05-24'
+- 'last_updated_on: 2013-12-21'
+- 'description: This file specifies the set of RDF classes and properties used in
+  the Registered Organization Vocabulary vocabulary'
+- 'title: Registered Organization Vocabulary'
+- 'title: Registered Organization Vocabulary'
+created_by: n883b669bda5c4adaacfa94d17803dab6b1
+created_on: '2025-07-15T20:28:03.820638'
+default_prefix: okn
+description: This is the RDF encoding of the Legal Entity vocabulary, originally developed
+  under the European Commission's ISA Programme.
+id: okns:regorg
+imports:
+- https://purl.org/okn/schema/extended_types
+- okns:owl-rdf-rdfs
+- okns:org
+- linkml:types
+- okns:adms
+- okns:dc
+last_updated_on: '2025-07-15T20:28:03.820638'
+name: regorg
+prefixes:
+  adms: http://www.w3.org/ns/adms#
+  dct: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  org: http://www.w3.org/ns/org#
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  regorg: http://www.w3.org/ns/regorg#
+  schema: http://schema.org/
+  voaf: http://purl.org/vocommons/voaf#
+slots:
+  regorg_hasRegisteredOrganization:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The has registered organization relationship can be used to link
+      any dcterms:Agent (equivalent class foaf:Agent) to a Registered Organization
+      that in some way acts as a registered legal entity for it. This is useful, for
+      example, where an organization includes one or more legal entities, or where
+      a natural person is also registered as a legal entity. rov:hasRegisteredOrganization
+      has a range of rov:RegisteredOrganization.
+    domain: dct_Agent
+    name: regorg_hasRegisteredOrganization
+    range: regorg_RegisteredOrganization
+    slot_uri: regorg:hasRegisteredOrganization
+    source: http://www.w3.org/TR/vocab-regorg/
+    title: registered organization
+  regorg_legalName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The legal name of the business. A business might have more than one
+      legal name, particularly in countries with more than one official language.
+      In such cases the language of the string should be identified.
+    name: regorg_legalName
+    range: rdfs_Literal
+    slot_uri: regorg:legalName
+    source: http://www.w3.org/TR/vocab-regorg/
+    title: legal name
+  regorg_orgActivity:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The activity of a company should be recorded using a controlled vocabulary
+      expressed as a SKOS concept scheme. Several such vocabularies exist, many of
+      which map to the UN's ISIC codes. Where a particular controlled vocabulary is
+      in use within a given context, such as SIC codes in the UK, it is acceptable
+      to use these, however, the preferred choice for European interoperability is
+      NACE. rov:orgActivity is a sub class of org:classification which has a range
+      of skos:Concept.
+    name: regorg_orgActivity
+    range: Any
+    slot_uri: regorg:orgActivity
+    source: http://www.w3.org/TR/vocab-regorg/
+    subproperty_of: org_classification
+    title: company activity
+  regorg_orgStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Terms like insolvent, bankrupt and in receivership are likely to
+      have different legal implications in different jurisdictions. Best Practice
+      for recording various other status levels is to use the relevant jurisdiction's
+      terms and to do so in a consistent manner using a SKOS Concept Scheme. rov:orgStatus
+      is a sub class of org:classification which has a range of skos:Concept.
+    name: regorg_orgStatus
+    range: Any
+    slot_uri: regorg:orgStatus
+    source: http://www.w3.org/TR/vocab-regorg/
+    subproperty_of: org_classification
+    title: company status
+  regorg_orgType:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This property records the type of organization. Familiar types are
+      SA, PLC, LLC, GmbH etc. Each jurisdiction will have a limited set of recognized
+      company types and these should be used in a consistent manner using a SKOS Concept
+      Scheme. rov:orgType is a sub class of org:classification which has a range of
+      skos:Concept.
+    name: regorg_orgType
+    range: Any
+    slot_uri: regorg:orgType
+    source: http://www.w3.org/TR/vocab-regorg/
+    subproperty_of: org_classification
+    title: company type
+  regorg_registration:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The registration is a fundamental relationship between a legal entity
+      and the authority with which it is registered and that confers legal status
+      upon it. rov:registration is a sub property of adms:identifier which has a range
+      of adms:Identifier. rov:registration has a domain of rov:RegisteredOrganization.
+    domain: regorg_RegisteredOrganization
+    name: regorg_registration
+    range: Any
+    slot_uri: regorg:registration
+    source: http://www.w3.org/ns/regorg#
+    subproperty_of: adms_identifier
+    title: registration
+title: No schema name specified

@@ -1,0 +1,344 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: 1
+          cc:Permission:
+            tag: cc:Permission
+            value: 3
+          cc:Prohibition:
+            tag: cc:Prohibition
+            value: 1
+          cc:Requirement:
+            tag: cc:Requirement
+            value: 4
+      pairs:
+        tag: pairs
+        value:
+          dc:description:
+            tag: dc:description
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              cc:Permission:
+                tag: cc:Permission
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              cc:Prohibition:
+                tag: cc:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              cc:Requirement:
+                tag: cc:Requirement
+                value:
+                  string:
+                    tag: string
+                    value: 4
+          dc:title:
+            tag: dc:title
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              cc:Permission:
+                tag: cc:Permission
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              cc:Prohibition:
+                tag: cc:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              cc:Requirement:
+                tag: cc:Requirement
+                value:
+                  string:
+                    tag: string
+                    value: 4
+      slots:
+        tag: slots
+        value:
+          dc:description:
+            tag: dc:description
+            value: 9
+          dc:title:
+            tag: dc:title
+            value: 9
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: cc:PublicDomain
+          cc:Permission:
+            tag: cc:Permission
+            value: cc:Distribution
+          cc:Prohibition:
+            tag: cc:Prohibition
+            value: cc:CommercialUse
+          cc:Requirement:
+            tag: cc:Requirement
+            value: cc:SourceCode
+      pairs:
+        tag: pairs
+        value:
+          dc:description:
+            tag: dc:description
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: no copyright; everything is permitted without restriction
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: cc:PublicDomain
+              cc:Permission:
+                tag: cc:Permission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: making multiple copies
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: cc:Reproduction
+              cc:Prohibition:
+                tag: cc:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: exercising rights for commercial purposes
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: cc:CommercialUse
+              cc:Requirement:
+                tag: cc:Requirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: derivative works be licensed under the same terms as
+                          the original work
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: cc:ShareAlike
+          dc:title:
+            tag: dc:title
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: public domain
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: cc:PublicDomain
+              cc:Permission:
+                tag: cc:Permission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: reproduction
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: cc:Reproduction
+              cc:Prohibition:
+                tag: cc:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: commercial use
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: cc:CommercialUse
+              cc:Requirement:
+                tag: cc:Requirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: share alike
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: cc:ShareAlike
+classes:
+  cc_Agent:
+    class_uri: cc:Agent
+    description: something (e.g. a person, corporation or computer) capable of creating
+      things
+    name: cc_Agent
+    title: agent
+  cc_License:
+    class_uri: cc:License
+    description: a set of requests/permissions to users of a Work, e.g. a copyright
+      license, the public domain, information for distributors
+    name: cc_License
+    slots:
+    - dc_title
+    - dc_description
+    title: license
+  cc_Permission:
+    class_uri: cc:Permission
+    description: an action that may or may not be allowed or desired
+    name: cc_Permission
+    slots:
+    - dc_title
+    - dc_description
+    title: permission
+  cc_Prohibition:
+    class_uri: cc:Prohibition
+    description: something you may be asked not to do
+    name: cc_Prohibition
+    slots:
+    - dc_title
+    - dc_description
+    title: prohibition
+  cc_Requirement:
+    class_uri: cc:Requirement
+    description: an action that may or may not be requested of you
+    name: cc_Requirement
+    slots:
+    - dc_title
+    - dc_description
+    title: requirement
+  cc_Work:
+    class_uri: cc:Work
+    description: a potentially copyrightable work
+    name: cc_Work
+    see_also:
+    - http://www.w3.org/2000/10/swap/pim/doc#Work
+    title: work
+created_on: '2025-07-15T20:25:24.774576'
+default_prefix: okn
+id: okns:cc
+imports:
+- okns:dc
+- linkml:types
+last_updated_on: '2025-07-15T20:25:24.774576'
+name: cc
+prefixes:
+  cc: http://web.resource.org/cc/
+  dc: http://purl.org/dc/elements/1.1/
+  dct: http://purl.org/dc/terms/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+slots:
+  cc_derivativeWork:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: cc_Work
+    name: cc_derivativeWork
+    range: cc_Work
+    see_also:
+    - http://purl.org/dc/elements/1.1/source
+    slot_uri: cc:derivativeWork
+    title: has a derivative work
+  cc_license:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: cc_Work
+    name: cc_license
+    range: cc_License
+    see_also:
+    - http://www.w3.org/2000/10/swap/pim/doc#ipr
+    slot_uri: cc:license
+    subproperty_of: dct_license
+    title: has license
+  cc_permits:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: cc_License
+    name: cc_permits
+    range: cc_Permission
+    slot_uri: cc:permits
+    title: permits
+  cc_prohibits:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: cc_License
+    name: cc_prohibits
+    range: cc_Prohibition
+    slot_uri: cc:prohibits
+    title: prohibits
+  cc_requires:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: cc_License
+    name: cc_requires
+    range: cc_Requirement
+    slot_uri: cc:requires
+    title: requires
+title: No schema name specified

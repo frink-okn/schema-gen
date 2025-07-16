@@ -1,0 +1,226 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          dcmitype:Text:
+            tag: dcmitype:Text
+            value: 2
+          dct:IMT:
+            tag: dct:IMT
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          dc:format:
+            tag: dc:format
+            value:
+              dcmitype:Text:
+                tag: dcmitype:Text
+                value:
+                  dct:IMT:
+                    tag: dct:IMT
+                    value: 2
+          rdf:value:
+            tag: rdf:value
+            value:
+              dct:IMT:
+                tag: dct:IMT
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              dct:IMT:
+                tag: dct:IMT
+                value:
+                  string:
+                    tag: string
+                    value: 2
+      slots:
+        tag: slots
+        value:
+          dc:format:
+            tag: dc:format
+            value: 2
+          rdf:value:
+            tag: rdf:value
+            value: 2
+          rdfs:label:
+            tag: rdfs:label
+            value: 2
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          dcmitype:Text:
+            tag: dcmitype:Text
+            value: http://schemas.talis.com/2005/address/schema-20060627.rdf
+          dct:IMT:
+            tag: dct:IMT
+            value: N4a9897eeaa0d45869608b461f87601af
+      pairs:
+        tag: pairs
+        value:
+          dc:format:
+            tag: dc:format
+            value:
+              dcmitype:Text:
+                tag: dcmitype:Text
+                value:
+                  dct:IMT:
+                    tag: dct:IMT
+                    value:
+                      object:
+                        tag: object
+                        value: N369c819a056a45b593b52b9efdd4844f
+                      predicate:
+                        tag: predicate
+                        value: dc:format
+                      subject:
+                        tag: subject
+                        value: http://schemas.talis.com/2005/address/schema-20060627.html
+          rdf:value:
+            tag: rdf:value
+            value:
+              dct:IMT:
+                tag: dct:IMT
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: text/html
+                      predicate:
+                        tag: predicate
+                        value: rdf:value
+                      subject:
+                        tag: subject
+                        value: N369c819a056a45b593b52b9efdd4844f
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              dct:IMT:
+                tag: dct:IMT
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: HTML
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: N369c819a056a45b593b52b9efdd4844f
+classes: {}
+comments:
+- 'last_updated_on: 2006-06-26'
+- 'title: Address Schema'
+created_on: '2025-07-15T20:26:15.846539'
+default_prefix: okn
+id: okns:address
+imports:
+- okns:owl-rdf-rdfs
+- linkml:types
+- https://purl.org/okn/schema/extended_types
+- okns:dc
+- okns:frbr
+last_updated_on: '2025-07-15T20:26:15.846539'
+name: address
+prefixes:
+  address: http://schemas.talis.com/2005/address/schema#
+  dc: http://purl.org/dc/elements/1.1/
+  dcmitype: http://purl.org/dc/dcmitype/
+  dct: http://purl.org/dc/terms/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+slots:
+  address_countryName:
+    comments:
+    - 'description: For example: "Egypt"'
+    - No occurrences of this slot in the graph.
+    description: the name of the country, principality or national entity
+    name: address_countryName
+    range: Any
+    slot_uri: address:countryName
+    source: http://schemas.talis.com/2005/address/schema#
+    title: countryName
+  address_fax:
+    comments:
+    - 'description: The number must be in standard international format. For example:
+      "+43 1 53410434"'
+    - No occurrences of this slot in the graph.
+    description: a fax number which can be used to contact a person at the address
+    name: address_fax
+    range: Any
+    slot_uri: address:fax
+    source: http://schemas.talis.com/2005/address/schema#
+    title: fax
+  address_localityName:
+    comments:
+    - 'description: For example: "Santiago 1400"'
+    - No occurrences of this slot in the graph.
+    description: the name of the city, town, village or other geopolitical region
+      for which the streetAddress is unambiguous
+    name: address_localityName
+    range: Any
+    slot_uri: address:localityName
+    source: http://schemas.talis.com/2005/address/schema#
+    title: localityName
+  address_postalCode:
+    comments:
+    - 'description: For example: "NN14 7DS"'
+    - No occurrences of this slot in the graph.
+    description: the postcode or zipcode of the address
+    name: address_postalCode
+    range: Any
+    slot_uri: address:postalCode
+    source: http://schemas.talis.com/2005/address/schema#
+    title: postalCode
+  address_regionName:
+    comments:
+    - 'description: For example: "Alabama"'
+    - No occurrences of this slot in the graph.
+    description: the name of the region within the country, principality or national
+      entity
+    name: address_regionName
+    range: Any
+    slot_uri: address:regionName
+    source: http://schemas.talis.com/2005/address/schema#
+    title: regionName
+  address_streetAddress:
+    comments:
+    - 'description: For example: "13 Queen Street"'
+    - No occurrences of this slot in the graph.
+    description: the building name and number and street name
+    name: address_streetAddress
+    range: Any
+    slot_uri: address:streetAddress
+    source: http://schemas.talis.com/2005/address/schema#
+    title: streetAddress
+  address_tel:
+    comments:
+    - 'description: The number must be in standard international format. For example:
+      "+43 1 53410437"'
+    - No occurrences of this slot in the graph.
+    description: a telephone number which can be used to contact a person at the address
+    name: address_tel
+    range: Any
+    slot_uri: address:tel
+    source: http://schemas.talis.com/2005/address/schema#
+    title: tel
+title: No schema name specified

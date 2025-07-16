@@ -1,0 +1,253 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: 1
+          cc:Work:
+            tag: cc:Work
+            value: 1
+          foaf:Person:
+            tag: foaf:Person
+            value: 1
+      pairs:
+        tag: pairs
+        value:
+          cc:license:
+            tag: cc:license
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  cc:License:
+                    tag: cc:License
+                    value: 1
+          cc:permits:
+            tag: cc:permits
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+          cc:requires:
+            tag: cc:requires
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value: 2
+          dct:type:
+            tag: dct:type
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          foaf:name:
+            tag: foaf:name
+            value:
+              foaf:Person:
+                tag: foaf:Person
+                value:
+                  string:
+                    tag: string
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          cc:license:
+            tag: cc:license
+            value: 1
+          cc:permits:
+            tag: cc:permits
+            value: 3
+          cc:requires:
+            tag: cc:requires
+            value: 2
+          dct:type:
+            tag: dct:type
+            value: 1
+          foaf:name:
+            tag: foaf:name
+            value: 1
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: http://creativecommons.org/licenses/by/1.0/
+          cc:Work:
+            tag: cc:Work
+            value: https://purl.org/okn/schema/vann
+          foaf:Person:
+            tag: foaf:Person
+            value: http://iandavis.com/id/me
+      pairs:
+        tag: pairs
+        value:
+          cc:license:
+            tag: cc:license
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  cc:License:
+                    tag: cc:License
+                    value:
+                      object:
+                        tag: object
+                        value: http://creativecommons.org/licenses/by/1.0/
+                      predicate:
+                        tag: predicate
+                        value: cc:license
+                      subject:
+                        tag: subject
+                        value: https://purl.org/okn/schema/vann
+          cc:permits:
+            tag: cc:permits
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: cc:Reproduction
+                      predicate:
+                        tag: predicate
+                        value: cc:permits
+                      subject:
+                        tag: subject
+                        value: http://creativecommons.org/licenses/by/1.0/
+          cc:requires:
+            tag: cc:requires
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: cc:Notice
+                      predicate:
+                        tag: predicate
+                        value: cc:requires
+                      subject:
+                        tag: subject
+                        value: http://creativecommons.org/licenses/by/1.0/
+          dct:type:
+            tag: dct:type
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: dcmitype:Text
+                      predicate:
+                        tag: predicate
+                        value: dct:type
+                      subject:
+                        tag: subject
+                        value: https://purl.org/okn/schema/vann
+          foaf:name:
+            tag: foaf:name
+            value:
+              foaf:Person:
+                tag: foaf:Person
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Ian Davis
+                      predicate:
+                        tag: predicate
+                        value: foaf:name
+                      subject:
+                        tag: subject
+                        value: http://iandavis.com/id/me
+classes: {}
+comments:
+- 'title: VANN: A vocabulary for annotating vocabulary descriptions'
+created_by: http://iandavis.com/id/me
+created_on: '2025-07-15T20:25:49.918243'
+default_prefix: okn
+description: This document describes a vocabulary for annotating descriptions of vocabularies
+  with examples and usage notes.
+id: okns:vann
+imports:
+- okns:cc
+- okns:adms
+- linkml:types
+- okns:owl-rdf-rdfs
+- okns:foaf
+- okns:dc
+- https://purl.org/okn/schema/extended_types
+last_updated_on: '2025-07-15T20:25:49.918243'
+name: vann
+prefixes:
+  cc: http://web.resource.org/cc/
+  dcmitype: http://purl.org/dc/dcmitype/
+  dct: http://purl.org/dc/terms/
+  foaf: http://xmlns.com/foaf/0.1/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vann: http://purl.org/vocab/vann/
+slots:
+  vann_example:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A reference to a resource that provides an example of how this resource
+      can be used.
+    name: vann_example
+    range: Any
+    slot_uri: vann:example
+    source: http://purl.org/vocab/vann/
+    subproperty_of: rdfs_seeAlso
+    title: Example
+  vann_termGroup:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A group of related terms in a vocabulary.
+    name: vann_termGroup
+    range: Any
+    slot_uri: vann:termGroup
+    source: http://purl.org/vocab/vann/
+    title: Term Group
+  vann_usageNote:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A reference to a resource that provides information on how this resource
+      is to be used.
+    name: vann_usageNote
+    range: Any
+    slot_uri: vann:usageNote
+    source: http://purl.org/vocab/vann/
+    subproperty_of: rdfs_seeAlso
+    title: Usage Note
+title: No schema name specified

@@ -1,0 +1,2918 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          mo:ReleaseStatus:
+            tag: mo:ReleaseStatus
+            value: 3
+          mo:ReleaseType:
+            tag: mo:ReleaseType
+            value: 10
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 6
+      pairs:
+        tag: pairs
+        value:
+          dc:description:
+            tag: dc:description
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value: 10
+          dc:title:
+            tag: dc:title
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value: 10
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 6
+          foaf:name:
+            tag: foaf:name
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 7
+          mo:level:
+            tag: mo:level
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value: 10
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 4
+                  uri:
+                    tag: uri
+                    value: 2
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 6
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 3
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 10
+      slots:
+        tag: slots
+        value:
+          dc:description:
+            tag: dc:description
+            value: 13
+          dc:title:
+            tag: dc:title
+            value: 13
+          foaf:homepage:
+            tag: foaf:homepage
+            value: 6
+          foaf:name:
+            tag: foaf:name
+            value: 7
+          mo:level:
+            tag: mo:level
+            value: 13
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 6
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 6
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 13
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          mo:ReleaseStatus:
+            tag: mo:ReleaseStatus
+            value: mo:bootleg
+          mo:ReleaseType:
+            tag: mo:ReleaseType
+            value: mo:audiobook
+          owl:Restriction:
+            tag: owl:Restriction
+            value: nf56227f1d7c140f5bab8d98621bcae48b9
+      pairs:
+        tag: pairs
+        value:
+          dc:description:
+            tag: dc:description
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Any musical work or the expression of a musical work
+                          officially sanctioned by the artist and/or their corporate
+                          body.
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: mo:official
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\n        Recording of the questioning of a person.\n\
+                          \        This is a type of MusicalManifestation defined\
+                          \ by the musical industry.\n    "
+                      predicate:
+                        tag: predicate
+                        value: dc:description
+                      subject:
+                        tag: subject
+                        value: mo:interview
+          dc:title:
+            tag: dc:title
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: official
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: mo:official
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: interview
+                      predicate:
+                        tag: predicate
+                        value: dc:title
+                      subject:
+                        tag: subject
+                        value: mo:interview
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://apassant.net/
+                      predicate:
+                        tag: predicate
+                        value: foaf:homepage
+                      subject:
+                        tag: subject
+                        value: nf56227f1d7c140f5bab8d98621bcae48b3
+          foaf:name:
+            tag: foaf:name
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Alexandre Passant
+                      predicate:
+                        tag: predicate
+                        value: foaf:name
+                      subject:
+                        tag: subject
+                        value: nf56227f1d7c140f5bab8d98621bcae48b3
+          mo:level:
+            tag: mo:level
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: mo:level
+                      subject:
+                        tag: subject
+                        value: mo:official
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: mo:level
+                      subject:
+                        tag: subject
+                        value: mo:interview
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: mo:performed
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nf56227f1d7c140f5bab8d98621bcae48b8
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: event:isAgentIn
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nf56227f1d7c140f5bab8d98621bcae48b5
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: mo:Composition
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: nf56227f1d7c140f5bab8d98621bcae48b5
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              mo:ReleaseStatus:
+                tag: mo:ReleaseStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: 'mo:'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: mo:official
+              mo:ReleaseType:
+                tag: mo:ReleaseType
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: 'mo:'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: mo:interview
+classes:
+  http___purl.org_NET_c4dm_keys.owl#Key:
+    class_uri: http://purl.org/NET/c4dm/keys.owl#Key
+    name: http___purl.org_NET_c4dm_keys.owl#Key
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  mo_Activity:
+    class_uri: mo:Activity
+    description: An activity period, defining when an artist was musically active.
+    is_a: event_Event
+    name: mo_Activity
+    source: http://purl.org/ontology/mo/
+    title: activity
+  mo_AnalogSignal:
+    class_uri: mo:AnalogSignal
+    description: An analog signal.
+    is_a: mo_Signal
+    name: mo_AnalogSignal
+    source: http://purl.org/ontology/mo/
+    title: analogue signal
+  mo_Arrangement:
+    class_uri: mo:Arrangement
+    description: "An arrangement event.\u240A        Takes as agent the arranger,\
+      \ and produces a score (informational object, not the actually published score)."
+    is_a: event_Event
+    name: mo_Arrangement
+    source: http://purl.org/ontology/mo/
+    title: arrangement
+  mo_Arranger:
+    class_uri: mo:Arranger
+    is_a: foaf_Agent
+    name: mo_Arranger
+    title: arranger
+  mo_AudioFile:
+    class_uri: mo:AudioFile
+    description: An audio file, which may be available on a local file system or through
+      http, ftp, etc.
+    is_a: foaf_Document
+    name: mo_AudioFile
+    source: http://purl.org/ontology/mo/
+    title: audio file
+  mo_CD:
+    class_uri: mo:CD
+    description: Compact Disc used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_CD
+    source: http://purl.org/ontology/mo/
+    title: CD
+  mo_Composer:
+    class_uri: mo:Composer
+    is_a: foaf_Agent
+    name: mo_Composer
+    title: composer
+  mo_Composition:
+    class_uri: mo:Composition
+    description: "A composition event.\u240A        Takes as agent the composer himself.\u240A\
+      \        It produces a MusicalWork, or a MusicalExpression (when the initial\
+      \ \"product\" is a score, for example), or both..."
+    is_a: event_Event
+    name: mo_Composition
+    source: http://purl.org/ontology/mo/
+    title: composition
+  mo_Conductor:
+    class_uri: mo:Conductor
+    is_a: foaf_Agent
+    name: mo_Conductor
+    title: conductor
+  mo_CorporateBody:
+    class_uri: mo:CorporateBody
+    description: Organization or group of individuals and/or other organizations involved
+      in the music market.
+    is_a: foaf_Organization
+    name: mo_CorporateBody
+    source: http://purl.org/ontology/mo/
+    title: corporate body
+  mo_DAT:
+    class_uri: mo:DAT
+    description: Digital Audio Tape used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_DAT
+    source: http://purl.org/ontology/mo/
+    title: DAT
+  mo_DCC:
+    class_uri: mo:DCC
+    description: Digital Compact Cassette used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_DCC
+    source: http://purl.org/ontology/mo/
+    title: DCC
+  mo_DVDA:
+    class_uri: mo:DVDA
+    description: DVD-Audio used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_DVDA
+    source: http://purl.org/ontology/mo/
+    title: DVDA
+  mo_DigitalSignal:
+    class_uri: mo:DigitalSignal
+    description: A digital signal
+    is_a: mo_Signal
+    name: mo_DigitalSignal
+    source: http://purl.org/ontology/mo/
+    title: digital signal
+  mo_ED2K:
+    class_uri: mo:ED2K
+    description: Something available on the E-Donkey peer-2-peer filesharing network
+    is_a: mo_Medium
+    name: mo_ED2K
+    source: http://purl.org/ontology/mo/
+    title: ED2K
+  mo_Festival:
+    class_uri: mo:Festival
+    description: "A festival - musical/artistic event lasting several days, like Glastonbury,\
+      \ Rock Am Ring...\u240A        We migth decompose this event (which is in fact\
+      \ just a classification of the space/time region related to \u240A        a\
+      \ particular festival) using hasSubEvent in several performances at different\
+      \ space/time."
+    is_a: event_Event
+    name: mo_Festival
+    source: http://purl.org/ontology/mo/
+    title: Festival
+  mo_Genre:
+    class_uri: mo:Genre
+    description: "An expressive style of music.\u240A        \u240A        Any taxonomy\
+      \ can be plug-in here. You can either define a genre by yourself, like this:\u240A\
+      \u240A        :mygenre a mo:Genre; dc:title \"electro rock\".\u240A\u240A  \
+      \      Or you can refer to a DBPedia genre (such as http://dbpedia.org/resource/Baroque_music),\
+      \ allowing semantic web\u240A        clients to access easily really detailed\
+      \ structured information about the genre you are refering to."
+    name: mo_Genre
+    source: http://purl.org/ontology/mo/
+    title: Genre
+  mo_Instrument:
+    class_uri: mo:Instrument
+    description: "Any of various devices or contrivances that can be used to produce\
+      \ musical tones or sound.\u240A        \u240A        Any taxonomy can be used\
+      \ to subsume this concept. The default one is one extracted by Ivan Herman\u240A\
+      \        from the Musicbrainz instrument taxonomy, conforming to SKOS. This\
+      \ concept holds a seeAlso link \u240A        towards this taxonomy."
+    name: mo_Instrument
+    see_also:
+    - http://purl.org/ontology/mo/mit#
+    source: http://purl.org/ontology/mo/
+    title: Instrument
+  mo_Instrumentation:
+    class_uri: mo:Instrumentation
+    description: "Instrumentation deals with the techniques of writing music for a\
+      \ specific instrument, \u240A        including the limitations of the instrument,\
+      \ playing techniques and idiomatic handling of the instrument."
+    is_a: mo_Arrangement
+    name: mo_Instrumentation
+    source: http://purl.org/ontology/mo/
+    title: instrumentation
+  mo_Label:
+    class_uri: mo:Label
+    description: Trade name of a company that produces musical works or expression
+      of musical works.
+    is_a: mo_CorporateBody
+    name: mo_Label
+    source: http://purl.org/ontology/mo/
+    title: label
+  mo_Libretto:
+    class_uri: mo:Libretto
+    description: Libretto
+    is_a: mo_MusicalExpression
+    name: mo_Libretto
+    source: http://purl.org/ontology/mo/
+    title: libretto
+  mo_Listener:
+    class_uri: mo:Listener
+    is_a: foaf_Agent
+    name: mo_Listener
+    title: listened
+  mo_Lyrics:
+    class_uri: mo:Lyrics
+    description: Lyrics
+    is_a: mo_MusicalExpression
+    name: mo_Lyrics
+    source: http://purl.org/ontology/mo/
+    title: lyrics
+  mo_MD:
+    class_uri: mo:MD
+    description: Mini Disc used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_MD
+    source: http://purl.org/ontology/mo/
+    title: MD
+  mo_MagneticTape:
+    class_uri: mo:MagneticTape
+    description: Magnetic analogue tape used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_MagneticTape
+    source: http://purl.org/ontology/mo/
+    title: MagneticTape
+  mo_Medium:
+    class_uri: mo:Medium
+    description: A means or instrumentality for storing or communicating musical manifestation.
+    is_a: mo_MusicalItem
+    name: mo_Medium
+    source: http://purl.org/ontology/mo/
+    title: Medium
+  mo_Membership:
+    class_uri: mo:Membership
+    description: A membership event, where one or several people belongs to a group
+      during a particular time period.
+    is_a: event_Event
+    name: mo_Membership
+    source: http://purl.org/ontology/mo/
+    title: membership
+  mo_Movement:
+    class_uri: mo:Movement
+    description: "A movement is a self-contained part of a musical work. While individual\
+      \ or selected movements from a composition are sometimes performed separately,\
+      \ a performance of the complete work requires all the movements to be performed\
+      \ in succession.\u240A\u240AOften a composer attempts to interrelate the movements\
+      \ thematically, or sometimes in more subtle ways, in order that the individual\u240A\
+      movements exert a cumulative effect. In some forms, composers sometimes link\
+      \ the movements, or ask for them to be played without a\u240Apause between them."
+    is_a: mo_MusicalWork
+    name: mo_Movement
+    source: http://purl.org/ontology/mo/
+    title: movement
+  mo_MusicArtist:
+    class_uri: mo:MusicArtist
+    description: "A person or a group of people (or a computer :-) ), whose musical\
+      \ \u240A        creative work shows sensitivity and imagination"
+    is_a: foaf_Agent
+    name: mo_MusicArtist
+    source: http://purl.org/ontology/mo/
+    title: music artist
+  mo_MusicGroup:
+    class_uri: mo:MusicGroup
+    description: Group of musicians, or musical ensemble, usually popular or folk,
+      playing parts of or improvising off of a musical arrangement.
+    is_a: mo_MusicArtist
+    name: mo_MusicGroup
+    source: http://purl.org/ontology/mo/
+    title: music group
+  mo_MusicalExpression:
+    class_uri: mo:MusicalExpression
+    description: "The intellectual or artistic realization of a work in the form of\
+      \ alpha-numeric, musical, or choreographic notation, sound, etc., or any combination\
+      \ of such forms.    \u240A\u240A\u240AFor example:\u240A\u240AWork #1 Franz\
+      \ Schubert's Trout quintet\u240A\u240A    * Expression #1 the composer's score\u240A\
+      \    * Expression #2 sound issued from the performance by the Amadeus Quartet\
+      \ and Hephzibah Menuhin on piano\u240A    * Expression #3 sound issued from\
+      \ the performance by the Cleveland Quartet and Yo-Yo Ma on the cello\u240A \
+      \   * . . . . \u240A\u240AThe Music Ontology defines the following sub-concepts\
+      \ of a MusicalExpression, which should be used instead of MusicalExpression\
+      \ itself: Score (the\u240Aresult of an arrangement), Sound (produced during\
+      \ a performance), Signal. However, it is possible to stick to FRBR and bypass\
+      \ the worflow\u240Amechanism this ontology defines by using the core FRBR properties\
+      \ on such objects. But it is often better to use events to interconnect such\
+      \ \u240Aexpressions (allowing to go deeply into the production process - `this\
+      \ performer was playing this particular instrument at that\u240Aparticular time')."
+    is_a: frbr_Expression
+    name: mo_MusicalExpression
+    source: http://purl.org/ontology/mo/
+    title: musical expression
+  mo_MusicalItem:
+    class_uri: mo:MusicalItem
+    description: "A single exemplar of a musical expression.\u240A    \u240AFor example,\
+      \ it could be a single exemplar of a CD. This is normally an single object (a\
+      \ CD) possessed by somebody.\u240A\u240AFrom the FRBR final report: The entity\
+      \ defined as item is a concrete entity. It is in many instances a single physical\
+      \ object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.).\
+      \ There are instances, however, where the entity defined as item comprises more\
+      \ than one physical object (e.g., a monograph issued as two separately bound\
+      \ volumes, a recording issued on three separate compact discs, etc.).\u240A\u240A\
+      In terms of intellectual content and physical form, an item exemplifying a manifestation\
+      \ is normally the same as the manifestation itself. However, variations may\
+      \ occur from one item to another, even when the items exemplify the same manifestation,\
+      \ where those variations are the result of actions external to the intent of\
+      \ the producer of the manifestation (e.g., damage occurring after the item was\
+      \ produced, binding performed by a library, etc.)."
+    name: mo_MusicalItem
+    source: http://purl.org/ontology/mo/
+    title: MusicalItem
+  mo_MusicalManifestation:
+    class_uri: mo:MusicalManifestation
+    description: "This entity is related to the edition/production/publication of\
+      \ a musical expression (musical manifestation are closely related with the music\
+      \ industry (their terms, concepts, definitions, methods (production, publication,\
+      \ etc.), etc.)\u240A    \u240AFrom the FRBR final report: The entity defined\
+      \ as manifestation encompasses a wide range of materials, including manuscripts,\
+      \ books, periodicals, maps, posters, sound recordings, films, video recordings,\
+      \ CD-ROMs, multimedia kits, etc. As an entity, manifestation represents all\
+      \ the physical objects that bear the same characteristics, in respect to both\
+      \ intellectual content and physical form.\u240A\u240A\u240AWork #1 J. S. Bach's\
+      \ Six suites for unaccompanied cello\u240A\u240A    * Expression #1 sound issued\
+      \ during the performance by Janos Starker recorded in 1963 and 1965\u240A  \
+      \        o Manifestation #1 recordings released on 33 1/3 rpm sound discs in\
+      \ 1965 by Mercury\u240A          o Manifestation #2 recordings re-released on\
+      \ compact disc in 1991 by Mercury \u240A    * Expression #2 sound issued during\
+      \ the performances by Yo-Yo Ma recorded in 1983\u240A          o Manifestation\
+      \ #1 recordings released on 33 1/3 rpm sound discs in 1983 by CBS Records\u240A\
+      \          o Manifestation #2 recordings re-released on compact disc in 1992\
+      \ by CBS Records \u240A\u240A          \u240AChanges that occur deliberately\
+      \ or even inadvertently in the production process that affect the copies result,\
+      \ strictly speaking, in a new manifestation. A manifestation resulting from\
+      \ such a change may be identified as a particular \"state\" or \"issue\" of\
+      \ the publication.\u240A\u240AChanges that occur to an individual copy after\
+      \ the production process is complete (e.g., the loss of a page, rebinding, etc.)\
+      \ are not considered to result in a new manifestation. That copy is simply considered\
+      \ to be an exemplar (or item) of the manifestation that deviates from the copy\
+      \ as produced.\u240A\u240AWith the entity defined as manifestation we can describe\
+      \ the physical characteristics of a set of items and the characteristics associated\
+      \ with the production and distribution of that set of items that may be important\
+      \ factors in enabling users to choose a manifestation appropriate to their physical\
+      \ needs and constraints, and to identify and acquire a copy of that manifestation.\u240A\
+      \u240ADefining manifestation as an entity also enables us to draw relationships\
+      \ between specific manifestations of a work. We can use the relationships between\
+      \ manifestations to identify, for example, the specific publication that was\
+      \ used to create a microreproduction."
+    is_a: frbr_Manifestation
+    name: mo_MusicalManifestation
+    source: http://purl.org/ontology/mo/
+    title: musical manifestation
+  mo_MusicalWork:
+    class_uri: mo:MusicalWork
+    description: "Distinct intellectual or artistic musical creation.\u240A    \u240A\
+      From the FRBR final report: A work is an abstract entity; there is no single\
+      \ material object one can point to as the work. We recognize the work through\
+      \ individual realizations or expressions of the work, but the work itself exists\
+      \ only in the commonality of\u240Acontent between and among the various expressions\
+      \ of the work. When we speak of Homer's Iliad as a work, our point of reference\
+      \ is not a particular recitation or text of the work, but the intellectual creation\
+      \ that lies behind all the various expressions of the work.     \u240A\u240A\
+      For example:\u240A\u240Awork #1 J. S. Bach's The art of the fugue"
+    is_a: frbr_Work
+    name: mo_MusicalWork
+    source: http://purl.org/ontology/mo/
+    title: musical work
+  mo_Orchestration:
+    class_uri: mo:Orchestration
+    description: Orchestration includes, in addition to instrumentation, the handling
+      of groups of instruments and their balance and interaction.
+    is_a: mo_Arrangement
+    name: mo_Orchestration
+    source: http://purl.org/ontology/mo/
+    title: orchestration
+  mo_Performance:
+    class_uri: mo:Performance
+    description: "A performance event. \u240A        It might include as agents performers,\
+      \ engineers, conductors, or even listeners.\u240A        It might include as\
+      \ factors a score, a MusicalWork, musical instruments. \u240A        It might\
+      \ produce a sound:-)"
+    is_a: event_Event
+    name: mo_Performance
+    source: http://purl.org/ontology/mo/
+    title: performance
+  mo_Performer:
+    class_uri: mo:Performer
+    is_a: foaf_Agent
+    name: mo_Performer
+    title: performer
+  mo_PublishedLibretto:
+    class_uri: mo:PublishedLibretto
+    description: A published libretto
+    is_a: mo_MusicalManifestation
+    name: mo_PublishedLibretto
+    source: http://purl.org/ontology/mo/
+    title: published libretto
+  mo_PublishedLyrics:
+    class_uri: mo:PublishedLyrics
+    description: Published lyrics, as a book or as a text file, for example
+    is_a: mo_MusicalManifestation
+    name: mo_PublishedLyrics
+    source: http://purl.org/ontology/mo/
+    title: published lyrics
+  mo_PublishedScore:
+    class_uri: mo:PublishedScore
+    description: A published score (subclass of MusicalManifestation)
+    is_a: mo_MusicalManifestation
+    name: mo_PublishedScore
+    source: http://purl.org/ontology/mo/
+    title: published score
+  mo_Record:
+    class_uri: mo:Record
+    description: A published record (manifestation which first aim is to render the
+      product of a recording)
+    is_a: mo_MusicalManifestation
+    name: mo_Record
+    source: http://purl.org/ontology/mo/
+    title: record
+  mo_Recording:
+    class_uri: mo:Recording
+    description: "A recording event.\u240A        Takes a sound as a factor to produce\
+      \ a signal (analog or digital).\u240A        The location of such events (if\
+      \ any) is the actual location of the corresponding\u240A        microphone or\
+      \ the \"recording device\"."
+    is_a: event_Event
+    name: mo_Recording
+    source: http://purl.org/ontology/mo/
+    title: recording
+  mo_RecordingSession:
+    class_uri: mo:RecordingSession
+    description: A set of performances/recordings/mastering events. This event can
+      be decomposed in its constituent events using event:sub_event
+    is_a: event_Event
+    name: mo_RecordingSession
+    source: http://purl.org/ontology/mo/
+    title: recording session
+  mo_Release:
+    class_uri: mo:Release
+    description: A specific release, with barcode, box, liner notes, cover art, and
+      a number of records
+    is_a: mo_MusicalManifestation
+    name: mo_Release
+    source: http://purl.org/ontology/mo/
+    title: release
+  mo_ReleaseEvent:
+    class_uri: mo:ReleaseEvent
+    description: A release event, in a particular place (e.g. a country) at a particular
+      time. Other factors of this event might include cover art, liner notes, box,
+      etc. or a release grouping all these.
+    is_a: event_Event
+    name: mo_ReleaseEvent
+    source: http://purl.org/ontology/mo/
+    title: release event
+  mo_ReleaseStatus:
+    class_uri: mo:ReleaseStatus
+    description: Musical manifestation release status.
+    name: mo_ReleaseStatus
+    slots:
+    - dc_description
+    - mo_level
+    - dc_title
+    - rdfs_isDefinedBy
+    source: http://purl.org/ontology/mo/
+    title: release status
+  mo_ReleaseType:
+    class_uri: mo:ReleaseType
+    description: Release type of a particular manifestation, such as "album" or "interview"...
+    name: mo_ReleaseType
+    slots:
+    - dc_description
+    - mo_level
+    - dc_title
+    - rdfs_isDefinedBy
+    source: http://purl.org/ontology/mo/
+    title: Release type
+  mo_SACD:
+    class_uri: mo:SACD
+    description: Super Audio Compact Disc used as medium to record a musical manifestation.
+    is_a: mo_Medium
+    name: mo_SACD
+    source: http://purl.org/ontology/mo/
+    title: SACD
+  mo_Score:
+    class_uri: mo:Score
+    description: "Here, we are dealing with the informational object (the MusicalExpression),\
+      \ not the actually \"published\" score.\u240A        This may be, for example,\
+      \ the product of an arrangement process."
+    is_a: mo_MusicalExpression
+    name: mo_Score
+    source: http://purl.org/ontology/mo/
+    title: score
+  mo_Show:
+    class_uri: mo:Show
+    description: "A show - a musical event lasting several days, in a particular venue.\
+      \ Examples can be\u240A        \"The Magic Flute\" at the Opera Bastille, August\
+      \ 2005, or a musical in the west end..."
+    is_a: event_Event
+    name: mo_Show
+    source: http://purl.org/ontology/mo/
+    title: Show
+  mo_Signal:
+    class_uri: mo:Signal
+    description: A subclass of MusicalExpression, representing a signal, for example
+      a master signal produced by a performance and a recording.
+    is_a: mo_MusicalExpression
+    name: mo_Signal
+    source: http://purl.org/ontology/mo/
+    title: signal
+  mo_SignalGroup:
+    class_uri: mo:SignalGroup
+    description: A musical expression representing a group of signals, for example
+      a set of masters resulting from a whole recording/mastering session.
+    is_a: mo_MusicalExpression
+    name: mo_SignalGroup
+    source: http://purl.org/ontology/mo/
+    title: signal group
+  mo_SoloMusicArtist:
+    class_uri: mo:SoloMusicArtist
+    description: Single person whose musical creative work shows sensitivity and imagination.
+    is_a: mo_MusicArtist
+    name: mo_SoloMusicArtist
+    source: http://purl.org/ontology/mo/
+    title: solo music artist
+  mo_Sound:
+    class_uri: mo:Sound
+    description: A subclass of MusicalExpression, representing a sound. Realisation
+      of a MusicalWork during a musical Performance.
+    is_a: mo_MusicalExpression
+    name: mo_Sound
+    source: http://purl.org/ontology/mo/
+    title: sound
+  mo_SoundEngineer:
+    class_uri: mo:SoundEngineer
+    is_a: foaf_Agent
+    name: mo_SoundEngineer
+    title: sound engineer
+  mo_Stream:
+    class_uri: mo:Stream
+    description: Transmission over a network  used as medium to broadcast a musical
+      manifestation
+    is_a: mo_Medium
+    name: mo_Stream
+    source: http://purl.org/ontology/mo/
+    title: Stream
+  mo_Torrent:
+    class_uri: mo:Torrent
+    description: Something available on the Bittorrent peer-2-peer filesharing network
+    is_a: mo_Medium
+    name: mo_Torrent
+    source: http://purl.org/ontology/mo/
+    title: Torrent
+  mo_Track:
+    class_uri: mo:Track
+    description: A track on a particular record
+    is_a: mo_MusicalManifestation
+    name: mo_Track
+    source: http://purl.org/ontology/mo/
+    title: track
+  mo_Transcription:
+    class_uri: mo:Transcription
+    description: Transcription event
+    is_a: event_Event
+    name: mo_Transcription
+    source: http://purl.org/ontology/mo/
+    title: transcription
+  mo_Vinyl:
+    class_uri: mo:Vinyl
+    description: Vinyl used as medium to record a musical manifestation
+    is_a: mo_Medium
+    name: mo_Vinyl
+    source: http://purl.org/ontology/mo/
+    title: Vinyl
+comments:
+- 'title: The Music Ontology'
+created_on: '2025-07-15T20:28:57.855681'
+default_prefix: okn
+description: "\u240A        The Music Ontology Specification provides main concepts\
+  \ and \u240A        properties fo describing music (i.e. artists, albums and tracks)\
+  \ \u240A        on the Semantic Web. \u240A"
+id: okns:mo
+imports:
+- okns:ao
+- okns:time
+- okns:wot
+- okns:dc
+- okns:owl-rdf-rdfs
+- okns:adms
+- okns:wgs
+- https://purl.org/okn/schema/extended_types
+- okns:cc
+- okns:foaf
+- okns:event
+- okns:frbr
+- linkml:types
+last_updated_on: '2025-07-15T20:28:57.855681'
+name: mo
+prefixes:
+  ao: http://purl.org/ontology/ao/core#
+  cc: http://web.resource.org/cc/
+  dc: http://purl.org/dc/elements/1.1/
+  dct: http://purl.org/dc/terms/
+  event: http://purl.org/NET/c4dm/event.owl#
+  foaf: http://xmlns.com/foaf/0.1/
+  frbr: http://purl.org/vocab/frbr/core#
+  linkml: https://w3id.org/linkml/
+  mo: http://purl.org/ontology/mo/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+  time: http://www.w3.org/2006/time#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  http___purl.org_vocab_bio_0.1_event:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: http___purl.org_vocab_bio_0.1_event
+    range: Any
+    slot_uri: http://purl.org/vocab/bio/0.1/event
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  mo_activity:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an artist to an activity period
+    domain: mo_MusicArtist
+    name: mo_activity
+    range: mo_Activity
+    slot_uri: mo:activity
+    source: http://purl.org/ontology/mo/
+    title: activity
+  mo_activity_end:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an artist to a date at which its activity ended
+    domain: mo_MusicArtist
+    name: mo_activity_end
+    range: date
+    slot_uri: mo:activity_end
+    source: http://purl.org/ontology/mo/
+    title: activity end
+  mo_activity_start:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an artist to a date at which its activity started
+    domain: mo_MusicArtist
+    name: mo_activity_start
+    range: date
+    slot_uri: mo:activity_start
+    source: http://purl.org/ontology/mo/
+    title: activity start
+  mo_amazon_asin:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a work or the expression of a work to its corresponding
+      Amazon ASINs page.
+    name: mo_amazon_asin
+    range: foaf_Document
+    slot_uri: mo:amazon_asin
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: amazon_asin
+  mo_arranged_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a work to an arrangement event where it was arranged
+    domain: mo_MusicalWork
+    inverse: mo_arrangement_of
+    name: mo_arranged_in
+    range: mo_Arrangement
+    slot_uri: mo:arranged_in
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isFactorOf
+    title: arranged in
+  mo_arrangement_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates an arrangement event to a work
+    domain: mo_Arrangement
+    inverse: mo_arranged_in
+    name: mo_arrangement_of
+    range: mo_MusicalWork
+    slot_uri: mo:arrangement_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_factor
+    title: arrangement of
+  mo_artist:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a membership event with the corresponding artist
+    domain: mo_Membership
+    name: mo_artist
+    range: foaf_Agent
+    slot_uri: mo:artist
+    source: http://purl.org/ontology/mo/
+    title: artist
+  mo_availableAs:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/available_as
+    name: mo_availableAs
+    range: Any
+    slot_uri: mo:availableAs
+  mo_available_as:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates a musical manifestation to a musical item (this album, and\
+      \ my particular cd). By using\u240A        this property, there is no assumption\
+      \ on wether the full content is available on the linked item.\u240A        To\
+      \ be explicit about this, you can use a sub-property, such as mo:item (the full\
+      \ manifestation\u240A        is available on that item) or mo:preview (only\
+      \ a part of the manifestation is available on\u240A        that item).\u240A\
+      \u240A        This is a subproperty of frbr:examplar."
+    domain: mo_MusicalManifestation
+    name: mo_available_as
+    range: mo_MusicalItem
+    slot_uri: mo:available_as
+    source: http://purl.org/ontology/mo/
+    subproperty_of: frbr_exemplar
+  mo_biography:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link an artist to their online biography.
+    domain: mo_MusicArtist
+    name: mo_biography
+    range: foaf_Document
+    slot_uri: mo:biography
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: biography
+  mo_bitsPerSample:
+    comments:
+    - 'description: Associates a digital signal to the number a bits used to encode
+      one sample. Range is xsd:int.'
+    - 'source: http://purl.org/ontology/mo/'
+    - No occurrences of this slot in the graph.
+    description: Associates a digital signal to the number a bits used to encode one
+      sample. Range is xsd:int.
+    domain: mo_DigitalSignal
+    multivalued: false
+    name: mo_bitsPerSample
+    range: int32
+    slot_uri: mo:bitsPerSample
+    source: http://purl.org/ontology/mo/
+  mo_bpm:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates the BPM of a MusicalWork or a particular Performance \u240A\
+      \        Beats per minute: the pace of music measured by the number of beats\
+      \ occurring in 60 seconds."
+    name: mo_bpm
+    range: float
+    slot_uri: mo:bpm
+    source: http://purl.org/ontology/mo/
+    title: bpm
+  mo_catalogue_number:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links a release with the corresponding catalogue number
+    domain: mo_Release
+    name: mo_catalogue_number
+    range: string
+    slot_uri: mo:catalogue_number
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: catalogue number
+  mo_channels:
+    comments:
+    - 'description: Associates a signal to the number of channels it holds (mono -->
+      1, stereo --> 2). Range is xsd:int.'
+    - 'source: http://purl.org/ontology/mo/'
+    - No occurrences of this slot in the graph.
+    description: Associates a signal to the number of channels it holds (mono -->
+      1, stereo --> 2). Range is xsd:int.
+    domain: mo_Signal
+    multivalued: false
+    name: mo_channels
+    range: int32
+    slot_uri: mo:channels
+    source: http://purl.org/ontology/mo/
+  mo_collaborated_with:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate two collaborating people on a work.
+    domain: foaf_Agent
+    name: mo_collaborated_with
+    range: foaf_Agent
+    slot_uri: mo:collaborated_with
+    source: http://purl.org/ontology/mo/
+    title: collaborated_with
+  mo_compilation_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that a musical manifestation is a compilation of several
+      Signals.
+    domain: mo_MusicalManifestation
+    name: mo_compilation_of
+    range: mo_Signal
+    slot_uri: mo:compilation_of
+    source: http://purl.org/ontology/mo/
+    title: compilation_of
+  mo_compiled:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate an person or a group of person who compiled the manifestation
+      of a musical work.
+    domain: mo_MusicArtist
+    inverse: mo_compiler
+    name: mo_compiled
+    range: mo_MusicalManifestation
+    slot_uri: mo:compiled
+    source: http://purl.org/ontology/mo/
+    title: compiled
+  mo_compiler:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate the manifestation of a musical work to a person or
+      a group of person who compiled it.
+    domain: mo_MusicalManifestation
+    inverse: mo_compiled
+    name: mo_compiler
+    range: mo_MusicArtist
+    slot_uri: mo:compiler
+    source: http://purl.org/ontology/mo/
+    title: compiler
+  mo_composed_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a MusicalWork to the Composition event pertaining\u240A\
+      \        to its creation. For example, I might use this property to associate\u240A\
+      \        the Magic Flute to its composition event, occuring during 1782 and\
+      \ having as\u240A        a mo:composer Mozart."
+    domain: mo_MusicalWork
+    inverse: mo_produced_work
+    name: mo_composed_in
+    range: mo_Composition
+    slot_uri: mo:composed_in
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_producedIn
+    title: composed in
+  mo_composer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a composition event to the actual composer. For example,\u240A\
+      \        this property could link the event corresponding to the composition\
+      \ of the\u240A        Magic Flute in 1782 to Mozart himself (who obviously has\
+      \ a FOAF profile:-) )."
+    domain: mo_Composition
+    name: mo_composer
+    range: foaf_Agent
+    slot_uri: mo:composer
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_agent
+    title: composer
+  mo_conducted:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates agents to the performances they were conducting
+    domain: foaf_Agent
+    inverse: mo_conductor
+    name: mo_conducted
+    range: mo_Performance
+    slot_uri: mo:conducted
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isAgentIn
+    title: conducted
+  mo_conductor:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to the conductor involved
+    domain: mo_Performance
+    inverse: mo_conducted
+    name: mo_conductor
+    range: foaf_Agent
+    slot_uri: mo:conductor
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_agent
+  mo_contains_sample_from:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a signal to another signal, which has been sampled.
+    name: mo_contains_sample_from
+    range: Any
+    slot_uri: mo:contains_sample_from
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: contains_sample_from
+  mo_derived_from:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A related signal from which the described signal is derived.
+    domain: mo_Signal
+    name: mo_derived_from
+    range: mo_Signal
+    slot_uri: mo:derived_from
+    source: http://purl.org/ontology/mo/
+    subproperty_of: dct_source
+    title: derived from
+  mo_discography:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to links an artist to an online discography of their musical
+      works. The discography should provide a summary of each released musical work
+      of the artist.
+    domain: mo_MusicArtist
+    name: mo_discography
+    range: foaf_Document
+    slot_uri: mo:discography
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: discography
+  mo_discogs:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a musical work or the expression of a musical work,
+      an artist or a corporate body to to its corresponding Discogs page.
+    name: mo_discogs
+    range: foaf_Document
+    slot_uri: mo:discogs
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: discogs
+  mo_djmix_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that all (or most of) the tracks of a musical work or\
+      \ the expression of a musical work were mixed together from all (or most of)\
+      \ the tracks from another musical work or the expression of a musical work to\
+      \ form a so called DJ-Mix. \u240A    \u240AThe tracks might have been altered\
+      \ by pitching (so that the tempo of one track matches the tempo of the following\
+      \ track) and fading (so that one track blends in smoothly with the other). If\
+      \ the tracks have been more substantially altered, the \"mo:remix\" relationship\
+      \ type is more appropriate."
+    name: mo_djmix_of
+    range: Any
+    slot_uri: mo:djmix_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: djmix_of
+  mo_djmixed:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to relate an artist who djmixed a musical work or the expression\
+      \ of a musical work. \u240A    \u240AThe artist usually selected the tracks,\
+      \ chose their sequence, and slightly changed them by fading (so that one track\
+      \ blends in smoothly with the other) or pitching (so that the tempo of one track\
+      \ matches the tempo of the following track). This applies to a 'Mixtape' in\
+      \ which all tracks were DJ-mixed together into one single long track."
+    domain: mo_MusicArtist
+    inverse: mo_djmixed_by
+    name: mo_djmixed
+    range: mo_Signal
+    slot_uri: mo:djmixed
+    source: http://purl.org/ontology/mo/
+    title: djmixed
+  mo_djmixed_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to relate a work or the expression of a work to an artist who\
+      \ djmixed it. \u240A    \u240AThe artist usually selected the tracks, chose\
+      \ their sequence, and slightly changed them by fading (so that one track blends\
+      \ in smoothly with the other) or pitching (so that the tempo of one track matches\
+      \ the tempo of the following track). This applies to a 'Mixtape' in which all\
+      \ tracks were DJ-mixed together into one single long track."
+    domain: mo_Signal
+    inverse: mo_djmixed
+    name: mo_djmixed_by
+    range: mo_MusicArtist
+    slot_uri: mo:djmixed_by
+    source: http://purl.org/ontology/mo/
+    title: djmixed_by
+  mo_download:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This property can be used to link from a person to the website where\
+      \ they make their works available, or from\u240A                a manifestation\
+      \ (a track or an album, for example) to a web page where it is available for\u240A\
+      \                download.\u240A        \u240A        It is better to use one\
+      \ of the three sub-properties instead of this one in order to specify wether\
+      \ the\u240A        content can be accessed for free (mo:freedownload), if it\
+      \ is just free preview material (mo:previewdownload), or\u240A        if it\
+      \ can be accessed for some money (mo:paiddownload) (this includes links to the\
+      \ Amazon store, for example).\u240A\u240A                This property MUST\
+      \ be used only if the content is just available through a web page (holding,\
+      \ for example\u240A                a Flash application) - it is better to link\
+      \ to actual content directly through the use of mo:available_as and\u240A  \
+      \              mo:Stream, mo:Torrent or mo:ED2K, etc. Therefore, Semantic Web\
+      \ user agents that don't know how to read HTML and even\u240A              \
+      \  less to rip streams from Flash applications can still access the audio content."
+    name: mo_download
+    range: foaf_Document
+    slot_uri: mo:download
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: download
+  mo_duration:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The duration of a track or a signal in ms
+    name: mo_duration
+    range: float
+    slot_uri: mo:duration
+    source: http://purl.org/ontology/mo/
+  mo_ean:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The European Article Number (EAN) is a universal identifier for products,
+      commonly printed in form of barcodes on them. The numbers represented by those
+      codes can either be 8 or 13 digits long, with the 13-digit-version being most
+      common. EANs form a superset of the North American Universal Product Code (UPC)
+      as every UPC can be made an EAN by adding a leading zero to it. Additionally
+      every EAN is also a Japanese Article Number (JAN). The identifiers were formerly
+      assigned by EAN International which merged with Uniform Code Council (UCC, the
+      guys behind the UPCs) and Electronic Commerce Council of Canada (ECCC) to become
+      GS1.
+    domain: mo_Release
+    name: mo_ean
+    range: string
+    slot_uri: mo:ean
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_gtin
+    title: ean
+  mo_encodes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates a MusicalItem (a track on a particular CD, an audio file,\
+      \ a stream somewhere) to the signal it encodes.\u240A\u240A        This is usually\
+      \ a lower-resolution version of the master signal (issued from a Recording event)."
+    domain: mo_MusicalItem
+    name: mo_encodes
+    range: mo_Signal
+    slot_uri: mo:encodes
+    source: http://purl.org/ontology/mo/
+    title: encodes
+  mo_encoding:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Method used to convert analog electronic signals into digital format
+      such as "MP3 CBR @ 128kbps", "OGG @ 160kbps", "FLAC", etc.
+    domain: mo_AudioFile
+    name: mo_encoding
+    range: rdfs_Literal
+    slot_uri: mo:encoding
+    source: http://purl.org/ontology/mo/
+    title: encoding
+  mo_engineer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance or a recording to the engineer involved
+    inverse: mo_engineered
+    name: mo_engineer
+    range: foaf_Agent
+    slot_uri: mo:engineer
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_agent
+  mo_engineered:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates agents to the performances/recordings they were engineering
+      in
+    domain: foaf_Agent
+    inverse: mo_engineer
+    name: mo_engineered
+    range: Any
+    slot_uri: mo:engineered
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isAgentIn
+    title: engineered
+  mo_eventHomePage:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/event_homepage
+    name: mo_eventHomePage
+    range: Any
+    slot_uri: mo:eventHomePage
+  mo_event_homepage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links a particular event to a web page
+    domain: event_Event
+    name: mo_event_homepage
+    range: foaf_Document
+    slot_uri: mo:event_homepage
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: event homepage
+  mo_exchange_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A person, a group of person or an organization exchanging an exemplar
+      of a single manifestation.
+    domain: foaf_Agent
+    name: mo_exchange_item
+    range: frbr_Item
+    slot_uri: mo:exchange_item
+    source: http://purl.org/ontology/mo/
+    title: exchange_item
+  mo_fanpage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link an artist to a fan-created webpage devoted to that artist.
+    domain: mo_MusicArtist
+    name: mo_fanpage
+    range: foaf_Document
+    slot_uri: mo:fanpage
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: fanpage
+  mo_free_download:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This property can be used to link from a person to the website where\
+      \ they make their works available, or from\u240A        a manifestation (a track\
+      \ or an album, for example) to a web page where it is available for free \u240A\
+      \        download.\u240A\u240A        This property MUST be used only if the\
+      \ content is just available through a web page (holding, for example\u240A \
+      \       a Flash application) - it is better to link to actual content directly\
+      \ through the use of mo:available_as and \u240A        mo:Stream, mo:Torrent\
+      \ or mo:ED2K, etc. Therefore, Semantic Web user agents that don't know how to\
+      \ read HTML and even\u240A        less to rip streams from Flash applications\
+      \ can still access the audio content."
+    name: mo_free_download
+    range: foaf_Document
+    slot_uri: mo:free_download
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: free download
+  mo_freedownload:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/free_download
+    name: mo_freedownload
+    range: Any
+    slot_uri: mo:freedownload
+    source: http://purl.org/ontology/mo/
+  mo_genre:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates an event (like a performance or a recording) to a particular\
+      \ musical genre.\u240A        Further version of this property may also include\
+      \ works and scores in the domain."
+    name: mo_genre
+    range: mo_Genre
+    slot_uri: mo:genre
+    source: http://purl.org/ontology/mo/
+    subproperty_of: ao_genre
+    title: genre
+  mo_grid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The Global Release Identifier (GRid) is a system for uniquely identifying
+      Releases of music over electronic networks (that is, online stores where you
+      can buy music as digital files). As that it can be seen as the equivalent of
+      the BarCode (or more correctly the GTIN) as found on physical releases of music.
+      Like the ISRC (a code for identifying single recordings as found on releases)
+      it was developed by the IFPI but it does not appear to be a standard of the
+      ISO.
+    domain: mo_Release
+    name: mo_grid
+    range: string
+    slot_uri: mo:grid
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: GRid
+  mo_group:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a membership event with the corresponding group
+    domain: mo_Membership
+    name: mo_group
+    range: foaf_Group
+    slot_uri: mo:group
+    source: http://purl.org/ontology/mo/
+    title: group
+  mo_gtin:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: GTIN is a grouping term for EANs and UPCs. In common speech those
+      are called barcodes although the barcodes are just a representation of those
+      identifying numbers.
+    domain: mo_Release
+    name: mo_gtin
+    range: string
+    slot_uri: mo:gtin
+    source: http://purl.org/ontology/mo/
+    title: gtin
+  mo_has_track:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/track
+    name: mo_has_track
+    range: Any
+    slot_uri: mo:has_track
+    source: http://purl.org/ontology/mo/
+  mo_headliner:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to the headliner(s) involved
+    name: mo_headliner
+    range: Any
+    slot_uri: mo:headliner
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_performer
+    title: headliner
+  mo_homepage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links an artist, a record, etc. to a corresponding web page
+    name: mo_homepage
+    range: foaf_Document
+    slot_uri: mo:homepage
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: homepage
+  mo_image:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a pictorial image (JPEG, GIF, PNG, Etc.) of a musical work,
+      the expression of a musical work, the manifestation of a work or the examplar
+      of a manifestation.
+    name: mo_image
+    range: foaf_Image
+    slot_uri: mo:image
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_depiction
+    title: image
+  mo_imdb:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link an artist, a musical work or the expression of a musical
+      work to their equivalent page on IMDb, the InternetMovieDatabase.
+    name: mo_imdb
+    range: foaf_Document
+    slot_uri: mo:imdb
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: imdb
+  mo_instrument:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to a musical instrument involved
+    domain: mo_Performance
+    name: mo_instrument
+    range: mo_Instrument
+    slot_uri: mo:instrument
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_factor
+  mo_interpreter:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Adds an involved music artist, who interpreted, remixed, or otherwise
+      modified an existing signal, which resulted in the signal that is here the subject
+      of this relation.
+    domain: mo_Signal
+    name: mo_interpreter
+    range: mo_MusicArtist
+    slot_uri: mo:interpreter
+    source: http://purl.org/ontology/mo/
+    title: has interpeter
+  mo_ipi:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The Interested Parties Information Code (IPI) is an ISO standard
+      similar to ISBNs for identifying the people or groups with some involvement
+      with a particular musical work / compositions.
+    domain: mo_MusicArtist
+    name: mo_ipi
+    range: string
+    slot_uri: mo:ipi
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: ipi
+  mo_ismn:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The International Standard Music Number (ISMN) is an ISO standard
+      similar to ISBNs for identifying printed music publications
+    name: mo_ismn
+    range: string
+    slot_uri: mo:ismn
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: ismn
+  mo_isrc:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The ISRC (International Standard Recording Code) is the international\
+      \ identification system for sound recordings and music videorecordings. \u240A\
+      \    Each ISRC is a unique and permanent identifier for a specific recording\
+      \ which can be permanently encoded into a product as its digital fingerprint.\
+      \ \u240A    Encoded ISRC provide the means to automatically identify recordings\
+      \ for royalty payments."
+    domain: mo_Signal
+    name: mo_isrc
+    range: string
+    slot_uri: mo:isrc
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: isrc
+  mo_iswc:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links a musical work to the corresponding ISWC number
+    domain: mo_MusicalWork
+    name: mo_iswc
+    range: string
+    slot_uri: mo:iswc
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: iswc
+  mo_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates a musical manifestation to a musical item (this album, and\
+      \ my particular cd) holding the\u240A                entire manifestation, and\
+      \ not just a part of it."
+    domain: mo_MusicalManifestation
+    name: mo_item
+    range: mo_MusicalItem
+    slot_uri: mo:item
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_available_as
+  mo_key:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicated the key used by the musicians during a performance, or\
+      \ the key of a MusicalWork.\u240A        Any of 24 major or minor diatonic scales\
+      \ that provide the tonal framework for a piece of music."
+    name: mo_key
+    range: http___purl.org_NET_c4dm_keys.owl#Key
+    slot_uri: mo:key
+    source: http://purl.org/ontology/mo/
+    title: key
+  mo_label:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a release event with the label releasing the record
+    name: mo_label
+    range: mo_Label
+    slot_uri: mo:label
+    source: http://purl.org/ontology/mo/
+    title: label
+  mo_lc:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The Label Code (LC) was introduced in 1977 by the IFPI (International
+      Federation of Phonogram and Videogram Industries) in order to unmistakably identify
+      the different record labels (see Introduction, Record labels) for rights purposes.
+      The Label Code consists historically of 4 figures, presently being extended
+      to 5 figures, preceded by LC and a dash (e.g. LC-0193 = Electrola; LC-0233 =
+      His Master's Voice). Note that the number of countries using the LC is limited,
+      and that the code given on the item is not always accurate.
+    domain: mo_Label
+    name: mo_lc
+    range: string
+    slot_uri: mo:lc
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: lc
+  mo_level:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This annotation property associates to a particular Music Ontology\
+      \ term the corresponding\u240A        expressiveness level. These levels can\
+      \ be:\u240A\u240A            - 1: Only editorial/Musicbrainz type information\u240A\
+      \            - 2: Workflow information\u240A            - 3: Even decomposition\u240A\
+      \        \u240A        This property is mainly used for specification generation."
+    name: mo_level
+    range: string
+    slot_uri: mo:level
+    source: http://purl.org/ontology/mo/
+    title: level
+  mo_licence:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to link a work or the expression of a work to the license under\
+      \ which they can be manipulated (downloaded, modified, etc). \u240A    \u240A\
+      This is usually used to link to a Creative Commons licence."
+    name: mo_licence
+    range: cc_License
+    slot_uri: mo:licence
+    source: http://purl.org/ontology/mo/
+    title: licence
+  mo_listened:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates agents to the performances they were listening in
+    domain: foaf_Agent
+    inverse: mo_listener
+    name: mo_listened
+    range: mo_Performance
+    slot_uri: mo:listened
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isAgentIn
+    title: listened
+  mo_listener:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to the listener involved
+    domain: mo_Performance
+    inverse: mo_listened
+    name: mo_listener
+    range: foaf_Agent
+    slot_uri: mo:listener
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_agent
+  mo_lyrics:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates lyrics with a musical work
+    domain: mo_MusicalWork
+    name: mo_lyrics
+    range: mo_Lyrics
+    slot_uri: mo:lyrics
+    source: http://purl.org/ontology/mo/
+    title: lyrics
+  mo_mailorder:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a musical work or the expression of a musical work to
+      a website where people can buy a copy of the musical manifestation.
+    name: mo_mailorder
+    range: foaf_Document
+    slot_uri: mo:mailorder
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: mailorder
+  mo_mashup_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that musical works or the expressions of a musical work\
+      \ were mashed up on this album or track. \u240A    \u240AThis means that two\
+      \ musical works or the expressions of a musical work by different artists are\
+      \ mixed together, over each other, or otherwise combined into a single musical\
+      \ work (usually by a third artist, the remixer)."
+    name: mo_mashup_of
+    range: Any
+    slot_uri: mo:mashup_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: mashup_of
+  mo_media_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The mediatype (file format or MIME type, or physical medium) of a
+      musical manifestation, e.g. a MP3, CD or vinyl.
+    domain: mo_MusicalManifestation
+    name: mo_media_type
+    range: dct_MediaType
+    slot_uri: mo:media_type
+    source: http://purl.org/ontology/mo/
+    subproperty_of: dct_format
+    title: has media type
+  mo_medley_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that a musical expression is a medley of several other\
+      \ musical expressions. \u240A    \u240AThis means that the orignial musical\
+      \ expression were rearranged to create a new musical expression in the form\
+      \ of a medley."
+    name: mo_medley_of
+    range: Any
+    slot_uri: mo:medley_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: medley_of
+  mo_member:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a member of a musical group
+    domain: mo_MusicGroup
+    name: mo_member
+    range: foaf_Agent
+    slot_uri: mo:member
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_member
+    title: member
+  mo_member_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of the foaf:member property
+    domain: foaf_Agent
+    inverse: foaf_member
+    name: mo_member_of
+    range: foaf_Group
+    slot_uri: mo:member_of
+    source: http://purl.org/ontology/mo/
+    title: member_of
+  mo_membership:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an agent with related membership events
+    domain: foaf_Agent
+    name: mo_membership
+    range: mo_Membership
+    slot_uri: mo:membership
+    source: http://purl.org/ontology/mo/
+    title: membership
+  mo_meter:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a musical work or a score with its meter
+    name: mo_meter
+    range: Any
+    slot_uri: mo:meter
+    source: http://purl.org/ontology/mo/
+    title: meter
+  mo_movement:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that a musical work has movements
+    domain: mo_MusicalWork
+    name: mo_movement
+    range: mo_Movement
+    slot_uri: mo:movement
+    source: http://purl.org/ontology/mo/
+    title: has_movement
+  mo_movementNum:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/movement_number
+    name: mo_movementNum
+    range: Any
+    slot_uri: mo:movementNum
+  mo_movement_number:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates the position of a movement in a musical work.
+    domain: mo_Movement
+    name: mo_movement_number
+    range: int32
+    slot_uri: mo:movement_number
+    source: http://purl.org/ontology/mo/
+    title: movement number
+  mo_musicbrainz:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Linking an agent, a track or a record to its corresponding Musicbrainz
+      page.
+    name: mo_musicbrainz
+    range: foaf_Document
+    slot_uri: mo:musicbrainz
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: musicbrainz
+  mo_musicbrainz_guid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links an object to the corresponding Musicbrainz identifier
+    name: mo_musicbrainz_guid
+    range: Any
+    slot_uri: mo:musicbrainz_guid
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_uuid
+    title: Musicbrainz GUID
+  mo_musicmoz:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link an artist, a musical work or the expression of a musical
+      work to its corresponding MusicMoz page.
+    name: mo_musicmoz
+    range: foaf_Document
+    slot_uri: mo:musicmoz
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: musicmoz
+  mo_myspace:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a person to its corresponding MySpace page.
+    domain: foaf_Agent
+    name: mo_myspace
+    range: foaf_Document
+    slot_uri: mo:myspace
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: myspace
+  mo_olga:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a track to a tabulature file for track in the On-Line
+      Guitar Archive.
+    domain: mo_Track
+    name: mo_olga
+    range: foaf_Document
+    slot_uri: mo:olga
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: olga
+  mo_onlinecommunity:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to link a person with an online community web page like a blog,
+      a wiki, a forum, a livejournal page, Etc.
+    domain: foaf_Agent
+    name: mo_onlinecommunity
+    range: foaf_Document
+    slot_uri: mo:onlinecommunity
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: onlinecommunity
+  mo_opus:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to define a creative work, especially a musical composition
+      numbered to designate the order of a composer's works.
+    domain: mo_MusicalWork
+    name: mo_opus
+    range: rdfs_Literal
+    slot_uri: mo:opus
+    source: http://purl.org/ontology/mo/
+    title: opus
+  mo_origin:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an artist to its geographic origin
+    domain: mo_MusicArtist
+    name: mo_origin
+    range: wgs_SpatialThing
+    slot_uri: mo:origin
+    source: http://purl.org/ontology/mo/
+    title: origin
+  mo_other_release_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that two musical manifestations are essentially the same.
+    domain: mo_MusicalManifestation
+    name: mo_other_release_of
+    range: mo_MusicalManifestation
+    slot_uri: mo:other_release_of
+    source: http://purl.org/ontology/mo/
+    title: other_release_of
+  mo_paid_download:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Provide a link from an artist to a web page where all of that artist's\
+      \ musical work is available for some money,\u240A                or a link from\
+      \ a manifestation (record/track, for example) to a web page providing a paid\
+      \ access to this manifestation."
+    name: mo_paid_download
+    range: foaf_Document
+    slot_uri: mo:paid_download
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: paid download
+  mo_paiddownload:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/paid_download
+    name: mo_paiddownload
+    range: Any
+    slot_uri: mo:paiddownload
+    source: http://purl.org/ontology/mo/
+  mo_performance_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a Performance to a musical work or an arrangement that\
+      \ is being used as a factor in it.\u240A        For example, I might use this\
+      \ property to attach the Magic Flute musical work to \u240A        a particular\
+      \ Performance."
+    domain: mo_Performance
+    inverse: mo_performed_in
+    name: mo_performance_of
+    range: Any
+    slot_uri: mo:performance_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_factor
+    title: performance of
+  mo_performed:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates agents to the performances they were performing in
+    domain: foaf_Agent
+    inverse: mo_performer
+    name: mo_performed
+    range: mo_Performance
+    slot_uri: mo:performed
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isAgentIn
+    title: performed
+  mo_performed_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a Musical Work or an Score to Performances in which they\
+      \ were\u240A        a factor. For example, I might use this property in order\
+      \ to \u240A        associate the Magic Flute to a particular performance at\
+      \ the Opera\u240A        Bastille last year."
+    inverse: mo_performance_of
+    name: mo_performed_in
+    range: mo_Performance
+    slot_uri: mo:performed_in
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isFactorOf
+    title: performed in
+  mo_performer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to the performers involved
+    domain: mo_Performance
+    inverse: mo_performed
+    name: mo_performer
+    range: foaf_Agent
+    slot_uri: mo:performer
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_agent
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  mo_possess_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A person, a group of person or an organization possessing an exemplar
+      of a single manifestation.
+    domain: foaf_Agent
+    name: mo_possess_item
+    range: frbr_Item
+    slot_uri: mo:possess_item
+    source: http://purl.org/ontology/mo/
+    title: possess_item
+  mo_preview:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Relates a musical manifestation to a musical item (this album, and\
+      \ my particular cd), which holds\u240A                a preview of the manifestation\
+      \ (eg. one track for an album, or a snippet for a track)"
+    domain: mo_MusicalManifestation
+    name: mo_preview
+    range: mo_MusicalItem
+    slot_uri: mo:preview
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_available_as
+  mo_preview_download:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This property can be used to link from a person to the website where\
+      \ they make previews of their works available, or from\u240A               \
+      \ a manifestation (a track or an album, for example) to a web page where a preview\
+      \ download is available.\u240A\u240A                This property MUST be used\
+      \ only if the content is just available through a web page (holding, for example\u240A\
+      \                a Flash application) - it is better to link to actual content\
+      \ directly through the use of mo:available_as and\u240A                mo:Stream,\
+      \ mo:Torrent or mo:ED2K, etc. Therefore, Semantic Web user agents that don't\
+      \ know how to read HTML and even\u240A                less to rip streams from\
+      \ Flash applications can still access the audio content."
+    name: mo_preview_download
+    range: foaf_Document
+    slot_uri: mo:preview_download
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_download
+    title: preview download
+  mo_primary_instrument:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that an artist primarily plays an instrument, or that a
+      member was primarily playing a particular instrument during his membership
+    name: mo_primary_instrument
+    range: mo_Instrument
+    slot_uri: mo:primary_instrument
+    source: http://purl.org/ontology/mo/
+    title: primary instrument
+  mo_produced:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate an person or a group of person who produced the manifestation
+      of a work.
+    domain: foaf_Agent
+    inverse: mo_producer
+    name: mo_produced
+    range: mo_MusicalManifestation
+    slot_uri: mo:produced
+    source: http://purl.org/ontology/mo/
+    title: produced
+  mo_produced_score:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates an arrangement or a composition event to a score product\
+      \ (score here does not refer to a published score, but more\u240A        an\
+      \ abstract arrangement of a particular work)."
+    name: mo_produced_score
+    range: mo_Score
+    slot_uri: mo:produced_score
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: produced score
+  mo_produced_signal:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a Recording to the outputted signal.
+    domain: mo_Recording
+    name: mo_produced_signal
+    range: mo_Signal
+    slot_uri: mo:produced_signal
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: produced signal
+  mo_produced_signal_group:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a recording session with a group of master signals produced
+      by it.
+    domain: mo_RecordingSession
+    name: mo_produced_signal_group
+    range: mo_SignalGroup
+    slot_uri: mo:produced_signal_group
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: produced signal group
+  mo_produced_sound:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a Performance to a physical Sound that is being produced
+      by it.
+    domain: mo_Performance
+    name: mo_produced_sound
+    range: mo_Sound
+    slot_uri: mo:produced_sound
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: produced sound
+  mo_produced_work:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a composition event to the produced MusicalWork. For\
+      \ example,\u240A                this property could link the event corresponding\
+      \ to the composition of the\u240A                Magic Flute in 1782 to the\
+      \ Magic Flute musical work itself. This musical work\u240A                can\
+      \ then be used in particular performances."
+    domain: mo_Composition
+    inverse: mo_composed_in
+    name: mo_produced_work
+    range: mo_MusicalWork
+    slot_uri: mo:produced_work
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: produced work
+  mo_producer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate the manifestation of a work to a person or a group
+      of person who produced it.
+    domain: mo_MusicalManifestation
+    inverse: mo_produced
+    name: mo_producer
+    range: foaf_Agent
+    slot_uri: mo:producer
+    source: http://purl.org/ontology/mo/
+    title: producer
+  mo_producesSignal:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/produced_signal
+    name: mo_producesSignal
+    range: Any
+    slot_uri: mo:producesSignal
+    source: http://purl.org/ontology/mo/
+  mo_producesSound:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/produced_sound
+    name: mo_producesSound
+    range: Any
+    slot_uri: mo:producesSound
+    source: http://purl.org/ontology/mo/
+  mo_producesWork:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/produced_work
+    name: mo_producesWork
+    range: Any
+    slot_uri: mo:producesWork
+  mo_productOfComposition:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/composed_in
+    name: mo_productOfComposition
+    range: Any
+    slot_uri: mo:productOfComposition
+    source: http://purl.org/ontology/mo/
+  mo_publicationOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/publication_of
+    name: mo_publicationOf
+    range: Any
+    slot_uri: mo:publicationOf
+  mo_publication_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Link a particular manifestation to the related signal, score, libretto,
+      or lyrics
+    domain: mo_MusicalManifestation
+    inverse: mo_published_as
+    name: mo_publication_of
+    range: mo_MusicalExpression
+    slot_uri: mo:publication_of
+    source: http://purl.org/ontology/mo/
+    title: publication of
+  mo_published:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate an person or a group of person who published the manifestation
+      of a work.
+    domain: foaf_Agent
+    inverse: mo_publisher
+    name: mo_published
+    range: mo_MusicalManifestation
+    slot_uri: mo:published
+    source: http://purl.org/ontology/mo/
+    title: published
+  mo_publishedAs:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/published_as
+    name: mo_publishedAs
+    range: Any
+    slot_uri: mo:publishedAs
+  mo_published_as:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links a musical expression (e.g. a signal or a score) to one of its
+      manifestations (e.g. a track on a particular record or a published score).
+    domain: mo_MusicalExpression
+    inverse: mo_publication_of
+    name: mo_published_as
+    range: mo_MusicalManifestation
+    slot_uri: mo:published_as
+    source: http://purl.org/ontology/mo/
+    subproperty_of: frbr_embodiment
+    title: published as
+  mo_publisher:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate a musical manifestation to a person or a group of
+      person who published it.
+    domain: mo_MusicalManifestation
+    inverse: mo_published
+    name: mo_publisher
+    range: foaf_Agent
+    slot_uri: mo:publisher
+    source: http://purl.org/ontology/mo/
+    title: publisher
+  mo_publishingLocation:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/publishing_location
+    name: mo_publishingLocation
+    range: Any
+    slot_uri: mo:publishingLocation
+  mo_publishing_location:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a musical manifestation to its publication location.
+    domain: mo_MusicalManifestation
+    name: mo_publishing_location
+    range: wgs_SpatialThing
+    slot_uri: mo:publishing_location
+    source: http://purl.org/ontology/mo/
+    title: publishingLocation
+  mo_puid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Link a signal to the PUIDs associated with it, that is, PUID computed\
+      \ from MusicalItems (mo:AudioFile) \u240A        derived from this signal.\u240A\
+      \        PUIDs (Portable Unique IDentifier) are the IDs used in the \u240A \
+      \       proprietary MusicDNS AudioFingerprinting system which is operated by\
+      \ MusicIP.\u240A\u240A        Using PUIDs, one (with some luck) can identify\
+      \ the Signal object associated with a particular audio file, therefore allowing\u240A\
+      \        to access further information (on which release this track is featured?\
+      \ etc.). Using some more metadata one can identify\u240A        the particular\
+      \ Track corresponding to the audio file (a track on a particular release)."
+    domain: mo_Signal
+    name: mo_puid
+    range: string
+    slot_uri: mo:puid
+    source: http://purl.org/ontology/mo/
+    title: puid
+  mo_record:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a release with the records it contains. A single release
+      can be associated with multiple records, for example for a multi-disc release.
+    domain: mo_Release
+    name: mo_record
+    range: mo_Record
+    slot_uri: mo:record
+    source: http://purl.org/ontology/mo/
+    title: released record
+  mo_record_count:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a release with the number of records it contains, e.g.
+      the number of discs it contains in the case of a multi-disc release.
+    domain: mo_Release
+    name: mo_record_count
+    range: int32
+    slot_uri: mo:record_count
+    source: http://purl.org/ontology/mo/
+    title: record count
+  mo_record_number:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates the position of a record in a release (e.g. a 2xLP, etc.).
+    domain: mo_Record
+    name: mo_record_number
+    range: unsignedinteger
+    slot_uri: mo:record_number
+    source: http://purl.org/ontology/mo/
+    title: has record number
+  mo_record_side:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates the side on a vinyl record, where a track is located,\
+      \ e.g. A, B, C, etc. This property can then also be used \u240Ain conjunction\
+      \ with mo:track_number, so that one can infer e.g. \"A1\", that means, track\
+      \ number 1 on side A."
+    domain: mo_Track
+    name: mo_record_side
+    range: string
+    slot_uri: mo:record_side
+    source: http://purl.org/ontology/mo/
+    title: has record side
+  mo_recordedAs:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: mo_Performance
+    exact_mappings:
+    - http://purl.org/ontology/mo/recorded_as
+    name: mo_recordedAs
+    range: mo_Signal
+    slot_uri: mo:recordedAs
+  mo_recorded_as:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This is a shortcut property, allowing to bypass all the Sound/Recording\
+      \ steps. This property\u240A        allows to directly link a Performance to\
+      \ the recorded Signal. This is recommended for \"normal\"\u240A        users.\
+      \ However, advanced users wanting to express things such as the location of\
+      \ the microphone will\u240A        have to create this shortcut as well as the\
+      \ whole workflow, in order to let the \"normal\" users access\u240A        simply\
+      \ the, well, simple information:-) ."
+    domain: mo_Performance
+    inverse: mo_records
+    name: mo_recorded_as
+    range: mo_Signal
+    slot_uri: mo:recorded_as
+    source: http://purl.org/ontology/mo/
+    title: recorded as
+  mo_recorded_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a physical Sound to a Recording event where it is being\
+      \ used \u240A        in order to produce a signal. For example, I might use\
+      \ this property to \u240A        associate the sound produced by a particular\
+      \ performance of the magic flute\u240A        to a given recording, done using\
+      \ my cell-phone."
+    domain: mo_Sound
+    inverse: mo_recording_of
+    name: mo_recorded_in
+    range: mo_Recording
+    slot_uri: mo:recorded_in
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_isFactorOf
+    title: recorded in
+  mo_recording_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Associates a Recording event to a physical Sound being recorded.\u240A\
+      \                For example, I might use this property to\u240A           \
+      \     associate a given recording, done using my cell phone, to the \u240A \
+      \       sound produced by a particular performance of the magic flute."
+    domain: mo_Recording
+    inverse: mo_recorded_in
+    name: mo_recording_of
+    range: mo_Sound
+    slot_uri: mo:recording_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_factor
+    title: recorded sound
+  mo_records:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This is the inverse of the shortcut property recordedAs, allowing\
+      \ to relate directly a performance\u240A        to a signal."
+    domain: mo_Signal
+    inverse: mo_recorded_as
+    name: mo_records
+    range: mo_Performance
+    slot_uri: mo:records
+    source: http://purl.org/ontology/mo/
+    title: records
+  mo_release:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a release with the corresponding release event
+    domain: mo_ReleaseEvent
+    name: mo_release
+    range: mo_Release
+    slot_uri: mo:release
+    source: http://purl.org/ontology/mo/
+    subproperty_of: event_product
+    title: release
+  mo_releaseStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/release_status
+    name: mo_releaseStatus
+    range: Any
+    slot_uri: mo:releaseStatus
+  mo_releaseType:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/release_type
+    name: mo_releaseType
+    range: Any
+    slot_uri: mo:releaseType
+  mo_release_status:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a musical manifestation to its release status (bootleg, ...)
+    domain: mo_MusicalManifestation
+    name: mo_release_status
+    range: mo_ReleaseStatus
+    slot_uri: mo:release_status
+    source: http://purl.org/ontology/mo/
+  mo_release_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a musical manifestation to its release type (interview, spoken
+      word, album, ...)
+    domain: mo_MusicalManifestation
+    name: mo_release_type
+    range: mo_ReleaseType
+    slot_uri: mo:release_type
+    source: http://purl.org/ontology/mo/
+  mo_remaster_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "This relates two musical work or the expression of a musical work,\
+      \ where one is a remaster of the other. \u240A    \u240AA remaster is a new\
+      \ version made for release from source recordings that were earlier released\
+      \ separately. This is usually done to improve the audio quality or adjust for\
+      \ more modern playback equipment. The process generally doesn't involve changing\
+      \ the music in any artistically important way. It may, however, result in tracks\
+      \ that are a few seconds longer or shorter."
+    name: mo_remaster_of
+    range: Any
+    slot_uri: mo:remaster_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: remaster_of
+  mo_remix_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate the remix of a musical work in a substantially altered
+      version produced by mixing together individual tracks or segments of an original
+      musical source work.
+    name: mo_remix_of
+    range: Any
+    slot_uri: mo:remix_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: remix_of
+  mo_remixed:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to relate an artist who remixed a musical work or the expression\
+      \ of a musical work. \u240A    \u240AThis involves taking just one other musical\
+      \ work and using audio editing to make it sound like a significantly different,\
+      \ but usually still recognisable, song. It can be used to link an artist to\
+      \ a single song that they remixed, or, if they remixed an entire musical work."
+    domain: mo_MusicArtist
+    inverse: mo_remixer
+    name: mo_remixed
+    range: mo_Signal
+    slot_uri: mo:remixed
+    source: http://purl.org/ontology/mo/
+    title: remixed
+  mo_remixer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to relate a musical work or the expression of a musical work\
+      \ to an artist who remixed it. \u240A    \u240AThis involves taking just one\
+      \ other musical work and using audio editing to make it sound like a significantly\
+      \ different, but usually still recognisable, song. It can be used to link an\
+      \ artist to a single song that they remixed, or, if they remixed an entire musical\
+      \ work."
+    inverse: mo_remixed
+    name: mo_remixer
+    range: Any
+    slot_uri: mo:remixer
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_interpreter
+    title: remixer
+  mo_review:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to link a work or the expression of a work to a review. \u240A\
+      \    \u240AThe review does not have to be open content, as long as it is accessible\
+      \ to the general internet population."
+    name: mo_review
+    range: foaf_Document
+    slot_uri: mo:review
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: review
+  mo_sampleRate:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/sample_rate
+    name: mo_sampleRate
+    range: Any
+    slot_uri: mo:sampleRate
+  mo_sample_rate:
+    comments:
+    - "description: Associates a digital signal to its sample rate. It might be easier\
+      \ to express it this way instead of\n        defining a timeline map:-) Range\
+      \ is xsd:float."
+    - 'source: http://purl.org/ontology/mo/'
+    - No occurrences of this slot in the graph.
+    description: "Associates a digital signal to its sample rate. It might be easier\
+      \ to express it this way instead of\u240A        defining a timeline map:-)\
+      \ Range is xsd:float."
+    domain: mo_DigitalSignal
+    multivalued: false
+    name: mo_sample_rate
+    range: float
+    slot_uri: mo:sample_rate
+    source: http://purl.org/ontology/mo/
+  mo_sampled:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate an artist who sampled a Signal.
+    domain: mo_MusicArtist
+    inverse: mo_sampler
+    name: mo_sampled
+    range: mo_Signal
+    slot_uri: mo:sampled
+    source: http://purl.org/ontology/mo/
+    title: sampled
+  mo_sampledVersionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/sampled_version_of
+    name: mo_sampledVersionOf
+    range: Any
+    slot_uri: mo:sampledVersionOf
+    source: http://purl.org/ontology/mo/
+  mo_sampled_version:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates an analog signal with a sampled version of it
+    domain: mo_AnalogSignal
+    inverse: mo_sampled_version_of
+    name: mo_sampled_version
+    range: mo_DigitalSignal
+    slot_uri: mo:sampled_version
+    source: http://purl.org/ontology/mo/
+    title: sampled version
+  mo_sampled_version_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a digital signal with the analog version of it
+    domain: mo_DigitalSignal
+    inverse: mo_sampled_version
+    name: mo_sampled_version_of
+    range: mo_AnalogSignal
+    slot_uri: mo:sampled_version_of
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_derived_from
+    title: sampled version of
+  mo_sampler:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate the signal of a musical work to an artist who sampled
+      it.
+    inverse: mo_sampled
+    name: mo_sampler
+    range: Any
+    slot_uri: mo:sampler
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_interpreter
+    title: sampler
+  mo_sell_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A person, a group of person or an organization selling an exemplar
+      of a single manifestation.
+    domain: foaf_Agent
+    name: mo_sell_item
+    range: frbr_Item
+    slot_uri: mo:sell_item
+    source: http://purl.org/ontology/mo/
+    title: sell_item
+  mo_signal:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a group of signals with one of the signals it contains
+    domain: mo_SignalGroup
+    name: mo_signal
+    range: mo_Signal
+    slot_uri: mo:signal
+    source: http://purl.org/ontology/mo/
+    title: signal
+  mo_signalTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/time
+    name: mo_signalTime
+    range: Any
+    slot_uri: mo:signalTime
+    source: http://purl.org/ontology/mo/
+  mo_similar_to:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "A similarity relationships between two objects (so far, either an\
+      \ agent, a signal or a genre, but\u240A        this could grow).\u240A     \
+      \   This relationship is pretty general and doesn't make any assumptions on\
+      \ how the similarity claim\u240A        was derived.\u240A        Such similarity\
+      \ statements can come from a range of different sources (Musicbrainz similarities\
+      \ between\u240A        artists, or coming from some automatic content analysis).\u240A\
+      \        However, the origin of such statements should be kept using a named\
+      \ graph approach - and ultimately, the \u240A        documents providing such\
+      \ statements should attach some metadata to themselves (confidence of the claim,\
+      \ etc.)."
+    name: mo_similar_to
+    range: Any
+    slot_uri: mo:similar_to
+    source: http://purl.org/ontology/mo/
+    title: similar_to
+  mo_singer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a performance to an involved singer
+    domain: mo_Performance
+    name: mo_singer
+    range: foaf_Agent
+    slot_uri: mo:singer
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_performer
+  mo_supporting_musician:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to relate an artist doing long-time instrumental or vocal support
+      for another artist.
+    domain: mo_MusicArtist
+    name: mo_supporting_musician
+    range: mo_MusicArtist
+    slot_uri: mo:supporting_musician
+    source: http://purl.org/ontology/mo/
+    title: supporting_musician
+  mo_tempo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Rate of speed or pace of music. Tempo markings are traditionally\
+      \ given in Italian; \u240A        common markings include: grave (solemn; very,\
+      \ very slow); largo (broad; very slow); \u240A        adagio (quite slow); andante\
+      \ (a walking pace); moderato (moderate); allegro (fast; cheerful); \u240A  \
+      \      vivace (lively); presto (very fast); accelerando (getting faster); ritardando\
+      \ (getting slower); \u240A        and a tempo (in time; returning to the original\
+      \ pace)."
+    name: mo_tempo
+    range: string
+    slot_uri: mo:tempo
+    source: http://purl.org/ontology/mo/
+    title: tempo
+  mo_text:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates lyrics with their text.
+    domain: mo_Lyrics
+    name: mo_text
+    range: Any
+    slot_uri: mo:text
+    source: http://purl.org/ontology/mo/
+    title: text
+  mo_time:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a Signal to a time object - its actual domain
+    domain: mo_Signal
+    name: mo_time
+    range: time_TemporalEntity
+    slot_uri: mo:time
+    source: http://purl.org/ontology/mo/
+    title: time
+  mo_track:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a part of a musical manifestation - in this particular
+      case, a track.
+    domain: mo_Record
+    name: mo_track
+    range: mo_Track
+    slot_uri: mo:track
+    source: http://purl.org/ontology/mo/
+    title: track
+  mo_trackNum:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/track_number
+    name: mo_trackNum
+    range: Any
+    slot_uri: mo:trackNum
+    source: http://purl.org/ontology/mo/
+  mo_track_count:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The track count of a record
+    domain: mo_Record
+    name: mo_track_count
+    range: int32
+    slot_uri: mo:track_count
+    source: http://purl.org/ontology/mo/
+    title: track count
+  mo_track_number:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates the position of a track on a record medium (a CD, etc.).
+    domain: mo_Track
+    name: mo_track_number
+    range: unsignedinteger
+    slot_uri: mo:track_number
+    source: http://purl.org/ontology/mo/
+    title: track number
+  mo_translation_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that a work or the expression of a work has translated
+      or transliterated into another expression of a work.
+    domain: frbr_Expression
+    name: mo_translation_of
+    range: frbr_Expression
+    slot_uri: mo:translation_of
+    source: http://purl.org/ontology/mo/
+    title: translation_of
+  mo_tribute_to:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a musical work or the expression of a musical work that
+      is a tribute to an artist - normally consisting of music being composed by the
+      artist but performed by other artists.
+    domain: mo_MusicalManifestation
+    name: mo_tribute_to
+    range: mo_MusicArtist
+    slot_uri: mo:tribute_to
+    source: http://purl.org/ontology/mo/
+    title: tribute_to
+  mo_trmid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates the TRMID of a track.\u240A        TRM IDs are MusicBrainz'\
+      \ old AudioFingerprinting system. \u240A        TRM (TRM Recognizes Music) IDs\
+      \ are (somewhat) unique ids that represent \u240A        the audio signature\
+      \ of a musical piece (see AudioFingerprint)."
+    domain: mo_Signal
+    name: mo_trmid
+    range: string
+    slot_uri: mo:trmid
+    source: http://purl.org/ontology/mo/
+    title: trmid
+  mo_upc:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: UPC stands for "Universal Product Code", which was the original barcode
+      used in the United States and Canada. The UPC (now officially EAN.UCC-12 is
+      a numerical method of identifying products without redundancy worldwide for
+      all types of products in the retail sector. The EAN is a superset of the original
+      UPC increasing the digits to 13 with the prefix 0 reserved for UPC. As of 2005,
+      manufacturers are only allowed to use the new 13-digit codes on their items,
+      rather than having two separate numbers.
+    domain: mo_Release
+    name: mo_upc
+    range: string
+    slot_uri: mo:upc
+    source: http://purl.org/ontology/mo/
+    subproperty_of: mo_gtin
+    title: upc
+  mo_usedInPerformance:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/performed_in
+    name: mo_usedInPerformance
+    range: Any
+    slot_uri: mo:usedInPerformance
+    source: http://purl.org/ontology/mo/
+  mo_usedInRecording:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/recorded_in
+    name: mo_usedInRecording
+    range: Any
+    slot_uri: mo:usedInRecording
+    source: http://purl.org/ontology/mo/
+  mo_usesSound:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/recording_of
+    name: mo_usesSound
+    range: Any
+    slot_uri: mo:usesSound
+    source: http://purl.org/ontology/mo/
+  mo_usesWork:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://purl.org/ontology/mo/performance_of
+    name: mo_usesWork
+    range: Any
+    slot_uri: mo:usesWork
+    source: http://purl.org/ontology/mo/
+  mo_uuid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Links an object to an universally unique identifier for it.
+    domain: owl_Thing
+    name: mo_uuid
+    range: Any
+    slot_uri: mo:uuid
+    subproperty_of: dct_identifier
+    title: universally unique identifier
+  mo_want_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A person, a group of person or an organization wanting an exemplar
+      of a single manifestation.
+    domain: foaf_Agent
+    name: mo_want_item
+    range: frbr_Item
+    slot_uri: mo:want_item
+    source: http://purl.org/ontology/mo/
+    title: want_item
+  mo_wikipedia:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Used to link an work, an expression of a work, a manifestation of\
+      \ a work, \u240A        a person, an instrument or a musical genre to its corresponding\
+      \ WikiPedia page. \u240A        The full URL should be used, not just the WikiName."
+    name: mo_wikipedia
+    range: foaf_Document
+    slot_uri: mo:wikipedia
+    source: http://purl.org/ontology/mo/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: wikipedia
+title: No schema name specified

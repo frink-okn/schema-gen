@@ -1,0 +1,4095 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 150
+          vaem:CatalogEntry:
+            tag: vaem:CatalogEntry
+            value: 1
+          voag:Attribution:
+            tag: voag:Attribution
+            value: 2
+          voag:AttributionLogo:
+            tag: voag:AttributionLogo
+            value: 1
+          voag:ChangeFrequency:
+            tag: voag:ChangeFrequency
+            value: 10
+          voag:ChangeType:
+            tag: voag:ChangeType
+            value: 4
+          voag:ConfidentialityLevel:
+            tag: voag:ConfidentialityLevel
+            value: 6
+          voag:CreativeCommonsPermission:
+            tag: voag:CreativeCommonsPermission
+            value: 4
+          voag:CreativeCommonsProhibition:
+            tag: voag:CreativeCommonsProhibition
+            value: 2
+          voag:CreativeCommonsRequirement:
+            tag: voag:CreativeCommonsRequirement
+            value: 6
+          voag:Governance:
+            tag: voag:Governance
+            value: 1
+          voag:GovernanceRole:
+            tag: voag:GovernanceRole
+            value: 3
+          voag:Icon:
+            tag: voag:Icon
+            value: 3
+          voag:IssueStatus:
+            tag: voag:IssueStatus
+            value: 7
+          voag:LicenseModel:
+            tag: voag:LicenseModel
+            value: 1
+          voag:Logo:
+            tag: voag:Logo
+            value: 1
+          voag:Maturity:
+            tag: voag:Maturity
+            value: 7
+          voag:OrganizationLogo:
+            tag: voag:OrganizationLogo
+            value: 1
+          voag:Pedigree:
+            tag: voag:Pedigree
+            value: 1
+          voag:PriorityValue:
+            tag: voag:PriorityValue
+            value: 5
+          voag:ProductLogo:
+            tag: voag:ProductLogo
+            value: 1
+          voag:Provenance:
+            tag: voag:Provenance
+            value: 1
+          voag:PublicationStatus:
+            tag: voag:PublicationStatus
+            value: 6
+          voag:SchemaGraph:
+            tag: voag:SchemaGraph
+            value: 4
+      pairs:
+        tag: pairs
+        value:
+          dtype:code:
+            tag: dtype:code
+            value:
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  integer:
+                    tag: integer
+                    value: 6
+          dtype:order:
+            tag: dtype:order
+            value:
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  int32:
+                    tag: int32
+                    value: 6
+          dtype:value:
+            tag: dtype:value
+            value:
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  string:
+                    tag: string
+                    value: 5
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 44
+                  uri:
+                    tag: uri
+                    value: 7
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value: 6
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 10
+          owl:hasValue:
+            tag: owl:hasValue
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  uri:
+                    tag: uri
+                    value: 4
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value: 6
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 61
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value: 1
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 5
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 37
+                  owl:DeprecatedProperty:
+                    tag: owl:DeprecatedProperty
+                    value: 1
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 72
+                  owl:SymmetricProperty:
+                    tag: owl:SymmetricProperty
+                    value: 2
+                  owl:TransitiveProperty:
+                    tag: owl:TransitiveProperty
+                    value: 3
+                  rdf:Property:
+                    tag: rdf:Property
+                    value: 4
+                  uri:
+                    tag: uri
+                    value: 37
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 6
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              vaem:CatalogEntry:
+                tag: vaem:CatalogEntry
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 2
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 10
+              voag:ChangeType:
+                tag: voag:ChangeType
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 4
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 6
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 4
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 2
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 6
+              voag:Governance:
+                tag: voag:Governance
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 3
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 3
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 7
+              voag:LicenseModel:
+                tag: voag:LicenseModel
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:Maturity:
+                tag: voag:Maturity
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 7
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:Pedigree:
+                tag: voag:Pedigree
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 5
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:Provenance:
+                tag: voag:Provenance
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 6
+              voag:SchemaGraph:
+                tag: voag:SchemaGraph
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 4
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              vaem:CatalogEntry:
+                tag: vaem:CatalogEntry
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  string:
+                    tag: string
+                    value: 10
+              voag:ChangeType:
+                tag: voag:ChangeType
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              voag:Governance:
+                tag: voag:Governance
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              voag:LicenseModel:
+                tag: voag:LicenseModel
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Maturity:
+                tag: voag:Maturity
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Pedigree:
+                tag: voag:Pedigree
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Provenance:
+                tag: voag:Provenance
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              voag:SchemaGraph:
+                tag: voag:SchemaGraph
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 3
+          vaem:description:
+            tag: vaem:description
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:name:
+            tag: vaem:name
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:url:
+            tag: vaem:url
+            value:
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          voag:caption:
+            tag: voag:caption
+            value:
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          voag:hasLogo:
+            tag: voag:hasLogo
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  voag:AttributionLogo:
+                    tag: voag:AttributionLogo
+                    value: 1
+                  voag:OrganizationLogo:
+                    tag: voag:OrganizationLogo
+                    value: 1
+          voag:height:
+            tag: voag:height
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          voag:image:
+            tag: voag:image
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          voag:pointOfContact:
+            tag: voag:pointOfContact
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          voag:url:
+            tag: voag:url
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          voag:width:
+            tag: voag:width
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          dtype:code:
+            tag: dtype:code
+            value: 6
+          dtype:order:
+            tag: dtype:order
+            value: 6
+          dtype:value:
+            tag: dtype:value
+            value: 29
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 51
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 16
+          owl:hasValue:
+            tag: owl:hasValue
+            value: 4
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 67
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 6
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 150
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 6
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 76
+          rdfs:label:
+            tag: rdfs:label
+            value: 78
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value: 3
+          vaem:description:
+            tag: vaem:description
+            value: 24
+          vaem:name:
+            tag: vaem:name
+            value: 1
+          vaem:url:
+            tag: vaem:url
+            value: 1
+          voag:caption:
+            tag: voag:caption
+            value: 5
+          voag:hasLogo:
+            tag: voag:hasLogo
+            value: 1
+          voag:height:
+            tag: voag:height
+            value: 6
+          voag:image:
+            tag: voag:image
+            value: 6
+          voag:pointOfContact:
+            tag: voag:pointOfContact
+            value: 1
+          voag:url:
+            tag: voag:url
+            value: 1
+          voag:width:
+            tag: voag:width
+            value: 6
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: N9a6f9731d2574c40a27a0acb2b2d9f5e
+          vaem:CatalogEntry:
+            tag: vaem:CatalogEntry
+            value: voag:VOAG-CatalogEntry
+          voag:Attribution:
+            tag: voag:Attribution
+            value: voag:TopQuadrantAttribution
+          voag:AttributionLogo:
+            tag: voag:AttributionLogo
+            value: voag:TopQuadrantLogo-613x150
+          voag:ChangeFrequency:
+            tag: voag:ChangeFrequency
+            value: voag:Daily
+          voag:ChangeType:
+            tag: voag:ChangeType
+            value: voag:DocumentationChange
+          voag:ConfidentialityLevel:
+            tag: voag:ConfidentialityLevel
+            value: voag:CL_Unclassified
+          voag:CreativeCommonsPermission:
+            tag: voag:CreativeCommonsPermission
+            value: voag:CCP_Sharing
+          voag:CreativeCommonsProhibition:
+            tag: voag:CreativeCommonsProhibition
+            value: voag:CCPH_CommercialUse
+          voag:CreativeCommonsRequirement:
+            tag: voag:CreativeCommonsRequirement
+            value: voag:CCR_Copyleft
+          voag:Governance:
+            tag: voag:Governance
+            value: voag:NoGovernanceSpecified
+          voag:GovernanceRole:
+            tag: voag:GovernanceRole
+            value: voag:GR_Steward
+          voag:Icon:
+            tag: voag:Icon
+            value: voag:SPARQLIcon-80X15
+          voag:IssueStatus:
+            tag: voag:IssueStatus
+            value: voag:ClosedIssue
+          voag:LicenseModel:
+            tag: voag:LicenseModel
+            value: voag:CC-SHAREALIKE_3PT0-US
+          voag:Logo:
+            tag: voag:Logo
+            value: voag:LinkedModelLogo-200x80
+          voag:Maturity:
+            tag: voag:Maturity
+            value: voag:UnknownMaturity
+          voag:OrganizationLogo:
+            tag: voag:OrganizationLogo
+            value: voag:TopQuadrantLogo-613x150
+          voag:Pedigree:
+            tag: voag:Pedigree
+            value: voag:NoPedigreeSpecified
+          voag:PriorityValue:
+            tag: voag:PriorityValue
+            value: voag:PV_LowPriority
+          voag:ProductLogo:
+            tag: voag:ProductLogo
+            value: voag:VOAG-OntologyLogo_360x110
+          voag:Provenance:
+            tag: voag:Provenance
+            value: voag:NoProvenanceSpecified
+          voag:PublicationStatus:
+            tag: voag:PublicationStatus
+            value: voag:PS_Final
+          voag:SchemaGraph:
+            tag: voag:SchemaGraph
+            value: voag:DTYPE-CatalogEntry
+      pairs:
+        tag: pairs
+        value:
+          dtype:code:
+            tag: dtype:code
+            value:
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  integer:
+                    tag: integer
+                    value:
+                      object:
+                        tag: object
+                        value: '5'
+                      predicate:
+                        tag: predicate
+                        value: dtype:code
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+          dtype:order:
+            tag: dtype:order
+            value:
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  int32:
+                    tag: int32
+                    value:
+                      object:
+                        tag: object
+                        value: '6'
+                      predicate:
+                        tag: predicate
+                        value: dtype:order
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+          dtype:value:
+            tag: dtype:value
+            value:
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: bi-weekly
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:BiWeekly
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: secret
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: submitter
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:GR_Submitter
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: approved
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:ApprovedIssue
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: high
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:PV_HighPriority
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unknown
+                      predicate:
+                        tag: predicate
+                        value: dtype:value
+                      subject:
+                        tag: subject
+                        value: voag:PS_Unknown
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: voag:Provenance
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N345047ec5f464a99ad1a301362ddbc48
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:GraphRole
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N6d3b201587b742499ddeb5aadfb17c36
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: N3ab5a3d646dc4d969f577b264e2172dd
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: N060476595ef442bfa57fd8980a6216ff
+          owl:hasValue:
+            tag: owl:hasValue
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:VocabularyGraph
+                      predicate:
+                        tag: predicate
+                        value: owl:hasValue
+                      subject:
+                        tag: subject
+                        value: Nfc60941da7644e2fb5080ad8668ed014
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: N122d7c2d427147c8bb9ad4860462e8b0
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: N3a8237abeb5b4d6b876dcbade57b5bc9
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  int32:
+                    tag: int32
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: N3c8da3158fda4980bf3f3f5ba2e2973c
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: Nb52a7f9a650343239b07215d835e2718
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: voag:id
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: Ndc4a324cd0fc4bed8879e6f6b43e3779
+                  owl:DeprecatedProperty:
+                    tag: owl:DeprecatedProperty
+                    value:
+                      object:
+                        tag: object
+                        value: voag:isITAR
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N776a308ef1ce421c99449e2e702a20ad
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: voag:hasProvenance
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N345047ec5f464a99ad1a301362ddbc48
+                  owl:SymmetricProperty:
+                    tag: owl:SymmetricProperty
+                    value:
+                      object:
+                        tag: object
+                        value: voag:compatibleWith
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N4098c5e34115462caff10793c8b33b4f
+                  owl:TransitiveProperty:
+                    tag: owl:TransitiveProperty
+                    value:
+                      object:
+                        tag: object
+                        value: voag:supercedes
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N5c0f4d4421334130934e1a49135f40f8
+                  rdf:Property:
+                    tag: rdf:Property
+                    value:
+                      object:
+                        tag: object
+                        value: voag:imageMap
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N3a8237abeb5b4d6b876dcbade57b5bc9
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:hasGraphRole
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: Nfc60941da7644e2fb5080ad8668ed014
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: voag:StakeholderGroup
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: N229c68e67e224c5696fd53deac8d177b
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              vaem:CatalogEntry:
+                tag: vaem:CatalogEntry
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-CatalogEntry
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:NoAttributionSpecified
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:BiWeekly
+              voag:ChangeType:
+                tag: voag:ChangeType
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:AppendChange
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:CCP_DerivativeWorks
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:CCPH_HighIncomeNationUse
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:CCR_Attribution
+              voag:Governance:
+                tag: voag:Governance
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:NoGovernanceSpecified
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:GR_Submitter
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:ApprovedIssue
+              voag:LicenseModel:
+                tag: voag:LicenseModel
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:CC-SHAREALIKE_3PT0-US
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:Maturity:
+                tag: voag:Maturity
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:SomeAdoption
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:Pedigree:
+                tag: voag:Pedigree
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:NoPedigreeSpecified
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:PV_HighPriority
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+              voag:Provenance:
+                tag: voag:Provenance
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:NoProvenanceSpecified
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:PS_Unknown
+              voag:SchemaGraph:
+                tag: voag:SchemaGraph
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/schema/voag
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-CatalogEntry
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              vaem:CatalogEntry:
+                tag: vaem:CatalogEntry
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VOAG Catalog Entry
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-CatalogEntry
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: No attribution specified
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:NoAttributionSpecified
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant Logo 613 x 150
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ChangeFrequency:
+                tag: voag:ChangeFrequency
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Bi-Weekly
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:BiWeekly
+              voag:ChangeType:
+                tag: voag:ChangeType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Append change
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:AppendChange
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Secret
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Derivative works
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:CCP_DerivativeWorks
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: High income nation use
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:CCPH_HighIncomeNationUse
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Creative Commons Attribution
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:CCR_Attribution
+              voag:Governance:
+                tag: voag:Governance
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: No governance specified
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:NoGovernanceSpecified
+              voag:GovernanceRole:
+                tag: voag:GovernanceRole
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Submitter
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:GR_Submitter
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: RDF Icon 32 X 35
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Approved Issue
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:ApprovedIssue
+              voag:LicenseModel:
+                tag: voag:LicenseModel
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          Creative Commons Attribution-Share Alike 3.0 United States
+                          License
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:CC-SHAREALIKE_3PT0-US
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: LinkedModel ICON 200 x 80
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:Maturity:
+                tag: voag:Maturity
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Some adoption
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:SomeAdoption
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant Logo 613 x 150
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:Pedigree:
+                tag: voag:Pedigree
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: No pedigree specified
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:NoPedigreeSpecified
+              voag:PriorityValue:
+                tag: voag:PriorityValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: High priority
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:PV_HighPriority
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VOAG Logo
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+              voag:Provenance:
+                tag: voag:Provenance
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: No provenance specified
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:NoProvenanceSpecified
+              voag:PublicationStatus:
+                tag: voag:PublicationStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Unknown Status
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:PS_Unknown
+              voag:SchemaGraph:
+                tag: voag:SchemaGraph
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VOAG Catalog Entry
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-CatalogEntry
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: voag:GovernedObject
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subClassOf
+                      subject:
+                        tag: subject
+                        value: vaem:CatalogEntry
+          vaem:description:
+            tag: vaem:description
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          TopQuadrant''s logo - diamond with company name to the right
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ConfidentialityLevel:
+                tag: voag:ConfidentialityLevel
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          "Secret" shall be applied to information, the unauthorized
+                          disclosure of which reasonably could be expected to cause
+                          serious damage to the national security that the original
+                          classification authority is able to identify or describe
+                          [US Executive Order 12958].
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:CL_Secret
+              voag:CreativeCommonsPermission:
+                tag: voag:CreativeCommonsPermission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Distribution of derivative works
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:CCP_DerivativeWorks
+              voag:CreativeCommonsProhibition:
+                tag: voag:CreativeCommonsProhibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Use in a non-developing country
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:CCPH_HighIncomeNationUse
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          Credit to be given to copyright holder and/or author
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:CCR_Attribution
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: RDF Standard
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:IssueStatus:
+                tag: voag:IssueStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: An issue with undetermined disposition,
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:OpenIssue
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: LinkedModel Logo
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          TopQuadrant''s logo - diamond with company name to the right
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+          vaem:name:
+            tag: vaem:name
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant, Inc.
+                      predicate:
+                        tag: predicate
+                        value: vaem:name
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantAttribution
+          vaem:url:
+            tag: vaem:url
+            value:
+              voag:CreativeCommonsRequirement:
+                tag: voag:CreativeCommonsRequirement
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.gnu.org/copyleft/copyleft.html
+                      predicate:
+                        tag: predicate
+                        value: vaem:url
+                      subject:
+                        tag: subject
+                        value: voag:CCR_Copyleft
+          voag:caption:
+            tag: voag:caption
+            value:
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: RDF Standard ICON
+                      predicate:
+                        tag: predicate
+                        value: voag:caption
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: LinkedModel Standard ICON
+                      predicate:
+                        tag: predicate
+                        value: voag:caption
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VOAG Logo
+                      predicate:
+                        tag: predicate
+                        value: voag:caption
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+          voag:hasLogo:
+            tag: voag:hasLogo
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  voag:AttributionLogo:
+                    tag: voag:AttributionLogo
+                    value:
+                      object:
+                        tag: object
+                        value: voag:TopQuadrantLogo-613x150
+                      predicate:
+                        tag: predicate
+                        value: voag:hasLogo
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantAttribution
+                  voag:OrganizationLogo:
+                    tag: voag:OrganizationLogo
+                    value:
+                      object:
+                        tag: object
+                        value: voag:TopQuadrantLogo-613x150
+                      predicate:
+                        tag: predicate
+                        value: voag:hasLogo
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantAttribution
+          voag:height:
+            tag: voag:height
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '150'
+                      predicate:
+                        tag: predicate
+                        value: voag:height
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '35'
+                      predicate:
+                        tag: predicate
+                        value: voag:height
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '80'
+                      predicate:
+                        tag: predicate
+                        value: voag:height
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '150'
+                      predicate:
+                        tag: predicate
+                        value: voag:height
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '55'
+                      predicate:
+                        tag: predicate
+                        value: voag:height
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+          voag:image:
+            tag: voag:image
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          http://www.linkedmodel.org/lib/lm/images/logos/TQ_logo_C_2009_SM_print.jpg
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: voag:image
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          http://www.linkedmodel.org/lib/lm/images/icons/rdf_w3c_icon.48.gif
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: voag:image
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          http://www.linkedmodel.org/lib/lm/images/logos/linkedmodels-logo.gif
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: voag:image
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          http://www.linkedmodel.org/lib/lm/images/logos/TQ_logo_C_2009_SM_print.jpg
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: voag:image
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          http://www.linkedmodel.org/lib/lm/images/logos/voag_logo_360x110.png
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: voag:image
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+          voag:pointOfContact:
+            tag: voag:pointOfContact
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Ralph Hodgson, TopQuadrant, Inc.
+                      predicate:
+                        tag: predicate
+                        value: voag:pointOfContact
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantAttribution
+          voag:url:
+            tag: voag:url
+            value:
+              voag:Attribution:
+                tag: voag:Attribution
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.topquadrant.com
+                      predicate:
+                        tag: predicate
+                        value: voag:url
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantAttribution
+          voag:width:
+            tag: voag:width
+            value:
+              voag:AttributionLogo:
+                tag: voag:AttributionLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '613'
+                      predicate:
+                        tag: predicate
+                        value: voag:width
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:Icon:
+                tag: voag:Icon
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '32'
+                      predicate:
+                        tag: predicate
+                        value: voag:width
+                      subject:
+                        tag: subject
+                        value: voag:RDFIcon-32X35
+              voag:Logo:
+                tag: voag:Logo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '200'
+                      predicate:
+                        tag: predicate
+                        value: voag:width
+                      subject:
+                        tag: subject
+                        value: voag:LinkedModelLogo-200x80
+              voag:OrganizationLogo:
+                tag: voag:OrganizationLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '613'
+                      predicate:
+                        tag: predicate
+                        value: voag:width
+                      subject:
+                        tag: subject
+                        value: voag:TopQuadrantLogo-613x150
+              voag:ProductLogo:
+                tag: voag:ProductLogo
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '180'
+                      predicate:
+                        tag: predicate
+                        value: voag:width
+                      subject:
+                        tag: subject
+                        value: voag:VOAG-OntologyLogo_360x110
+classes:
+  vaem_CatalogEntry:
+    class_uri: vaem:CatalogEntry
+    name: vaem_CatalogEntry
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+  vaem_dateUnion:
+    class_uri: vaem:dateUnion
+    name: vaem_dateUnion
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  voag_Accredidation:
+    class_uri: voag:Accredidation
+    is_a: voag_Qualifier
+    name: voag_Accredidation
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Accredidation
+  voag_AdministrativeEvent:
+    class_uri: voag:AdministrativeEvent
+    description: An event that is associated with the admistration aspect of governance.
+      Typically these are curation events.
+    is_a: voag_Event
+    name: voag_AdministrativeEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Administrative Event
+  voag_ApprovalEvent:
+    class_uri: voag:ApprovalEvent
+    is_a: voag_Event
+    name: voag_ApprovalEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Approval Event
+  voag_ApprovalProcess:
+    class_uri: voag:ApprovalProcess
+    is_a: voag_GovernanceProcess
+    name: voag_ApprovalProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Approval Process
+  voag_AssignedRole:
+    class_uri: voag:AssignedRole
+    is_a: owl_Thing
+    name: voag_AssignedRole
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Assigned role
+  voag_Attribution:
+    class_uri: voag:Attribution
+    comments:
+    - 'description: The name, url and other details of an attribution.'
+    description: An 'Attribution' specifies how credit should be given when citing
+      the creators of a piece of work. Attribution must use the specified attribution
+      text and optionally use logos that are provided in the attribution details below.,
+      with the names of points of contact.
+    is_a: voag_Qualifier
+    name: voag_Attribution
+    slots:
+    - rdfs_label
+    - vaem_name
+    - rdfs_isDefinedBy
+    - voag_pointOfContact
+    - voag_hasLogo
+    - voag_url
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Attributed Source
+  voag_AttributionLogo:
+    class_uri: voag:AttributionLogo
+    is_a: voag_Logo
+    name: voag_AttributionLogo
+    slots:
+    - rdfs_label
+    - voag_width
+    - rdfs_isDefinedBy
+    - voag_image
+    - voag_height
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Attribution logo
+  voag_Catalog:
+    class_uri: voag:Catalog
+    is_a: voag_GovernedObject
+    name: voag_Catalog
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Catalog
+  voag_ChangeFrequency:
+    class_uri: voag:ChangeFrequency
+    is_a: voag_EnumeratedValue
+    name: voag_ChangeFrequency
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_value
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Change frequency
+  voag_ChangeManagementProcess:
+    class_uri: voag:ChangeManagementProcess
+    description: A "Governance Process".
+    is_a: voag_GovernanceProcess
+    name: voag_ChangeManagementProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Change Management Process
+  voag_ChangeType:
+    class_uri: voag:ChangeType
+    is_a: voag_EnumeratedValue
+    name: voag_ChangeType
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Change type
+  voag_ConcurrenceEvent:
+    class_uri: voag:ConcurrenceEvent
+    description: A Governance Event.
+    is_a: voag_Event
+    name: voag_ConcurrenceEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Concurrence event
+  voag_ConfidentialityLevel:
+    class_uri: voag:ConfidentialityLevel
+    is_a: voag_EnumeratedValue
+    name: voag_ConfidentialityLevel
+    slots:
+    - rdfs_label
+    - dtype_order
+    - dtype_code
+    - rdfs_isDefinedBy
+    - dtype_value
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Confidentiality level
+  voag_CreativeCommonsJurisdiction:
+    class_uri: voag:CreativeCommonsJurisdiction
+    comments:
+    - 'title: Creative Commons Jurisdiction'
+    description: the legal jurisdiction of a license
+    is_a: owl_Thing
+    name: voag_CreativeCommonsJurisdiction
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Creative commons jurisdiction
+  voag_CreativeCommonsPermission:
+    class_uri: voag:CreativeCommonsPermission
+    description: An action that may or may not be allowed or desired
+    is_a: voag_EnumeratedValue
+    name: voag_CreativeCommonsPermission
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Creative Commons Permission
+  voag_CreativeCommonsProhibition:
+    class_uri: voag:CreativeCommonsProhibition
+    description: something you may be asked not to do
+    is_a: voag_EnumeratedValue
+    name: voag_CreativeCommonsProhibition
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Creative Commons Prohibition
+  voag_CreativeCommonsRequirement:
+    class_uri: voag:CreativeCommonsRequirement
+    description: an action that may or may not be requested of you
+    is_a: voag_EnumeratedValue
+    name: voag_CreativeCommonsRequirement
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - vaem_url
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Requirement
+  voag_CreativeCommonsWork:
+    class_uri: voag:CreativeCommonsWork
+    comments:
+    - 'title: Creative Commons Work'
+    description: A potentially copyrightable work
+    is_a: owl_Thing
+    name: voag_CreativeCommonsWork
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Creative commons work
+  voag_DeletionEvent:
+    class_uri: voag:DeletionEvent
+    description: A "Archival Event".
+    is_a: voag_Event
+    name: voag_DeletionEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Deletion Event
+  voag_DesignatedGovernanceRole:
+    class_uri: voag:DesignatedGovernanceRole
+    description: 'A "Assigned Role" with the following instance(s): "Assurer", "Project
+      Management", "Resource & Process Policy", "Technical Definitions", "User", "Verifier".'
+    is_a: voag_Event
+    name: voag_DesignatedGovernanceRole
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Designated Governance Role
+  voag_Document:
+    class_uri: voag:Document
+    is_a: owl_Thing
+    name: voag_Document
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Document
+  voag_EnumeratedValue:
+    class_uri: voag:EnumeratedValue
+    description: The base class in LMC for enumerated values
+    is_a: dtype_EnumeratedValue
+    name: voag_EnumeratedValue
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Metadata Enumerated value
+  voag_Event:
+    class_uri: voag:Event
+    is_a: owl_Thing
+    name: voag_Event
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Event
+  voag_Figure:
+    class_uri: voag:Figure
+    is_a: voag_Image
+    name: voag_Figure
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Figure
+  voag_Governance:
+    class_uri: voag:Governance
+    description: Governance is mainly concerned with how an artifact is provisioned
+      and managed over its lifecycle. Governance also concerns the status tracking
+      and processes that need to exist on information objects and services for a successful
+      initiaitve, mission, program, or project. Such governance needs to outline the
+      relationships between all internal and external groups involved, describe the
+      proper flow of information regarding to all stakeholders, ensure the appropriate
+      review of issues encountered and ensure that required approvals and direction
+      are obtained at each appropriate stage.
+    is_a: voag_Qualifier
+    name: voag_Governance
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governance
+  voag_GovernanceEvent:
+    class_uri: voag:GovernanceEvent
+    description: A "Governance Event".
+    is_a: voag_Event
+    name: voag_GovernanceEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governance Event
+  voag_GovernanceProcess:
+    class_uri: voag:GovernanceProcess
+    description: A "Process".
+    is_a: voag_Process
+    name: voag_GovernanceProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governance Process
+  voag_GovernanceProtocol:
+    class_uri: voag:GovernanceProtocol
+    description: Governance is used to mean the processes that need to exist for a
+      successful initiaitve, mission, program, or project. Such governance needs to
+      outline the relationships between all internal and external groups involved,
+      describe the proper flow of information regarding to all stakeholders, ensure
+      the appropriate review of issues encountered and ensure that required approvals
+      and direction for a 'GovernedEntity' is obtained at each appropriate stage.
+    is_a: voag_Qualifier
+    name: voag_GovernanceProtocol
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governance Protocol
+  voag_GovernanceRole:
+    class_uri: voag:GovernanceRole
+    description: 'A "Role" with the following instance(s): "authorizer", "steward",
+      "submitter".'
+    is_a: voag_EnumeratedValue
+    name: voag_GovernanceRole
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_value
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governance Role
+  voag_GovernedObject:
+    class_uri: voag:GovernedObject
+    is_a: prov_Entity
+    name: voag_GovernedObject
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governed Object
+  voag_GovernedService:
+    class_uri: voag:GovernedService
+    is_a: voag_Service
+    name: voag_GovernedService
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Governed service
+  voag_Graph:
+    class_uri: voag:Graph
+    is_a: void_Dataset
+    name: voag_Graph
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Graph
+  voag_Icon:
+    class_uri: voag:Icon
+    is_a: voag_Image
+    name: voag_Icon
+    slots:
+    - rdfs_label
+    - voag_width
+    - rdfs_isDefinedBy
+    - voag_image
+    - voag_height
+    - voag_caption
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Icon
+  voag_Image:
+    class_uri: voag:Image
+    is_a: owl_Thing
+    name: voag_Image
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Image
+  voag_Issue:
+    class_uri: voag:Issue
+    description: captures issues such as raising of an issue related to a particular
+      entity in a registry
+    is_a: owl_Thing
+    name: voag_Issue
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Issue
+  voag_IssueResolutionProcess:
+    class_uri: voag:IssueResolutionProcess
+    description: A "Governance Process".
+    is_a: voag_GovernanceProcess
+    name: voag_IssueResolutionProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Issue Resolution Process
+  voag_IssueStatus:
+    class_uri: voag:IssueStatus
+    description: 'The status of an issue: "Closed", "Deferred", "Non issue", "Open",
+      "Resolved".'
+    is_a: voag_EnumeratedValue
+    name: voag_IssueStatus
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_value
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Issue Status
+  voag_LicenseModel:
+    class_uri: voag:LicenseModel
+    is_a: voag_GovernedObject
+    name: voag_LicenseModel
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: License Model
+  voag_Logo:
+    class_uri: voag:Logo
+    is_a: voag_Image
+    name: voag_Logo
+    slots:
+    - rdfs_label
+    - voag_width
+    - rdfs_isDefinedBy
+    - voag_image
+    - voag_height
+    - voag_caption
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Logo
+  voag_Maturity:
+    class_uri: voag:Maturity
+    is_a: voag_EnumeratedValue
+    name: voag_Maturity
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Maturity
+  voag_NonConcurrenceEvent:
+    class_uri: voag:NonConcurrenceEvent
+    description: A "Governance Event".
+    is_a: voag_GovernanceEvent
+    name: voag_NonConcurrenceEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Non-Concurrence Event
+  voag_Organization:
+    class_uri: voag:Organization
+    is_a: voag_Party
+    name: voag_Organization
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Organization
+  voag_OrganizationLogo:
+    class_uri: voag:OrganizationLogo
+    is_a: voag_Logo
+    name: voag_OrganizationLogo
+    slots:
+    - rdfs_label
+    - voag_width
+    - rdfs_isDefinedBy
+    - voag_image
+    - voag_height
+    - vaem_description
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Organization logo
+  voag_Party:
+    class_uri: voag:Party
+    name: voag_Party
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Party
+  voag_Pedigree:
+    class_uri: voag:Pedigree
+    description: The origin or source of something. The primary purpose of provenance
+      is to capture the time, place, and if appropriate the person responsible, for
+      the creation, production or provisioning of some information object.
+    is_a: voag_Qualifier
+    name: voag_Pedigree
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Pedigree
+  voag_Person:
+    class_uri: voag:Person
+    is_a: voag_Party
+    name: voag_Person
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Person
+  voag_PriorityValue:
+    class_uri: voag:PriorityValue
+    is_a: voag_EnumeratedValue
+    name: voag_PriorityValue
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_value
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Priority value
+  voag_Process:
+    class_uri: voag:Process
+    is_a: owl_Thing
+    name: voag_Process
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Process
+  voag_ProductLogo:
+    class_uri: voag:ProductLogo
+    is_a: voag_Logo
+    name: voag_ProductLogo
+    slots:
+    - rdfs_label
+    - voag_width
+    - rdfs_isDefinedBy
+    - voag_image
+    - voag_height
+    - voag_caption
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Product logo
+  voag_Provenance:
+    class_uri: voag:Provenance
+    description: The origin or source of something. The primary purpose of provenance
+      is to capture the time, place, and if appropriate the person responsible, for
+      the creation, production or provisioning of some information object.
+    is_a: voag_Qualifier
+    name: voag_Provenance
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Provenance
+  voag_PublicationStatus:
+    class_uri: voag:PublicationStatus
+    is_a: voag_EnumeratedValue
+    name: voag_PublicationStatus
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_value
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Publication Status
+  voag_Qualifier:
+    class_uri: voag:Qualifier
+    is_a: owl_Thing
+    name: voag_Qualifier
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Qualifier
+  voag_RejectionEvent:
+    class_uri: voag:RejectionEvent
+    description: A "Governance Event".
+    is_a: voag_Event
+    name: voag_RejectionEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Rejection Event
+  voag_RetreivalEvent:
+    class_uri: voag:RetreivalEvent
+    description: A "Archival Event".
+    is_a: voag_Event
+    name: voag_RetreivalEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Retreival Event
+  voag_ReviewEvent:
+    class_uri: voag:ReviewEvent
+    description: A "Governance Event".
+    is_a: voag_GovernanceEvent
+    name: voag_ReviewEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Review
+  voag_SchemaGraph:
+    class_uri: voag:SchemaGraph
+    is_a: voag_Graph
+    name: voag_SchemaGraph
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_label
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Schema graph
+  voag_Service:
+    class_uri: voag:Service
+    is_a: owl_Thing
+    name: voag_Service
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Service
+  voag_StakeholderGroup:
+    class_uri: voag:StakeholderGroup
+    description: A Stakeholder Group is a party of people who have common interests
+      and concerns.
+    is_a: voag_Party
+    name: voag_StakeholderGroup
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Stakeholder Group
+  voag_Standard:
+    class_uri: voag:Standard
+    is_a: voag_GovernedObject
+    name: voag_Standard
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Standard
+  voag_VocabGraph:
+    class_uri: voag:VocabGraph
+    is_a: voag_Graph
+    name: voag_VocabGraph
+    source: http://voag.linkedmodel.org/schema/voag
+    title: Vocab graph
+comments:
+- 'title: Vocabulary Of Attribution and Governance'
+- 'title: Vocabulary Of Attribution and Governance'
+created_on: '2025-07-15T20:30:04.820103'
+default_prefix: okn
+id: okns:voag
+imports:
+- linkml:types
+- okns:prov
+- https://purl.org/okn/schema/extended_types
+- okns:vaem
+- okns:owl-rdf-rdfs
+- okns:voaf
+- okns:dtype
+last_updated_on: '2025-07-15T20:30:04.820103'
+name: voag
+prefixes:
+  dc: http://purl.org/dc/elements/1.1/
+  dtype: http://www.linkedmodel.org/schema/dtype#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  prov: http://www.w3.org/ns/prov#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vaem: http://www.linkedmodel.org/schema/vaem#
+  voag: http://voag.linkedmodel.org/voag#
+  void: http://rdfs.org/ns/void#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  voag_accountableFor:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property used in governance that refers a resource to the
+      party that is accountable for it.
+    name: voag_accountableFor
+    range: Any
+    slot_uri: voag:accountableFor
+    source: http://voag.linkedmodel.org/schema/voag
+    title: accountable for
+  voag_approves:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies that a party governs the approval
+      of a resource.
+    inverse: voag_isApprovedBy
+    name: voag_approves
+    range: Any
+    slot_uri: voag:approves
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_governs
+    title: approves
+  voag_attributionText:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_attributionText
+    range: string
+    slot_uri: voag:attributionText
+    source: http://voag.linkedmodel.org/schema/voag
+    title: attribution text
+  voag_caption:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A short description, typically used on a table or a figure.
+    name: voag_caption
+    range: string
+    slot_uri: voag:caption
+    source: http://voag.linkedmodel.org/schema/voag
+    title: caption
+  voag_compatibleWith:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_compatibleWith
+    range: Any
+    slot_uri: voag:compatibleWith
+    source: http://voag.linkedmodel.org/schema/voag
+    title: compatible with
+  voag_curatedGraphURI:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The property 'voag:curatedGraphURI' provides a means to specify the
+      base URI of the specific version of the onotlogy that is being documented. In
+      each versioned graph the 'vaem:namespace' carries a URI without a version number.
+    name: voag_curatedGraphURI
+    range: uri
+    slot_uri: voag:curatedGraphURI
+    source: http://voag.linkedmodel.org/schema/voag
+    title: curated graph URI
+  voag_deprecated:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_deprecated
+    range: vaem_dateUnion
+    slot_uri: voag:deprecated
+    source: http://voag.linkedmodel.org/schema/voag
+    title: deprecated on
+  voag_derivedFrom:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_derivedFrom
+    range: Any
+    slot_uri: voag:derivedFrom
+    source: http://voag.linkedmodel.org/schema/voag
+    title: derived from
+  voag_disposition:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: used to connect to the text describing disposition of something,
+      for example, a disposition of an issue
+    name: voag_disposition
+    range: string
+    slot_uri: voag:disposition
+    source: http://voag.linkedmodel.org/schema/voag
+    title: disposition
+  voag_dispositionStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object propoert that denotes the state of a governance issue.
+    name: voag_dispositionStatus
+    range: Any
+    slot_uri: voag:dispositionStatus
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_hasApprovalStatus
+    title: disposition status
+  voag_documentedAt:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The property 'vaem:documentedAt' is intended for general use as the
+      name implies. In some cases the property could have scalar values and in other
+      cases may need to refer to a first class concept that holds more information
+      about a documentation resource. For this reason, the type of this property is
+      set as 'rdf:Property' and the property is rangeless.
+    name: voag_documentedAt
+    range: Any
+    slot_uri: voag:documentedAt
+    source: http://voag.linkedmodel.org/schema/voag
+    title: documented at
+  voag_downloads:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_downloads
+    range: integer
+    slot_uri: voag:downloads
+    source: http://voag.linkedmodel.org/schema/voag
+    title: downloads
+  voag_endDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_endDate
+    range: vaem_dateUnion
+    slot_uri: voag:endDate
+    source: http://voag.linkedmodel.org/schema/voag
+    title: end date
+  voag_eventDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_eventDate
+    range: vaem_dateUnion
+    slot_uri: voag:eventDate
+    source: http://voag.linkedmodel.org/schema/voag
+    title: event date
+  voag_exclude:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_exclude
+    range: boolean
+    slot_uri: voag:exclude
+    source: http://voag.linkedmodel.org/schema/voag
+    title: exclude
+  voag_frequencyOfChange:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_frequencyOfChange
+    range: Any
+    slot_uri: voag:frequencyOfChange
+    source: http://voag.linkedmodel.org/schema/voag
+    title: frequency of change
+  voag_givesConcurrenceFor:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies what a party may need to give consent,
+      in the form of agreement, either written or verbally for in the approval of
+      some govenance concern. This is the inverse property of 'mayNeedConcurrenceFrom'
+      and, as such, may be deprecated in the future.
+    inverse: voag_mayNeedConcurrenceFrom
+    name: voag_givesConcurrenceFor
+    range: Any
+    slot_uri: voag:givesConcurrenceFor
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_governs
+    title: gives concurrence for
+  voag_governs:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'A super-property of governance properties: ''approves'', ''gives
+      concurrence for'', ''reviews'' and ''witness to''.'
+    inverse: voag_isGovernedBy
+    name: voag_governs
+    range: Any
+    slot_uri: voag:governs
+    source: http://voag.linkedmodel.org/schema/voag
+    title: governs
+  voag_hasAccredidation:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasAccredidation
+    range: Any
+    slot_uri: voag:hasAccredidation
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has accredidation
+  voag_hasAnticipatedChangeType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasAnticipatedChangeType
+    range: Any
+    slot_uri: voag:hasAnticipatedChangeType
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has anticipated change type
+  voag_hasApplicableDocument:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A document that is of help to application of the subject matter.
+      Documents include specifications, models, standards, guidelines, handbooks and
+      other special publications.
+    name: voag_hasApplicableDocument
+    range: Any
+    slot_uri: voag:hasApplicableDocument
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has applicable document
+  voag_hasApprovalProcess:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies a process that is used for approval
+      in a 'Governance Protocol'.
+    name: voag_hasApprovalProcess
+    range: Any
+    slot_uri: voag:hasApprovalProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has approval process
+  voag_hasApprovalStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that referes to an enumerated value that denotes
+      the state of an approval.
+    name: voag_hasApprovalStatus
+    range: Any
+    slot_uri: voag:hasApprovalStatus
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has approval status
+  voag_hasCategory:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasCategory
+    range: Any
+    slot_uri: voag:hasCategory
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has category
+  voag_hasChangeManagementProcess:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies a process that is used for managing
+      change in a 'Governance Protocol'.
+    name: voag_hasChangeManagementProcess
+    range: Any
+    slot_uri: voag:hasChangeManagementProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_hasProcess
+    title: has change management process
+  voag_hasChangeType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasChangeType
+    range: Any
+    slot_uri: voag:hasChangeType
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has change type
+  voag_hasConfidentiality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies a level of confidentiality. Typicall
+      the range of this property will be 'voag:Confidentiality'.
+    name: voag_hasConfidentiality
+    range: Any
+    slot_uri: voag:hasConfidentiality
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has confidentiality
+  voag_hasGovernance:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasGovernance
+    range: Any
+    slot_uri: voag:hasGovernance
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has governance
+  voag_hasGovernanceEvent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An event associated with governance processes.
+    name: voag_hasGovernanceEvent
+    range: Any
+    slot_uri: voag:hasGovernanceEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has governance event
+  voag_hasIdentifier:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasIdentifier
+    range: Any
+    slot_uri: voag:hasIdentifier
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has identifier
+  voag_hasIssue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to an issue that exists on a subject of interest.
+    name: voag_hasIssue
+    range: voag_Issue
+    slot_uri: voag:hasIssue
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has issue
+  voag_hasIssueResolutionProcess:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasIssueResolutionProcess
+    range: Any
+    slot_uri: voag:hasIssueResolutionProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_hasProcess
+    title: has issue resolution process
+  voag_hasLogo:
+    any_of:
+    - range: voag_OrganizationLogo
+    - range: voag_AttributionLogo
+    - range: voag_Logo
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property to reference an image that is used as a logo.
+    name: voag_hasLogo
+    range: Any
+    slot_uri: voag:hasLogo
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has logo
+  voag_hasMaturity:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasMaturity
+    range: Any
+    slot_uri: voag:hasMaturity
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has maturity
+  voag_hasNormativeDocument:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasNormativeDocument
+    range: Any
+    slot_uri: voag:hasNormativeDocument
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has normative document
+  voag_hasOntologyArchitectureDiagram:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasOntologyArchitectureDiagram
+    range: Any
+    slot_uri: voag:hasOntologyArchitectureDiagram
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has ontology architecture diagram
+  voag_hasOwner:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasOwner
+    range: Any
+    slot_uri: voag:hasOwner
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has owner
+  voag_hasPedigree:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A reference to a description about the pedigree of something.
+    name: voag_hasPedigree
+    range: Any
+    slot_uri: voag:hasPedigree
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has pedigree
+  voag_hasProcess:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A reference to a process description.
+    name: voag_hasProcess
+    range: Any
+    slot_uri: voag:hasProcess
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has process
+  voag_hasProtocol:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to a record that holds governance information for one or
+      more governed entities. Often governance can be shared across entities.
+    name: voag_hasProtocol
+    range: Any
+    slot_uri: voag:hasProtocol
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has protocol
+  voag_hasProvenance:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to a provenance record that details the source, version
+      and time of some subject of interest.
+    name: voag_hasProvenance
+    range: Any
+    slot_uri: voag:hasProvenance
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has provenance
+  voag_hasReferenceDocument:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasReferenceDocument
+    range: Any
+    slot_uri: voag:hasReferenceDocument
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has reference document
+  voag_hasStakeholder:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasStakeholder
+    range: Any
+    slot_uri: voag:hasStakeholder
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has stakeholder
+  voag_hasStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasStatus
+    range: Any
+    slot_uri: voag:hasStatus
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has status
+  voag_hasSteward:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to the person that is a curator.
+    name: voag_hasSteward
+    range: Any
+    slot_uri: voag:hasSteward
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has steward
+  voag_hasValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_hasValue
+    range: rdfs_Resource
+    slot_uri: voag:hasValue
+    source: http://voag.linkedmodel.org/schema/voag
+    title: has value
+  voag_height:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Height is typically used to specify an image's height attribute.
+    name: voag_height
+    range: string
+    slot_uri: voag:height
+    source: http://voag.linkedmodel.org/schema/voag
+    title: height
+  voag_id:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_id
+    range: xsd_anySimpleType
+    slot_uri: voag:id
+    source: http://voag.linkedmodel.org/schema/voag
+    title: id
+  voag_image:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The property 'vaem:image' points to an image using a URL.
+    name: voag_image
+    range: uri
+    slot_uri: voag:image
+    source: http://voag.linkedmodel.org/schema/voag
+    title: image
+  voag_imageMap:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_imageMap
+    range: Any
+    slot_uri: voag:imageMap
+    source: http://voag.linkedmodel.org/schema/voag
+    title: image map
+  voag_incompatibleWith:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_incompatibleWith
+    range: Any
+    slot_uri: voag:incompatibleWith
+    source: http://voag.linkedmodel.org/schema/voag
+    title: incompatible with
+  voag_instigatedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_instigatedBy
+    range: Any
+    slot_uri: voag:instigatedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: instigated by
+  voag_instigatingEvent:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_instigatingEvent
+    range: Any
+    slot_uri: voag:instigatingEvent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: instigating event
+  voag_intent:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_intent
+    range: string
+    slot_uri: voag:intent
+    source: http://voag.linkedmodel.org/schema/voag
+    title: intent
+  voag_interestIn:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: voag_isInterestOf
+    name: voag_interestIn
+    range: Any
+    slot_uri: voag:interestIn
+    source: http://voag.linkedmodel.org/schema/voag
+    title: interest in
+  voag_isApprovedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: References to which parties approve an entity.
+    name: voag_isApprovedBy
+    range: Any
+    slot_uri: voag:isApprovedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: is approved by
+  voag_isFOSS:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A boolean property to specify whether or not software is free or
+      open source. Free and open-source software (F/OSS, FOSS) or free/libre/open-source
+      software (FLOSS) is software that is liberally licensed to grant the right of
+      users to use, study, change, and improve its design through the availability
+      of its source code.
+    name: voag_isFOSS
+    range: boolean
+    slot_uri: voag:isFOSS
+    source: http://voag.linkedmodel.org/schema/voag
+    title: is FOSS
+  voag_isGovernedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to who is responsible for the governance of some entity
+      of interest. This is a two-way reference with the inverse property 'governs'.
+    name: voag_isGovernedBy
+    range: Any
+    slot_uri: voag:isGovernedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: is governed by
+  voag_isITAR:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: International Traffic in Arms Regulations (ITAR) is a set of United
+      States government regulations that control the export and import of defense-related
+      articles and services on the United States Munitions List. These regulations
+      implement the provisions of the Arms Export Control Act, and are described in
+      Title 22 (Foreign Relations), Chapter I (Department of State), Subchapter M
+      of the Code of Federal Regulations. The Department of State interprets and enforces
+      ITAR. Its goal is to advance national strategic objectives and U.S. foreign
+      policy via the trade controls. For practical purposes, ITAR regulations dictate
+      that information and material pertaining to defense and military related technologies
+      may only be shared with US Persons unless approval from the Department of State
+      is received or a special exemption is used.
+    name: voag_isITAR
+    range: boolean
+    slot_uri: voag:isITAR
+    source: http://voag.linkedmodel.org/schema/voag
+    title: is ITAR
+  voag_isInterestOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to parties who have an interest in an entity. This is a
+      two-way reference with the inverse property 'interestIn'.
+    name: voag_isInterestOf
+    range: Any
+    slot_uri: voag:isInterestOf
+    source: http://voag.linkedmodel.org/schema/voag
+    title: interest of
+  voag_jurisdiction:
+    comments:
+    - 'title: jurisdiction'
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_jurisdiction
+    range: voag_CreativeCommonsJurisdiction
+    slot_uri: voag:jurisdiction
+    source: http://voag.linkedmodel.org/schema/voag
+    title: jurisdiction
+  voag_legalcode:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_legalcode
+    range: rdfs_Resource
+    slot_uri: voag:legalcode
+    source: http://voag.linkedmodel.org/schema/voag
+    title: legalcode
+  voag_licence:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_licence
+    range: string
+    slot_uri: voag:licence
+    source: http://voag.linkedmodel.org/schema/voag
+    title: licence
+  voag_mayNeedConcurrenceFrom:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An object property that specifies that a party may need to give consent,
+      in the form of agreement, either written or verbally to the approval of some
+      govenance concern.
+    inverse: voag_givesConcurrenceFor
+    name: voag_mayNeedConcurrenceFrom
+    range: Any
+    slot_uri: voag:mayNeedConcurrenceFrom
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: may need concurrence from
+  voag_morePermissions:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: voag_CreativeCommonsWork
+    name: voag_morePermissions
+    range: rdfs_Resource
+    slot_uri: voag:morePermissions
+    source: http://voag.linkedmodel.org/schema/voag
+    title: more permissions
+  voag_normativeReference:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_normativeReference
+    range: Any
+    slot_uri: voag:normativeReference
+    source: http://voag.linkedmodel.org/schema/voag
+    title: normative reference
+  voag_normativeURL:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_normativeURL
+    range: uri
+    slot_uri: voag:normativeURL
+    source: http://voag.linkedmodel.org/schema/voag
+    title: normative URL
+  voag_obsoletedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_obsoletedBy
+    range: Any
+    slot_uri: voag:obsoletedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: obsoleted by
+  voag_ownedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_ownedBy
+    range: string
+    slot_uri: voag:ownedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: owned by
+  voag_owner:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_owner
+    range: Any
+    slot_uri: voag:owner
+    source: http://voag.linkedmodel.org/schema/voag
+    title: owner
+  voag_owns:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_owns
+    range: Any
+    slot_uri: voag:owns
+    source: http://voag.linkedmodel.org/schema/voag
+    title: owns
+  voag_participant:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_participant
+    range: Any
+    slot_uri: voag:participant
+    source: http://voag.linkedmodel.org/schema/voag
+    title: participant
+  voag_performedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_performedBy
+    range: Any
+    slot_uri: voag:performedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: performed by
+  voag_permits:
+    comments:
+    - 'title: permits'
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_permits
+    range: voag_CreativeCommonsPermission
+    slot_uri: voag:permits
+    source: http://voag.linkedmodel.org/schema/voag
+    title: permits
+  voag_pointOfContact:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_pointOfContact
+    range: string
+    slot_uri: voag:pointOfContact
+    source: http://voag.linkedmodel.org/schema/voag
+    title: point of contact
+  voag_preparedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_preparedBy
+    range: Any
+    slot_uri: voag:preparedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: prepared by
+  voag_priority:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_priority
+    range: Any
+    slot_uri: voag:priority
+    source: http://voag.linkedmodel.org/schema/voag
+    title: priority
+  voag_prohibits:
+    comments:
+    - 'title: prohibits'
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_prohibits
+    range: voag_CreativeCommonsProhibition
+    slot_uri: voag:prohibits
+    source: http://voag.linkedmodel.org/schema/voag
+    title: prohibits
+  voag_proprietary:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A boolean flag to indicate if an information asset is propretary.
+    name: voag_proprietary
+    range: boolean
+    slot_uri: voag:proprietary
+    source: http://voag.linkedmodel.org/schema/voag
+    title: proprietary
+  voag_relatedIssue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This property connects two issue events. Issues connected by this
+      property must be about the same subject
+    domain: voag_Issue
+    name: voag_relatedIssue
+    range: voag_Issue
+    slot_uri: voag:relatedIssue
+    source: http://voag.linkedmodel.org/schema/voag
+    title: related issue
+  voag_relatedTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_relatedTo
+    range: Any
+    slot_uri: voag:relatedTo
+    source: http://voag.linkedmodel.org/schema/voag
+    title: related to
+  voag_releaseDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_releaseDate
+    range: vaem_dateUnion
+    slot_uri: voag:releaseDate
+    source: http://voag.linkedmodel.org/schema/voag
+    title: release date
+  voag_requires:
+    comments:
+    - 'title: requires'
+    - No occurrences of this slot in the graph.
+    domain: voag_LicenseModel
+    name: voag_requires
+    range: voag_CreativeCommonsRequirement
+    slot_uri: voag:requires
+    source: http://voag.linkedmodel.org/schema/voag
+    title: requires
+  voag_reviewedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: References to which parties review a data or information asset.
+    inverse: voag_reviews
+    name: voag_reviewedBy
+    range: Any
+    slot_uri: voag:reviewedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: reviewed by
+  voag_reviews:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: voag_reviewedBy
+    name: voag_reviews
+    range: Any
+    slot_uri: voag:reviews
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_governs
+    title: reviews
+  voag_rights:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_rights
+    range: string
+    slot_uri: voag:rights
+    source: http://voag.linkedmodel.org/schema/voag
+    title: subject
+  voag_source:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_source
+    range: Any
+    slot_uri: voag:source
+    source: http://voag.linkedmodel.org/schema/voag
+    title: source
+  voag_startDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_startDate
+    range: vaem_dateUnion
+    slot_uri: voag:startDate
+    source: http://voag.linkedmodel.org/schema/voag
+    title: start date
+  voag_subject:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_subject
+    range: string
+    slot_uri: voag:subject
+    source: http://voag.linkedmodel.org/schema/voag
+    title: subject
+  voag_submittedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_submittedBy
+    range: Any
+    slot_uri: voag:submittedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: submitted by
+  voag_supercededBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to one or more 'GovernedEntities' that replace this entity.
+    inverse: voag_supercedes
+    name: voag_supercededBy
+    range: Any
+    slot_uri: voag:supercededBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: superceded by
+  voag_supercedes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A pointer to one or more 'GovernedEntities' that are replaced by
+      this entity.
+    inverse: voag_supercededBy
+    name: voag_supercedes
+    range: Any
+    slot_uri: voag:supercedes
+    source: http://voag.linkedmodel.org/schema/voag
+    title: supercedes
+  voag_supervisedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_supervisedBy
+    range: Any
+    slot_uri: voag:supervisedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: supervised by
+  voag_timestamp:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_timestamp
+    range: datetime
+    slot_uri: voag:timestamp
+    source: http://voag.linkedmodel.org/schema/voag
+    title: timestamp
+  voag_title:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_title
+    range: string
+    slot_uri: voag:title
+    source: http://voag.linkedmodel.org/schema/voag
+    title: title
+  voag_url:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_url
+    range: uri
+    slot_uri: voag:url
+    source: http://voag.linkedmodel.org/schema/voag
+    title: url
+  voag_urlForHTML:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_urlForHTML
+    range: uri
+    slot_uri: voag:urlForHTML
+    source: http://voag.linkedmodel.org/schema/voag
+    title: url for HTML
+  voag_urlOfRDFfile:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to refer to a an RDF XML representation of an ontology
+    name: voag_urlOfRDFfile
+    range: uri
+    slot_uri: voag:urlOfRDFfile
+    source: http://voag.linkedmodel.org/schema/voag
+    title: url address of RDF file
+  voag_urlOfTurtleFile:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to refer to a Turtle (N3) representation of an ontology
+    name: voag_urlOfTurtleFile
+    range: uri
+    slot_uri: voag:urlOfTurtleFile
+    source: http://voag.linkedmodel.org/schema/voag
+    title: url of turtle file
+  voag_usage:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_usage
+    range: string
+    slot_uri: voag:usage
+    source: http://voag.linkedmodel.org/schema/voag
+    title: usage
+  voag_useGuidelines:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: voag_CreativeCommonsWork
+    name: voag_useGuidelines
+    range: rdfs_Resource
+    slot_uri: voag:useGuidelines
+    source: http://voag.linkedmodel.org/schema/voag
+    title: use guidelines
+  voag_usedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The property 'usedBy' is a general property to record a dependency.
+      One use is in stating how a schema or a vocabulary is used by another ontology
+      graph.
+    name: voag_usedBy
+    range: Any
+    slot_uri: voag:usedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    title: used by
+  voag_userID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_userID
+    range: xsd_anySimpleType
+    slot_uri: voag:userID
+    source: http://voag.linkedmodel.org/schema/voag
+    title: user ID
+  voag_width:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Width is typically used to specify an image's width attribute.
+    name: voag_width
+    range: string
+    slot_uri: voag:width
+    source: http://voag.linkedmodel.org/schema/voag
+    title: width
+  voag_witnessTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: voag_witnessedBy
+    name: voag_witnessTo
+    range: Any
+    slot_uri: voag:witnessTo
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_governs
+    title: witness to
+  voag_witnessedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: voag_witnessedBy
+    range: Any
+    slot_uri: voag:witnessedBy
+    source: http://voag.linkedmodel.org/schema/voag
+    subproperty_of: voag_isGovernedBy
+    title: wintnessed by
+title: No schema name specified

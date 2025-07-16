@@ -1,0 +1,1372 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 17
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 3
+          vaem:GraphMetaData:
+            tag: vaem:GraphMetaData
+            value: 1
+      pairs:
+        tag: pairs
+        value:
+          dct:created:
+            tag: dct:created
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          dct:description:
+            tag: dct:description
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          dct:modified:
+            tag: dct:modified
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          dct:title:
+            tag: dct:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 8
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value: 2
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value: 1
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value: 6
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 5
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 12
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 2
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  uri:
+                    tag: uri
+                    value: 2
+          vaem:description:
+            tag: vaem:description
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:hasLicenseType:
+            tag: vaem:hasLicenseType
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:intent:
+            tag: vaem:intent
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:logo:
+            tag: vaem:logo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:name:
+            tag: vaem:name
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:namespace:
+            tag: vaem:namespace
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:owner:
+            tag: vaem:owner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:releaseDate:
+            tag: vaem:releaseDate
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          vaem:revision:
+            tag: vaem:revision
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:title:
+            tag: vaem:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:AnnotationProperty:
+                    tag: owl:AnnotationProperty
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 5
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          dct:created:
+            tag: dct:created
+            value: 1
+          dct:description:
+            tag: dct:description
+            value: 2
+          dct:modified:
+            tag: dct:modified
+            value: 1
+          dct:title:
+            tag: dct:title
+            value: 1
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 8
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 2
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value: 2
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 6
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 17
+          owl:unionOf:
+            tag: owl:unionOf
+            value: 1
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 3
+          rdfs:label:
+            tag: rdfs:label
+            value: 3
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value: 2
+          vaem:description:
+            tag: vaem:description
+            value: 1
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value: 1
+          vaem:hasLicenseType:
+            tag: vaem:hasLicenseType
+            value: 1
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value: 1
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value: 1
+          vaem:intent:
+            tag: vaem:intent
+            value: 1
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value: 1
+          vaem:logo:
+            tag: vaem:logo
+            value: 1
+          vaem:name:
+            tag: vaem:name
+            value: 1
+          vaem:namespace:
+            tag: vaem:namespace
+            value: 1
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value: 1
+          vaem:owner:
+            tag: vaem:owner
+            value: 1
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value: 1
+          vaem:releaseDate:
+            tag: vaem:releaseDate
+            value: 1
+          vaem:revision:
+            tag: vaem:revision
+            value: 1
+          vaem:title:
+            tag: vaem:title
+            value: 1
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value: 1
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value: 6
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value: 1
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: Nf02954f0b0ca445ab7df2b9292b6d3bc
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: dtype:dateUnion
+          vaem:GraphMetaData:
+            tag: vaem:GraphMetaData
+            value: dtype:GMD_DTYPE
+      pairs:
+        tag: pairs
+        value:
+          dct:created:
+            tag: dct:created
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2011-05-29'
+                      predicate:
+                        tag: predicate
+                        value: dct:created
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          dct:description:
+            tag: dct:description
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\nA datatype that is the union of numeric xsd data\
+                          \ types.\n\"dtype:numericUnion\" is equivalent to the xsd\
+                          \ specification that uses an xsd:union of \nmemberTypes=\"\
+                          xsd:decimal xsd:double xsd:float xsd:integer\".\n"
+                      predicate:
+                        tag: predicate
+                        value: dct:description
+                      subject:
+                        tag: subject
+                        value: dtype:numericUnion
+          dct:modified:
+            tag: dct:modified
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2023-11-14'
+                      predicate:
+                        tag: predicate
+                        value: dct:modified
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          dct:title:
+            tag: dct:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DTYPE Version 2.1 Metadata
+                      predicate:
+                        tag: predicate
+                        value: dct:title
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: dtype:CodeList
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N440dfc290f7a406693fcbeea01ebccec
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: Nf811139791644c9a9124dcfb4be8cc81
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: N4e6e6a3e95d34bc79507ad00ecfe618b
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: dtype:dateUnion
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value:
+                      object:
+                        tag: object
+                        value: Nc69cb0eccc76449e96130d81e6da1d16
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: dtype:numericUnion
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: Na0d9ce7580584dd1a0f345c9fab224e7
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: Nb419f26bdda74dd9b7f013d7136a5bcd
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: dtype:code
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N44e14b6995f94f8abd1e59686861c48b
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: dtype:objectValue
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: Nb419f26bdda74dd9b7f013d7136a5bcd
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/schema/dtype
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: dtype:numericUnion
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/schema/dtype
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: numeric union
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: dtype:numericUnion
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DTYPE Schema Version 2.1 Metadata
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdfs:Resource
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subClassOf
+                      subject:
+                        tag: subject
+                        value: dtype:numericUnion
+          vaem:description:
+            tag: vaem:description
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\nThe ontology \"dtype\" provides a specification\
+                          \ of simple data types such as enumerations and codelists.\
+                          \ \nThese are needed in support of the conversion of XML\
+                          \ Schemas and UML Models to OWL. \nThe purpose of \"dtype\"\
+                          \ is to provide a foundation for expressing rich data types.\
+                          \ \nThese data types are typically needed when dealing with\
+                          \ OWL representations of data structures derived from XML\
+                          \ Schema.\n"
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:SchemaGraph
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasGraphRole
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:hasLicenseType:
+            tag: vaem:hasLicenseType
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasLicenseType
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:TopQuadrant
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasOwner
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:TopQuadrant
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasSteward
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:intent:
+            tag: vaem:intent
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The purpose of DTYPE is to provide, by import, a foundation
+                          for  data types.
+                      predicate:
+                        tag: predicate
+                        value: vaem:intent
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/doc/2023/SCHEMA_dtype
+                      predicate:
+                        tag: predicate
+                        value: vaem:latestPublishedVersion
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:logo:
+            tag: vaem:logo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/lib/lm/images/logos/dtype_logo-300x110.png
+                      predicate:
+                        tag: predicate
+                        value: vaem:logo
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:name:
+            tag: vaem:name
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DTYPE
+                      predicate:
+                        tag: predicate
+                        value: vaem:name
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:namespace:
+            tag: vaem:namespace
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: 'dtype:'
+                      predicate:
+                        tag: predicate
+                        value: vaem:namespace
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: dtype
+                      predicate:
+                        tag: predicate
+                        value: vaem:namespacePrefix
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:owner:
+            tag: vaem:owner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: LinkedModel.org
+                      predicate:
+                        tag: predicate
+                        value: vaem:owner
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/doc/2015/SCHEMA_dtype-v1.2
+                      predicate:
+                        tag: predicate
+                        value: vaem:previousPublishedVersion
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:releaseDate:
+            tag: vaem:releaseDate
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2023-11-14'
+                      predicate:
+                        tag: predicate
+                        value: vaem:releaseDate
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:revision:
+            tag: vaem:revision
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '2.1'
+                      predicate:
+                        tag: predicate
+                        value: vaem:revision
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:title:
+            tag: vaem:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Datatype Schema (DTYPE) - Version 2.1
+                      predicate:
+                        tag: predicate
+                        value: vaem:title
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/dtype/schema/SCHEMA_dtype.ttl
+                      predicate:
+                        tag: predicate
+                        value: vaem:turtleFileURL
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:AnnotationProperty:
+                    tag: owl:AnnotationProperty
+                    value:
+                      object:
+                        tag: object
+                        value: dct:author
+                      predicate:
+                        tag: predicate
+                        value: vaem:usesNonImportedResource
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: dct:abstract
+                      predicate:
+                        tag: predicate
+                        value: vaem:usesNonImportedResource
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DTYPE is issued under a Creative Commons Attribution
+                          Share Alike 3.0 United States License.
+                      predicate:
+                        tag: predicate
+                        value: vaem:withAttributionTo
+                      subject:
+                        tag: subject
+                        value: dtype:GMD_DTYPE
+classes:
+  dtype_CodeList:
+    class_uri: dtype:CodeList
+    description: "A codelist is a controlled vocabulary of terms that are used to\
+      \ represent permissible values of a \u240Avariable in information systems. \u240A\
+      The representaiton of codes in \"dtype\" has been influenced by CCTS and UBL."
+    is_a: dtype_Enumeration
+    name: dtype_CodeList
+    source: http://www.linkedmodel.org/schema/dtype
+    title: Codelist
+  dtype_CompositeCodeList:
+    class_uri: dtype:CompositeCodeList
+    description: "A composite codelist is a codelist made up of other codelists. \u240A\
+      It does not introduce any new codes."
+    is_a: dtype_CodeList
+    name: dtype_CompositeCodeList
+    source: http://www.linkedmodel.org/schema/dtype
+    title: Composite Code List
+  dtype_DerivedCodeList:
+    class_uri: dtype:DerivedCodeList
+    description: "A derived codelist is a sublist of another codelist. \u240AThe members\
+      \ that it has must be members of the source list."
+    is_a: dtype_CodeList
+    name: dtype_DerivedCodeList
+    source: http://www.linkedmodel.org/schema/dtype
+    title: Derived Code List
+  dtype_EnumeratedValue:
+    class_uri: dtype:EnumeratedValue
+    description: "The base class for datatypes that have values that are restriced\
+      \ to a set of literals or tokens. \u240AThe members of the restriction may themselves\
+      \ be restriced by facets that apply to scalar data types."
+    is_a: owl_Thing
+    name: dtype_EnumeratedValue
+    source: http://www.linkedmodel.org/schema/dtype
+    title: DTYPE Enumerated Value
+  dtype_Enumeration:
+    class_uri: dtype:Enumeration
+    description: "A type that serves as a container for the enumerated values of an\
+      \ enumeration. \u240AThis enables the enumeration itself to be referenceable.\
+      \ \u240AOne need for this is in determing the default value of an enumeration.\u240A\
+      Another need is in the management of sub-enumerations and composite enumerations."
+    is_a: owl_Thing
+    name: dtype_Enumeration
+    source: http://www.linkedmodel.org/schema/dtype
+    title: DTYPE Enumeration
+  dtype_SimpleCodeList:
+    class_uri: dtype:SimpleCodeList
+    description: A simple codelist is one made up only of enumerated values.
+    is_a: dtype_CodeList
+    name: dtype_SimpleCodeList
+    source: http://www.linkedmodel.org/schema/dtype
+    title: Simple Code List
+  dtype_ValueReference:
+    class_uri: dtype:ValueReference
+    description: "A value reference is a pointer to an Enumerated Value. \u240AThe\
+      \ original order of the value can be overridden by the \"order\" attribute."
+    is_a: owl_Thing
+    name: dtype_ValueReference
+    source: http://www.linkedmodel.org/schema/dtype
+    title: Value Reference
+  xsd_anySimpleType:
+    class_uri: xsd:anySimpleType
+    name: xsd_anySimpleType
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+comments:
+- 'title: Datatype Ontology'
+- 'title: Datatype Ontology'
+created_on: '2025-07-15T20:23:49.074720'
+default_prefix: okn
+id: okns:dtype
+imports:
+- okns:dc
+- okns:owl-rdf-rdfs
+- https://purl.org/okn/schema/extended_types
+- okns:vaem
+- linkml:types
+last_updated_on: '2025-07-15T20:23:49.074720'
+name: dtype
+prefixes:
+  dct: http://purl.org/dc/terms/
+  dtype: http://www.linkedmodel.org/schema/dtype#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vaem: http://www.linkedmodel.org/schema/vaem#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  dtype_code:
+    comments:
+    - "description: A property for expressing a unique value for a member of an enumeration.\
+      \ \nThe range has been set to \"xsd:anySimpleType\" to allow for any scalar\
+      \ datatype."
+    - No occurrences of this slot in the graph.
+    description: A unique value that is assigned to an enumeration member.
+    name: dtype_code
+    range: xsd_anySimpleType
+    slot_uri: dtype:code
+    source: http://www.linkedmodel.org/schema/dtype
+    title: code
+  dtype_compositeOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property for constructing composite data structures
+    name: dtype_compositeOf
+    range: Any
+    slot_uri: dtype:compositeOf
+    source: http://www.linkedmodel.org/schema/dtype
+    title: composite of
+  dtype_defaultObjectValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:defaultValue\" is a general property for specifying\
+      \ an object value in situations where \u240Anone is specified."
+    name: dtype_defaultObjectValue
+    range: Any
+    slot_uri: dtype:defaultObjectValue
+    source: http://www.linkedmodel.org/schema/dtype
+    title: default object value
+  dtype_defaultValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:defaultValue\" is a general property for specifying\
+      \ a literal value in situations where \u240Anone is specified."
+    name: dtype_defaultValue
+    range: Any
+    slot_uri: dtype:defaultValue
+    source: http://www.linkedmodel.org/schema/dtype
+    title: default value
+  dtype_derivedFrom:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property for specifying a derivation relationship.
+    name: dtype_derivedFrom
+    range: Any
+    slot_uri: dtype:derivedFrom
+    source: http://www.linkedmodel.org/schema/dtype
+    title: derived from
+  dtype_hasMember:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property for specifying how member elements make up a data structure.
+    name: dtype_hasMember
+    range: Any
+    slot_uri: dtype:hasMember
+    source: http://www.linkedmodel.org/schema/dtype
+    title: has member
+  dtype_isInvalid:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A boolean flag to state that a value is invalid with respect to its
+      type.
+    name: dtype_isInvalid
+    range: boolean
+    slot_uri: dtype:isInvalid
+    source: http://www.linkedmodel.org/schema/dtype
+    title: is invalid
+  dtype_literal:
+    comments:
+    - "description: A general purpose property for holding string literals as a machine-readable\
+      \ string for how the \nenumerated value can be referred to. \nThis can be used\
+      \ when the code value is numeric, as an alternative to using a code. \nLiteral\
+      \ is not the same as label which is intended for human readable display. \n\
+      For example, a code for January may be 1, the literal may be 'J' or 'jan' and\
+      \ the label 'January'."
+    - No occurrences of this slot in the graph.
+    description: ''
+    name: dtype_literal
+    range: string
+    slot_uri: dtype:literal
+    source: http://www.linkedmodel.org/schema/dtype
+    title: literal
+  dtype_objectValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:objectValue\" is a general property for specifying\
+      \ an object value in situations where \u240Anone is specified."
+    name: dtype_objectValue
+    range: Any
+    slot_uri: dtype:objectValue
+    source: http://www.linkedmodel.org/schema/dtype
+    title: object value
+  dtype_order:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:order\" provides a means to specify a precedence.\
+      \ \u240AOne use of order is in specifying ordered enumerations such as \"voag:ConfidentialityLevel\"\
+      .\u240AA similar property, but with an important type difference, is \"vaem:orderIndex\"\
+      .\u240AThis is for use on property occurrences in class axioms where it can\
+      \ be placed on a restriction \u240Ato specify how that property may be transformed\
+      \ into other representations where ordering has some \u240Aimportance, for example,\
+      \ in XML Schema sequences. \u240AWhereas \"vaem:order\" is a datatype property,\
+      \ \"vaem:orderIndex\" is an annotation property.\u240AThe \"order\" property\
+      \ specifies a value that can establish precedence and ordinality. \u240AOne\
+      \ use of order is in make an enumeration an ordinal type. \u240AFor example\
+      \ \"RiskLevel\" might have the values \"very low\", \"low\", \"medium\", \"\
+      high\" and \"very high\".\u240AA query that asks for all risks that are greater\
+      \ than \"medium\" would use the ordinal values and return \u240Athose resources\
+      \ that have \u201Cmedium\u201D, \u201Chigh\u201D and \u201Cvery high\u201D ordinality."
+    name: dtype_order
+    range: integer
+    see_also:
+    - http://www.linkedmodel.org/schema/dtype#orderIndex
+    slot_uri: dtype:order
+    source: http://www.linkedmodel.org/schema/dtype
+    title: order
+  dtype_orderIndex:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:orderIndex\" is an annotation property to specify\
+      \ a position that some value or \u240Astructure will have. \u240AOne use is\
+      \ to specify the place that a resource has in a sequence.\u240AAnother use is\
+      \ on property occurrences in class axioms, where \"vaem:orderIndex\" is placed\
+      \ on a \u240Arestriction to specify how that property may be transformed into\
+      \ a representation where ordering has \u240Asome importance, for example, in\
+      \ XML Schema sequences."
+    name: dtype_orderIndex
+    range: integer
+    slot_uri: dtype:orderIndex
+    source: http://www.linkedmodel.org/schema/dtype
+    title: order index
+  dtype_refersTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An indirection pointer for relating a slot in am occurrence data
+      structure, such as "dtype:ValueReference" with another resource.
+    name: dtype_refersTo
+    range: Any
+    slot_uri: dtype:refersTo
+    source: http://www.linkedmodel.org/schema/dtype
+    title: refers to
+  dtype_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: dtype_type
+    range: Any
+    slot_uri: dtype:type
+    source: http://www.linkedmodel.org/schema/dtype
+    title: datatype
+  dtype_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The property \"dtype:value\" is a general property for specifying\
+      \ a literal value in situations where \u240Anone is specified."
+    name: dtype_value
+    range: xsd_anySimpleType
+    slot_uri: dtype:value
+    source: http://www.linkedmodel.org/schema/dtype
+    title: value
+title: No schema name specified
+types:
+  dtype_dateUnion:
+    description: A datatype that is the union of date datatypes.
+    name: dtype_dateUnion
+    source: http://www.linkedmodel.org/schema/dtype
+    title: date union
+    typeof: string
+    uri: dtype:dateUnion
+  dtype_numericUnion:
+    description: "A datatype that is the union of numeric xsd data types.\u240A\"\
+      dtype:numericUnion\" is equivalent to the xsd specification that uses an xsd:union\
+      \ of \u240AmemberTypes=\"xsd:decimal xsd:double xsd:float xsd:integer\"."
+    name: dtype_numericUnion
+    source: http://www.linkedmodel.org/schema/dtype
+    title: numeric union
+    typeof: string
+    uri: dtype:numericUnion

@@ -1,0 +1,214 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+      slots:
+        tag: slots
+        value: {}
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+classes:
+  ao_LikeableAssociation:
+    class_uri: ao:LikeableAssociation
+    description: A likeable association. That means this association type is intended
+      to be used for voting (ao:likeminded), feedbacking (rev:Feedback), reviewing
+      (e.g. rev:rating) an association statement (related by ao:included_association)
+      in the context of something.
+    is_a: rev_Review
+    name: ao_LikeableAssociation
+    source: http://purl.org/ontology/ao/core#
+    title: Likeable Association
+comments:
+- 'last_updated_on: 2010-09-13T13:59:52+01:00'
+- 'title: The Association Ontology'
+created_on: '2025-07-15T20:28:44.241104'
+default_prefix: okn
+description: "\u240AThe Association Ontology specification provides basic properties\
+  \ for describing specific associations to something, e.g. a context, an occasion,\
+  \ a genre or a mood, and enables furthermore, a mechanism to like/rate and feedback\
+  \ these associations in context to something on/ for the Semantic Web. This document\
+  \ contains a RDF description of the Association Ontology.\u240A"
+id: okns:ao
+imports:
+- okns:wot
+- okns:sim
+- okns:owl-rdf-rdfs
+- okns:event
+- https://purl.org/okn/schema/extended_types
+- okns:rev
+- okns:dc
+last_updated_on: '2025-07-15T20:28:44.241104'
+name: ao
+prefixes:
+  ao: http://purl.org/ontology/ao/core#
+  dc: http://purl.org/dc/elements/1.1/
+  dct: http://purl.org/dc/terms/
+  event: http://purl.org/NET/c4dm/event.owl#
+  foaf: http://xmlns.com/foaf/0.1/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rev: http://purl.org/stuff/rev#
+  sim: http://purl.org/ontology/similarity/
+slots:
+  ao_activity:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An activity, which is associated to an individual, e.g. dancing,
+      sleeping, driving.
+    name: ao_activity
+    range: Any
+    slot_uri: ao:activity
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_context
+    title: has activity
+  ao_application:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An application, which is associated to an individual, e.g. a music
+      player to a music track it's currently playing back.
+    name: ao_application
+    range: Any
+    slot_uri: ao:application
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_context
+    title: has application
+  ao_context:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property to associate any environmental context to an individual,
+      e.g. a location, a time or an activity. Hence, this property is intended that
+      sub properties should be created from it.
+    domain: owl_Thing
+    name: ao_context
+    range: Any
+    slot_uri: ao:context
+    source: http://purl.org/ontology/ao/core#
+    title: has context
+  ao_device:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A device, which is associated with an individual, e.g. a CD player
+      with a CD it's currently playing back.
+    name: ao_device
+    range: Any
+    slot_uri: ao:device
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_context
+    title: has device
+  ao_genre:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An genre of something.
+    domain: owl_Thing
+    name: ao_genre
+    range: Any
+    slot_uri: ao:genre
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: dct_subject
+    title: has genre
+  ao_included_association:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This property could be used to compose association statements or
+      to reuse them, e.g. to make them likeable in a specific context.
+    domain: sim_Association
+    name: ao_included_association
+    range: sim_Association
+    slot_uri: ao:included_association
+    source: http://purl.org/ontology/ao/core#
+    title: has included association
+  ao_likeminded:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates likeminded people to an association, which they like/
+      agree with.
+    domain: sim_Association
+    name: ao_likeminded
+    range: foaf_Agent
+    slot_uri: ao:likeminded
+    source: http://purl.org/ontology/ao/core#
+    title: has likeminded
+  ao_location:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A location, which is associated to an individual, e.g. my house,
+      my country, my current whereabouts.
+    name: ao_location
+    range: Any
+    slot_uri: ao:location
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_context
+    title: has location
+  ao_mood:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A mood that should be created by something.
+    domain: owl_Thing
+    name: ao_mood
+    range: Any
+    slot_uri: ao:mood
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: dct_subject
+    title: has mood
+  ao_occasion:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An occasion for which something was created.
+    domain: owl_Thing
+    name: ao_occasion
+    range: Any
+    slot_uri: ao:occasion
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: dct_subject
+    title: has occassion
+  ao_time:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A time, which is associated to an individual, e.g. morning, afternoon,
+      evening.
+    exact_mappings:
+    - http://purl.org/dc/elements/1.1/date
+    name: ao_time
+    range: Any
+    slot_uri: ao:time
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_context
+    title: has time
+  ao_used_application:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An application that is related to an event, e.g. a iTunes to a play
+      back event of a music track.
+    name: ao_used_application
+    range: Any
+    slot_uri: ao:used_application
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_application
+    title: has used application
+  ao_used_device:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A device that is related to an event, e.g. a MP3 player to a play
+      back event of a music track.
+    name: ao_used_device
+    range: Any
+    slot_uri: ao:used_device
+    source: http://purl.org/ontology/ao/core#
+    subproperty_of: ao_device
+    title: has used device
+title: No schema name specified

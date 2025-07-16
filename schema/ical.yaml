@@ -1,0 +1,782 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 120
+          owl:Thing:
+            tag: owl:Thing
+            value: 2
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          dc:source:
+            tag: dc:source
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  owl:Thing:
+                    tag: owl:Thing
+                    value: 1
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value: 120
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 54
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 66
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+      slots:
+        tag: slots
+        value:
+          dc:source:
+            tag: dc:source
+            value: 1
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 120
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 120
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value: 2
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value: 3
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: Nffb1068181de41f2a20a2684fc8ac4ad
+          owl:Thing:
+            tag: owl:Thing
+            value: http://www.ietf.org/rfc/rfc2445.txt
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: xsd:integer
+      pairs:
+        tag: pairs
+        value:
+          dc:source:
+            tag: dc:source
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  owl:Thing:
+                    tag: owl:Thing
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.ietf.org/rfc/rfc2445.txt
+                      predicate:
+                        tag: predicate
+                        value: dc:source
+                      subject:
+                        tag: subject
+                        value: http://www.w3.org/2002/12/cal/ical
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  integer:
+                    tag: integer
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: N35422ee9a14a4c3a839d9e0e0f4e680b
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: ical:uid
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N1c8ef5e260a848c38c61da38c4a5ae0c
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: ical:recurrenceId
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N35422ee9a14a4c3a839d9e0e0f4e680b
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '$Id: ical.rdf,v 1.14 2004/04/07 18:45:16 connolly
+                          Exp $'
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: http://www.w3.org/2002/12/cal/ical
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              owl:Thing:
+                tag: owl:Thing
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/2002/12/cal/
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: http://www.w3.org/2002/12/cal/ical
+classes:
+  ical_DomainOf_rrule:
+    class_uri: ical:DomainOf_rrule
+    name: ical_DomainOf_rrule
+  ical_List_of_Float:
+    class_uri: ical:List_of_Float
+    name: ical_List_of_Float
+  ical_Valarm:
+    class_uri: ical:Valarm
+    description: Provide a grouping of component properties that define an alarm.
+    name: ical_Valarm
+    title: VALARM
+  ical_Value_CAL-ADDRESS:
+    class_uri: ical:Value_CAL-ADDRESS
+    name: ical_Value_CAL-ADDRESS
+  ical_Value_DATE:
+    class_uri: ical:Value_DATE
+    name: ical_Value_DATE
+  ical_Value_DATE-TIME:
+    class_uri: ical:Value_DATE-TIME
+    name: ical_Value_DATE-TIME
+  ical_Value_DURATION:
+    class_uri: ical:Value_DURATION
+    name: ical_Value_DURATION
+  ical_Value_PERIOD:
+    class_uri: ical:Value_PERIOD
+    name: ical_Value_PERIOD
+  ical_Value_RECUR:
+    class_uri: ical:Value_RECUR
+    name: ical_Value_RECUR
+  ical_Vevent:
+    class_uri: ical:Vevent
+    description: Provide a grouping of component properties that describe an event.
+    name: ical_Vevent
+    title: VEVENT
+  ical_Vfreebusy:
+    class_uri: ical:Vfreebusy
+    description: Provide a grouping of component properties that describe either a
+      request for free/busy time, describe a response to a request for free/busy time
+      or describe a published set of busy time.
+    name: ical_Vfreebusy
+    title: VFREEBUSY
+  ical_Vjournal:
+    class_uri: ical:Vjournal
+    description: Provide a grouping of component properties that describe a journal
+      entry.
+    name: ical_Vjournal
+    title: VJOURNAL
+  ical_Vtimezone:
+    class_uri: ical:Vtimezone
+    description: Provide a grouping of component properties that defines a time zone.
+    name: ical_Vtimezone
+    title: VTIMEZONE
+  ical_Vtodo:
+    class_uri: ical:Vtodo
+    description: Provide a grouping of calendar properties that describe a to-do.
+    name: ical_Vtodo
+    title: VTODO
+created_on: '2025-07-15T20:24:25.398232'
+default_prefix: okn
+id: okns:ical
+imports:
+- okns:dc
+- linkml:types
+- https://purl.org/okn/schema/extended_types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-15T20:24:25.398232'
+name: ical
+prefixes:
+  dc: http://purl.org/dc/elements/1.1/
+  ical: http://www.w3.org/2002/12/cal/ical#
+  icalspec: http://www.w3.org/2002/12/cal/icalSpec#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  ical_X-:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This class of property provides a framework for defining non-standard
+      properties.
+    name: ical_X-
+    range: string
+    slot_uri: ical:X-
+    title: Any property name with a "X-" prefix
+  ical_action:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the action to be invoked when an alarm is triggered.
+    name: ical_action
+    range: string
+    slot_uri: ical:action
+    title: ACTION
+  ical_attach:
+    comments:
+    - 'description: default value type: URI'
+    - No occurrences of this slot in the graph.
+    description: The property provides the capability to associate a document object
+      with a calendar component.
+    name: ical_attach
+    range: Any
+    slot_uri: ical:attach
+    title: ATTACH
+  ical_attendee:
+    comments:
+    - 'description: value type: CAL-ADDRESS'
+    - No occurrences of this slot in the graph.
+    description: The property defines an "Attendee" within a calendar component.
+    name: ical_attendee
+    range: ical_Value_CAL-ADDRESS
+    slot_uri: ical:attendee
+    title: ATTENDEE
+  ical_calscale:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the calendar scale used for the calendar information
+      specified in the iCalendar object.
+    name: ical_calscale
+    range: string
+    slot_uri: ical:calscale
+    title: CALSCALE
+  ical_categories:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the categories for a calendar component.
+    name: ical_categories
+    range: string
+    slot_uri: ical:categories
+    title: CATEGORIES
+  ical_class:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the access classification for a calendar component.
+    name: ical_class
+    range: string
+    slot_uri: ical:class
+    title: CLASS
+  ical_comment:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies non-processing information intended to provide
+      a comment to the calendar user.
+    name: ical_comment
+    range: string
+    slot_uri: ical:comment
+    title: COMMENT
+  ical_completed:
+    comments:
+    - 'description: value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property defines the date and time that a to-do was actually
+      completed.
+    domain: ical_Vtodo
+    name: ical_completed
+    range: ical_Value_DATE-TIME
+    slot_uri: ical:completed
+    title: COMPLETED
+  ical_contact:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: The property is used to represent contact information or alternately
+      a reference to contact information associated with the calendar component.
+    name: ical_contact
+    range: string
+    slot_uri: ical:contact
+    title: CONTACT
+  ical_created:
+    comments:
+    - 'description: value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: 'This property specifies the date and time that the calendar information
+      was created by the calendar user agent in the calendar store. Note: This is
+      analogous to the creation date and time for a file in the file system.'
+    name: ical_created
+    range: ical_Value_DATE-TIME
+    slot_uri: ical:created
+    title: CREATED
+  ical_description:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property provides a more complete description of the calendar
+      component, than that provided by the "SUMMARY" property.
+    name: ical_description
+    range: string
+    slot_uri: ical:description
+    title: DESCRIPTION
+  ical_dtend:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the date and time that a calendar component
+      ends.
+    name: ical_dtend
+    range: Any
+    slot_uri: ical:dtend
+    title: DTEND
+  ical_dtstamp:
+    comments:
+    - 'description: value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: The property indicates the date/time that the instance of the iCalendar
+      object was created.
+    name: ical_dtstamp
+    range: ical_Value_DATE-TIME
+    slot_uri: ical:dtstamp
+    title: DTSTAMP
+  ical_dtstart:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property specifies when the calendar component begins.
+    name: ical_dtstart
+    range: Any
+    slot_uri: ical:dtstart
+    title: DTSTART
+  ical_due:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property defines the date and time that a to-do is expected
+      to be completed.
+    domain: ical_Vtodo
+    name: ical_due
+    range: Any
+    slot_uri: ical:due
+    title: DUE
+  ical_duration:
+    comments:
+    - 'description: value type: DURATION'
+    - No occurrences of this slot in the graph.
+    description: The property specifies a positive duration of time.
+    name: ical_duration
+    range: ical_Value_DURATION
+    slot_uri: ical:duration
+    title: DURATION
+  ical_exdate:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property defines the list of date/time exceptions for a recurring
+      calendar component.
+    domain: ical_DomainOf_rrule
+    name: ical_exdate
+    range: Any
+    slot_uri: ical:exdate
+    title: EXDATE
+  ical_exrule:
+    comments:
+    - 'description: value type: RECUR'
+    - No occurrences of this slot in the graph.
+    description: This property defines a rule or repeating pattern for an exception
+      to a recurrence set.
+    name: ical_exrule
+    range: ical_Value_RECUR
+    slot_uri: ical:exrule
+    title: EXRULE
+  ical_freebusy:
+    comments:
+    - 'description: value type: PERIOD'
+    - No occurrences of this slot in the graph.
+    description: The property defines one or more free or busy time intervals.
+    name: ical_freebusy
+    range: ical_Value_PERIOD
+    slot_uri: ical:freebusy
+    title: FREEBUSY
+  ical_geo:
+    comments:
+    - 'description: value type: list of FLOAT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies information related to the global position
+      for the activity specified by a calendar component.
+    name: ical_geo
+    range: ical_List_of_Float
+    slot_uri: ical:geo
+    title: GEO
+  ical_lastModified:
+    comments:
+    - 'description: value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: 'The property specifies the date and time that the information associated
+      with the calendar component was last revised in the calendar store. Note: This
+      is analogous to the modification date and time for a file in the file system.'
+    name: ical_lastModified
+    range: ical_Value_DATE-TIME
+    slot_uri: ical:lastModified
+    title: LAST-MODIFIED
+  ical_location:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: The property defines the intended venue for the activity defined
+      by a calendar component.
+    name: ical_location
+    range: string
+    slot_uri: ical:location
+    title: LOCATION
+  ical_method:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the iCalendar object method associated with
+      the calendar object.
+    name: ical_method
+    range: string
+    slot_uri: ical:method
+    title: METHOD
+  ical_organizer:
+    comments:
+    - 'description: value type: CAL-ADDRESS'
+    - No occurrences of this slot in the graph.
+    description: The property defines the organizer for a calendar component.
+    name: ical_organizer
+    range: ical_Value_CAL-ADDRESS
+    slot_uri: ical:organizer
+    title: ORGANIZER
+  ical_percentComplete:
+    comments:
+    - 'description: value type: INTEGER'
+    - No occurrences of this slot in the graph.
+    description: This property is used by an assignee or delegatee of a to-do to convey
+      the percent completion of a to-do to the Organizer.
+    domain: ical_Vtodo
+    name: ical_percentComplete
+    range: integer
+    slot_uri: ical:percentComplete
+    title: PERCENT-COMPLETE
+  ical_priority:
+    comments:
+    - 'description: value type: INTEGER'
+    - No occurrences of this slot in the graph.
+    description: The property defines the relative priority for a calendar component.
+    name: ical_priority
+    range: integer
+    slot_uri: ical:priority
+    title: PRIORITY
+  ical_prodid:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the identifier for the product that created
+      the iCalendar object.
+    name: ical_prodid
+    range: string
+    slot_uri: ical:prodid
+    title: PRODID
+  ical_rdate:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property defines the list of date/times for a recurrence set.
+    name: ical_rdate
+    range: Any
+    slot_uri: ical:rdate
+    title: RDATE
+  ical_recurrenceId:
+    comments:
+    - 'description: default value type: DATE-TIME'
+    - No occurrences of this slot in the graph.
+    description: This property is used in conjunction with the "UID" and "SEQUENCE"
+      property to identify a specific instance of a recurring "VEVENT", "VTODO" or
+      "VJOURNAL" calendar component. The property value is the effective value of
+      the "DTSTART" property of the recurrence instance.
+    domain: ical_DomainOf_rrule
+    name: ical_recurrenceId
+    range: Any
+    slot_uri: ical:recurrenceId
+    title: RECURRENCE-ID
+  ical_relatedTo:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: The property is used to represent a relationship or reference between
+      one calendar component and another.
+    name: ical_relatedTo
+    range: string
+    slot_uri: ical:relatedTo
+    title: RELATED-TO
+  ical_repeat:
+    comments:
+    - 'description: value type: INTEGER'
+    - No occurrences of this slot in the graph.
+    description: This property defines the number of time the alarm should be repeated,
+      after the initial trigger.
+    domain: ical_Valarm
+    name: ical_repeat
+    range: integer
+    slot_uri: ical:repeat
+    title: REPEAT
+  ical_requestStatus:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the status code returned for a scheduling request.
+    name: ical_requestStatus
+    range: string
+    slot_uri: ical:requestStatus
+    title: REQUEST-STATUS
+  ical_resources:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the equipment or resources anticipated for
+      an activity specified by a calendar entity..
+    name: ical_resources
+    range: string
+    slot_uri: ical:resources
+    title: RESOURCES
+  ical_rrule:
+    comments:
+    - 'description: value type: RECUR'
+    - No occurrences of this slot in the graph.
+    description: This property defines a rule or repeating pattern for recurring events,
+      to-dos, or time zone definitions.
+    name: ical_rrule
+    range: ical_Value_RECUR
+    slot_uri: ical:rrule
+    title: RRULE
+  ical_sequence:
+    comments:
+    - 'description: value type: integer'
+    - No occurrences of this slot in the graph.
+    description: This property defines the revision sequence number of the calendar
+      component within a sequence of revisions.
+    name: ical_sequence
+    range: integer
+    slot_uri: ical:sequence
+    title: SEQUENCE
+  ical_status:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the overall status or confirmation for the
+      calendar component.
+    name: ical_status
+    range: string
+    slot_uri: ical:status
+    title: STATUS
+  ical_summary:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines a short summary or subject for the calendar
+      component.
+    name: ical_summary
+    range: string
+    slot_uri: ical:summary
+    title: SUMMARY
+  ical_transp:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines whether an event is transparent or not to busy
+      time searches.
+    domain: ical_Vevent
+    name: ical_transp
+    range: string
+    slot_uri: ical:transp
+    title: TRANSP
+  ical_trigger:
+    comments:
+    - 'description: default value type: DURATION'
+    - No occurrences of this slot in the graph.
+    description: This property specifies when an alarm will trigger.
+    name: ical_trigger
+    range: Any
+    slot_uri: ical:trigger
+    title: TRIGGER
+  ical_tzid:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the text value that uniquely identifies the
+      "VTIMEZONE" calendar component.
+    domain: ical_Vtimezone
+    name: ical_tzid
+    range: string
+    slot_uri: ical:tzid
+    title: TZID
+  ical_tzname:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the customary designation for a time zone
+      description.
+    domain: ical_Vtimezone
+    name: ical_tzname
+    range: string
+    slot_uri: ical:tzname
+    title: TZNAME
+  ical_tzoffsetfrom:
+    comments:
+    - 'description: value type: UTC-OFFSET'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the offset which is in use prior to this
+      time zone observance.
+    name: ical_tzoffsetfrom
+    range: string
+    slot_uri: ical:tzoffsetfrom
+    title: TZOFFSETFROM
+  ical_tzoffsetto:
+    comments:
+    - 'description: value type: UTC-OFFSET'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the offset which is in use in this time zone
+      observance.
+    domain: ical_Vtimezone
+    name: ical_tzoffsetto
+    range: string
+    slot_uri: ical:tzoffsetto
+    title: TZOFFSETTO
+  ical_tzurl:
+    comments:
+    - 'description: value type: URI'
+    - No occurrences of this slot in the graph.
+    description: The TZURL provides a means for a VTIMEZONE component to point to
+      a network location that can be used to retrieve an up-to- date version of itself.
+    name: ical_tzurl
+    range: Any
+    slot_uri: ical:tzurl
+    title: TZURL
+  ical_uid:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property defines the persistent, globally unique identifier
+      for the calendar component.
+    name: ical_uid
+    range: string
+    slot_uri: ical:uid
+    title: UID
+  ical_url:
+    comments:
+    - 'description: value type: URI'
+    - No occurrences of this slot in the graph.
+    description: This property defines a Uniform Resource Locator (URL) associated
+      with the iCalendar object.
+    name: ical_url
+    range: Any
+    slot_uri: ical:url
+    title: URL
+  ical_version:
+    comments:
+    - 'description: value type: TEXT'
+    - No occurrences of this slot in the graph.
+    description: This property specifies the identifier corresponding to the highest
+      version number or the minimum and maximum range of the iCalendar specification
+      that is required in order to interpret the iCalendar object.
+    name: ical_version
+    range: string
+    slot_uri: ical:version
+    title: VERSION
+  icalspec_valueListType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: icalspec_valueListType
+    range: Any
+    slot_uri: icalspec:valueListType
+  icalspec_valueType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: icalspec_valueType
+    range: Any
+    slot_uri: icalspec:valueType
+title: No schema name specified

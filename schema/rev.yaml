@@ -1,0 +1,337 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: 1
+          cc:Work:
+            tag: cc:Work
+            value: 1
+      pairs:
+        tag: pairs
+        value:
+          cc:license:
+            tag: cc:license
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  cc:License:
+                    tag: cc:License
+                    value: 1
+          cc:permits:
+            tag: cc:permits
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+          cc:requires:
+            tag: cc:requires
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value: 2
+          dc:type:
+            tag: dc:type
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          cc:license:
+            tag: cc:license
+            value: 1
+          cc:permits:
+            tag: cc:permits
+            value: 3
+          cc:requires:
+            tag: cc:requires
+            value: 2
+          dc:type:
+            tag: dc:type
+            value: 1
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          cc:License:
+            tag: cc:License
+            value: http://creativecommons.org/licenses/by/1.0/
+          cc:Work:
+            tag: cc:Work
+            value: http://purl.org/stuff/rev
+      pairs:
+        tag: pairs
+        value:
+          cc:license:
+            tag: cc:license
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  cc:License:
+                    tag: cc:License
+                    value:
+                      object:
+                        tag: object
+                        value: http://creativecommons.org/licenses/by/1.0/
+                      predicate:
+                        tag: predicate
+                        value: cc:license
+                      subject:
+                        tag: subject
+                        value: http://purl.org/stuff/rev
+          cc:permits:
+            tag: cc:permits
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: cc:Reproduction
+                      predicate:
+                        tag: predicate
+                        value: cc:permits
+                      subject:
+                        tag: subject
+                        value: http://creativecommons.org/licenses/by/1.0/
+          cc:requires:
+            tag: cc:requires
+            value:
+              cc:License:
+                tag: cc:License
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: cc:Notice
+                      predicate:
+                        tag: predicate
+                        value: cc:requires
+                      subject:
+                        tag: subject
+                        value: http://creativecommons.org/licenses/by/1.0/
+          dc:type:
+            tag: dc:type
+            value:
+              cc:Work:
+                tag: cc:Work
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: dcmitype:Text
+                      predicate:
+                        tag: predicate
+                        value: dc:type
+                      subject:
+                        tag: subject
+                        value: http://purl.org/stuff/rev
+classes:
+  rev_Comment:
+    class_uri: rev:Comment
+    description: A comment on a review
+    name: rev_Comment
+    source: http://purl.org/stuff/rev#
+    title: Comment
+  rev_Feedback:
+    class_uri: rev:Feedback
+    description: Feedback on the review. Expresses whether the review was useful or
+      not
+    name: rev_Feedback
+    source: http://purl.org/stuff/rev#
+    title: Feedback
+  rev_Review:
+    class_uri: rev:Review
+    description: A review of an work
+    name: rev_Review
+    source: http://purl.org/stuff/rev#
+    title: Review
+comments:
+- 'title: RDF Review Vocabulary'
+- 'last_updated_on: 2007-11-08'
+created_on: '2025-07-15T20:28:30.968267'
+default_prefix: okn
+description: Vocabulary for expressing reviews and ratings using the Resource Description
+  Framework. It is compatible with hReview and conforms to OWL Lite
+id: okns:rev
+imports:
+- https://purl.org/okn/schema/extended_types
+- okns:dc
+- okns:owl-rdf-rdfs
+- okns:foaf
+- okns:cc
+- linkml:types
+- okns:wot
+last_updated_on: '2025-07-15T20:28:30.968267'
+name: rev
+prefixes:
+  cc: http://web.resource.org/cc/
+  dc: http://purl.org/dc/elements/1.1/
+  dcmitype: http://purl.org/dc/dcmitype/
+  foaf: http://xmlns.com/foaf/0.1/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  rev: http://purl.org/stuff/rev#
+  swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
+slots:
+  rev_commenter:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The commenter on the review
+    name: rev_commenter
+    range: foaf_Agent
+    slot_uri: rev:commenter
+    source: http://purl.org/stuff/rev#
+    title: commenter
+    union_of:
+    - rev_Comment
+    - rev_Feedback
+  rev_hasComment:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Used to associate a review with a comment on the review
+    domain: rev_Review
+    name: rev_hasComment
+    range: rev_Comment
+    slot_uri: rev:hasComment
+    source: http://purl.org/stuff/rev#
+    title: hasComment
+  rev_hasFeedback:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a review with a feedback on the review
+    domain: rev_Review
+    name: rev_hasFeedback
+    range: rev_Feedback
+    slot_uri: rev:hasFeedback
+    source: http://purl.org/stuff/rev#
+    title: hasFeedback
+  rev_hasReview:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Associates a work with a a review
+    domain: rdfs_Resource
+    name: rev_hasReview
+    range: rev_Review
+    slot_uri: rev:hasReview
+    source: http://purl.org/stuff/rev#
+    title: has Review
+  rev_maxRating:
+    comments:
+    - 'description: Maximum value for rating property'
+    - No occurrences of this slot in the graph.
+    description: A numeric value
+    name: rev_maxRating
+    range: Any
+    slot_uri: rev:maxRating
+    source: http://purl.org/stuff/rev#
+    title: max Rating
+  rev_minRating:
+    comments:
+    - 'description: Minimum value for rating property'
+    - No occurrences of this slot in the graph.
+    description: A numeric value
+    name: rev_minRating
+    range: Any
+    slot_uri: rev:minRating
+    source: http://purl.org/stuff/rev#
+    title: min Rating
+  rev_positiveVotes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Number of positive usefulness votes (integer)
+    domain: rev_Review
+    name: rev_positiveVotes
+    range: rdfs_Literal
+    slot_uri: rev:positiveVotes
+    source: http://purl.org/stuff/rev#
+    title: positiveVotes
+  rev_rating:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A numeric value
+    name: rev_rating
+    range: Any
+    slot_uri: rev:rating
+    source: http://purl.org/stuff/rev#
+    title: rating
+  rev_reviewer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The person that has written the review
+    domain: rev_Review
+    name: rev_reviewer
+    range: foaf_Person
+    slot_uri: rev:reviewer
+    source: http://purl.org/stuff/rev#
+    title: reviewer
+  rev_text:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The text of the review
+    name: rev_text
+    range: Any
+    slot_uri: rev:text
+    source: http://purl.org/stuff/rev#
+    title: text
+  rev_title:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The title of the review
+    domain: rev_Review
+    name: rev_title
+    range: rdfs_Literal
+    slot_uri: rev:title
+    source: http://purl.org/stuff/rev#
+    subproperty_of: dc_title
+    title: title
+  rev_totalVotes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Number of usefulness votes (integer)
+    domain: rev_Review
+    name: rev_totalVotes
+    range: rdfs_Literal
+    slot_uri: rev:totalVotes
+    source: http://purl.org/stuff/rev#
+    title: totalVotes
+  rev_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The type of media of a work under review
+    name: rev_type
+    range: Any
+    slot_uri: rev:type
+    source: http://purl.org/stuff/rev#
+    title: type
+title: No schema name specified

@@ -1,0 +1,1945 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 29
+          vaem:GraphMetaData:
+            tag: vaem:GraphMetaData
+            value: 1
+          vaem:GraphRole:
+            tag: vaem:GraphRole
+            value: 16
+          vaem:Party:
+            tag: vaem:Party
+            value: 1
+      pairs:
+        tag: pairs
+        value:
+          dct:abstract:
+            tag: dct:abstract
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          dct:created:
+            tag: dct:created
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          dct:description:
+            tag: dct:description
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value: 6
+          dct:modified:
+            tag: dct:modified
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          dct:title:
+            tag: dct:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 8
+                  uri:
+                    tag: uri
+                    value: 1
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 2
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 18
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 17
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 12
+          owl:versionIRI:
+            tag: owl:versionIRI
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 1
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 16
+                  uri:
+                    tag: uri
+                    value: 16
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 1
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value: 16
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:description:
+            tag: vaem:description
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:filePrefix:
+            tag: vaem:filePrefix
+            value:
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value: 16
+          vaem:hasGraphMetadata:
+            tag: vaem:hasGraphMetadata
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  vaem:GraphMetaData:
+                    tag: vaem:GraphMetaData
+                    value: 1
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:GraphRole:
+                    tag: vaem:GraphRole
+                    value: 1
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:Party:
+                    tag: vaem:Party
+                    value: 1
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:Party:
+                    tag: vaem:Party
+                    value: 1
+          vaem:intent:
+            tag: vaem:intent
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:logo:
+            tag: vaem:logo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:name:
+            tag: vaem:name
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:namespace:
+            tag: vaem:namespace
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:owner:
+            tag: vaem:owner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:rdfxmlFileURL:
+            tag: vaem:rdfxmlFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:revision:
+            tag: vaem:revision
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:title:
+            tag: vaem:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:url:
+            tag: vaem:url
+            value:
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:AnnotationProperty:
+                    tag: owl:AnnotationProperty
+                    value: 5
+                  uri:
+                    tag: uri
+                    value: 1
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          dct:abstract:
+            tag: dct:abstract
+            value: 1
+          dct:created:
+            tag: dct:created
+            value: 1
+          dct:description:
+            tag: dct:description
+            value: 12
+          dct:modified:
+            tag: dct:modified
+            value: 1
+          dct:title:
+            tag: dct:title
+            value: 1
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 9
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 2
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 18
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 29
+          owl:versionIRI:
+            tag: owl:versionIRI
+            value: 1
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 36
+          rdfs:label:
+            tag: rdfs:label
+            value: 18
+          vaem:description:
+            tag: vaem:description
+            value: 1
+          vaem:filePrefix:
+            tag: vaem:filePrefix
+            value: 16
+          vaem:hasGraphMetadata:
+            tag: vaem:hasGraphMetadata
+            value: 1
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value: 1
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value: 1
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value: 1
+          vaem:intent:
+            tag: vaem:intent
+            value: 1
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value: 1
+          vaem:logo:
+            tag: vaem:logo
+            value: 1
+          vaem:name:
+            tag: vaem:name
+            value: 2
+          vaem:namespace:
+            tag: vaem:namespace
+            value: 1
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value: 1
+          vaem:owner:
+            tag: vaem:owner
+            value: 1
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value: 1
+          vaem:rdfxmlFileURL:
+            tag: vaem:rdfxmlFileURL
+            value: 1
+          vaem:revision:
+            tag: vaem:revision
+            value: 1
+          vaem:title:
+            tag: vaem:title
+            value: 1
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value: 1
+          vaem:url:
+            tag: vaem:url
+            value: 1
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value: 6
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value: 1
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: N14adea692b0245179fec23712552f087
+          vaem:GraphMetaData:
+            tag: vaem:GraphMetaData
+            value: vaem:GMD_VAEM
+          vaem:GraphRole:
+            tag: vaem:GraphRole
+            value: vaem:CurationGraph
+          vaem:Party:
+            tag: vaem:Party
+            value: vaem:TopQuadrant
+      pairs:
+        tag: pairs
+        value:
+          dct:abstract:
+            tag: dct:abstract
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM stands for "Vocabulary for Attaching Essential
+                          Metadata". What VAEM regards as essential metadata is data
+                          about dates and times, confidentiality, and other characterisitic
+                          qualifiers of the ontology, but also references to where
+                          a ontology is documented and where to find ontology registration
+                          for governance, attribution and provenance. VAEM makes use
+                          of some properties from the DC terms vocabulary using the
+                          namespace prefix "dct". VAEM is OWL-DL compliant.
+                      predicate:
+                        tag: predicate
+                        value: dct:abstract
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          dct:created:
+            tag: dct:created
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2011-04-20'
+                      predicate:
+                        tag: predicate
+                        value: dct:created
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          dct:description:
+            tag: dct:description
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The property "vaem:lastUpdated" is intended for general
+                          use as the name implies.  The range of the property is set
+                          as "vaem:dateUnion" so as to allow a value to have a number
+                          of forms from a  year only to a full timestamp
+                      predicate:
+                        tag: predicate
+                        value: dct:description
+                      subject:
+                        tag: subject
+                        value: vaem:lastUpdated
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: A "vaem:LinkSetGraph" is a graph that holds statements
+                          that specify links between resources
+                      predicate:
+                        tag: predicate
+                        value: dct:description
+                      subject:
+                        tag: subject
+                        value: vaem:LinkSetGraph
+          dct:modified:
+            tag: dct:modified
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2014-07-26'
+                      predicate:
+                        tag: predicate
+                        value: dct:modified
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          dct:title:
+            tag: dct:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM Version 2.0 Metadata
+                      predicate:
+                        tag: predicate
+                        value: dct:title
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:Aspect
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N36a5f688edea4cbd8b02c00a701ece8e
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:string
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: Neb4b6d58349f4919987e6c71ac3dc75c
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: Ncb3e0af0dc8243f9aa836c9ef3b6276c
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: Na5acf1ec78304dd9a0b01cce58af836a
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:rdfxmlFileURL
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: Na5acf1ec78304dd9a0b01cce58af836a
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:hasAspect
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N36a5f688edea4cbd8b02c00a701ece8e
+          owl:versionIRI:
+            tag: owl:versionIRI
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: owl:versionIRI
+                      subject:
+                        tag: subject
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:RulesGraph
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:RulesGraph
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:TopQuadrant
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: vaem:TopQuadrant
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM Schema Version 2.0 Metadata
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Rules Graph
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: vaem:RulesGraph
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: vaem:TopQuadrant
+          vaem:description:
+            tag: vaem:description
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM stands for "Vocabulary for Attaching Essential
+                          Metadata". What VAEM regards as essential metadata is data
+                          about dates and times, confidentiality, and other characterisitic
+                          qualifiers of the ontology, but also references to where
+                          a ontology is documented and where to find ontology registration
+                          for governance, attribution and provenance. VAEM makes use
+                          of some properties from the DC terms vocabulary using the
+                          namespace prefix "dct". VAEM is OWL-DL compliant.
+                      predicate:
+                        tag: predicate
+                        value: vaem:description
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:filePrefix:
+            tag: vaem:filePrefix
+            value:
+              vaem:GraphRole:
+                tag: vaem:GraphRole
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: RULES
+                      predicate:
+                        tag: predicate
+                        value: vaem:filePrefix
+                      subject:
+                        tag: subject
+                        value: vaem:RulesGraph
+          vaem:hasGraphMetadata:
+            tag: vaem:hasGraphMetadata
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  vaem:GraphMetaData:
+                    tag: vaem:GraphMetaData
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:GMD_VAEM
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasGraphMetadata
+                      subject:
+                        tag: subject
+                        value: http://www.linkedmodel.org/2.0/schema/vaem
+          vaem:hasGraphRole:
+            tag: vaem:hasGraphRole
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:GraphRole:
+                    tag: vaem:GraphRole
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:SchemaGraph
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasGraphRole
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:hasOwner:
+            tag: vaem:hasOwner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:Party:
+                    tag: vaem:Party
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:TopQuadrant
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasOwner
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:hasSteward:
+            tag: vaem:hasSteward
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  vaem:Party:
+                    tag: vaem:Party
+                    value:
+                      object:
+                        tag: object
+                        value: vaem:TopQuadrant
+                      predicate:
+                        tag: predicate
+                        value: vaem:hasSteward
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:intent:
+            tag: vaem:intent
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The purpose of VAEM is to provide, by import, a foundation
+                          for commonly needed resources for metadata on an ontology.
+                      predicate:
+                        tag: predicate
+                        value: vaem:intent
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:latestPublishedVersion:
+            tag: vaem:latestPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/doc/2014/SCHEMA_vaem-v2.0
+                      predicate:
+                        tag: predicate
+                        value: vaem:latestPublishedVersion
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:logo:
+            tag: vaem:logo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://linkedmodel.org/lib/lm/images/logos/TopBraid-RDM-Graph-Logo.png
+                      predicate:
+                        tag: predicate
+                        value: vaem:logo
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:name:
+            tag: vaem:name
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM
+                      predicate:
+                        tag: predicate
+                        value: vaem:name
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant, Inc.
+                      predicate:
+                        tag: predicate
+                        value: vaem:name
+                      subject:
+                        tag: subject
+                        value: vaem:TopQuadrant
+          vaem:namespace:
+            tag: vaem:namespace
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: 'vaem:'
+                      predicate:
+                        tag: predicate
+                        value: vaem:namespace
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:namespacePrefix:
+            tag: vaem:namespacePrefix
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: vaem
+                      predicate:
+                        tag: predicate
+                        value: vaem:namespacePrefix
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:owner:
+            tag: vaem:owner
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: TopQuadrant, Inc.
+                      predicate:
+                        tag: predicate
+                        value: vaem:owner
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:previousPublishedVersion:
+            tag: vaem:previousPublishedVersion
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://linkedmodel.org/doc/vaem/1.2/
+                      predicate:
+                        tag: predicate
+                        value: vaem:previousPublishedVersion
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:rdfxmlFileURL:
+            tag: vaem:rdfxmlFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.rdf
+                      predicate:
+                        tag: predicate
+                        value: vaem:rdfxmlFileURL
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:revision:
+            tag: vaem:revision
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '2.0'
+                      predicate:
+                        tag: predicate
+                        value: vaem:revision
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:title:
+            tag: vaem:title
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Vocabulary for Attaching Essential Metadata (VAEM)
+                          - Version 2.0
+                      predicate:
+                        tag: predicate
+                        value: vaem:title
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:turtleFileURL:
+            tag: vaem:turtleFileURL
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.linkedmodel.org/2.0/schema/SCHEMA_vaem-v2.0.ttl
+                      predicate:
+                        tag: predicate
+                        value: vaem:turtleFileURL
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:url:
+            tag: vaem:url
+            value:
+              vaem:Party:
+                tag: vaem:Party
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http:/www.topquadrant.com
+                      predicate:
+                        tag: predicate
+                        value: vaem:url
+                      subject:
+                        tag: subject
+                        value: vaem:TopQuadrant
+          vaem:usesNonImportedResource:
+            tag: vaem:usesNonImportedResource
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  owl:AnnotationProperty:
+                    tag: owl:AnnotationProperty
+                    value:
+                      object:
+                        tag: object
+                        value: dct:modified
+                      predicate:
+                        tag: predicate
+                        value: vaem:usesNonImportedResource
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://voag.linkedmodel.org/voag/CC-SHAREALIKE_3PT0-US
+                      predicate:
+                        tag: predicate
+                        value: vaem:usesNonImportedResource
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+          vaem:withAttributionTo:
+            tag: vaem:withAttributionTo
+            value:
+              vaem:GraphMetaData:
+                tag: vaem:GraphMetaData
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: VAEM is issued under a Creative Commons Attribution
+                          Share Alike 3.0 United States License. Attribution should
+                          be made to TopQuadrant, Inc.
+                      predicate:
+                        tag: predicate
+                        value: vaem:withAttributionTo
+                      subject:
+                        tag: subject
+                        value: vaem:GMD_VAEM
+classes:
+  vaem_Aspect:
+    class_uri: vaem:Aspect
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: Aspect is used to distinguish among sets of features of a domain
+      or subject area. The term is borrowed from "aspect-oriented" programming, where
+      it is used to separate concerns. An ontology may be characterized by this dimension
+      so as to parition features that are orthogonal. For example,  in a systems ontology
+      there may be aspects for "structure", "function", "behavior" and "interface"
+      or "interoperability". A viewpoint can be distinguished by "aspects". For example
+      the "information viewpoint" of an application can be partitioned into separate
+      graphs for the "security", "operational" and"data retention" aspects.
+    is_a: vaem_Dimension
+    name: vaem_Aspect
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Aspect Dimension
+  vaem_Dimension:
+    class_uri: vaem:Dimension
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: A dimension identifies a separation of concens that serves as a way
+      to categorize an ontology graph. In VAEM,  the notion of "Dimension" is partitioned
+      into "Aspect", "Discipline", "Domain" and "Viewpoint".
+    is_a: owl_Thing
+    name: vaem_Dimension
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Domain
+  vaem_Discipline:
+    class_uri: vaem:Discipline
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: A discipline is a specific area of work or study. Examples of disciplines
+      in the engineering domain are electrical engineering, mechanical engineering
+      and, in the financial domain, risk assessment, investment analysis.  In VAEM,
+      discipline is used as a dimension for characterizing an ontology graph
+    is_a: vaem_Dimension
+    name: vaem_Discipline
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Discipline Dimension
+  vaem_Domain:
+    class_uri: vaem:Domain
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: A domain is a subject area of interest. Examples of domains are "enterprise",
+      "process", "organization" and "system". In VAEM, "Domain" is used as a dimension
+      for characterizing an ontology graph
+    is_a: vaem_Dimension
+    name: vaem_Domain
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Domain Dimension
+  vaem_GraphMetaData:
+    class_uri: vaem:GraphMetaData
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: '"vaem:GraphMetaData" defines basic metadata for the registration
+      and publishing of a graph.  For specificaiton of governance the vocabulary "VOAG"
+      may be used.'
+    is_a: owl_Thing
+    name: vaem_GraphMetaData
+    see_also:
+    - http://voag.linkedmodel.org/vocab/voag
+    slots:
+    - vaem_description
+    - vaem_usesNonImportedResource
+    - dct_title
+    - vaem_turtleFileURL
+    - vaem_hasGraphRole
+    - vaem_owner
+    - rdfs_isDefinedBy
+    - vaem_rdfxmlFileURL
+    - vaem_intent
+    - vaem_revision
+    - dct_abstract
+    - vaem_withAttributionTo
+    - vaem_namespace
+    - vaem_hasSteward
+    - vaem_latestPublishedVersion
+    - vaem_namespacePrefix
+    - dct_created
+    - dct_modified
+    - vaem_title
+    - vaem_previousPublishedVersion
+    - vaem_logo
+    - vaem_name
+    - rdfs_label
+    - vaem_hasOwner
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Graph Metadata
+  vaem_GraphRole:
+    class_uri: vaem:GraphRole
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: GraphRole is used to characterize how a graph of resources participates
+      in an ontology set.  For example, a graph can be a schema, vocabulary, dataset,
+      script, or ruleset
+    is_a: owl_Thing
+    name: vaem_GraphRole
+    slots:
+    - vaem_filePrefix
+    - dct_description
+    - rdfs_label
+    - rdfs_isDefinedBy
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Graph role
+  vaem_Party:
+    class_uri: vaem:Party
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: A "Party" is a generalization for an actor that may be realized as
+      a person, organizaiton or named role.
+    is_a: owl_Thing
+    name: vaem_Party
+    slots:
+    - vaem_url
+    - vaem_name
+    - rdfs_label
+    - rdfs_isDefinedBy
+    source: http://www.linkedmodel.org/schema/vaem
+    title: Party
+  vaem_Viewpoint:
+    class_uri: vaem:Viewpoint
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    description: 'Viewpoint is used to denote how a set of resources, or an individual
+      resource, is relevant to a context of use. The term "viewpoint" is adopted from
+      the ISO RM-ODP specifications and its more recent use in enterprise architecture
+      descriptions. The RM-ODP introducesd the concept of viewpoint to describe a
+      system from a particular set of concerns. RM-ODP defines five viewpoints. Together
+      they provide a complete description of a system: enterprise viewpoint, information
+      viewpoint, computational viewpoint, engineering viewpoint, and technology viewpoint.  In
+      VAEM, "Viewpoint" is used as a dimension for characterizing an ontology graph.  The
+      viewpoints of an ontology may not always correpsond directly to those of a system
+      but the idea of describing a subject area of interest from distinct viewpoints
+      is still relevant. A viewpoint can be further distinguished by "aspects". For
+      example the "information viewpoint" of an application can be partitioned into
+      separate graphs for the "security", "operational" and"data retention" aspects.'
+    is_a: vaem_Dimension
+    name: vaem_Viewpoint
+    source: http://www.linkedmodel.org/schema/vaem
+    title: ViewpointDimension
+created_on: '2025-07-15T20:23:37.363845'
+default_prefix: okn
+id: okns:vaem
+imports:
+- linkml:types
+- https://purl.org/okn/schema/extended_types
+- okns:owl-rdf-rdfs
+- okns:dc
+last_updated_on: '2025-07-15T20:23:37.363845'
+name: vaem
+prefixes:
+  dct: http://purl.org/dc/terms/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  vaem: http://www.linkedmodel.org/schema/vaem#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  dct_author:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: dct_author
+    range: string
+    slot_uri: dct:author
+    source: http://purl.org/dc/terms/
+    title: author
+  owl_versionIRI:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: uri
+    slot_uri: owl:versionIRI
+  vaem_abbreviation:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:abbreviation" provides a common way to define
+      a commonly used abbreviation on a resource
+    name: vaem_abbreviation
+    range: Any
+    slot_uri: vaem:abbreviation
+    source: http://www.linkedmodel.org/schema/vaem
+    title: abbreviation
+  vaem_acronym:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:acronym" provides a common way to define a commonly
+      used abbreviation on a resource
+    name: vaem_acronym
+    range: Any
+    slot_uri: vaem:acronym
+    source: http://www.linkedmodel.org/schema/vaem
+    title: acronym
+  vaem_comment:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: An annotation property that can be freely used on any kind of resource.
+      The range of the property is "xsd:string"
+    name: vaem_comment
+    range: string
+    slot_uri: vaem:comment
+    source: http://www.linkedmodel.org/schema/vaem
+    title: definition
+  vaem_date:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:date" is intended for general use as the name
+      implies.  The range of the property is set as "vaem:dateUnion" so as to allow
+      a value to have a number of forms from a  year only to a full timestamp. The
+      property is also the parent of all dates so that queries can be made for any
+      date on an ontology
+    name: vaem_date
+    range: Any
+    slot_uri: vaem:date
+    source: http://www.linkedmodel.org/schema/vaem
+    title: date
+  vaem_description:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    name: vaem_description
+    range: string
+    slot_uri: vaem:description
+    source: http://www.linkedmodel.org/schema/vaem
+    title: description
+  vaem_filePrefix:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:filePrefix" is for specifying a preferred file
+      prefix for a graph. For example a schema graph may be given the file prefix
+      "SCHEMA" followed by an underscore "_".
+    name: vaem_filePrefix
+    range: string
+    slot_uri: vaem:filePrefix
+    source: http://www.linkedmodel.org/schema/vaem
+    title: file prefix
+  vaem_hasAspect:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasAspect" is used to distinguish among sets of
+      features of a domain or subject area. The term is borrowed from "aspect-oriented"
+      programming, where it is used to separate concerns. An ontology may be characterized
+      by this dimension so as to parition features that are orthogonal. For example,  in
+      a systems ontology we can distinguish aspects for "structure", "function", "behavior"
+      and "interface".  The property is an "rdf:Property" to allow both scalar and
+      object values
+    name: vaem_hasAspect
+    range: Any
+    slot_uri: vaem:hasAspect
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: vaem_hasDimension
+    title: has aspect
+  vaem_hasDimension:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasDimension" is used categorize an ontology.  In
+      VAEM, the property is used to characterize an ontology graph.
+    name: vaem_hasDimension
+    range: Any
+    slot_uri: vaem:hasDimension
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has dimension
+  vaem_hasDiscipline:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasDiscipline" is used to indicate relevance of
+      a set of resources, or a resource itself, to a specific discipline of work or
+      study. Examples of disciplines in the engineering domain are electrical engineering,
+      mechanical engineering and, in the financial domain, risk assessment, investment
+      analysis.  In VAEM, the property is used as a dimension for characterizing an
+      ontology graph.  The property is an "rdf:Property" to allow both scalar and
+      object values
+    name: vaem_hasDiscipline
+    range: Any
+    slot_uri: vaem:hasDiscipline
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: vaem_hasDimension
+    title: has discipline
+  vaem_hasDomain:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasDomain" is used to specify how  a set of resources,
+      or an individual resource is grounded in a domain, that is, a subject area of
+      interest. Examples of domains are "enterprise", "process", "organization" and
+      "system". In VAEM, the property is used as a dimension for characterizing an
+      ontology graph. The property is an "rdf:Property" to allow both scalar and object
+      values
+    name: vaem_hasDomain
+    range: Any
+    slot_uri: vaem:hasDomain
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: vaem_hasDimension
+    title: has domain
+  vaem_hasGraphMetadata:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    name: vaem_hasGraphMetadata
+    range: vaem_GraphMetaData
+    slot_uri: vaem:hasGraphMetadata
+    source: http://www.linkedmodel.org/schema/vaem
+  vaem_hasGraphRole:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "lms:hasGraphRole" is used to characterize how a resource
+      participates in an ontology set.  The property is used to specify the role that
+      a graph plays, for example, an ontology graph can be a schema, vocabulary, dataset,
+      script, or ruleset
+    name: vaem_hasGraphRole
+    range: vaem_GraphRole
+    slot_uri: vaem:hasGraphRole
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has graph role
+  vaem_hasIdentifier:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaemhasIdentifier" is intended for general use as a
+      means to specifiy a unique reference to something. This is an object property
+      that is a sub-property of "vame:id"
+    name: vaem_hasIdentifier
+    range: Any
+    slot_uri: vaem:hasIdentifier
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has identifier
+  vaem_hasLicenseType:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasLicenseType" points to an entry in the VOAG
+      ontology for licenses
+    name: vaem_hasLicenseType
+    range: Any
+    slot_uri: vaem:hasLicenseType
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has license type
+  vaem_hasMetadata:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "hasMetadata" is used to reference a metadata information
+      structure.
+    name: vaem_hasMetadata
+    range: Any
+    slot_uri: vaem:hasMetadata
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has metadata
+  vaem_hasOwner:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    name: vaem_hasOwner
+    range: vaem_Party
+    slot_uri: vaem:hasOwner
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has owner
+  vaem_hasSteward:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: A property that is used to refer to a "Steward", that is, the party
+      or role that is responsible for maintaining an asset, in the case of VAEM, an
+      ontology graph.
+    name: vaem_hasSteward
+    range: vaem_Party
+    slot_uri: vaem:hasSteward
+    source: http://www.linkedmodel.org/schema/vaem
+    title: has steward
+  vaem_hasViewpoint:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:hasViewpoint" is used to denote how a set of resources,
+      or an individual resource, is relevant to a context of use. The term "viewpoint"
+      is adopted from the ISO RM-ODP specifications and its more recent use in enterprise
+      architecture descriptions.  In VAEM, the property is used as a dimension for
+      characterizing an ontology graph.  The property is an "rdf:Property" to allow
+      both scalar and object values
+    name: vaem_hasViewpoint
+    range: Any
+    slot_uri: vaem:hasViewpoint
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: vaem_hasDimension
+    title: has viewpoint
+  vaem_id:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:id" is intended for general use as a means to
+      specifiy an identifier. The type of this property is intentionally set to "rdf:Property"
+      so that use of the property can allow both object and scaler values.  For this
+      reason, the property is rangeless
+    name: vaem_id
+    range: Any
+    slot_uri: vaem:id
+    source: http://www.linkedmodel.org/schema/vaem
+    title: id
+  vaem_intent:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:intent" is used to outline  a statement of purpose.
+      This typically expresses one or more desired outcomes
+    name: vaem_intent
+    range: string
+    slot_uri: vaem:intent
+    source: http://www.linkedmodel.org/schema/vaem
+    title: intent
+  vaem_isElaboratedIn:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: An annotation used to reference a graph that elaborates (adds properties
+      and axioms to) a resource
+    name: vaem_isElaboratedIn
+    range: uri
+    slot_uri: vaem:isElaboratedIn
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: rdfs_isDefinedBy
+    title: isDefinedBy
+  vaem_latestPublishedVersion:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:latestPublishedVersion"is a URL to documentation
+      for the latest version of a graph.
+    name: vaem_latestPublishedVersion
+    range: uri
+    slot_uri: vaem:latestPublishedVersion
+    source: http://www.linkedmodel.org/schema/vaem
+    title: latest published version
+  vaem_logo:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:logo" is a reference to an image that is used
+      for publishing the ontology"
+    name: vaem_logo
+    range: uri
+    slot_uri: vaem:logo
+    source: http://www.linkedmodel.org/schema/vaem
+  vaem_name:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:name" is intended for general use. In many cases
+      "rdfs:label" could be used give names to resources. In the case where compliance
+      with a specific naming rule is needed,  "vaem:name" allows  a resource to carry
+      a name that is used in more specific contexts.
+    name: vaem_name
+    range: string
+    slot_uri: vaem:name
+    source: http://www.linkedmodel.org/schema/vaem
+    title: name
+  vaem_namespace:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:namespace" is the onotlogy URI with which a graph
+      is primarily associated. The intent is to allow multiple graphs to define statements
+      for resources in the same Ontology namespace. For example, a foundation level
+      graph with the base URI of "http://www.somesite.com/1.0/schema/OurOntology"  may
+      define general  concepts for "OurOntology". Another graph with the base URI
+      "http://www.somesite.com/1.0/schema/level2/OurOntology"  may add more specific
+      details to the same "OurOntology". Each of these two graphs would carry the
+      same value for "vaem:namespace", that is, "http://www.somesite.com/schema/OurOntology".    In
+      other words, an ontology URI is the URI associated with the resources of a controlled
+      namespace. On the other hand the graph URIs (the base URIs) identify the graphs
+      that hold resources that make up an ontology
+    name: vaem_namespace
+    range: uri
+    slot_uri: vaem:namespace
+    source: http://www.linkedmodel.org/schema/vaem
+    title: namespace
+  vaem_namespacePrefix:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:namespacePrefix" specifes a short handle or label
+      for the URI of an Ontology.  Multiple graphs can define statements for resources
+      in the same Ontololgy namespace. For example, a foundation level graph with
+      the base URI of "http://www.somesite.com/1.0/schema/OurOntology"  may define
+      general  concepts for "OurOntology". Another graph with the base URI "http://www.somesite.com/1.0/schema/level2/OurOntology"  may
+      add more specific details to the same "OurOntology". Each of these two graphs
+      would carry the same value for "vaem:namespacePrefix", for this example, perhaps,
+      "ourOntology"
+    name: vaem_namespacePrefix
+    range: string
+    slot_uri: vaem:namespacePrefix
+    source: http://www.linkedmodel.org/schema/vaem
+    title: namespace prefix
+  vaem_owner:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    name: vaem_owner
+    range: string
+    slot_uri: vaem:owner
+    source: http://www.linkedmodel.org/schema/vaem
+    title: owner
+  vaem_previousPublishedVersion:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:previousPublishedVersion"is a URL to documentation
+      for the previous version of a graph.
+    name: vaem_previousPublishedVersion
+    range: uri
+    slot_uri: vaem:previousPublishedVersion
+    source: http://www.linkedmodel.org/schema/vaem
+    title: previous published version
+  vaem_rationale:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: A description of a justification for some other assertion or value
+    name: vaem_rationale
+    range: string
+    slot_uri: vaem:rationale
+    source: http://www.linkedmodel.org/schema/vaem
+    title: rationale
+  vaem_rdfxmlFileURL:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:rdfxmlFileURL" is used to provide a link to the
+      location of the ontology's RDF/XML file
+    name: vaem_rdfxmlFileURL
+    range: uri
+    slot_uri: vaem:rdfxmlFileURL
+    source: http://www.linkedmodel.org/schema/vaem
+    title: RDF/XML file URL
+  vaem_reifiableBy:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: To express how statements in a model can be reifiable, this property
+      is used to explicitly associate a property with a user-defined sub-class of
+      "rdf:Statement". A recommended way of using this is to declare the properties
+      that share the same reification constructs as sub-properties of a parent property
+      that carries the "vaem:reifiableBy" property. The parent property should be
+      of type "rdf:Property" so that it can have both datatype and object properties
+      as sub-properties. By this means use and transformations of a model can be understood
+      through a fully specified metamodel. "vaem:reifiableBy" is rangeless in order
+      to comply with OWL DL semantics. Its range would have been rdfs:Class in order
+      to refer to "rdf:Statement" sub-classes
+    name: vaem_reifiableBy
+    range: Any
+    slot_uri: vaem:reifiableBy
+    source: http://www.linkedmodel.org/schema/vaem
+    title: reifiable by
+  vaem_releaseDate:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:releaseDate" is intended for general use as the
+      name implies.  The range of the property is set as "vaem:dateUnion" so as to
+      allow a value to have a number of forms from a  year only to a full timestamp
+    name: vaem_releaseDate
+    range: Any
+    slot_uri: vaem:releaseDate
+    source: http://www.linkedmodel.org/schema/vaem
+    subproperty_of: vaem_date
+    title: release date
+  vaem_revision:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:revision" is a property intended for general use
+      as the name implies.
+    name: vaem_revision
+    range: string
+    slot_uri: vaem:revision
+    source: http://www.linkedmodel.org/schema/vaem
+    title: revision
+  vaem_specificity:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:specificity" is intended to specify the level
+      of detail of an ontology.  The values that can be set for this property are
+      restriced to an integer from 1 to 5. An ontology at level 1 has concepts of
+      more general applicability than one at level 5. By having graphs at different
+      levels of specificity it is possible to support greater modularity for selective
+      imports
+    name: vaem_specificity
+    range: unsignedinteger
+    slot_uri: vaem:specificity
+    source: http://www.linkedmodel.org/schema/vaem
+    title: specificity
+  vaem_title:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    name: vaem_title
+    range: string
+    slot_uri: vaem:title
+    source: http://www.linkedmodel.org/schema/vaem
+    title: title
+  vaem_todo:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: As it name implies, a way to attach an annotation about a "todo"
+      task
+    name: vaem_todo
+    range: string
+    slot_uri: vaem:todo
+    source: http://www.linkedmodel.org/schema/vaem
+    title: todo
+  vaem_turtleFileURL:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:turtleFileURL" is used to provide a link to the
+      location of the ontology's turtle file
+    name: vaem_turtleFileURL
+    range: uri
+    slot_uri: vaem:turtleFileURL
+    source: http://www.linkedmodel.org/schema/vaem
+    title: turtle file URL
+  vaem_url:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:url" is intended for general use as the name implies.  The
+      range of the property is set as an XSD URI
+    name: vaem_url
+    range: uri
+    slot_uri: vaem:url
+    source: http://www.linkedmodel.org/schema/vaem
+    title: url
+  vaem_usesNonImportedResource:
+    any_of:
+    - range: rdfs_Resource
+    - range: uri
+    - range: owl_AnnotationProperty
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:usesNonImportedResource" is used to express dependencies
+      on resources from graphs that are not imported
+    name: vaem_usesNonImportedResource
+    range: Any
+    slot_uri: vaem:usesNonImportedResource
+    source: http://www.linkedmodel.org/schema/vaem
+    title: uses non-imported resource
+  vaem_withAttributionTo:
+    comments:
+    - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
+    - No occurrences of this slot in the graph.
+    description: The property "vaem:withAttributionTo" is an annotation property that
+      is either used to hold either a string or a reference to an instance of "voag:Attribution",
+      from the VOAG ontology
+    name: vaem_withAttributionTo
+    range: string
+    slot_uri: vaem:withAttributionTo
+    source: http://www.linkedmodel.org/schema/vaem
+    title: with attribution to
+title: No schema name specified

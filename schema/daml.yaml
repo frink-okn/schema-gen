@@ -1,0 +1,3509 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          daml-2001:Class:
+            tag: daml-2001:Class
+            value: 2
+          daml-2001:List:
+            tag: daml-2001:List
+            value: 1
+          daml-2001:Ontology:
+            tag: daml-2001:Ontology
+            value: 1
+          daml-2001:Property:
+            tag: daml-2001:Property
+            value: 5
+          daml-iso3166:Country:
+            tag: daml-iso3166:Country
+            value: 240
+          daml-oil:Class:
+            tag: daml-oil:Class
+            value: 7
+          daml-oil:DatatypeProperty:
+            tag: daml-oil:DatatypeProperty
+            value: 3
+          daml-oil:ObjectProperty:
+            tag: daml-oil:ObjectProperty
+            value: 11
+          daml-oil:Ontology:
+            tag: daml-oil:Ontology
+            value: 1
+          daml-oil:Property:
+            tag: daml-oil:Property
+            value: 15
+          daml-oil:UniqueProperty:
+            tag: daml-oil:UniqueProperty
+            value: 1
+          daml-ont:Country:
+            tag: daml-ont:Country
+            value: 272
+          daml-ont:USRegion:
+            tag: daml-ont:USRegion
+            value: 10
+          daml-ont:USState:
+            tag: daml-ont:USState
+            value: 51
+          daml:Class:
+            tag: daml:Class
+            value: 14
+          daml:Ontology:
+            tag: daml:Ontology
+            value: 5
+          daml:Property:
+            tag: daml:Property
+            value: 35
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 38
+          time-entry:TemporalUnit:
+            tag: time-entry:TemporalUnit
+            value: 7
+      pairs:
+        tag: pairs
+        value:
+          daml-2001:comment:
+            tag: daml-2001:comment
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          daml-2001:complementOf:
+            tag: daml-2001:complementOf
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value: 1
+          daml-2001:imports:
+            tag: daml-2001:imports
+            value:
+              daml-2001:Ontology:
+                tag: daml-2001:Ontology
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          daml-2001:unionOf:
+            tag: daml-2001:unionOf
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  rdf:XMLLiteral:
+                    tag: rdf:XMLLiteral
+                    value: 1
+          daml-2001:versionInfo:
+            tag: daml-2001:versionInfo
+            value:
+              daml-2001:Ontology:
+                tag: daml-2001:Ontology
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          daml-iso3166:code:
+            tag: daml-iso3166:code
+            value:
+              daml-iso3166:Country:
+                tag: daml-iso3166:Country
+                value:
+                  string:
+                    tag: string
+                    value: 240
+          daml-iso3166:name:
+            tag: daml-iso3166:name
+            value:
+              daml-iso3166:Country:
+                tag: daml-iso3166:Country
+                value:
+                  string:
+                    tag: string
+                    value: 240
+          daml-oil:comment:
+            tag: daml-oil:comment
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          daml-oil:domain:
+            tag: daml-oil:domain
+            value:
+              daml-oil:DatatypeProperty:
+                tag: daml-oil:DatatypeProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 2
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 3
+              daml-oil:Property:
+                tag: daml-oil:Property
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value: 5
+                  uri:
+                    tag: uri
+                    value: 9
+              daml-oil:UniqueProperty:
+                tag: daml-oil:UniqueProperty
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          daml-oil:imports:
+            tag: daml-oil:imports
+            value:
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  daml-2001:Ontology:
+                    tag: daml-2001:Ontology
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 3
+          daml-oil:label:
+            tag: daml-oil:label
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  string:
+                    tag: string
+                    value: 6
+          daml-oil:range:
+            tag: daml-oil:range
+            value:
+              daml-oil:DatatypeProperty:
+                tag: daml-oil:DatatypeProperty
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value: 5
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 1
+              daml-oil:Property:
+                tag: daml-oil:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value: 15
+              daml-oil:UniqueProperty:
+                tag: daml-oil:UniqueProperty
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          daml-oil:subClassOf:
+            tag: daml-oil:subClassOf
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value: 2
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 2
+          daml-oil:subPropertyOf:
+            tag: daml-oil:subPropertyOf
+            value:
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:ObjectProperty:
+                    tag: daml-oil:ObjectProperty
+                    value: 6
+          daml-oil:versionInfo:
+            tag: daml-oil:versionInfo
+            value:
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          daml-ont:borderstate:
+            tag: daml-ont:borderstate
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  daml-ont:USState:
+                    tag: daml-ont:USState
+                    value: 216
+          daml-ont:capital:
+            tag: daml-ont:capital
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  uri:
+                    tag: uri
+                    value: 51
+          daml-ont:cia:
+            tag: daml-ont:cia
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  uri:
+                    tag: uri
+                    value: 269
+          daml-ont:code:
+            tag: daml-ont:code
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value: 51
+          daml-ont:memberstate:
+            tag: daml-ont:memberstate
+            value:
+              daml-ont:USRegion:
+                tag: daml-ont:USRegion
+                value:
+                  daml-ont:USState:
+                    tag: daml-ont:USState
+                    value: 50
+          daml-ont:name:
+            tag: daml-ont:name
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  string:
+                    tag: string
+                    value: 272
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value: 51
+          daml-ont:region:
+            tag: daml-ont:region
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  daml-ont:USRegion:
+                    tag: daml-ont:USRegion
+                    value: 50
+          daml:asClass:
+            tag: daml:asClass
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value: 1
+          daml:comment:
+            tag: daml:comment
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              daml:Property:
+                tag: daml:Property
+                value:
+                  string:
+                    tag: string
+                    value: 21
+          daml:complementOf:
+            tag: daml:complementOf
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value: 1
+          daml:domain:
+            tag: daml:domain
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value: 20
+          daml:imports:
+            tag: daml:imports
+            value:
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  daml-2001:Ontology:
+                    tag: daml-2001:Ontology
+                    value: 4
+                  daml:Ontology:
+                    tag: daml:Ontology
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 9
+          daml:label:
+            tag: daml:label
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              daml:Property:
+                tag: daml:Property
+                value:
+                  string:
+                    tag: string
+                    value: 11
+          daml:range:
+            tag: daml:range
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value: 14
+          daml:sameClassAs:
+            tag: daml:sameClassAs
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  daml-ont:Country:
+                    tag: daml-ont:Country
+                    value: 3
+              daml:Class:
+                tag: daml:Class
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+          daml:samePropertyAs:
+            tag: daml:samePropertyAs
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  uri:
+                    tag: uri
+                    value: 10
+          daml:subClassOf:
+            tag: daml:subClassOf
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value: 3
+                  uri:
+                    tag: uri
+                    value: 1
+          daml:subPropertyOf:
+            tag: daml:subPropertyOf
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Property:
+                    tag: daml:Property
+                    value: 5
+                  uri:
+                    tag: uri
+                    value: 1
+          daml:versionInfo:
+            tag: daml:versionInfo
+            value:
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  string:
+                    tag: string
+                    value: 5
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 3
+                  uri:
+                    tag: uri
+                    value: 2
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  string:
+                    tag: string
+                    value: 2
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 1
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 28
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 2
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 26
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 12
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              daml-2001:List:
+                tag: daml-2001:List
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  string:
+                    tag: string
+                    value: 4
+          rdfs:domain:
+            tag: rdfs:domain
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value: 2
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value: 1
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              daml-ont:USRegion:
+                tag: daml-ont:USRegion
+                value:
+                  string:
+                    tag: string
+                    value: 10
+          rdfs:range:
+            tag: rdfs:range
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value: 2
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value: 1
+          rdfs:subPropertyOf:
+            tag: rdfs:subPropertyOf
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Property:
+                    tag: daml-2001:Property
+                    value: 3
+                  uri:
+                    tag: uri
+                    value: 2
+      slots:
+        tag: slots
+        value:
+          daml-2001:comment:
+            tag: daml-2001:comment
+            value: 2
+          daml-2001:complementOf:
+            tag: daml-2001:complementOf
+            value: 1
+          daml-2001:imports:
+            tag: daml-2001:imports
+            value: 1
+          daml-2001:unionOf:
+            tag: daml-2001:unionOf
+            value: 1
+          daml-2001:versionInfo:
+            tag: daml-2001:versionInfo
+            value: 1
+          daml-iso3166:code:
+            tag: daml-iso3166:code
+            value: 240
+          daml-iso3166:name:
+            tag: daml-iso3166:name
+            value: 240
+          daml-oil:comment:
+            tag: daml-oil:comment
+            value: 5
+          daml-oil:domain:
+            tag: daml-oil:domain
+            value: 23
+          daml-oil:imports:
+            tag: daml-oil:imports
+            value: 4
+          daml-oil:label:
+            tag: daml-oil:label
+            value: 6
+          daml-oil:range:
+            tag: daml-oil:range
+            value: 26
+          daml-oil:subClassOf:
+            tag: daml-oil:subClassOf
+            value: 6
+          daml-oil:subPropertyOf:
+            tag: daml-oil:subPropertyOf
+            value: 6
+          daml-oil:versionInfo:
+            tag: daml-oil:versionInfo
+            value: 1
+          daml-ont:borderstate:
+            tag: daml-ont:borderstate
+            value: 216
+          daml-ont:capital:
+            tag: daml-ont:capital
+            value: 51
+          daml-ont:cia:
+            tag: daml-ont:cia
+            value: 269
+          daml-ont:code:
+            tag: daml-ont:code
+            value: 51
+          daml-ont:memberstate:
+            tag: daml-ont:memberstate
+            value: 50
+          daml-ont:name:
+            tag: daml-ont:name
+            value: 323
+          daml-ont:region:
+            tag: daml-ont:region
+            value: 50
+          daml:asClass:
+            tag: daml:asClass
+            value: 1
+          daml:comment:
+            tag: daml:comment
+            value: 27
+          daml:complementOf:
+            tag: daml:complementOf
+            value: 1
+          daml:domain:
+            tag: daml:domain
+            value: 20
+          daml:imports:
+            tag: daml:imports
+            value: 14
+          daml:label:
+            tag: daml:label
+            value: 16
+          daml:range:
+            tag: daml:range
+            value: 14
+          daml:sameClassAs:
+            tag: daml:sameClassAs
+            value: 6
+          daml:samePropertyAs:
+            tag: daml:samePropertyAs
+            value: 10
+          daml:subClassOf:
+            tag: daml:subClassOf
+            value: 4
+          daml:subPropertyOf:
+            tag: daml:subPropertyOf
+            value: 6
+          daml:versionInfo:
+            tag: daml:versionInfo
+            value: 5
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 5
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 3
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 28
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 2
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 38
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 11
+          rdfs:domain:
+            tag: rdfs:domain
+            value: 3
+          rdfs:label:
+            tag: rdfs:label
+            value: 17
+          rdfs:range:
+            tag: rdfs:range
+            value: 3
+          rdfs:subPropertyOf:
+            tag: rdfs:subPropertyOf
+            value: 5
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          daml-2001:Class:
+            tag: daml-2001:Class
+            value: daml-oil:Nothing
+          daml-2001:List:
+            tag: daml-2001:List
+            value: daml-oil:nil
+          daml-2001:Ontology:
+            tag: daml-2001:Ontology
+            value: daml-2001:daml+oil
+          daml-2001:Property:
+            tag: daml-2001:Property
+            value: daml-oil:sameClassAs
+          daml-iso3166:Country:
+            tag: daml-iso3166:Country
+            value: daml-iso3166:AE
+          daml-oil:Class:
+            tag: daml-oil:Class
+            value: daml-profile:ParameterDescription
+          daml-oil:DatatypeProperty:
+            tag: daml-oil:DatatypeProperty
+            value: daml-profile:name
+          daml-oil:ObjectProperty:
+            tag: daml-oil:ObjectProperty
+            value: daml-profile:geographicRadius
+          daml-oil:Ontology:
+            tag: daml-oil:Ontology
+            value: Nbe73cdff24804a389fed42332eb50252
+          daml-oil:Property:
+            tag: daml-oil:Property
+            value: daml-profile:parameterName
+          daml-oil:UniqueProperty:
+            tag: daml-oil:UniqueProperty
+            value: daml-profile:has_process
+          daml-ont:Country:
+            tag: daml-ont:Country
+            value: daml-country:SOUTH-GEORGIA-AND-THE-SOUTH-SANDWICH-ISLANDS
+          daml-ont:USRegion:
+            tag: daml-ont:USRegion
+            value: daml-usregionstate:SouthWest
+          daml-ont:USState:
+            tag: daml-ont:USState
+            value: daml-usregionstate:NC
+          daml:Class:
+            tag: daml:Class
+            value: daml:Qualification
+          daml:Ontology:
+            tag: daml:Ontology
+            value: daml:
+          daml:Property:
+            tag: daml:Property
+            value: daml:type
+          owl:Restriction:
+            tag: owl:Restriction
+            value: Nef1e18732d8940afa482fb98cec1f60d
+          time-entry:TemporalUnit:
+            tag: time-entry:TemporalUnit
+            value: time-entry:unitMonth
+      pairs:
+        tag: pairs
+        value:
+          daml-2001:comment:
+            tag: daml-2001:comment
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          for equivalentTo(X, Y), read X is an equivalent term to
+                          Y.
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: daml-2001:comment
+                      subject:
+                        tag: subject
+                        value: daml-oil:equivalentTo
+          daml-2001:complementOf:
+            tag: daml-2001:complementOf
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Thing
+                      predicate:
+                        tag: predicate
+                        value: daml-2001:complementOf
+                      subject:
+                        tag: subject
+                        value: daml-oil:Nothing
+          daml-2001:imports:
+            tag: daml-2001:imports
+            value:
+              daml-2001:Ontology:
+                tag: daml-2001:Ontology
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/2000/01/rdf-schema
+                      predicate:
+                        tag: predicate
+                        value: daml-2001:imports
+                      subject:
+                        tag: subject
+                        value: daml-2001:daml+oil
+          daml-2001:unionOf:
+            tag: daml-2001:unionOf
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  rdf:XMLLiteral:
+                    tag: rdf:XMLLiteral
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          <rdfs:Class xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+                          rdf:about="#Nothing"></rdfs:Class>
+
+                          <rdfs:Class xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+                          <complementOf rdf:resource="#Nothing"></complementOf>
+
+                          </rdfs:Class>
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: daml-2001:unionOf
+                      subject:
+                        tag: subject
+                        value: daml-oil:Thing
+          daml-2001:versionInfo:
+            tag: daml-2001:versionInfo
+            value:
+              daml-2001:Ontology:
+                tag: daml-2001:Ontology
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          $Id: daml+oil.daml,v 1.7 2001/06/06 01:38:21 mdean Exp $
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: daml-2001:versionInfo
+                      subject:
+                        tag: subject
+                        value: daml-2001:daml+oil
+          daml-iso3166:code:
+            tag: daml-iso3166:code
+            value:
+              daml-iso3166:Country:
+                tag: daml-iso3166:Country
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: GE
+                      predicate:
+                        tag: predicate
+                        value: daml-iso3166:code
+                      subject:
+                        tag: subject
+                        value: daml-iso3166:GE
+          daml-iso3166:name:
+            tag: daml-iso3166:name
+            value:
+              daml-iso3166:Country:
+                tag: daml-iso3166:Country
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: GEORGIA
+                      predicate:
+                        tag: predicate
+                        value: daml-iso3166:name
+                      subject:
+                        tag: subject
+                        value: daml-iso3166:GE
+          daml-oil:comment:
+            tag: daml-oil:comment
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\n\tThis class represents the scope or availability\n\
+                          \tof a service to some area.\n    "
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:comment
+                      subject:
+                        tag: subject
+                        value: daml-profile:Location
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\n      Process and Service Coalition\n      First\
+                          \ cut at DAML ontology for Advertisements (i.e. Profiles)\
+                          \ based\n      upon the Service Model.\n      Version of\
+                          \ Profile for DAML-S 0.6 Release\n      Created by Terry\
+                          \ Payne (terryp@cs.cmu.edu).\n      Modified by Massimo\
+                          \ Paolucci (paolucci@cs.cmu.edu)\n\n    "
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:comment
+                      subject:
+                        tag: subject
+                        value: Nbe73cdff24804a389fed42332eb50252
+          daml-oil:domain:
+            tag: daml-oil:domain
+            value:
+              daml-oil:DatatypeProperty:
+                tag: daml-oil:DatatypeProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:Actor
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:name
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Service.daml#ServiceProfile
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:serviceName
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:ParameterDescription
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:refersTo
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Service.daml#ServiceProfile
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:role
+              daml-oil:Property:
+                tag: daml-oil:Property
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:Actor
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:fax
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Service.daml#ServiceProfile
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:intendedPurpose
+              daml-oil:UniqueProperty:
+                tag: daml-oil:UniqueProperty
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Service.daml#ServiceProfile
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:domain
+                      subject:
+                        tag: subject
+                        value: daml-profile:has_process
+          daml-oil:imports:
+            tag: daml-oil:imports
+            value:
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  daml-2001:Ontology:
+                    tag: daml-2001:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: daml-2001:daml+oil
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:imports
+                      subject:
+                        tag: subject
+                        value: Nbe73cdff24804a389fed42332eb50252
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/1999/02/22-rdf-syntax-ns
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:imports
+                      subject:
+                        tag: subject
+                        value: Nbe73cdff24804a389fed42332eb50252
+          daml-oil:label:
+            tag: daml-oil:label
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Location
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:label
+                      subject:
+                        tag: subject
+                        value: daml-profile:Location
+          daml-oil:range:
+            tag: daml-oil:range
+            value:
+              daml-oil:DatatypeProperty:
+                tag: daml-oil:DatatypeProperty
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/2000/10/XMLschema.xsd#string
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:serviceName
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:ServiceRequester
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:requestedBy
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Class
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:restrictedTo
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Process.daml#parameter
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:refersTo
+              daml-oil:Property:
+                tag: daml-oil:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Thing
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:intendedPurpose
+              daml-oil:UniqueProperty:
+                tag: daml-oil:UniqueProperty
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Process.daml#Process
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:range
+                      subject:
+                        tag: subject
+                        value: daml-profile:has_process
+          daml-oil:subClassOf:
+            tag: daml-oil:subClassOf
+            value:
+              daml-oil:Class:
+                tag: daml-oil:Class
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Thing
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:subClassOf
+                      subject:
+                        tag: subject
+                        value: daml-profile:Location
+                  daml-oil:Class:
+                    tag: daml-oil:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:Actor
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:subClassOf
+                      subject:
+                        tag: subject
+                        value: daml-profile:ServiceRequester
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.daml.org/services/daml-s/2001/10/Service.daml#ServiceProfile
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:subClassOf
+                      subject:
+                        tag: subject
+                        value: daml-profile:OfferedService
+          daml-oil:subPropertyOf:
+            tag: daml-oil:subPropertyOf
+            value:
+              daml-oil:ObjectProperty:
+                tag: daml-oil:ObjectProperty
+                value:
+                  daml-oil:ObjectProperty:
+                    tag: daml-oil:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: daml-profile:role
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:subPropertyOf
+                      subject:
+                        tag: subject
+                        value: daml-profile:requestedBy
+          daml-oil:versionInfo:
+            tag: daml-oil:versionInfo
+            value:
+              daml-oil:Ontology:
+                tag: daml-oil:Ontology
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "\n      $Id: Profile.daml,v 1.5 2002/06/04 06:04:50\
+                          \ martin Exp $\n    "
+                      predicate:
+                        tag: predicate
+                        value: daml-oil:versionInfo
+                      subject:
+                        tag: subject
+                        value: Nbe73cdff24804a389fed42332eb50252
+          daml-ont:borderstate:
+            tag: daml-ont:borderstate
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  daml-ont:USState:
+                    tag: daml-ont:USState
+                    value:
+                      object:
+                        tag: object
+                        value: daml-usregionstate:CO
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:borderstate
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:WY
+          daml-ont:capital:
+            tag: daml-ont:capital
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: daml-ont:USCity.daml#honoluluhi
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:capital
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:HI
+          daml-ont:cia:
+            tag: daml-ont:cia
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: wfb:CHILE
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:cia
+                      subject:
+                        tag: subject
+                        value: daml-country:CHILE
+          daml-ont:code:
+            tag: daml-ont:code
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: HI
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:code
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:HI
+          daml-ont:memberstate:
+            tag: daml-ont:memberstate
+            value:
+              daml-ont:USRegion:
+                tag: daml-ont:USRegion
+                value:
+                  daml-ont:USState:
+                    tag: daml-ont:USState
+                    value:
+                      object:
+                        tag: object
+                        value: daml-usregionstate:KY
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:memberstate
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:Mid-South
+          daml-ont:name:
+            tag: daml-ont:name
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Chile
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:name
+                      subject:
+                        tag: subject
+                        value: daml-country:CHILE
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Hawaii
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:name
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:HI
+          daml-ont:region:
+            tag: daml-ont:region
+            value:
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  daml-ont:USRegion:
+                    tag: daml-ont:USRegion
+                    value:
+                      object:
+                        tag: object
+                        value: daml-usregionstate:PacificWest
+                      predicate:
+                        tag: predicate
+                        value: daml-ont:region
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:HI
+          daml:asClass:
+            tag: daml:asClass
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml:Nothing
+                      predicate:
+                        tag: predicate
+                        value: daml:asClass
+                      subject:
+                        tag: subject
+                        value: daml:Empty
+          daml:comment:
+            tag: daml:comment
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "compare with maxCardinality=1; e.g. integer successor:\n\
+                          \tif P is a UniqueProperty, then\n\tif P(x, y) and P(x,\
+                          \ z) then y=z.\n\taka functional.\n  "
+                      predicate:
+                        tag: predicate
+                        value: daml:comment
+                      subject:
+                        tag: subject
+                        value: daml:UniqueProperty
+              daml:Property:
+                tag: daml:Property
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "for onProperty(R, P), read:\n   R is a restriction/qualification\
+                          \ on P."
+                      predicate:
+                        tag: predicate
+                        value: daml:comment
+                      subject:
+                        tag: subject
+                        value: daml:onProperty
+          daml:complementOf:
+            tag: daml:complementOf
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml:Thing
+                      predicate:
+                        tag: predicate
+                        value: daml:complementOf
+                      subject:
+                        tag: subject
+                        value: daml:Nothing
+          daml:domain:
+            tag: daml:domain
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml:Restriction
+                      predicate:
+                        tag: predicate
+                        value: daml:domain
+                      subject:
+                        tag: subject
+                        value: daml:onProperty
+          daml:imports:
+            tag: daml:imports
+            value:
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  daml-2001:Ontology:
+                    tag: daml-2001:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: daml-2001:daml+oil
+                      predicate:
+                        tag: predicate
+                        value: daml:imports
+                      subject:
+                        tag: subject
+                        value: daml-ont:Country.daml
+                  daml:Ontology:
+                    tag: daml:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: daml-ont:State.daml
+                      predicate:
+                        tag: predicate
+                        value: daml:imports
+                      subject:
+                        tag: subject
+                        value: daml-ont:USRegionState.daml
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.w3.org/1999/02/22-rdf-syntax-ns
+                      predicate:
+                        tag: predicate
+                        value: daml:imports
+                      subject:
+                        tag: subject
+                        value: daml-ont:Country.daml
+          daml:label:
+            tag: daml:label
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: UniqueProperty
+                      predicate:
+                        tag: predicate
+                        value: daml:label
+                      subject:
+                        tag: subject
+                        value: daml:UniqueProperty
+              daml:Property:
+                tag: daml:Property
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unionOf
+                      predicate:
+                        tag: predicate
+                        value: daml:label
+                      subject:
+                        tag: subject
+                        value: daml:unionOf
+          daml:range:
+            tag: daml:range
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml:Property
+                      predicate:
+                        tag: predicate
+                        value: daml:range
+                      subject:
+                        tag: subject
+                        value: daml:onProperty
+          daml:sameClassAs:
+            tag: daml:sameClassAs
+            value:
+              daml-ont:Country:
+                tag: daml-ont:Country
+                value:
+                  daml-ont:Country:
+                    tag: daml-ont:Country
+                    value:
+                      object:
+                        tag: object
+                        value: daml-country:FALKLAND-ISLANDS
+                      predicate:
+                        tag: predicate
+                        value: daml:sameClassAs
+                      subject:
+                        tag: subject
+                        value: daml-country:ISLAS-MALVINAS
+              daml:Class:
+                tag: daml:Class
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdf:Property
+                      predicate:
+                        tag: predicate
+                        value: daml:sameClassAs
+                      subject:
+                        tag: subject
+                        value: daml:Property
+          daml:samePropertyAs:
+            tag: daml:samePropertyAs
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdf:value
+                      predicate:
+                        tag: predicate
+                        value: daml:samePropertyAs
+                      subject:
+                        tag: subject
+                        value: daml:value
+          daml:subClassOf:
+            tag: daml:subClassOf
+            value:
+              daml:Class:
+                tag: daml:Class
+                value:
+                  daml:Class:
+                    tag: daml:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml:Property
+                      predicate:
+                        tag: predicate
+                        value: daml:subClassOf
+                      subject:
+                        tag: subject
+                        value: daml:UniqueProperty
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdf:Seq
+                      predicate:
+                        tag: predicate
+                        value: daml:subClassOf
+                      subject:
+                        tag: subject
+                        value: daml:List
+          daml:subPropertyOf:
+            tag: daml:subPropertyOf
+            value:
+              daml:Property:
+                tag: daml:Property
+                value:
+                  daml:Property:
+                    tag: daml:Property
+                    value:
+                      object:
+                        tag: object
+                        value: daml:seeAlso
+                      predicate:
+                        tag: predicate
+                        value: daml:subPropertyOf
+                      subject:
+                        tag: subject
+                        value: daml:isDefinedBy
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdfs:subPropertyOf
+                      predicate:
+                        tag: predicate
+                        value: daml:subPropertyOf
+                      subject:
+                        tag: subject
+                        value: daml:subPropertyOf
+          daml:versionInfo:
+            tag: daml:versionInfo
+            value:
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          $Id: http://www.daml.ri.cmu.edu/ont/Country.daml, v 1.0
+                          terryp 2001/07/05 22:24:34 Exp $
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: daml:versionInfo
+                      subject:
+                        tag: subject
+                        value: daml-ont:Country.daml
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: tzont:Country
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N504f71f954dc48b6a9df77a20f4d1cf8
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:string
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: N475ab01503d446acb30b338132800dc3
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: N1627480fc40242fa962a43c1aeeb849e
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: N58e0a40cae6c4504848db38f2270edaf
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: Nb52e73945e5f4f02b5bfb217101df28b
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: Nbf932124f9494523a5e5936dc6d73edf
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: time-entry:second
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: Nb52e73945e5f4f02b5bfb217101df28b
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: time-entry:timeZone
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N1dbaadd89e514471b87fae3ba86f805a
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          The most general (object) class in DAML. This is equal to
+                          the union of any class and its complement.
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: daml-oil:Thing
+              daml-2001:List:
+                tag: daml-2001:List
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          the empty list; this used to be called Empty.
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: daml-oil:nil
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          for differentIndividualFrom(a, b), read a is not the same
+                          individual as b.
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: daml-oil:differentIndividualFrom
+              daml-ont:USState:
+                tag: daml-ont:USState
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          Is this really a state? Has been included for completeness...
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:DC
+              daml:Ontology:
+                tag: daml:Ontology
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '
+
+                          Country Ontology. Use as a top level ontology for describing
+                          countries. Some entries below include references to the
+                          CI world fact book. Note that this is not necessarily a
+                          complete or accurate ontology; to mke corrections, contact
+                          terryp@cs.cmu.edu
+
+                          '
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: daml-ont:Country.daml
+          rdfs:domain:
+            tag: rdfs:domain
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Thing
+                      predicate:
+                        tag: predicate
+                        value: rdfs:domain
+                      subject:
+                        tag: subject
+                        value: daml-oil:differentIndividualFrom
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Class
+                      predicate:
+                        tag: predicate
+                        value: rdfs:domain
+                      subject:
+                        tag: subject
+                        value: daml-oil:sameClassAs
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              daml-2001:Class:
+                tag: daml-2001:Class
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Thing
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: daml-oil:Thing
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: equivalentTo
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: daml-oil:equivalentTo
+              daml-ont:USRegion:
+                tag: daml-ont:USRegion
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Mid-South
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: daml-usregionstate:Mid-South
+          rdfs:range:
+            tag: rdfs:range
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Class:
+                    tag: daml-2001:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Thing
+                      predicate:
+                        tag: predicate
+                        value: rdfs:range
+                      subject:
+                        tag: subject
+                        value: daml-oil:differentIndividualFrom
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:Class
+                      predicate:
+                        tag: predicate
+                        value: rdfs:range
+                      subject:
+                        tag: subject
+                        value: daml-oil:sameClassAs
+          rdfs:subPropertyOf:
+            tag: rdfs:subPropertyOf
+            value:
+              daml-2001:Property:
+                tag: daml-2001:Property
+                value:
+                  daml-2001:Property:
+                    tag: daml-2001:Property
+                    value:
+                      object:
+                        tag: object
+                        value: daml-oil:equivalentTo
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subPropertyOf
+                      subject:
+                        tag: subject
+                        value: daml-oil:samePropertyAs
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdfs:subPropertyOf
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subPropertyOf
+                      subject:
+                        tag: subject
+                        value: daml-oil:samePropertyAs
+classes:
+  daml-2001_Class:
+    class_uri: daml-2001:Class
+    name: daml-2001_Class
+    slots:
+    - daml-2001_unionOf
+    - rdfs_comment
+    - rdfs_label
+    - daml-2001_complementOf
+  daml-2001_List:
+    class_uri: daml-2001:List
+    name: daml-2001_List
+    slots:
+    - rdfs_comment
+  daml-2001_Ontology:
+    class_uri: daml-2001:Ontology
+    name: daml-2001_Ontology
+    slots:
+    - daml-2001_versionInfo
+    - daml-2001_imports
+  daml-2001_Property:
+    class_uri: daml-2001:Property
+    name: daml-2001_Property
+    slots:
+    - rdfs_subPropertyOf
+    - rdfs_range
+    - daml-2001_comment
+    - rdfs_domain
+    - rdfs_comment
+    - rdfs_label
+  daml-city_City:
+    class_uri: daml-city:City
+    description: High level city concept.
+    is_a: daml-oil_Thing
+    name: daml-city_City
+    title: City
+  daml-country-ont_Country:
+    class_uri: daml-country-ont:Country
+    name: daml-country-ont_Country
+  daml-country_Country:
+    class_uri: daml-country:Country
+    description: High level country concept.
+    is_a: daml-profile_Location
+    name: daml-country_Country
+    title: Country
+  daml-country_UNITED-STATES:
+    class_uri: daml-country:UNITED-STATES
+    name: daml-country_UNITED-STATES
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  daml-iso3166_Country:
+    class_uri: daml-iso3166:Country
+    is_a: daml-country-ont_Country
+    name: daml-iso3166_Country
+    slots:
+    - daml-iso3166_name
+    - daml-iso3166_code
+  daml-oil_Class:
+    class_uri: daml-oil:Class
+    description: The class of all "object" classes
+    is_a: rdfs_Class
+    name: daml-oil_Class
+    slots:
+    - daml-oil_subClassOf
+    - daml-oil_comment
+    - daml-oil_label
+    title: Class
+  daml-oil_Datatype:
+    class_uri: daml-oil:Datatype
+    description: The class of all datatype classes
+    is_a: rdfs_Class
+    name: daml-oil_Datatype
+    title: Datatype
+  daml-oil_DatatypeProperty:
+    class_uri: daml-oil:DatatypeProperty
+    description: if P is a DatatypeProperty, and P(x, y), then y is a data value.
+    is_a: rdf_Property
+    name: daml-oil_DatatypeProperty
+    slots:
+    - daml-oil_range
+    - daml-oil_domain
+    title: DatatypeProperty
+  daml-oil_List:
+    class_uri: daml-oil:List
+    is_a: rdf_Seq
+    name: daml-oil_List
+  daml-oil_Literal:
+    class_uri: daml-oil:Literal
+    name: daml-oil_Literal
+  daml-oil_ObjectProperty:
+    class_uri: daml-oil:ObjectProperty
+    description: if P is an ObjectProperty, and P(x, y), then y is an object.
+    is_a: rdf_Property
+    name: daml-oil_ObjectProperty
+    slots:
+    - daml-oil_subPropertyOf
+    - daml-oil_range
+    - daml-oil_domain
+    title: ObjectProperty
+  daml-oil_Ontology:
+    class_uri: daml-oil:Ontology
+    description: An Ontology is a document that describes a vocabulary of terms for
+      communication between (human and) automated agents.
+    name: daml-oil_Ontology
+    slots:
+    - daml-oil_versionInfo
+    - daml-oil_comment
+    - daml-oil_imports
+    title: Ontology
+  daml-oil_Property:
+    class_uri: daml-oil:Property
+    name: daml-oil_Property
+    slots:
+    - daml-oil_range
+    - daml-oil_domain
+  daml-oil_Restriction:
+    class_uri: daml-oil:Restriction
+    description: something is in the class R if it satisfies the attached restrictions,
+      and vice versa.
+    is_a: daml-oil_Class
+    name: daml-oil_Restriction
+    title: Restriction
+  daml-oil_Thing:
+    class_uri: daml-oil:Thing
+    name: daml-oil_Thing
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  daml-oil_TransitiveProperty:
+    class_uri: daml-oil:TransitiveProperty
+    description: if P is a TransitiveProperty, then if P(x, y) and P(y, z) then P(x,
+      z). cf OIL TransitiveProperty.
+    is_a: daml-oil_ObjectProperty
+    name: daml-oil_TransitiveProperty
+    title: TransitiveProperty
+  daml-oil_UnambiguousProperty:
+    class_uri: daml-oil:UnambiguousProperty
+    description: if P is an UnambiguousProperty, then if P(x, y) and P(z, y) then
+      x=z. aka injective. e.g. if firstBorne(m, Susan) and firstBorne(n, Susan) then
+      m and n are the same.
+    is_a: daml-oil_ObjectProperty
+    name: daml-oil_UnambiguousProperty
+    title: UnambiguousProperty
+  daml-oil_UniqueProperty:
+    class_uri: daml-oil:UniqueProperty
+    description: 'compare with maxCardinality=1; e.g. integer successor: if P is a
+      UniqueProperty, then if P(x, y) and P(x, z) then y=z. cf OIL FunctionalProperty.'
+    is_a: rdf_Property
+    name: daml-oil_UniqueProperty
+    slots:
+    - daml-oil_range
+    - daml-oil_domain
+    title: UniqueProperty
+  daml-ont_Country:
+    class_uri: daml-ont:Country
+    name: daml-ont_Country
+    slots:
+    - daml-ont_cia
+    - daml_sameClassAs
+    - daml-ont_name
+  daml-ont_USRegion:
+    class_uri: daml-ont:USRegion
+    name: daml-ont_USRegion
+    slots:
+    - rdfs_label
+    - daml-ont_memberstate
+  daml-ont_USState:
+    class_uri: daml-ont:USState
+    name: daml-ont_USState
+    slots:
+    - daml-ont_borderstate
+    - daml-ont_region
+    - daml-ont_code
+    - daml-ont_name
+    - rdfs_comment
+    - daml-ont_capital
+  daml-profile_Location:
+    class_uri: daml-profile:Location
+    name: daml-profile_Location
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  daml-state_State:
+    class_uri: daml-state:State
+    description: Information about some geographic region, such as a US state.
+    is_a: daml-oil_Thing
+    name: daml-state_State
+    title: State
+  daml-usregionstate_USRegion:
+    class_uri: daml-usregionstate:USRegion
+    description: Information about the US regions.
+    is_a: daml-oil_Thing
+    name: daml-usregionstate_USRegion
+    title: USRegion
+  daml-usregionstate_USState:
+    class_uri: daml-usregionstate:USState
+    description: Information about one of the US states.
+    is_a: daml-state_State
+    name: daml-usregionstate_USState
+    title: USState
+  daml_Class:
+    class_uri: daml:Class
+    name: daml_Class
+    slots:
+    - daml_label
+    - daml_comment
+    - daml_subClassOf
+    - daml_asClass
+    - daml_sameClassAs
+    - daml_complementOf
+  daml_Ontology:
+    class_uri: daml:Ontology
+    name: daml_Ontology
+    slots:
+    - daml_versionInfo
+    - rdfs_comment
+    - daml_imports
+  daml_Property:
+    class_uri: daml:Property
+    name: daml_Property
+    slots:
+    - daml_label
+    - daml_comment
+    - daml_domain
+    - daml_subPropertyOf
+    - daml_samePropertyAs
+    - daml_range
+  time-entry_CalendarClockDescription:
+    class_uri: time-entry:CalendarClockDescription
+    name: time-entry_CalendarClockDescription
+  time-entry_CalendarClockInterval:
+    class_uri: time-entry:CalendarClockInterval
+    is_a: time-entry_ProperInterval
+    name: time-entry_CalendarClockInterval
+  time-entry_DurationDescription:
+    class_uri: time-entry:DurationDescription
+    name: time-entry_DurationDescription
+  time-entry_Event:
+    class_uri: time-entry:Event
+    is_a: time-entry_TemporalThing
+    name: time-entry_Event
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_Instant:
+    class_uri: time-entry:Instant
+    is_a: time-entry_InstantThing
+    name: time-entry_Instant
+  time-entry_InstantEvent:
+    class_uri: time-entry:InstantEvent
+    is_a: time-entry_Event
+    name: time-entry_InstantEvent
+  time-entry_InstantThing:
+    class_uri: time-entry:InstantThing
+    is_a: time-entry_TemporalThing
+    name: time-entry_InstantThing
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_InstantThingPair:
+    class_uri: time-entry:InstantThingPair
+    name: time-entry_InstantThingPair
+  time-entry_Interval:
+    class_uri: time-entry:Interval
+    is_a: time-entry_IntervalThing
+    name: time-entry_Interval
+  time-entry_IntervalEvent:
+    class_uri: time-entry:IntervalEvent
+    is_a: time-entry_Event
+    name: time-entry_IntervalEvent
+  time-entry_IntervalThing:
+    class_uri: time-entry:IntervalThing
+    is_a: time-entry_TemporalThing
+    name: time-entry_IntervalThing
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_ProperInterval:
+    class_uri: time-entry:ProperInterval
+    is_a: time-entry_ProperIntervalThing
+    name: time-entry_ProperInterval
+  time-entry_ProperIntervalThing:
+    class_uri: time-entry:ProperIntervalThing
+    is_a: time-entry_IntervalThing
+    name: time-entry_ProperIntervalThing
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_TemporalEntity:
+    class_uri: time-entry:TemporalEntity
+    is_a: time-entry_TemporalThing
+    name: time-entry_TemporalEntity
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_TemporalThing:
+    class_uri: time-entry:TemporalThing
+    name: time-entry_TemporalThing
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  time-entry_TemporalUnit:
+    class_uri: time-entry:TemporalUnit
+    name: time-entry_TemporalUnit
+  tzont_City:
+    class_uri: tzont:City
+    is_a: tzont_PoliticalRegion
+    name: tzont_City
+  tzont_Country:
+    class_uri: tzont:Country
+    is_a: tzont_PoliticalRegion
+    name: tzont_Country
+  tzont_County:
+    class_uri: tzont:County
+    is_a: tzont_PoliticalRegion
+    name: tzont_County
+  tzont_DaylightSavingsPolicy:
+    class_uri: tzont:DaylightSavingsPolicy
+    name: tzont_DaylightSavingsPolicy
+  tzont_EnumeratedDaylightSavingsPolicy:
+    class_uri: tzont:EnumeratedDaylightSavingsPolicy
+    is_a: tzont_DaylightSavingsPolicy
+    name: tzont_EnumeratedDaylightSavingsPolicy
+  tzont_PoliticalRegion:
+    class_uri: tzont:PoliticalRegion
+    is_a: tzont_Region
+    name: tzont_PoliticalRegion
+  tzont_Region:
+    class_uri: tzont:Region
+    name: tzont_Region
+  tzont_Reservation:
+    class_uri: tzont:Reservation
+    is_a: tzont_PoliticalRegion
+    name: tzont_Reservation
+  tzont_State:
+    class_uri: tzont:State
+    is_a: tzont_PoliticalRegion
+    name: tzont_State
+  tzont_TimeZone:
+    class_uri: tzont:TimeZone
+    name: tzont_TimeZone
+  wfb_GEOREF:
+    class_uri: wfb:GEOREF
+    name: wfb_GEOREF
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  xsd2000_nonNegativeInteger:
+    class_uri: xsd2000:nonNegativeInteger
+    name: xsd2000_nonNegativeInteger
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  xsd_gDay:
+    class_uri: xsd:gDay
+    name: xsd_gDay
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  xsd_gMonth:
+    class_uri: xsd:gMonth
+    name: xsd_gMonth
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+comments:
+- 'description: ISO 3166 Country Codes'
+- "description: \u240A      An entry sub-ontology of time (OWL-Time).\u240A"
+- "description: \u240A      A time zone ontology.\u240A"
+created_on: '2025-07-15T20:23:00.874902'
+default_prefix: okn
+description: Base Country Ontology
+id: okns:daml
+imports:
+- okns:owl-rdf-rdfs
+- okns:time
+- https://purl.org/okn/schema/extended_types
+- linkml:types
+last_updated_on: '2025-07-15T20:23:00.874902'
+name: daml
+prefixes:
+  daml: http://www.daml.org/2000/10/daml-ont#
+  daml-2001: http://www.daml.org/2001/03/
+  daml-city: http://www.daml.ri.cmu.edu/ont/City.daml#
+  daml-country: http://www.daml.ri.cmu.edu/ont/Country.daml#
+  daml-country-ont: http://www.daml.org/2001/09/countries/country-ont#
+  daml-iso3166: http://www.daml.org/2001/09/countries/iso-3166-ont#
+  daml-oil: http://www.daml.org/2001/03/daml+oil#
+  daml-ont: http://www.daml.ri.cmu.edu/ont/
+  daml-profile: http://www.daml.org/services/daml-s/2001/10/Profile.daml#
+  daml-state: http://www.daml.ri.cmu.edu/ont/State.daml#
+  daml-usregionstate: http://www.daml.ri.cmu.edu/ont/USRegionState.daml#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  time-entry: http://www.isi.edu/~pan/damltime/time-entry.owl#
+  tzont: http://www.isi.edu/~pan/damltime/timezone-ont.owl#
+  wfb: http://ontolingua.stanford.edu/doc/chimaera/ontologies/world-fact-book.daml#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  xsd2000: http://www.w3.org/2000/10/XMLSchema#
+slots:
+  daml-2001_comment:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml-2001:comment
+  daml-2001_complementOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml-2001_Class
+    slot_uri: daml-2001:complementOf
+  daml-2001_imports:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: uri
+    slot_uri: daml-2001:imports
+  daml-2001_unionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: rdf_XMLLiteral
+    slot_uri: daml-2001:unionOf
+  daml-2001_versionInfo:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml-2001:versionInfo
+  daml-city_country:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-city_City
+    name: daml-city_country
+    range: daml-country_Country
+    slot_uri: daml-city:country
+  daml-city_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-city_City
+    name: daml-city_name
+    range: rdfs_Literal
+    slot_uri: daml-city:name
+  daml-country_cia:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-country_Country
+    name: daml-country_cia
+    range: wfb_GEOREF
+    slot_uri: daml-country:cia
+  daml-country_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-country_Country
+    name: daml-country_name
+    range: rdfs_Literal
+    slot_uri: daml-country:name
+  daml-iso3166_code:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-iso3166_code
+    range: string
+    slot_uri: daml-iso3166:code
+  daml-iso3166_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-iso3166_name
+    range: string
+    slot_uri: daml-iso3166:name
+  daml-oil_cardinality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and cardinality(R, n), read: i is in class
+      R if and only if there are exactly n distinct j with P(i, j). cf OIL Cardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_cardinality
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:cardinality
+    title: cardinality
+  daml-oil_cardinalityQ:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P), cardinalityQ(R, n) and hasClassQ(R, X), read:
+      i is in class R if and only if there are exactly n distinct j with P(i, j) and
+      type(j, X). cf OIL Cardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_cardinalityQ
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:cardinalityQ
+    title: cardinality
+  daml-oil_comment:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_comment
+    range: string
+    slot_uri: daml-oil:comment
+  daml-oil_complementOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for complementOf(X, Y) read: X is the complement of Y; if something
+      is in Y, then it''s not in X, and vice versa. cf OIL NOT'
+    domain: daml-oil_Class
+    name: daml-oil_complementOf
+    range: daml-oil_Class
+    slot_uri: daml-oil:complementOf
+    title: complementOf
+  daml-oil_disjointUnionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for disjointUnionOf(X, Y) read: X is the disjoint union of the classes
+      in the list Y: (a) for any c1 and c2 in Y, disjointWith(c1, c2), and (b) unionOf(X,
+      Y). i.e. if something is in any of the classes in Y, it''s in X, and vice versa.
+      cf OIL disjoint-covered'
+    domain: daml-oil_Class
+    name: daml-oil_disjointUnionOf
+    range: daml-oil_List
+    slot_uri: daml-oil:disjointUnionOf
+    title: disjointUnionOf
+  daml-oil_disjointWith:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for disjointWith(X, Y) read: X and Y have no members in common.
+      cf OIL Disjoint'
+    domain: daml-oil_Class
+    name: daml-oil_disjointWith
+    range: daml-oil_Class
+    slot_uri: daml-oil:disjointWith
+    title: disjointWith
+  daml-oil_domain:
+    any_of:
+    - range: daml-oil_Class
+    - range: uri
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_domain
+    range: Any
+    slot_uri: daml-oil:domain
+  daml-oil_first:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-oil_List
+    name: daml-oil_first
+    range: Any
+    slot_uri: daml-oil:first
+  daml-oil_hasClass:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and hasClass(R, X), read: i is in class R if
+      and only if for some j, P(i, j) and type(j, X). cf OIL HasValue'
+    domain: daml-oil_Restriction
+    name: daml-oil_hasClass
+    range: rdfs_Class
+    slot_uri: daml-oil:hasClass
+    title: hasClass
+  daml-oil_hasClassQ:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: property for specifying class restriction with cardinalityQ constraints
+    domain: daml-oil_Restriction
+    name: daml-oil_hasClassQ
+    range: rdfs_Class
+    slot_uri: daml-oil:hasClassQ
+    title: hasClassQ
+  daml-oil_hasValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and hasValue(R, V), read: i is in class R if
+      and only if P(i, V). cf OIL HasFiller'
+    domain: daml-oil_Restriction
+    name: daml-oil_hasValue
+    range: Any
+    slot_uri: daml-oil:hasValue
+    title: hasValue
+  daml-oil_imports:
+    any_of:
+    - range: uri
+    - range: daml-2001_Ontology
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for imports(X, Y) read: X imports Y; i.e. X asserts the* contents
+      of Y by reference; i.e. if imports(X, Y) and you believe X and Y says something,
+      then you should believe it. Note: "the contents" is, in the general case, an
+      il-formed definite description. Different interactions with a resource may expose
+      contents that vary with time, data format, preferred language, requestor credentials,
+      etc. So for "the contents", read "any contents".'
+    name: daml-oil_imports
+    range: Any
+    slot_uri: daml-oil:imports
+    title: imports
+  daml-oil_intersectionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for intersectionOf(X, Y) read: X is the intersection of the classes
+      in the list Y; i.e. if something is in all the classes in Y, then it''s in X,
+      and vice versa. cf OIL AND'
+    domain: daml-oil_Class
+    name: daml-oil_intersectionOf
+    range: daml-oil_List
+    slot_uri: daml-oil:intersectionOf
+    title: intersectionOf
+  daml-oil_inverseOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for inverseOf(R, S) read: R is the inverse of S; i.e. if R(x, y)
+      then S(y, x) and vice versa. cf OIL inverseRelationOf'
+    domain: daml-oil_ObjectProperty
+    name: daml-oil_inverseOf
+    range: daml-oil_ObjectProperty
+    slot_uri: daml-oil:inverseOf
+    title: inverseOf
+  daml-oil_isDefinedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_isDefinedBy
+    range: Any
+    slot_uri: daml-oil:isDefinedBy
+    subproperty_of: daml-oil_seeAlso
+  daml-oil_item:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for item(L, I) read: I is an item in L; either first(L, I) or item(R,
+      I) where rest(L, R).'
+    domain: daml-oil_List
+    name: daml-oil_item
+    range: Any
+    slot_uri: daml-oil:item
+  daml-oil_label:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_label
+    range: string
+    slot_uri: daml-oil:label
+  daml-oil_maxCardinality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and maxCardinality(R, n), read: i is in class
+      R if and only if there are at most n distinct j with P(i, j). cf OIL MaxCardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_maxCardinality
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:maxCardinality
+    title: maxCardinality
+  daml-oil_maxCardinalityQ:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P), maxCardinalityQ(R, n) and hasClassQ(R, X),
+      read: i is in class R if and only if there are at most n distinct j with P(i,
+      j) and type(j, X). cf OIL MaxCardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_maxCardinalityQ
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:maxCardinalityQ
+    title: maxCardinality
+  daml-oil_minCardinality:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and minCardinality(R, n), read: i is in class
+      R if and only if there are at least n distinct j with P(i, j). cf OIL MinCardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_minCardinality
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:minCardinality
+    title: minCardinality
+  daml-oil_minCardinalityQ:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P), minCardinalityQ(R, n) and hasClassQ(R, X),
+      read: i is in class R if and only if there are at least n distinct j with P(i,
+      j) and type(j, X). cf OIL MinCardinality'
+    domain: daml-oil_Restriction
+    name: daml-oil_minCardinalityQ
+    range: xsd2000_nonNegativeInteger
+    slot_uri: daml-oil:minCardinalityQ
+    title: minCardinality
+  daml-oil_onProperty:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P), read: R is a restricted with respect to property
+      P.'
+    domain: daml-oil_Restriction
+    name: daml-oil_onProperty
+    range: rdf_Property
+    slot_uri: daml-oil:onProperty
+    title: onProperty
+  daml-oil_oneOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: for oneOf(C, L) read everything in C is one of the things in L; This
+      lets us define classes by enumerating the members. cf OIL OneOf
+    domain: daml-oil_Class
+    name: daml-oil_oneOf
+    range: daml-oil_List
+    slot_uri: daml-oil:oneOf
+    title: oneOf
+  daml-oil_range:
+    any_of:
+    - range: daml-oil_Class
+    - range: uri
+    - range: rdfs_Class
+    - range: daml-2001_Class
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_range
+    range: Any
+    slot_uri: daml-oil:range
+  daml-oil_rest:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-oil_List
+    name: daml-oil_rest
+    range: daml-oil_List
+    slot_uri: daml-oil:rest
+  daml-oil_seeAlso:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_seeAlso
+    range: Any
+    slot_uri: daml-oil:seeAlso
+  daml-oil_subClassOf:
+    any_of:
+    - range: daml-oil_Class
+    - range: uri
+    - range: daml-2001_Class
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_subClassOf
+    range: Any
+    slot_uri: daml-oil:subClassOf
+  daml-oil_subPropertyOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_subPropertyOf
+    range: daml-oil_ObjectProperty
+    slot_uri: daml-oil:subPropertyOf
+  daml-oil_toClass:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for onProperty(R, P) and toClass(R, X), read: i is in class R if
+      and only if for all j, P(i, j) implies type(j, X). cf OIL ValueType'
+    domain: daml-oil_Restriction
+    name: daml-oil_toClass
+    range: rdfs_Class
+    slot_uri: daml-oil:toClass
+    title: toClass
+  daml-oil_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_type
+    range: Any
+    slot_uri: daml-oil:type
+  daml-oil_unionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'for unionOf(X, Y) read: X is the union of the classes in the list
+      Y; i.e. if something is in any of the classes in Y, it''s in X, and vice versa.
+      cf OIL OR'
+    domain: daml-oil_Class
+    name: daml-oil_unionOf
+    range: daml-oil_List
+    slot_uri: daml-oil:unionOf
+    title: unionOf
+  daml-oil_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: daml-oil_value
+    range: Any
+    slot_uri: daml-oil:value
+  daml-oil_versionInfo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: generally, a string giving information about this version; e.g. RCS/CVS
+      keywords
+    name: daml-oil_versionInfo
+    range: string
+    slot_uri: daml-oil:versionInfo
+    title: versionInfo
+  daml-ont_borderstate:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml-ont_USState
+    slot_uri: daml-ont:borderstate
+  daml-ont_capital:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: uri
+    slot_uri: daml-ont:capital
+  daml-ont_cia:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: uri
+    slot_uri: daml-ont:cia
+  daml-ont_code:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml-ont:code
+  daml-ont_memberstate:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml-ont_USState
+    slot_uri: daml-ont:memberstate
+  daml-ont_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml-ont:name
+  daml-ont_region:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml-ont_USRegion
+    slot_uri: daml-ont:region
+  daml-state_borderstate:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-state_State
+    name: daml-state_borderstate
+    range: daml-state_State
+    slot_uri: daml-state:borderstate
+  daml-state_capital:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-state_State
+    name: daml-state_capital
+    range: daml-city_City
+    slot_uri: daml-state:capital
+  daml-state_code:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-state_State
+    name: daml-state_code
+    range: rdfs_Literal
+    slot_uri: daml-state:code
+  daml-state_country:
+    any_of:
+    - range: daml-country_Country
+    - range: daml-country_UNITED-STATES
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-state_State
+    name: daml-state_country
+    range: Any
+    slot_uri: daml-state:country
+  daml-state_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-state_State
+    name: daml-state_name
+    range: rdfs_Literal
+    slot_uri: daml-state:name
+  daml-usregionstate_memberstate:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-usregionstate_USRegion
+    name: daml-usregionstate_memberstate
+    range: daml-usregionstate_USState
+    slot_uri: daml-usregionstate:memberstate
+  daml-usregionstate_region:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: daml-usregionstate_USState
+    name: daml-usregionstate_region
+    range: daml-usregionstate_USRegion
+    slot_uri: daml-usregionstate:region
+  daml_asClass:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml_Class
+    slot_uri: daml:asClass
+  daml_comment:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml:comment
+  daml_complementOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml_Class
+    slot_uri: daml:complementOf
+  daml_domain:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml_Class
+    slot_uri: daml:domain
+  daml_imports:
+    any_of:
+    - range: daml_Ontology
+    - range: uri
+    - range: daml-2001_Ontology
+    comments:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: daml:imports
+  daml_label:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml:label
+  daml_range:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: daml_Class
+    slot_uri: daml:range
+  daml_sameClassAs:
+    any_of:
+    - range: uri
+    - range: daml-ont_Country
+    comments:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: daml:sameClassAs
+  daml_samePropertyAs:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: uri
+    slot_uri: daml:samePropertyAs
+  daml_subClassOf:
+    any_of:
+    - range: uri
+    - range: daml_Class
+    comments:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: daml:subClassOf
+  daml_subPropertyOf:
+    any_of:
+    - range: uri
+    - range: daml_Property
+    comments:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: daml:subPropertyOf
+  daml_versionInfo:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: daml:versionInfo
+  time-entry_after:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_before
+    name: time-entry_after
+    range: Any
+    slot_uri: time-entry:after
+  time-entry_before:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_TemporalThing
+    name: time-entry_before
+    range: time-entry_TemporalThing
+    slot_uri: time-entry:before
+    transitive: true
+  time-entry_begins:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_TemporalThing
+    multivalued: false
+    name: time-entry_begins
+    range: time-entry_InstantThing
+    slot_uri: time-entry:begins
+  time-entry_calendarClockDescriptionDataType:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockInterval
+    name: time-entry_calendarClockDescriptionDataType
+    range: datetime
+    slot_uri: time-entry:calendarClockDescriptionDataType
+  time-entry_calendarClockDescriptionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockInterval
+    name: time-entry_calendarClockDescriptionOf
+    range: time-entry_CalendarClockDescription
+    slot_uri: time-entry:calendarClockDescriptionOf
+  time-entry_day:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_day
+    range: xsd_gDay
+    slot_uri: time-entry:day
+  time-entry_dayOfWeekField:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_dayOfWeekField
+    range: unsignedinteger
+    slot_uri: time-entry:dayOfWeekField
+  time-entry_dayOfYearField:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_dayOfYearField
+    range: unsignedinteger
+    slot_uri: time-entry:dayOfYearField
+  time-entry_days:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_days
+    range: decimal
+    slot_uri: time-entry:days
+  time-entry_durationDescriptionDataType:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_TemporalThing
+    name: time-entry_durationDescriptionDataType
+    range: xsd_duration
+    slot_uri: time-entry:durationDescriptionDataType
+  time-entry_durationDescriptionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_TemporalThing
+    name: time-entry_durationDescriptionOf
+    range: time-entry_DurationDescription
+    slot_uri: time-entry:durationDescriptionOf
+  time-entry_ends:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_TemporalThing
+    multivalued: false
+    name: time-entry_ends
+    range: time-entry_InstantThing
+    slot_uri: time-entry:ends
+  time-entry_firstInstantThing:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThingPair
+    name: time-entry_firstInstantThing
+    range: time-entry_InstantThing
+    slot_uri: time-entry:firstInstantThing
+  time-entry_hour:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_hour
+    range: unsignedinteger
+    slot_uri: time-entry:hour
+  time-entry_hours:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_hours
+    range: decimal
+    slot_uri: time-entry:hours
+  time-entry_inCalendarClock:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThing
+    name: time-entry_inCalendarClock
+    range: time-entry_CalendarClockDescription
+    slot_uri: time-entry:inCalendarClock
+  time-entry_inCalendarClockDataType:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThing
+    name: time-entry_inCalendarClockDataType
+    range: datetime
+    slot_uri: time-entry:inCalendarClockDataType
+  time-entry_inside:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_IntervalThing
+    name: time-entry_inside
+    range: time-entry_InstantThing
+    slot_uri: time-entry:inside
+  time-entry_instantPairDurationDescriptionDataType:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThingPair
+    name: time-entry_instantPairDurationDescriptionDataType
+    range: xsd_duration
+    slot_uri: time-entry:instantPairDurationDescriptionDataType
+  time-entry_instantPairDurationDescriptionOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThingPair
+    name: time-entry_instantPairDurationDescriptionOf
+    range: time-entry_DurationDescription
+    slot_uri: time-entry:instantPairDurationDescriptionOf
+  time-entry_intAfter:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intBefore
+    name: time-entry_intAfter
+    range: Any
+    slot_uri: time-entry:intAfter
+    subproperty_of: time-entry_nonoverlap
+  time-entry_intBefore:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intBefore
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intBefore
+    subproperty_of: time-entry_nonoverlap
+  time-entry_intContains:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intDuring
+    name: time-entry_intContains
+    range: Any
+    slot_uri: time-entry:intContains
+  time-entry_intDuring:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intDuring
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intDuring
+    subproperty_of: time-entry_startsOrDuring
+  time-entry_intEquals:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intEquals
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intEquals
+  time-entry_intFinishedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intFinishes
+    name: time-entry_intFinishedBy
+    range: Any
+    slot_uri: time-entry:intFinishedBy
+  time-entry_intFinishes:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intFinishes
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intFinishes
+  time-entry_intMeets:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intMeets
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intMeets
+    subproperty_of: time-entry_nonoverlap
+  time-entry_intMetBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intMeets
+    name: time-entry_intMetBy
+    range: Any
+    slot_uri: time-entry:intMetBy
+    subproperty_of: time-entry_nonoverlap
+  time-entry_intOverlappedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intOverlaps
+    name: time-entry_intOverlappedBy
+    range: Any
+    slot_uri: time-entry:intOverlappedBy
+  time-entry_intOverlaps:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intOverlaps
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intOverlaps
+  time-entry_intStartedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: time-entry_intStarts
+    name: time-entry_intStartedBy
+    range: Any
+    slot_uri: time-entry:intStartedBy
+  time-entry_intStarts:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_intStarts
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:intStarts
+    subproperty_of: time-entry_startsOrDuring
+  time-entry_minute:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_minute
+    range: unsignedinteger
+    slot_uri: time-entry:minute
+  time-entry_minutes:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_minutes
+    range: decimal
+    slot_uri: time-entry:minutes
+  time-entry_month:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_month
+    range: xsd_gMonth
+    slot_uri: time-entry:month
+  time-entry_months:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_months
+    range: decimal
+    slot_uri: time-entry:months
+  time-entry_nonoverlap:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_nonoverlap
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:nonoverlap
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  time-entry_second:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_second
+    range: decimal
+    slot_uri: time-entry:second
+  time-entry_secondInstantThing:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_InstantThingPair
+    name: time-entry_secondInstantThing
+    range: time-entry_InstantThing
+    slot_uri: time-entry:secondInstantThing
+  time-entry_seconds:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_seconds
+    range: decimal
+    slot_uri: time-entry:seconds
+  time-entry_startsOrDuring:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_ProperIntervalThing
+    name: time-entry_startsOrDuring
+    range: time-entry_ProperIntervalThing
+    slot_uri: time-entry:startsOrDuring
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  time-entry_timeZone:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_timeZone
+    range: tzont_TimeZone
+    slot_uri: time-entry:timeZone
+  time-entry_unitType:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_unitType
+    range: time-entry_TemporalUnit
+    slot_uri: time-entry:unitType
+  time-entry_week:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_week
+    range: unsignedinteger
+    slot_uri: time-entry:week
+  time-entry_weeks:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_weeks
+    range: decimal
+    slot_uri: time-entry:weeks
+  time-entry_year:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_CalendarClockDescription
+    name: time-entry_year
+    range: xsd_gYear
+    slot_uri: time-entry:year
+  time-entry_years:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: time-entry_DurationDescription
+    name: time-entry_years
+    range: decimal
+    slot_uri: time-entry:years
+  tzont_DLSendDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: tzont_DLSendDate
+    range: date
+    slot_uri: tzont:DLSendDate
+  tzont_DLSstartDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: tzont_DLSstartDate
+    range: date
+    slot_uri: tzont:DLSstartDate
+  tzont_GMToffset:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_TimeZone
+    name: tzont_GMToffset
+    range: xsd_duration
+    slot_uri: tzont:GMToffset
+  tzont_countryOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: tzont_countryOf
+    range: tzont_Country
+    slot_uri: tzont:countryOf
+    subproperty_of: tzont_hasParentRegion
+  tzont_exceptionalRegion:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_exceptionalRegion
+    range: tzont_Region
+    slot_uri: tzont:exceptionalRegion
+  tzont_hasAncestorRegion:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_hasAncestorRegion
+    range: tzont_Region
+    slot_uri: tzont:hasAncestorRegion
+    transitive: true
+  tzont_hasDaylightSavingsPolicy:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_hasDaylightSavingsPolicy
+    range: tzont_DaylightSavingsPolicy
+    slot_uri: tzont:hasDaylightSavingsPolicy
+  tzont_hasParentRegion:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: tzont_hasParentRegion
+    range: Any
+    slot_uri: tzont:hasParentRegion
+    subproperty_of: tzont_hasAncestorRegion
+  tzont_hasTimeZone:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_hasTimeZone
+    range: tzont_TimeZone
+    slot_uri: tzont:hasTimeZone
+  tzont_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    exact_mappings:
+    - http://www.daml.org/2001/09/countries/iso-3166-ont#name
+    name: tzont_name
+    range: Any
+    slot_uri: tzont:name
+  tzont_observesDaylightSavingsTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_observesDaylightSavingsTime
+    range: boolean
+    slot_uri: tzont:observesDaylightSavingsTime
+  tzont_stateOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: tzont_stateOf
+    range: tzont_State
+    slot_uri: tzont:stateOf
+    subproperty_of: tzont_hasParentRegion
+  tzont_timeZonePart:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: tzont_Region
+    name: tzont_timeZonePart
+    range: tzont_Region
+    slot_uri: tzont:timeZonePart
+title: No schema name specified

@@ -1,0 +1,247 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+      slots:
+        tag: slots
+        value: {}
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+classes:
+  foaf_Agent:
+    class_uri: foaf:Agent
+    name: foaf_Agent
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  foaf_Document:
+    class_uri: foaf:Document
+    name: foaf_Document
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  wn16_Credential:
+    class_uri: wn16:Credential
+    name: wn16_Credential
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  wn16_Endorsement-4:
+    class_uri: wn16:Endorsement-4
+    name: wn16_Endorsement-4
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  wn16_Event:
+    class_uri: wn16:Event
+    name: wn16_Event
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  wot_EncryptedDocument:
+    class_uri: wot:EncryptedDocument
+    description: An encrypted document intended for a set of recipients.
+    is_a: wn16_Endorsement-4
+    name: wot_EncryptedDocument
+    source: http://xmlns.com/wot/0.1/
+    title: Encrypted Document
+  wot_Endorsement:
+    class_uri: wot:Endorsement
+    description: An endorsement resource containing a detached ascii signature.
+    is_a: wn16_Endorsement-4
+    name: wot_Endorsement
+    source: http://xmlns.com/wot/0.1/
+    title: Endorsement
+  wot_PubKey:
+    class_uri: wot:PubKey
+    description: A class used to represent a PGP/GPG public key for a user (an agent,
+      person, group or organization).
+    is_a: wn16_Credential
+    name: wot_PubKey
+    source: http://xmlns.com/wot/0.1/
+    title: Public Key
+  wot_SigEvent:
+    class_uri: wot:SigEvent
+    description: An event describing the action of a public key being signed by some
+      other public key.
+    is_a: wn16_Event
+    name: wot_SigEvent
+    source: http://xmlns.com/wot/0.1/
+    title: Key Signing Event
+  wot_User:
+    class_uri: wot:User
+    description: A user (agent, person, group or organization) of a PGP/GPG public
+      key.
+    is_a: foaf_Agent
+    name: wot_User
+    source: http://xmlns.com/wot/0.1/
+    title: Key User
+comments:
+- 'last_updated_on: 2004-02-23'
+- 'title: Web Of Trust vocabulary'
+created_on: '2025-07-15T20:24:37.055115'
+default_prefix: okn
+description: Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and
+  the Web Ontology Language.
+id: okns:wot
+imports:
+- linkml:types
+- okns:ical
+last_updated_on: '2025-07-15T20:24:37.055115'
+name: wot
+prefixes:
+  foaf: http://xmlns.com/foaf/0.1/
+  ical: http://www.w3.org/2002/12/cal/ical#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  wn16: http://xmlns.com/wordnet/1.6/
+  wot: http://xmlns.com/wot/0.1/
+  xsd: http://www.w3.org/2001/XMLSchema#
+see_also:
+- http://xmlns.com/foaf/0.1/
+slots:
+  wot_assurance:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking a document to an endorsement resource containing
+      a detached ascii signature.
+    domain: foaf_Document
+    name: wot_assurance
+    range: wot_Endorsement
+    slot_uri: wot:assurance
+    source: http://xmlns.com/wot/0.1/
+    title: Assurance
+  wot_encryptedTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking an encrypted document to a recipient.
+    domain: wot_EncryptedDocument
+    name: wot_encryptedTo
+    range: wot_PubKey
+    slot_uri: wot:encryptedTo
+    source: http://xmlns.com/wot/0.1/
+    title: Encrypted to
+  wot_encrypter:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking an encrypted document to the public key that was
+      used to encrypt it.
+    domain: wot_EncryptedDocument
+    name: wot_encrypter
+    range: wot_PubKey
+    slot_uri: wot:encrypter
+    source: http://xmlns.com/wot/0.1/
+    title: Encrypted by
+  wot_fingerprint:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A public key hex fingerprint string (40 digits, white space insignificant).
+    domain: wot_PubKey
+    name: wot_fingerprint
+    range: string
+    slot_uri: wot:fingerprint
+    source: http://xmlns.com/wot/0.1/
+    title: Fingerprint
+  wot_hasKey:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property to link a PubKey from a User
+    domain: wot_User
+    inverse: wot_identity
+    name: wot_hasKey
+    range: wot_PubKey
+    slot_uri: wot:hasKey
+    source: http://xmlns.com/wot/0.1/
+    title: has Key
+  wot_hex_id:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A public key hex identifier string (8 digits).
+    domain: wot_PubKey
+    name: wot_hex_id
+    range: string
+    slot_uri: wot:hex_id
+    source: http://xmlns.com/wot/0.1/
+    title: Hex identifier
+  wot_identity:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking a public key to the user of the key.
+    domain: wot_PubKey
+    name: wot_identity
+    range: wot_User
+    slot_uri: wot:identity
+    source: http://xmlns.com/wot/0.1/
+    title: Identity
+  wot_length:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A numeric string representing the length, in bytes, of a public key.
+    domain: wot_PubKey
+    name: wot_length
+    range: integer
+    slot_uri: wot:length
+    source: http://xmlns.com/wot/0.1/
+    title: Length
+  wot_pubkeyAddress:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The location of an ascii version of a public key.
+    domain: wot_PubKey
+    name: wot_pubkeyAddress
+    range: foaf_Document
+    slot_uri: wot:pubkeyAddress
+    source: http://xmlns.com/wot/0.1/
+    title: Address
+  wot_sigdate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date of a public key signature event.
+    domain: wot_SigEvent
+    name: wot_sigdate
+    range: date
+    slot_uri: wot:sigdate
+    source: http://xmlns.com/wot/0.1/
+    title: Signature date
+  wot_signed:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking a public key to a public key signature event.
+    domain: wot_PubKey
+    name: wot_signed
+    range: wot_SigEvent
+    slot_uri: wot:signed
+    source: http://xmlns.com/wot/0.1/
+    title: Signed
+  wot_signer:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking a public key signature event to the public key
+      that was used to sign.
+    domain: wot_SigEvent
+    name: wot_signer
+    range: wot_PubKey
+    slot_uri: wot:signer
+    source: http://xmlns.com/wot/0.1/
+    title: Signer
+  wot_sigtime:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The time (of day) of a public key signature event.
+    domain: wot_SigEvent
+    name: wot_sigtime
+    range: time
+    slot_uri: wot:sigtime
+    source: http://xmlns.com/wot/0.1/
+    title: Signature time
+title: No schema name specified

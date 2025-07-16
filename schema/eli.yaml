@@ -1,0 +1,3422 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          eli:FormatType:
+            tag: eli:FormatType
+            value: 11
+          eli:InForce:
+            tag: eli:InForce
+            value: 3
+          eli:LegalValue:
+            tag: eli:LegalValue
+            value: 4
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: 28
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 11
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 2
+          skos:Concept:
+            tag: skos:Concept
+            value: 7
+          skos:ConceptScheme:
+            tag: skos:ConceptScheme
+            value: 10
+      pairs:
+        tag: pairs
+        value:
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 1
+          owl:hasValue:
+            tag: owl:hasValue
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 10
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 10
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 1
+                  uri:
+                    tag: uri
+                    value: 10
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value: 11
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 24
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value: 13
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value: 8
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          skos:broader:
+            tag: skos:broader
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+          skos:definition:
+            tag: skos:definition
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 14
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value: 7
+          skos:example:
+            tag: skos:example
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value: 3
+          skos:hasTopConcept:
+            tag: skos:hasTopConcept
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+          skos:historyNote:
+            tag: skos:historyNote
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value: 6
+          skos:inScheme:
+            tag: skos:inScheme
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 7
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 7
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 3
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 3
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 4
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 4
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 14
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 14
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 7
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 7
+          skos:narrower:
+            tag: skos:narrower
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value: 2
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:Concept:
+                    tag: skos:Concept
+                    value: 2
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value: 11
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 18
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value: 7
+          skos:scopeNote:
+            tag: skos:scopeNote
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 5
+          skos:topConceptOf:
+            tag: skos:topConceptOf
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 3
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 3
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 2
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 2
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 5
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 5
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 5
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value: 5
+      slots:
+        tag: slots
+        value:
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 1
+          owl:hasValue:
+            tag: owl:hasValue
+            value: 10
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 11
+          owl:unionOf:
+            tag: owl:unionOf
+            value: 1
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value: 24
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 2
+          rdfs:label:
+            tag: rdfs:label
+            value: 8
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value: 1
+          skos:broader:
+            tag: skos:broader
+            value: 2
+          skos:definition:
+            tag: skos:definition
+            value: 14
+          skos:example:
+            tag: skos:example
+            value: 3
+          skos:hasTopConcept:
+            tag: skos:hasTopConcept
+            value: 2
+          skos:historyNote:
+            tag: skos:historyNote
+            value: 6
+          skos:inScheme:
+            tag: skos:inScheme
+            value: 14
+          skos:narrower:
+            tag: skos:narrower
+            value: 2
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value: 18
+          skos:scopeNote:
+            tag: skos:scopeNote
+            value: 5
+          skos:topConceptOf:
+            tag: skos:topConceptOf
+            value: 5
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          eli:FormatType:
+            tag: eli:FormatType
+            value: https://www.iana.org/assignments/media-types/application/pdf
+          eli:InForce:
+            tag: eli:InForce
+            value: eli:InForce-inForce
+          eli:LegalValue:
+            tag: eli:LegalValue
+            value: eli:LegalValue-official
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: http://publications.europa.eu/resource/authority/language
+          owl:Restriction:
+            tag: owl:Restriction
+            value: N81b22c2ca4d64da4883c5ff608803469
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: N60448e266bd24ce98ed87b59b7e8b9ab
+          skos:Concept:
+            tag: skos:Concept
+            value: eli:InForce-inForce
+          skos:ConceptScheme:
+            tag: skos:ConceptScheme
+            value: http://publications.europa.eu/resource/authority/language
+      pairs:
+        tag: pairs
+        value:
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: N39a8e208f70649eb9f5e3838001f3a3e
+          owl:hasValue:
+            tag: owl:hasValue
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:ResourceTypeTable
+                      predicate:
+                        tag: predicate
+                        value: owl:hasValue
+                      subject:
+                        tag: subject
+                        value: N48efbfcc546b4732802441e702ebbc5c
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:ResourceTypeTable
+                      predicate:
+                        tag: predicate
+                        value: owl:hasValue
+                      subject:
+                        tag: subject
+                        value: N48efbfcc546b4732802441e702ebbc5c
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: eli:format
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N39a8e208f70649eb9f5e3838001f3a3e
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: skos:inScheme
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: N48efbfcc546b4732802441e702ebbc5c
+          owl:versionInfo:
+            tag: owl:versionInfo
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: created in v1.2
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=scanned
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: created in v1.0
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: created in v1.0
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: created in v1.0
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: created in v1.0
+                      predicate:
+                        tag: predicate
+                        value: owl:versionInfo
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'A set of types for a legal resource subdivision.
+
+                          ELI does not include a set of values for this table.'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: eli:SubdivisionTypeTable
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'A set of types for a legal resource subdivision.
+
+                          ELI does not include a set of values for this table.'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: eli:SubdivisionTypeTable
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Work Type Table
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: eli:WorkTypeTable
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Work Type Table
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: eli:WorkTypeTable
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: https://docs.oasis-open.org/legaldocml/akn-media/v1.0/csprd01/akn-media-v1.0-csprd01.pdf
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: https://docs.oasis-open.org/legaldocml/akn-media/v1.0/csprd01/akn-media-v1.0-csprd01.pdf
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+          skos:broader:
+            tag: skos:broader
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:broader
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+          skos:definition:
+            tag: skos:definition
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Indicates that a legal resource is currently not in
+                          force.
+                      predicate:
+                        tag: predicate
+                        value: skos:definition
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Document has no particular or special standing.
+                      predicate:
+                        tag: predicate
+                        value: skos:definition
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'A set of values for the type of a work.
+
+                          ELI does not include a set of values for this table.'
+                      predicate:
+                        tag: predicate
+                        value: skos:definition
+                      subject:
+                        tag: subject
+                        value: eli:WorkTypeTable
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Document has no particular or special standing.
+                      predicate:
+                        tag: predicate
+                        value: skos:definition
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'A set of values for the type of a work.
+
+                          ELI does not include a set of values for this table.'
+                      predicate:
+                        tag: predicate
+                        value: skos:definition
+                      subject:
+                        tag: subject
+                        value: eli:WorkTypeTable
+          skos:example:
+            tag: skos:example
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
+                      predicate:
+                        tag: predicate
+                        value: skos:example
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
+                      predicate:
+                        tag: predicate
+                        value: skos:example
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
+                      predicate:
+                        tag: predicate
+                        value: skos:example
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+          skos:hasTopConcept:
+            tag: skos:hasTopConcept
+            value:
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+              skos:ConceptScheme:
+                tag: skos:ConceptScheme
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-official
+                      predicate:
+                        tag: predicate
+                        value: skos:hasTopConcept
+                      subject:
+                        tag: subject
+                        value: eli:LegalValueTable
+          skos:historyNote:
+            tag: skos:historyNote
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'v1.1 : improved definition'
+                      predicate:
+                        tag: predicate
+                        value: skos:historyNote
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'v1.1 : improved definition'
+                      predicate:
+                        tag: predicate
+                        value: skos:historyNote
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'v1.1 : improved definition'
+                      predicate:
+                        tag: predicate
+                        value: skos:historyNote
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'v1.1 : improved definition'
+                      predicate:
+                        tag: predicate
+                        value: skos:historyNote
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+          skos:inScheme:
+            tag: skos:inScheme
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:FormatTypeTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/text/plain
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:FormatTypeTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/text/plain
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:InForceTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:InForceTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+          skos:narrower:
+            tag: skos:narrower
+            value:
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  eli:LegalValue:
+                    tag: eli:LegalValue
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+                  skos:Concept:
+                    tag: skos:Concept
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValue-definitive
+                      predicate:
+                        tag: predicate
+                        value: skos:narrower
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-authoritative
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: application/pdf;type=scanned
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=scanned
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: not in force
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unofficial
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unofficial
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unofficial
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+          skos:scopeNote:
+            tag: skos:scopeNote
+            value:
+              eli:FormatType:
+                tag: eli:FormatType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: ELI introduces this value to describe PDF files that
+                          are scanned copies of a paper version.
+                      predicate:
+                        tag: predicate
+                        value: skos:scopeNote
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=scanned
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: ELI introduces this value to describe PDF files that
+                          are scanned copies of a paper version.
+                      predicate:
+                        tag: predicate
+                        value: skos:scopeNote
+                      subject:
+                        tag: subject
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=scanned
+          skos:topConceptOf:
+            tag: skos:topConceptOf
+            value:
+              eli:InForce:
+                tag: eli:InForce
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:InForceTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:InForceTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:InForce-notInForce
+              eli:LegalValue:
+                tag: eli:LegalValue
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+              skos:Concept:
+                tag: skos:Concept
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+                  skos:ConceptScheme:
+                    tag: skos:ConceptScheme
+                    value:
+                      object:
+                        tag: object
+                        value: eli:LegalValueTable
+                      predicate:
+                        tag: predicate
+                        value: skos:topConceptOf
+                      subject:
+                        tag: subject
+                        value: eli:LegalValue-unofficial
+classes:
+  eli_AdministrativeArea:
+    class_uri: eli:AdministrativeArea
+    description: Formally defined as the set of skos:Concept either in concept scheme
+      eli:AdministrativeAreaTable or in concept scheme https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu
+      (Administrative Territorial Unit table published of the EU Publications Office).
+    is_a: skos_Concept
+    name: eli_AdministrativeArea
+    notes:
+    - 'v1.3 : Updated the link to EU vocabularies website in the definition.
+
+      Starting from v1.1, the values for administrative areas can be taken from the
+      Administrative Territorial Unit table published of the EU Publications Office.'
+    title: Administrative Area
+  eli_Agent:
+    class_uri: eli:Agent
+    description: Individual people or groups of people, like an institution with a
+      legal recognition, who have the potential to perform intentional actions for
+      which they can be held responsible.
+    is_a: cidoc-crm_E39_Actor
+    name: eli_Agent
+    notes:
+    - 'V1.4 : subClassOf E39_ACtor instead of equivalent.
+
+      V1.3 : added a definition.'
+    title: Agent
+  eli_ComplexWork:
+    class_uri: eli:ComplexWork
+    description: Works that have other works as members. The members of a Complex
+      Work may constitute alternatives to or derivatives of other members of the same
+      Complex Work. Typically the members of the complex work represent the successive
+      temporal versions of an act, while the complex work represents the act independantly
+      of one of its version.
+    is_a: eli_Work
+    name: eli_ComplexWork
+    title: Complex Work
+  eli_Expression:
+    class_uri: eli:Expression
+    description: "The intellectual realisation of a Work in the form of identifiable\
+      \ immaterial objects, such as, but not limited to, text.\u240A\u240AThe substance\
+      \ of Expression is signs.\u240A\u240AAn Expression cannot exist without a physical\
+      \ carrier but do not depend on a specific physical carrier and can exist on\
+      \ one or more carriers simultaneously."
+    is_a: frbroo_F22_Self-Contained_Expression
+    name: eli_Expression
+    title: Expression
+  eli_Format:
+    class_uri: eli:Format
+    description: "The physical embodiment of a legal expression, either on paper or\
+      \ in any electronic format.\u240AFor example, any electronic or physical format\
+      \ of the legal expression (XML, TIFF, PDF, etc.) ; e.g. PDF version of act 3\
+      \ of 2005.  (adapted from Akoma Ntoso).\u240ANote that the notion of Format\
+      \ in ELI is more precise than a FRBR Manifestation in the sense that a Format\
+      \ in ELI can carry a legal value (see the property eli:legal_value)."
+    is_a: eli_Manifestation
+    name: eli_Format
+    notes:
+    - 'v1.3 : declared as a sublcass of eli:Manifestation
+
+      v1.2 : replaced reference of RDA with FRBRoo (for more information on FRBRoo,
+      see https://www.ifla.org/node/10171) .'
+    title: Format
+  eli_FormatType:
+    class_uri: eli:FormatType
+    description: Formally defined as the set of skos:Concept in concept scheme eli:MediaTypeTable.
+    is_a: skos_Concept
+    name: eli_FormatType
+    slots:
+    - skos_inScheme
+    - rdfs_seeAlso
+    - skos_prefLabel
+    - skos_scopeNote
+    - owl_versionInfo
+    title: Format type
+  eli_InForce:
+    class_uri: eli:InForce
+    description: Formally defined as the set of skos:Concept in concept scheme eli:InForceTable
+    is_a: skos_Concept
+    name: eli_InForce
+    slots:
+    - skos_definition
+    - skos_inScheme
+    - skos_topConceptOf
+    - skos_prefLabel
+    - skos_historyNote
+    - owl_versionInfo
+    title: In force
+  eli_Language:
+    class_uri: eli:Language
+    description: Formally defined as the set of skos:Concept in concept scheme http://publications.europa.eu/resource/authority/language
+    is_a: skos_Concept
+    name: eli_Language
+    notes:
+    - 'v1.2 : fixed URI in definition'
+    title: Language
+  eli_LegalExpression:
+    class_uri: eli:LegalExpression
+    description: "The intellectual realisation of a legal resource in the form of\
+      \ a \"sequence of signs\" (typically alpha-numeric characters in a legal context).\u240A\
+      For example, any version of the legal resource whose content is specified and\
+      \ different from others for any reason: language, versions, etc.;\u240A\u240A\
+      Note that ELI ontology accommodates different point of view on what should be\
+      \ considered a new legal resource, or a new legal expression of the same resource.\
+      \ Typically, a consolidated version can be viewed, in the context of ELI, either\
+      \ as separate legal resource (linked to original version and previous consolidated\
+      \ version using corresponding ELI relations), or as a different legal expression\
+      \ of the same legal resource."
+    is_a: eli_Expression
+    name: eli_LegalExpression
+    notes:
+    - 'v1.3 : declared as a subclass of eli:Expression
+
+      v1.2 : replaced reference of RDA with FRBRoo (for more information on FRBRoo,
+      see https://www.ifla.org/node/10171) .'
+    title: Legal Expression
+  eli_LegalResource:
+    class_uri: eli:LegalResource
+    description: "A work in a legislative corpus. This applies to acts that have been\
+      \ legally enacted (whether or not they are still in force).\u240AFor example,\
+      \ the abstract concept of the legal resource; e.g. \"act 3 of 2005\" (adapted\
+      \ from Akoma Ntoso)\u240A\u240AA legal resource can represent a legal act or\
+      \ any component of a legal act, like an article.  Legal resources can be linked\
+      \ together using properties defined in the model.\u240A\u240ANote that ELI ontology\
+      \ accommodates different point of view on what should be considered a new legal\
+      \ resource, or a new legal expression of the same resource. Typically, a consolidated\
+      \ version can be viewed, in the context of ELI, either as separate legal resource\
+      \ (linked to original version and previous consolidated version using corresponding\
+      \ ELI relations), or as a different legal expression of the same legal resource."
+    is_a: eli_Work
+    name: eli_LegalResource
+    notes:
+    - 'v1.3 : declared as a subclass of eli:Work
+
+      v1.2 : replaced reference of RDA with FRBRoo (for more information on FRBRoo,
+      see https://www.ifla.org/node/10171) .'
+    title: Legal Resource
+  eli_LegalResourceSubdivision:
+    class_uri: eli:LegalResourceSubdivision
+    description: A component of a legal act, at an arbitrary level of precision, like
+      a chapter, an article, an alinea, a paragraph or an list item. A subdivision
+      can be linked with its parent and children subdivision using the properties
+      eli:has_part / eli:is_part_of.
+    is_a: eli_WorkSubdivision
+    name: eli_LegalResourceSubdivision
+    notes:
+    - "v1.4\_: added WorkSubdivision as a superclass"
+    title: Legal Resource Subdivision
+  eli_LegalValue:
+    class_uri: eli:LegalValue
+    description: Formally defined as the set of skos:Concept in concept scheme eli:LegalValueTable
+    is_a: skos_Concept
+    name: eli_LegalValue
+    slots:
+    - skos_definition
+    - skos_inScheme
+    - skos_topConceptOf
+    - skos_broader
+    - skos_example
+    - skos_prefLabel
+    - skos_historyNote
+    - owl_versionInfo
+    - skos_narrower
+    title: Legal value
+  eli_Manifestation:
+    class_uri: eli:Manifestation
+    description: "The physical embodiment of an Expression, either on paper or in\
+      \ any electronic format.\u240A\u240AThe substance of Manifestation is not only\
+      \ signs, but also the manner in which they are presented to be consumed by users,\
+      \ including the kind of media adopted."
+    is_a: frbroo_F3_Manifestation_Product_Type
+    name: eli_Manifestation
+    title: Manifestation
+  eli_Organization:
+    class_uri: eli:Organization
+    description: Institutions or groups of people that have obtained a legal recognition
+      as a group and can act collectively as agents.
+    is_a: frbroo_F11_Corporate_Body
+    name: eli_Organization
+    notes:
+    - 'v1.4 : set as subclass of F11_Corporate_Body'
+    title: Organization
+  eli_Person:
+    class_uri: eli:Person
+    description: A real person who live or has lived.
+    is_a: frbroo_F10_Person
+    name: eli_Person
+    notes:
+    - 'v1.4 : set as subclass of F10_Person'
+    title: Person
+  eli_ResourceType:
+    class_uri: eli:ResourceType
+    description: Formally defined as the set of skos:Concept in concept scheme eli:ResourceTypeTable
+    is_a: skos_Concept
+    name: eli_ResourceType
+    title: Resource type
+  eli_SubdivisionType:
+    class_uri: eli:SubdivisionType
+    description: Formally defined as the set of skos:Concept in concept scheme eli:SubdivisionTypeTable
+    is_a: skos_Concept
+    name: eli_SubdivisionType
+    title: Subdivision type
+  eli_Version:
+    class_uri: eli:Version
+    description: Formally defined as the set of skos:Concept in concept scheme eli:VersionTable
+    is_a: skos_Concept
+    name: eli_Version
+    title: Version
+  eli_Work:
+    class_uri: eli:Work
+    description: "Any distinct intellectual creation (i.e., the intellectual content),\
+      \ in the context of ELI.\u240A\u240AThe substance of Work is ideas."
+    is_a: frbroo_F1_Work
+    name: eli_Work
+    title: Work
+  eli_WorkSubdivision:
+    class_uri: eli:WorkSubdivision
+    description: A component of a work, at an arbitrary level of precision. A subdivision
+      can be linked with its parent and children subdivision using eli:has_part /
+      eli:is_part_of.
+    is_a: eli_Work
+    name: eli_WorkSubdivision
+    title: Work Subdivision
+  eli_WorkType:
+    class_uri: eli:WorkType
+    comments:
+    - 'title: Work Type'
+    is_a: skos_Concept
+    name: eli_WorkType
+    title: Formally defined as the set of skos:Concept in concept scheme eli:WorkTypeTable
+  frbroo_F10_Person:
+    class_uri: frbroo:F10_Person
+    name: frbroo_F10_Person
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  frbroo_F11_Corporate_Body:
+    class_uri: frbroo:F11_Corporate_Body
+    name: frbroo_F11_Corporate_Body
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  frbroo_F1_Work:
+    class_uri: frbroo:F1_Work
+    name: frbroo_F1_Work
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  frbroo_F22_Self-Contained_Expression:
+    class_uri: frbroo:F22_Self-Contained_Expression
+    name: frbroo_F22_Self-Contained_Expression
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  frbroo_F3_Manifestation_Product_Type:
+    class_uri: frbroo:F3_Manifestation_Product_Type
+    name: frbroo_F3_Manifestation_Product_Type
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+comments:
+- 'title: ELI Metadata Ontology'
+created_on: '2025-07-15T20:27:24.094851'
+default_prefix: okn
+description: "An ontology to describe legislation, based on the FRBR model, that encodes\
+  \ the ELI metadata fields.\u240ASee the classes \"LegalResource\", \"LegalExpression\"\
+  \ and \"Format\" as entry points.\u240AInterested readers can find more information\
+  \ about ELI on the ELI register at http://eurlex.europa.eu/eli and on the Office\
+  \ of Publications vocabularies website at https://op.europa.eu/en/web/eu-vocabularies/eli."
+id: okns:eli
+imports:
+- okns:frbroo
+- okns:owl-rdf-rdfs
+- okns:skos
+- linkml:types
+- https://purl.org/okn/schema/extended_types
+last_updated_on: '2025-07-15T20:27:24.094851'
+name: eli
+notes:
+- "- The ELI ontology reuses the property names from the Metalex ontology (http://www.metalex.eu/)\
+  \ to express the FRBR skeleton hierarchy : is_realized_by/realizes, is_embodied_by/embodies,\
+  \ is_exemplified_by. This wording is also the one used in the original FRBR specifications.\
+  \ However, the decision has been made _not_ to align to the Metalex class names\
+  \ (BibliographicWork, BibliographicExpression, BibliographicManifestation), because\
+  \ ELI is specifically about publishing legal metadata on the web, and not structuring\
+  \ legal content in any document.\u240A\u240A- first_date_entry_in_force and date_no_longer_in_force\
+  \ could be aligned with dcterms:date\u240A\u240A- a class could be introduced for\
+  \ URI schemas to implement the URI schema registry\u240A\u240A- ELI does not use\
+  \ rdfs:subPropertyOf to relate its properties with DublinCore Terms, but instead\
+  \ a custom annotation properties \"eli:isSpecificPropertyOf\". ELI 1.1 chose to\
+  \ have 2 separate properties in certain situations to accomodate with cases where\
+  \ the value can be either a String or a reference to an identified object; this\
+  \ is the case for eli:publisher / eli:publisher_agent, or eli:rightsholder and eli:rightsholder_agent.\
+  \ This entails that this pair of properties cannot be both aligned with their respective\
+  \ DCTerms equivalent (dcterms:publisher and dcterms:rightsholder), since relating\
+  \ a property using rdfs:subPropertyOf necessary implies to declare the DCterms property\
+  \ as either a datatype property _or_ an objectProperty, but not both."
+- "## 1.5\u240A\u240A### Semantic changes\u240A\u240A- Introduced eli:refers_to /\
+  \ eli:is_referred_to_by on Work or Expression.\u240A- Made eli:cites / eli:cited_by\
+  \ subproperties of eli:refers_to / eli:is_referred_to_by\u240A- Made eli:cited_by_case_law\
+  \ a subproperty of eli:is_referred_to_by\u240A- broaden eli:number on eli:Work or\
+  \ eli:Expression\u240A\u240A### Non-semantic changes\u240A\u240A_none_\u240A\u240A\
+  ## 1.4\u240A\u240A### Semantic changes\u240A\u240A- Introduced generic eli:ComplexWork\
+  \ class\u240A- Introduced generic eli:WorkSubdivision class\u240A- introducted generic\
+  \ eli:work_type property on eli:Work (and made eli:type_document a subproperty of\
+  \ this)\u240A- introduced eli:is_derivative_of / eli:has_derivative on Work or Expression\u240A\
+  - introduced eli:has_annex / eli:is_annex_of on Work or Expression\u240A- broaden\
+  \ eli:date_document on eli:Work\u240A- broaden eli:is_about on eli:Work\u240A- broaden\
+  \ eli:changes / changed_by , eli:basis_for / based_on, eli:corrects / corrected_by,\
+  \ eli:amends / amended_by to eli:Work or eli:Expression\u240A\u240A### Non-semantic\
+  \ changes\u240A\u240A- adjusted the subclassOf relationship of eli:Organization,\
+  \ eli:Agent, eli:Person, eli:Manifestation to proper FRBRoo classes\u240A\u240A\u240A\
+  ##\_1.3\u240A\u240A###\_Semantic changes\u240A\u240A  - Introduced High-Level FRBR\
+  \ classes Work, Expression and Manifestation, to be shared in ELI-DL;\u240A  - Broaden\
+  \ the domain and range of structural FRBR properties to Work, Expression or Manifestation,\
+  \ so that they can be shared in ELI-DL :\u240A    - eli:is_member_of/eli:has_member\u240A\
+  \    - eli:is_part_of/eli:has_part\u240A    - eli:is_realized_in/eli:realizes\u240A\
+  \    - eli:is_embodied_by/eli:embodies\u240A    - eli:exemplified_by\u240A  - broaden\
+  \ the domain of eli:title, eli:title_short, eli:title_alternative, eli:language\
+  \ to:eli:Expression so that they can be shared in ELI-DL;\u240A  - introduced eli:type_subdivision\
+  \ to express the type of a LegalResourceSubdivision\u240A  - introduced eli:countersigned_by\
+  \ to capture countersignatures of legislation\u240A  - introduced eli:ensures_implementation_of\
+  \ / eli:implementation_ensured_by to capture the fact that some legislation are\
+  \ modified to remain \"compatible\" with other EU-level or national-level regulations;\
+  \ this implies a legal meaning;\u240A\u240A### Non-semantic changes\u240A\u240A\
+  \  - fixed the definition of the modified properties to match their new domain/range\u240A\
+  \  - updated the links to MDR to the EU vocabularies website\u240A  - made eli:Manifestation\
+  \ a subclass of frbroo:F3_Manifestation to follow new LRM conceptual model;\u240A\
+  \u240A\u240A## 1.2\u240A\u240A### Semantic changes\u240A\u240A  - Modification of\
+  \ eli:format and introduction of eli:media_type :\u240A    - Modified the semantic\
+  \ of eli:format so that it now corresponds to a business / application format, and\
+  \ not a technical format (the technical format will be captured in eli:media_type).\
+  \ This is intended to distinguish e.g. authentic PDF from scanned PDF from generated-on-the-fly\
+  \ PDF; or e.g. XML in a standard (AkomaNtoso) format vs. XML in a proprietary format.\u240A\
+  \      - It is now possible to use the custom URIs \"application/pdf;type=signed\"\
+  , \"application/pdf;type=generated\", \"application/pdf;type=archival\", \"application/pdf;type=scanned\"\
+  \ as values of eli:format to indicate respectively electronically signed PDFs, generated-on-the-fly\
+  \ PDFs, PDF for archival, or scanned PDFs;\u240A      - It is now possible to use\
+  \ the custom URI \"eli:print_format\" as a value of eli:format to indicate a printed/paper\
+  \ version of the legislation;\u240A      - It is now possible to use the URI \"\
+  application/akn+xml\" as a value of eli:format to indicate an AkomaNtoso format;\u240A\
+  \    - Added a new property \"eli:media_type\" to capture the technical file format\
+  \ of the file; this is intended to serve as a basis for content negociation; IANA\
+  \ identifiers MUST be used in eli:media_type;\u240A\u240A    - Existing ELI implementations\
+  \ using eli:format with IANA URIs remain valid; the eli:format property remains\
+  \ mandatory. ELI providers are however encouraged to add the \"eli:media_type\"\
+  \ property to their ELI metadata; in some situations the value of both properties\
+  \ might be the same (\"eli:format = application/xml\" and \"eli:media_type = application/xml\"\
+  ). It is expected that in the future the \"eli:media_type\" property will become\
+  \ mandatory.\u240A\u240A  - Added a couple of optional properties \"has_translation\"\
+  \ / \"is_translation_of\" to indicate that a LegalExpression is translated from\
+  \ another one;\u240A  - Added the property \"cited_by_case_law\" and the corresponding\
+  \ literal property \"cited_by_case_law_reference\" :\u240A    - Cited_by_case_law\
+  \ : Indicates that this LegalResource or LegalExpression is being cited in a case\
+  \ law, identified by a suitable URI. If the case law cannot be identified by a suitable\
+  \ URI, the property \"eli:cited_by_case_law_reference\" can be used with a textual\
+  \ reference to the case law. The actual citation link is expressed from the case\
+  \ law to the legislation, but legal portals may use the link from a legislation\
+  \ to a case law to e.g. refer to representative case laws about a legislation.\u240A\
+  \    - Cited_by_case_law_reference : Indicates that this LegalResource or LegalExpression\
+  \ is being cited in a case law that cannot be identified by a suitable URI and that\
+  \ is indicated by textual reference. An ECLI (European Case Law Identifier) can\
+  \ be used here. When the case law can be identified by a suitable URI, the property\
+  \ eli:cited_by_case_law should be used instead.\u240A\u240A### Non-semantic changes\u240A\
+  \u240A  - Referred to FRBRoo URIs instead of RDA URIs to extend the LegalResource,\
+  \ LegalExpression and Format classes, along with the FRBR backbone properties. This\
+  \ properly connects ELI with FRBRoo;\u240A  - Added equivalence declarations between\
+  \ ELI and the schema.org legal extension; this is provided as a separate Excel and\
+  \ Turtle file;\u240A  - Removed xsd:string range declaration on eli:description,\
+  \ title, title_short, title_alternative, rightsholder, rights, publisher, published_in\
+  \ so that can be declared with either a datatype or a language tag;\u240A  - Fixed\
+  \ documentation of some properties;\u240A  - Added link to Eur-Lex website in ontology\
+  \ documentation;\u240A\u240A## 1.1\u240A\u240A  - added the following properties\
+  \ :\u240A    - is_member_of / has_member\u240A    - number\u240A    - jurisdiction\u240A\
+  \    - date_applicability\u240A    - applies / applied_by\u240A    - commences /\
+  \ commenced_by\u240A    - repeals / repealed_by\u240A    - corrects / corrected_by\u240A\
+  \    - amends / amended_by\u240A    - is_another_publication_of / has_another_publication\u240A\
+  \u240A  - additionnal properties were also added to accomodate with situations where\
+  \ a property value can be either a literal or a URI :\u240A    - responsibility_of_agent\
+  \ vs. responsibility_of\u240A    - published_in_format vs. published_in\u240A  \
+  \  - publisher_agent vs. publisher\u240A    - rightsholder_agent vs. rightsholder\u240A\
+  \u240A  - the relations with DublinCore properties is now declared with a custom\
+  \ annotation property \"eli:isSpecificPropertyOf\" instead of rdfs:subPropertyOf\
+  \ to be able to relate both eli:publisher/eli:publisher_agent to dcterms:publisher,\
+  \ and eli:rightsholder/eli:rightsholder_agent to dcterms:rightsholder.\u240A\u240A\
+  \  - added the class LegalResourceSubdivision\u240A\u240A  - the propery implements\
+  \ / implemented_by was deprecated in favor of applies / applied_by\u240A\u240A \
+  \ - numerous definitions were improved and clarified\u240A\u240A  - all ontology\
+  \ items are documented with :\u240A    - their version of creation;\u240A    - their\
+  \ version of latest modification;\u240A    - an history note documenting the changes\
+  \ on the item;\u240A\u240AV1.1 is backward compatible with v1.0, with 1 following\
+  \ exception :\u240A  - starting from v1.1, is_member_of / has_member should be used\
+  \ instead of is_part_of / has_part for conceptual inclusions;\u240A\u240AAdditionnally,\
+  \ ELI implementers are strongly encouraged to use applies / applied_by instead of\
+  \ implements / implemented_by; note however that implements/implemented_by currently\
+  \ remain in the ontology so publishers can take the time to transition smoothly.\u240A\
+  \u240A## 1.0\u240A\u240A  - added a set of values for the InForce table\u240A  -\
+  \ added definitions to tables\u240A  - minor fixes in definitions\u240A  - added\
+  \ rdfs:seeAlso from properties to corresponding tables\u240A  - cleaned the \"whyThisIsNeeded\"\
+  \ annotation\u240A\u240A## 0.6.1\u240A\u240A  - fixed typos in definitions\u240A\
+  \u240A## 0.6\u240A\u240A  - imported skos rather than redeclaring skos classes and\
+  \ properties\u240A  - changed domain of in_force, first_date_entry_into_force, date_no_longer_in_force\
+  \ to [LegalResource or LegalExpression] instead of LegalResource\u240A  - changed\
+  \ domain of language, title, title_short, title_alternative to LegalExpression instead\
+  \ of [LegalResource or LegalExpression]\u240A  - reworked the tables : don't use\
+  \ country and resource type tables from MDR, but declare local tables.\u240A  -\
+  \ integrated new definitions for all classes and properties\u240A\u240A## 0.5\u240A\
+  \u240A  - Renamed \"Interpretation\" into \"LegalExpression\" (and modified comments\
+  \ accordingly)\u240A  - Renamed the structural FRBR relations in accordance with\
+  \ Metalex ontology :\u240A    - is_legal_resource_of becomes \"is_realized_by\"\u240A\
+  \    - has_legalresource becomes \"realizes\"\u240A    - is_interpretation_of becomes\
+  \ \"is_embodied_by\"\u240A    - has_interpretation becomes \"embodies\"\u240A  \
+  \  - file becomes \"is_exemplified_by\"\u240A  - file has been made a subproperty\
+  \ of \"has exemplar of manifestation\" instead of \"dc:hasPart\"\u240A  - relevant_for\
+  \ is no more considered mandatory. Deleted comment that stated \"we are seeking\
+  \ a way to express that relevant_for must have at least one value for LegalResource\
+  \ or one of its LegalInterpretation\".\u240A\u240A## 0.4.1\u240A\u240A  - Added\
+  \ \"publishes\" property\u240A  - Enriched the note on \"transposes\" and \"transposed\
+  \ by\" to indicate they must point to / be expressed on LegalResource"
+prefixes:
+  cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/
+  dct: http://purl.org/dc/terms/
+  eli: http://data.europa.eu/eli/ontology#
+  frbroo: http://iflastandards.info/ns/fr/frbr/frbroo/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  skos: http://www.w3.org/2004/02/skos/core#
+  vann: http://purl.org/vocab/vann/
+  xsd: http://www.w3.org/2001/XMLSchema#
+see_also:
+- http://data.europa.eu/eli/ontology#LegalResource
+- http://data.europa.eu/eli/ontology#Work
+- http://eurlex.europa.eu/eli
+- https://op.europa.eu/en/web/eu-vocabularies/eli
+slots:
+  eli_amended_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \"amends\". Indicates a work that introduced legal changes\
+      \ in this resource. For modifications that don\u2019t have a legal impact, use\
+      \ eli:corrected_by."
+    inverse: eli_amends
+    name: eli_amended_by
+    notes:
+    - "v1.4\_: broaden to Work or Expression"
+    range: Any
+    slot_uri: eli:amended_by
+    subproperty_of: eli_changed_by
+    title: amended by
+  eli_amends:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this work introduces legal changes in another resource.\
+      \ For modifications that don\u2019t have a legal impact, use eli:corrects."
+    name: eli_amends
+    notes:
+    - "v1.4\_: broaden to Work or Expression"
+    range: Any
+    slot_uri: eli:amends
+    subproperty_of: eli_changes
+    title: amends
+  eli_applied_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \"applies\".\u240A\u240ANote that this property is expressed\
+      \ on a legal resource, not on one of its language-specific legal expression."
+    domain: eli_LegalResource
+    exact_mappings:
+    - http://data.europa.eu/eli/ontology#implemented_by
+    inverse: eli_applies
+    name: eli_applied_by
+    range: Any
+    see_also:
+    - http://data.europa.eu/eli/ontology#transposed_by
+    slot_uri: eli:applied_by
+    title: applied by
+  eli_applies:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this legislation (or part of a legislation) somehow\
+      \ conforms with another legislation. This is an informative link, and it has\
+      \ no legal value. For legally-binding links of transposition, use the property\
+      \ transposes. This can be used for example : \u240A  - when a pre-existing law\
+      \ already conforms to a recent european directive (in that case it does not\
+      \ \"transposes\" it strictly speaking);\u240A  - when non-EU member states make\
+      \ sure their legislation is conformant with EU law without strictly speaking\
+      \ transposing it;\u240A  - when a legislation from a local authority conforms\
+      \ with a national legislation;\u240A\u240ANote that this should point to a LegalResource,\
+      \ not to a language-specific expression."
+    exact_mappings:
+    - http://data.europa.eu/eli/ontology#implements
+    name: eli_applies
+    range: eli_LegalResource
+    see_also:
+    - http://data.europa.eu/eli/ontology#transposes
+    slot_uri: eli:applies
+    title: applies
+  eli_based_on:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "basis_for". Indicates that thiswork is empowered by another
+      one, typically a constitution, a treaty or an enabling act.
+    domain: eli_Work
+    inverse: eli_basis_for
+    name: eli_based_on
+    notes:
+    - "v1.4\_: broaden to Work or Expression\nv1.1 : improved definition"
+    range: Any
+    slot_uri: eli:based_on
+    title: based on
+  eli_basis_for:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this work or expression empowers another . Typically
+      primary legislation is the basis for secondary legislation.
+    name: eli_basis_for
+    notes:
+    - "v1.4\_: broaden to Work or Expression\nv1.1 : improved definition"
+    range: eli_Work
+    slot_uri: eli:basis_for
+    title: basis for
+  eli_changed_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \xAB\_changes\_\xBB. Indicates that this work or expression\
+      \ is being legally changed by another. This encompasses the notions of amendment,\
+      \ replacement, repeal, or other types of change."
+    inverse: eli_changes
+    name: eli_changed_by
+    notes:
+    - "v1.4\_: broaden to Work or Expression\nv1.1 : improved definition"
+    range: Any
+    slot_uri: eli:changed_by
+    title: changed by
+  eli_changes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this work or expression legally changes another. This
+      encompasses the notions of amendment, replacement, repeal, or other types of
+      change. This may be a direct change (textual or non-textual amendment) or a
+      consequential or indirect change. Note, the property is to be used to express
+      the existence of a change relationship between two acts rather than the existence
+      of a consolidated version of the text that shows the result of the change. For
+      consolidation relationships, use the "consolidates" and "consolidated_by" properties.
+    name: eli_changes
+    notes:
+    - "v1.4\_: broaden to Work or Expression\nv1.1 : improved definition"
+    range: Any
+    slot_uri: eli:changes
+    title: changes
+  eli_cited_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \"cites\".\u240ANote that the intended meaning of this\
+      \ link is to indicate that \"something is cited by a legislation\" and not that\
+      \ \"this legislation is cited by something\"."
+    domain: owl_Thing
+    inverse: eli_cites
+    name: eli_cited_by
+    notes:
+    - 'v1.5 : was made a subproperty of eli:is_referred_to_by
+
+      v1.2 : improved definition'
+    range: Any
+    slot_uri: eli:cited_by
+    subproperty_of: eli_is_referred_to_by
+    title: cited by
+  eli_cited_by_case_law:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this LegalResource or LegalExpression is being cited\
+      \ in a case law, identified by a suitable URI. If the case law cannot be identified\
+      \ by a suitable URI, the property \"eli:cited_by_case_law_reference\" can be\
+      \ used with a textual reference to the case law.\u240A\u240AThe actual citation\
+      \ link is expressed from the case law to the legislation, but legal portals\
+      \ may use the link from a legislation to a case law to e.g. refer to representative\
+      \ case laws about a legislation."
+    name: eli_cited_by_case_law
+    notes:
+    - 'v1.5 : was made a subproperty of eli:is_referred_to_by'
+    range: owl_Thing
+    see_also:
+    - http://data.europa.eu/eli/ontology#cited_by_case_law_reference
+    slot_uri: eli:cited_by_case_law
+    subproperty_of: eli_is_referred_to_by
+    title: cited by case law
+  eli_cited_by_case_law_reference:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this LegalResource or LegalExpression is being cited\
+      \ in a case law that cannot be identified by a suitable URI and that is indicated\
+      \ by textual reference. An ECLI (European Case Law Identifier) can be used here.\u240A\
+      When the case law can be identified by a suitable URI, the property eli:cited_by_case_law\
+      \ should be used instead."
+    name: eli_cited_by_case_law_reference
+    range: Any
+    see_also:
+    - http://data.europa.eu/eli/ontology#cited_by_case_law
+    slot_uri: eli:cited_by_case_law_reference
+    title: cited by case law reference
+  eli_cites:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Citation in the text of the legislation. This may be at the legal
+      resource or legal expression level, as required by the implementation context.
+      This includes verbatim citation and citations in referrals.
+    name: eli_cites
+    notes:
+    - 'v1.5 : was made a subproperty of eli:refers_to'
+    range: owl_Thing
+    slot_uri: eli:cites
+    subproperty_of: eli_refers_to
+    title: cites
+  eli_commenced_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \"commences\". Indicates that this legal resource was\
+      \ set in force by another legal resource.\u240ASituations where a resource enters\
+      \ into force because of more than one resource are explicitely allowed."
+    inverse: eli_commences
+    name: eli_commenced_by
+    range: Any
+    slot_uri: eli:commenced_by
+    subproperty_of: eli_changed_by
+    title: commenced by
+  eli_commences:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this legal resource sets another legal resource into\
+      \ force.\u240ANote the the date of entry into force of the other resource should\
+      \ be modified accordingly.\u240ANote also that it is not possible to indicate\
+      \ when the entry into force should happen."
+    name: eli_commences
+    range: Any
+    slot_uri: eli:commences
+    subproperty_of: eli_changes
+    title: commences
+  eli_consolidated_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "consolidates". Indicates that this legal resource or
+      expression is taken into account in a consolidated text (which is usually the
+      product of an editorial process that revises the legislation).
+    inverse: eli_consolidates
+    name: eli_consolidated_by
+    notes:
+    - 'v1.1 : improved definition'
+    range: Any
+    slot_uri: eli:consolidated_by
+    title: consolidated by
+  eli_consolidates:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this consolidated legal resource or expression (which
+      is usually the product of an editorial process that revises the legislation)
+      takes into account another one. This property should be used multiple times
+      to refer to both the original version or the previous consolidated version,
+      and to the legislations making the change.
+    name: eli_consolidates
+    notes:
+    - 'v1.1 : improved definition'
+    range: Any
+    slot_uri: eli:consolidates
+    title: consolidates
+  eli_corrected_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "corrects". Indicates a resource that introduces textual
+      modifications (like correction of spelling mistakes) with no legal change in
+      this work, expression or manifestation; typically corrigenda in EU legislation.
+      For modifications that have a legal impact, use eli:amended_by.
+    inverse: eli_corrects
+    name: eli_corrected_by
+    notes:
+    - "v1.4\_: broaden to Work or Expression"
+    range: Any
+    slot_uri: eli:corrected_by
+    subproperty_of: owl_topObjectProperty
+    title: corrected by
+  eli_corrects:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this work introduces textual modifications (like correction
+      of spelling mistakes) with no legal change in another resource, expression or
+      manifestation; typically corrigenda in EU legislation. For modifications that
+      have a legal impact, use eli:amends.
+    name: eli_corrects
+    notes:
+    - "v1.4\_: broaden to Work or Expression"
+    range: Any
+    slot_uri: eli:corrects
+    subproperty_of: owl_topObjectProperty
+    title: corrects
+  eli_countersigned_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A person or organization that countersigned the legislation. Depending
+      on the legal context, a countersignature can indicate that the signed authority
+      undertakes to assume responsibility for texts emanating from a person who is
+      inviolable and irresponsible, (for example a King, Grand Duc or President),
+      or that the authority is in charge of the implementation of the text.
+    domain: eli_LegalResource
+    name: eli_countersigned_by
+    range: eli_Agent
+    slot_uri: eli:countersigned_by
+    title: countersigned by
+  eli_date_applicability:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The date at which the legislation becomes applicable. This is distinct\
+      \ from the date of entry into force : a text may come in force today, and state\
+      \ it will become applicable in 3 months.\u240A\u240AThe group notes that applicability\
+      \ dates can lead to complex situations, e.g. a text with different applicability\
+      \ dates for different jurisdictions; specific extensions to the model should\
+      \ be used for such situations."
+    name: eli_date_applicability
+    range: date
+    slot_uri: eli:date_applicability
+    title: date of applicability
+  eli_date_document:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Date of adoption or signature (of the form yyyy-mm-dd)
+    domain: eli_Work
+    name: eli_date_document
+    notes:
+    - 'v1.4 : broaden domain to Work'
+    range: date
+    slot_uri: eli:date_document
+    title: date of the document
+  eli_date_no_longer_in_force:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The last date any part of the legislation is in force, if the date
+      is known (can be seen as the end date of a dc:valid range for this resource).
+    name: eli_date_no_longer_in_force
+    notes:
+    - 'v1.1 : improved definition so it symmetric to date_entry_into_force.'
+    - 'v1.2 : improved definition'
+    range: date
+    see_also:
+    - http://data.europa.eu/eli/ontology#first_date_entry_in_force
+    slot_uri: eli:date_no_longer_in_force
+    subproperty_of: owl_topDataProperty
+    title: date no longer in force
+  eli_date_publication:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Date of publication of the official version of the legislation, in
+      hard copy or online, depending on what the official publication is, and when
+      it was published. Publication dates at the level of legal expressions can be
+      separately asserted, using standard Dublin Core properties.
+    name: eli_date_publication
+    notes:
+    - In v1.1, the domain was broaden to add LegalExpression.
+    range: date
+    slot_uri: eli:date_publication
+    title: date of publication
+  eli_description:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An account of the resource (definition from Dubin Core), e.g a summary.
+    name: eli_description
+    range: rdfs_Literal
+    slot_uri: eli:description
+    title: description
+  eli_embodies:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a manifestation to the expression that it embodies. Inverse
+      of "is_embodied_by".
+    domain: eli_Manifestation
+    inverse: eli_is_embodied_by
+    name: eli_embodies
+    notes:
+    - 'v1.2 : replaced reference of RDA with FRBRoo.'
+    - 'v1.3 : broaden the domain to Manifestation instead of Format and the range
+      to Expression instead of LegalExpression.
+
+      In v1.1, this was declared functional (the constraint was missing in 1.0)'
+    range: eli_Expression
+    slot_uri: eli:embodies
+    subproperty_of: frbroo_R4i_comprises_carriers_of
+    title: embodies
+  eli_ensures_implementation_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this LegalResource ensures the implementation of\
+      \ another LegalResource. This implies a legal meaning (contrary to eli:applies).\u240A\
+      \u240AThis can cover links from national legislation to EU legislation, or links\
+      \ from regional to national legislation. It can also cover links from EU implementing\
+      \ acts to EU legislative acts. In the case of implementation of EU legislation\
+      \ at national level, this covers links to EU regulations, decisions, etc. However\
+      \ the transpositions of EU Directives must be captured with eli:transposes.\u240A\
+      \u240ALinks between national primary and secondary legislation must be captured\
+      \ by eli:based_on / eli:basis_for."
+    inverse: eli_implementation_ensured_by
+    name: eli_ensures_implementation_of
+    range: eli_LegalResource
+    see_also:
+    - http://data.europa.eu/eli/ontology#transposes
+    slot_uri: eli:ensures_implementation_of
+    subproperty_of: eli_applies
+    title: ensures implementation of
+  eli_first_date_entry_in_force:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The first date any part of the legal resource or legal expression
+      came into force (can be seen as the start date of a dc:valid range for this
+      resource)
+    name: eli_first_date_entry_in_force
+    range: date
+    see_also:
+    - http://data.europa.eu/eli/ontology#date_no_longer_in_force
+    slot_uri: eli:first_date_entry_in_force
+    subproperty_of: owl_topDataProperty
+    title: first date of entry into force
+  eli_format:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The format of the manifestation, expressed as a custom URI.\u240A\
+      This field is intended to capture the format of the resource from an application\
+      \ or user perspective, as opposed to the \"media_type\" property that expresses\
+      \ its format from a technical point of view. This property allows to describe\
+      \ different XML schemas (Akoma N'toso vs. proprietary), describe different types\
+      \ of PDFs (scanned PDF, generated-on-the-fly PDF, signed PDF, archival PDF)\
+      \ or describe the paper (printed) version of the legislation.\u240AELI includes\
+      \ a set of possible values for the most common use-cases and possible URIs values\
+      \ CAN also be taken from http://www.iana.org/assignments/media-types , or can\
+      \ de defined by the Member States."
+    domain: eli_Manifestation
+    name: eli_format
+    notes:
+    - 'v1.3 : broaden the domain to Manifestation instead of Format.
+
+      v1.2 : this field should now not be used as basis of content negociation. Modified
+      the description to introduce eli:media_type and declared a local ConceptScheme
+      FormatType with values.'
+    range: eli_FormatType
+    see_also:
+    - http://data.europa.eu/eli/ontology#media_type
+    slot_uri: eli:format
+    title: format
+  eli_has_annex:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates an annex to this this work or expression .
+    inverse: eli_is_annex_of
+    name: eli_has_annex
+    notes:
+    - created in v1.4
+    range: Any
+    slot_uri: eli:has_annex
+    title: has annex
+  eli_has_another_publication:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "is_another_publication_of".
+    domain: eli_LegalResource
+    inverse: eli_is_another_publication_of
+    name: eli_has_another_publication
+    range: eli_LegalResource
+    slot_uri: eli:has_another_publication
+    title: has another publication
+  eli_has_derivative:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of is_derivative_of
+    inverse: eli_is_derivative_of
+    name: eli_has_derivative
+    range: Any
+    slot_uri: eli:has_derivative
+    title: has derivative
+  eli_has_member:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this work conceptually includes another one. For the
+      notion of physical inclusion, use eli:has_part.
+    domain: eli_Work
+    inverse: eli_is_member_of
+    name: eli_has_member
+    notes:
+    - 'v1.3 : broaden the domain and range to Work instead of LegalResource
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: eli_Work
+    slot_uri: eli:has_member
+    subproperty_of: frbroo_R10_has_member
+    title: has member
+  eli_has_part:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: inverse of "is_part_of"
+    domain: eli_Work
+    inverse: eli_is_part_of
+    name: eli_has_part
+    notes:
+    - 'v1.3 : broaden the domain and range to Work instead of LegalResource'
+    range: eli_Work
+    slot_uri: eli:has_part
+    title: has part
+  eli_has_translation:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "is_translation_of". Indicates that this expression has
+      been translated into another derived expression. See the definition of "is_translation_of".
+    domain: eli_LegalExpression
+    inverse: eli_is_translation_of
+    name: eli_has_translation
+    range: eli_LegalExpression
+    slot_uri: eli:has_translation
+    title: has translation
+  eli_id_local:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The unique identifier used in a local reference system to maintain
+      backwards compatibility. For examples the CELEX at EU level, or the NOR in France.
+    name: eli_id_local
+    range: Any
+    slot_uri: eli:id_local
+    title: local id
+  eli_implementation_ensured_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that the implementation of this LegalResource is ensured
+      by another LegalResource. This implies a legal meaning (contrary to eli:applies).
+      See the definition of eli:ensures_implementation_of.
+    domain: eli_LegalResource
+    name: eli_implementation_ensured_by
+    range: Any
+    slot_uri: eli:implementation_ensured_by
+    subproperty_of: eli_applied_by
+    title: implementation ensured by
+  eli_implemented_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This property is deprecated. Use "applied_by" instead.
+    name: eli_implemented_by
+    notes:
+    - 'v1.1 : this property was deprecated in favor of the more generic term "applied_by"
+      to avoid confusion'
+    range: Any
+    slot_uri: eli:implemented_by
+    title: implemented by
+  eli_implements:
+    comments:
+    - No occurrences of this slot in the graph.
+    deprecated: 'true'
+    description: This property is deprecated. Use "applies" instead.
+    name: eli_implements
+    notes:
+    - 'v1.1 : this property was deprecated in favor of the more generic term "applies"
+      to avoid confusion.'
+    range: Any
+    slot_uri: eli:implements
+    title: implements
+  eli_in_force:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "A value indicating the legal force of a legal resource or a legal\
+      \ expression. A set of values is defined by ELI in the corresponding concept\
+      \ scheme. These values are :\u240A  - in force\u240A  - partially in force\u240A\
+      \  - not in force"
+    name: eli_in_force
+    range: eli_InForce
+    see_also:
+    - http://data.europa.eu/eli/ontology#InForce-inForce
+    - http://data.europa.eu/eli/ontology#InForce-notInForce
+    - http://data.europa.eu/eli/ontology#InForce-partiallyInForce
+    - http://data.europa.eu/eli/ontology#InForceTable
+    slot_uri: eli:in_force
+    title: in force
+  eli_is_about:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A subject for this work. The use of Eurovoc (http://eurovoc.europa.eu)
+      is encouraged to select values for this property. Member states are encouraged
+      to align local values to Eurovoc.
+    domain: eli_Work
+    name: eli_is_about
+    notes:
+    - 'v1.4 : broaden domain to Work'
+    range: skos_Concept
+    slot_uri: eli:is_about
+    title: is about
+  eli_is_annex_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates this work or expression is an annex of another one.
+    name: eli_is_annex_of
+    notes:
+    - created in v1.4
+    range: Any
+    slot_uri: eli:is_annex_of
+    title: is annex of
+  eli_is_another_publication_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this resource is a new publication, in a different\
+      \ official journal, of another resource already published elsewhere, and cannot\
+      \ be considered to be the same resource (owl:sameAs cannot be used to avoid\
+      \ potential duplication of certain metadata, like the date of publication, or\
+      \ the publisher).\u240A\u240ANote that this is different from the exceptionnal\
+      \ cases of \"republication\", where the same resource is actually republished\
+      \ in the same official journal a few days after its initial publication, in\
+      \ case of errors."
+    domain: eli_LegalResource
+    name: eli_is_another_publication_of
+    range: eli_LegalResource
+    slot_uri: eli:is_another_publication_of
+    title: is another publication of
+  eli_is_derivative_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A Work or Expression from which this one derives
+    name: eli_is_derivative_of
+    range: Any
+    slot_uri: eli:is_derivative_of
+    title: is derivative of
+  eli_is_embodied_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an expression to a manifestation of that expression. Inverse
+      of "embodies".
+    domain: eli_Expression
+    name: eli_is_embodied_by
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression and the
+      range to Manifestation instead of Format.
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: eli_Manifestation
+    slot_uri: eli:is_embodied_by
+    subproperty_of: frbroo_R4_carriers_provided_by
+    title: is embodied by
+  eli_is_exemplified_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Link to a concrete file URL.\u240ARelates a manifestation to a single\
+      \ exemplar or instance of that manifestation."
+    domain: eli_Manifestation
+    name: eli_is_exemplified_by
+    notes:
+    - 'v1.3 : broaden the domain to Manifestation instead of Format.
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: Any
+    slot_uri: eli:is_exemplified_by
+    subproperty_of: frbroo_R7i_has_example
+    title: is exemplified by
+  eli_is_member_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this work is conceptually included in another one.\
+      \ In the case of a legislation, its successive temporal versions are conceptually\
+      \ members of a single \xAB\_abstract\_\xBB resource. For the notion of physical\
+      \ inclusion, use eli:is_part_of."
+    domain: eli_Work
+    name: eli_is_member_of
+    notes:
+    - 'v1.3 : broaden the domain and range to Work instead of LegalResource
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: eli_Work
+    slot_uri: eli:is_member_of
+    subproperty_of: frbroo_R10i_is_member_of
+    title: is member of
+  eli_is_part_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a work in which this one is physically included. Covers
+      the case of text included in an Official Journal, or an article included in
+      a text. For the notion of conceptual/temporal inclusion, use eli:is_member_of.
+    domain: eli_Work
+    name: eli_is_part_of
+    notes:
+    - 'v1.3 : broaden the domain and range to Work instead of LegalResource
+
+      Starting with v1.1, the notion of conceptual inclusion is expressed with eli:is_member_of
+      instead of eli:is_part_of.'
+    range: eli_Work
+    slot_uri: eli:is_part_of
+    title: is part of
+  eli_is_realized_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates a work to an expression of this work in the form of a "sequence
+      of signs" (typically alpha-numeric characters in a legal context). Inverse of
+      "realizes".
+    domain: eli_Work
+    inverse: eli_realizes
+    name: eli_is_realized_by
+    notes:
+    - 'v1.3 : broaden the domain to Work instead of LegalResource and range to Expression
+      instead of LegalExpression.
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: eli_Expression
+    slot_uri: eli:is_realized_by
+    subproperty_of: frbroo_R3_is_realised_in
+    title: is realized by
+  eli_is_referred_to_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a work or expression that refers to this entity.
+    domain: owl_Thing
+    inverse: eli_refers_to
+    name: eli_is_referred_to_by
+    range: Any
+    slot_uri: eli:is_referred_to_by
+    title: is referred to by
+  eli_is_translation_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this expression has been translated from another\
+      \ original expression; this can be used to distinguish original from derived\
+      \ expressions.\u240A\u240ANote that asserting this link does not have any implication\
+      \ on the legal value of the original and translated expressions : depending\
+      \ on the context, a translation can be as legally binding as the original version,\
+      \ or can be published for informative purposes only (e.g. a country translating\
+      \ some legal acts in English).\u240A\u240AThe expressions linked with this property\
+      \ can be realisations of the same LegalResource, or different LegalResources.\
+      \ Multilingual legislations that do not need to distinguish between original\
+      \ and derived expressions of the same LegalResource (e.g. european legislation)\
+      \ will not use this property."
+    domain: eli_LegalExpression
+    name: eli_is_translation_of
+    range: eli_LegalExpression
+    slot_uri: eli:is_translation_of
+    title: is translation of
+  eli_jurisdiction:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The jurisdiction from which the legal resource originates. \u240A\
+      \u240AThe place identifier can be taken from the Administrative Territorial\
+      \ Unit table published of the EU Publications Office at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu.\
+      \ Member States don't have to recreate their own list of values."
+    name: eli_jurisdiction
+    notes:
+    - 'v1.3 : Updated link to EU vocabularies website in the definition.'
+    range: eli_AdministrativeArea
+    slot_uri: eli:jurisdiction
+    subproperty_of: eli_relevant_for
+    title: jurisdiction
+  eli_language:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The language of an expression.\u240A\u240AEU Publications Office\
+      \ provides a list of languages at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/language.\
+      \ This list is large enough so that member states should not have to declare\
+      \ local values.\u240A\u240ANote that, if needed, a language can also be stated\
+      \ on a legal resource using the DublinCore \"language\" property."
+    domain: eli_Expression
+    name: eli_language
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression and updated
+      link to EU vocabularies website'
+    range: eli_Language
+    see_also:
+    - http://publications.europa.eu/resource/authority/language
+    slot_uri: eli:language
+    title: language
+  eli_legal_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The legal value associated with a specific format of a resource.\
+      \ A set of values is defined by ELI in the corresponding concept scheme. These\
+      \ values are :\u240A  - unofficial : no particular or special standing;\u240A\
+      \  - official : published by an organisation with the public task of making\
+      \ the information available (e.g. a consolidated version of a EU directive)\
+      \ ;\u240A  - authoritative : the publisher gives some special status to the\
+      \ publication (e.g. \"the Queens Printer\" version of an Act of Parliament,\
+      \ or the OJ version of a EU Directive);\u240A  - definitive : the text is conclusively\
+      \ what the law says, (e.g. the digitally signed version of an OJ)."
+    domain: eli_Format
+    name: eli_legal_value
+    range: eli_LegalValue
+    see_also:
+    - http://data.europa.eu/eli/ontology#LegalValue-authoritative
+    - http://data.europa.eu/eli/ontology#LegalValue-definitive
+    - http://data.europa.eu/eli/ontology#LegalValue-official
+    - http://data.europa.eu/eli/ontology#LegalValue-unofficial
+    - http://data.europa.eu/eli/ontology#LegalValueTable
+    slot_uri: eli:legal_value
+    title: legal value
+  eli_licence:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A legal document giving official permission to do something with
+      the resource (Definition from Dublin Core)
+    domain: eli_Format
+    name: eli_licence
+    range: owl_Thing
+    slot_uri: eli:licence
+    title: licence
+  eli_media_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The file format of the manifestation.\u240AThis field is intended\
+      \ to capture the technical file format and will serve as a basis for content\
+      \ negotiation for the server to return the appropriate file based on the client\
+      \ preference.\u240AAlthough not mandatory, this property is highly encouraged.\u240A\
+      Possible URIs values MUST be taken from http://www.iana.org/assignments/media-types\
+      \ (e.g. http://www.iana.org/assignments/media-types/application/xml).\u240A\
+      See also the \"format\" property."
+    domain: eli_Manifestation
+    name: eli_media_type
+    notes:
+    - 'v1.3 : broaden the domain to Manifestation instead of Format'
+    range: owl_Thing
+    see_also:
+    - http://data.europa.eu/eli/ontology#format
+    slot_uri: eli:media_type
+    title: media type
+  eli_number:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An identifier or other disambiguating feature for a work or expression.
+      This can be the number of a legislation, the number of an article, or the issue
+      number of an official journal.
+    name: eli_number
+    notes:
+    - 'v1.5 : broaden the domain to Work or Expression instead of LegalResource or
+      LegalExpression.'
+    range: string
+    slot_uri: eli:number
+    title: number
+  eli_originalName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: eli_originalName
+    range: Any
+    slot_uri: eli:originalName
+  eli_passed_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The person or organization that originally passed or made the law\
+      \ : typically parliament (for primary legislation) or government (for secondary\
+      \ legislation). This indicates the \"legal author\" of the law, as opposed to\
+      \ its physical author. \u240A\u240AThis property can be used multiple times\
+      \ to indicate both the agent that authored the text, and/or the agent that signed\
+      \ the text, thus turning it into an actual legislation.\u240A\u240AThe relationship\
+      \ between current and any former law making body should be represented in the\
+      \ description of the agent itself.\u240A\u240AMember states are encouraged to\
+      \ make their own list of Agents. EU Publications Office provides a list of corporate\
+      \ bodies at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/corporate-body."
+    domain: eli_LegalResource
+    name: eli_passed_by
+    notes:
+    - "v1.3 : Updated link to EU vocabularies website in the definition.\nIn v1.1,\
+      \ the semantic of this property was broaden to encompass organisations/persons\
+      \ that \xAB\_drafted the text\_\xBB and \xAB\_signed it\_\xBB."
+    range: eli_Agent
+    slot_uri: eli:passed_by
+    title: passed by
+  eli_published_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Reference to the Official Journal or other publication manifestation\
+      \ in which this format is published.\u240AThis property should be used when\
+      \ the value cannot be identified by a suitable URI; if a URI is available, the\
+      \ property \"published_in_format\" should be used."
+    domain: eli_Format
+    name: eli_published_in
+    notes:
+    - 'v1.1 : modified the range to xsd:string, and introduced the corresponding object
+      property published_in_format.'
+    - 'v1.2 : changed range from xsd:string to rdfs:Literal'
+    range: rdfs_Literal
+    see_also:
+    - http://data.europa.eu/eli/ontology#published_in_format
+    slot_uri: eli:published_in
+    title: published in
+  eli_published_in_format:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Reference to the Official Journal or other publication manifestation\
+      \ in which this format is published.\u240AThis property should be used when\
+      \ the value can be identified by a suitable URI; in the absence of such a URI,\
+      \ the property \"published_in\" should be used with a string value."
+    domain: eli_Format
+    inverse: eli_publishes
+    name: eli_published_in_format
+    range: eli_Format
+    see_also:
+    - http://data.europa.eu/eli/ontology#published_in
+    slot_uri: eli:published_in_format
+    title: published in format
+  eli_publisher:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "An entity responsible for making the resource available (definition\
+      \ from Dublin Core).\u240AThis property should be used when the value cannot\
+      \ be identified by a suitable URI; if a URI is available, the property \"publisher_agent\"\
+      \ should be used."
+    name: eli_publisher
+    notes:
+    - 'v1.1 : modified the range to xsd:string and introduced the corresponding object
+      property publisher_agent.'
+    - 'v1.2 : changed range from xsd:string to rdfs:Literal'
+    range: rdfs_Literal
+    see_also:
+    - http://data.europa.eu/eli/ontology#publisher_agent
+    slot_uri: eli:publisher
+    title: publisher
+  eli_publisher_agent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "An entity responsible for making the resource available (definition\
+      \ from Dublin Core).\u240AThis property should be used when the value can be\
+      \ identified by a suitable URI; in the absence of such a URI, the property \"\
+      publisher\" should be used with a string value."
+    name: eli_publisher_agent
+    range: eli_Agent
+    see_also:
+    - http://data.europa.eu/eli/ontology#publisher
+    slot_uri: eli:publisher_agent
+    title: publisher agent
+  eli_publishes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "published_in_format". Note this property does not link
+      a publisher with a resource, but rather a specific Format of a resource with
+      a specific Format of another resource, indicating that the subject Format publishes
+      the object Format.
+    domain: eli_Format
+    name: eli_publishes
+    range: eli_Format
+    slot_uri: eli:publishes
+    title: publishes
+  eli_realizes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relates an expression to a work realised through that expression.
+      Inverse of "is_realized_by".
+    domain: eli_Expression
+    name: eli_realizes
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression and the
+      range to Work instead of LegalResource
+
+      v1.2 : replaced reference of RDA with FRBRoo.'
+    range: eli_Work
+    slot_uri: eli:realizes
+    subproperty_of: frbroo_R3i_realises
+    title: realizes
+  eli_refers_to:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Any entity that this work or expression refers to ; typically references\
+      \ are made to other Works, but it can be also to legislative processes, persons,\
+      \ etc.\u240A\u240ANote that specific subproperties exist in ELI-DL to describe\
+      \ future legal impacts (\\\"foresees_xxxx\\\" links) and links between amendments\
+      \ and draft legislation.\u240A\u240AExample : an opinion refers to the specific\
+      \ version of the draft legislation on which it is based."
+    name: eli_refers_to
+    range: owl_Thing
+    slot_uri: eli:refers_to
+    title: refers to
+  eli_related_to:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates a somehow related other document, not necessarily a legal
+      resource. Note that citation links should use the cites property.
+    name: eli_related_to
+    range: owl_Thing
+    slot_uri: eli:related_to
+    title: related to
+  eli_relevant_for:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Refers to a place or an area associated with the resource. This\
+      \ covers the notions of jurisdiction, sovereignty, applicability or administrative\
+      \ area. The place identifier can be taken from the Administrative Territorial\
+      \ Unit table published of the EU Publications Office at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu.\
+      \ Member States don't have to recreate their own list of values.\u240A\u240A\
+      The group notes the limitations of what can be said with a single property;\
+      \ member states can refine this notion by declaring specific sub properties."
+    name: eli_relevant_for
+    notes:
+    - 'v1.3 : Updated link to EU vocabularies website in the definition.
+
+      Starting from v1.1, the values for this property can be taken from the named
+      authority list published by the Office of Publications instead of defining new
+      values.'
+    range: eli_AdministrativeArea
+    slot_uri: eli:relevant_for
+    title: relevant for
+  eli_repealed_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Inverse of "repeals". Indicates that this legal resource or legal
+      expression is being completely canceled, abrogated or replaced by another legal
+      resource. If a resource is partially repealed by another, this link can be used
+      at the corresponding subdivision level being completely repealed.
+    inverse: eli_repeals
+    name: eli_repealed_by
+    range: Any
+    slot_uri: eli:repealed_by
+    subproperty_of: eli_changed_by
+    title: repealed by
+  eli_repeals:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Indicates that this legal resource or legal expression completely
+      cancels, abrogates or replaces another. If a resource partially repeals another,
+      this link can be used at the corresponding subdivision level being completely
+      repealed.
+    name: eli_repeals
+    range: Any
+    slot_uri: eli:repeals
+    subproperty_of: eli_changes
+    title: repeals
+  eli_responsibility_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "An individual, organisation or organisational unit that has some\
+      \ kind of responsibility for the legislation. Typically the ministry who is/was\
+      \ in charge of elaborating the legislation, or the adressee for potential questions\
+      \ about the legislation once it is published.\u240AThis property should be used\
+      \ when the value cannot be identified by a suitable URI; if a URI is available,\
+      \ the property \"responsibility_of_agent\" should be used."
+    domain: eli_LegalResource
+    name: eli_responsibility_of
+    notes:
+    - 'v1.1 : the definition was made more precise, with examples. Introduced the
+      corresponding object property responsibility_of_agent.'
+    range: string
+    see_also:
+    - http://data.europa.eu/eli/ontology#responsibility_of_agent
+    slot_uri: eli:responsibility_of
+    title: responsibility of
+  eli_responsibility_of_agent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "An individual, organisation or organisational unit that has some\
+      \ kind of responsibility for the legislation. Typically the ministry who is/was\
+      \ in charge of elaborating the legislation, or the adressee for potential questions\
+      \ about the legislation once it is published.\u240AThis property should be used\
+      \ when the value can be identified by a suitable URI; in the absence of such\
+      \ a URI, the property \"responsibility_of\" should be used with a string value."
+    domain: eli_LegalResource
+    name: eli_responsibility_of_agent
+    range: eli_Agent
+    see_also:
+    - http://data.europa.eu/eli/ontology#responsibility_of
+    slot_uri: eli:responsibility_of_agent
+    title: responsibility of agent
+  eli_rights:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Information about rights held in and over the resource (definition
+      from Dublin Core). For example, that property can be used to provide a link
+      to a page that describes the licensing terms.
+    domain: eli_Format
+    name: eli_rights
+    notes:
+    - 'v1.1 : improved definition and changed the range to xsd:string'
+    - 'v1.2 : modified the range to rdfs:Literal'
+    range: rdfs_Literal
+    slot_uri: eli:rights
+    title: rights
+  eli_rightsholder:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "A person or organisation owning or managing rights over the resource\
+      \ (definition from Dublin Core).\u240AThis property should be used when the\
+      \ value cannot be identified by a suitable URI; if a URI is available, the property\
+      \ \"rightsholder_agent\" should be used."
+    domain: eli_Format
+    name: eli_rightsholder
+    notes:
+    - 'v1.1 : modified the range to xsd:string, and introduced the corresponding object
+      property rightsholder_agent.'
+    - 'v1.2 : modified the range to rdfs:Literal'
+    range: rdfs_Literal
+    slot_uri: eli:rightsholder
+    title: rights holder
+  eli_rightsholder_agent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "A person or organisation owning or managing rights over the resource\
+      \ (definition from Dublin Core).\u240AThis property should be used when the\
+      \ value can be identified by a suitable URI; in the absence of such a URI, the\
+      \ property \"rightsholder\" should be used with a string value."
+    domain: eli_Format
+    name: eli_rightsholder_agent
+    range: eli_Agent
+    see_also:
+    - http://data.europa.eu/eli/ontology#rightsholder
+    slot_uri: eli:rightsholder_agent
+    title: rightsholder agent
+  eli_specificPropertyOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that a property is, in a generic sense, a more specific\
+      \ property of another one. This does not entail the same logical reasoning as\
+      \ rdfs:subPropertyOf.\u240AThis is used to indicate the alignement to Dublin\
+      \ Core properties, without redeclaring the Dublin Core property in Prot\xE9\
+      g\xE9, and without commiting to choose that a DubinCore property is either a\
+      \ datatype or an object property."
+    name: eli_specificPropertyOf
+    range: Any
+    slot_uri: eli:specificPropertyOf
+    title: specific property of
+  eli_title:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The title, or name, of an expression. \u240A\u240ANote that, if\
+      \ needed, a title can also be stated on a legal resource using the Dublin Core\
+      \ \"title\" property."
+    domain: eli_Expression
+    name: eli_title
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression
+
+      v1.2 : changed range from xsd:string to rdfs:Literal'
+    range: rdfs_Literal
+    see_also:
+    - http://data.europa.eu/eli/ontology#title_alternative
+    - http://data.europa.eu/eli/ontology#title_short
+    slot_uri: eli:title
+    title: title
+  eli_title_alternative:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "An alternative title of the expression (if any).\u240A\u240ANote\
+      \ that, if needed, an alternative title can also be stated on a work using the\
+      \ Dublin Core \"alternative\" property."
+    domain: eli_Expression
+    name: eli_title_alternative
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression
+
+      v1.2 : changed range from xsd:string to rdfs:Literal'
+    range: rdfs_Literal
+    slot_uri: eli:title_alternative
+    title: alternative title
+  eli_title_short:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Established short title of the expression (if any)
+    domain: eli_Expression
+    name: eli_title_short
+    notes:
+    - 'v1.3 : broaden the domain to Expression instead of LegalExpression
+
+      v1.2 : changed range from xsd:string to rdfs:Literal'
+    range: rdfs_Literal
+    slot_uri: eli:title_short
+    title: short title
+  eli_transposed_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Inverse of \"transposes\".\u240A\u240ANote that this property is\
+      \ expressed on a legal resource, not on one of its language-specific legal expression."
+    domain: eli_LegalResource
+    inverse: eli_transposes
+    name: eli_transposed_by
+    notes:
+    - 'v1.1 : this property was made a subproperty of "applied_by"'
+    range: Any
+    slot_uri: eli:transposed_by
+    subproperty_of: eli_applied_by
+    title: transposed by
+  eli_transposes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "Indicates that this legislation (or part of legislation) fulfills\
+      \ the objectives set by another legislation, by passing appropriate implementation\
+      \ measures. Typically, some legislations of European Union's member states or\
+      \ regions transpose European Directives. This indicates a legally binding link\
+      \ between the 2 legislations, at act or article level, from the original version\
+      \ of a national implementing measure to the legal resource Directive as published\
+      \ in the EU Official Journal. Can be used for transposition tables, once EU\
+      \ Publication Office has introduced ELI support down to the article level.\u240A\
+      \u240AThe implementation of EU legislation at national level, involving links\
+      \ to EU regulations, decisions, etc. must be captured with eli:ensures_implementation_of.\u240A\
+      \u240ANote that this should point to the legal resource of the Directive itself,\
+      \ not to one of its language-specific legal expression."
+    name: eli_transposes
+    notes:
+    - 'v1.1 : this property was made a subproperty of "applies", and the definition
+      was improved.'
+    range: eli_LegalResource
+    see_also:
+    - http://data.europa.eu/eli/ontology#ensures_implementation_of
+    slot_uri: eli:transposes
+    subproperty_of: eli_applies
+    title: transposes
+  eli_type_document:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The type of a legal resource (e.g. \"Directive\", \"R\xE8glement\
+      \ grand ducal\", \"law\", \"r\xE8glement minist\xE9riel\", \"draft proposition\"\
+      , \"Parliamentary act\", etc.). \u240A\u240AMember states are encouraged to\
+      \ make their own list of values in the corresponding concept scheme. EU Publications\
+      \ Office provides a list of values for EU resource types at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type"
+    domain: eli_LegalResource
+    name: eli_type_document
+    notes:
+    - 'v1.4 : Moved under work_type
+
+      v1.3 : Updated link to EU vocabularies website in the definition.'
+    range: eli_ResourceType
+    see_also:
+    - http://data.europa.eu/eli/ontology#ResourceTypeTable
+    slot_uri: eli:type_document
+    subproperty_of: eli_work_type
+    title: type of document
+  eli_type_subdivision:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The type of a document subdivision (e.g. \"Article\", \"Paragraph\"\
+      , \"Section\", etc.).\u240AA subdivision can have only one type.\u240A\u240A\
+      ELI does not specify a list of possible values. Member states are encouraged\
+      \ to make their own list of values in the corresponding concept scheme. EU Publication\
+      \ Office provies a list of values for EU resource types at https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/subdivision"
+    domain: eli_WorkSubdivision
+    name: eli_type_subdivision
+    notes:
+    - "v1.4\_: Broaden range to WorkSubdivision"
+    range: eli_SubdivisionType
+    slot_uri: eli:type_subdivision
+    title: type of subdivision
+  eli_uri_schema:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Schema describing the URI of an ELI instance. ELI uses URI template
+      specifications (IETF RFC 6570). Schemes should be associated with member states
+      and will be published in a registry.
+    name: eli_uri_schema
+    range: owl_Thing
+    slot_uri: eli:uri_schema
+    title: uri schema
+  eli_version:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A skos concept scheme, could be locally defined? Group proposal is
+      to start with an initial ELI scheme, that might include concepts of "Official
+      Journal" "made" "consolidated" "proposed" "prospective"
+    name: eli_version
+    range: eli_Version
+    see_also:
+    - http://data.europa.eu/eli/ontology#version_date
+    slot_uri: eli:version
+    title: version
+  eli_version_date:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The point-in-time at which the provided description of the legislation
+      is valid.
+    name: eli_version_date
+    notes:
+    - 'v1.1 : improved definition'
+    range: date
+    slot_uri: eli:version_date
+    title: version date
+  eli_work_type:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: "The type of a work, taken from a controlled vocabulary.\u240A\u240A\
+      Member States need to define their own work type values."
+    domain: eli_Work
+    name: eli_work_type
+    range: eli_WorkType
+    slot_uri: eli:work_type
+    title: work type
+  frbroo_R10_has_member:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R10_has_member
+    range: Any
+    slot_uri: frbroo:R10_has_member
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R10i_is_member_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R10i_is_member_of
+    range: Any
+    slot_uri: frbroo:R10i_is_member_of
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R3_is_realised_in:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R3_is_realised_in
+    range: Any
+    slot_uri: frbroo:R3_is_realised_in
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R3i_realises:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R3i_realises
+    range: Any
+    slot_uri: frbroo:R3i_realises
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R4_carriers_provided_by:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R4_carriers_provided_by
+    range: Any
+    slot_uri: frbroo:R4_carriers_provided_by
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R4i_comprises_carriers_of:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R4i_comprises_carriers_of
+    range: Any
+    slot_uri: frbroo:R4i_comprises_carriers_of
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+  frbroo_R7i_has_example:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: frbroo_R7i_has_example
+    range: Any
+    slot_uri: frbroo:R7i_has_example
+    title: No slot (predicate) name specified -- this slot is noted as a subproperty
+      of another slot in this graph but has not itself been defined.
+title: No schema name specified

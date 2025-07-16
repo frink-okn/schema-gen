@@ -1,0 +1,844 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          adms:SemanticAssetDistribution:
+            tag: adms:SemanticAssetDistribution
+            value: 2
+          rdf:DatatypeProperty:
+            tag: rdf:DatatypeProperty
+            value: 1
+          sdos:Organization:
+            tag: sdos:Organization
+            value: 4
+          sdos:Person:
+            tag: sdos:Person
+            value: 4
+      pairs:
+        tag: pairs
+        value:
+          adms:accessURL:
+            tag: adms:accessURL
+            value:
+              adms:SemanticAssetDistribution:
+                tag: adms:SemanticAssetDistribution
+                value:
+                  string:
+                    tag: string
+                    value: 2
+          adms:status:
+            tag: adms:status
+            value:
+              adms:SemanticAssetDistribution:
+                tag: adms:SemanticAssetDistribution
+                value:
+                  uri:
+                    tag: uri
+                    value: 2
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          foaf:name:
+            tag: foaf:name
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          rdfs:domain:
+            tag: rdfs:domain
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value: 1
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 2
+          sdos:affiliation:
+            tag: sdos:affiliation
+            value:
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  sdos:Organization:
+                    tag: sdos:Organization
+                    value: 4
+          sdos:email:
+            tag: sdos:email
+            value:
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  uri:
+                    tag: uri
+                    value: 4
+          sdos:identifier:
+            tag: sdos:identifier
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          sdos:name:
+            tag: sdos:name
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          sdos:url:
+            tag: sdos:url
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  uri:
+                    tag: uri
+                    value: 4
+      slots:
+        tag: slots
+        value:
+          adms:accessURL:
+            tag: adms:accessURL
+            value: 2
+          adms:status:
+            tag: adms:status
+            value: 2
+          foaf:homepage:
+            tag: foaf:homepage
+            value: 1
+          foaf:name:
+            tag: foaf:name
+            value: 1
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 1
+          rdfs:domain:
+            tag: rdfs:domain
+            value: 1
+          rdfs:label:
+            tag: rdfs:label
+            value: 1
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value: 2
+          sdos:affiliation:
+            tag: sdos:affiliation
+            value: 4
+          sdos:email:
+            tag: sdos:email
+            value: 4
+          sdos:identifier:
+            tag: sdos:identifier
+            value: 1
+          sdos:name:
+            tag: sdos:name
+            value: 8
+          sdos:url:
+            tag: sdos:url
+            value: 7
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          adms:SemanticAssetDistribution:
+            tag: adms:SemanticAssetDistribution
+            value: http://vocab.deri.ie/void#rdf
+          rdf:DatatypeProperty:
+            tag: rdf:DatatypeProperty
+            value: void:uriRegexPattern
+          sdos:Organization:
+            tag: sdos:Organization
+            value: nc73a821ee78a4b379162675b4ec62e41b3
+          sdos:Person:
+            tag: sdos:Person
+            value: nc73a821ee78a4b379162675b4ec62e41b6
+      pairs:
+        tag: pairs
+        value:
+          adms:accessURL:
+            tag: adms:accessURL
+            value:
+              adms:SemanticAssetDistribution:
+                tag: adms:SemanticAssetDistribution
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: http://vocab.deri.ie/void.ttl
+                      predicate:
+                        tag: predicate
+                        value: adms:accessURL
+                      subject:
+                        tag: subject
+                        value: http://vocab.deri.ie/void#ttl
+          adms:status:
+            tag: adms:status
+            value:
+              adms:SemanticAssetDistribution:
+                tag: adms:SemanticAssetDistribution
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://purl.org/adms/status/Completed
+                      predicate:
+                        tag: predicate
+                        value: adms:status
+                      subject:
+                        tag: subject
+                        value: http://vocab.deri.ie/void#ttl
+          foaf:homepage:
+            tag: foaf:homepage
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.deri.ie/
+                      predicate:
+                        tag: predicate
+                        value: foaf:homepage
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b3
+          foaf:name:
+            tag: foaf:name
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Digital Enterprise Research Institute, NUI Galway
+                      predicate:
+                        tag: predicate
+                        value: foaf:name
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b3
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Defines a regular expression pattern matching URIs
+                          in the dataset.
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: void:uriRegexPattern
+          rdfs:domain:
+            tag: rdfs:domain
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: void:Dataset
+                      predicate:
+                        tag: predicate
+                        value: rdfs:domain
+                      subject:
+                        tag: subject
+                        value: void:uriRegexPattern
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value:
+                      object:
+                        tag: object
+                        value: void:Dataset
+                      predicate:
+                        tag: predicate
+                        value: rdfs:domain
+                      subject:
+                        tag: subject
+                        value: void:uriRegexPattern
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              rdf:DatatypeProperty:
+                tag: rdf:DatatypeProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: has URI regular expression pattern
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: void:uriRegexPattern
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.insight-centre.org
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b1
+          sdos:affiliation:
+            tag: sdos:affiliation
+            value:
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  sdos:Organization:
+                    tag: sdos:Organization
+                    value:
+                      object:
+                        tag: object
+                        value: nc73a821ee78a4b379162675b4ec62e41b3
+                      predicate:
+                        tag: predicate
+                        value: sdos:affiliation
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b2
+          sdos:email:
+            tag: sdos:email
+            value:
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: mailto:richard.cyganiak@deri.org
+                      predicate:
+                        tag: predicate
+                        value: sdos:email
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b2
+          sdos:identifier:
+            tag: sdos:identifier
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://vocab.deri.ie/void#Digital%20Enterprise%20Research%20Institute%2C%20NUI%20Galway
+                      predicate:
+                        tag: predicate
+                        value: sdos:identifier
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b1
+          sdos:name:
+            tag: sdos:name
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Department of Zoology, University of Oxford
+                      predicate:
+                        tag: predicate
+                        value: sdos:name
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b5
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Richard Cyganiak
+                      predicate:
+                        tag: predicate
+                        value: sdos:name
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b2
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Digital Enterprise Research Institute, NUI Galway
+                      predicate:
+                        tag: predicate
+                        value: sdos:name
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b1
+          sdos:url:
+            tag: sdos:url
+            value:
+              sdos:Organization:
+                tag: sdos:Organization
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.zoo.ox.ac.uk/
+                      predicate:
+                        tag: predicate
+                        value: sdos:url
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b5
+              sdos:Person:
+                tag: sdos:Person
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://richard.cyganiak.de/
+                      predicate:
+                        tag: predicate
+                        value: sdos:url
+                      subject:
+                        tag: subject
+                        value: nc73a821ee78a4b379162675b4ec62e41b2
+classes:
+  adms_SemanticAssetDistribution:
+    class_uri: adms:SemanticAssetDistribution
+    name: adms_SemanticAssetDistribution
+    slots:
+    - adms_status
+    - adms_accessURL
+  rdf_DatatypeProperty:
+    class_uri: rdf:DatatypeProperty
+    name: rdf_DatatypeProperty
+    slots:
+    - rdfs_comment
+    - rdfs_label
+    - rdfs_domain
+  void_DatasetDescription:
+    class_uri: void:DatasetDescription
+    description: A web resource whose foaf:primaryTopic or foaf:topics include void:Datasets.
+    is_a: foaf_Document
+    name: void_DatasetDescription
+    title: dataset description
+  void_Linkset:
+    class_uri: void:Linkset
+    description: A collection of RDF links between two void:Datasets.
+    is_a: void_Dataset
+    name: void_Linkset
+    title: linkset
+  void_TechnicalFeature:
+    class_uri: void:TechnicalFeature
+    description: A technical feature of a void:Dataset, such as a supported RDF serialization
+      format.
+    name: void_TechnicalFeature
+    title: technical feature
+comments:
+- 'title: Vocabulary of Interlinked Datasets (VoID)'
+- 'last_updated_on: 2011-03-06'
+- 'created_on: 2010-01-26'
+- 'created_by: nc73a821ee78a4b379162675b4ec62e41b4'
+- 'created_by: nc73a821ee78a4b379162675b4ec62e41b6'
+- 'created_by: nc73a821ee78a4b379162675b4ec62e41b8'
+created_by: nc73a821ee78a4b379162675b4ec62e41b2
+created_on: '2025-07-15T20:29:38.772581'
+default_prefix: okn
+description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema vocabulary
+  for expressing metadata about RDF datasets. It is intended as a bridge between the
+  publishers and users of RDF data, with applications ranging from data discovery
+  to cataloging and archiving of datasets. This document provides a formal definition
+  of the new RDF classes and properties introduced for VoID. It is a companion to
+  the main specification document for VoID, <em><a href="http://www.w3.org/TR/void/">Describing
+  Linked Datasets with the VoID Vocabulary</a></em>.
+id: okns:void
+imports:
+- https://purl.org/okn/schema/extended_types
+- linkml:types
+- okns:sdo
+- okns:owl-rdf-rdfs
+- okns:adms
+- okns:wot
+- okns:voaf
+last_updated_on: '2025-07-15T20:29:38.772581'
+name: void
+prefixes:
+  adms: http://www.w3.org/ns/adms#
+  foaf: http://xmlns.com/foaf/0.1/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sdos: https://schema.org/
+  void: http://rdfs.org/ns/void#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  adms_accessURL:
+    comments:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: adms:accessURL
+  void_class:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The rdfs:Class that is the rdf:type of all entities in a class-based
+      partition.
+    domain: void_Dataset
+    multivalued: false
+    name: void_class
+    range: rdfs_Class
+    slot_uri: void:class
+    title: class
+  void_classPartition:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A subset of a void:Dataset that contains only the entities of a certain
+      rdfs:Class.
+    domain: void_Dataset
+    name: void_classPartition
+    range: void_Dataset
+    slot_uri: void:classPartition
+    subproperty_of: void_subset
+    title: class partition
+  void_classes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of distinct classes in a void:Dataset. In other
+      words, the number of distinct resources occuring as objects of rdf:type triples
+      in the dataset.
+    domain: void_Dataset
+    name: void_classes
+    range: integer
+    slot_uri: void:classes
+    title: classes
+  void_dataDump:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An RDF dump, partial or complete, of a void:Dataset.
+    domain: void_Dataset
+    name: void_dataDump
+    range: rdfs_Resource
+    slot_uri: void:dataDump
+    title: Data Dump
+  void_distinctObjects:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of distinct objects in a void:Dataset. In other
+      words, the number of distinct resources that occur in the object position of
+      triples in the dataset. Literals are included in this count.
+    domain: void_Dataset
+    name: void_distinctObjects
+    range: integer
+    slot_uri: void:distinctObjects
+    title: distinct objects
+  void_distinctSubjects:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of distinct subjects in a void:Dataset. In other
+      words, the number of distinct resources that occur in the subject position of
+      triples in the dataset.
+    domain: void_Dataset
+    name: void_distinctSubjects
+    range: integer
+    slot_uri: void:distinctSubjects
+    title: distinct subjects
+  void_documents:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of documents, for datasets that are published as
+      a set of individual documents, such as RDF/XML documents or RDFa-annotated web
+      pages. Non-RDF documents, such as web pages in HTML or images, are usually not
+      included in this count. This property is intended for datasets where the total
+      number of triples or entities is hard to determine. void:triples or void:entities
+      should be preferred where practical.
+    domain: void_Dataset
+    name: void_documents
+    range: integer
+    slot_uri: void:documents
+    title: number of documents
+  void_entities:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of entities that are described in a void:Dataset.
+    domain: void_Dataset
+    name: void_entities
+    range: integer
+    slot_uri: void:entities
+    title: number of entities
+  void_exampleResource:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: void_Dataset
+    name: void_exampleResource
+    range: rdfs_Resource
+    slot_uri: void:exampleResource
+    title: example resource of dataset
+  void_feature:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: void_Dataset
+    name: void_feature
+    range: void_TechnicalFeature
+    slot_uri: void:feature
+    title: feature
+  void_inDataset:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Points to the void:Dataset that a document is a part of.
+    domain: foaf_Document
+    name: void_inDataset
+    range: void_Dataset
+    slot_uri: void:inDataset
+    title: in dataset
+  void_linkPredicate:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: void_Linkset
+    name: void_linkPredicate
+    range: rdf_Property
+    slot_uri: void:linkPredicate
+    title: a link predicate
+  void_objectsTarget:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The dataset describing the objects of the triples contained in the
+      Linkset.
+    domain: void_Linkset
+    multivalued: false
+    name: void_objectsTarget
+    range: void_Dataset
+    slot_uri: void:objectsTarget
+    subproperty_of: void_target
+    title: Objects Target
+  void_openSearchDescription:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An OpenSearch description document for a free-text search service
+      over a void:Dataset.
+    domain: void_Dataset
+    name: void_openSearchDescription
+    range: foaf_Document
+    slot_uri: void:openSearchDescription
+    title: open search description
+  void_properties:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of distinct properties in a void:Dataset. In other
+      words, the number of distinct resources that occur in the predicate position
+      of triples in the dataset.
+    domain: void_Dataset
+    name: void_properties
+    range: integer
+    slot_uri: void:properties
+    title: number of properties
+  void_property:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The rdf:Property that is the predicate of all triples in a property-based
+      partition.
+    domain: void_Dataset
+    multivalued: false
+    name: void_property
+    range: rdf_Property
+    slot_uri: void:property
+    title: property
+  void_propertyPartition:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A subset of a void:Dataset that contains only the triples of a certain
+      rdf:Property.
+    domain: void_Dataset
+    name: void_propertyPartition
+    range: void_Dataset
+    slot_uri: void:propertyPartition
+    subproperty_of: void_subset
+    title: property partition
+  void_rootResource:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A top concept or entry point for a void:Dataset that is structured
+      in a tree-like fashion. All resources in a dataset can be reached by following
+      links from its root resources in a small number of steps.
+    domain: void_Dataset
+    name: void_rootResource
+    range: Any
+    slot_uri: void:rootResource
+    title: root resource
+  void_sparqlEndpoint:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: void_Dataset
+    name: void_sparqlEndpoint
+    range: Any
+    slot_uri: void:sparqlEndpoint
+    title: has a SPARQL endpoint at
+  void_subjectsTarget:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The dataset describing the subjects of triples contained in the Linkset.
+    domain: void_Linkset
+    multivalued: false
+    name: void_subjectsTarget
+    range: void_Dataset
+    slot_uri: void:subjectsTarget
+    subproperty_of: void_target
+    title: Subjects Target
+  void_subset:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: void_Dataset
+    name: void_subset
+    range: void_Dataset
+    slot_uri: void:subset
+    title: has subset
+  void_target:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: One of the two datasets linked by the Linkset.
+    domain: void_Linkset
+    name: void_target
+    range: void_Dataset
+    slot_uri: void:target
+    title: Target
+  void_triples:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total number of triples contained in a void:Dataset.
+    domain: void_Dataset
+    name: void_triples
+    range: integer
+    slot_uri: void:triples
+    title: number of triples
+  void_uriLookupEndpoint:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Defines a simple URI look-up protocol for accessing a dataset.
+    domain: void_Dataset
+    name: void_uriLookupEndpoint
+    range: Any
+    slot_uri: void:uriLookupEndpoint
+    title: has an URI look-up endpoint at
+  void_uriSpace:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A URI that is a common string prefix of all the entity URIs in a
+      void:Dataset.
+    domain: void_Dataset
+    name: void_uriSpace
+    range: rdfs_Literal
+    slot_uri: void:uriSpace
+    title: URI space
+title: No schema name specified
