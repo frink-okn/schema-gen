@@ -85,7 +85,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nff339531d2204548aaf7ad976d17be67b1
+                        value: nd13607343560478591267ebbea5c1917b1
           foaf:name:
             tag: foaf:name
             value:
@@ -103,7 +103,7 @@ annotations:
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nff339531d2204548aaf7ad976d17be67b1
+                        value: nd13607343560478591267ebbea5c1917b1
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -121,7 +121,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: nff339531d2204548aaf7ad976d17be67b1
+                        value: nd13607343560478591267ebbea5c1917b1
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -139,7 +139,7 @@ annotations:
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: nff339531d2204548aaf7ad976d17be67b1
+                        value: nd13607343560478591267ebbea5c1917b1
 classes:
   adms_Asset:
     class_uri: adms:Asset
@@ -213,16 +213,16 @@ classes:
 comments:
 - 'title: Asset Description Metadata Schema (ADMS)'
 - 'title: Asset Description Metadata Schema (ADMS)'
-- 'created_by: nff339531d2204548aaf7ad976d17be67b2'
-- 'created_by: nff339531d2204548aaf7ad976d17be67b4'
+- 'created_by: nd13607343560478591267ebbea5c1917b2'
+- 'created_by: nd13607343560478591267ebbea5c1917b4'
 - 'last_updated_on: 2013-05-24'
 - 'last_updated_on: 2013-09-16'
 - 'last_updated_on: 2013-12-21'
 - 'last_updated_on: 2015-07-22'
 - 'description: This file specifies the set of RDF classes and properties used in
   ADMS'
-created_by: nff339531d2204548aaf7ad976d17be67b1
-created_on: '2025-07-17T18:44:59.193037'
+created_by: nd13607343560478591267ebbea5c1917b1
+created_on: '2025-07-17T19:21:11.777414'
 default_prefix: okns
 description: "This is the RDF encoding of the Asset Description Metadata Schema, originally\
   \ \r\u240A    developed under the European Union's ISA Programme and further developed\
@@ -231,14 +231,14 @@ description: "This is the RDF encoding of the Asset Description Metadata Schema,
   \ more."
 id: okns:adms
 imports:
-- okns:owl-rdf-rdfs
-- okns:extended_types
-- okns:foaf
-- okns:sdo
 - okns:xhv
+- okns:owl-rdf-rdfs
+- okns:sdo
+- okns:extended_types
 - linkml:types
 - okns:skos
-last_updated_on: '2025-07-17T18:44:59.193037'
+- okns:foaf
+last_updated_on: '2025-07-17T19:21:11.777414'
 name: adms
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -250,7 +250,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  sdos: http://schema.org/
+  sdos: https://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
   voaf: http://purl.org/vocommons/voaf#
   xhv: http://www.w3.org/1999/xhtml/vocab#

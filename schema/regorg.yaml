@@ -79,13 +79,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://ies.jrc.ec.europa.eu/DE
+                        value: http://makxdekkers.com/
                       predicate:
                         tag: predicate
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: neb827579e15b48eaa095dda059a0de40b3
+                        value: n92f5b49fe800474baa26564e690167afb4
           foaf:name:
             tag: foaf:name
             value:
@@ -97,13 +97,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'European Commission, Joint Research Centre '
+                        value: Makx Dekkers
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: neb827579e15b48eaa095dda059a0de40b3
+                        value: n92f5b49fe800474baa26564e690167afb4
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -121,7 +121,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: neb827579e15b48eaa095dda059a0de40b4
+                        value: n92f5b49fe800474baa26564e690167afb4
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -139,7 +139,7 @@ annotations:
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: neb827579e15b48eaa095dda059a0de40b1
+                        value: n92f5b49fe800474baa26564e690167afb1
 classes:
   regorg_RegisteredOrganization:
     class_uri: regorg:RegisteredOrganization
@@ -167,30 +167,30 @@ classes:
     source: http://www.w3.org/TR/vocab-regorg/
     title: Registered Organization
 comments:
-- 'created_by: neb827579e15b48eaa095dda059a0de40b2'
-- 'created_by: neb827579e15b48eaa095dda059a0de40b4'
+- 'created_by: n92f5b49fe800474baa26564e690167afb2'
+- 'created_by: n92f5b49fe800474baa26564e690167afb4'
 - 'last_updated_on: 2013-05-24'
 - 'last_updated_on: 2013-12-21'
 - 'description: This file specifies the set of RDF classes and properties used in
   the Registered Organization Vocabulary vocabulary'
 - 'title: Registered Organization Vocabulary'
 - 'title: Registered Organization Vocabulary'
-created_by: neb827579e15b48eaa095dda059a0de40b1
-created_on: '2025-07-17T18:45:04.113371'
+created_by: n92f5b49fe800474baa26564e690167afb1
+created_on: '2025-07-17T19:21:16.513566'
 default_prefix: okns
 description: This is the RDF encoding of the Legal Entity vocabulary, originally developed
   under the European Commission's ISA Programme.
 id: okns:regorg
 imports:
-- okns:sdo
-- linkml:types
 - okns:adms
-- okns:foaf
-- okns:owl-rdf-rdfs
+- linkml:types
 - okns:dc
 - okns:extended_types
+- okns:owl-rdf-rdfs
 - okns:org
-last_updated_on: '2025-07-17T18:45:04.113371'
+- okns:sdo
+- okns:foaf
+last_updated_on: '2025-07-17T19:21:16.513566'
 name: regorg
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -204,7 +204,7 @@ prefixes:
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   regorg: http://www.w3.org/ns/regorg#
-  sdos: http://schema.org/
+  sdos: https://schema.org/
   voaf: http://purl.org/vocommons/voaf#
 slots:
   regorg_hasRegisteredOrganization:

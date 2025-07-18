@@ -201,13 +201,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The datatype of RDF literals storing JSON content.
+                        value: The class of plain (i.e. untyped) literal values, as
+                          used in RIF and OWL 2
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: rdf:JSON
+                        value: rdf:PlainLiteral
           rdfs:domain:
             tag: rdfs:domain
             value:
@@ -273,7 +274,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: rdf:JSON
+                        value: rdf:PlainLiteral
           rdfs:label:
             tag: rdfs:label
             value:
@@ -315,13 +316,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: JSON
+                        value: PlainLiteral
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: rdf:JSON
+                        value: rdf:PlainLiteral
           rdfs:range:
             tag: rdfs:range
             value:
@@ -351,13 +352,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: https://www.w3.org/TR/json-ld11/#the-rdf-json-datatype
+                        value: http://www.w3.org/TR/rdf-plain-literal/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: rdf:JSON
+                        value: rdf:PlainLiteral
           rdfs:subClassOf:
             tag: rdfs:subClassOf
             value:
@@ -375,7 +376,7 @@ annotations:
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: rdf:JSON
+                        value: rdf:PlainLiteral
 classes:
   owl_AllDifferent:
     class_uri: owl:AllDifferent
@@ -527,11 +528,11 @@ classes:
     is_a: rdf_Property
     name: owl_OntologyProperty
     slots:
-    - rdfs_domain
-    - rdfs_comment
     - rdfs_range
     - rdfs_isDefinedBy
+    - rdfs_comment
     - rdfs_label
+    - rdfs_domain
     source: http://www.w3.org/2002/07/owl#
     title: OntologyProperty
   owl_ReflexiveProperty:
@@ -597,9 +598,9 @@ classes:
     is_a: rdfs_Resource
     name: rdf_List
     slots:
-    - rdfs_label
     - rdfs_isDefinedBy
     - rdfs_comment
+    - rdfs_label
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: List
   rdf_Property:
@@ -651,11 +652,11 @@ classes:
     is_a: rdfs_Class
     name: rdfs_Datatype
     slots:
-    - rdfs_subClassOf
-    - rdfs_comment
     - rdfs_isDefinedBy
     - rdfs_seeAlso
+    - rdfs_comment
     - rdfs_label
+    - rdfs_subClassOf
     source: http://www.w3.org/2000/01/rdf-schema#
     title: Datatype
   rdfs_Literal:
@@ -681,7 +682,7 @@ comments:
 - 'last_updated_on: 2019-12-16'
 - 'description: This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace,
   defined in RDF 1.1 Concepts.'
-created_on: '2025-07-17T18:43:07.943201'
+created_on: '2025-07-17T19:19:24.536838'
 default_prefix: okns
 description: "\u240A  This ontology partially describes the built-in classes and\r\
   \u240A  properties that together form the basis of the RDF/XML syntax of OWL 2.\r\
@@ -700,9 +701,9 @@ description: "\u240A  This ontology partially describes the built-in classes and
   \  unexpected, consequences.\r\u240A"
 id: okns:owl-rdf-rdfs
 imports:
-- linkml:types
 - okns:extended_types
-last_updated_on: '2025-07-17T18:43:07.943201'
+- linkml:types
+last_updated_on: '2025-07-17T19:19:24.536838'
 name: owl-rdf-rdfs
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -1362,8 +1363,8 @@ slots:
   rdfs_isDefinedBy:
     any_of:
     - range: uri
-    - range: rdfs_Resource
     - range: owl_Ontology
+    - range: rdfs_Resource
     description: The definition of the subject resource.
     domain: rdfs_Resource
     name: rdfs_isDefinedBy

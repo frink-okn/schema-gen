@@ -1724,16 +1724,16 @@ classes:
       \ objects, geographic features, events or geo-political units."
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: Place
-created_on: '2025-07-17T18:44:14.466307'
+created_on: '2025-07-17T19:20:29.115679'
 default_prefix: okns
 id: okns:frbroo
 imports:
-- okns:dc
 - okns:owl-rdf-rdfs
-- okns:extended_types
 - linkml:types
+- okns:dc
 - okns:skos
-last_updated_on: '2025-07-17T18:44:14.466307'
+- okns:extended_types
+last_updated_on: '2025-07-17T19:20:29.115679'
 name: frbroo
 prefixes:
   cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/

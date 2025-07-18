@@ -529,28 +529,28 @@ annotations:
         value:
           eli:FormatType:
             tag: eli:FormatType
-            value: https://www.iana.org/assignments/media-types/application/pdf;type=signed
+            value: eli:print_format
           eli:InForce:
             tag: eli:InForce
-            value: eli:InForce-notInForce
+            value: eli:InForce-partiallyInForce
           eli:LegalValue:
             tag: eli:LegalValue
-            value: eli:LegalValue-authoritative
+            value: eli:LegalValue-official
           owl:NamedIndividual:
             tag: owl:NamedIndividual
-            value: eli:SubdivisionTypeTable
+            value: http://publications.europa.eu/resource/authority/atu
           owl:Restriction:
             tag: owl:Restriction
-            value: N47c22f9c8e3748ac9a9631e574b5d01d
+            value: N1950a0b18d6345a7b7f862da2e263849
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: N35dcf33ef8f143e2b4e3a9caa45054c9
+            value: xsd:date
           skos:Concept:
             tag: skos:Concept
-            value: eli:InForce-notInForce
+            value: eli:InForce-partiallyInForce
           skos:ConceptScheme:
             tag: skos:ConceptScheme
-            value: eli:SubdivisionTypeTable
+            value: http://publications.europa.eu/resource/authority/atu
       pairs:
         tag: pairs
         value:
@@ -571,7 +571,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N79c3ca2f21c74ed4a8a7e96b9ea6ed1e
+                        value: N2c90537a873d488983fd4652453eaeb4
           owl:hasValue:
             tag: owl:hasValue
             value:
@@ -583,25 +583,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:ResourceTypeTable
+                        value: http://publications.europa.eu/resource/authority/atu
                       predicate:
                         tag: predicate
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: Nc2e37e6f551f4ce285b88fb6b46bbf3e
+                        value: N4cef069f41254d29996475adcc6574f4
                   skos:ConceptScheme:
                     tag: skos:ConceptScheme
                     value:
                       object:
                         tag: object
-                        value: eli:ResourceTypeTable
+                        value: http://publications.europa.eu/resource/authority/atu
                       predicate:
                         tag: predicate
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: Nc2e37e6f551f4ce285b88fb6b46bbf3e
+                        value: N4cef069f41254d29996475adcc6574f4
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -619,7 +619,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N79c3ca2f21c74ed4a8a7e96b9ea6ed1e
+                        value: N2c90537a873d488983fd4652453eaeb4
                   uri:
                     tag: uri
                     value:
@@ -631,7 +631,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nc2e37e6f551f4ce285b88fb6b46bbf3e
+                        value: N4cef069f41254d29996475adcc6574f4
           owl:versionInfo:
             tag: owl:versionInfo
             value:
@@ -649,7 +649,7 @@ annotations:
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
               eli:InForce:
                 tag: eli:InForce
                 value:
@@ -679,7 +679,7 @@ annotations:
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -688,13 +688,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: created in v1.0
+                        value: created in v1.2
                       predicate:
                         tag: predicate
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -709,7 +709,7 @@ annotations:
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -768,13 +768,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Resource type table
+                        value: Format type table
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: eli:ResourceTypeTable
+                        value: eli:FormatTypeTable
               skos:ConceptScheme:
                 tag: skos:ConceptScheme
                 value:
@@ -783,13 +783,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Resource type table
+                        value: Format type table
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: eli:ResourceTypeTable
+                        value: eli:FormatTypeTable
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -834,37 +834,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -873,37 +873,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -912,37 +912,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-official
                       predicate:
                         tag: predicate
                         value: skos:broader
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
           skos:definition:
             tag: skos:definition
             value:
@@ -969,14 +969,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Document for which the text is conclusively what the
-                          law says. (The digitally signed version of an Official Journal.)
+                        value: "The publisher gives some special status to the publication\
+                          \ of the document. (\"The Queens Printer\" version of a\
+                          \ UK Act of Parliament). This status is specific to UK where\
+                          \ no text can be considered \xAB\_definitive\_\xBB."
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -985,15 +987,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'A set of values for languages.
-
-                          ELI does not include a set of values for this table.'
+                        value: Indicates that a legal resource is in force.
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: http://publications.europa.eu/resource/authority/language
+                        value: eli:InForce-inForce
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1002,14 +1002,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Document for which the text is conclusively what the
-                          law says. (The digitally signed version of an Official Journal.)
+                        value: Indicates that a legal resource is in force.
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
               skos:ConceptScheme:
                 tag: skos:ConceptScheme
                 value:
@@ -1018,7 +1017,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'A set of values for languages.
+                        value: 'A set of values for the type of a work.
 
                           ELI does not include a set of values for this table.'
                       predicate:
@@ -1026,7 +1025,7 @@ annotations:
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: http://publications.europa.eu/resource/authority/language
+                        value: eli:WorkTypeTable
           skos:example:
             tag: skos:example
             value:
@@ -1038,13 +1037,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The digitally signed version of an Official Journal.
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
                       predicate:
                         tag: predicate
                         value: skos:example
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1053,13 +1054,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The digitally signed version of an Official Journal.
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
                       predicate:
                         tag: predicate
                         value: skos:example
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1068,13 +1071,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The digitally signed version of an Official Journal.
+                        value: '"The Queens Printer" version of a UK Act of Parliament,
+                          or the Official Journal version of a EU Directive published
+                          by EU Publications Office.'
                       predicate:
                         tag: predicate
                         value: skos:example
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
           skos:hasTopConcept:
             tag: skos:hasTopConcept
             value:
@@ -1188,7 +1193,7 @@ annotations:
                         value: skos:historyNote
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1203,7 +1208,7 @@ annotations:
                         value: skos:historyNote
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1218,7 +1223,7 @@ annotations:
                         value: skos:historyNote
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
           skos:inScheme:
             tag: skos:inScheme
             value:
@@ -1236,7 +1241,7 @@ annotations:
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+                        value: https://www.iana.org/assignments/media-types/text/html
                   skos:ConceptScheme:
                     tag: skos:ConceptScheme
                     value:
@@ -1248,7 +1253,7 @@ annotations:
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+                        value: https://www.iana.org/assignments/media-types/text/html
               eli:InForce:
                 tag: eli:InForce
                 value:
@@ -1290,7 +1295,7 @@ annotations:
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
                   skos:ConceptScheme:
                     tag: skos:ConceptScheme
                     value:
@@ -1302,7 +1307,7 @@ annotations:
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1311,25 +1316,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValueTable
+                        value: eli:InForceTable
                       predicate:
                         tag: predicate
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
                   skos:ConceptScheme:
                     tag: skos:ConceptScheme
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValueTable
+                        value: eli:InForceTable
                       predicate:
                         tag: predicate
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1338,25 +1343,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValueTable
+                        value: eli:InForceTable
                       predicate:
                         tag: predicate
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
                   skos:ConceptScheme:
                     tag: skos:ConceptScheme
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValueTable
+                        value: eli:InForceTable
                       predicate:
                         tag: predicate
                         value: skos:inScheme
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
           skos:narrower:
             tag: skos:narrower
             value:
@@ -1368,37 +1373,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1407,37 +1412,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1446,37 +1451,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   owl:NamedIndividual:
                     tag: owl:NamedIndividual
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
                   skos:Concept:
                     tag: skos:Concept
                     value:
                       object:
                         tag: object
-                        value: eli:LegalValue-authoritative
+                        value: eli:LegalValue-definitive
                       predicate:
                         tag: predicate
                         value: skos:narrower
                       subject:
                         tag: subject
-                        value: eli:LegalValue-official
+                        value: eli:LegalValue-authoritative
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -1488,13 +1493,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: application/akn+xml
+                        value: application/pdf;type=archival
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/akn+xml
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
               eli:InForce:
                 tag: eli:InForce
                 value:
@@ -1518,13 +1523,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: definitive
+                        value: authoritative
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:LegalValue-authoritative
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1533,13 +1538,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: definitive
+                        value: application/pdf;type=archival
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
               skos:Concept:
                 tag: skos:Concept
                 value:
@@ -1548,13 +1553,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: definitive
+                        value: in force
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: eli:LegalValue-definitive
+                        value: eli:InForce-inForce
           skos:scopeNote:
             tag: skos:scopeNote
             value:
@@ -1567,13 +1572,13 @@ annotations:
                       object:
                         tag: object
                         value: ELI introduces this value to describe PDF files that
-                          are generated on-the-fly from base XML formats.
+                          are intended for long-term archival.
                       predicate:
                         tag: predicate
                         value: skos:scopeNote
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/pdf;type=generated
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -1583,13 +1588,13 @@ annotations:
                       object:
                         tag: object
                         value: ELI introduces this value to describe PDF files that
-                          are generated on-the-fly from base XML formats.
+                          are intended for long-term archival.
                       predicate:
                         tag: predicate
                         value: skos:scopeNote
                       subject:
                         tag: subject
-                        value: https://www.iana.org/assignments/media-types/application/pdf;type=generated
+                        value: https://www.iana.org/assignments/media-types/application/pdf;type=archival
           skos:topConceptOf:
             tag: skos:topConceptOf
             value:
@@ -1769,11 +1774,11 @@ classes:
     is_a: skos_Concept
     name: eli_FormatType
     slots:
-    - skos_inScheme
-    - skos_scopeNote
-    - owl_versionInfo
     - skos_prefLabel
+    - skos_scopeNote
     - rdfs_seeAlso
+    - owl_versionInfo
+    - skos_inScheme
     title: Format type
   eli_InForce:
     class_uri: eli:InForce
@@ -1781,12 +1786,12 @@ classes:
     is_a: skos_Concept
     name: eli_InForce
     slots:
-    - skos_topConceptOf
-    - skos_inScheme
-    - owl_versionInfo
     - skos_prefLabel
-    - skos_definition
+    - skos_topConceptOf
+    - owl_versionInfo
+    - skos_inScheme
     - skos_historyNote
+    - skos_definition
     title: In force
   eli_Language:
     class_uri: eli:Language
@@ -1854,15 +1859,15 @@ classes:
     is_a: skos_Concept
     name: eli_LegalValue
     slots:
+    - skos_broader
+    - skos_prefLabel
     - skos_topConceptOf
+    - owl_versionInfo
     - skos_inScheme
     - skos_example
-    - owl_versionInfo
-    - skos_prefLabel
-    - skos_narrower
-    - skos_broader
-    - skos_definition
     - skos_historyNote
+    - skos_definition
+    - skos_narrower
     title: Legal value
   eli_Manifestation:
     class_uri: eli:Manifestation
@@ -1957,7 +1962,7 @@ classes:
       of another class in this graph but has not itself been defined.
 comments:
 - 'title: ELI Metadata Ontology'
-created_on: '2025-07-17T18:44:22.722622'
+created_on: '2025-07-17T19:20:35.126721'
 default_prefix: okns
 description: "An ontology to describe legislation, based on the FRBR model, that encodes\
   \ the ELI metadata fields.\u240ASee the classes \"LegalResource\", \"LegalExpression\"\
@@ -1966,12 +1971,12 @@ description: "An ontology to describe legislation, based on the FRBR model, that
   \ of Publications vocabularies website at https://op.europa.eu/en/web/eu-vocabularies/eli."
 id: okns:eli
 imports:
+- okns:owl-rdf-rdfs
+- okns:frbroo
+- okns:extended_types
 - linkml:types
 - okns:skos
-- okns:extended_types
-- okns:frbroo
-- okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:44:22.722622'
+last_updated_on: '2025-07-17T19:20:35.126721'
 name: eli
 notes:
 - "- The ELI ontology reuses the property names from the Metalex ontology (http://www.metalex.eu/)\

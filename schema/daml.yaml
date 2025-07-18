@@ -769,10 +769,10 @@ annotations:
             value: daml-2001:daml+oil
           daml-2001:Property:
             tag: daml-2001:Property
-            value: daml-oil:equivalentTo
+            value: daml-oil:sameIndividualAs
           daml-iso3166:Country:
             tag: daml-iso3166:Country
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#HR
+            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#ZA
           daml-oil:Class:
             tag: daml-oil:Class
             value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#ParameterDescription
@@ -781,40 +781,40 @@ annotations:
             value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#serviceName
           daml-oil:ObjectProperty:
             tag: daml-oil:ObjectProperty
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#effect
+            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#precondition
           daml-oil:Ontology:
             tag: daml-oil:Ontology
-            value: Nf7769c12180f409091efffc813f4dfa0
+            value: N9682ef9b3a214cdb81ebb26e2f2b1f40
           daml-oil:Property:
             tag: daml-oil:Property
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#communicationThru
+            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#serviceParameter
           daml-oil:UniqueProperty:
             tag: daml-oil:UniqueProperty
             value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#has_process
           daml-ont:Country:
             tag: daml-ont:Country
-            value: daml-country:ANTIGUA-AND-BARBUDA
+            value: daml-country:MIDWAY-ISLANDS
           daml-ont:USRegion:
             tag: daml-ont:USRegion
-            value: daml-usregionstate:GreatLakes
+            value: daml-usregionstate:SouthWest
           daml-ont:USState:
             tag: daml-ont:USState
-            value: daml-usregionstate:AL
+            value: daml-usregionstate:AK
           daml:Class:
             tag: daml:Class
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#Qualification
+            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#Literal
           daml:Ontology:
             tag: daml:Ontology
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf
+            value: daml-ont:State.daml
           daml:Property:
             tag: daml:Property
-            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#rest
+            value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#item
           owl:Restriction:
             tag: owl:Restriction
-            value: N2fd6fab3daf14762a14e739668046c66
+            value: Nb8b1493f7e024ab2b24d6b38ebff198a
           time-entry:TemporalUnit:
             tag: time-entry:TemporalUnit
-            value: time-entry:unitMonth
+            value: time-entry:unitYear
       pairs:
         tag: pairs
         value:
@@ -831,8 +831,8 @@ annotations:
                         tag: object
                         value: '
 
-                          for sameClassAs(X, Y), read X is an equivalent class to
-                          Y. cf OIL Equivalent
+                          for equivalentTo(X, Y), read X is an equivalent term to
+                          Y.
 
                           '
                       predicate:
@@ -840,7 +840,7 @@ annotations:
                         value: daml-2001:comment
                       subject:
                         tag: subject
-                        value: daml-oil:sameClassAs
+                        value: daml-oil:equivalentTo
           daml-2001:complementOf:
             tag: daml-2001:complementOf
             value:
@@ -939,13 +939,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: JP
+                        value: PT
                       predicate:
                         tag: predicate
                         value: daml-iso3166:code
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#JP
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#PT
           daml-iso3166:name:
             tag: daml-iso3166:name
             value:
@@ -957,13 +957,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: JAPAN
+                        value: PORTUGAL
                       predicate:
                         tag: predicate
                         value: daml-iso3166:name
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#JP
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/iso.rdf#PT
           daml-oil:comment:
             tag: daml-oil:comment
             value:
@@ -975,14 +975,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n\tThis class represents the scope or availability\n\
-                          \tof a service to some area.\n    "
+                        value: "\n      ServiceProvider provides general contract\
+                          \ details such as address, fax etc.\n    "
                       predicate:
                         tag: predicate
                         value: daml-oil:comment
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#Location
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#ServiceProvider
               daml-oil:Ontology:
                 tag: daml-oil:Ontology
                 value:
@@ -1002,7 +1002,7 @@ annotations:
                         value: daml-oil:comment
                       subject:
                         tag: subject
-                        value: Nf7769c12180f409091efffc813f4dfa0
+                        value: N9682ef9b3a214cdb81ebb26e2f2b1f40
           daml-oil:domain:
             tag: daml-oil:domain
             value:
@@ -1047,7 +1047,7 @@ annotations:
                         value: daml-oil:domain
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#refersTo
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#restrictedTo
                   uri:
                     tag: uri
                     value:
@@ -1074,7 +1074,7 @@ annotations:
                         value: daml-oil:domain
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#phone
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#fax
                   uri:
                     tag: uri
                     value:
@@ -1086,7 +1086,7 @@ annotations:
                         value: daml-oil:domain
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#qualityGuarantee
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#serviceCategory
               daml-oil:UniqueProperty:
                 tag: daml-oil:UniqueProperty
                 value:
@@ -1119,7 +1119,7 @@ annotations:
                         value: daml-oil:imports
                       subject:
                         tag: subject
-                        value: Nf7769c12180f409091efffc813f4dfa0
+                        value: N9682ef9b3a214cdb81ebb26e2f2b1f40
                   uri:
                     tag: uri
                     value:
@@ -1131,7 +1131,7 @@ annotations:
                         value: daml-oil:imports
                       subject:
                         tag: subject
-                        value: Nf7769c12180f409091efffc813f4dfa0
+                        value: N9682ef9b3a214cdb81ebb26e2f2b1f40
           daml-oil:label:
             tag: daml-oil:label
             value:
@@ -1143,13 +1143,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Location
+                        value: ServiceProvider
                       predicate:
                         tag: predicate
                         value: daml-oil:label
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#Location
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#ServiceProvider
           daml-oil:range:
             tag: daml-oil:range
             value:
@@ -1167,7 +1167,7 @@ annotations:
                         value: daml-oil:range
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#name
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#textDescription
               daml-oil:ObjectProperty:
                 tag: daml-oil:ObjectProperty
                 value:
@@ -1221,7 +1221,7 @@ annotations:
                         value: daml-oil:range
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#parameterName
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#serviceCategory
               daml-oil:UniqueProperty:
                 tag: daml-oil:UniqueProperty
                 value:
@@ -1254,7 +1254,7 @@ annotations:
                         value: daml-oil:subClassOf
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#Location
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#Actor
                   daml-oil:Class:
                     tag: daml-oil:Class
                     value:
@@ -1296,7 +1296,7 @@ annotations:
                         value: daml-oil:subPropertyOf
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#input
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/Profile.daml.rdf#effect
           daml-oil:versionInfo:
             tag: daml-oil:versionInfo
             value:
@@ -1315,7 +1315,7 @@ annotations:
                         value: daml-oil:versionInfo
                       subject:
                         tag: subject
-                        value: Nf7769c12180f409091efffc813f4dfa0
+                        value: N9682ef9b3a214cdb81ebb26e2f2b1f40
           daml-ont:borderstate:
             tag: daml-ont:borderstate
             value:
@@ -1327,13 +1327,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: daml-usregionstate:AZ
+                        value: daml-usregionstate:IN
                       predicate:
                         tag: predicate
                         value: daml-ont:borderstate
                       subject:
                         tag: subject
-                        value: daml-usregionstate:NM
+                        value: daml-usregionstate:IL
           daml-ont:capital:
             tag: daml-ont:capital
             value:
@@ -1345,13 +1345,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: daml-ont:USCity.daml#santafenm
+                        value: daml-ont:USCity.daml#springfieldil
                       predicate:
                         tag: predicate
                         value: daml-ont:capital
                       subject:
                         tag: subject
-                        value: daml-usregionstate:NM
+                        value: daml-usregionstate:IL
           daml-ont:cia:
             tag: daml-ont:cia
             value:
@@ -1363,13 +1363,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:COSTA-RICA
+                        value: wfb:NORWAY
                       predicate:
                         tag: predicate
                         value: daml-ont:cia
                       subject:
                         tag: subject
-                        value: daml-country:COSTA-RICA
+                        value: daml-country:NORWAY
           daml-ont:code:
             tag: daml-ont:code
             value:
@@ -1381,13 +1381,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: NM
+                        value: IL
                       predicate:
                         tag: predicate
                         value: daml-ont:code
                       subject:
                         tag: subject
-                        value: daml-usregionstate:NM
+                        value: daml-usregionstate:IL
           daml-ont:memberstate:
             tag: daml-ont:memberstate
             value:
@@ -1399,13 +1399,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: daml-usregionstate:AK
+                        value: daml-usregionstate:AR
                       predicate:
                         tag: predicate
                         value: daml-ont:memberstate
                       subject:
                         tag: subject
-                        value: daml-usregionstate:PacificWest
+                        value: daml-usregionstate:SouthCentral
           daml-ont:name:
             tag: daml-ont:name
             value:
@@ -1417,13 +1417,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Costa Rica
+                        value: Norway
                       predicate:
                         tag: predicate
                         value: daml-ont:name
                       subject:
                         tag: subject
-                        value: daml-country:COSTA-RICA
+                        value: daml-country:NORWAY
               daml-ont:USState:
                 tag: daml-ont:USState
                 value:
@@ -1432,13 +1432,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: New Mexico
+                        value: Illinois
                       predicate:
                         tag: predicate
                         value: daml-ont:name
                       subject:
                         tag: subject
-                        value: daml-usregionstate:NM
+                        value: daml-usregionstate:IL
           daml-ont:region:
             tag: daml-ont:region
             value:
@@ -1450,13 +1450,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: daml-usregionstate:SouthWest
+                        value: daml-usregionstate:GreatLakes
                       predicate:
                         tag: predicate
                         value: daml-ont:region
                       subject:
                         tag: subject
-                        value: daml-usregionstate:NM
+                        value: daml-usregionstate:IL
           daml:asClass:
             tag: daml:asClass
             value:
@@ -1503,15 +1503,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n    for complementOf(X, Y) read: X is the complement\
-                          \ of Y; if something is in Y,\n    then it's not in X, and\
-                          \ vice versa.\ncf OIL NOT"
+                        value: "for oneOf(C, L) read everything in C is one of the\n\
+                          \     things in L;\n     This lets us define classes by\
+                          \ enumerating the members.\n  "
                       predicate:
                         tag: predicate
                         value: daml:comment
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#complementOf
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#oneOf
           daml:complementOf:
             tag: daml:complementOf
             value:
@@ -1547,7 +1547,7 @@ annotations:
                         value: daml:domain
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#complementOf
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#oneOf
           daml:imports:
             tag: daml:imports
             value:
@@ -1565,7 +1565,7 @@ annotations:
                         value: daml:imports
                       subject:
                         tag: subject
-                        value: daml-ont:State.daml
+                        value: daml-ont:City.daml
                   daml:Ontology:
                     tag: daml:Ontology
                     value:
@@ -1583,13 +1583,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/1999/02/22-rdf-syntax-ns
+                        value: http://www.w3.org/2000/01/rdf-schema
                       predicate:
                         tag: predicate
                         value: daml:imports
                       subject:
                         tag: subject
-                        value: daml-ont:State.daml
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf
           daml:label:
             tag: daml:label
             value:
@@ -1616,13 +1616,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: unionOf
+                        value: cardinality
                       predicate:
                         tag: predicate
                         value: daml:label
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#unionOf
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#cardinality
           daml:range:
             tag: daml:range
             value:
@@ -1634,13 +1634,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#Class
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#List
                       predicate:
                         tag: predicate
                         value: daml:range
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#complementOf
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#oneOf
           daml:sameClassAs:
             tag: daml:sameClassAs
             value:
@@ -1667,13 +1667,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rdfs:Literal
+                        value: rdf:Property
                       predicate:
                         tag: predicate
                         value: daml:sameClassAs
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#Literal
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#Property
           daml:samePropertyAs:
             tag: daml:samePropertyAs
             value:
@@ -1685,13 +1685,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rdfs:domain
+                        value: rdfs:seeAlso
                       predicate:
                         tag: predicate
                         value: daml:samePropertyAs
                       subject:
                         tag: subject
-                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#domain
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf#seeAlso
           daml:subClassOf:
             tag: daml:subClassOf
             value:
@@ -1763,18 +1763,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '
-
-                          $Id: http://www.daml.ri.cmu.edu/ont/State.daml, v 1.0 terryp
-                          2001/07/05 21:50:42 Exp $
-
-                          '
+                        value: '$Id: daml-ont.daml,v 1.2 2000/11/14 06:16:00 connolly
+                          Exp $'
                       predicate:
                         tag: predicate
                         value: daml:versionInfo
                       subject:
                         tag: subject
-                        value: daml-ont:State.daml
+                        value: file:///winhome/Documents/Development/frink-data-lake-analysis/schemata/daml/daml-ont.rdf
           owl:allValuesFrom:
             tag: owl:allValuesFrom
             value:
@@ -1786,13 +1782,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: tzont:State
+                        value: tzont:Country
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: N6df6e85458804fa4b64dc26ca84f9d4e
+                        value: N43d01a295d754c3b8901d041f61fb32a
                   uri:
                     tag: uri
                     value:
@@ -1804,7 +1800,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: Ne600be9a7aad48df9673d2c0092ad4e9
+                        value: Nded353e218f9410c98b76c6c2358bfa2
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -1822,7 +1818,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N29b69e6542eb46c1a69aa9e9e0c55a5a
+                        value: N89fc7e1d49de4ea6b93a508da0c96b28
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1834,7 +1830,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N3dbb88dc734c425a8789fba5e541ad4a
+                        value: N8c05710cad2449e48a3b6612610e8c2b
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -1846,13 +1842,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '1'
+                        value: '3'
                       predicate:
                         tag: predicate
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: Na41236f15966428ba3a23f2eff1b1180
+                        value: Nea7e5a4e485742e4b227335915ebb420
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -1870,7 +1866,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N463b791fe3394e569f00e9b23dabe30f
+                        value: Na7378925eef641d690bab3c9ec16ef3d
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -1882,25 +1878,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: time-entry:years
+                        value: time-entry:year
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Na41236f15966428ba3a23f2eff1b1180
+                        value: N6d8018ab91dd46ba9613b5a385163539
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: tzont:exceptionalRegion
+                        value: tzont:hasTimeZone
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N463b791fe3394e569f00e9b23dabe30f
+                        value: Nea7e5a4e485742e4b227335915ebb420
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -1948,8 +1944,8 @@ annotations:
                         tag: object
                         value: '
 
-                          for differentIndividualFrom(a, b), read a is not the same
-                          individual as b.
+                          for samePropertyAs(P, R), read P is an equivalent property
+                          to R.
 
                           '
                       predicate:
@@ -1957,7 +1953,7 @@ annotations:
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: daml-oil:differentIndividualFrom
+                        value: daml-oil:samePropertyAs
               daml-ont:USState:
                 tag: daml-ont:USState
                 value:
@@ -1987,8 +1983,8 @@ annotations:
                         tag: object
                         value: '
 
-                          Top Level State/County Ontology. Usefull for creating ontologies
-                          for such things as US States, or UK Counties.
+                          City Ontology. Use as a top level ontology for describing
+                          cities.
 
                           '
                       predicate:
@@ -1996,7 +1992,7 @@ annotations:
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: daml-ont:State.daml
+                        value: daml-ont:City.daml
           rdfs:domain:
             tag: rdfs:domain
             value:
@@ -2053,13 +2049,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: sameClassAs
+                        value: samePropertyAs
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: daml-oil:sameClassAs
+                        value: daml-oil:samePropertyAs
               daml-ont:USRegion:
                 tag: daml-ont:USRegion
                 value:
@@ -2068,13 +2064,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Pacific West
+                        value: South Central
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: daml-usregionstate:PacificWest
+                        value: daml-usregionstate:SouthCentral
           rdfs:range:
             tag: rdfs:range
             value:
@@ -2122,28 +2118,28 @@ annotations:
                         value: rdfs:subPropertyOf
                       subject:
                         tag: subject
-                        value: daml-oil:sameClassAs
+                        value: daml-oil:samePropertyAs
                   uri:
                     tag: uri
                     value:
                       object:
                         tag: object
-                        value: rdfs:subClassOf
+                        value: rdfs:subPropertyOf
                       predicate:
                         tag: predicate
                         value: rdfs:subPropertyOf
                       subject:
                         tag: subject
-                        value: daml-oil:sameClassAs
+                        value: daml-oil:samePropertyAs
 classes:
   daml-2001_Class:
     class_uri: daml-2001:Class
     name: daml-2001_Class
     slots:
+    - daml-2001_complementOf
+    - rdfs_comment
     - rdfs_label
     - daml-2001_unionOf
-    - rdfs_comment
-    - daml-2001_complementOf
   daml-2001_List:
     class_uri: daml-2001:List
     name: daml-2001_List
@@ -2153,18 +2149,18 @@ classes:
     class_uri: daml-2001:Ontology
     name: daml-2001_Ontology
     slots:
-    - daml-2001_imports
     - daml-2001_versionInfo
+    - daml-2001_imports
   daml-2001_Property:
     class_uri: daml-2001:Property
     name: daml-2001_Property
     slots:
-    - rdfs_label
-    - rdfs_comment
-    - rdfs_domain
-    - daml-2001_comment
     - rdfs_range
     - rdfs_subPropertyOf
+    - rdfs_domain
+    - rdfs_comment
+    - rdfs_label
+    - daml-2001_comment
   daml-city_City:
     class_uri: daml-city:City
     description: High level city concept.
@@ -2198,8 +2194,8 @@ classes:
     is_a: rdfs_Class
     name: daml-oil_Class
     slots:
-    - daml-oil_label
     - daml-oil_subClassOf
+    - daml-oil_label
     - daml-oil_comment
     title: Class
   daml-oil_Datatype:
@@ -2214,8 +2210,8 @@ classes:
     is_a: rdf_Property
     name: daml-oil_DatatypeProperty
     slots:
-    - daml-oil_range
     - daml-oil_domain
+    - daml-oil_range
     title: DatatypeProperty
   daml-oil_List:
     class_uri: daml-oil:List
@@ -2230,9 +2226,9 @@ classes:
     is_a: rdf_Property
     name: daml-oil_ObjectProperty
     slots:
-    - daml-oil_range
-    - daml-oil_subPropertyOf
     - daml-oil_domain
+    - daml-oil_subPropertyOf
+    - daml-oil_range
     title: ObjectProperty
   daml-oil_Ontology:
     class_uri: daml-oil:Ontology
@@ -2240,16 +2236,16 @@ classes:
       communication between (human and) automated agents.
     name: daml-oil_Ontology
     slots:
-    - daml-oil_comment
     - daml-oil_versionInfo
+    - daml-oil_comment
     - daml-oil_imports
     title: Ontology
   daml-oil_Property:
     class_uri: daml-oil:Property
     name: daml-oil_Property
     slots:
-    - daml-oil_range
     - daml-oil_domain
+    - daml-oil_range
   daml-oil_Restriction:
     class_uri: daml-oil:Restriction
     description: something is in the class R if it satisfies the attached restrictions,
@@ -2284,32 +2280,32 @@ classes:
     is_a: rdf_Property
     name: daml-oil_UniqueProperty
     slots:
-    - daml-oil_range
     - daml-oil_domain
+    - daml-oil_range
     title: UniqueProperty
   daml-ont_Country:
     class_uri: daml-ont:Country
     name: daml-ont_Country
     slots:
-    - daml-ont_cia
     - daml-ont_name
     - daml_sameClassAs
+    - daml-ont_cia
   daml-ont_USRegion:
     class_uri: daml-ont:USRegion
     name: daml-ont_USRegion
     slots:
-    - rdfs_label
     - daml-ont_memberstate
+    - rdfs_label
   daml-ont_USState:
     class_uri: daml-ont:USState
     name: daml-ont_USState
     slots:
-    - rdfs_comment
-    - daml-ont_name
     - daml-ont_region
+    - daml-ont_name
     - daml-ont_borderstate
-    - daml-ont_capital
     - daml-ont_code
+    - rdfs_comment
+    - daml-ont_capital
   daml-profile_Location:
     class_uri: daml-profile:Location
     name: daml-profile_Location
@@ -2337,28 +2333,28 @@ classes:
     class_uri: daml:Class
     name: daml_Class
     slots:
-    - daml_complementOf
-    - daml_asClass
-    - daml_sameClassAs
     - daml_subClassOf
+    - daml_asClass
     - daml_comment
     - daml_label
+    - daml_complementOf
+    - daml_sameClassAs
   daml_Ontology:
     class_uri: daml:Ontology
     name: daml_Ontology
     slots:
+    - daml_imports
     - rdfs_comment
     - daml_versionInfo
-    - daml_imports
   daml_Property:
     class_uri: daml:Property
     name: daml_Property
     slots:
-    - daml_range
-    - daml_subPropertyOf
-    - daml_samePropertyAs
     - daml_comment
     - daml_label
+    - daml_samePropertyAs
+    - daml_subPropertyOf
+    - daml_range
     - daml_domain
   time-entry_CalendarClockDescription:
     class_uri: time-entry:CalendarClockDescription
@@ -2492,16 +2488,16 @@ comments:
 - 'description: ISO 3166 Country Codes'
 - "description: \u240A      An entry sub-ontology of time (OWL-Time).\u240A"
 - "description: \u240A      A time zone ontology.\u240A"
-created_on: '2025-07-17T18:43:20.026776'
+created_on: '2025-07-17T19:19:34.154225'
 default_prefix: okns
 description: Base Country Ontology
 id: okns:daml
 imports:
-- okns:owl-rdf-rdfs
-- linkml:types
 - okns:time
+- linkml:types
+- okns:owl-rdf-rdfs
 - okns:extended_types
-last_updated_on: '2025-07-17T18:43:20.026776'
+last_updated_on: '2025-07-17T19:19:34.154225'
 name: daml
 prefixes:
   daml: http://www.daml.org/2000/10/daml-ont#
@@ -2637,8 +2633,8 @@ slots:
     title: disjointWith
   daml-oil_domain:
     any_of:
-    - range: daml-oil_Class
     - range: uri
+    - range: daml-oil_Class
     name: daml-oil_domain
     range: Any
     slot_uri: daml-oil:domain
@@ -2797,10 +2793,10 @@ slots:
     title: oneOf
   daml-oil_range:
     any_of:
-    - range: daml-oil_Class
-    - range: rdfs_Class
     - range: uri
     - range: daml-2001_Class
+    - range: rdfs_Class
+    - range: daml-oil_Class
     name: daml-oil_range
     range: Any
     slot_uri: daml-oil:range
@@ -2819,9 +2815,9 @@ slots:
     slot_uri: daml-oil:seeAlso
   daml-oil_subClassOf:
     any_of:
-    - range: daml-oil_Class
     - range: uri
     - range: daml-2001_Class
+    - range: daml-oil_Class
     name: daml-oil_subClassOf
     range: Any
     slot_uri: daml-oil:subClassOf
@@ -2913,8 +2909,8 @@ slots:
     slot_uri: daml-state:code
   daml-state_country:
     any_of:
-    - range: daml-country_Country
     - range: daml-country_UNITED-STATES
+    - range: daml-country_Country
     comments:
     - No occurrences of this slot in the graph.
     domain: daml-state_State
@@ -2956,8 +2952,8 @@ slots:
     slot_uri: daml:domain
   daml_imports:
     any_of:
-    - range: daml_Ontology
     - range: uri
+    - range: daml_Ontology
     - range: daml-2001_Ontology
     range: Any
     slot_uri: daml:imports
@@ -2969,8 +2965,8 @@ slots:
     slot_uri: daml:range
   daml_sameClassAs:
     any_of:
-    - range: daml-ont_Country
     - range: uri
+    - range: daml-ont_Country
     range: Any
     slot_uri: daml:sameClassAs
   daml_samePropertyAs:

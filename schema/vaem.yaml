@@ -481,13 +481,13 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: N3599334fc0bb492cb6f0c88c6f8cb152
+            value: N488166608bde4ef296db4d874a297dad
           vaem:GraphMetaData:
             tag: vaem:GraphMetaData
             value: vaem:GMD_VAEM
           vaem:GraphRole:
             tag: vaem:GraphRole
-            value: vaem:FunctionsGraph
+            value: vaem:MappingGraph
           vaem:Party:
             tag: vaem:Party
             value: vaem:TopQuadrant
@@ -548,16 +548,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The property "vaem:idString" is intended for general
-                          use as a means to specifiy a unique reference to something.
-                          This is a data property with a string range and is a sub-property
-                          of "vame:id"
+                        value: The property "vaem:owningParty" is used to refer to
+                          some concept of "Party" and is a sub-property of "vaem:ownedBy"
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: vaem:idString
+                        value: vaem:owningParty
               vaem:GraphRole:
                 tag: vaem:GraphRole
                 value:
@@ -566,14 +564,17 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A "vaem:LinkSetGraph" is a graph that holds statements
-                          that specify links between resources
+                        value: A "vaem:CurationGraph" is a graph to hold metadata
+                          that is needed to describe, govern and provision another
+                          graph. A curation graph will likely use VOAG and VAEM for
+                          this purpose. The property "vaem:curationGraph" is used
+                          to link to the graph (or graphs) being curated
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: vaem:LinkSetGraph
+                        value: vaem:CurationGraph
           dct:modified:
             tag: dct:modified
             value:
@@ -621,13 +622,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: vaem:Discipline
+                        value: vaem:Party
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: Nf254b73378ce43fbbe321c24c80aa280
+                        value: Nc77b5c4137af40b4b991670c51c2b05c
                   uri:
                     tag: uri
                     value:
@@ -639,7 +640,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: N4e4e925994cb4026aefba401a61cf403
+                        value: Ndd7c367f942e45d4b151ee71d5d5439e
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -657,7 +658,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N0f4148df4a3f41d5b63355598bd1f4d6
+                        value: N923f19009625435eac7019a60d9137df
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -675,7 +676,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: Ndc2ae96a482b466888f59d0ca8877c81
+                        value: Na7e294c707104910976a72e79adb0f7b
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -687,25 +688,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: vaem:turtleFileURL
+                        value: vaem:latestPublishedVersion
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Ndc2ae96a482b466888f59d0ca8877c81
+                        value: Na7e294c707104910976a72e79adb0f7b
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: vaem:hasDiscipline
+                        value: vaem:hasSteward
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nf254b73378ce43fbbe321c24c80aa280
+                        value: Nc77b5c4137af40b4b991670c51c2b05c
           owl:versionIRI:
             tag: owl:versionIRI
             value:
@@ -768,7 +769,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: vaem:LinkSetGraph
+                        value: vaem:TransformsGraph
                   uri:
                     tag: uri
                     value:
@@ -780,7 +781,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: vaem:LinkSetGraph
+                        value: vaem:TransformsGraph
               vaem:Party:
                 tag: vaem:Party
                 value:
@@ -834,13 +835,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Link Set graph
+                        value: Transforms graph
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: vaem:LinkSetGraph
+                        value: vaem:TransformsGraph
               vaem:Party:
                 tag: vaem:Party
                 value:
@@ -892,13 +893,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: LINKSET
+                        value: TRANSFORMS
                       predicate:
                         tag: predicate
                         value: vaem:filePrefix
                       subject:
                         tag: subject
-                        value: vaem:LinkSetGraph
+                        value: vaem:TransformsGraph
           vaem:hasGraphMetadata:
             tag: vaem:hasGraphMetadata
             value:
@@ -1335,30 +1336,30 @@ classes:
     see_also:
     - http://voag.linkedmodel.org/vocab/voag
     slots:
-    - dct_abstract
-    - vaem_title
-    - vaem_hasSteward
-    - vaem_hasOwner
-    - vaem_rdfxmlFileURL
-    - vaem_turtleFileURL
-    - vaem_latestPublishedVersion
-    - vaem_description
-    - vaem_usesNonImportedResource
-    - vaem_intent
-    - vaem_namespacePrefix
-    - vaem_revision
-    - vaem_previousPublishedVersion
-    - rdfs_isDefinedBy
-    - dct_created
-    - rdfs_label
-    - vaem_hasGraphRole
-    - vaem_logo
-    - dct_title
-    - vaem_name
     - vaem_namespace
-    - vaem_owner
+    - dct_created
     - dct_modified
     - vaem_withAttributionTo
+    - vaem_turtleFileURL
+    - vaem_name
+    - vaem_intent
+    - dct_title
+    - vaem_description
+    - rdfs_label
+    - vaem_previousPublishedVersion
+    - vaem_hasOwner
+    - vaem_rdfxmlFileURL
+    - dct_abstract
+    - vaem_revision
+    - vaem_latestPublishedVersion
+    - vaem_usesNonImportedResource
+    - vaem_hasGraphRole
+    - vaem_logo
+    - rdfs_isDefinedBy
+    - vaem_title
+    - vaem_hasSteward
+    - vaem_namespacePrefix
+    - vaem_owner
     source: http://www.linkedmodel.org/schema/vaem
     title: Graph Metadata
   vaem_GraphRole:
@@ -1386,8 +1387,8 @@ classes:
     is_a: owl_Thing
     name: vaem_Party
     slots:
-    - rdfs_label
     - vaem_name
+    - rdfs_label
     - vaem_url
     - rdfs_isDefinedBy
     source: http://www.linkedmodel.org/schema/vaem
@@ -1413,15 +1414,15 @@ classes:
     name: vaem_Viewpoint
     source: http://www.linkedmodel.org/schema/vaem
     title: ViewpointDimension
-created_on: '2025-07-17T18:43:35.498650'
+created_on: '2025-07-17T19:19:49.812075'
 default_prefix: okns
 id: okns:vaem
 imports:
+- okns:extended_types
 - linkml:types
 - okns:owl-rdf-rdfs
-- okns:extended_types
 - okns:dc
-last_updated_on: '2025-07-17T18:43:35.498650'
+last_updated_on: '2025-07-17T19:19:49.812075'
 name: vaem
 prefixes:
   dct: http://purl.org/dc/terms/
@@ -1896,9 +1897,9 @@ slots:
     title: url
   vaem_usesNonImportedResource:
     any_of:
-    - range: rdfs_Resource
-    - range: owl_AnnotationProperty
     - range: uri
+    - range: owl_AnnotationProperty
+    - range: rdfs_Resource
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
     description: The property "vaem:usesNonImportedResource" is used to express dependencies

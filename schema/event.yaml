@@ -52,7 +52,7 @@ annotations:
             value: http://moustaki.org/foaf.rdf#moustaki
           owl:Restriction:
             tag: owl:Restriction
-            value: n7524b26691a2402f9189da6f95f11740b2
+            value: n2d29709f9a2a4b1fb2709ad93888aaf4b2
       pairs:
         tag: pairs
         value:
@@ -73,7 +73,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n7524b26691a2402f9189da6f95f11740b1
+                        value: n2d29709f9a2a4b1fb2709ad93888aaf4b1
           owl:someValuesFrom:
             tag: owl:someValuesFrom
             value:
@@ -91,7 +91,7 @@ annotations:
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: n7524b26691a2402f9189da6f95f11740b1
+                        value: n2d29709f9a2a4b1fb2709ad93888aaf4b1
 classes:
   event_Event:
     class_uri: event:Event
@@ -113,7 +113,7 @@ classes:
 comments:
 - 'title: The Event ontology'
 - 'title: The Event ontology'
-created_on: '2025-07-17T18:44:06.465214'
+created_on: '2025-07-17T19:20:20.464754'
 default_prefix: okns
 description: "\u240A\t\tThis ontology deals with the notion of reified events---\u240A\
   \t\tevents seen as first-class objects. It only defines one\u240A\t\tconcept: Event,\
@@ -123,13 +123,13 @@ description: "\u240A\t\tThis ontology deals with the notion of reified events---
   \ agents classify space/time regions\u240A"
 id: okns:event
 imports:
-- okns:foaf
-- okns:wot
 - okns:wgs
-- okns:time
+- okns:foaf
 - okns:extended_types
+- okns:time
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:44:06.465214'
+- okns:wot
+last_updated_on: '2025-07-17T19:20:20.464754'
 name: event
 prefixes:
   dc: http://purl.org/dc/elements/1.1/

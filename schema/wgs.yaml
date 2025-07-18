@@ -356,15 +356,15 @@ classes:
       \ e.g. people, places, bowling balls, as well as abstract areas like cubes."
     name: wgs_SpatialThing
     title: SpatialThing
-created_on: '2025-07-17T18:43:42.097969'
+created_on: '2025-07-17T19:19:57.326770'
 default_prefix: okns
 id: okns:wgs
 imports:
+- okns:dc
+- okns:owl-rdf-rdfs
 - okns:extended_types
 - linkml:types
-- okns:owl-rdf-rdfs
-- okns:dc
-last_updated_on: '2025-07-17T18:43:42.097969'
+last_updated_on: '2025-07-17T19:19:57.326770'
 name: wgs
 prefixes:
   dc: http://purl.org/dc/elements/1.1/

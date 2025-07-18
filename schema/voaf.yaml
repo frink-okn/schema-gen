@@ -133,16 +133,16 @@ annotations:
             value: http://dbpedia.org/resource/Open_Knowledge_Foundation
           foaf:Person:
             tag: foaf:Person
-            value: http://data.semanticweb.org/person/lise-rozat
+            value: http://data.semanticweb.org/person/pierre-yves-vandenbussche
           frbr:Expression:
             tag: frbr:Expression
-            value: http://purl.org/vocommons/voaf/v2.2
+            value: http://purl.org/vocommons/voaf/v2.1
           frbr:Manifestation:
             tag: frbr:Manifestation
-            value: http://purl.org/vocommons/voaf/v1.1/index.html
+            value: http://purl.org/vocommons/voaf/v2.1/index.html
           owl:Restriction:
             tag: owl:Restriction
-            value: N295fb5c5c8eb44f791eb348b027ea3e0
+            value: Ndeddfdd317ff4ca3ab7d1d0188c5a2b0
       pairs:
         tag: pairs
         value:
@@ -157,13 +157,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://data.semanticweb.org/person/bernard-vatant
+                        value: http://data.semanticweb.org/person/pierre-yves-vandenbussche
                       predicate:
                         tag: predicate
                         value: dct:creator
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.0
+                        value: http://purl.org/vocommons/voaf/v2.2
           dct:date:
             tag: dct:date
             value:
@@ -175,13 +175,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2012-07-03'
+                        value: '2013-04-24'
                       predicate:
                         tag: predicate
                         value: dct:date
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.0
+                        value: http://purl.org/vocommons/voaf/v2.2
           frbr:alternate:
             tag: frbr:alternate
             value:
@@ -193,13 +193,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://purl.org/vocommons/voaf/v1.1/index.html
+                        value: http://purl.org/vocommons/voaf/v2.1/index.html
                       predicate:
                         tag: predicate
                         value: frbr:alternate
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v1.1/voaf_v1.1.rdf
+                        value: http://purl.org/vocommons/voaf/v2.1/voaf_v2.1.rdf
           frbr:embodiment:
             tag: frbr:embodiment
             value:
@@ -211,13 +211,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://purl.org/vocommons/voaf/v2.0/voaf_v2.0.rdf
+                        value: http://purl.org/vocommons/voaf/v2.2/voaf_v2.2.rdf
                       predicate:
                         tag: predicate
                         value: frbr:embodiment
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.0
+                        value: http://purl.org/vocommons/voaf/v2.2
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -235,7 +235,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N406d2718643e4f56b71a826a3a0ffb4c
+                        value: N51193d9fbfcb4849a48f9ff7c67c0e70
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -253,7 +253,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N406d2718643e4f56b71a826a3a0ffb4c
+                        value: N51193d9fbfcb4849a48f9ff7c67c0e70
           owl:versionInfo:
             tag: owl:versionInfo
             value:
@@ -265,13 +265,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2.0'
+                        value: '2.2'
                       predicate:
                         tag: predicate
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.0
+                        value: http://purl.org/vocommons/voaf/v2.2
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -283,15 +283,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Namespace moved to purl. Introduction of versions using
-                          FRBR. voaf:Vocabulary rdfs:subClassOf  frbr:Work. Added
-                          labels and comments in French
+                        value: Added properties to represent metrics of vocabulary
+                          elements usage in LOV and LOD
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.0
+                        value: http://purl.org/vocommons/voaf/v2.2
 classes:
   voaf_DatasetOccurrences:
     class_uri: voaf:DatasetOccurrences
@@ -345,20 +344,20 @@ contributors:
 - http://data.semanticweb.org/person/lise-rozat
 - http://data.semanticweb.org/person/pierre-yves-vandenbussche
 created_by: http://data.semanticweb.org/person/bernard-vatant
-created_on: '2025-07-17T18:45:19.247016'
+created_on: '2025-07-17T19:21:33.283020'
 default_prefix: okns
 description: A vocabulary to describe linked data vocabularies and their relations.
 id: okns:voaf
 imports:
-- linkml:types
+- okns:foaf
 - okns:frbr
+- okns:owl-rdf-rdfs
+- linkml:types
+- okns:extended_types
 - okns:dc
 - okns:void
 - okns:ical
-- okns:foaf
-- okns:owl-rdf-rdfs
-- okns:extended_types
-last_updated_on: '2025-07-17T18:45:19.247016'
+last_updated_on: '2025-07-17T19:21:33.283020'
 name: voaf
 prefixes:
   dct: http://purl.org/dc/terms/

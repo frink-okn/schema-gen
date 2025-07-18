@@ -214,10 +214,10 @@ annotations:
             value: void:uriRegexPattern
           sdos:Organization:
             tag: sdos:Organization
-            value: n4e77f2c7d1004669b04cd5da42066fbeb3
+            value: n5131488baad04e81a53494c19460bc0fb5
           sdos:Person:
             tag: sdos:Person
-            value: n4e77f2c7d1004669b04cd5da42066fbeb6
+            value: n5131488baad04e81a53494c19460bc0fb4
       pairs:
         tag: pairs
         value:
@@ -274,7 +274,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb3
+                        value: n5131488baad04e81a53494c19460bc0fb3
           foaf:name:
             tag: foaf:name
             value:
@@ -292,7 +292,7 @@ annotations:
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb3
+                        value: n5131488baad04e81a53494c19460bc0fb3
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -377,7 +377,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
+                        value: n5131488baad04e81a53494c19460bc0fb1
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -389,13 +389,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
+                        value: n5131488baad04e81a53494c19460bc0fb9
                       predicate:
                         tag: predicate
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
+                        value: n5131488baad04e81a53494c19460bc0fb8
           sdos:email:
             tag: sdos:email
             value:
@@ -413,7 +413,7 @@ annotations:
                         value: sdos:email
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
+                        value: n5131488baad04e81a53494c19460bc0fb8
           sdos:identifier:
             tag: sdos:identifier
             value:
@@ -431,7 +431,7 @@ annotations:
                         value: sdos:identifier
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
+                        value: n5131488baad04e81a53494c19460bc0fb1
           sdos:name:
             tag: sdos:name
             value:
@@ -443,13 +443,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: LiDRC
+                        value: Talis
                       predicate:
                         tag: predicate
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
+                        value: n5131488baad04e81a53494c19460bc0fb7
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -464,7 +464,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
+                        value: n5131488baad04e81a53494c19460bc0fb8
               untyped:
                 tag: untyped
                 value:
@@ -479,7 +479,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
+                        value: n5131488baad04e81a53494c19460bc0fb1
           sdos:url:
             tag: sdos:url
             value:
@@ -491,13 +491,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://linkeddata.deri.ie/
+                        value: http://www.talis.com/
                       predicate:
                         tag: predicate
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
+                        value: n5131488baad04e81a53494c19460bc0fb7
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -512,20 +512,20 @@ annotations:
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
+                        value: n5131488baad04e81a53494c19460bc0fb8
 classes:
   adms_SemanticAssetDistribution:
     class_uri: adms:SemanticAssetDistribution
     name: adms_SemanticAssetDistribution
     slots:
-    - adms_accessURL
     - adms_status
+    - adms_accessURL
   rdf_DatatypeProperty:
     class_uri: rdf:DatatypeProperty
     name: rdf_DatatypeProperty
     slots:
-    - rdfs_domain
     - rdfs_comment
+    - rdfs_domain
     - rdfs_label
   void_Dataset:
     class_uri: void:Dataset
@@ -555,11 +555,11 @@ comments:
 - 'title: Vocabulary of Interlinked Datasets (VoID)'
 - 'last_updated_on: 2011-03-06'
 - 'created_on: 2010-01-26'
-- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb4'
-- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb6'
-- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb8'
-created_by: n4e77f2c7d1004669b04cd5da42066fbeb2
-created_on: '2025-07-17T18:45:09.528510'
+- 'created_by: n5131488baad04e81a53494c19460bc0fb4'
+- 'created_by: n5131488baad04e81a53494c19460bc0fb6'
+- 'created_by: n5131488baad04e81a53494c19460bc0fb8'
+created_by: n5131488baad04e81a53494c19460bc0fb2
+created_on: '2025-07-17T19:21:22.084650'
 default_prefix: okns
 description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema vocabulary
   for expressing metadata about RDF datasets. It is intended as a bridge between the
@@ -570,14 +570,14 @@ description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema voca
   Linked Datasets with the VoID Vocabulary</a></em>.
 id: okns:void
 imports:
-- linkml:types
 - okns:sdo
-- okns:adms
 - okns:wot
-- okns:owl-rdf-rdfs
+- linkml:types
 - okns:extended_types
+- okns:owl-rdf-rdfs
+- okns:adms
 - okns:foaf
-last_updated_on: '2025-07-17T18:45:09.528510'
+last_updated_on: '2025-07-17T19:21:22.084650'
 name: void
 prefixes:
   adms: http://www.w3.org/ns/adms#

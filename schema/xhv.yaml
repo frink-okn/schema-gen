@@ -46,7 +46,7 @@ annotations:
         value:
           rdf:Bag:
             tag: rdf:Bag
-            value: xhv:role-properties
+            value: xhv:relrev-properties
       pairs:
         tag: pairs
         value:
@@ -87,14 +87,14 @@ annotations:
                         tag: subject
                         value: http://www.w3.org/1999/xhtml/vocab
 classes: {}
-created_on: '2025-07-17T18:43:50.909381'
+created_on: '2025-07-17T19:20:05.660050'
 default_prefix: okns
 id: okns:xhv
 imports:
-- linkml:types
-- okns:extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:43:50.909381'
+- okns:extended_types
+- linkml:types
+last_updated_on: '2025-07-17T19:20:05.660050'
 name: xhv
 prefixes:
   linkml: https://w3id.org/linkml/

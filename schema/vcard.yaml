@@ -118,10 +118,10 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: n0a9bd5e2d55d42d7812af625aa30f5a7b40
+            value: n0bc511e644f648679cbee2fce846be64b61
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: n0a9bd5e2d55d42d7812af625aa30f5a7b69
+            value: n0bc511e644f648679cbee2fce846be64b72
       pairs:
         tag: pairs
         value:
@@ -142,7 +142,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b46
+                        value: n0bc511e644f648679cbee2fce846be64b24
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -160,7 +160,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b61
+                        value: n0bc511e644f648679cbee2fce846be64b41
           owl:minQualifiedCardinality:
             tag: owl:minQualifiedCardinality
             value:
@@ -178,7 +178,7 @@ annotations:
                         value: owl:minQualifiedCardinality
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b37
+                        value: n0bc511e644f648679cbee2fce846be64b37
           owl:onClass:
             tag: owl:onClass
             value:
@@ -196,7 +196,7 @@ annotations:
                         value: owl:onClass
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b34
+                        value: n0bc511e644f648679cbee2fce846be64b34
           owl:onDataRange:
             tag: owl:onDataRange
             value:
@@ -214,7 +214,7 @@ annotations:
                         value: owl:onDataRange
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b37
+                        value: n0bc511e644f648679cbee2fce846be64b37
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -226,13 +226,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: vcard:family-name
+                        value: vcard:postal-code
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b46
+                        value: n0bc511e644f648679cbee2fce846be64b13
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
@@ -244,7 +244,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b33
+                        value: n0bc511e644f648679cbee2fce846be64b34
           owl:someValuesFrom:
             tag: owl:someValuesFrom
             value:
@@ -262,7 +262,7 @@ annotations:
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b33
+                        value: n0bc511e644f648679cbee2fce846be64b33
                   uri:
                     tag: uri
                     value:
@@ -274,7 +274,7 @@ annotations:
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: n0a9bd5e2d55d42d7812af625aa30f5a7b18
+                        value: n0bc511e644f648679cbee2fce846be64b13
 classes:
   vcard_Acquaintance:
     class_uri: vcard:Acquaintance
@@ -709,7 +709,7 @@ classes:
     title: X400
 comments:
 - 'title: Ontology for vCard'
-created_on: '2025-07-17T18:43:11.180102'
+created_on: '2025-07-17T19:19:26.218385'
 default_prefix: okns
 description: Ontology for vCard based on RFC6350
 id: okns:vcard
@@ -717,7 +717,7 @@ imports:
 - okns:extended_types
 - okns:owl-rdf-rdfs
 - linkml:types
-last_updated_on: '2025-07-17T18:43:11.180102'
+last_updated_on: '2025-07-17T19:19:26.218385'
 name: vcard
 prefixes:
   linkml: https://w3id.org/linkml/

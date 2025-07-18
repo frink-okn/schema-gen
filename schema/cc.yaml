@@ -94,13 +94,13 @@ annotations:
             value: cc:PublicDomain
           cc:Permission:
             tag: cc:Permission
-            value: cc:DerivativeWorks
+            value: cc:Reproduction
           cc:Prohibition:
             tag: cc:Prohibition
             value: cc:CommercialUse
           cc:Requirement:
             tag: cc:Requirement
-            value: cc:SourceCode
+            value: cc:ShareAlike
       pairs:
         tag: pairs
         value:
@@ -130,13 +130,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: distribution, public display, and publicly performance
+                        value: creation and distribution of derivative works
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:Distribution
+                        value: cc:DerivativeWorks
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -160,13 +160,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: credit be given to copyright holder and/or author
+                        value: copyright and license notices be kept intact
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:Attribution
+                        value: cc:Notice
           dc:title:
             tag: dc:title
             value:
@@ -193,13 +193,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: distribution
+                        value: derivative works
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:Distribution
+                        value: cc:DerivativeWorks
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -223,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: attribution
+                        value: copyright notices
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:Attribution
+                        value: cc:Notice
 classes:
   cc_Agent:
     class_uri: cc:Agent
@@ -243,32 +243,32 @@ classes:
       license, the public domain, information for distributors
     name: cc_License
     slots:
-    - dc_description
     - dc_title
+    - dc_description
     title: license
   cc_Permission:
     class_uri: cc:Permission
     description: an action that may or may not be allowed or desired
     name: cc_Permission
     slots:
-    - dc_description
     - dc_title
+    - dc_description
     title: permission
   cc_Prohibition:
     class_uri: cc:Prohibition
     description: something you may be asked not to do
     name: cc_Prohibition
     slots:
-    - dc_description
     - dc_title
+    - dc_description
     title: prohibition
   cc_Requirement:
     class_uri: cc:Requirement
     description: an action that may or may not be requested of you
     name: cc_Requirement
     slots:
-    - dc_description
     - dc_title
+    - dc_description
     title: requirement
   cc_Work:
     class_uri: cc:Work
@@ -277,13 +277,13 @@ classes:
     see_also:
     - http://www.w3.org/2000/10/swap/pim/doc#Work
     title: work
-created_on: '2025-07-17T18:43:57.085272'
+created_on: '2025-07-17T19:20:10.914188'
 default_prefix: okns
 id: okns:cc
 imports:
-- okns:dc
 - linkml:types
-last_updated_on: '2025-07-17T18:43:57.085272'
+- okns:dc
+last_updated_on: '2025-07-17T19:20:10.914188'
 name: cc
 prefixes:
   cc: http://web.resource.org/cc/

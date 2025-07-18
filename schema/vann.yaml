@@ -192,19 +192,19 @@ classes: {}
 comments:
 - 'title: VANN: A vocabulary for annotating vocabulary descriptions'
 created_by: http://iandavis.com/id/me
-created_on: '2025-07-17T18:44:03.177786'
+created_on: '2025-07-17T19:20:17.221129'
 default_prefix: okns
 description: This document describes a vocabulary for annotating descriptions of vocabularies
   with examples and usage notes.
 id: okns:vann
 imports:
-- okns:dc
+- okns:foaf
 - okns:extended_types
-- okns:cc
 - linkml:types
 - okns:owl-rdf-rdfs
-- okns:foaf
-last_updated_on: '2025-07-17T18:44:03.177786'
+- okns:dc
+- okns:cc
+last_updated_on: '2025-07-17T19:20:17.221129'
 name: vann
 prefixes:
   cc: http://web.resource.org/cc/

@@ -196,10 +196,10 @@ annotations:
         value:
           owl:Axiom:
             tag: owl:Axiom
-            value: nc7ce90deb8af4abf8c0b782c72ee0ad2b68
+            value: n27d9c6ab782d40f999c8352e9082270ab68
           owl:Restriction:
             tag: owl:Restriction
-            value: nc7ce90deb8af4abf8c0b782c72ee0ad2b71
+            value: n27d9c6ab782d40f999c8352e9082270ab1
       pairs:
         tag: pairs
         value:
@@ -214,13 +214,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rdfs:subPropertyOf
+                        value: rdfs:domain
                       predicate:
                         tag: predicate
                         value: owl:annotatedProperty
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
+                        value: n27d9c6ab782d40f999c8352e9082270ab62
           owl:annotatedSource:
             tag: owl:annotatedSource
             value:
@@ -238,19 +238,19 @@ annotations:
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b68
+                        value: n27d9c6ab782d40f999c8352e9082270ab68
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: prov:wasQuotedFrom
+                        value: prov:wasInfluencedBy
                       predicate:
                         tag: predicate
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
+                        value: n27d9c6ab782d40f999c8352e9082270ab62
           owl:annotatedTarget:
             tag: owl:annotatedTarget
             value:
@@ -262,13 +262,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b58
+                        value: n27d9c6ab782d40f999c8352e9082270ab63
                       predicate:
                         tag: predicate
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
+                        value: n27d9c6ab782d40f999c8352e9082270ab62
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
@@ -280,7 +280,7 @@ annotations:
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
+                        value: n27d9c6ab782d40f999c8352e9082270ab54
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -298,7 +298,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b73
+                        value: n27d9c6ab782d40f999c8352e9082270ab71
           owl:inverseOf:
             tag: owl:inverseOf
             value:
@@ -322,13 +322,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: prov:qualifiedAttribution
+                        value: prov:hadGeneration
                       predicate:
                         tag: predicate
                         value: owl:inverseOf
                       subject:
                         tag: subject
-                        value: prov:qualifiedAttributionOf
+                        value: prov:generatedAsDerivation
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -346,7 +346,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b1
+                        value: n27d9c6ab782d40f999c8352e9082270ab1
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -364,7 +364,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b74
+                        value: n27d9c6ab782d40f999c8352e9082270ab72
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -382,19 +382,19 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b74
+                        value: n27d9c6ab782d40f999c8352e9082270ab74
                   owl:FunctionalProperty:
                     tag: owl:FunctionalProperty
                     value:
                       object:
                         tag: object
-                        value: prov:pairKey
+                        value: prov:pairEntity
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b69
+                        value: n27d9c6ab782d40f999c8352e9082270ab70
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
@@ -406,7 +406,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b72
+                        value: n27d9c6ab782d40f999c8352e9082270ab72
           prov:definition:
             tag: prov:definition
             value:
@@ -418,14 +418,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'influencer: an identifier (o1) for an ancestor entity,
-                          activity, or agent that the former depends on;'
+                        value: 'influencee: an identifier (o2) for an entity, activity,
+                          or agent; '
                       predicate:
                         tag: predicate
                         value: prov:definition
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
+                        value: n27d9c6ab782d40f999c8352e9082270ab62
           prov:dm:
             tag: prov:dm
             value:
@@ -443,7 +443,7 @@ annotations:
                         value: prov:dm
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
+                        value: n27d9c6ab782d40f999c8352e9082270ab62
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -455,16 +455,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'Quotation is a particular case of derivation (see
-                          http://www.w3.org/TR/prov-dm/#term-quotation) in which an
-                          entity is derived from an original entity by copying, or
-                          "quoting", some or all of it. '
+                        value: hadPrimarySource property is a particular case of wasDerivedFrom
+                          (see http://www.w3.org/TR/prov-dm/#term-original-source)
+                          that aims to give credit to the source that originated some
+                          information.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
+                        value: n27d9c6ab782d40f999c8352e9082270ab54
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -482,7 +482,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: prov:qualifiedAttributionOf
+                        value: prov:generatedAsDerivation
           rdfs:label:
             tag: rdfs:label
             value:
@@ -494,13 +494,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: qualifiedAttributionOf
+                        value: generatedAsDerivation
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: prov:qualifiedAttributionOf
+                        value: prov:generatedAsDerivation
 classes:
   prov_Accept:
     class_uri: prov:Accept
@@ -1096,7 +1096,7 @@ comments:
   \ (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/\u240A\
   ). All feedback is welcome."
 - 'title: W3C PROV Linking Across Provenance Bundles Ontology (PROV-LINKS)'
-created_on: '2025-07-17T18:43:09.518138'
+created_on: '2025-07-17T19:19:26.079956'
 default_prefix: okns
 description: "This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\u240A\
   \u240AIf you wish to make comments regarding this document, please send them to\
@@ -1105,10 +1105,10 @@ description: "This document is published by the Provenance Working Group (http:/
   \ is welcome."
 id: okns:prov
 imports:
-- linkml:types
 - okns:owl-rdf-rdfs
+- linkml:types
 - okns:extended_types
-last_updated_on: '2025-07-17T18:43:09.518138'
+last_updated_on: '2025-07-17T19:19:26.079956'
 name: prov
 prefixes:
   linkml: https://w3id.org/linkml/

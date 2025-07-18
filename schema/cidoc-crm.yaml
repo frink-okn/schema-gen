@@ -1216,7 +1216,7 @@ classes:
     is_a: cidoc-crm_E7_Activity
     name: cidoc-crm_E9_Move
     title: Move
-created_on: '2025-07-17T18:44:18.559496'
+created_on: '2025-07-17T19:20:31.565200'
 default_prefix: okns
 description: "CIDOC CRM v7.1.3 implemented in RDFS\u240A\u240AThis is the implementation\
   \ approved by the 58th CRM-SIG meeting (March 2024)\u240Aas the current RDFS version\
@@ -1436,9 +1436,9 @@ description: "CIDOC CRM v7.1.3 implemented in RDFS\u240A\u240AThis is the implem
   \ by: rdfs:Literal`\u240A\u240A"
 id: okns:cidoc-crm
 imports:
-- okns:owl-rdf-rdfs
 - okns:frbroo
-last_updated_on: '2025-07-17T18:44:18.559496'
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-17T19:20:31.565200'
 name: cidoc-crm
 prefixes:
   cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/

@@ -436,10 +436,10 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: N00446d3dbb8743c083cbfc59624327c4
+            value: N81b04b30c834457db6fcac315fc229f1
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: dtype:numericUnion
+            value: Nf7041ae783b647c097fb38e12d2fc9cd
           vaem:GraphMetaData:
             tag: vaem:GraphMetaData
             value: dtype:GMD_DTYPE
@@ -475,13 +475,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A datatype that is the union of date datatypes.
+                        value: "\nA datatype that is the union of numeric xsd data\
+                          \ types.\n\"dtype:numericUnion\" is equivalent to the xsd\
+                          \ specification that uses an xsd:union of \nmemberTypes=\"\
+                          xsd:decimal xsd:double xsd:float xsd:integer\".\n"
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: dtype:dateUnion
+                        value: dtype:numericUnion
           dct:modified:
             tag: dct:modified
             value:
@@ -535,7 +538,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: N7581115f631b44c0921bfbdb7e7885f8
+                        value: N2b430d428fd349f29e5dca365d993b1a
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -553,7 +556,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N2cf91219320f43ac979016271d1833a0
+                        value: Nbf64a63e49df4d10bc4dd92f65fa2d2d
           owl:equivalentClass:
             tag: owl:equivalentClass
             value:
@@ -565,7 +568,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: N099c8d133a2b429db3234557f57850ca
+                        value: N0772a5a497b94eaea9c09544f7621072
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -577,7 +580,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Nebc57aeeaf534cb58ce9e2a921471131
+                        value: Nf7041ae783b647c097fb38e12d2fc9cd
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -601,7 +604,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: Nfd7f05575ad84c04ad293217403d88ed
+                        value: N52fa1deb04a1407a9442e8133f0cab9e
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -619,7 +622,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N67b906ac6f134c959ce1d0436090e384
+                        value: N0e4250f722934782811acf480a71b91b
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -631,25 +634,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: dtype:order
+                        value: dtype:code
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nfd7f05575ad84c04ad293217403d88ed
+                        value: N52fa1deb04a1407a9442e8133f0cab9e
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: dtype:refersTo
+                        value: dtype:defaultObjectValue
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N2cf91219320f43ac979016271d1833a0
+                        value: N2b430d428fd349f29e5dca365d993b1a
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -667,7 +670,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dtype:dateUnion
+                        value: dtype:numericUnion
               vaem:GraphMetaData:
                 tag: vaem:GraphMetaData
                 value:
@@ -694,13 +697,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: date union
+                        value: numeric union
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dtype:dateUnion
+                        value: dtype:numericUnion
               vaem:GraphMetaData:
                 tag: vaem:GraphMetaData
                 value:
@@ -733,7 +736,7 @@ annotations:
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: dtype:dateUnion
+                        value: dtype:numericUnion
           vaem:description:
             tag: vaem:description
             value:
@@ -1165,16 +1168,16 @@ classes:
 comments:
 - 'title: Datatype Ontology'
 - 'title: Datatype Ontology'
-created_on: '2025-07-17T18:43:38.280736'
+created_on: '2025-07-17T19:19:52.707341'
 default_prefix: okns
 id: okns:dtype
 imports:
+- linkml:types
 - okns:vaem
 - okns:dc
-- okns:owl-rdf-rdfs
-- linkml:types
 - okns:extended_types
-last_updated_on: '2025-07-17T18:43:38.280736'
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-17T19:19:52.707341'
 name: dtype
 prefixes:
   dct: http://purl.org/dc/terms/

@@ -283,28 +283,28 @@ annotations:
             value: gr:Business
           gr:BusinessFunction:
             tag: gr:BusinessFunction
-            value: gr:Repair
+            value: gr:Dispose
           gr:DayOfWeek:
             tag: gr:DayOfWeek
-            value: gr:Thursday
+            value: gr:Wednesday
           gr:DeliveryMethod:
             tag: gr:DeliveryMethod
             value: gr:DeliveryModeOwnFleet
           gr:DeliveryModeParcelService:
             tag: gr:DeliveryModeParcelService
-            value: gr:UPS
+            value: gr:DHL
           gr:Offering:
             tag: gr:Offering
-            value: Neb364a245f4949e48d5de45f762bcfd9
+            value: N144c82c6055b4be0b95be4161689e222
           gr:PaymentMethod:
             tag: gr:PaymentMethod
-            value: gr:ByInvoice
+            value: gr:PayPal
           gr:PaymentMethodCreditCard:
             tag: gr:PaymentMethodCreditCard
-            value: gr:Discover
+            value: gr:AmericanExpress
           gr:WarrantyScope:
             tag: gr:WarrantyScope
-            value: gr:PartsAndLabor-BringIn
+            value: gr:Labor-BringIn
       pairs:
         tag: pairs
         value:
@@ -325,7 +325,7 @@ annotations:
                         value: gr:category
                       subject:
                         tag: subject
-                        value: Neb364a245f4949e48d5de45f762bcfd9
+                        value: N144c82c6055b4be0b95be4161689e222
           gr:description:
             tag: gr:description
             value:
@@ -343,7 +343,7 @@ annotations:
                         value: gr:description
                       subject:
                         tag: subject
-                        value: Neb364a245f4949e48d5de45f762bcfd9
+                        value: N144c82c6055b4be0b95be4161689e222
           gr:displayPosition:
             tag: gr:displayPosition
             value:
@@ -355,33 +355,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '3'
+                        value: '1'
                       predicate:
                         tag: predicate
                         value: gr:displayPosition
                       subject:
                         tag: subject
-                        value: gr:Wednesday
+                        value: gr:Monday
           gr:hasNext:
             tag: gr:hasNext
-            value:
-              gr:DayOfWeek:
-                tag: gr:DayOfWeek
-                value:
-                  gr:DayOfWeek:
-                    tag: gr:DayOfWeek
-                    value:
-                      object:
-                        tag: object
-                        value: gr:Thursday
-                      predicate:
-                        tag: predicate
-                        value: gr:hasNext
-                      subject:
-                        tag: subject
-                        value: gr:Wednesday
-          gr:hasPrevious:
-            tag: gr:hasPrevious
             value:
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
@@ -394,10 +376,28 @@ annotations:
                         value: gr:Tuesday
                       predicate:
                         tag: predicate
+                        value: gr:hasNext
+                      subject:
+                        tag: subject
+                        value: gr:Monday
+          gr:hasPrevious:
+            tag: gr:hasPrevious
+            value:
+              gr:DayOfWeek:
+                tag: gr:DayOfWeek
+                value:
+                  gr:DayOfWeek:
+                    tag: gr:DayOfWeek
+                    value:
+                      object:
+                        tag: object
+                        value: gr:Sunday
+                      predicate:
+                        tag: predicate
                         value: gr:hasPrevious
                       subject:
                         tag: subject
-                        value: gr:Wednesday
+                        value: gr:Monday
           owl:deprecated:
             tag: owl:deprecated
             value:
@@ -445,16 +445,17 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'This gr:BusinessFunction indicates that the gr:BusinessEntity
-                          is in general interested in purchasing the specified gr:ProductOrService.
-
-                          DEPRECATED. Use gr:seeks instead.'
+                        value: This gr:BusinessFunction indicates that the gr:BusinessEntity
+                          offers (or seeks) the evaluation of the chances for repairing,
+                          and, if positive, repair of the specified gr:ProductOrService.
+                          Repairing means actions that restore the originally intended
+                          function of a product that suffers from outage or malfunction.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Buy
+                        value: gr:Repair
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -463,13 +464,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Wednesday as a day of the week.
+                        value: Monday as a day of the week.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Wednesday
+                        value: gr:Monday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -478,14 +479,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery via regular mail service (private or public
-                          postal services).
+                        value: Delivery of the goods by picking them up at one of
+                          the stores etc. (gr:Location) during the opening hours as
+                          specified by respective instances of gr:OpeningHoursSpecification.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:DeliveryModeMail
+                        value: gr:DeliveryModePickUp
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -494,13 +496,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery via the parcel service DHL.
+                        value: Delivery via the parcel service UPS.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:DHL
+                        value: gr:UPS
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -509,13 +511,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Payment via the Google Checkout payment service.
+                        value: Payment by cash upon delivery or pickup.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:GoogleCheckout
+                        value: gr:Cash
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -589,7 +591,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Buy
+                        value: gr:Repair
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -604,7 +606,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Wednesday
+                        value: gr:Monday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -619,7 +621,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:DeliveryModeMail
+                        value: gr:DeliveryModePickUp
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -634,7 +636,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:DHL
+                        value: gr:UPS
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -649,7 +651,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:GoogleCheckout
+                        value: gr:Cash
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -706,13 +708,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Buy (business function, DEPRECATED)
+                        value: Repair (business function)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Buy
+                        value: gr:Repair
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -721,13 +723,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Wednesday (day of week)
+                        value: Monday (day of week)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Wednesday
+                        value: gr:Monday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -736,13 +738,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery mode mail (delivery method)
+                        value: Delivery mode pick up (delivery method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:DeliveryModeMail
+                        value: gr:DeliveryModePickUp
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -751,13 +753,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: DHL (delivery method)
+                        value: UPS (delivery method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:DHL
+                        value: gr:UPS
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -766,13 +768,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Google Checkout (payment method)
+                        value: Cash (payment method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:GoogleCheckout
+                        value: gr:Cash
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -849,9 +851,9 @@ classes:
       Examples: Consumers, Retailers, Wholesalers, or Public Institutions"
     name: gr_BusinessEntityType
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Business entity type
   gr_BusinessFunction:
@@ -867,10 +869,10 @@ classes:
       \ dispose car wrecks of any make and model."
     name: gr_BusinessFunction
     slots:
-    - owl_deprecated
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - owl_deprecated
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Business function
   gr_DayOfWeek:
@@ -881,11 +883,11 @@ classes:
     name: gr_DayOfWeek
     slots:
     - rdfs_label
-    - gr_hasPrevious
+    - gr_displayPosition
     - rdfs_isDefinedBy
     - rdfs_comment
+    - gr_hasPrevious
     - gr_hasNext
-    - gr_displayPosition
     source: http://purl.org/goodrelations/v1
     title: Day of week
   gr_DeliveryChargeSpecification:
@@ -926,9 +928,9 @@ classes:
       \ by mail, delivery by direct download, delivery by UPS"
     name: gr_DeliveryMethod
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Delivery method
   gr_DeliveryModeParcelService:
@@ -938,9 +940,9 @@ classes:
     is_a: gr_DeliveryMethod
     name: gr_DeliveryModeParcelService
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Delivery mode parcel service
   gr_Individual:
@@ -1036,8 +1038,8 @@ classes:
       \ also represent demand."
     name: gr_Offering
     slots:
-    - gr_description
     - gr_category
+    - gr_description
     source: http://purl.org/goodrelations/v1
     title: Offering
   gr_OpeningHoursSpecification:
@@ -1081,9 +1083,9 @@ classes:
       \ cash, or bank transfer in advance."
     name: gr_PaymentMethod
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Payment method
   gr_PaymentMethodCreditCard:
@@ -1096,9 +1098,9 @@ classes:
     is_a: gr_PaymentMethod
     name: gr_PaymentMethodCreditCard
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Payment method credit card
   gr_PriceSpecification:
@@ -1311,15 +1313,15 @@ classes:
       \ Parts and Labor, Parts"
     name: gr_WarrantyScope
     slots:
-    - rdfs_comment
-    - rdfs_label
     - rdfs_isDefinedBy
+    - rdfs_label
+    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Warranty scope
 comments:
 - 'title: The GoodRelations Vocabulary for Semantic Web-based E-Commerce'
 - 'title: GoodRelations Ontology'
-created_on: '2025-07-17T18:44:53.640014'
+created_on: '2025-07-17T19:21:06.079502'
 default_prefix: okns
 description: "The GoodRelations ontology provides the vocabulary for annotating e-commerce\
   \ offerings (1) to sell, lease, repair, dispose, or maintain commodity products\
@@ -1339,11 +1341,11 @@ description: "The GoodRelations ontology provides the vocabulary for annotating 
   \ Acitrezza, Italy, Springer LNCS, Vol. 5268, pp. 332-347.\u240A\u240APDF at http://www.heppnetz.de/publications/"
 id: okns:gr
 imports:
-- okns:extended_types
-- okns:owl-rdf-rdfs
 - okns:sdo
+- okns:owl-rdf-rdfs
+- okns:extended_types
 - linkml:types
-last_updated_on: '2025-07-17T18:44:53.640014'
+last_updated_on: '2025-07-17T19:21:06.079502'
 name: gr
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -1356,7 +1358,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  sdos: http://schema.org/
+  sdos: https://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   gr_acceptedPaymentMethods:

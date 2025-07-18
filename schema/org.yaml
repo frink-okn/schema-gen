@@ -172,7 +172,7 @@ annotations:
             value: org:Head
           owl:Restriction:
             tag: owl:Restriction
-            value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
+            value: nd6242a7371944b23a2b6fb238e560e85b21
       pairs:
         tag: pairs
         value:
@@ -193,7 +193,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b5
+                        value: nd6242a7371944b23a2b6fb238e560e85b5
           foaf:mbox:
             tag: foaf:mbox
             value:
@@ -205,13 +205,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: dave@epimorphics.com
+                        value: ogiraldo@fi.upm.es
                       predicate:
                         tag: predicate
                         value: foaf:mbox
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b1
+                        value: nd6242a7371944b23a2b6fb238e560e85b8
           foaf:name:
             tag: foaf:name
             value:
@@ -223,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Dave Reynolds
+                        value: Olga Ximena Giraldo
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b1
+                        value: nd6242a7371944b23a2b6fb238e560e85b8
           org:roleProperty:
             tag: org:roleProperty
             value:
@@ -277,7 +277,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
+                        value: nd6242a7371944b23a2b6fb238e560e85b21
                   rdfs:Class:
                     tag: rdfs:Class
                     value:
@@ -289,7 +289,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
+                        value: nd6242a7371944b23a2b6fb238e560e85b21
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -307,7 +307,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
+                        value: nd6242a7371944b23a2b6fb238e560e85b21
                   rdf:Property:
                     tag: rdf:Property
                     value:
@@ -319,7 +319,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
+                        value: nd6242a7371944b23a2b6fb238e560e85b21
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -802,11 +802,11 @@ classes:
     is_a: skos_Concept
     name: org_Role
     slots:
-    - rdfs_isDefinedBy
     - skos_prefLabel
     - rdfs_label
-    - rdfs_comment
     - org_roleProperty
+    - rdfs_isDefinedBy
+    - rdfs_comment
     source: http://www.w3.org/ns/org
     title: Role
   org_Site:
@@ -874,29 +874,29 @@ comments:
 - 'title: Ontologia delle organizzazioni'
 - "title: Ontolog\xEDa de organizaciones"
 contributors:
-- n0cb3a3268e4745ec8a56ffa62c7a2000b1
-- n0cb3a3268e4745ec8a56ffa62c7a2000b2
-- n0cb3a3268e4745ec8a56ffa62c7a2000b3
-- n0cb3a3268e4745ec8a56ffa62c7a2000b4
-- n0cb3a3268e4745ec8a56ffa62c7a2000b5
-- n0cb3a3268e4745ec8a56ffa62c7a2000b6
-- n0cb3a3268e4745ec8a56ffa62c7a2000b7
-- n0cb3a3268e4745ec8a56ffa62c7a2000b8
-- n0cb3a3268e4745ec8a56ffa62c7a2000b9
-created_on: '2025-07-17T18:44:26.483756'
+- nd6242a7371944b23a2b6fb238e560e85b1
+- nd6242a7371944b23a2b6fb238e560e85b2
+- nd6242a7371944b23a2b6fb238e560e85b3
+- nd6242a7371944b23a2b6fb238e560e85b4
+- nd6242a7371944b23a2b6fb238e560e85b5
+- nd6242a7371944b23a2b6fb238e560e85b6
+- nd6242a7371944b23a2b6fb238e560e85b7
+- nd6242a7371944b23a2b6fb238e560e85b8
+- nd6242a7371944b23a2b6fb238e560e85b9
+created_on: '2025-07-17T19:20:38.900125'
 default_prefix: okns
 description: Vocabulary for describing organizational structures, specializable to
   a broad variety of types of organization.
 id: okns:org
 imports:
 - okns:extended_types
-- okns:prov
 - okns:skos
-- linkml:types
+- okns:foaf
 - okns:owl-rdf-rdfs
 - okns:wot
-- okns:foaf
-last_updated_on: '2025-07-17T18:44:26.483756'
+- linkml:types
+- okns:prov
+last_updated_on: '2025-07-17T19:20:38.900125'
 name: org
 prefixes:
   foaf: http://xmlns.com/foaf/0.1/

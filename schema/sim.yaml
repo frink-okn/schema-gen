@@ -49,10 +49,10 @@ annotations:
         value:
           foaf:Person:
             tag: foaf:Person
-            value: http://kurtisrandom.com/foaf.rdf#kurtjx
+            value: http://moustaki.org/foaf.rdf#moustaki
           owl:Restriction:
             tag: owl:Restriction
-            value: nec680c965a2745de9bbb9b814d7e58f3b1
+            value: n4d795616a70445a48c7634b7a95a6e7cb1
       pairs:
         tag: pairs
         value:
@@ -73,7 +73,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: nec680c965a2745de9bbb9b814d7e58f3b1
+                        value: n4d795616a70445a48c7634b7a95a6e7cb1
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -91,7 +91,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nec680c965a2745de9bbb9b814d7e58f3b1
+                        value: n4d795616a70445a48c7634b7a95a6e7cb1
 classes:
   sim_Association:
     class_uri: sim:Association
@@ -143,7 +143,7 @@ comments:
 - 'title: The Similarity Ontology'
 - 'created_by: http://moustaki.org/foaf.rdf#moustaki'
 created_by: http://kurtisrandom.com/foaf.rdf#kurtjx
-created_on: '2025-07-17T18:44:30.329485'
+created_on: '2025-07-17T19:20:42.256297'
 default_prefix: okns
 description: This is an ontology to express associations between entities whether
   artists, tracks, albums, compositional styles, sections of tracks, playing techniques
@@ -151,11 +151,11 @@ description: This is an ontology to express associations between entities whethe
   expressive, and still computationally reasonable.
 id: okns:sim
 imports:
-- okns:foaf
-- okns:extended_types
-- linkml:types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:44:30.329485'
+- okns:extended_types
+- okns:foaf
+- linkml:types
+last_updated_on: '2025-07-17T19:20:42.256297'
 name: sim
 prefixes:
   dct: http://purl.org/dc/terms/

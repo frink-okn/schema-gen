@@ -163,7 +163,7 @@ annotations:
         value:
           dcam:VocabularyEncodingScheme:
             tag: dcam:VocabularyEncodingScheme
-            value: dct:UDC
+            value: dct:NLM
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: dct:Box
@@ -205,7 +205,7 @@ annotations:
                         value: dct:issued
                       subject:
                         tag: subject
-                        value: dct:TGN
+                        value: dct:IMT
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -220,7 +220,7 @@ annotations:
                         value: dct:issued
                       subject:
                         tag: subject
-                        value: dct:W3CDTF
+                        value: dct:URI
           dct:modified:
             tag: dct:modified
             value:
@@ -238,7 +238,7 @@ annotations:
                         value: dct:modified
                       subject:
                         tag: subject
-                        value: 'dcam:'
+                        value: 'dc:'
           dct:publisher:
             tag: dct:publisher
             value:
@@ -256,7 +256,7 @@ annotations:
                         value: dct:publisher
                       subject:
                         tag: subject
-                        value: 'dcam:'
+                        value: 'dc:'
           dct:title:
             tag: dct:title
             value:
@@ -268,13 +268,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Metadata terms for vocabulary description
+                        value: Dublin Core Metadata Element Set, Version 1.1
                       predicate:
                         tag: predicate
                         value: dct:title
                       subject:
                         tag: subject
-                        value: 'dcam:'
+                        value: 'dc:'
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -286,14 +286,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The set of places specified by the Getty Thesaurus
-                          of Geographic Names.
+                        value: The set of media types specified by the Internet Assigned
+                          Numbers Authority.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: dct:TGN
+                        value: dct:IMT
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -302,14 +302,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The set of dates and times constructed according to
-                          the W3C Date and Time Formats Specification.
+                        value: The set of identifiers constructed according to the
+                          generic syntax for Uniform Resource Identifiers as specified
+                          by the Internet Engineering Task Force.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: dct:W3CDTF
+                        value: dct:URI
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -327,7 +328,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dct:TGN
+                        value: dct:IMT
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -342,7 +343,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dct:W3CDTF
+                        value: dct:URI
           rdfs:label:
             tag: rdfs:label
             value:
@@ -354,13 +355,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: TGN
+                        value: IMT
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dct:TGN
+                        value: dct:IMT
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -369,13 +370,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: W3C-DTF
+                        value: URI
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dct:W3CDTF
+                        value: dct:URI
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -387,13 +388,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.getty.edu/research/tools/vocabulary/tgn/index.html
+                        value: http://www.iana.org/assignments/media-types/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: dct:TGN
+                        value: dct:IMT
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -402,13 +403,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/TR/NOTE-datetime
+                        value: http://www.ietf.org/rfc/rfc3986.txt
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: dct:W3CDTF
+                        value: dct:URI
 classes:
   dcam_VocabularyEncodingScheme:
     class_uri: dcam:VocabularyEncodingScheme
@@ -417,11 +418,11 @@ classes:
     see_also:
     - https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/
     slots:
-    - rdfs_comment
     - rdfs_seeAlso
+    - rdfs_label
+    - rdfs_comment
     - dct_issued
     - rdfs_isDefinedBy
-    - rdfs_label
     source: http://purl.org/dc/dcam/
     title: Vocabulary Encoding Scheme
   dcmitype_Collection:
@@ -700,14 +701,14 @@ classes:
     name: dct_Standard
     source: http://purl.org/dc/terms/
     title: Standard
-created_on: '2025-07-17T18:43:15.388579'
+created_on: '2025-07-17T19:19:29.946818'
 default_prefix: okns
 id: okns:dc
 imports:
+- okns:owl-rdf-rdfs
 - okns:extended_types
 - linkml:types
-- okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:43:15.388579'
+last_updated_on: '2025-07-17T19:19:29.946818'
 name: dc
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -1685,8 +1686,8 @@ slots:
     title: Temporal Coverage
   dct_title:
     any_of:
-    - range: string
     - range: rdfs_Literal
+    - range: string
     description: A name given to the resource.
     name: dct_title
     range: Any

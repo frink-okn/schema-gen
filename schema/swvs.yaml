@@ -32,13 +32,13 @@ comments:
   on the status of a vocabulary term; however the status published alongside the term
   may deserve special attention. Future work could include patterns for citing announcements
   and decisions, or using SKOS to decentralise the extension of the basic status levels.'
-created_on: '2025-07-17T18:43:39.497842'
+created_on: '2025-07-17T19:19:55.015612'
 default_prefix: okns
 description: An RDF vocabulary for relating SW vocabulary terms to their status.
 id: okns:swvs
 imports:
 - okns:extended_types
-last_updated_on: '2025-07-17T18:43:39.497842'
+last_updated_on: '2025-07-17T19:19:55.015612'
 name: swvs
 prefixes:
   okn: https://purl.org/okn/

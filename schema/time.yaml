@@ -289,16 +289,16 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: n10cb401668a8495ebd80308243a7741db21
+            value: n7945815d8ca04cdcac45748eb5394e70b1
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: time:generalDay
+            value: time:generalMonth
           time:DayOfWeek:
             tag: time:DayOfWeek
-            value: time:Thursday
+            value: time:Monday
           time:TemporalUnit:
             tag: time:TemporalUnit
-            value: time:unitMinute
+            value: time:unitWeek
       pairs:
         tag: pairs
         value:
@@ -313,13 +313,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: xsd:gYear
+                        value: xsd:gMonth
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db3
+                        value: n7945815d8ca04cdcac45748eb5394e70b2
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -331,25 +331,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '0'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db54
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
                         value: '1'
                       predicate:
                         tag: predicate
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db5
+                        value: n7945815d8ca04cdcac45748eb5394e70b59
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: n7945815d8ca04cdcac45748eb5394e70b41
           owl:hasValue:
             tag: owl:hasValue
             value:
@@ -367,7 +367,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db36
+                        value: n7945815d8ca04cdcac45748eb5394e70b36
                   time:TemporalUnit:
                     tag: time:TemporalUnit
                     value:
@@ -379,7 +379,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db35
+                        value: n7945815d8ca04cdcac45748eb5394e70b44
                   uri:
                     tag: uri
                     value:
@@ -391,7 +391,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db4
+                        value: n7945815d8ca04cdcac45748eb5394e70b14
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -409,7 +409,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db18
+                        value: n7945815d8ca04cdcac45748eb5394e70b17
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -427,7 +427,7 @@ annotations:
                         value: owl:onDatatype
                       subject:
                         tag: subject
-                        value: time:generalMonth
+                        value: time:generalDay
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -439,13 +439,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: time:year
+                        value: time:week
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db3
+                        value: n7945815d8ca04cdcac45748eb5394e70b41
                   owl:FunctionalProperty:
                     tag: owl:FunctionalProperty
                     value:
@@ -457,19 +457,19 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db4
+                        value: n7945815d8ca04cdcac45748eb5394e70b47
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: time:unitType
+                        value: time:dayOfWeek
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db15
+                        value: n7945815d8ca04cdcac45748eb5394e70b17
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -481,19 +481,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Month of year - formulated as a text string with a\
+                        value: "Day of month - formulated as a text string with a\
                           \ pattern constraint to reproduce the same lexical form\
-                          \ as gMonth, except that values up to 20 are permitted,\
-                          \ in order to support calendars with more than 12 months\
-                          \ in the year. \nNote that the value-space is not defined,\
-                          \ so a generic OWL2 processor cannot compute ordering relationships\
+                          \ as gDay, except that values up to 99 are permitted, in\
+                          \ order to support calendars with more than 31 days in a\
+                          \ month. \nNote that the value-space is not defined, so\
+                          \ a generic OWL2 processor cannot compute ordering relationships\
                           \ of values of this type."
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: time:generalMonth
+                        value: time:generalDay
           rdfs:label:
             tag: rdfs:label
             value:
@@ -505,13 +505,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Generalized month
+                        value: Generalized day
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:generalMonth
+                        value: time:generalDay
               time:DayOfWeek:
                 tag: time:DayOfWeek
                 value:
@@ -520,13 +520,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Monday
+                        value: Tuesday
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:Monday
+                        value: time:Tuesday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -535,13 +535,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Hour (unit of temporal duration)
+                        value: Month (unit of temporal duration)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
               untyped:
                 tag: untyped
                 value:
@@ -568,19 +568,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Month of year - formulated as a text string with a\
+                        value: "Day of month - formulated as a text string with a\
                           \ pattern constraint to reproduce the same lexical form\
-                          \ as gMonth, except that values up to 20 are permitted,\
-                          \ in order to support calendars with more than 12 months\
-                          \ in the year. \nNote that the value-space is not defined,\
-                          \ so a generic OWL2 processor cannot compute ordering relationships\
+                          \ as gDay, except that values up to 99 are permitted, in\
+                          \ order to support calendars with more than 31 days in a\
+                          \ month. \nNote that the value-space is not defined, so\
+                          \ a generic OWL2 processor cannot compute ordering relationships\
                           \ of values of this type."
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: time:generalMonth
+                        value: time:generalDay
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -592,13 +592,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Lundi
+                        value: Dienstag
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:Monday
+                        value: time:Tuesday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -607,13 +607,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Stunde
+                        value: maand
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:days:
             tag: time:days
             value:
@@ -631,7 +631,7 @@ annotations:
                         value: time:days
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:hours:
             tag: time:hours
             value:
@@ -643,13 +643,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '1'
+                        value: '0'
                       predicate:
                         tag: predicate
                         value: time:hours
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:minutes:
             tag: time:minutes
             value:
@@ -667,7 +667,7 @@ annotations:
                         value: time:minutes
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:months:
             tag: time:months
             value:
@@ -679,13 +679,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '0'
+                        value: '1'
                       predicate:
                         tag: predicate
                         value: time:months
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:seconds:
             tag: time:seconds
             value:
@@ -703,7 +703,7 @@ annotations:
                         value: time:seconds
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:weeks:
             tag: time:weeks
             value:
@@ -721,7 +721,7 @@ annotations:
                         value: time:weeks
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           time:years:
             tag: time:years
             value:
@@ -739,7 +739,7 @@ annotations:
                         value: time:years
                       subject:
                         tag: subject
-                        value: time:unitHour
+                        value: time:unitMonth
           xsd:pattern:
             tag: xsd:pattern
             value:
@@ -751,13 +751,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: -?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?
+                        value: '---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?'
                       predicate:
                         tag: predicate
                         value: xsd:pattern
                       subject:
                         tag: subject
-                        value: n10cb401668a8495ebd80308243a7741db64
+                        value: n7945815d8ca04cdcac45748eb5394e70b60
 classes:
   time_DateTimeDescription:
     class_uri: time:DateTimeDescription
@@ -1110,15 +1110,15 @@ classes:
       \ otras unidades de tiempo utilizadas en algunas aplicaciones t\xE9cnicas (por\
       \ ejemplo, millones de a\xF1os o el mes Baha'i)."
     slots:
+    - skos_prefLabel
+    - time_months
+    - time_seconds
+    - time_hours
+    - time_weeks
     - time_minutes
     - time_days
-    - time_seconds
-    - time_weeks
-    - time_months
-    - rdfs_label
     - time_years
-    - skos_prefLabel
-    - time_hours
+    - rdfs_label
     title: Temporal unit
   time_TimePosition:
     class_uri: time:TimePosition
@@ -1261,15 +1261,15 @@ contributors:
 - mailto:chris.little@metoffice.gov.uk
 - https://orcid.org/0000-0001-8269-8171
 created_by: http://orcid.org/0000-0002-3884-3420
-created_on: '2025-07-17T18:43:17.537000'
+created_on: '2025-07-17T19:19:31.860469'
 default_prefix: okns
 id: okns:time
 imports:
-- okns:extended_types
-- okns:owl-rdf-rdfs
 - okns:skos
 - linkml:types
-last_updated_on: '2025-07-17T18:43:17.537000'
+- okns:owl-rdf-rdfs
+- okns:extended_types
+last_updated_on: '2025-07-17T19:19:31.860469'
 name: time
 notes:
 - '2016-06-15 - initial update of OWL-Time - modified to support arbitrary temporal

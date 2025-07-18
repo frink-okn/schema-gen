@@ -61,10 +61,10 @@ annotations:
         value:
           dcmitype:Text:
             tag: dcmitype:Text
-            value: http://schemas.talis.com/2005/address/schema-20060627.html
+            value: http://schemas.talis.com/2005/address/schema-20060627.rdf
           dct:IMT:
             tag: dct:IMT
-            value: N6820902ef68a4b9f9f779c2a21f72250
+            value: N105fa2e54d5b4de8a2f3937e4c385a8e
       pairs:
         tag: pairs
         value:
@@ -79,13 +79,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: N6352f00f8cfc48da83b88a1364fe73bd
+                        value: Naaf5e699a3a74c10adbe7c3735b16585
                       predicate:
                         tag: predicate
                         value: dc:format
                       subject:
                         tag: subject
-                        value: http://schemas.talis.com/2005/address/schema-20060627.rdf
+                        value: http://schemas.talis.com/2005/address/schema-20060627.html
           rdf:value:
             tag: rdf:value
             value:
@@ -97,13 +97,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: application/rdf+xml
+                        value: text/html
                       predicate:
                         tag: predicate
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: N6352f00f8cfc48da83b88a1364fe73bd
+                        value: Naaf5e699a3a74c10adbe7c3735b16585
           rdfs:label:
             tag: rdfs:label
             value:
@@ -115,27 +115,27 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: RDF
+                        value: HTML
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: N6352f00f8cfc48da83b88a1364fe73bd
+                        value: Naaf5e699a3a74c10adbe7c3735b16585
 classes: {}
 comments:
 - 'last_updated_on: 2006-06-26'
 - 'title: Address Schema'
-created_on: '2025-07-17T18:44:09.617426'
+created_on: '2025-07-17T19:20:23.015034'
 default_prefix: okns
 id: okns:address
 imports:
-- okns:frbr
-- linkml:types
 - okns:owl-rdf-rdfs
-- okns:extended_types
+- linkml:types
 - okns:dc
-last_updated_on: '2025-07-17T18:44:09.617426'
+- okns:frbr
+- okns:extended_types
+last_updated_on: '2025-07-17T19:20:23.015034'
 name: address
 prefixes:
   address: http://schemas.talis.com/2005/address/schema#

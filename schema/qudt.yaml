@@ -1045,7 +1045,7 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: n0217b5afb64849fd82714646526c1de6b146
+            value: nced834e1f4964eb5ab94a0a4353061e3b122
           qudt:AspectClass:
             tag: qudt:AspectClass
             value: qudt:Verifiable
@@ -1054,13 +1054,13 @@ annotations:
             value: qudt:BitEncoding
           qudt:BooleanEncodingType:
             tag: qudt:BooleanEncodingType
-            value: qudt:OctetEncoding
+            value: qudt:ShortUnsignedIntegerEncoding
           qudt:ByteEncodingType:
             tag: qudt:ByteEncodingType
             value: qudt:OctetEncoding
           qudt:CardinalityType:
             tag: qudt:CardinalityType
-            value: qudt:CT_COUNTABLY-INFINITE
+            value: qudt:CT_UNCOUNTABLE
           qudt:CharEncodingType:
             tag: qudt:CharEncodingType
             value: qudt:CharEncoding
@@ -1069,13 +1069,13 @@ annotations:
             value: qudt:ISO8601-UTCDateTime-BasicFormat
           qudt:EndianType:
             tag: qudt:EndianType
-            value: qudt:BigEndian
+            value: qudt:LittleEndian
           qudt:FloatingPointEncodingType:
             tag: qudt:FloatingPointEncodingType
             value: qudt:DoublePrecisionEncoding
           qudt:IntegerEncodingType:
             tag: qudt:IntegerEncodingType
-            value: qudt:UnsignedIntegerEncoding
+            value: qudt:ShortSignedIntegerEncoding
           qudt:OrderedType:
             tag: qudt:OrderedType
             value: qudt:Unordered
@@ -1195,15 +1195,21 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Any set with cardinality greater than that of the natural
-                          numbers, or $| X | \; >  \; | \mathbb N | $,  for example
-                          $| R| \; =  \;  c  \; > |\mathbb N |$, is said to be uncountable.
+                        value: "\n  A set of numbers is called countably infinite\
+                          \ if there is a way to enumerate them. \n  Formally this\
+                          \ is done with a bijection function that associates each\
+                          \ number in the set with exactly one of the positive integers.\n\
+                          \  The set of all fractions is also countably infinite.\n\
+                          \  In other words, any set $X$ that has the same cardinality\
+                          \ as the set of the natural numbers,\n   or $| X | \\; =\
+                          \  \\; | \\mathbb N | \\; = \\; \\aleph0$, is said to be\
+                          \ a countably infinite set.\n  "
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: qudt:CT_UNCOUNTABLE
+                        value: qudt:CT_COUNTABLY-INFINITE
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -1356,7 +1362,7 @@ annotations:
                         value: dct:source
                       subject:
                         tag: subject
-                        value: qudt:UCUMcs
+                        value: qudt:UCUMcs-term
           dct:subject:
             tag: dct:subject
             value:
@@ -1404,13 +1410,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: uncountable
+                        value: countable
                       predicate:
                         tag: predicate
                         value: dtype:literal
                       subject:
                         tag: subject
-                        value: qudt:CT_UNCOUNTABLE
+                        value: qudt:CT_COUNTABLY-INFINITE
               qudt:EndianType:
                 tag: qudt:EndianType
                 value:
@@ -1419,13 +1425,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: little
+                        value: big
                       predicate:
                         tag: predicate
                         value: dtype:literal
                       subject:
                         tag: subject
-                        value: qudt:LittleEndian
+                        value: qudt:BigEndian
               qudt:OrderedType:
                 tag: qudt:OrderedType
                 value:
@@ -1434,13 +1440,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: partial
+                        value: total
                       predicate:
                         tag: predicate
                         value: dtype:literal
                       subject:
                         tag: subject
-                        value: qudt:PartiallyOrdered
+                        value: qudt:TotallyOrdered
               qudt:SignednessType:
                 tag: qudt:SignednessType
                 value:
@@ -1467,13 +1473,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: qudt:TransformType
+                        value: qudt:EndianType
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b177
+                        value: nced834e1f4964eb5ab94a0a4353061e3b34
                   rdfs:Datatype:
                     tag: rdfs:Datatype
                     value:
@@ -1485,19 +1491,19 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b110
+                        value: nced834e1f4964eb5ab94a0a4353061e3b110
                   uri:
                     tag: uri
                     value:
                       object:
                         tag: object
-                        value: xsd:string
+                        value: xsd:boolean
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b213
+                        value: nced834e1f4964eb5ab94a0a4353061e3b99
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -1515,7 +1521,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b8
+                        value: nced834e1f4964eb5ab94a0a4353061e3b8
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1527,7 +1533,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b151
+                        value: nced834e1f4964eb5ab94a0a4353061e3b152
           owl:equivalentClass:
             tag: owl:equivalentClass
             value:
@@ -1539,7 +1545,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n0217b5afb64849fd82714646526c1de6b249
+                        value: nced834e1f4964eb5ab94a0a4353061e3b249
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -1551,7 +1557,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n0217b5afb64849fd82714646526c1de6b241
+                        value: nced834e1f4964eb5ab94a0a4353061e3b241
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -1575,7 +1581,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b217
+                        value: nced834e1f4964eb5ab94a0a4353061e3b184
                   integer:
                     tag: integer
                     value:
@@ -1587,7 +1593,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b36
+                        value: nced834e1f4964eb5ab94a0a4353061e3b44
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1599,7 +1605,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b82
+                        value: nced834e1f4964eb5ab94a0a4353061e3b101
           owl:maxQualifiedCardinality:
             tag: owl:maxQualifiedCardinality
             value:
@@ -1617,7 +1623,7 @@ annotations:
                         value: owl:maxQualifiedCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b140
+                        value: nced834e1f4964eb5ab94a0a4353061e3b140
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -1635,7 +1641,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b71
+                        value: nced834e1f4964eb5ab94a0a4353061e3b112
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1647,7 +1653,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b114
+                        value: nced834e1f4964eb5ab94a0a4353061e3b226
           owl:onClass:
             tag: owl:onClass
             value:
@@ -1665,7 +1671,7 @@ annotations:
                         value: owl:onClass
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b140
+                        value: nced834e1f4964eb5ab94a0a4353061e3b140
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -1677,13 +1683,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: xsd:float
+                        value: xsd:string
                       predicate:
                         tag: predicate
                         value: owl:onDatatype
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b236
+                        value: qudt:UCUMcs-term
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -1695,37 +1701,37 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: qudt:symbol
+                        value: qudt:mathMLdefinition
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b114
+                        value: nced834e1f4964eb5ab94a0a4353061e3b101
                   owl:FunctionalProperty:
                     tag: owl:FunctionalProperty
                     value:
                       object:
                         tag: object
-                        value: qudt:conversionOffset
+                        value: qudt:baseDimensionEnumeration
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b217
+                        value: nced834e1f4964eb5ab94a0a4353061e3b184
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: qudt:permissibleTransformation
+                        value: qudt:bitOrder
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b177
+                        value: nced834e1f4964eb5ab94a0a4353061e3b34
                   qudt:SymmetricRelation:
                     tag: qudt:SymmetricRelation
                     value:
@@ -1737,19 +1743,19 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b209
+                        value: nced834e1f4964eb5ab94a0a4353061e3b132
                   rdf:Property:
                     tag: rdf:Property
                     value:
                       object:
                         tag: object
-                        value: qudt:vbName
+                        value: qudt:protocolBuffersName
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b60
+                        value: nced834e1f4964eb5ab94a0a4353061e3b58
                   uri:
                     tag: uri
                     value:
@@ -1761,7 +1767,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b158
+                        value: nced834e1f4964eb5ab94a0a4353061e3b158
           owl:versionIRI:
             tag: owl:versionIRI
             value:
@@ -1848,7 +1854,7 @@ annotations:
                         value: qudt:bytes
                       subject:
                         tag: subject
-                        value: qudt:CharEncoding
+                        value: qudt:OctetEncoding
               qudt:ByteEncodingType:
                 tag: qudt:ByteEncodingType
                 value:
@@ -1893,7 +1899,7 @@ annotations:
                         value: qudt:bytes
                       subject:
                         tag: subject
-                        value: qudt:IEEE754_1985RealEncoding
+                        value: qudt:SinglePrecisionRealEncoding
               qudt:IntegerEncodingType:
                 tag: qudt:IntegerEncodingType
                 value:
@@ -1902,13 +1908,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2'
+                        value: '4'
                       predicate:
                         tag: predicate
                         value: qudt:bytes
                       subject:
                         tag: subject
-                        value: qudt:ShortUnsignedIntegerEncoding
+                        value: qudt:UnsignedIntegerEncoding
           qudt:informativeReference:
             tag: qudt:informativeReference
             value:
@@ -1953,13 +1959,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Partial ordered structure.
+                        value: Totally ordered structure.
                       predicate:
                         tag: predicate
                         value: qudt:plainTextDescription
                       subject:
                         tag: subject
-                        value: qudt:PartiallyOrdered
+                        value: qudt:TotallyOrdered
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -2000,14 +2006,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A type of string in which some characters may be wrapped
-                          with '$' and '$ characters for LaTeX rendering.
+                        value: Lexical pattern for the terminal symbols in the case-sensitive
+                          version of UCUM code
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: qudt:LatexString
+                        value: qudt:UCUMcs-term
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -2055,7 +2061,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:CharEncoding
+                        value: qudt:OctetEncoding
               qudt:ByteEncodingType:
                 tag: qudt:ByteEncodingType
                 value:
@@ -2085,7 +2091,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:CT_UNCOUNTABLE
+                        value: qudt:CT_COUNTABLY-INFINITE
               qudt:CharEncodingType:
                 tag: qudt:CharEncodingType
                 value:
@@ -2130,7 +2136,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:LittleEndian
+                        value: qudt:BigEndian
               qudt:FloatingPointEncodingType:
                 tag: qudt:FloatingPointEncodingType
                 value:
@@ -2145,7 +2151,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:IEEE754_1985RealEncoding
+                        value: qudt:SinglePrecisionRealEncoding
               qudt:IntegerEncodingType:
                 tag: qudt:IntegerEncodingType
                 value:
@@ -2160,7 +2166,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:ShortUnsignedIntegerEncoding
+                        value: qudt:UnsignedIntegerEncoding
               qudt:OrderedType:
                 tag: qudt:OrderedType
                 value:
@@ -2175,7 +2181,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:PartiallyOrdered
+                        value: qudt:TotallyOrdered
               qudt:SignednessType:
                 tag: qudt:SignednessType
                 value:
@@ -2205,7 +2211,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: qudt:LatexString
+                        value: qudt:UCUMcs-term
               vaem:CatalogEntry:
                 tag: vaem:CatalogEntry
                 value:
@@ -2262,13 +2268,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Enumerated Quantity
+                        value: QUDT Aspect
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:EnumeratedQuantity
+                        value: qudt:Aspect
               qudt:BitEncodingType:
                 tag: qudt:BitEncodingType
                 value:
@@ -2292,13 +2298,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Char Encoding
+                        value: OCTET Encoding
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:CharEncoding
+                        value: qudt:OctetEncoding
               qudt:ByteEncodingType:
                 tag: qudt:ByteEncodingType
                 value:
@@ -2322,13 +2328,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Uncountable Cardinality Type
+                        value: Countably Infinite Cardinality Type
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:CT_UNCOUNTABLE
+                        value: qudt:CT_COUNTABLY-INFINITE
               qudt:CharEncodingType:
                 tag: qudt:CharEncodingType
                 value:
@@ -2367,13 +2373,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Little Endian
+                        value: Big Endian
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:LittleEndian
+                        value: qudt:BigEndian
               qudt:FloatingPointEncodingType:
                 tag: qudt:FloatingPointEncodingType
                 value:
@@ -2382,13 +2388,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: IEEE 754 1985 Real Encoding
+                        value: Single Precision Real Encoding
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:IEEE754_1985RealEncoding
+                        value: qudt:SinglePrecisionRealEncoding
               qudt:IntegerEncodingType:
                 tag: qudt:IntegerEncodingType
                 value:
@@ -2397,13 +2403,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Short Unsigned Integer Encoding
+                        value: Unsigned Integer Encoding
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:ShortUnsignedIntegerEncoding
+                        value: qudt:UnsignedIntegerEncoding
               qudt:OrderedType:
                 tag: qudt:OrderedType
                 value:
@@ -2412,13 +2418,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Partially Ordered
+                        value: Totally Ordered
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:PartiallyOrdered
+                        value: qudt:TotallyOrdered
               qudt:SignednessType:
                 tag: qudt:SignednessType
                 value:
@@ -2442,13 +2448,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Latex String
+                        value: case-sensitive UCUM terminal
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: qudt:LatexString
+                        value: qudt:UCUMcs-term
               vaem:CatalogEntry:
                 tag: vaem:CatalogEntry
                 value:
@@ -2511,7 +2517,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: qudt:UCUMcs
+                        value: qudt:UCUMcs-term
           rdfs:subClassOf:
             tag: rdfs:subClassOf
             value:
@@ -2535,7 +2541,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n0217b5afb64849fd82714646526c1de6b66
+                        value: nced834e1f4964eb5ab94a0a4353061e3b66
                       predicate:
                         tag: predicate
                         value: rdfs:subClassOf
@@ -2586,13 +2592,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: xsd:string
+                        value: rdfs:Resource
                       predicate:
                         tag: predicate
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: qudt:LatexString
+                        value: qudt:UCUMcs-term
           vaem:graphName:
             tag: vaem:graphName
             value:
@@ -2999,7 +3005,7 @@ annotations:
                         value: xsd:maxInclusive
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b238
+                        value: nced834e1f4964eb5ab94a0a4353061e3b238
                   integer:
                     tag: integer
                     value:
@@ -3011,7 +3017,7 @@ annotations:
                         value: xsd:maxInclusive
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b243
+                        value: nced834e1f4964eb5ab94a0a4353061e3b243
           xsd:minInclusive:
             tag: xsd:minInclusive
             value:
@@ -3029,7 +3035,7 @@ annotations:
                         value: xsd:minInclusive
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b237
+                        value: nced834e1f4964eb5ab94a0a4353061e3b237
                   integer:
                     tag: integer
                     value:
@@ -3041,7 +3047,7 @@ annotations:
                         value: xsd:minInclusive
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b242
+                        value: nced834e1f4964eb5ab94a0a4353061e3b242
           xsd:pattern:
             tag: xsd:pattern
             value:
@@ -3059,7 +3065,7 @@ annotations:
                         value: xsd:pattern
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b31
+                        value: nced834e1f4964eb5ab94a0a4353061e3b31
               untyped:
                 tag: untyped
                 value:
@@ -3068,13 +3074,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '[\x21,\x23-\x27,\x2a,\x2c,\x30-\x3c,\x3e-\x5a,\x5c,\x5e-\x7a,\x7c,\x7e]+'
+                        value: '[\x21-\x7e]+'
                       predicate:
                         tag: predicate
                         value: xsd:pattern
                       subject:
                         tag: subject
-                        value: n0217b5afb64849fd82714646526c1de6b197
+                        value: nced834e1f4964eb5ab94a0a4353061e3b195
 classes:
   qudt_AbstractQuantityKind:
     class_uri: qudt:AbstractQuantityKind
@@ -3101,9 +3107,9 @@ classes:
     is_a: rdfs_Class
     name: qudt_AspectClass
     slots:
+    - rdfs_label
     - rdfs_subClassOf
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
     source: http://qudt.org/schema/qudt
     title: Aspect Class
@@ -3135,8 +3141,8 @@ classes:
     is_a: qudt_Encoding
     name: qudt_BitEncodingType
     slots:
-    - rdfs_isDefinedBy
     - qudt_bits
+    - rdfs_isDefinedBy
     - rdfs_label
     source: http://qudt.org/schema/qudt
     title: Bit Encoding
@@ -3145,11 +3151,11 @@ classes:
     is_a: qudt_Encoding
     name: qudt_BooleanEncodingType
     slots:
-    - rdfs_isDefinedBy
-    - dc_description
     - qudt_bits
+    - rdfs_isDefinedBy
     - rdfs_label
     - qudt_bytes
+    - dc_description
     source: http://qudt.org/schema/qudt
     title: Boolean encoding type
   qudt_ByteEncodingType:
@@ -3159,9 +3165,9 @@ classes:
     is_a: qudt_Encoding
     name: qudt_ByteEncodingType
     slots:
+    - qudt_bytes
     - rdfs_isDefinedBy
     - rdfs_label
-    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Byte Encoding
   qudt_CardinalityType:
@@ -3174,10 +3180,10 @@ classes:
     is_a: qudt_EnumeratedValue
     name: qudt_CardinalityType
     slots:
-    - rdfs_isDefinedBy
-    - dtype_literal
-    - rdfs_label
     - dct_description
+    - rdfs_isDefinedBy
+    - rdfs_label
+    - dtype_literal
     - qudt_informativeReference
     source: http://qudt.org/schema/qudt
     title: Cardinality Type
@@ -3188,10 +3194,10 @@ classes:
     is_a: qudt_Encoding
     name: qudt_CharEncodingType
     slots:
-    - rdfs_isDefinedBy
     - dc_description
     - rdfs_label
     - qudt_bytes
+    - rdfs_isDefinedBy
     source: http://qudt.org/schema/qudt
     title: Char Encoding Type
   qudt_Citation:
@@ -3287,9 +3293,9 @@ classes:
     is_a: qudt_StringEncodingType
     name: qudt_DateTimeStringEncodingType
     slots:
-    - rdfs_isDefinedBy
-    - qudt_allowedPattern
     - rdfs_label
+    - qudt_allowedPattern
+    - rdfs_isDefinedBy
     source: http://qudt.org/schema/qudt
     title: Date Time String Encoding Type
   qudt_DecimalPrefix:
@@ -3337,9 +3343,9 @@ classes:
     is_a: qudt_EnumeratedValue
     name: qudt_EndianType
     slots:
-    - rdfs_isDefinedBy
-    - dtype_literal
     - rdfs_label
+    - dtype_literal
+    - rdfs_isDefinedBy
     source: http://qudt.org/schema/qudt
     title: Endian Type
   qudt_EnumeratedValue:
@@ -3409,9 +3415,9 @@ classes:
     is_a: qudt_Encoding
     name: qudt_FloatingPointEncodingType
     slots:
+    - qudt_bytes
     - rdfs_isDefinedBy
     - rdfs_label
-    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Floating Point Encoding
   qudt_IntegerEncodingType:
@@ -3420,9 +3426,9 @@ classes:
     is_a: qudt_Encoding
     name: qudt_IntegerEncodingType
     slots:
+    - qudt_bytes
     - rdfs_isDefinedBy
     - rdfs_label
-    - qudt_bytes
     source: http://qudt.org/schema/qudt
     title: Integer Encoding
   qudt_IntervalScale:
@@ -3503,10 +3509,10 @@ classes:
     is_a: qudt_EnumeratedValue
     name: qudt_OrderedType
     slots:
-    - rdfs_isDefinedBy
+    - rdfs_label
     - dtype_literal
     - qudt_plainTextDescription
-    - rdfs_label
+    - rdfs_isDefinedBy
     source: http://qudt.org/schema/qudt
     title: Ordered type
   qudt_OrdinalScale:
@@ -3769,9 +3775,9 @@ classes:
     class_uri: qudt:SignednessType
     name: qudt_SignednessType
     slots:
-    - rdfs_isDefinedBy
-    - dtype_literal
     - rdfs_label
+    - dtype_literal
+    - rdfs_isDefinedBy
   qudt_SolidAngleUnit:
     class_uri: qudt:SolidAngleUnit
     description: The solid angle subtended by a surface S is defined as the surface
@@ -3870,20 +3876,20 @@ classes:
       type in this graph but has not itself been defined.
 comments:
 - 'title: QUDT Schema - Version 3.1.1'
-created_on: '2025-07-17T18:45:25.678119'
+created_on: '2025-07-17T19:21:37.884935'
 default_prefix: okns
 id: okns:qudt
 imports:
-- okns:time
-- okns:extended_types
-- okns:dtype
 - linkml:types
+- okns:time
 - okns:skos
-- okns:voag
+- okns:extended_types
 - okns:dc
+- okns:voag
 - okns:owl-rdf-rdfs
+- okns:dtype
 - okns:vaem
-last_updated_on: '2025-07-17T18:45:25.678119'
+last_updated_on: '2025-07-17T19:21:37.884935'
 name: qudt
 prefixes:
   dc: http://purl.org/dc/elements/1.1/

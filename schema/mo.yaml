@@ -151,13 +151,13 @@ annotations:
         value:
           mo:ReleaseStatus:
             tag: mo:ReleaseStatus
-            value: mo:bootleg
+            value: mo:official
           mo:ReleaseType:
             tag: mo:ReleaseType
-            value: mo:remix
+            value: mo:soundtrack
           owl:Restriction:
             tag: owl:Restriction
-            value: nb5bad49d08bc4b6197d6d7f930fe083cb5
+            value: n610bee31a461409ea7ec4ec7f01c309db8
       pairs:
         tag: pairs
         value:
@@ -172,15 +172,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Any musical work or the expression of a musical work
-                          officially sanctioned by the artist and/or their corporate
-                          body.
+                        value: A giveaway musical work or the expression of a musical
+                          work intended to promote an upcoming official musical work
+                          or the expression of a musical work.
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: mo:official
+                        value: mo:promotion
               mo:ReleaseType:
                 tag: mo:ReleaseType
                 value:
@@ -189,15 +189,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n        Recording of the questioning of a person.\n\
-                          \        This is a type of MusicalManifestation defined\
-                          \ by the musical industry.\n    "
+                        value: "\n        A musical manifestation that was recorded\
+                          \ live.\n        This is a type of MusicalManifestation\
+                          \ defined by the musical industry."
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: mo:interview
+                        value: mo:live
           dc:title:
             tag: dc:title
             value:
@@ -209,13 +209,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: official
+                        value: promotion
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: mo:official
+                        value: mo:promotion
               mo:ReleaseType:
                 tag: mo:ReleaseType
                 value:
@@ -224,13 +224,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: interview
+                        value: live
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: mo:interview
+                        value: mo:live
           foaf:homepage:
             tag: foaf:homepage
             value:
@@ -284,7 +284,7 @@ annotations:
                         value: mo:level
                       subject:
                         tag: subject
-                        value: mo:official
+                        value: mo:promotion
               mo:ReleaseType:
                 tag: mo:ReleaseType
                 value:
@@ -299,7 +299,7 @@ annotations:
                         value: mo:level
                       subject:
                         tag: subject
-                        value: mo:interview
+                        value: mo:live
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -311,13 +311,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: mo:conducted
+                        value: mo:listened
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nb5bad49d08bc4b6197d6d7f930fe083cb6
+                        value: n610bee31a461409ea7ec4ec7f01c309db7
                   uri:
                     tag: uri
                     value:
@@ -329,7 +329,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nb5bad49d08bc4b6197d6d7f930fe083cb4
+                        value: n610bee31a461409ea7ec4ec7f01c309db5
           owl:someValuesFrom:
             tag: owl:someValuesFrom
             value:
@@ -347,7 +347,7 @@ annotations:
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: nb5bad49d08bc4b6197d6d7f930fe083cb6
+                        value: n610bee31a461409ea7ec4ec7f01c309db7
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -365,7 +365,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: mo:official
+                        value: mo:promotion
               mo:ReleaseType:
                 tag: mo:ReleaseType
                 value:
@@ -380,7 +380,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: mo:interview
+                        value: mo:live
 classes:
   http___purl.org_NET_c4dm_keys.owl#Key:
     class_uri: http://purl.org/NET/c4dm/keys.owl#Key
@@ -807,9 +807,9 @@ classes:
     name: mo_ReleaseStatus
     slots:
     - mo_level
+    - dc_title
     - rdfs_isDefinedBy
     - dc_description
-    - dc_title
     source: http://purl.org/ontology/mo/
     title: release status
   mo_ReleaseType:
@@ -818,9 +818,9 @@ classes:
     name: mo_ReleaseType
     slots:
     - mo_level
+    - dc_title
     - rdfs_isDefinedBy
     - dc_description
-    - dc_title
     source: http://purl.org/ontology/mo/
     title: Release type
   mo_SACD:
@@ -922,7 +922,7 @@ classes:
     title: Vinyl
 comments:
 - 'title: The Music Ontology'
-created_on: '2025-07-17T18:44:38.892098'
+created_on: '2025-07-17T19:20:52.295969'
 default_prefix: okns
 description: "\u240A        The Music Ontology Specification provides main concepts\
   \ and \u240A        properties fo describing music (i.e. artists, albums and tracks)\
@@ -930,18 +930,18 @@ description: "\u240A        The Music Ontology Specification provides main conce
 id: okns:mo
 imports:
 - okns:extended_types
-- okns:ao
-- okns:frbr
+- okns:cc
 - linkml:types
 - okns:foaf
-- okns:event
-- okns:cc
+- okns:dc
 - okns:wot
 - okns:wgs
-- okns:time
-- okns:dc
+- okns:event
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:44:38.892098'
+- okns:frbr
+- okns:ao
+- okns:time
+last_updated_on: '2025-07-17T19:20:52.295969'
 name: mo
 prefixes:
   ao: http://purl.org/ontology/ao/core#

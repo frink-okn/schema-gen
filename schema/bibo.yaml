@@ -208,19 +208,19 @@ annotations:
         value:
           bibo:DocumentStatus:
             tag: bibo:DocumentStatus
-            value: bibo:status/peerReviewed
+            value: bibo:status/accepted
           bibo:ThesisDegree:
             tag: bibo:ThesisDegree
-            value: bibo:degrees/ms
+            value: bibo:degrees/phd
           foaf:Person:
             tag: foaf:Person
-            value: bibo:bdarcus
+            value: bibo:fgiasson
           owl:Restriction:
             tag: owl:Restriction
-            value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b103
+            value: n86910293d572460595196b2fb17ab9b0b97
           owl:Thing:
             tag: owl:Thing
-            value: bibo:status/peerReviewed
+            value: bibo:status/accepted
       pairs:
         tag: pairs
         value:
@@ -235,13 +235,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Frederick Giasson
+                        value: Bruce D'Arcus
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -250,13 +250,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Frederick Giasson
+                        value: Bruce D'Arcus
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
           owl:allValuesFrom:
             tag: owl:allValuesFrom
             value:
@@ -268,13 +268,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: bibo:Document
+                        value: bibo:Issue
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b101
+                        value: n86910293d572460595196b2fb17ab9b0b92
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -292,7 +292,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b89
+                        value: n86910293d572460595196b2fb17ab9b0b89
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -310,7 +310,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b98
+                        value: n86910293d572460595196b2fb17ab9b0b104
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -328,7 +328,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b98
+                        value: n86910293d572460595196b2fb17ab9b0b104
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -340,13 +340,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Unpublished document
+                        value: Rejected for publication after peer reviewing.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -355,13 +355,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: PhD degree
+                        value: masters degree in arts
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:degrees/phd
+                        value: bibo:degrees/ma
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -370,13 +370,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Unpublished document
+                        value: Rejected for publication after peer reviewing.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -394,7 +394,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -409,7 +409,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
           rdfs:label:
             tag: rdfs:label
             value:
@@ -421,13 +421,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: unpublished
+                        value: rejected
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -436,13 +436,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: PhD degree
+                        value: M.A.
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:degrees/phd
+                        value: bibo:degrees/ma
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -451,13 +451,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: unpublished
+                        value: rejected
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -469,13 +469,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://fgiasson.com/me/
+                        value: http://purl.org/net/darcusb/info#me
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -484,13 +484,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://fgiasson.com/me/
+                        value: http://purl.org/net/darcusb/info#me
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: bibo:fgiasson
+                        value: bibo:bdarcus
           swvs:term_status:
             tag: swvs:term_status
             value:
@@ -508,7 +508,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -523,7 +523,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:degrees/phd
+                        value: bibo:degrees/ma
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -538,7 +538,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/unpublished
+                        value: bibo:status/rejected
 classes:
   bibo_AcademicArticle:
     class_uri: bibo:AcademicArticle
@@ -979,7 +979,7 @@ comments:
 - 'title: The Bibliographic Ontology'
 - 'created_by: http://purl.org/ontology/bibo/fgiasson'
 created_by: http://purl.org/ontology/bibo/bdarcus
-created_on: '2025-07-17T18:44:11.203808'
+created_on: '2025-07-17T19:20:25.808318'
 default_prefix: okns
 description: "The Bibliographic Ontology describe\u240Abibliographic things on the\
   \ semantic Web in RDF.  This ontology can be\u240Aused as a citation ontology, as\
@@ -989,15 +989,15 @@ description: "The Bibliographic Ontology describe\u240Abibliographic things on t
   \ bibliographic data\u240Asources."
 id: okns:bibo
 imports:
-- okns:swvs
+- okns:wot
 - linkml:types
 - okns:dc
 - okns:owl-rdf-rdfs
 - okns:extended_types
-- okns:event
 - okns:foaf
-- okns:wot
-last_updated_on: '2025-07-17T18:44:11.203808'
+- okns:swvs
+- okns:event
+last_updated_on: '2025-07-17T19:20:25.808318'
 name: bibo
 prefixes:
   address: http://schemas.talis.com/2005/address/schema#

@@ -826,34 +826,34 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: Neea553e1ca0945649db35d7e3e3e2752
+            value: Neb7b0b9a839348c5b30992a1018debd3
           vaem:CatalogEntry:
             tag: vaem:CatalogEntry
             value: voag:VOAG-CatalogEntry
           voag:Attribution:
             tag: voag:Attribution
-            value: voag:NoAttributionSpecified
+            value: voag:TopQuadrantAttribution
           voag:AttributionLogo:
             tag: voag:AttributionLogo
             value: voag:TopQuadrantLogo-613x150
           voag:ChangeFrequency:
             tag: voag:ChangeFrequency
-            value: voag:Quarterly
+            value: voag:Monthly
           voag:ChangeType:
             tag: voag:ChangeType
-            value: voag:DocumentationChange
+            value: voag:AppendChange
           voag:ConfidentialityLevel:
             tag: voag:ConfidentialityLevel
-            value: voag:CL_Secret
+            value: voag:CL_None
           voag:CreativeCommonsPermission:
             tag: voag:CreativeCommonsPermission
             value: voag:CCP_Distribution
           voag:CreativeCommonsProhibition:
             tag: voag:CreativeCommonsProhibition
-            value: voag:CCPH_HighIncomeNationUse
+            value: voag:CCPH_CommercialUse
           voag:CreativeCommonsRequirement:
             tag: voag:CreativeCommonsRequirement
-            value: voag:CCR_Copyleft
+            value: voag:CCR_SourceCode
           voag:Governance:
             tag: voag:Governance
             value: voag:NoGovernanceSpecified
@@ -865,7 +865,7 @@ annotations:
             value: voag:RDFIcon-32X35
           voag:IssueStatus:
             tag: voag:IssueStatus
-            value: voag:ResolvedIssue
+            value: voag:DeferredIssue
           voag:LicenseModel:
             tag: voag:LicenseModel
             value: voag:CC-SHAREALIKE_3PT0-US
@@ -874,7 +874,7 @@ annotations:
             value: voag:LinkedModelLogo-200x80
           voag:Maturity:
             tag: voag:Maturity
-            value: voag:UnknownMaturity
+            value: voag:SomeAdoption
           voag:OrganizationLogo:
             tag: voag:OrganizationLogo
             value: voag:TopQuadrantLogo-613x150
@@ -883,7 +883,7 @@ annotations:
             value: voag:NoPedigreeSpecified
           voag:PriorityValue:
             tag: voag:PriorityValue
-            value: voag:PV_ToBeDetermined
+            value: voag:PV_MediumPriority
           voag:ProductLogo:
             tag: voag:ProductLogo
             value: voag:VOAG-OntologyLogo_360x110
@@ -892,10 +892,10 @@ annotations:
             value: voag:NoProvenanceSpecified
           voag:PublicationStatus:
             tag: voag:PublicationStatus
-            value: voag:PS_Obsolete
+            value: voag:PS_Review
           voag:SchemaGraph:
             tag: voag:SchemaGraph
-            value: voag:VAEM-CatalogEntry
+            value: voag:VAEM-XINA-CatalogEntry
       pairs:
         tag: pairs
         value:
@@ -910,13 +910,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '0'
+                        value: '6'
                       predicate:
                         tag: predicate
                         value: dtype:code
                       subject:
                         tag: subject
-                        value: voag:CL_None
+                        value: voag:CL_TopSecret
           dtype:order:
             tag: dtype:order
             value:
@@ -928,13 +928,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '1'
+                        value: '7'
                       predicate:
                         tag: predicate
                         value: dtype:order
                       subject:
                         tag: subject
-                        value: voag:CL_None
+                        value: voag:CL_TopSecret
           dtype:value:
             tag: dtype:value
             value:
@@ -946,13 +946,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: annual
+                        value: bi-monthly
                       predicate:
                         tag: predicate
                         value: dtype:value
                       subject:
                         tag: subject
-                        value: voag:Annually
+                        value: voag:BiMonthly
               voag:ConfidentialityLevel:
                 tag: voag:ConfidentialityLevel
                 value:
@@ -961,13 +961,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: none
+                        value: topsecret
                       predicate:
                         tag: predicate
                         value: dtype:value
                       subject:
                         tag: subject
-                        value: voag:CL_None
+                        value: voag:CL_TopSecret
               voag:GovernanceRole:
                 tag: voag:GovernanceRole
                 value:
@@ -991,13 +991,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: non-issue
+                        value: approved
                       predicate:
                         tag: predicate
                         value: dtype:value
                       subject:
                         tag: subject
-                        value: voag:NonIssue
+                        value: voag:ApprovedIssue
               voag:PriorityValue:
                 tag: voag:PriorityValue
                 value:
@@ -1021,13 +1021,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: interim
+                        value: unknown
                       predicate:
                         tag: predicate
                         value: dtype:value
                       subject:
                         tag: subject
-                        value: voag:PS_Interim
+                        value: voag:PS_Unknown
           owl:allValuesFrom:
             tag: owl:allValuesFrom
             value:
@@ -1039,13 +1039,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: voag:Organization
+                        value: voag:Party
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: Nb2993b26cd114198bf4d17272055ffc4
+                        value: N15c0fcd3e34b471ab2e87cef61125388
                   uri:
                     tag: uri
                     value:
@@ -1057,7 +1057,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: N5a0143b04fe44c16891de7425b4e6505
+                        value: Nbd45436d966c449883b33ee3a07c8743
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -1075,7 +1075,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N8b28a4015ca94fc2bf95c5aadb4a82ec
+                        value: N1466c71ad04d466c8ef7b839a4244e96
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1087,7 +1087,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: N435a94fd53ab41a4bcb22d60aadbf6aa
+                        value: N124171a5a53641f38385d0c454e39710
           owl:hasValue:
             tag: owl:hasValue
             value:
@@ -1105,7 +1105,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: Na9f75a929c4b4c179937c1f0ea5ffe6c
+                        value: N56e931e416664e799cea06711a607631
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -1123,7 +1123,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: Nf9122075081143df87b9253d321ade4d
+                        value: N4ce8ec3c5179451b88a0d8f3342a9a10
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1135,7 +1135,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: N4d3e1147c6e14c3bb73ad24fa485fa49
+                        value: N35c1bf34ac4246a1b2482427a281ca0e
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -1153,7 +1153,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N507e1ac059774a959a9a9f21b4788a68
+                        value: Nc5493f6c7e184da0b208c8186298e71a
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -1165,7 +1165,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N1460f44f311e41269a87c5f22649dedd
+                        value: N6467c0f06e7f4d09bbf02b3d1c7cef2b
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -1177,13 +1177,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: voag:startDate
+                        value: voag:title
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nf9122075081143df87b9253d321ade4d
+                        value: N35c1bf34ac4246a1b2482427a281ca0e
                   owl:DeprecatedProperty:
                     tag: owl:DeprecatedProperty
                     value:
@@ -1195,67 +1195,67 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N23c4d491595d4cf087f47ba931a00ac1
+                        value: Nc7ffd43562414748bb466d0ab4030a87
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: voag:isGovernedBy
+                        value: voag:usedBy
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nb2993b26cd114198bf4d17272055ffc4
+                        value: N15c0fcd3e34b471ab2e87cef61125388
                   owl:SymmetricProperty:
                     tag: owl:SymmetricProperty
                     value:
                       object:
                         tag: object
-                        value: voag:incompatibleWith
+                        value: voag:compatibleWith
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Ne074067de1b24fb5bbe53f647c18f718
+                        value: N2329873e61244b24a9977f9e352c6773
                   owl:TransitiveProperty:
                     tag: owl:TransitiveProperty
                     value:
                       object:
                         tag: object
-                        value: voag:supercedes
+                        value: voag:supercededBy
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Nb379ff86f44e4fd9ae92e2c51893685e
+                        value: Ne874c48b948d4941936dbeac98aac97a
                   rdf:Property:
                     tag: rdf:Property
                     value:
                       object:
                         tag: object
-                        value: voag:imageMap
+                        value: voag:derivedFrom
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N14a6398f7095473190cc3924e6ab80aa
+                        value: N6467c0f06e7f4d09bbf02b3d1c7cef2b
                   uri:
                     tag: uri
                     value:
                       object:
                         tag: object
-                        value: vaem:description
+                        value: vaem:disciplineScope
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N4d3e1147c6e14c3bb73ad24fa485fa49
+                        value: Nbd45436d966c449883b33ee3a07c8743
           owl:someValuesFrom:
             tag: owl:someValuesFrom
             value:
@@ -1267,13 +1267,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: voag:StakeholderGroup
+                        value: voag:Document
                       predicate:
                         tag: predicate
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: Nbcea1bcfb0594c76a45bf92927e75483
+                        value: N374e02dbcbe94c25973d4fcee6583a42
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -1306,7 +1306,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:TopQuadrantAttribution
+                        value: voag:NoAttributionSpecified
               voag:AttributionLogo:
                 tag: voag:AttributionLogo
                 value:
@@ -1336,7 +1336,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:Weekly
+                        value: voag:UncertainFrequency
               voag:ChangeType:
                 tag: voag:ChangeType
                 value:
@@ -1366,7 +1366,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:CL_None
+                        value: voag:CL_TopSecret
               voag:CreativeCommonsPermission:
                 tag: voag:CreativeCommonsPermission
                 value:
@@ -1381,7 +1381,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:CCP_DerivativeWorks
+                        value: voag:CCP_Sharing
               voag:CreativeCommonsProhibition:
                 tag: voag:CreativeCommonsProhibition
                 value:
@@ -1396,7 +1396,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:CCPH_CommercialUse
+                        value: voag:CCPH_HighIncomeNationUse
               voag:CreativeCommonsRequirement:
                 tag: voag:CreativeCommonsRequirement
                 value:
@@ -1411,7 +1411,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:CCR_Notice
+                        value: voag:CCR_Copyleft
               voag:Governance:
                 tag: voag:Governance
                 value:
@@ -1471,7 +1471,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:NonIssue
+                        value: voag:ApprovedIssue
               voag:LicenseModel:
                 tag: voag:LicenseModel
                 value:
@@ -1606,7 +1606,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: voag:PS_Interim
+                        value: voag:PS_Unknown
               voag:SchemaGraph:
                 tag: voag:SchemaGraph
                 value:
@@ -1648,13 +1648,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: TopQuadrant attribution
+                        value: No attribution specified
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:TopQuadrantAttribution
+                        value: voag:NoAttributionSpecified
               voag:AttributionLogo:
                 tag: voag:AttributionLogo
                 value:
@@ -1678,13 +1678,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Weekly
+                        value: Uncertain frequency
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:Weekly
+                        value: voag:UncertainFrequency
               voag:ChangeType:
                 tag: voag:ChangeType
                 value:
@@ -1708,13 +1708,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: None
+                        value: Top secret
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:CL_None
+                        value: voag:CL_TopSecret
               voag:CreativeCommonsPermission:
                 tag: voag:CreativeCommonsPermission
                 value:
@@ -1723,13 +1723,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Derivative works
+                        value: Sharing
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:CCP_DerivativeWorks
+                        value: voag:CCP_Sharing
               voag:CreativeCommonsProhibition:
                 tag: voag:CreativeCommonsProhibition
                 value:
@@ -1738,13 +1738,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Creative Commons Commercial Use
+                        value: High income nation use
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:CCPH_CommercialUse
+                        value: voag:CCPH_HighIncomeNationUse
               voag:CreativeCommonsRequirement:
                 tag: voag:CreativeCommonsRequirement
                 value:
@@ -1753,13 +1753,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Creative Commons Notice
+                        value: Creative Commons Copyleft
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:CCR_Notice
+                        value: voag:CCR_Copyleft
               voag:Governance:
                 tag: voag:Governance
                 value:
@@ -1813,13 +1813,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Non-issue
+                        value: Approved Issue
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:NonIssue
+                        value: voag:ApprovedIssue
               voag:LicenseModel:
                 tag: voag:LicenseModel
                 value:
@@ -1953,13 +1953,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Interim Status
+                        value: Unknown Status
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: voag:PS_Interim
+                        value: voag:PS_Unknown
               voag:SchemaGraph:
                 tag: voag:SchemaGraph
                 value:
@@ -1986,13 +1986,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: voag:Attribution
+                        value: voag:GovernedObject
                       predicate:
                         tag: predicate
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: vaem:Attribution
+                        value: vaem:CatalogEntry
           vaem:description:
             tag: vaem:description
             value:
@@ -2025,31 +2025,11 @@ annotations:
                         tag: object
                         value: '
 
-                          Unclassified is not technically a "classification"; this
-                          is the default, and refers to information that can be released
-                          to individuals without a clearance (Level 0). Information
-                          that is unclassified is sometimes restricted in its dissemination
-                          as SBU or FOUO. For example, the "law enforcement bulletins"
-                          often reported by the U.S. media when United States Department
-                          of Homeland Security raises the U.S. terror threat level
-                          are usually classified as "U//LES" or "Unclassified - Law
-                          Enforcement Sensitive." This information is only supposed
-                          to be released to Law Enforcement groups (Sheriff, Police,
-                          etc.) Because the information is unclassified, however,
-                          it is sometimes released to the public as well. Information
-                          which is unclassified, but which the government does not
-                          believe should be subject to Freedom of Information Act
-                          requests is often classified as U//FOUO - "Unclassified
-                          - For Official Use Only". In addition to FOUO information,
-                          information can be categorized according to its availability
-                          to be distributed (Distribution D may only be released to
-                          approved Department of Defense and Government Contractor
-                          personnel). Also, the statement of NOFORN (meaning No Foreign
-                          Nationals) is applied to any information which may not be
-                          released to any non-US Citizen. NOFORN and Distribution
-                          statements are often used in conjunction with classified
-                          information or alone on SBU information. Documents subject
-                          to export controls have a specific warning to that effect.
+                          "Top Secret" shall be applied to information, the unauthorized
+                          disclosure of which reasonably could be expected to cause
+                          exceptionally grave damage to the national security that
+                          the original classification authority is able to identify
+                          or describe [US Executive Order 12958].
 
                           '
                       predicate:
@@ -2057,7 +2037,7 @@ annotations:
                         value: vaem:description
                       subject:
                         tag: subject
-                        value: voag:CL_Unclassified
+                        value: voag:CL_TopSecret
               voag:CreativeCommonsPermission:
                 tag: voag:CreativeCommonsPermission
                 value:
@@ -2066,13 +2046,18 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Distribution of derivative works
+                        value: '
+
+                          permits commercial derivatives, but only non-commercial
+                          distribution
+
+                          '
                       predicate:
                         tag: predicate
                         value: vaem:description
                       subject:
                         tag: subject
-                        value: voag:CCP_DerivativeWorks
+                        value: voag:CCP_Sharing
               voag:CreativeCommonsProhibition:
                 tag: voag:CreativeCommonsProhibition
                 value:
@@ -2081,13 +2066,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Exercising rights for commercial purposes
+                        value: Use in a non-developing country
                       predicate:
                         tag: predicate
                         value: vaem:description
                       subject:
                         tag: subject
-                        value: voag:CCPH_CommercialUse
+                        value: voag:CCPH_HighIncomeNationUse
               voag:CreativeCommonsRequirement:
                 tag: voag:CreativeCommonsRequirement
                 value:
@@ -2096,13 +2081,18 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: copyright and license notices be kept intact
+                        value: '
+
+                          combined works must be licensed under specified terms, similar
+                          to those on the original work
+
+                          '
                       predicate:
                         tag: predicate
                         value: vaem:description
                       subject:
                         tag: subject
-                        value: voag:CCR_Notice
+                        value: voag:CCR_Copyleft
               voag:Icon:
                 tag: voag:Icon
                 value:
@@ -2576,8 +2566,8 @@ classes:
     class_uri: vaem:CatalogEntry
     name: vaem_CatalogEntry
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
   vaem_dateUnion:
     class_uri: vaem:dateUnion
     name: vaem_dateUnion
@@ -2626,12 +2616,12 @@ classes:
     is_a: voag_Qualifier
     name: voag_Attribution
     slots:
-    - voag_pointOfContact
-    - vaem_name
+    - rdfs_label
     - voag_url
     - voag_hasLogo
+    - voag_pointOfContact
     - rdfs_isDefinedBy
-    - rdfs_label
+    - vaem_name
     source: http://voag.linkedmodel.org/schema/voag
     title: Attributed Source
   voag_AttributionLogo:
@@ -2639,10 +2629,10 @@ classes:
     is_a: voag_Logo
     name: voag_AttributionLogo
     slots:
-    - voag_width
-    - voag_height
-    - rdfs_isDefinedBy
     - rdfs_label
+    - voag_height
+    - voag_width
+    - rdfs_isDefinedBy
     - vaem_description
     - voag_image
     source: http://voag.linkedmodel.org/schema/voag
@@ -2658,9 +2648,9 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_ChangeFrequency
     slots:
-    - dtype_value
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Change frequency
   voag_ChangeManagementProcess:
@@ -2675,8 +2665,8 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_ChangeType
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Change type
   voag_ConcurrenceEvent:
@@ -2691,12 +2681,12 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_ConfidentialityLevel
     slots:
-    - dtype_value
-    - dtype_code
-    - dtype_order
-    - rdfs_isDefinedBy
     - rdfs_label
+    - dtype_order
+    - dtype_code
+    - rdfs_isDefinedBy
     - vaem_description
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Confidentiality level
   voag_CreativeCommonsJurisdiction:
@@ -2714,8 +2704,8 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_CreativeCommonsPermission
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     - vaem_description
     source: http://voag.linkedmodel.org/schema/voag
     title: Creative Commons Permission
@@ -2725,8 +2715,8 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_CreativeCommonsProhibition
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     - vaem_description
     source: http://voag.linkedmodel.org/schema/voag
     title: Creative Commons Prohibition
@@ -2736,10 +2726,10 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_CreativeCommonsRequirement
     slots:
-    - vaem_url
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     - vaem_description
+    - vaem_url
     source: http://voag.linkedmodel.org/schema/voag
     title: Requirement
   voag_CreativeCommonsWork:
@@ -2804,8 +2794,8 @@ classes:
     is_a: voag_Qualifier
     name: voag_Governance
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Governance
   voag_GovernanceEvent:
@@ -2841,9 +2831,9 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_GovernanceRole
     slots:
-    - dtype_value
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Governance Role
   voag_GovernedObject:
@@ -2869,13 +2859,13 @@ classes:
     is_a: voag_Image
     name: voag_Icon
     slots:
-    - voag_width
-    - voag_caption
-    - voag_height
-    - rdfs_isDefinedBy
     - rdfs_label
+    - voag_height
+    - voag_width
+    - rdfs_isDefinedBy
     - vaem_description
     - voag_image
+    - voag_caption
     source: http://voag.linkedmodel.org/schema/voag
     title: Icon
   voag_Image:
@@ -2906,10 +2896,10 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_IssueStatus
     slots:
-    - dtype_value
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     - vaem_description
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Issue Status
   voag_LicenseModel:
@@ -2917,8 +2907,8 @@ classes:
     is_a: voag_GovernedObject
     name: voag_LicenseModel
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: License Model
   voag_Logo:
@@ -2926,13 +2916,13 @@ classes:
     is_a: voag_Image
     name: voag_Logo
     slots:
-    - voag_width
-    - voag_caption
-    - voag_height
-    - rdfs_isDefinedBy
     - rdfs_label
+    - voag_height
+    - voag_width
+    - rdfs_isDefinedBy
     - vaem_description
     - voag_image
+    - voag_caption
     source: http://voag.linkedmodel.org/schema/voag
     title: Logo
   voag_Maturity:
@@ -2940,8 +2930,8 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_Maturity
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Maturity
   voag_NonConcurrenceEvent:
@@ -2962,10 +2952,10 @@ classes:
     is_a: voag_Logo
     name: voag_OrganizationLogo
     slots:
-    - voag_width
-    - voag_height
-    - rdfs_isDefinedBy
     - rdfs_label
+    - voag_height
+    - voag_width
+    - rdfs_isDefinedBy
     - vaem_description
     - voag_image
     source: http://voag.linkedmodel.org/schema/voag
@@ -2983,8 +2973,8 @@ classes:
     is_a: voag_Qualifier
     name: voag_Pedigree
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Pedigree
   voag_Person:
@@ -2998,9 +2988,9 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_PriorityValue
     slots:
-    - dtype_value
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Priority value
   voag_Process:
@@ -3014,12 +3004,12 @@ classes:
     is_a: voag_Logo
     name: voag_ProductLogo
     slots:
-    - voag_width
-    - voag_caption
-    - voag_height
-    - rdfs_isDefinedBy
     - rdfs_label
+    - voag_height
+    - voag_width
+    - rdfs_isDefinedBy
     - voag_image
+    - voag_caption
     source: http://voag.linkedmodel.org/schema/voag
     title: Product logo
   voag_Provenance:
@@ -3030,8 +3020,8 @@ classes:
     is_a: voag_Qualifier
     name: voag_Provenance
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Provenance
   voag_PublicationStatus:
@@ -3039,9 +3029,9 @@ classes:
     is_a: voag_EnumeratedValue
     name: voag_PublicationStatus
     slots:
-    - dtype_value
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
+    - dtype_value
     source: http://voag.linkedmodel.org/schema/voag
     title: Publication Status
   voag_Qualifier:
@@ -3076,8 +3066,8 @@ classes:
     is_a: voag_Graph
     name: voag_SchemaGraph
     slots:
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://voag.linkedmodel.org/schema/voag
     title: Schema graph
   voag_Service:
@@ -3109,18 +3099,18 @@ classes:
 comments:
 - 'title: Vocabulary Of Attribution and Governance'
 - 'title: Vocabulary Of Attribution and Governance'
-created_on: '2025-07-17T18:45:13.118994'
+created_on: '2025-07-17T19:21:27.400570'
 default_prefix: okns
 id: okns:voag
 imports:
-- okns:extended_types
-- okns:dtype
-- linkml:types
-- okns:vaem
 - okns:owl-rdf-rdfs
-- okns:void
 - okns:prov
-last_updated_on: '2025-07-17T18:45:13.118994'
+- okns:extended_types
+- linkml:types
+- okns:dtype
+- okns:void
+- okns:vaem
+last_updated_on: '2025-07-17T19:21:27.400570'
 name: voag
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -3437,9 +3427,9 @@ slots:
     title: has issue resolution process
   voag_hasLogo:
     any_of:
+    - range: voag_AttributionLogo
     - range: voag_Logo
     - range: voag_OrganizationLogo
-    - range: voag_AttributionLogo
     description: A property to reference an image that is used as a logo.
     name: voag_hasLogo
     range: Any

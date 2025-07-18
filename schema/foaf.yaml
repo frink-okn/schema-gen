@@ -97,18 +97,18 @@ classes:
     title: Project
 comments:
 - 'title: Friend of a Friend (FOAF) vocabulary'
-created_on: '2025-07-17T18:43:54.528251'
+created_on: '2025-07-17T19:20:08.379790'
 default_prefix: okns
 description: The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF
   Schema and the Web Ontology Language.
 id: okns:foaf
 imports:
-- okns:wot
 - okns:wgs
-- okns:skos
-- okns:extended_types
+- okns:wot
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T18:43:54.528251'
+- okns:extended_types
+- okns:skos
+last_updated_on: '2025-07-17T19:20:08.379790'
 name: foaf
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -119,7 +119,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  sdos: http://schema.org/
+  sdos: https://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
