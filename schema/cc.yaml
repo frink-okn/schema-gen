@@ -94,7 +94,7 @@ annotations:
             value: cc:PublicDomain
           cc:Permission:
             tag: cc:Permission
-            value: cc:Distribution
+            value: cc:DerivativeWorks
           cc:Prohibition:
             tag: cc:Prohibition
             value: cc:CommercialUse
@@ -130,13 +130,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: making multiple copies
+                        value: distribution, public display, and publicly performance
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:Reproduction
+                        value: cc:Distribution
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -160,14 +160,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: derivative works be licensed under the same terms as
-                          the original work
+                        value: credit be given to copyright holder and/or author
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:ShareAlike
+                        value: cc:Attribution
           dc:title:
             tag: dc:title
             value:
@@ -194,13 +193,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: reproduction
+                        value: distribution
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:Reproduction
+                        value: cc:Distribution
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -224,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: share alike
+                        value: attribution
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:ShareAlike
+                        value: cc:Attribution
 classes:
   cc_Agent:
     class_uri: cc:Agent
@@ -244,32 +243,32 @@ classes:
       license, the public domain, information for distributors
     name: cc_License
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: license
   cc_Permission:
     class_uri: cc:Permission
     description: an action that may or may not be allowed or desired
     name: cc_Permission
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: permission
   cc_Prohibition:
     class_uri: cc:Prohibition
     description: something you may be asked not to do
     name: cc_Prohibition
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: prohibition
   cc_Requirement:
     class_uri: cc:Requirement
     description: an action that may or may not be requested of you
     name: cc_Requirement
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: requirement
   cc_Work:
     class_uri: cc:Work
@@ -278,13 +277,13 @@ classes:
     see_also:
     - http://www.w3.org/2000/10/swap/pim/doc#Work
     title: work
-created_on: '2025-07-15T20:25:24.774576'
-default_prefix: okn
+created_on: '2025-07-17T18:43:57.085272'
+default_prefix: okns
 id: okns:cc
 imports:
 - okns:dc
 - linkml:types
-last_updated_on: '2025-07-15T20:25:24.774576'
+last_updated_on: '2025-07-17T18:43:57.085272'
 name: cc
 prefixes:
   cc: http://web.resource.org/cc/

@@ -1918,25 +1918,25 @@ annotations:
         value:
           daml-oil:List:
             tag: daml-oil:List
-            value: N6f919010d166455f80aec2cf82055482
+            value: Nfb8f4c0c99614cdeaaec8ae17fc6a234
           daml-oil:Restriction:
             tag: daml-oil:Restriction
-            value: N090286a942604adebbdb44c257d83df3
+            value: Nf61031520b004742bedf7c731e2ddda0
           wfb:ANDEAN_EQUATORIAL_LANGUAGES:
             tag: wfb:ANDEAN_EQUATORIAL_LANGUAGES
-            value: wfb:AYMARA
+            value: wfb:TUPI
           wfb:ARAMAIC_LANGUAGES:
             tag: wfb:ARAMAIC_LANGUAGES
-            value: wfb:SYRIAN
+            value: wfb:ASSYRIAN
           wfb:BALTIC_LANGUAGES:
             tag: wfb:BALTIC_LANGUAGES
-            value: wfb:LITHUANIAN
+            value: wfb:LATVIAN
           wfb:BANTU_LANGUAGES:
             tag: wfb:BANTU_LANGUAGES
-            value: wfb:SHONA
+            value: wfb:LUGANDA
           wfb:BERBER_LANGUAGES:
             tag: wfb:BERBER_LANGUAGES
-            value: wfb:TUAREG
+            value: wfb:KABYLE
           wfb:BIHARI:
             tag: wfb:BIHARI
             value: wfb:BHOJPURI
@@ -1948,10 +1948,10 @@ annotations:
             value: wfb:SUEZ-CANAL
           wfb:CAUCASIAN_LANGUAGES:
             tag: wfb:CAUCASIAN_LANGUAGES
-            value: wfb:INGUSH
+            value: wfb:GEORGIAN
           wfb:CELTIC_LANGUAGES:
             tag: wfb:CELTIC_LANGUAGES
-            value: wfb:IRISH
+            value: wfb:WELSH
           wfb:CENTRAL_SUDANIC_LANGUAGES:
             tag: wfb:CENTRAL_SUDANIC_LANGUAGES
             value: wfb:SARA
@@ -1963,34 +1963,34 @@ annotations:
             value: wfb:UZBEK
           wfb:CITY:
             tag: wfb:CITY
-            value: wfb:KANTON-KIRIBATI
+            value: wfb:ABADAN-IRAN
           wfb:COUNTRY-SUBSIDIARY:
             tag: wfb:COUNTRY-SUBSIDIARY
             value: wfb:CITY-OF-WASHINGTON-DC
           wfb:CREOLE_LANGUAGES:
             tag: wfb:CREOLE_LANGUAGES
-            value: wfb:COMORAN
+            value: wfb:BISLAMA
           wfb:CUSHITIC_LANGUAGES:
             tag: wfb:CUSHITIC_LANGUAGES
-            value: wfb:AFAR
+            value: wfb:SOMALI
           wfb:DRAVIDIAN_LANGUAGES:
             tag: wfb:DRAVIDIAN_LANGUAGES
-            value: wfb:MALAYALAM
+            value: wfb:TAMIL
           wfb:EASTERN_LANGUAGES:
             tag: wfb:EASTERN_LANGUAGES
             value: wfb:SANGHO
           wfb:ESKIMO-ALEUT_LANGUAGES:
             tag: wfb:ESKIMO-ALEUT_LANGUAGES
-            value: wfb:ESKIMO
+            value: wfb:ALEUT
           wfb:ETHIOPIC_LANGUAGES:
             tag: wfb:ETHIOPIC_LANGUAGES
-            value: wfb:TIGRE
+            value: wfb:KUNAMA
           wfb:FINNIC_LANGUAGES:
             tag: wfb:FINNIC_LANGUAGES
-            value: wfb:MORDVIN
+            value: wfb:FINNISH
           wfb:GAS-PIPELINE:
             tag: wfb:GAS-PIPELINE
-            value: wfb:TRANSMED-PIPELINE
+            value: wfb:GAZODUC-MAGHREB-PIPELINE
           wfb:GEOGRAPHICAL-REGION:
             tag: wfb:GEOGRAPHICAL-REGION
             value: wfb:ARABLE-LAND
@@ -1999,31 +1999,31 @@ annotations:
             value: wfb:SOUTH-KOREA
           wfb:GULF:
             tag: wfb:GULF
-            value: wfb:GULF-OF-OMAN
+            value: wfb:GULF-OF-ADEN
           wfb:GUR_LANGUAGES:
             tag: wfb:GUR_LANGUAGES
-            value: wfb:DAGOMBA
+            value: wfb:KABRE
           wfb:HARBOR:
             tag: wfb:HARBOR
             value: wfb:AD-DAMMAM-HARBOR
           wfb:INDIC_LANGUAGES:
             tag: wfb:INDIC_LANGUAGES
-            value: wfb:PUNJABI
+            value: wfb:DIVEHI
           wfb:INDIVIDUAL:
             tag: wfb:INDIVIDUAL
             value: wfb:WFB-95-TERM-EQUIVALENCES
           wfb:INDO-EUROPEAN_LANGUAGES:
             tag: wfb:INDO-EUROPEAN_LANGUAGES
-            value: wfb:ARMENIAN
+            value: wfb:ALBANIAN
           wfb:INDONESIAN_LANGUAGES:
             tag: wfb:INDONESIAN_LANGUAGES
-            value: wfb:VISAYAN
+            value: wfb:MADURESE
           wfb:INTERNATIONAL-ORGANIZATION:
             tag: wfb:INTERNATIONAL-ORGANIZATION
-            value: wfb:ONUMOZ
+            value: wfb:UNRWA
           wfb:INTERNATIONAL-WATERWAY:
             tag: wfb:INTERNATIONAL-WATERWAY
-            value: wfb:STRAIT-OF-HORMUZ
+            value: wfb:SUEZ-CANAL
           wfb:IRANIAN_LANGUAGES:
             tag: wfb:IRANIAN_LANGUAGES
             value: wfb:DARI
@@ -2038,34 +2038,34 @@ annotations:
             value: wfb:NAMA
           wfb:KIPCHAK_LANGUAGES:
             tag: wfb:KIPCHAK_LANGUAGES
-            value: wfb:KYRGYZ
+            value: wfb:BASHKIR
           wfb:KWA_LANGUAGES:
             tag: wfb:KWA_LANGUAGES
-            value: wfb:YORUBA
+            value: wfb:FON
           wfb:LANGUAGE:
             tag: wfb:LANGUAGE
-            value: wfb:OROMINGA
+            value: wfb:NORA_BANA
           wfb:MANDE_LANGUAGES:
             tag: wfb:MANDE_LANGUAGES
-            value: wfb:MENDE
+            value: wfb:SONINKE
           wfb:MANDINGO:
             tag: wfb:MANDINGO
-            value: wfb:DIOULA
+            value: wfb:BAMBARA
           wfb:MAYAN_LANGUAGES:
             tag: wfb:MAYAN_LANGUAGES
-            value: wfb:QUICHE
+            value: wfb:YUCATEC
           wfb:MELANESIAN_LANGUAGES:
             tag: wfb:MELANESIAN_LANGUAGES
-            value: wfb:FIJIAN
+            value: wfb:MOTU
           wfb:MICRONESIAN_LANGUAGES:
             tag: wfb:MICRONESIAN_LANGUAGES
-            value: wfb:TRUKESE
+            value: wfb:GILBERTESE
           wfb:MON-KHMER_LANGUAGES:
             tag: wfb:MON-KHMER_LANGUAGES
             value: wfb:KHMER
           wfb:MONGOL_LANGUAGES:
             tag: wfb:MONGOL_LANGUAGES
-            value: wfb:MONGOL
+            value: wfb:BURYAT
           wfb:Multilateral-Agent:
             tag: wfb:Multilateral-Agent
             value: wfb:UN
@@ -2077,61 +2077,61 @@ annotations:
             value: wfb:MASAI
           wfb:NORTH_ARABIC_LANGUAGES:
             tag: wfb:NORTH_ARABIC_LANGUAGES
-            value: wfb:MALTESE
+            value: wfb:ARABIC
           wfb:NORWEGIAN:
             tag: wfb:NORWEGIAN
-            value: wfb:NORWEGIAN-BOKMAAL
+            value: wfb:NORWEGIAN-NYNORSK
           wfb:NUBIAN_LANGUAGES:
             tag: wfb:NUBIAN_LANGUAGES
             value: wfb:NUBIAN
           wfb:OGHUZ_LANGUAGES:
             tag: wfb:OGHUZ_LANGUAGES
-            value: wfb:TURKMEN
+            value: wfb:TURKISH
           wfb:OIL-PIPELINE:
             tag: wfb:OIL-PIPELINE
-            value: wfb:IRAQ-STRATEGIC-PIPELINE
+            value: wfb:PETROLINE
           wfb:POLYNESIAN_LANGUAGES:
             tag: wfb:POLYNESIAN_LANGUAGES
-            value: wfb:SAMOAN
+            value: wfb:RAROTONGAN
           wfb:RHAETO-ROMANIC:
             tag: wfb:RHAETO-ROMANIC
-            value: wfb:ROMANSCH
+            value: wfb:FRIULAN
           wfb:RIVER:
             tag: wfb:RIVER
-            value: wfb:SHATT-AL-ARAB-RIVER
+            value: wfb:TIGRIS-RIVER
           wfb:ROMANCE_LANGUAGES:
             tag: wfb:ROMANCE_LANGUAGES
-            value: wfb:SARDINIAN
+            value: wfb:PROVENCAL
           wfb:SAHARAN_LANGUAGES:
             tag: wfb:SAHARAN_LANGUAGES
             value: wfb:DJERMA
           wfb:SAMOYED_LANGUAGES:
             tag: wfb:SAMOYED_LANGUAGES
-            value: wfb:ENETS
+            value: wfb:NENETS
           wfb:SCANDINAVIAN_LANGUAGES:
             tag: wfb:SCANDINAVIAN_LANGUAGES
-            value: wfb:ICELANDIC
+            value: wfb:SWEDISH
           wfb:SEA:
             tag: wfb:SEA
-            value: wfb:ARABIAN-SEA
+            value: wfb:CASPIA-SEA
           wfb:SINITIC_LANGUAGES:
             tag: wfb:SINITIC_LANGUAGES
-            value: wfb:TAIWANESE
+            value: wfb:XIANG
           wfb:SLAVIC_LANGUAGES:
             tag: wfb:SLAVIC_LANGUAGES
-            value: wfb:SERBO-CROATIAN
+            value: wfb:BULGARIAN
           wfb:STRAIT:
             tag: wfb:STRAIT
-            value: wfb:CLARENCE-STRAIT
+            value: wfb:BAB-EL-MANDEB-STRAIT
           wfb:TAI_LANGUAGES:
             tag: wfb:TAI_LANGUAGES
             value: wfb:THAI
           wfb:TERRORIST-GROUP:
             tag: wfb:TERRORIST-GROUP
-            value: wfb:PFLP
+            value: wfb:IG
           wfb:TIBETO-BURMAN_LANGUAGES:
             tag: wfb:TIBETO-BURMAN_LANGUAGES
-            value: wfb:BURMESE
+            value: wfb:TIBETAN
           wfb:TUNGUSIC_LANGUAGES:
             tag: wfb:TUNGUSIC_LANGUAGES
             value: wfb:EVEN
@@ -2140,10 +2140,10 @@ annotations:
             value: wfb:CHUVASH
           wfb:Time:
             tag: wfb:Time
-            value: wfb:FIFTEEN-YEARS
+            value: wfb:SIXTY-FIVE-YEARS
           wfb:UGRIC_LANGUAGES:
             tag: wfb:UGRIC_LANGUAGES
-            value: wfb:HUNGARIAN
+            value: wfb:KHANTY
           wfb:UNIT-OF-MEASURE:
             tag: wfb:UNIT-OF-MEASURE
             value: wfb:SQUARE-KILOMETER
@@ -2155,13 +2155,13 @@ annotations:
             value: wfb:DINKA
           wfb:WEST_ATLANTIC_LANGUAGES:
             tag: wfb:WEST_ATLANTIC_LANGUAGES
-            value: wfb:DIOLA
+            value: wfb:WOLOF
           wfb:WEST_GERMANIC_LANGUAGES:
             tag: wfb:WEST_GERMANIC_LANGUAGES
-            value: wfb:AFRIKAANS
+            value: wfb:YIDDISH
           wfb:WORLD-FACT-BOOK-INFORMATION-SOURCE:
             tag: wfb:WORLD-FACT-BOOK-INFORMATION-SOURCE
-            value: wfb:WORLD-FACT-BOOK-1996
+            value: wfb:WORLD-FACT-BOOK-1994
       pairs:
         tag: pairs
         value:
@@ -2182,7 +2182,7 @@ annotations:
                         value: daml-oil:hasValue
                       subject:
                         tag: subject
-                        value: N7b3a20fa511f454788a1db713514c5a8
+                        value: N5b047850fba849af8ae5234e6418c768
                   rdfs:Class:
                     tag: rdfs:Class
                     value:
@@ -2194,19 +2194,19 @@ annotations:
                         value: daml-oil:hasValue
                       subject:
                         tag: subject
-                        value: N43510c814feb47508ebb442afbc39c81
+                        value: Nabbd8b8c7abc4941873720c0bafb8ad3
                   string:
                     tag: string
                     value:
                       object:
                         tag: object
-                        value: "\n               departments\n            "
+                        value: "\n               n/a\n            "
                       predicate:
                         tag: predicate
                         value: daml-oil:hasValue
                       subject:
                         tag: subject
-                        value: N2c3c2b16b4e54bbd960a754191f3cb25
+                        value: Nb7e332226d0c4661b9af2ff7d90a9394
                   uri:
                     tag: uri
                     value:
@@ -2218,7 +2218,7 @@ annotations:
                         value: daml-oil:hasValue
                       subject:
                         tag: subject
-                        value: N49102dcd68344e5f9e8269f600c59067
+                        value: Na0e7839674664985a83ac8c5922d4bf3
           daml-oil:item:
             tag: daml-oil:item
             value:
@@ -2236,7 +2236,7 @@ annotations:
                         value: daml-oil:item
                       subject:
                         tag: subject
-                        value: N14757215f169481e81750b71fe6941d7
+                        value: Nc199e614cecf4b72a205bfa33cef746a
           daml-oil:onProperty:
             tag: daml-oil:onProperty
             value:
@@ -2254,19 +2254,19 @@ annotations:
                         value: daml-oil:onProperty
                       subject:
                         tag: subject
-                        value: Nd901e53f54aa47a2a40996944f0aee75
+                        value: N1424edeca92b4b5ea277c94c65a2839a
                   rdf:Property:
                     tag: rdf:Property
                     value:
                       object:
                         tag: object
-                        value: wfb:ENGLISH-NAME-FOR-DIVISION-TYPE
+                        value: wfb:LOCAL-SINGULAR-NAME-FOR-DIVISION-TYPE
                       predicate:
                         tag: predicate
                         value: daml-oil:onProperty
                       subject:
                         tag: subject
-                        value: N2c3c2b16b4e54bbd960a754191f3cb25
+                        value: Nb7e332226d0c4661b9af2ff7d90a9394
                   uri:
                     tag: uri
                     value:
@@ -2278,7 +2278,7 @@ annotations:
                         value: daml-oil:onProperty
                       subject:
                         tag: subject
-                        value: N43510c814feb47508ebb442afbc39c81
+                        value: Nabbd8b8c7abc4941873720c0bafb8ad3
                   wfb:UNARY-FUNCTION:
                     tag: wfb:UNARY-FUNCTION
                     value:
@@ -2290,7 +2290,7 @@ annotations:
                         value: daml-oil:onProperty
                       subject:
                         tag: subject
-                        value: Nd901e53f54aa47a2a40996944f0aee75
+                        value: N1424edeca92b4b5ea277c94c65a2839a
           daml-oil:toClass:
             tag: daml-oil:toClass
             value:
@@ -2308,19 +2308,19 @@ annotations:
                         value: daml-oil:toClass
                       subject:
                         tag: subject
-                        value: Nd901e53f54aa47a2a40996944f0aee75
+                        value: N1424edeca92b4b5ea277c94c65a2839a
                   uri:
                     tag: uri
                     value:
                       object:
                         tag: object
-                        value: wfb:GEOGRAPHICAL-REGION
+                        value: wfb:PRODUCT
                       predicate:
                         tag: predicate
                         value: daml-oil:toClass
                       subject:
                         tag: subject
-                        value: Nf437ab96db71445fa914bfb91908951c
+                        value: N2abf8a2727a74b3e8718e5a9da957a57
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -2351,13 +2351,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Qatari\n      "
+                        value: "\n         Brazilian\n      "
                       predicate:
                         tag: predicate
                         value: wfb:ADJECTIVE-NATIONALITY-FORM
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:ALIAS:
             tag: wfb:ALIAS
             value:
@@ -2384,13 +2384,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Swazi\n      "
+                        value: "\n         Kingwana\n      "
                       predicate:
                         tag: predicate
                         value: wfb:ALIAS
                       subject:
                         tag: subject
-                        value: wfb:SISWATI
+                        value: wfb:KISWAHILI
               wfb:CELTIC_LANGUAGES:
                 tag: wfb:CELTIC_LANGUAGES
                 value:
@@ -2504,13 +2504,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Pashto\n      "
+                        value: "\n         Persian\n      "
                       predicate:
                         tag: predicate
                         value: wfb:ALIAS
                       subject:
                         tag: subject
-                        value: wfb:PASHTU
+                        value: wfb:FARSI
               wfb:KHOISAN_LANGUAGES:
                 tag: wfb:KHOISAN_LANGUAGES
                 value:
@@ -2609,13 +2609,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Gallego\n      "
+                        value: "\n         Castilian_Spanish\n      "
                       predicate:
                         tag: predicate
                         value: wfb:ALIAS
                       subject:
                         tag: subject
-                        value: wfb:GALICIAN
+                        value: wfb:SPANISH
               wfb:SINITIC_LANGUAGES:
                 tag: wfb:SINITIC_LANGUAGES
                 value:
@@ -2624,13 +2624,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Yue\n      "
+                        value: "\n         Mandarin_Chinese\n      "
                       predicate:
                         tag: predicate
                         value: wfb:ALIAS
                       subject:
                         tag: subject
-                        value: wfb:CANTONESE
+                        value: wfb:CHINESE
               wfb:SLAVIC_LANGUAGES:
                 tag: wfb:SLAVIC_LANGUAGES
                 value:
@@ -2717,25 +2717,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:Yamoussoukro-Cote-d'Ivoire
+                        value: wfb:Saint-John's-antigua-and-barbuda
                       predicate:
                         tag: predicate
                         value: wfb:CAPITAL-CITY
                       subject:
                         tag: subject
-                        value: wfb:Cote-dIvoire
+                        value: wfb:ANTIGUA-AND-BARBUDA
                   wfb:CITY:
                     tag: wfb:CITY
                     value:
                       object:
                         tag: object
-                        value: wfb:DOHA-QATAR
+                        value: wfb:BRASILIA-BRAZIL
                       predicate:
                         tag: predicate
                         value: wfb:CAPITAL-CITY
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:FORMERLY-DEPENDENT-ON-DOC:
             tag: wfb:FORMERLY-DEPENDENT-ON-DOC
             value:
@@ -2747,13 +2747,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         UK\n      "
+                        value: "\n         Portugal\n      "
                       predicate:
                         tag: predicate
                         value: wfb:FORMERLY-DEPENDENT-ON-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION:
             tag: wfb:GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION
             value:
@@ -2765,13 +2765,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         1/2\n      "
+                        value: "\n         39/100\n      "
                       predicate:
                         tag: predicate
                         value: wfb:GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:GIVES-ECONOMIC-AID-DOC:
             tag: wfb:GIVES-ECONOMIC-AID-DOC
             value:
@@ -2783,14 +2783,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         pledged in ODA to less developed countries\
-                          \ (1979-88), $2.7 billion\n      "
+                        value: "\n         ODA and OOF commitments (1970-89), $2.4\
+                          \ billion\n      "
                       predicate:
                         tag: predicate
                         value: wfb:GIVES-ECONOMIC-AID-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:AUSTRIA
           wfb:HAS-BIRTH-RATE:
             tag: wfb:HAS-BIRTH-RATE
             value:
@@ -2802,13 +2802,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         22.72\n      "
+                        value: "\n         21.16\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-BIRTH-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-BUDGET-CAPITAL-EXPENDITURES:
             tag: wfb:HAS-BUDGET-CAPITAL-EXPENDITURES
             value:
@@ -2820,13 +2820,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 4.4E8 Us-Dollars)\n      "
+                        value: "\n         \n(* 2.3E10 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-BUDGET-CAPITAL-EXPENDITURES
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-BUDGET-EXPENDITURES:
             tag: wfb:HAS-BUDGET-EXPENDITURES
             value:
@@ -2838,13 +2838,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 3.0E9 Us-Dollars)\n      "
+                        value: "\n         \n(* 1.09E11 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-BUDGET-EXPENDITURES
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-BUDGET-REVENUES:
             tag: wfb:HAS-BUDGET-REVENUES
             value:
@@ -2856,13 +2856,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 2.5E9 Us-Dollars)\n      "
+                        value: "\n         \n(* 1.13E11 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-BUDGET-REVENUES
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CABINET-DOC:
             tag: wfb:HAS-CABINET-DOC
             value:
@@ -2874,13 +2874,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Council of Ministers\n      "
+                        value: "\n         Cabinet\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CABINET-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CLIMATE-DOC:
             tag: wfb:HAS-CLIMATE-DOC
             value:
@@ -2892,13 +2892,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         desert\n      "
+                        value: "\n         mostly tropical, but temperate in south\n\
+                          \      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CLIMATE-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-COASTLINE-LENGTH:
             tag: wfb:HAS-COASTLINE-LENGTH
             value:
@@ -2910,13 +2911,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 563 Kilometer)\n      "
+                        value: "\n         \n(* 7491 Kilometer)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-COASTLINE-LENGTH
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-COMPARATIVE-AREA-DOC:
             tag: wfb:HAS-COMPARATIVE-AREA-DOC
             value:
@@ -2928,14 +2929,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         slightly smaller than Connecticut\n   \
-                          \   "
+                        value: "\n         slightly smaller than the US\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-COMPARATIVE-AREA-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CONSTITUTION-DOC:
             tag: wfb:HAS-CONSTITUTION-DOC
             value:
@@ -2947,14 +2947,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         provisional constitution enacted 2 April\
-                          \ 1970\n      "
+                        value: "\n         5 October 1988\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CONSTITUTION-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CONVENTIONAL-LONG-NAME:
             tag: wfb:HAS-CONVENTIONAL-LONG-NAME
             value:
@@ -2966,13 +2965,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         State of Qatar\n      "
+                        value: "\n         Federative Republic of Brazil\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CONVENTIONAL-LONG-NAME
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CONVENTIONAL-SHORT-NAME:
             tag: wfb:HAS-CONVENTIONAL-SHORT-NAME
             value:
@@ -2984,13 +2983,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Qatar\n      "
+                        value: "\n         Brazil\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CONVENTIONAL-SHORT-NAME
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-CURRENCY-TYPE:
             tag: wfb:HAS-CURRENCY-TYPE
             value:
@@ -3002,13 +3001,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Dirhams\n      "
+                        value: "\n         Centavos\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-CURRENCY-TYPE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-DEATH-RATE:
             tag: wfb:HAS-DEATH-RATE
             value:
@@ -3020,13 +3019,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         3.59\n      "
+                        value: "\n         8.98\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-DEATH-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-DEFENSE-EXPENDITURES:
             tag: wfb:HAS-DEFENSE-EXPENDITURES
             value:
@@ -3038,13 +3037,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 6.0E8 Us-Dollars)\n      "
+                        value: "\n         \n(* 5.0E9 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-DEFENSE-EXPENDITURES
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
           wfb:HAS-DIGRAPH:
             tag: wfb:HAS-DIGRAPH
             value:
@@ -3056,13 +3055,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         QA\n      "
+                        value: "\n         BR\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-DIGRAPH
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ECONOMIC-OVERVIEW-DOC:
             tag: wfb:HAS-ECONOMIC-OVERVIEW-DOC
             value:
@@ -3074,22 +3073,46 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Oil is the backbone of the economy and\
-                          \ accounts for more than 30% of GDP, roughly 75% of export\
-                          \ earnings, and 70% of government revenues. Proved oil reserves\
-                          \ of 3.3 billion barrels should ensure continued output\
-                          \ at current levels for about 25 years. Oil has given Qatar\
-                          \ a per capita GDP comparable to the leading West European\
-                          \ industrial countries. Production and export of natural\
-                          \ gas are becoming increasingly important. Long-term goals\
-                          \ feature the development of off-shore oil and the diversification\
-                          \ of the economy.\n      "
+                        value: "\n         The economy, with large agrarian, mining,\
+                          \ and manufacturing sectors, entered the 1990s with declining\
+                          \ real growth, runaway inflation, an unserviceable foreign\
+                          \ debt of $122 billion, and a lack of policy direction.\
+                          \ In addition, the economy remained highly regulated, inward-looking,\
+                          \ and protected by substantial trade and investment barriers.\
+                          \ Ownership of major industrial and mining facilities is\
+                          \ divided among private interests - including several multinationals\
+                          \ - and the government. Most large agricultural holdings\
+                          \ are private, with the government channeling financing\
+                          \ to this sector. Conflicts between large landholders and\
+                          \ landless peasants have produced intermittent violence.\
+                          \ The COLLOR government, which assumed office in March 1990,\
+                          \ launched an ambitious reform program that sought to modernize\
+                          \ and reinvigorate the economy by stabilizing prices, deregulating\
+                          \ the economy, and opening it to increased foreign competition.\
+                          \ Itamar FRANCO, who assumed the presidency following President\
+                          \ COLLOR's resignation in December 1992, was out of step\
+                          \ with COLLOR's reform agenda; initiatives to redress fiscal\
+                          \ problems, privatize state enterprises, and liberalize\
+                          \ trade and investment policies lost momentum. Galloping\
+                          \ inflation - by June 1994 the monthly rate had risen to\
+                          \ nearly 50% - had undermined economic stability. In response,\
+                          \ the then finance minister, Fernando Henrique CARDOSO,\
+                          \ launched the third phase of his stabilization plan, known\
+                          \ as Plano Real, that called for a new currency, the real,\
+                          \ which was introduced on 1 July 1994. Inflation subsequently\
+                          \ dropped to under 3% per month through the end of 1994.\
+                          \ The newly elected President CARDOSO has called for the\
+                          \ implementation of sweeping market-oriented reform, including\
+                          \ public sector and fiscal reform, privatization, deregulation,\
+                          \ and elimination of barriers to increased foreign investment.\
+                          \ Brazil's natural resources remain a major, long-term economic\
+                          \ strength.\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ECONOMIC-OVERVIEW-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ELECTRICITY-CAPACITY:
             tag: wfb:HAS-ELECTRICITY-CAPACITY
             value:
@@ -3101,13 +3124,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 1520000 Kilowatt)\n      "
+                        value: "\n         \n(* 55130000 Kilowatt)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ELECTRICITY-CAPACITY
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA:
             tag: wfb:HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA
             value:
@@ -3119,13 +3142,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 8415 Kilowatt-Hour)\n      "
+                        value: "\n         \n(* 1589 Kilowatt-Hour)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ELECTRICITY-PRODUCTION:
             tag: wfb:HAS-ELECTRICITY-PRODUCTION
             value:
@@ -3137,13 +3160,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 4.5E9 Kilowatt-Hour)\n      "
+                        value: "\n         \n(* 2.414E11 Kilowatt-Hour)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ELECTRICITY-PRODUCTION
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ENVIRONMENT-ISSUES-DOC:
             tag: wfb:HAS-ENVIRONMENT-ISSUES-DOC
             value:
@@ -3155,15 +3178,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         limited natural fresh water resources are\
-                          \ increasing dependence on large-scale desalination facilities\n\
-                          \      "
+                        value: "\n         deforestation in Amazon Basin destroys\
+                          \ the habitat and endangers the existence of a multitude\
+                          \ of plant and animal species indigenous to the area\n \
+                          \     "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ENVIRONMENT-ISSUES-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-ETHNIC-GROUP:
             tag: wfb:HAS-ETHNIC-GROUP
             value:
@@ -3187,13 +3211,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Arab\n      "
+                        value: "\n         Caucasion\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   wfb:ANDEAN_EQUATORIAL_LANGUAGES:
                     tag: wfb:ANDEAN_EQUATORIAL_LANGUAGES
                     value:
@@ -3235,25 +3259,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:GEORGIAN
+                        value: wfb:CIRCASSIAN
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:GEORGIA
+                        value: wfb:JORDAN
                   wfb:CELTIC_LANGUAGES:
                     tag: wfb:CELTIC_LANGUAGES
                     value:
                       object:
                         tag: object
-                        value: wfb:WELSH
+                        value: wfb:MANX
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:UNITED-KINGDOM
+                        value: wfb:Man-Isle-of
                   wfb:CENTRAL_SUDANIC_LANGUAGES:
                     tag: wfb:CENTRAL_SUDANIC_LANGUAGES
                     value:
@@ -3289,7 +3313,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:KYRGYZSTAN
+                        value: wfb:TAJIKISTAN
                   wfb:CREOLE_LANGUAGES:
                     tag: wfb:CREOLE_LANGUAGES
                     value:
@@ -3367,13 +3391,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:ALBANIAN
+                        value: wfb:ARMENIAN
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:ALBANIA
+                        value: wfb:AZERBAIJAN
                   wfb:INDONESIAN_LANGUAGES:
                     tag: wfb:INDONESIAN_LANGUAGES
                     value:
@@ -3385,7 +3409,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:SINGAPORE
+                        value: wfb:BRUNEI
                   wfb:IRANIAN_LANGUAGES:
                     tag: wfb:IRANIAN_LANGUAGES
                     value:
@@ -3409,7 +3433,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:CAMBODIA
+                        value: wfb:VANUATU
                   wfb:KIPCHAK_LANGUAGES:
                     tag: wfb:KIPCHAK_LANGUAGES
                     value:
@@ -3421,7 +3445,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:FINLAND
+                        value: wfb:RUSSIA
                   wfb:MANDINGO:
                     tag: wfb:MANDINGO
                     value:
@@ -3433,7 +3457,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:Cote-dIvoire
+                        value: wfb:GUINEA
                   wfb:MELANESIAN_LANGUAGES:
                     tag: wfb:MELANESIAN_LANGUAGES
                     value:
@@ -3499,13 +3523,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:TURKMEN
+                        value: wfb:AZERI
                       predicate:
                         tag: predicate
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:IRAN
+                        value: wfb:AZERBAIJAN
                   wfb:POLYNESIAN_LANGUAGES:
                     tag: wfb:POLYNESIAN_LANGUAGES
                     value:
@@ -3565,7 +3589,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:VIETNAM
+                        value: wfb:BRUNEI
                   wfb:SLAVIC_LANGUAGES:
                     tag: wfb:SLAVIC_LANGUAGES
                     value:
@@ -3577,7 +3601,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:LATVIA
+                        value: wfb:AZERBAIJAN
                   wfb:TAI_LANGUAGES:
                     tag: wfb:TAI_LANGUAGES
                     value:
@@ -3613,7 +3637,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:CZECH-REPUBLIC
+                        value: wfb:ROMANIA
                   wfb:WEST_ATLANTIC_LANGUAGES:
                     tag: wfb:WEST_ATLANTIC_LANGUAGES
                     value:
@@ -3625,7 +3649,7 @@ annotations:
                         value: wfb:HAS-ETHNIC-GROUP
                       subject:
                         tag: subject
-                        value: wfb:CAMEROON
+                        value: wfb:BURKINA
           wfb:HAS-EXTERNAL-DEBT:
             tag: wfb:HAS-EXTERNAL-DEBT
             value:
@@ -3637,13 +3661,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 1.5E9 Us-Dollars)\n      "
+                        value: "\n         \n(* 1.34E11 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-EXTERNAL-DEBT
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-FISCAL-YEAR-STARTING-ON:
             tag: wfb:HAS-FISCAL-YEAR-STARTING-ON
             value:
@@ -3655,13 +3679,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Date_1_Apr\n      "
+                        value: "\n         Date_1_Jan\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-FISCAL-YEAR-STARTING-ON
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-FLAG-DOC:
             tag: wfb:HAS-FLAG-DOC
             value:
@@ -3673,14 +3697,18 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         maroon with a broad white serrated band\
-                          \ (nine white points) on the hoist side\n      "
+                        value: "\n         green with a large yellow diamond in the\
+                          \ center bearing a blue celestial globe with 27 white five-pointed\
+                          \ stars (one for each state and the Federal District) arranged\
+                          \ in the same pattern as the night sky over Brazil; the\
+                          \ globe has a white equatorial band with the motto ORDEM\
+                          \ E PROGRESSO (Order and Progress)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-FLAG-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-FORMER-NAME:
             tag: wfb:HAS-FORMER-NAME
             value:
@@ -3692,13 +3720,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Anglo-Egyptian Sudan\n      "
+                        value: "\n         Gold Coast\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-FORMER-NAME
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:GHANA
           wfb:HAS-GOVERNMENT-TYPE-DOC:
             tag: wfb:HAS-GOVERNMENT-TYPE-DOC
             value:
@@ -3710,13 +3738,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         traditional monarchy\n      "
+                        value: "\n         federal republic\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-GOVERNMENT-TYPE-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE:
             tag: wfb:HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE
             value:
@@ -3728,13 +3756,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 6.8 %)\n      "
+                        value: "\n         \n(* 9.5 %)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
           wfb:HAS-INDUSTRIAL-SECTOR:
             tag: wfb:HAS-INDUSTRIAL-SECTOR
             value:
@@ -3746,26 +3774,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:PETROCHEMICALS
+                        value: wfb:TEXTILES
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INDUSTRIAL-SECTOR
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   string:
                     tag: string
                     value:
                       object:
                         tag: object
-                        value: "\n         Crude-Oil-Production-And-Refining\n   \
-                          \   "
+                        value: "\n         Shoes\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INDUSTRIAL-SECTOR
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   uri:
                     tag: uri
                     value:
@@ -3777,19 +3804,19 @@ annotations:
                         value: wfb:HAS-INDUSTRIAL-SECTOR
                       subject:
                         tag: subject
-                        value: wfb:POLAND
+                        value: wfb:LUXEMBOURG
                   wfb:PRODUCT-TYPE:
                     tag: wfb:PRODUCT-TYPE
                     value:
                       object:
                         tag: object
-                        value: wfb:PETROCHEMICALS
+                        value: wfb:TEXTILES
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INDUSTRIAL-SECTOR
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-INFANT-MORTALITY-RATE:
             tag: wfb:HAS-INFANT-MORTALITY-RATE
             value:
@@ -3801,13 +3828,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         20.4\n      "
+                        value: "\n         57.2\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INFANT-MORTALITY-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-INTERNATIONAL-DISPUTES-DOC:
             tag: wfb:HAS-INTERNATIONAL-DISPUTES-DOC
             value:
@@ -3819,14 +3846,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         territorial dispute with Bahrain over the\
-                          \ Hawar Islands\n      "
+                        value: "\n         short section of the boundary with Paraguay,\
+                          \ just west of Salto das Sete Quedas (Guaira Falls) on the\
+                          \ Rio Parana, is in dispute\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-INTERNATIONAL-DISPUTES-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-IRRIGATED-LAND:
             tag: wfb:HAS-IRRIGATED-LAND
             value:
@@ -3838,13 +3866,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 18900 Square-Kilometer)\n      "
+                        value: "\n         \n(* 27000 Square-Kilometer)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-IRRIGATED-LAND
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
           wfb:HAS-JUDICIAL-BRANCH-DOC:
             tag: wfb:HAS-JUDICIAL-BRANCH-DOC
             value:
@@ -3856,13 +3884,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Court of Appeal\n      "
+                        value: "\n         Supreme Federal Tribunal\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-JUDICIAL-BRANCH-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LAND-AREA:
             tag: wfb:HAS-LAND-AREA
             value:
@@ -3874,13 +3902,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 11000 Square-Kilometer)\n      "
+                        value: "\n         \n(* 8456510 Square-Kilometer)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-LAND-AREA
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LEGAL-SYSTEM-DOC:
             tag: wfb:HAS-LEGAL-SYSTEM-DOC
             value:
@@ -3892,15 +3920,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         discretionary system of law controlled\
-                          \ by the amir, although civil codes are being implemented;\
-                          \ Islamic law is significant in personal matters\n      "
+                        value: "\n         based on Roman codes; has not accepted\
+                          \ compulsory ICJ jurisdiction\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-LEGAL-SYSTEM-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LITERACY-CONDITION-DOC:
             tag: wfb:HAS-LITERACY-CONDITION-DOC
             value:
@@ -3919,7 +3946,7 @@ annotations:
                         value: wfb:HAS-LITERACY-CONDITION-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LOCAL-LONG-NAME:
             tag: wfb:HAS-LOCAL-LONG-NAME
             value:
@@ -3931,13 +3958,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Dawlat Qatar\n      "
+                        value: "\n         Republica Federativa do Brasil\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-LOCAL-LONG-NAME
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LOCAL-SHORT-NAME:
             tag: wfb:HAS-LOCAL-SHORT-NAME
             value:
@@ -3949,13 +3976,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Qatar\n      "
+                        value: "\n         Brasil\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-LOCAL-SHORT-NAME
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-LOCATION-DOC:
             tag: wfb:HAS-LOCATION-DOC
             value:
@@ -3967,14 +3994,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Middle East, peninsula bordering the Persian\
-                          \ Gulf and Saudi Arabia\n      "
+                        value: "\n         Eastern South America, bordering the Atlantic\
+                          \ Ocean\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-LOCATION-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-MAIN-CURRENCY-TYPE:
             tag: wfb:HAS-MAIN-CURRENCY-TYPE
             value:
@@ -3986,13 +4013,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Qatari-Riyal\n      "
+                        value: "\n         Real\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-MAIN-CURRENCY-TYPE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   wfb:ANDEAN_EQUATORIAL_LANGUAGES:
                     tag: wfb:ANDEAN_EQUATORIAL_LANGUAGES
                     value:
@@ -4028,15 +4055,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         males age 15-49 219,442; males fit for\
-                          \ military service 115,103; males reach military age (18)\
-                          \ annually 3,915 (1995 est.)\n      "
+                        value: "\n         males age 15-49 44,301,765; males fit for\
+                          \ military service 29,815,576; males reach military age\
+                          \ (18) annually 1,703,438 (1995 est.)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-MANPOWER-AVAILABILITY-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-MERCHANT-MARINE-BY-TYPE-DOC:
             tag: wfb:HAS-MERCHANT-MARINE-BY-TYPE-DOC
             value:
@@ -4048,14 +4075,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         combination ore/oil 1, container 3, cargo\
-                          \ 11, oil tanker 3, refrigerated cargo 1\n      "
+                        value: "\n         bulk 52, cargo 34, chemical tanker 13,\
+                          \ combination ore/oil 12, container 12, liquefied gas tanker\
+                          \ 11, oil tanker 64, passenger-cargo 5, refrigerated cargo\
+                          \ 1, roll-on/roll-off cargo 11\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-MERCHANT-MARINE-BY-TYPE-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-NATIONAL-PRODUCT-PER-CAPITA:
             tag: wfb:HAS-NATIONAL-PRODUCT-PER-CAPITA
             value:
@@ -4067,13 +4096,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 20820 Us-Dollars)\n      "
+                        value: "\n         \n(* 5580 Us-Dollars)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NATIONAL-PRODUCT-PER-CAPITA
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-NATURAL-HAZARDS-DOC:
             tag: wfb:HAS-NATURAL-HAZARDS-DOC
             value:
@@ -4085,14 +4114,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         haze, dust storms, sandstorms common\n\
-                          \      "
+                        value: "\n         recurring droughts in northeast\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NATURAL-HAZARDS-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-NATURAL-RESOURCE:
             tag: wfb:HAS-NATURAL-RESOURCE
             value:
@@ -4104,25 +4132,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:PETROLEUM
+                        value: wfb:BAUXITE
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NATURAL-RESOURCE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   string:
                     tag: string
                     value:
                       object:
                         tag: object
-                        value: "\n         Small-Reserves-Of-Petroleum\n      "
+                        value: "\n         Phosphates\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NATURAL-RESOURCE
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
                   uri:
                     tag: uri
                     value:
@@ -4146,19 +4174,19 @@ annotations:
                         value: wfb:HAS-NATURAL-RESOURCE
                       subject:
                         tag: subject
-                        value: wfb:MAURITIUS
+                        value: wfb:BANGLADESH
                   wfb:PRODUCT-TYPE:
                     tag: wfb:PRODUCT-TYPE
                     value:
                       object:
                         tag: object
-                        value: wfb:FISH
+                        value: wfb:COAL
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NATURAL-RESOURCE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:NIGERIA
           wfb:HAS-NET-MIGRATION-RATE:
             tag: wfb:HAS-NET-MIGRATION-RATE
             value:
@@ -4170,13 +4198,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         8.25\n      "
+                        value: "\n         0\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-NET-MIGRATION-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC:
             tag: wfb:HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC
             value:
@@ -4188,14 +4216,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         National Islamic Front, Hasan al-TURABI\n\
-                          \      "
+                        value: "\n         left wing of the Catholic Church and labor\
+                          \ unions allied to leftist Workers' Party are critical of\
+                          \ government's social and economic policies\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
           wfb:HAS-POLITICAL-PARTIES-AND-LEADERS-DOC:
             tag: wfb:HAS-POLITICAL-PARTIES-AND-LEADERS-DOC
             value:
@@ -4207,13 +4236,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         none\n      "
+                        value: "\n         National Reconstruction Party (PRN), Daniel\
+                          \ TOURINHO, president; Brazilian Democratic Movement Party\
+                          \ (PMDB), Luiz HENRIQUE da Silveira, president; Liberal\
+                          \ Front Party (PFL), Jorge BORNHAUSEN, president; Workers'\
+                          \ Party (PT), Rui Goethe da Costa FALCAO, president; Brazilian\
+                          \ Workers' Party (PTB), Jose Eduardo ANDRADE VIEIRA, president;\
+                          \ Democratic Workers' Party (PDT), Anthony GAROTINHO, president;\
+                          \ Progressive Renewal Party (PPR), Espiridiao AMIN, president;\
+                          \ Brazilian Social Democracy Party (PSDB), Artur DA TAVOLA,\
+                          \ president; Popular Socialist Party (PPS), Roberto FREIRE,\
+                          \ president; Communist Party of Brazil (PCdoB), Joao AMAZONAS,\
+                          \ secretary general; Liberal Party (PL), Alvero VALLE, president\n\
+                          \      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-POLITICAL-PARTIES-AND-LEADERS-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-POPULATION-GROWTH-RATE:
             tag: wfb:HAS-POPULATION-GROWTH-RATE
             value:
@@ -4225,13 +4266,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         0.0274\n      "
+                        value: "\n         0.012199999999999999\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-POPULATION-GROWTH-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-RELIGIOUS-GROUP:
             tag: wfb:HAS-RELIGIOUS-GROUP
             value:
@@ -4243,13 +4284,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Muslim\n      "
+                        value: "\n         Roman-Catholic\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-RELIGIOUS-GROUP
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-SUFFRAGE-MINIMAL-AGE:
             tag: wfb:HAS-SUFFRAGE-MINIMAL-AGE
             value:
@@ -4261,13 +4302,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 18 Year)\n      "
+                        value: "\n         \n(* 21 Year)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-SUFFRAGE-MINIMAL-AGE
                       subject:
                         tag: subject
-                        value: wfb:LATVIA
+                        value: wfb:NIGERIA
           wfb:HAS-TELEPHONE-SYSTEM-DOC:
             tag: wfb:HAS-TELEPHONE-SYSTEM-DOC
             value:
@@ -4279,14 +4320,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         110,000 telephones; modern system centered\
-                          \ in Doha\n      "
+                        value: "\n         9.86 million telephones; telephone density\
+                          \ - 61/1,000 persons; good working system\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TELEPHONE-SYSTEM-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TELEPHONE-SYSTEM-INTERCITY-DOC:
             tag: wfb:HAS-TELEPHONE-SYSTEM-INTERCITY-DOC
             value:
@@ -4298,13 +4339,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         NA\n      "
+                        value: "\n         extensive microwave radio relay systems\
+                          \ and 64 domestic satellite earth stations\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TELEPHONE-SYSTEM-INTERCITY-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC:
             tag: wfb:HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC
             value:
@@ -4316,16 +4358,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         tropospheric scatter to Bahrain; microwave\
-                          \ radio relay to Saudi Arabia and UAE; submarine cable to\
-                          \ Bahrain and UAE; 2 INTELSAT (1 Atlantic Ocean and 1 Indian\
-                          \ Ocean) and 1 ARABSAT earth station\n      "
+                        value: "\n         3 coaxial submarine cables; 3 Atlantic\
+                          \ Ocean INTELSAT earth stations\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TELEPHONE-SYSTEM-LOCAL-DOC:
             tag: wfb:HAS-TELEPHONE-SYSTEM-LOCAL-DOC
             value:
@@ -4343,7 +4383,7 @@ annotations:
                         value: wfb:HAS-TELEPHONE-SYSTEM-LOCAL-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TERRAIN-DOC:
             tag: wfb:HAS-TERRAIN-DOC
             value:
@@ -4355,14 +4395,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         mostly flat and barren desert covered with\
-                          \ loose sand and gravel\n      "
+                        value: "\n         mostly flat to rolling lowlands in north\n\
+                          \      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TERRAIN-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TOTAL-AREA:
             tag: wfb:HAS-TOTAL-AREA
             value:
@@ -4374,13 +4414,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 11000 Square-Kilometer)\n      "
+                        value: "\n         \n(* 8511965 Square-Kilometer)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TOTAL-AREA
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TOTAL-BORDER-LENGTH:
             tag: wfb:HAS-TOTAL-BORDER-LENGTH
             value:
@@ -4392,13 +4432,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         \n(* 60 Kilometer)\n      "
+                        value: "\n         \n(* 14691 Kilometer)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TOTAL-BORDER-LENGTH
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TOTAL-FERTILITY-RATE:
             tag: wfb:HAS-TOTAL-FERTILITY-RATE
             value:
@@ -4410,13 +4450,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         4.63\n      "
+                        value: "\n         2.39\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TOTAL-FERTILITY-RATE
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-TOTAL-MERCHANT-MARINE-DOC:
             tag: wfb:HAS-TOTAL-MERCHANT-MARINE-DOC
             value:
@@ -4428,14 +4468,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         19 ships (1,000 GRT or over) totaling 463,227\
-                          \ GRT/763,507 DWT\n      "
+                        value: "\n         215 ships (1,000 GRT or over) totaling\
+                          \ 5,128,654 GRT/8,664,776 DWT\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-TOTAL-MERCHANT-MARINE-DOC
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:HAS-UNEMPLOYMENT-RATE:
             tag: wfb:HAS-UNEMPLOYMENT-RATE
             value:
@@ -4447,13 +4487,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         3/10\n      "
+                        value: "\n         0.049\n      "
                       predicate:
                         tag: predicate
                         value: wfb:HAS-UNEMPLOYMENT-RATE
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
           wfb:MEMBER-OF-INTERNATIONAL-ORG:
             tag: wfb:MEMBER-OF-INTERNATIONAL-ORG
             value:
@@ -4471,7 +4511,7 @@ annotations:
                         value: wfb:MEMBER-OF-INTERNATIONAL-ORG
                       subject:
                         tag: subject
-                        value: wfb:KYRGYZSTAN
+                        value: wfb:AZERBAIJAN
                   rdf:Property:
                     tag: rdf:Property
                     value:
@@ -4483,7 +4523,7 @@ annotations:
                         value: wfb:MEMBER-OF-INTERNATIONAL-ORG
                       subject:
                         tag: subject
-                        value: wfb:KYRGYZSTAN
+                        value: wfb:AZERBAIJAN
                   uri:
                     tag: uri
                     value:
@@ -4501,25 +4541,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wfb:ABEDA
+                        value: wfb:AFDB
                       predicate:
                         tag: predicate
                         value: wfb:MEMBER-OF-INTERNATIONAL-ORG
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   wfb:Multilateral-Agent:
                     tag: wfb:Multilateral-Agent
                     value:
                       object:
                         tag: object
-                        value: wfb:GCC
+                        value: wfb:IAEA
                       predicate:
                         tag: predicate
                         value: wfb:MEMBER-OF-INTERNATIONAL-ORG
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
                   wfb:Multilateral-Regime:
                     tag: wfb:Multilateral-Regime
                     value:
@@ -4531,7 +4571,7 @@ annotations:
                         value: wfb:MEMBER-OF-INTERNATIONAL-ORG
                       subject:
                         tag: subject
-                        value: wfb:NETHERLANDS
+                        value: wfb:AUSTRIA
           wfb:MISREPRESENTED-AS:
             tag: wfb:MISREPRESENTED-AS
             value:
@@ -4543,13 +4583,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Tahitian/English_Dialect\n      "
+                        value: "\n         Pidgin_English\n      "
                       predicate:
                         tag: predicate
                         value: wfb:MISREPRESENTED-AS
                       subject:
                         tag: subject
-                        value: wfb:PITCAIRNESE
+                        value: wfb:TOK_PISIN
               wfb:WEST_GERMANIC_LANGUAGES:
                 tag: wfb:WEST_GERMANIC_LANGUAGES
                 value:
@@ -4645,7 +4685,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:QUECHUA
+                        value: wfb:AYMARA
               wfb:ARAMAIC_LANGUAGES:
                 tag: wfb:ARAMAIC_LANGUAGES
                 value:
@@ -4660,7 +4700,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:ARAMAIC
+                        value: wfb:SYRIAN
               wfb:BALTIC_LANGUAGES:
                 tag: wfb:BALTIC_LANGUAGES
                 value:
@@ -4675,7 +4715,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:LATVIAN
+                        value: wfb:LITHUANIAN
               wfb:BANTU_LANGUAGES:
                 tag: wfb:BANTU_LANGUAGES
                 value:
@@ -4690,7 +4730,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SISWATI
+                        value: wfb:KINYARWANDA
               wfb:BERBER_LANGUAGES:
                 tag: wfb:BERBER_LANGUAGES
                 value:
@@ -4705,7 +4745,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SHLUH
+                        value: wfb:TAMAZIGHT
               wfb:BIHARI:
                 tag: wfb:BIHARI
                 value:
@@ -4750,7 +4790,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:CIRCASSIAN
+                        value: wfb:CHECHEN
               wfb:CELTIC_LANGUAGES:
                 tag: wfb:CELTIC_LANGUAGES
                 value:
@@ -4765,7 +4805,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:MANX
+                        value: wfb:SCOTS_GAELIC
               wfb:CENTRAL_SUDANIC_LANGUAGES:
                 tag: wfb:CENTRAL_SUDANIC_LANGUAGES
                 value:
@@ -4825,7 +4865,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:FRENCH_PATOIS
+                        value: wfb:PATOIS
               wfb:CUSHITIC_LANGUAGES:
                 tag: wfb:CUSHITIC_LANGUAGES
                 value:
@@ -4840,7 +4880,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SOMALI
+                        value: wfb:AFAR
               wfb:DRAVIDIAN_LANGUAGES:
                 tag: wfb:DRAVIDIAN_LANGUAGES
                 value:
@@ -4855,7 +4895,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:KANNADA
+                        value: wfb:TULU
               wfb:EASTERN_LANGUAGES:
                 tag: wfb:EASTERN_LANGUAGES
                 value:
@@ -4885,7 +4925,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:ALEUT
+                        value: wfb:ESKIMO
               wfb:ETHIOPIC_LANGUAGES:
                 tag: wfb:ETHIOPIC_LANGUAGES
                 value:
@@ -4900,7 +4940,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:AMHARIC
+                        value: wfb:TIGRINYA
               wfb:FINNIC_LANGUAGES:
                 tag: wfb:FINNIC_LANGUAGES
                 value:
@@ -4915,7 +4955,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:UDMURT
+                        value: wfb:KOMI
               wfb:GEOGRAPHICAL-REGION:
                 tag: wfb:GEOGRAPHICAL-REGION
                 value:
@@ -4945,7 +4985,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:KABRE
+                        value: wfb:DAGOMBA
               wfb:INDIC_LANGUAGES:
                 tag: wfb:INDIC_LANGUAGES
                 value:
@@ -4960,7 +5000,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:GUJARATI
+                        value: wfb:ASSAMESE
               wfb:INDIVIDUAL:
                 tag: wfb:INDIVIDUAL
                 value:
@@ -4990,7 +5030,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:ALBANIAN
+                        value: wfb:GREEK
               wfb:INDONESIAN_LANGUAGES:
                 tag: wfb:INDONESIAN_LANGUAGES
                 value:
@@ -5005,7 +5045,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:JAVANESE
+                        value: wfb:INDONESIAN
               wfb:IRANIAN_LANGUAGES:
                 tag: wfb:IRANIAN_LANGUAGES
                 value:
@@ -5035,7 +5075,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:KOREAN
+                        value: wfb:VIETNAMESE
               wfb:ITALO-CELTIC_LANGUAGES:
                 tag: wfb:ITALO-CELTIC_LANGUAGES
                 value:
@@ -5080,7 +5120,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:KAZAKH
+                        value: wfb:KYRGYZ
               wfb:KWA_LANGUAGES:
                 tag: wfb:KWA_LANGUAGES
                 value:
@@ -5095,7 +5135,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:EWE
+                        value: wfb:MINA
               wfb:LANGUAGE:
                 tag: wfb:LANGUAGE
                 value:
@@ -5125,7 +5165,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SONINKE
+                        value: wfb:MENDE
               wfb:MANDINGO:
                 tag: wfb:MANDINGO
                 value:
@@ -5155,7 +5195,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:YUCATEC
+                        value: wfb:QUICHE
               wfb:MELANESIAN_LANGUAGES:
                 tag: wfb:MELANESIAN_LANGUAGES
                 value:
@@ -5170,7 +5210,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:MOTU
+                        value: wfb:FIJIAN
               wfb:MICRONESIAN_LANGUAGES:
                 tag: wfb:MICRONESIAN_LANGUAGES
                 value:
@@ -5185,7 +5225,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:CAROLINIAN
+                        value: wfb:SONSOROLESE
               wfb:MON-KHMER_LANGUAGES:
                 tag: wfb:MON-KHMER_LANGUAGES
                 value:
@@ -5215,7 +5255,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:KALMYK
+                        value: wfb:KHALKHA_MONGOL
               wfb:NILO-HAMITIC_LANGUAGES:
                 tag: wfb:NILO-HAMITIC_LANGUAGES
                 value:
@@ -5245,7 +5285,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:MOROCCAN_ARABIC
+                        value: wfb:HASANIYA_ARABIC
               wfb:NORWEGIAN:
                 tag: wfb:NORWEGIAN
                 value:
@@ -5260,7 +5300,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:NORWEGIAN-NYNORSK
+                        value: wfb:NORWEGIAN-BOKMAAL
               wfb:NUBIAN_LANGUAGES:
                 tag: wfb:NUBIAN_LANGUAGES
                 value:
@@ -5305,7 +5345,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:MARQUESIAN
+                        value: wfb:NIUEAN
               wfb:RHAETO-ROMANIC:
                 tag: wfb:RHAETO-ROMANIC
                 value:
@@ -5335,7 +5375,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:FRENCH
+                        value: wfb:ROMANIAN
               wfb:SAHARAN_LANGUAGES:
                 tag: wfb:SAHARAN_LANGUAGES
                 value:
@@ -5365,7 +5405,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:NENETS
+                        value: wfb:ENETS
               wfb:SCANDINAVIAN_LANGUAGES:
                 tag: wfb:SCANDINAVIAN_LANGUAGES
                 value:
@@ -5380,7 +5420,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:DANISH
+                        value: wfb:ICELANDIC
               wfb:SINITIC_LANGUAGES:
                 tag: wfb:SINITIC_LANGUAGES
                 value:
@@ -5395,7 +5435,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:CANTONESE
+                        value: wfb:MINBEI
               wfb:SLAVIC_LANGUAGES:
                 tag: wfb:SLAVIC_LANGUAGES
                 value:
@@ -5410,7 +5450,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SLOVAK
+                        value: wfb:BYELORUSSIAN
               wfb:TAI_LANGUAGES:
                 tag: wfb:TAI_LANGUAGES
                 value:
@@ -5440,7 +5480,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:HUNZA
+                        value: wfb:BURMESE
               wfb:TUNGUSIC_LANGUAGES:
                 tag: wfb:TUNGUSIC_LANGUAGES
                 value:
@@ -5485,7 +5525,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:SIXTY-FIVE-YEARS
+                        value: wfb:FIFTEEN-YEARS
               wfb:UGRIC_LANGUAGES:
                 tag: wfb:UGRIC_LANGUAGES
                 value:
@@ -5500,7 +5540,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:MANSI
+                        value: wfb:HUNGARIAN
               wfb:UNIT-OF-MEASURE:
                 tag: wfb:UNIT-OF-MEASURE
                 value:
@@ -5560,7 +5600,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:TEMNE
+                        value: wfb:DIOLA
               wfb:WEST_GERMANIC_LANGUAGES:
                 tag: wfb:WEST_GERMANIC_LANGUAGES
                 value:
@@ -5575,7 +5615,7 @@ annotations:
                         value: wfb:MY-SOURCE
                       subject:
                         tag: subject
-                        value: wfb:YIDDISH
+                        value: wfb:ALEMANNIC_DIALECTS
           wfb:NOUN-NATIONALITY-FORM:
             tag: wfb:NOUN-NATIONALITY-FORM
             value:
@@ -5587,13 +5627,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         Qatari(s)\n      "
+                        value: "\n         Brazilian(s)\n      "
                       predicate:
                         tag: predicate
                         value: wfb:NOUN-NATIONALITY-FORM
                       subject:
                         tag: subject
-                        value: wfb:QATAR
+                        value: wfb:BRAZIL
           wfb:NUMBER-OF-TELEVISIONS:
             tag: wfb:NUMBER-OF-TELEVISIONS
             value:
@@ -5605,13 +5645,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\n         255000\n      "
+                        value: "\n         1312000.0\n      "
                       predicate:
                         tag: predicate
                         value: wfb:NUMBER-OF-TELEVISIONS
                       subject:
                         tag: subject
-                        value: wfb:ALBANIA
+                        value: wfb:HONG-KONG
           wfb:QUANTITY.DIMENSION:
             tag: wfb:QUANTITY.DIMENSION
             value:
@@ -5642,16 +5682,16 @@ annotations:
                       object:
                         tag: object
                         value: "\n         US commitments, including Ex-Im (FY70-89),\
-                          \ $1.5 billion; Western (non-US) countries, ODA and OOF\
-                          \ bilateral commitments (1970-89), $5.1 billion; OPEC bilateral\
-                          \ aid (1979-89), $3.1 billion; Communist countries (1970-89),\
-                          \ $588 million\n      "
+                          \ $2.5 billion; Western (non-US) countries, ODA and OOF\
+                          \ bilateral commitments (1970-89), $10.2 million; OPEC bilateral\
+                          \ aid (1979-89), $284 million; former Communist countries\
+                          \ (1970-89), $1.3 billion\n      "
                       predicate:
                         tag: predicate
                         value: wfb:RECEIVES-ECONOMIC-AID-DOC
                       subject:
                         tag: subject
-                        value: wfb:SUDAN
+                        value: wfb:BRAZIL
 classes:
   wfb_ABBREVIATION:
     class_uri: wfb:ABBREVIATION
@@ -6781,8 +6821,8 @@ classes:
     is_a: wfb_INDIC_LANGUAGES
     name: wfb_BIHARI
     slots:
-    - wfb_MISSPELLED-AS
     - wfb_MY-SOURCE
+    - wfb_MISSPELLED-AS
   wfb_BLACK_PEPPER-COMMODITY:
     class_uri: wfb:BLACK_PEPPER-COMMODITY
     is_a: wfb_SPICES-COMMODITY
@@ -7576,9 +7616,9 @@ classes:
     name: wfb_CREOLE_LANGUAGES
     slots:
     - wfb_ALIAS
+    - wfb_MY-SOURCE
     - wfb_MISREPRESENTED-AS
     - wfb_MISSPELLED-AS
-    - wfb_MY-SOURCE
   wfb_CRUDE-OIL:
     class_uri: wfb:CRUDE-OIL
     is_a: wfb_INDUSTRY-MATERIAL
@@ -8485,8 +8525,8 @@ classes:
     class_uri: wfb:GEOGRAPHICAL-REGION
     name: wfb_GEOGRAPHICAL-REGION
     slots:
-    - rdfs_comment
     - wfb_MY-SOURCE
+    - rdfs_comment
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
   wfb_GEOTHERMAL-POWER-INDUSTRY:
@@ -8604,8 +8644,8 @@ classes:
     is_a: wfb_WESTERN_SUDANIC_LANGUAGES
     name: wfb_GUR_LANGUAGES
     slots:
-    - wfb_MISSPELLED-AS
     - wfb_MY-SOURCE
+    - wfb_MISSPELLED-AS
   wfb_GYPSUM:
     class_uri: wfb:GYPSUM
     is_a: wfb_INDUSTRY-MATERIAL
@@ -11188,8 +11228,8 @@ classes:
     is_a: wfb_SINO-TIBETAN_LANGUAGES
     name: wfb_TIBETO-BURMAN_LANGUAGES
     slots:
-    - wfb_MISSPELLED-AS
     - wfb_MY-SOURCE
+    - wfb_MISSPELLED-AS
   wfb_TIME-QUANTITY:
     class_uri: wfb:TIME-QUANTITY
     name: wfb_TIME-QUANTITY
@@ -11466,8 +11506,8 @@ classes:
     name: wfb_WEST_GERMANIC_LANGUAGES
     slots:
     - wfb_ALIAS
-    - wfb_MISREPRESENTED-AS
     - wfb_MY-SOURCE
+    - wfb_MISREPRESENTED-AS
   wfb_WHEAT:
     class_uri: wfb:WHEAT
     is_a: wfb_INDUSTRY-MATERIAL
@@ -11618,15 +11658,15 @@ classes:
   wfb_adm-div-venezuela-federal-district-(distrito-federal):
     class_uri: wfb:adm-div-venezuela-federal-district-(distrito-federal)
     name: wfb_adm-div-venezuela-federal-district-(distrito-federal)
-created_on: '2025-07-15T20:23:15.892338'
-default_prefix: okn
+created_on: '2025-07-17T18:43:25.585579'
+default_prefix: okns
 id: okns:wfb
 imports:
-- okns:daml
-- https://purl.org/okn/schema/extended_types
-- okns:owl-rdf-rdfs
 - linkml:types
-last_updated_on: '2025-07-15T20:23:15.892338'
+- okns:owl-rdf-rdfs
+- okns:daml
+- okns:extended_types
+last_updated_on: '2025-07-17T18:43:25.585579'
 name: wfb
 prefixes:
   daml-oil: http://www.daml.org/2001/03/daml+oil#
@@ -11639,10 +11679,8 @@ prefixes:
 slots:
   wfb_ADJECTIVE-NATIONALITY-FORM:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_ADJECTIVE-NATIONALITY-FORM
     range: Any
     slot_uri: wfb:ADJECTIVE-NATIONALITY-FORM
@@ -11656,8 +11694,6 @@ slots:
     range: wfb_ACTION
     slot_uri: wfb:AGENT-CAPABLE-OF
   wfb_ALIAS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Not specified yet.
     name: wfb_ALIAS
     range: string
@@ -11679,8 +11715,6 @@ slots:
     any_of:
     - range: uri
     - range: wfb_CITY
-    comments:
-    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wfb:CAPITAL-CITY
   wfb_CHIEF-OF-MISSION:
@@ -11799,10 +11833,8 @@ slots:
     slot_uri: wfb:EXPLOITS
   wfb_FORMERLY-DEPENDENT-ON-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: The name of the (last) country of which this region was a dependent
       territory.
     name: wfb_FORMERLY-DEPENDENT-ON-DOC
@@ -11834,10 +11866,8 @@ slots:
     slot_uri: wfb:FRACTION-OF
   wfb_GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION:
     any_of:
-    - range: wfb_NUMBER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_NUMBER
     name: wfb_GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION
     range: Any
     slot_uri: wfb:GDP-PERCENTAGE-FROM-INDUSTRIAL-PRODUCTION
@@ -11851,10 +11881,8 @@ slots:
       of another slot in this graph but has not itself been defined.
   wfb_GIVES-ECONOMIC-AID-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: This entry refers to bilateral commitments of official development
       assistance (ODA) and other official flows (OOF). ODA is defined as financial
       assistance which is concessional in character, has the main objective to promote
@@ -11904,10 +11932,8 @@ slots:
     slot_uri: wfb:HAS-AIRPORTS
   wfb_HAS-BIRTH-RATE:
     any_of:
-    - range: wfb_NUMBER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_NUMBER
     description: 'The average annual number of births during a year per 1,000 population
       at midyear; also known as crude birth rate. Dates of information: In general,
       information available as of 1 January 1995 is used in the preparation of this
@@ -11925,37 +11951,29 @@ slots:
     slot_uri: wfb:HAS-BORDER
   wfb_HAS-BUDGET-CAPITAL-EXPENDITURES:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-BUDGET-CAPITAL-EXPENDITURES
     range: Any
     slot_uri: wfb:HAS-BUDGET-CAPITAL-EXPENDITURES
   wfb_HAS-BUDGET-EXPENDITURES:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-BUDGET-EXPENDITURES
     range: Any
     slot_uri: wfb:HAS-BUDGET-EXPENDITURES
   wfb_HAS-BUDGET-REVENUES:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-BUDGET-REVENUES
     range: Any
     slot_uri: wfb:HAS-BUDGET-REVENUES
   wfb_HAS-CABINET-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CABINET-DOC
     range: Any
     slot_uri: wfb:HAS-CABINET-DOC
@@ -11978,10 +11996,8 @@ slots:
     slot_uri: wfb:HAS-CHIEF-OF-STATE-DOC
   wfb_HAS-CLIMATE-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CLIMATE-DOC
     range: Any
     slot_uri: wfb:HAS-CLIMATE-DOC
@@ -11989,17 +12005,13 @@ slots:
     any_of:
     - range: wfb_DISTANCE
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-COASTLINE-LENGTH
     range: Any
     slot_uri: wfb:HAS-COASTLINE-LENGTH
   wfb_HAS-COMPARATIVE-AREA-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: Comparative areas are based on total area equivalents. Most entities
       are compared with the entire US or one of the 50 states. The smaller entities
       are compared with Washington, DC (178 sq km, 69 sq mi) or The Mall in Washington,
@@ -12009,39 +12021,31 @@ slots:
     slot_uri: wfb:HAS-COMPARATIVE-AREA-DOC
   wfb_HAS-CONSTITUTION-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CONSTITUTION-DOC
     range: Any
     slot_uri: wfb:HAS-CONSTITUTION-DOC
   wfb_HAS-CONVENTIONAL-LONG-NAME:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CONVENTIONAL-LONG-NAME
     range: Any
     slot_uri: wfb:HAS-CONVENTIONAL-LONG-NAME
     subproperty_of: wfb_NAME-STRING
   wfb_HAS-CONVENTIONAL-SHORT-NAME:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CONVENTIONAL-SHORT-NAME
     range: Any
     slot_uri: wfb:HAS-CONVENTIONAL-SHORT-NAME
     subproperty_of: wfb_NAME-STRING
   wfb_HAS-CURRENCY-TYPE:
     any_of:
-    - range: string
     - range: wfb_CURRENCY-TYPE
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-CURRENCY-TYPE
     range: Any
     slot_uri: wfb:HAS-CURRENCY-TYPE
@@ -12056,10 +12060,8 @@ slots:
     slot_uri: wfb:HAS-CUSTOMER
   wfb_HAS-DEATH-RATE:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: The average annual number of deaths during a year per l,000 population
       at midyear; also known as crude death rate.
     name: wfb_HAS-DEATH-RATE
@@ -12073,10 +12075,8 @@ slots:
     slot_uri: wfb:HAS-DEFENSE-BRANCH
   wfb_HAS-DEFENSE-EXPENDITURES:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-DEFENSE-EXPENDITURES
     range: Any
     slot_uri: wfb:HAS-DEFENSE-EXPENDITURES
@@ -12088,10 +12088,8 @@ slots:
     slot_uri: wfb:HAS-DEPENDENT-AREAS
   wfb_HAS-DIGRAPH:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: The digraph is a two-letter &quot;country code&quot; that precisely
       identifies every entity without overlap, duplication, or omission. AF, for example,
       is the digraph for Afghanistan. It is a standardized geopolitical data element
@@ -12118,92 +12116,80 @@ slots:
     slot_uri: wfb:HAS-DIPLOMATIC-REPRESENTATION-IN-US
   wfb_HAS-ECONOMIC-OVERVIEW-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-ECONOMIC-OVERVIEW-DOC
     range: Any
     slot_uri: wfb:HAS-ECONOMIC-OVERVIEW-DOC
   wfb_HAS-ELECTRICITY-CAPACITY:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-ELECTRICITY-CAPACITY
     range: Any
     slot_uri: wfb:HAS-ELECTRICITY-CAPACITY
   wfb_HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA
     range: Any
     slot_uri: wfb:HAS-ELECTRICITY-CONSUMPTION-PER-CAPITA
   wfb_HAS-ELECTRICITY-PRODUCTION:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-ELECTRICITY-PRODUCTION
     range: Any
     slot_uri: wfb:HAS-ELECTRICITY-PRODUCTION
   wfb_HAS-ENVIRONMENT-ISSUES-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-ENVIRONMENT-ISSUES-DOC
     range: Any
     slot_uri: wfb:HAS-ENVIRONMENT-ISSUES-DOC
   wfb_HAS-ETHNIC-GROUP:
     any_of:
-    - range: wfb_ANDEAN_EQUATORIAL_LANGUAGES
-    - range: wfb_MONGOL_LANGUAGES
-    - range: wfb_TAI_LANGUAGES
-    - range: wfb_INDONESIAN_LANGUAGES
-    - range: wfb_CHADIC_LANGUAGES
-    - range: wfb_ESKIMO-ALEUT_LANGUAGES
-    - range: wfb_IRANIAN_LANGUAGES
-    - range: wfb_ISOLATE_LANGUAGES
-    - range: wfb_GUR_LANGUAGES
-    - range: wfb_ROMANCE_LANGUAGES
-    - range: wfb_MELANESIAN_LANGUAGES
-    - range: wfb_SAHARAN_LANGUAGES
-    - range: wfb_SLAVIC_LANGUAGES
-    - range: wfb_MON-KHMER_LANGUAGES
-    - range: wfb_SINITIC_LANGUAGES
-    - range: wfb_OGHUZ_LANGUAGES
-    - range: wfb_NORTH_ARABIC_LANGUAGES
-    - range: wfb_CELTIC_LANGUAGES
-    - range: wfb_CENTRAL_SUDANIC_LANGUAGES
     - range: wfb_BERBER_LANGUAGES
-    - range: wfb_SCANDINAVIAN_LANGUAGES
-    - range: wfb_KIPCHAK_LANGUAGES
-    - range: wfb_CREOLE_LANGUAGES
-    - range: wfb_INDO-EUROPEAN_LANGUAGES
-    - range: wfb_CUSHITIC_LANGUAGES
-    - range: wfb_MANDINGO
+    - range: wfb_CHADIC_LANGUAGES
+    - range: wfb_CENTRAL_SUDANIC_LANGUAGES
+    - range: wfb_NORTH_ARABIC_LANGUAGES
+    - range: wfb_GUR_LANGUAGES
     - range: wfb_CHAGATAI_LANGUAGES
-    - range: wfb_ARAMAIC_LANGUAGES
-    - range: wfb_UGRIC_LANGUAGES
     - range: wfb_WEST_ATLANTIC_LANGUAGES
-    - range: wfb_POLYNESIAN_LANGUAGES
-    - range: wfb_MICRONESIAN_LANGUAGES
-    - range: wfb_ETHNIC-GROUP
-    - range: string
     - range: wfb_INDIC_LANGUAGES
-    - range: wfb_CAUCASIAN_LANGUAGES
-    - range: wfb_TURKIC_LANGUAGES
-    - range: wfb_FINNIC_LANGUAGES
+    - range: wfb_IRANIAN_LANGUAGES
+    - range: wfb_CUSHITIC_LANGUAGES
+    - range: wfb_SLAVIC_LANGUAGES
+    - range: wfb_INDONESIAN_LANGUAGES
+    - range: wfb_POLYNESIAN_LANGUAGES
+    - range: wfb_ROMANCE_LANGUAGES
+    - range: wfb_SINITIC_LANGUAGES
+    - range: wfb_SAHARAN_LANGUAGES
+    - range: wfb_KIPCHAK_LANGUAGES
+    - range: wfb_SCANDINAVIAN_LANGUAGES
+    - range: wfb_UGRIC_LANGUAGES
+    - range: wfb_CREOLE_LANGUAGES
     - range: rdfs_Class
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
+    - range: wfb_ANDEAN_EQUATORIAL_LANGUAGES
+    - range: wfb_ISOLATE_LANGUAGES
+    - range: wfb_CAUCASIAN_LANGUAGES
+    - range: wfb_ARAMAIC_LANGUAGES
+    - range: wfb_TAI_LANGUAGES
+    - range: wfb_FINNIC_LANGUAGES
+    - range: wfb_INDO-EUROPEAN_LANGUAGES
+    - range: wfb_MON-KHMER_LANGUAGES
+    - range: wfb_CELTIC_LANGUAGES
+    - range: wfb_ESKIMO-ALEUT_LANGUAGES
+    - range: wfb_OGHUZ_LANGUAGES
+    - range: wfb_MONGOL_LANGUAGES
+    - range: wfb_MICRONESIAN_LANGUAGES
+    - range: wfb_MANDINGO
+    - range: wfb_TURKIC_LANGUAGES
+    - range: wfb_ETHNIC-GROUP
+    - range: wfb_MELANESIAN_LANGUAGES
     name: wfb_HAS-ETHNIC-GROUP
     range: Any
     slot_uri: wfb:HAS-ETHNIC-GROUP
@@ -12221,37 +12207,29 @@ slots:
     slot_uri: wfb:HAS-EXPORT-FRACTION
   wfb_HAS-EXTERNAL-DEBT:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-EXTERNAL-DEBT
     range: Any
     slot_uri: wfb:HAS-EXTERNAL-DEBT
   wfb_HAS-FISCAL-YEAR-STARTING-ON:
     any_of:
-    - range: wfb_DAY-OF-THE-YEAR
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_DAY-OF-THE-YEAR
     name: wfb_HAS-FISCAL-YEAR-STARTING-ON
     range: Any
     slot_uri: wfb:HAS-FISCAL-YEAR-STARTING-ON
   wfb_HAS-FLAG-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-FLAG-DOC
     range: Any
     slot_uri: wfb:HAS-FLAG-DOC
   wfb_HAS-FORMER-NAME:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-FORMER-NAME
     range: Any
     slot_uri: wfb:HAS-FORMER-NAME
@@ -12315,10 +12293,8 @@ slots:
     slot_uri: wfb:HAS-GDP
   wfb_HAS-GOVERNMENT-TYPE-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-GOVERNMENT-TYPE-DOC
     range: Any
     slot_uri: wfb:HAS-GOVERNMENT-TYPE-DOC
@@ -12352,10 +12328,8 @@ slots:
     slot_uri: wfb:HAS-IMPORT-FRACTION
   wfb_HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE
     range: Any
     slot_uri: wfb:HAS-INDUSTRIAL-PRODUCTION-GROWTH-RATE
@@ -12366,18 +12340,14 @@ slots:
     - range: uri
     - range: rdfs_Class
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     domain: wfb_AGENT
     name: wfb_HAS-INDUSTRIAL-SECTOR
     range: Any
     slot_uri: wfb:HAS-INDUSTRIAL-SECTOR
   wfb_HAS-INFANT-MORTALITY-RATE:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: The number of deaths to infants under one year old in a given year
       per l,000 live births occurring in the same year.
     name: wfb_HAS-INFANT-MORTALITY-RATE
@@ -12397,10 +12367,8 @@ slots:
     slot_uri: wfb:HAS-INLAND-WATERWAYS-DOC
   wfb_HAS-INTERNATIONAL-DISPUTES-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: This category includes a wide variety of situations that range from
       traditional bilateral boundary disputes to unilateral claims of one sort or
       another. Information regarding disputes over international boundaries and maritime
@@ -12416,8 +12384,6 @@ slots:
     any_of:
     - range: string
     - range: wfb_AREA
-    comments:
-    - No occurrences of this slot in the graph.
     description: The figure refers to the land area that is artificially supplied
       with water.
     name: wfb_HAS-IRRIGATED-LAND
@@ -12425,10 +12391,8 @@ slots:
     slot_uri: wfb:HAS-IRRIGATED-LAND
   wfb_HAS-JUDICIAL-BRANCH-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-JUDICIAL-BRANCH-DOC
     range: Any
     slot_uri: wfb:HAS-JUDICIAL-BRANCH-DOC
@@ -12436,17 +12400,13 @@ slots:
     any_of:
     - range: string
     - range: wfb_AREA
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-LAND-AREA
     range: Any
     slot_uri: wfb:HAS-LAND-AREA
   wfb_HAS-LEGAL-SYSTEM-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-LEGAL-SYSTEM-DOC
     range: Any
     slot_uri: wfb:HAS-LEGAL-SYSTEM-DOC
@@ -12472,10 +12432,8 @@ slots:
     slot_uri: wfb:HAS-LIFE-EXPECTANCY-AT-BIRTH
   wfb_HAS-LITERACY-CONDITION-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: There are no universal definitions and standards of literacy. Unless
       otherwise noted, all rates are based on the most common definition - the ability
       to read and write at a specified age. Detailing the standards that individual
@@ -12486,51 +12444,41 @@ slots:
     slot_uri: wfb:HAS-LITERACY-CONDITION-DOC
   wfb_HAS-LOCAL-LONG-NAME:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-LOCAL-LONG-NAME
     range: Any
     slot_uri: wfb:HAS-LOCAL-LONG-NAME
     subproperty_of: wfb_NAME-STRING
   wfb_HAS-LOCAL-SHORT-NAME:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-LOCAL-SHORT-NAME
     range: Any
     slot_uri: wfb:HAS-LOCAL-SHORT-NAME
     subproperty_of: wfb_NAME-STRING
   wfb_HAS-LOCATION-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-LOCATION-DOC
     range: Any
     slot_uri: wfb:HAS-LOCATION-DOC
   wfb_HAS-MAIN-CURRENCY-TYPE:
     any_of:
-    - range: wfb_GEOREF
     - range: wfb_MAIN-CURRENCY-TYPE
     - range: wfb_ANDEAN_EQUATORIAL_LANGUAGES
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_GEOREF
     name: wfb_HAS-MAIN-CURRENCY-TYPE
     range: Any
     slot_uri: wfb:HAS-MAIN-CURRENCY-TYPE
     subproperty_of: wfb_HAS-CURRENCY-TYPE
   wfb_HAS-MANPOWER-AVAILABILITY-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-MANPOWER-AVAILABILITY-DOC
     range: Any
     slot_uri: wfb:HAS-MANPOWER-AVAILABILITY-DOC
@@ -12564,10 +12512,8 @@ slots:
     slot_uri: wfb:HAS-MATERIAL
   wfb_HAS-MERCHANT-MARINE-BY-TYPE-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-MERCHANT-MARINE-BY-TYPE-DOC
     range: Any
     slot_uri: wfb:HAS-MERCHANT-MARINE-BY-TYPE-DOC
@@ -12579,10 +12525,8 @@ slots:
     slot_uri: wfb:HAS-NATIONAL-HOLIDAY
   wfb_HAS-NATIONAL-PRODUCT-PER-CAPITA:
     any_of:
-    - range: string
     - range: wfb_MONEY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-NATIONAL-PRODUCT-PER-CAPITA
     range: Any
     slot_uri: wfb:HAS-NATIONAL-PRODUCT-PER-CAPITA
@@ -12594,10 +12538,8 @@ slots:
     slot_uri: wfb:HAS-NATIONAL-PRODUCT-REAL-GROWTH-RATE
   wfb_HAS-NATURAL-HAZARDS-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-NATURAL-HAZARDS-DOC
     range: Any
     slot_uri: wfb:HAS-NATURAL-HAZARDS-DOC
@@ -12608,17 +12550,13 @@ slots:
     - range: wfb_GEOGRAPHICAL-REGION
     - range: rdfs_Class
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-NATURAL-RESOURCE
     range: Any
     slot_uri: wfb:HAS-NATURAL-RESOURCE
   wfb_HAS-NET-MIGRATION-RATE:
     any_of:
-    - range: wfb_NUMBER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_NUMBER
     description: The balance between the number of persons entering and leaving a
       country during the year per 1,000 persons (based on midyear population). An
       excess of persons entering the country is referred to as net immigration (3.56
@@ -12629,10 +12567,8 @@ slots:
     slot_uri: wfb:HAS-NET-MIGRATION-RATE
   wfb_HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC
     range: Any
     slot_uri: wfb:HAS-OTHER-POLITICAL-OR-PRESSURE-GROUPS-DOC
@@ -12651,10 +12587,8 @@ slots:
     slot_uri: wfb:HAS-PLACE
   wfb_HAS-POLITICAL-PARTIES-AND-LEADERS-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-POLITICAL-PARTIES-AND-LEADERS-DOC
     range: Any
     slot_uri: wfb:HAS-POLITICAL-PARTIES-AND-LEADERS-DOC
@@ -12666,10 +12600,8 @@ slots:
     slot_uri: wfb:HAS-POPULATION-FRACTION
   wfb_HAS-POPULATION-GROWTH-RATE:
     any_of:
-    - range: wfb_NUMBER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_NUMBER
     description: The ratio of the population growth to the population. (As in 0.05,
       *NOT* 5%.)
     name: wfb_HAS-POPULATION-GROWTH-RATE
@@ -12705,8 +12637,6 @@ slots:
     any_of:
     - range: wfb_RELIGIOUS-GROUP
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-RELIGIOUS-GROUP
     range: Any
     slot_uri: wfb:HAS-RELIGIOUS-GROUP
@@ -12720,8 +12650,6 @@ slots:
     any_of:
     - range: string
     - range: wfb_TIME-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-SUFFRAGE-MINIMAL-AGE
     range: Any
     slot_uri: wfb:HAS-SUFFRAGE-MINIMAL-AGE
@@ -12734,37 +12662,29 @@ slots:
     slot_uri: wfb:HAS-TASK
   wfb_HAS-TELEPHONE-SYSTEM-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TELEPHONE-SYSTEM-DOC
     range: Any
     slot_uri: wfb:HAS-TELEPHONE-SYSTEM-DOC
   wfb_HAS-TELEPHONE-SYSTEM-INTERCITY-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TELEPHONE-SYSTEM-INTERCITY-DOC
     range: Any
     slot_uri: wfb:HAS-TELEPHONE-SYSTEM-INTERCITY-DOC
   wfb_HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC
     range: Any
     slot_uri: wfb:HAS-TELEPHONE-SYSTEM-INTERNATIONAL-DOC
   wfb_HAS-TELEPHONE-SYSTEM-LOCAL-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TELEPHONE-SYSTEM-LOCAL-DOC
     range: Any
     slot_uri: wfb:HAS-TELEPHONE-SYSTEM-LOCAL-DOC
@@ -12776,10 +12696,8 @@ slots:
     slot_uri: wfb:HAS-TELEVISION-BROADCAST-STATIONS
   wfb_HAS-TERRAIN-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TERRAIN-DOC
     range: Any
     slot_uri: wfb:HAS-TERRAIN-DOC
@@ -12790,7 +12708,6 @@ slots:
     comments:
     - 'description: Total area is the sum of all land and water areas delimited by
       international boundaries and/or coastlines.'
-    - No occurrences of this slot in the graph.
     description: Land area is the aggregate of all surfaces delimited by international
       boundaries and/or coastlines, excluding inland water bodies (lakes, reservoirs,
       rivers).
@@ -12801,17 +12718,13 @@ slots:
     any_of:
     - range: wfb_DISTANCE
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_HAS-TOTAL-BORDER-LENGTH
     range: Any
     slot_uri: wfb:HAS-TOTAL-BORDER-LENGTH
   wfb_HAS-TOTAL-FERTILITY-RATE:
     any_of:
-    - range: wfb_NUMBER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_NUMBER
     description: 'The average number of children that would be born per woman if all
       women lived to the end of their childbearing years and bore children according
       to a given fertility rate at each age. Years: All year references are for the
@@ -12834,19 +12747,15 @@ slots:
     slot_uri: wfb:HAS-TOTAL-FERTILITY-RATE
   wfb_HAS-TOTAL-MERCHANT-MARINE-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-TOTAL-MERCHANT-MARINE-DOC
     range: Any
     slot_uri: wfb:HAS-TOTAL-MERCHANT-MARINE-DOC
   wfb_HAS-UNEMPLOYMENT-RATE:
     any_of:
-    - range: string
     - range: wfb_PHYSICAL-QUANTITY
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_HAS-UNEMPLOYMENT-RATE
     range: Any
     slot_uri: wfb:HAS-UNEMPLOYMENT-RATE
@@ -12964,14 +12873,12 @@ slots:
     slot_uri: wfb:MEMBER-OF
   wfb_MEMBER-OF-INTERNATIONAL-ORG:
     any_of:
-    - range: daml-oil_UniqueProperty
-    - range: wfb_INTERNATIONAL-ORGANIZATION
-    - range: uri
     - range: wfb_Multilateral-Regime
-    - range: rdf_Property
     - range: wfb_Multilateral-Agent
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: rdf_Property
+    - range: daml-oil_UniqueProperty
+    - range: uri
+    - range: wfb_INTERNATIONAL-ORGANIZATION
     name: wfb_MEMBER-OF-INTERNATIONAL-ORG
     range: Any
     slot_uri: wfb:MEMBER-OF-INTERNATIONAL-ORG
@@ -12988,8 +12895,6 @@ slots:
     range: wfb_DISTANCE
     slot_uri: wfb:MINIMAL-RUNWAY-LENGTH
   wfb_MISREPRESENTED-AS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Not specified yet.
     name: wfb_MISREPRESENTED-AS
     range: string
@@ -13001,15 +12906,11 @@ slots:
     range: wfb_INDEPENDENT-COUNTRY
     slot_uri: wfb:MISSION-IN
   wfb_MISSPELLED-AS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Not specified yet.
     name: wfb_MISSPELLED-AS
     range: string
     slot_uri: wfb:MISSPELLED-AS
   wfb_MY-SOURCE:
-    comments:
-    - No occurrences of this slot in the graph.
     name: wfb_MY-SOURCE
     range: wfb_WORLD-FACT-BOOK-INFORMATION-SOURCE
     slot_uri: wfb:MY-SOURCE
@@ -13023,10 +12924,8 @@ slots:
       of another slot in this graph but has not itself been defined.
   wfb_NOUN-NATIONALITY-FORM:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     name: wfb_NOUN-NATIONALITY-FORM
     range: Any
     slot_uri: wfb:NOUN-NATIONALITY-FORM
@@ -13038,10 +12937,8 @@ slots:
     slot_uri: wfb:NUMBER-OF-RADIOS
   wfb_NUMBER-OF-TELEVISIONS:
     any_of:
-    - range: wfb_INTEGER
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: wfb_INTEGER
     name: wfb_NUMBER-OF-TELEVISIONS
     range: Any
     slot_uri: wfb:NUMBER-OF-TELEVISIONS
@@ -13091,8 +12988,6 @@ slots:
     range: Any
     slot_uri: wfb:PRODUCES
   wfb_QUANTITY.DIMENSION:
-    comments:
-    - No occurrences of this slot in the graph.
     range: uri
     slot_uri: wfb:QUANTITY.DIMENSION
   wfb_RATIO-OF-MAIN-CURRENCY-TO-THIS-TYPE:
@@ -13103,10 +12998,8 @@ slots:
     slot_uri: wfb:RATIO-OF-MAIN-CURRENCY-TO-THIS-TYPE
   wfb_RECEIVES-ECONOMIC-AID-DOC:
     any_of:
-    - range: string
     - range: wfb_STRING
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: string
     description: This entry refers to bilateral commitments of official development
       assistance (ODA) and other official flows (OOF). ODA is defined as financial
       assistance which is concessional in character, has the main objective to promote

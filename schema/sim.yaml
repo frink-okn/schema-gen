@@ -49,10 +49,10 @@ annotations:
         value:
           foaf:Person:
             tag: foaf:Person
-            value: http://moustaki.org/foaf.rdf#moustaki
+            value: http://kurtisrandom.com/foaf.rdf#kurtjx
           owl:Restriction:
             tag: owl:Restriction
-            value: n13ca74e4fe90449e8e19e5104caddd24b1
+            value: nec680c965a2745de9bbb9b814d7e58f3b1
       pairs:
         tag: pairs
         value:
@@ -73,7 +73,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n13ca74e4fe90449e8e19e5104caddd24b1
+                        value: nec680c965a2745de9bbb9b814d7e58f3b1
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -91,7 +91,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n13ca74e4fe90449e8e19e5104caddd24b1
+                        value: nec680c965a2745de9bbb9b814d7e58f3b1
 classes:
   sim_Association:
     class_uri: sim:Association
@@ -143,19 +143,19 @@ comments:
 - 'title: The Similarity Ontology'
 - 'created_by: http://moustaki.org/foaf.rdf#moustaki'
 created_by: http://kurtisrandom.com/foaf.rdf#kurtjx
-created_on: '2025-07-15T20:28:17.871694'
-default_prefix: okn
+created_on: '2025-07-17T18:44:30.329485'
+default_prefix: okns
 description: This is an ontology to express associations between entities whether
   artists, tracks, albums, compositional styles, sections of tracks, playing techniques
   or anything.  It is designed with the hope of being easily extensible, extremely
   expressive, and still computationally reasonable.
 id: okns:sim
 imports:
+- okns:foaf
+- okns:extended_types
 - linkml:types
 - okns:owl-rdf-rdfs
-- https://purl.org/okn/schema/extended_types
-- okns:foaf
-last_updated_on: '2025-07-15T20:28:17.871694'
+last_updated_on: '2025-07-17T18:44:30.329485'
 name: sim
 prefixes:
   dct: http://purl.org/dc/terms/

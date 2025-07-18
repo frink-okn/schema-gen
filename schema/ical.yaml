@@ -91,13 +91,13 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: Nffb1068181de41f2a20a2684fc8ac4ad
+            value: N10c7db66edb64b56977c795373883ec1
           owl:Thing:
             tag: owl:Thing
             value: http://www.ietf.org/rfc/rfc2445.txt
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: xsd:integer
+            value: xsd:string
       pairs:
         tag: pairs
         value:
@@ -136,7 +136,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: N35422ee9a14a4c3a839d9e0e0f4e680b
+                        value: N0106ad053e9749a0b4b1ecb6a2022516
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -148,25 +148,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: ical:uid
+                        value: ical:comment
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N1c8ef5e260a848c38c61da38c4a5ae0c
+                        value: N6d430238206e44819f85848edf793414
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: ical:recurrenceId
+                        value: ical:organizer
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N35422ee9a14a4c3a839d9e0e0f4e680b
+                        value: N0106ad053e9749a0b4b1ecb6a2022516
           owl:versionInfo:
             tag: owl:versionInfo
             value:
@@ -262,15 +262,15 @@ classes:
     description: Provide a grouping of calendar properties that describe a to-do.
     name: ical_Vtodo
     title: VTODO
-created_on: '2025-07-15T20:24:25.398232'
-default_prefix: okn
+created_on: '2025-07-17T18:43:45.767852'
+default_prefix: okns
 id: okns:ical
 imports:
+- okns:extended_types
 - okns:dc
 - linkml:types
-- https://purl.org/okn/schema/extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-15T20:24:25.398232'
+last_updated_on: '2025-07-17T18:43:45.767852'
 name: ical
 prefixes:
   dc: http://purl.org/dc/elements/1.1/

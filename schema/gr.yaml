@@ -280,25 +280,25 @@ annotations:
         value:
           gr:BusinessEntityType:
             tag: gr:BusinessEntityType
-            value: gr:Enduser
+            value: gr:Business
           gr:BusinessFunction:
             tag: gr:BusinessFunction
             value: gr:Repair
           gr:DayOfWeek:
             tag: gr:DayOfWeek
-            value: gr:Monday
+            value: gr:Thursday
           gr:DeliveryMethod:
             tag: gr:DeliveryMethod
-            value: gr:DeliveryModeFreight
+            value: gr:DeliveryModeOwnFleet
           gr:DeliveryModeParcelService:
             tag: gr:DeliveryModeParcelService
-            value: gr:FederalExpress
+            value: gr:UPS
           gr:Offering:
             tag: gr:Offering
-            value: Nc4b808e11e424f46909e973c8a885293
+            value: Neb364a245f4949e48d5de45f762bcfd9
           gr:PaymentMethod:
             tag: gr:PaymentMethod
-            value: gr:GoogleCheckout
+            value: gr:ByInvoice
           gr:PaymentMethodCreditCard:
             tag: gr:PaymentMethodCreditCard
             value: gr:Discover
@@ -325,7 +325,7 @@ annotations:
                         value: gr:category
                       subject:
                         tag: subject
-                        value: Nc4b808e11e424f46909e973c8a885293
+                        value: Neb364a245f4949e48d5de45f762bcfd9
           gr:description:
             tag: gr:description
             value:
@@ -343,7 +343,7 @@ annotations:
                         value: gr:description
                       subject:
                         tag: subject
-                        value: Nc4b808e11e424f46909e973c8a885293
+                        value: Neb364a245f4949e48d5de45f762bcfd9
           gr:displayPosition:
             tag: gr:displayPosition
             value:
@@ -355,13 +355,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2'
+                        value: '3'
                       predicate:
                         tag: predicate
                         value: gr:displayPosition
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
           gr:hasNext:
             tag: gr:hasNext
             value:
@@ -373,13 +373,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: gr:Wednesday
+                        value: gr:Thursday
                       predicate:
                         tag: predicate
                         value: gr:hasNext
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
           gr:hasPrevious:
             tag: gr:hasPrevious
             value:
@@ -391,13 +391,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: gr:Monday
+                        value: gr:Tuesday
                       predicate:
                         tag: predicate
                         value: gr:hasPrevious
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
           owl:deprecated:
             tag: owl:deprecated
             value:
@@ -428,16 +428,15 @@ annotations:
                       object:
                         tag: object
                         value: The gr:BusinessEntityType representing such agents
-                          that are themselves offering commercial services or products
-                          on the market. Usually, businesses are characterized by
-                          the fact that they are officially registered with the public
-                          administration and strive for profits by their activities.
+                          that are purchasing the good or service for private consumption,
+                          in particular not for resale or for usage within an industrial
+                          enterprise. By default, a Business Entity is an Enduser.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Business
+                        value: gr:Enduser
               gr:BusinessFunction:
                 tag: gr:BusinessFunction
                 value:
@@ -464,13 +463,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Tuesday as a day of the week.
+                        value: Wednesday as a day of the week.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -495,13 +494,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery via the parcel service UPS.
+                        value: Delivery via the parcel service DHL.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:UPS
+                        value: gr:DHL
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -510,16 +509,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Collect on delivery / Cash on delivery - A payment
-                          method where the recipient of goods pays at the time of
-                          delivery. Usually, the amount of money is collected by the
-                          transportation company handling the goods.
+                        value: Payment via the Google Checkout payment service.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:COD
+                        value: gr:GoogleCheckout
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -528,14 +524,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Payment by credit or debit cards issued by the VISA
-                          network.
+                        value: Payment by credit or debit cards issued by the Diner's
+                          Club network.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:VISA
+                        value: gr:DinersClub
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -544,23 +540,23 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'In case of a defect or malfunction, the buying party
-                          has the right to transport the good to a service location
-                          determined by the the selling gr:BusinessEntity and will
-                          be charged only for parts and materials needed to fix the
-                          problem. Labor will be covered by the selling business entity
-                          or one of its partnering business entities.
-
-
-                          Note: This is just a rough classification for filtering
-                          offers. It is up to the buying party to check the exact
-                          scope and terms and conditions of the gr:WarrantyPromise.'
+                        value: "In case of a defect or malfunction, the buying party\
+                          \ has the right to request from the selling gr:Business\
+                          \ Entity to pick-up the good from its current location to\
+                          \ a suitable service location, where the functionality of\
+                          \ the good will be restored. All transportation, labor,\
+                          \ parts, and materials needed to fix the problem will be\
+                          \ covered by the selling business entity or one of its partnering\
+                          \ business entities.\n  \nNote: This is just a rough classification\
+                          \ for filtering offers. It is up to the buying party to\
+                          \ check the exact scope and terms and conditions of the\
+                          \ gr:WarrantyPromise."
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Labor-BringIn
+                        value: gr:PartsAndLabor-PickUp
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -578,7 +574,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Business
+                        value: gr:Enduser
               gr:BusinessFunction:
                 tag: gr:BusinessFunction
                 value:
@@ -608,7 +604,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -638,7 +634,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:UPS
+                        value: gr:DHL
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -653,7 +649,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:COD
+                        value: gr:GoogleCheckout
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -668,7 +664,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:VISA
+                        value: gr:DinersClub
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -683,7 +679,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Labor-BringIn
+                        value: gr:PartsAndLabor-PickUp
           rdfs:label:
             tag: rdfs:label
             value:
@@ -695,13 +691,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Business (business entity type)
+                        value: Enduser (business entity type)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Business
+                        value: gr:Enduser
               gr:BusinessFunction:
                 tag: gr:BusinessFunction
                 value:
@@ -725,13 +721,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Tuesday (day of week)
+                        value: Wednesday (day of week)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Tuesday
+                        value: gr:Wednesday
               gr:DeliveryMethod:
                 tag: gr:DeliveryMethod
                 value:
@@ -755,13 +751,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: UPS (delivery method)
+                        value: DHL (delivery method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:UPS
+                        value: gr:DHL
               gr:PaymentMethod:
                 tag: gr:PaymentMethod
                 value:
@@ -770,13 +766,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: COD (payment method)
+                        value: Google Checkout (payment method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:COD
+                        value: gr:GoogleCheckout
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -785,13 +781,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: VISA (payment method)
+                        value: Diners Club (payment method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:VISA
+                        value: gr:DinersClub
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -800,13 +796,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Labor / bring-in (warranty scope)
+                        value: Parts and labor / pick up (warranty scope)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Labor-BringIn
+                        value: gr:PartsAndLabor-PickUp
 classes:
   gr_ActualProductOrServiceInstance:
     class_uri: gr:ActualProductOrServiceInstance
@@ -854,8 +850,8 @@ classes:
     name: gr_BusinessEntityType
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Business entity type
   gr_BusinessFunction:
@@ -871,10 +867,10 @@ classes:
       \ dispose car wrecks of any make and model."
     name: gr_BusinessFunction
     slots:
-    - rdfs_comment
-    - rdfs_isDefinedBy
-    - rdfs_label
     - owl_deprecated
+    - rdfs_comment
+    - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Business function
   gr_DayOfWeek:
@@ -885,11 +881,11 @@ classes:
     name: gr_DayOfWeek
     slots:
     - rdfs_label
-    - gr_displayPosition
-    - gr_hasNext
-    - rdfs_comment
-    - rdfs_isDefinedBy
     - gr_hasPrevious
+    - rdfs_isDefinedBy
+    - rdfs_comment
+    - gr_hasNext
+    - gr_displayPosition
     source: http://purl.org/goodrelations/v1
     title: Day of week
   gr_DeliveryChargeSpecification:
@@ -931,8 +927,8 @@ classes:
     name: gr_DeliveryMethod
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Delivery method
   gr_DeliveryModeParcelService:
@@ -943,8 +939,8 @@ classes:
     name: gr_DeliveryModeParcelService
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Delivery mode parcel service
   gr_Individual:
@@ -962,7 +958,7 @@ classes:
       \ quantified). In this case, use gr:SomeItems.\u240ANote 2: This class is the\
       \ new, shorter form of the former gr:ActualProductOrServiceInstance.\u240A\u240A\
       Compatibility with schema.org: This class is a subclass of http://schema.org/Product."
-    is_a: schema_Product
+    is_a: sdos_Product
     name: gr_Individual
     source: http://purl.org/goodrelations/v1
     title: Individual
@@ -1086,8 +1082,8 @@ classes:
     name: gr_PaymentMethod
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Payment method
   gr_PaymentMethodCreditCard:
@@ -1101,8 +1097,8 @@ classes:
     name: gr_PaymentMethodCreditCard
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Payment method credit card
   gr_PriceSpecification:
@@ -1144,7 +1140,7 @@ classes:
       \ requires non-standard reasoning. See http://wiki.goodrelations-vocabulary.org/Axioms\
       \ for respective rule sets.\u240A\t\u240ACompatibility with schema.org: This\
       \ class is (approximately) a subclass of http://schema.org/Product."
-    is_a: schema_Product
+    is_a: sdos_Product
     name: gr_ProductOrServiceModel
     source: http://purl.org/goodrelations/v1
     title: Product or service model
@@ -1224,7 +1220,7 @@ classes:
       \u240ANote: This class is the new, shorter form of the former gr:ProductOrServicesSomeInstancesPlaceholder.\u240A\
       \t\t\u240ACompatibility with schema.org: This class is (approximately) a subclass\
       \ of http://schema.org/Product."
-    is_a: schema_Product
+    is_a: sdos_Product
     name: gr_SomeItems
     source: http://purl.org/goodrelations/v1
     title: Some items
@@ -1316,33 +1312,15 @@ classes:
     name: gr_WarrantyScope
     slots:
     - rdfs_comment
-    - rdfs_isDefinedBy
     - rdfs_label
+    - rdfs_isDefinedBy
     source: http://purl.org/goodrelations/v1
     title: Warranty scope
-  schema_Offer:
-    class_uri: schema:Offer
-    is_a: gr_Offering
-    name: schema_Offer
-  schema_Organization:
-    class_uri: schema:Organization
-    is_a: gr_BusinessEntity
-    name: schema_Organization
-  schema_Person:
-    class_uri: schema:Person
-    is_a: gr_BusinessEntity
-    name: schema_Person
-  schema_Place:
-    class_uri: schema:Place
-    name: schema_Place
-  schema_Product:
-    class_uri: schema:Product
-    name: schema_Product
 comments:
 - 'title: The GoodRelations Vocabulary for Semantic Web-based E-Commerce'
 - 'title: GoodRelations Ontology'
-created_on: '2025-07-15T20:27:37.469033'
-default_prefix: okn
+created_on: '2025-07-17T18:44:53.640014'
+default_prefix: okns
 description: "The GoodRelations ontology provides the vocabulary for annotating e-commerce\
   \ offerings (1) to sell, lease, repair, dispose, or maintain commodity products\
   \ and (2) to provide commodity services.\u240A\u240AGoodRelations allows describing\
@@ -1361,10 +1339,11 @@ description: "The GoodRelations ontology provides the vocabulary for annotating 
   \ Acitrezza, Italy, Springer LNCS, Vol. 5268, pp. 332-347.\u240A\u240APDF at http://www.heppnetz.de/publications/"
 id: okns:gr
 imports:
-- https://purl.org/okn/schema/extended_types
+- okns:extended_types
 - okns:owl-rdf-rdfs
+- okns:sdo
 - linkml:types
-last_updated_on: '2025-07-15T20:27:37.469033'
+last_updated_on: '2025-07-17T18:44:53.640014'
 name: gr
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -1377,7 +1356,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  schema: http://schema.org/
+  sdos: http://schema.org/
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   gr_acceptedPaymentMethods:
@@ -1540,10 +1519,8 @@ slots:
     title: billing increment (0..1)
   gr_category:
     any_of:
-    - range: rdfs_Literal
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: rdfs_Literal
     description: "The name of a category to which this gr:ProductOrService, gr:Offering,\
       \ gr:BusinessEntity, or gr:Location belongs.\u240A\t\u240ANote 1: For products,\
       \ it is better to add an rdf:type statement referring to a GoodRelations-compliant\
@@ -1644,10 +1621,8 @@ slots:
     title: depth (0..1)
   gr_description:
     any_of:
-    - range: rdfs_Literal
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: rdfs_Literal
     description: "A short textual description of the resource. \u240A\u240AThis property\
       \ is semantically equivalent to rdfs:comment and just meant as a handy shortcut\
       \ for marking up data."
@@ -1657,8 +1632,6 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: description (0..1)
   gr_displayPosition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The position at which the option or element should be listed in\
       \ a menu or user dialog, lower numbers come first.\u240A\u240AThe main usage\
       \ of this property are the days of the week (gr:DayOfWeek), but it is also possible\
@@ -1866,7 +1839,7 @@ slots:
     range: string
     slot_uri: gr:hasEAN_UCC-13
     source: http://purl.org/goodrelations/v1
-    subproperty_of: schema_productID
+    subproperty_of: sdos_productID
     title: has EAN/UCC-13 (0..*)
   gr_hasEligibleQuantity:
     comments:
@@ -1893,7 +1866,7 @@ slots:
     range: string
     slot_uri: gr:hasGTIN-14
     source: http://purl.org/goodrelations/v1
-    subproperty_of: schema_productID
+    subproperty_of: sdos_productID
     title: has GTIN-14 (0..*)
   gr_hasGTIN-8:
     comments:
@@ -1904,7 +1877,7 @@ slots:
     range: string
     slot_uri: gr:hasGTIN-8
     source: http://purl.org/goodrelations/v1
-    subproperty_of: schema_productID
+    subproperty_of: sdos_productID
     title: has GTIN-8 (0..*)
   gr_hasGlobalLocationNumber:
     comments:
@@ -1963,7 +1936,7 @@ slots:
     range: string
     slot_uri: gr:hasMPN
     source: http://purl.org/goodrelations/v1
-    subproperty_of: schema_productID
+    subproperty_of: sdos_productID
     title: has MPN (0..*)
   gr_hasMakeAndModel:
     comments:
@@ -2109,8 +2082,6 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: has NAICS (0..*)
   gr_hasNext:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This ordering relation for gr:DayOfWeek indicates that the subject\
       \ is directly followed by the object.\u240A\u240AExample: Monday hasNext Tuesday\u240A\
       \u240ASince days of the week are a cycle, this property is not transitive."
@@ -2154,8 +2125,6 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: has POS (0..*)
   gr_hasPrevious:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This ordering relation for gr:DayOfWeek indicates that the subject\
       \ is directly preceeded by the object.\u240A\u240AExample: Tuesday hasPrevious\
       \ Monday\u240A\u240ASince days of the week are a cycle, this property is not\
@@ -2208,7 +2177,7 @@ slots:
     range: string
     slot_uri: gr:hasStockKeepingUnit
     source: http://purl.org/goodrelations/v1
-    subproperty_of: schema_productID
+    subproperty_of: sdos_productID
     title: has Stock Keeping Unit (0..*)
   gr_hasUnitOfMeasurement:
     comments:
@@ -2712,44 +2681,4 @@ slots:
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_quantitativeProductOrServiceProperty
     title: width (0..1)
-  schema_description:
-    comments:
-    - No occurrences of this slot in the graph.
-    exact_mappings:
-    - http://purl.org/goodrelations/v1#description
-    name: schema_description
-    range: Any
-    slot_uri: schema:description
-  schema_image:
-    comments:
-    - No occurrences of this slot in the graph.
-    exact_mappings:
-    - http://xmlns.com/foaf/0.1/depiction
-    name: schema_image
-    range: Any
-    slot_uri: schema:image
-  schema_manufacturer:
-    comments:
-    - No occurrences of this slot in the graph.
-    exact_mappings:
-    - http://purl.org/goodrelations/v1#hasManufacturer
-    name: schema_manufacturer
-    range: Any
-    slot_uri: schema:manufacturer
-  schema_name:
-    comments:
-    - No occurrences of this slot in the graph.
-    exact_mappings:
-    - http://purl.org/goodrelations/v1#name
-    name: schema_name
-    range: Any
-    slot_uri: schema:name
-  schema_productID:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: schema_productID
-    range: Any
-    slot_uri: schema:productID
-    title: No slot (predicate) name specified -- this slot is noted as a subproperty
-      of another slot in this graph but has not itself been defined.
 title: No schema name specified

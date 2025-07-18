@@ -208,16 +208,16 @@ annotations:
         value:
           adms:SemanticAssetDistribution:
             tag: adms:SemanticAssetDistribution
-            value: http://vocab.deri.ie/void#rdf
+            value: http://vocab.deri.ie/void#ttl
           rdf:DatatypeProperty:
             tag: rdf:DatatypeProperty
             value: void:uriRegexPattern
           sdos:Organization:
             tag: sdos:Organization
-            value: nc73a821ee78a4b379162675b4ec62e41b3
+            value: n4e77f2c7d1004669b04cd5da42066fbeb3
           sdos:Person:
             tag: sdos:Person
-            value: nc73a821ee78a4b379162675b4ec62e41b6
+            value: n4e77f2c7d1004669b04cd5da42066fbeb6
       pairs:
         tag: pairs
         value:
@@ -232,13 +232,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://vocab.deri.ie/void.ttl
+                        value: http://vocab.deri.ie/void.rdf
                       predicate:
                         tag: predicate
                         value: adms:accessURL
                       subject:
                         tag: subject
-                        value: http://vocab.deri.ie/void#ttl
+                        value: http://vocab.deri.ie/void#rdf
           adms:status:
             tag: adms:status
             value:
@@ -256,7 +256,7 @@ annotations:
                         value: adms:status
                       subject:
                         tag: subject
-                        value: http://vocab.deri.ie/void#ttl
+                        value: http://vocab.deri.ie/void#rdf
           foaf:homepage:
             tag: foaf:homepage
             value:
@@ -274,7 +274,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b3
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb3
           foaf:name:
             tag: foaf:name
             value:
@@ -292,7 +292,7 @@ annotations:
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b3
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb3
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -377,7 +377,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b1
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -389,13 +389,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: nc73a821ee78a4b379162675b4ec62e41b3
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
                       predicate:
                         tag: predicate
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b2
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
           sdos:email:
             tag: sdos:email
             value:
@@ -407,13 +407,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: mailto:richard.cyganiak@deri.org
+                        value: mailto:michael.hausenblas@deri.org
                       predicate:
                         tag: predicate
                         value: sdos:email
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b2
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
           sdos:identifier:
             tag: sdos:identifier
             value:
@@ -431,7 +431,7 @@ annotations:
                         value: sdos:identifier
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b1
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
           sdos:name:
             tag: sdos:name
             value:
@@ -443,13 +443,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Department of Zoology, University of Oxford
+                        value: LiDRC
                       predicate:
                         tag: predicate
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b5
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -458,13 +458,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Richard Cyganiak
+                        value: Michael Hausenblas
                       predicate:
                         tag: predicate
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b2
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
               untyped:
                 tag: untyped
                 value:
@@ -479,7 +479,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b1
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb1
           sdos:url:
             tag: sdos:url
             value:
@@ -491,13 +491,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.zoo.ox.ac.uk/
+                        value: http://linkeddata.deri.ie/
                       predicate:
                         tag: predicate
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b5
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb9
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -506,27 +506,33 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://richard.cyganiak.de/
+                        value: http://sw-app.org/about.html
                       predicate:
                         tag: predicate
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: nc73a821ee78a4b379162675b4ec62e41b2
+                        value: n4e77f2c7d1004669b04cd5da42066fbeb8
 classes:
   adms_SemanticAssetDistribution:
     class_uri: adms:SemanticAssetDistribution
     name: adms_SemanticAssetDistribution
     slots:
-    - adms_status
     - adms_accessURL
+    - adms_status
   rdf_DatatypeProperty:
     class_uri: rdf:DatatypeProperty
     name: rdf_DatatypeProperty
     slots:
+    - rdfs_domain
     - rdfs_comment
     - rdfs_label
-    - rdfs_domain
+  void_Dataset:
+    class_uri: void:Dataset
+    description: A set of RDF triples that are published, maintained or aggregated
+      by a single provider.
+    name: void_Dataset
+    title: dataset
   void_DatasetDescription:
     class_uri: void:DatasetDescription
     description: A web resource whose foaf:primaryTopic or foaf:topics include void:Datasets.
@@ -549,12 +555,12 @@ comments:
 - 'title: Vocabulary of Interlinked Datasets (VoID)'
 - 'last_updated_on: 2011-03-06'
 - 'created_on: 2010-01-26'
-- 'created_by: nc73a821ee78a4b379162675b4ec62e41b4'
-- 'created_by: nc73a821ee78a4b379162675b4ec62e41b6'
-- 'created_by: nc73a821ee78a4b379162675b4ec62e41b8'
-created_by: nc73a821ee78a4b379162675b4ec62e41b2
-created_on: '2025-07-15T20:29:38.772581'
-default_prefix: okn
+- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb4'
+- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb6'
+- 'created_by: n4e77f2c7d1004669b04cd5da42066fbeb8'
+created_by: n4e77f2c7d1004669b04cd5da42066fbeb2
+created_on: '2025-07-17T18:45:09.528510'
+default_prefix: okns
 description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema vocabulary
   for expressing metadata about RDF datasets. It is intended as a bridge between the
   publishers and users of RDF data, with applications ranging from data discovery
@@ -564,14 +570,14 @@ description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema voca
   Linked Datasets with the VoID Vocabulary</a></em>.
 id: okns:void
 imports:
-- https://purl.org/okn/schema/extended_types
 - linkml:types
 - okns:sdo
-- okns:owl-rdf-rdfs
 - okns:adms
 - okns:wot
-- okns:voaf
-last_updated_on: '2025-07-15T20:29:38.772581'
+- okns:owl-rdf-rdfs
+- okns:extended_types
+- okns:foaf
+last_updated_on: '2025-07-17T18:45:09.528510'
 name: void
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -587,8 +593,6 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   adms_accessURL:
-    comments:
-    - No occurrences of this slot in the graph.
     range: string
     slot_uri: adms:accessURL
   void_class:
@@ -841,4 +845,13 @@ slots:
     range: rdfs_Literal
     slot_uri: void:uriSpace
     title: URI space
+  void_vocabulary:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A vocabulary that is used in the dataset.
+    domain: void_Dataset
+    name: void_vocabulary
+    range: Any
+    slot_uri: void:vocabulary
+    title: vocabulary
 title: No schema name specified

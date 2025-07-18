@@ -196,10 +196,10 @@ annotations:
         value:
           owl:Axiom:
             tag: owl:Axiom
-            value: n9f5ead87a0d445af85e86dcfcf9bd6f5b57
+            value: nc7ce90deb8af4abf8c0b782c72ee0ad2b68
           owl:Restriction:
             tag: owl:Restriction
-            value: n9f5ead87a0d445af85e86dcfcf9bd6f5b1
+            value: nc7ce90deb8af4abf8c0b782c72ee0ad2b71
       pairs:
         tag: pairs
         value:
@@ -214,13 +214,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rdfs:range
+                        value: rdfs:subPropertyOf
                       predicate:
                         tag: predicate
                         value: owl:annotatedProperty
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b53
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
           owl:annotatedSource:
             tag: owl:annotatedSource
             value:
@@ -238,19 +238,19 @@ annotations:
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b68
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b68
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: prov:hadMember
+                        value: prov:wasQuotedFrom
                       predicate:
                         tag: predicate
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b53
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
           owl:annotatedTarget:
             tag: owl:annotatedTarget
             value:
@@ -262,25 +262,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: prov:Entity
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b58
                       predicate:
                         tag: predicate
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b53
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: prov:wasInfluencedBy
+                        value: prov:wasDerivedFrom
                       predicate:
                         tag: predicate
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b56
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -298,7 +298,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b71
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b73
           owl:inverseOf:
             tag: owl:inverseOf
             value:
@@ -322,13 +322,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: prov:qualifiedInvalidation
+                        value: prov:qualifiedAttribution
                       predicate:
                         tag: predicate
                         value: owl:inverseOf
                       subject:
                         tag: subject
-                        value: prov:qualifiedInvalidationOf
+                        value: prov:qualifiedAttributionOf
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -346,7 +346,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b1
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b1
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -364,7 +364,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b72
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b74
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -376,37 +376,37 @@ annotations:
                     value:
                       object:
                         tag: object
+                        value: prov:removedKey
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b74
+                  owl:FunctionalProperty:
+                    tag: owl:FunctionalProperty
+                    value:
+                      object:
+                        tag: object
                         value: prov:pairKey
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b69
-                  owl:FunctionalProperty:
-                    tag: owl:FunctionalProperty
-                    value:
-                      object:
-                        tag: object
-                        value: prov:pairEntity
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b70
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b69
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: prov:dictionary
+                        value: prov:insertedKeyEntityPair
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b71
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b72
           prov:definition:
             tag: prov:definition
             value:
@@ -418,14 +418,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'influencee: an identifier (o2) for an entity, activity,
-                          or agent; '
+                        value: 'influencer: an identifier (o1) for an ancestor entity,
+                          activity, or agent that the former depends on;'
                       predicate:
                         tag: predicate
                         value: prov:definition
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b62
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
           prov:dm:
             tag: prov:dm
             value:
@@ -437,13 +437,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection
+                        value: http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence
                       predicate:
                         tag: predicate
                         value: prov:dm
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b53
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b57
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -455,15 +455,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A collection is an entity that provides a structure
-                          to some constituents, which are themselves entities. These
-                          constituents are said to be member of the collections.
+                        value: 'Quotation is a particular case of derivation (see
+                          http://www.w3.org/TR/prov-dm/#term-quotation) in which an
+                          entity is derived from an original entity by copying, or
+                          "quoting", some or all of it. '
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: n9f5ead87a0d445af85e86dcfcf9bd6f5b53
+                        value: nc7ce90deb8af4abf8c0b782c72ee0ad2b67
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -481,7 +482,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: prov:qualifiedInvalidationOf
+                        value: prov:qualifiedAttributionOf
           rdfs:label:
             tag: rdfs:label
             value:
@@ -493,13 +494,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: qualifiedInvalidationOf
+                        value: qualifiedAttributionOf
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: prov:qualifiedInvalidationOf
+                        value: prov:qualifiedAttributionOf
 classes:
   prov_Accept:
     class_uri: prov:Accept
@@ -1095,8 +1096,8 @@ comments:
   \ (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/\u240A\
   ). All feedback is welcome."
 - 'title: W3C PROV Linking Across Provenance Bundles Ontology (PROV-LINKS)'
-created_on: '2025-07-15T20:22:04.527663'
-default_prefix: okn
+created_on: '2025-07-17T18:43:09.518138'
+default_prefix: okns
 description: "This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\u240A\
   \u240AIf you wish to make comments regarding this document, please send them to\
   \ public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org, archives\
@@ -1105,9 +1106,9 @@ description: "This document is published by the Provenance Working Group (http:/
 id: okns:prov
 imports:
 - linkml:types
-- https://purl.org/okn/schema/extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-15T20:22:04.527663'
+- okns:extended_types
+last_updated_on: '2025-07-17T18:43:09.518138'
 name: prov
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -1258,7 +1259,6 @@ slots:
   prov_definition:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: A definition quoted from PROV-DM or PROV-CONSTRAINTS that describes
       the concept expressed with this OWL term.
     name: prov_definition
@@ -1318,7 +1318,6 @@ slots:
   prov_dm:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: A reference to the principal section of the PROV-DM document that
       describes this concept.
     name: prov_dm

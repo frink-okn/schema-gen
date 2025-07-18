@@ -208,19 +208,19 @@ annotations:
         value:
           bibo:DocumentStatus:
             tag: bibo:DocumentStatus
-            value: bibo:status/published
+            value: bibo:status/peerReviewed
           bibo:ThesisDegree:
             tag: bibo:ThesisDegree
-            value: bibo:degrees/phd
+            value: bibo:degrees/ms
           foaf:Person:
             tag: foaf:Person
             value: bibo:bdarcus
           owl:Restriction:
             tag: owl:Restriction
-            value: n0068b32f0b294e9990bde7821f1d0075b88
+            value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b103
           owl:Thing:
             tag: owl:Thing
-            value: bibo:bdarcus
+            value: bibo:status/peerReviewed
       pairs:
         tag: pairs
         value:
@@ -274,7 +274,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n0068b32f0b294e9990bde7821f1d0075b82
+                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b101
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -292,7 +292,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n0068b32f0b294e9990bde7821f1d0075b89
+                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b89
           owl:minCardinality:
             tag: owl:minCardinality
             value:
@@ -310,7 +310,7 @@ annotations:
                         value: owl:minCardinality
                       subject:
                         tag: subject
-                        value: n0068b32f0b294e9990bde7821f1d0075b90
+                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b98
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -328,7 +328,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n0068b32f0b294e9990bde7821f1d0075b90
+                        value: nf46c2a2e2aa44c2eb3bc20c0fe1e7338b98
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -340,13 +340,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A document that is not peer reviewed
+                        value: Unpublished document
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -355,13 +355,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: masters degree in arts
+                        value: PhD degree
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:degrees/ma
+                        value: bibo:degrees/phd
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -370,13 +370,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A document that is not peer reviewed
+                        value: Unpublished document
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -421,13 +421,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: non peer reviewed
+                        value: unpublished
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -436,13 +436,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: M.A.
+                        value: PhD degree
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:degrees/ma
+                        value: bibo:degrees/phd
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -451,13 +451,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: non peer reviewed
+                        value: unpublished
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -508,7 +508,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -523,7 +523,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:degrees/ma
+                        value: bibo:degrees/phd
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -538,7 +538,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/nonPeerReviewed
+                        value: bibo:status/unpublished
 classes:
   bibo_AcademicArticle:
     class_uri: bibo:AcademicArticle
@@ -661,8 +661,8 @@ classes:
     name: bibo_DocumentStatus
     slots:
     - rdfs_comment
-    - rdfs_label
     - swvs_term_status
+    - rdfs_label
     source: http://purl.org/ontology/bibo/
     title: Document Status
   bibo_EditedBook:
@@ -945,8 +945,8 @@ classes:
     name: bibo_ThesisDegree
     slots:
     - rdfs_comment
-    - rdfs_label
     - swvs_term_status
+    - rdfs_label
     source: http://purl.org/ontology/bibo/
     title: Thesis degree
   bibo_Webpage:
@@ -979,8 +979,8 @@ comments:
 - 'title: The Bibliographic Ontology'
 - 'created_by: http://purl.org/ontology/bibo/fgiasson'
 created_by: http://purl.org/ontology/bibo/bdarcus
-created_on: '2025-07-15T20:26:28.875404'
-default_prefix: okn
+created_on: '2025-07-17T18:44:11.203808'
+default_prefix: okns
 description: "The Bibliographic Ontology describe\u240Abibliographic things on the\
   \ semantic Web in RDF.  This ontology can be\u240Aused as a citation ontology, as\
   \ a document classification ontology, or\u240Asimply as a way to describe any kind\
@@ -989,16 +989,15 @@ description: "The Bibliographic Ontology describe\u240Abibliographic things on t
   \ bibliographic data\u240Asources."
 id: okns:bibo
 imports:
-- https://purl.org/okn/schema/extended_types
-- okns:event
 - okns:swvs
-- okns:owl-rdf-rdfs
+- linkml:types
 - okns:dc
+- okns:owl-rdf-rdfs
+- okns:extended_types
+- okns:event
 - okns:foaf
 - okns:wot
-- okns:adms
-- linkml:types
-last_updated_on: '2025-07-15T20:26:28.875404'
+last_updated_on: '2025-07-17T18:44:11.203808'
 name: bibo
 prefixes:
   address: http://schemas.talis.com/2005/address/schema#

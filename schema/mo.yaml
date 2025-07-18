@@ -154,10 +154,10 @@ annotations:
             value: mo:bootleg
           mo:ReleaseType:
             tag: mo:ReleaseType
-            value: mo:audiobook
+            value: mo:remix
           owl:Restriction:
             tag: owl:Restriction
-            value: nf56227f1d7c140f5bab8d98621bcae48b9
+            value: nb5bad49d08bc4b6197d6d7f930fe083cb5
       pairs:
         tag: pairs
         value:
@@ -242,13 +242,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://apassant.net/
+                        value: http://raimond.me.uk/
                       predicate:
                         tag: predicate
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nf56227f1d7c140f5bab8d98621bcae48b3
+                        value: http://raimond.me.uk/foaf.rdf#moustaki
           foaf:name:
             tag: foaf:name
             value:
@@ -260,13 +260,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Alexandre Passant
+                        value: Yves Raimond
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nf56227f1d7c140f5bab8d98621bcae48b3
+                        value: http://raimond.me.uk/foaf.rdf#moustaki
           mo:level:
             tag: mo:level
             value:
@@ -311,13 +311,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: mo:performed
+                        value: mo:conducted
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nf56227f1d7c140f5bab8d98621bcae48b8
+                        value: nb5bad49d08bc4b6197d6d7f930fe083cb6
                   uri:
                     tag: uri
                     value:
@@ -329,7 +329,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nf56227f1d7c140f5bab8d98621bcae48b5
+                        value: nb5bad49d08bc4b6197d6d7f930fe083cb4
           owl:someValuesFrom:
             tag: owl:someValuesFrom
             value:
@@ -341,13 +341,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: mo:Composition
+                        value: mo:Performance
                       predicate:
                         tag: predicate
                         value: owl:someValuesFrom
                       subject:
                         tag: subject
-                        value: nf56227f1d7c140f5bab8d98621bcae48b5
+                        value: nb5bad49d08bc4b6197d6d7f930fe083cb6
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -806,10 +806,10 @@ classes:
     description: Musical manifestation release status.
     name: mo_ReleaseStatus
     slots:
-    - dc_description
     - mo_level
-    - dc_title
     - rdfs_isDefinedBy
+    - dc_description
+    - dc_title
     source: http://purl.org/ontology/mo/
     title: release status
   mo_ReleaseType:
@@ -817,10 +817,10 @@ classes:
     description: Release type of a particular manifestation, such as "album" or "interview"...
     name: mo_ReleaseType
     slots:
-    - dc_description
     - mo_level
-    - dc_title
     - rdfs_isDefinedBy
+    - dc_description
+    - dc_title
     source: http://purl.org/ontology/mo/
     title: Release type
   mo_SACD:
@@ -922,27 +922,26 @@ classes:
     title: Vinyl
 comments:
 - 'title: The Music Ontology'
-created_on: '2025-07-15T20:28:57.855681'
-default_prefix: okn
+created_on: '2025-07-17T18:44:38.892098'
+default_prefix: okns
 description: "\u240A        The Music Ontology Specification provides main concepts\
   \ and \u240A        properties fo describing music (i.e. artists, albums and tracks)\
   \ \u240A        on the Semantic Web. \u240A"
 id: okns:mo
 imports:
+- okns:extended_types
 - okns:ao
-- okns:time
-- okns:wot
-- okns:dc
-- okns:owl-rdf-rdfs
-- okns:adms
-- okns:wgs
-- https://purl.org/okn/schema/extended_types
-- okns:cc
-- okns:foaf
-- okns:event
 - okns:frbr
 - linkml:types
-last_updated_on: '2025-07-15T20:28:57.855681'
+- okns:foaf
+- okns:event
+- okns:cc
+- okns:wot
+- okns:wgs
+- okns:time
+- okns:dc
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-17T18:44:38.892098'
 name: mo
 prefixes:
   ao: http://purl.org/ontology/ao/core#
@@ -1715,8 +1714,6 @@ slots:
     subproperty_of: mo_uuid
     title: lc
   mo_level:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This annotation property associates to a particular Music Ontology\
       \ term the corresponding\u240A        expressiveness level. These levels can\
       \ be:\u240A\u240A            - 1: Only editorial/Musicbrainz type information\u240A\

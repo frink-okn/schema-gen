@@ -148,13 +148,13 @@ annotations:
         value:
           owl:OntologyProperty:
             tag: owl:OntologyProperty
-            value: owl:versionIRI
+            value: owl:imports
           rdf:List:
             tag: rdf:List
             value: rdf:nil
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: rdf:XMLLiteral
+            value: rdf:HTML
       pairs:
         tag: pairs
         value:
@@ -169,14 +169,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The property that is used for importing other ontologies
-                          into a given ontology.
+                        value: The property that identifies the version IRI of an
+                          ontology.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: owl:imports
+                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -201,14 +201,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The class of plain (i.e. untyped) literal values, as
-                          used in RIF and OWL 2
+                        value: The datatype of RDF literals storing JSON content.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: rdf:PlainLiteral
+                        value: rdf:JSON
           rdfs:domain:
             tag: rdfs:domain
             value:
@@ -226,7 +225,7 @@ annotations:
                         value: rdfs:domain
                       subject:
                         tag: subject
-                        value: owl:imports
+                        value: owl:versionIRI
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -244,7 +243,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: owl:imports
+                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -274,7 +273,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: rdf:PlainLiteral
+                        value: rdf:JSON
           rdfs:label:
             tag: rdfs:label
             value:
@@ -286,13 +285,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: imports
+                        value: versionIRI
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: owl:imports
+                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -316,13 +315,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: PlainLiteral
+                        value: JSON
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: rdf:PlainLiteral
+                        value: rdf:JSON
           rdfs:range:
             tag: rdfs:range
             value:
@@ -340,7 +339,7 @@ annotations:
                         value: rdfs:range
                       subject:
                         tag: subject
-                        value: owl:imports
+                        value: owl:versionIRI
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -352,13 +351,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/TR/rdf-plain-literal/
+                        value: https://www.w3.org/TR/json-ld11/#the-rdf-json-datatype
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: rdf:PlainLiteral
+                        value: rdf:JSON
           rdfs:subClassOf:
             tag: rdfs:subClassOf
             value:
@@ -376,7 +375,7 @@ annotations:
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: rdf:PlainLiteral
+                        value: rdf:JSON
 classes:
   owl_AllDifferent:
     class_uri: owl:AllDifferent
@@ -528,10 +527,10 @@ classes:
     is_a: rdf_Property
     name: owl_OntologyProperty
     slots:
-    - rdfs_comment
-    - rdfs_isDefinedBy
-    - rdfs_range
     - rdfs_domain
+    - rdfs_comment
+    - rdfs_range
+    - rdfs_isDefinedBy
     - rdfs_label
     source: http://www.w3.org/2002/07/owl#
     title: OntologyProperty
@@ -652,8 +651,8 @@ classes:
     is_a: rdfs_Class
     name: rdfs_Datatype
     slots:
-    - rdfs_comment
     - rdfs_subClassOf
+    - rdfs_comment
     - rdfs_isDefinedBy
     - rdfs_seeAlso
     - rdfs_label
@@ -682,8 +681,8 @@ comments:
 - 'last_updated_on: 2019-12-16'
 - 'description: This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace,
   defined in RDF 1.1 Concepts.'
-created_on: '2025-07-15T20:21:53.362891'
-default_prefix: okn
+created_on: '2025-07-17T18:43:07.943201'
+default_prefix: okns
 description: "\u240A  This ontology partially describes the built-in classes and\r\
   \u240A  properties that together form the basis of the RDF/XML syntax of OWL 2.\r\
   \u240A  The content of this ontology is based on Tables 6.1 and 6.2\r\u240A  in\
@@ -701,9 +700,9 @@ description: "\u240A  This ontology partially describes the built-in classes and
   \  unexpected, consequences.\r\u240A"
 id: okns:owl-rdf-rdfs
 imports:
-- https://purl.org/okn/schema/extended_types
 - linkml:types
-last_updated_on: '2025-07-15T20:21:53.362891'
+- okns:extended_types
+last_updated_on: '2025-07-17T18:43:07.943201'
 name: owl-rdf-rdfs
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -1345,8 +1344,6 @@ slots:
     any_of:
     - range: rdfs_Literal
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     description: A description of the subject resource.
     domain: rdfs_Resource
     name: rdfs_comment
@@ -1355,8 +1352,6 @@ slots:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: comment
   rdfs_domain:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A domain of the subject property.
     domain: rdf_Property
     name: rdfs_domain
@@ -1366,11 +1361,9 @@ slots:
     title: domain
   rdfs_isDefinedBy:
     any_of:
-    - range: owl_Ontology
     - range: uri
     - range: rdfs_Resource
-    comments:
-    - No occurrences of this slot in the graph.
+    - range: owl_Ontology
     description: The definition of the subject resource.
     domain: rdfs_Resource
     name: rdfs_isDefinedBy
@@ -1383,8 +1376,6 @@ slots:
     any_of:
     - range: rdfs_Literal
     - range: string
-    comments:
-    - No occurrences of this slot in the graph.
     description: A human-readable name for the subject.
     domain: rdfs_Resource
     name: rdfs_label
@@ -1403,8 +1394,6 @@ slots:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: member
   rdfs_range:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A range of the subject property.
     domain: rdf_Property
     name: rdfs_range
@@ -1416,8 +1405,6 @@ slots:
     any_of:
     - range: uri
     - range: rdfs_Resource
-    comments:
-    - No occurrences of this slot in the graph.
     description: Further information about the subject resource.
     domain: rdfs_Resource
     name: rdfs_seeAlso
@@ -1426,8 +1413,6 @@ slots:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: seeAlso
   rdfs_subClassOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The subject is a subclass of a class.
     domain: rdfs_Class
     name: rdfs_subClassOf

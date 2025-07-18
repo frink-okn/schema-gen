@@ -481,13 +481,13 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: N14adea692b0245179fec23712552f087
+            value: N3599334fc0bb492cb6f0c88c6f8cb152
           vaem:GraphMetaData:
             tag: vaem:GraphMetaData
             value: vaem:GMD_VAEM
           vaem:GraphRole:
             tag: vaem:GraphRole
-            value: vaem:CurationGraph
+            value: vaem:FunctionsGraph
           vaem:Party:
             tag: vaem:Party
             value: vaem:TopQuadrant
@@ -548,16 +548,16 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The property "vaem:lastUpdated" is intended for general
-                          use as the name implies.  The range of the property is set
-                          as "vaem:dateUnion" so as to allow a value to have a number
-                          of forms from a  year only to a full timestamp
+                        value: The property "vaem:idString" is intended for general
+                          use as a means to specifiy a unique reference to something.
+                          This is a data property with a string range and is a sub-property
+                          of "vame:id"
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: vaem:lastUpdated
+                        value: vaem:idString
               vaem:GraphRole:
                 tag: vaem:GraphRole
                 value:
@@ -621,13 +621,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: vaem:Aspect
+                        value: vaem:Discipline
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: N36a5f688edea4cbd8b02c00a701ece8e
+                        value: Nf254b73378ce43fbbe321c24c80aa280
                   uri:
                     tag: uri
                     value:
@@ -639,7 +639,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: Neb4b6d58349f4919987e6c71ac3dc75c
+                        value: N4e4e925994cb4026aefba401a61cf403
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -657,7 +657,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: Ncb3e0af0dc8243f9aa836c9ef3b6276c
+                        value: N0f4148df4a3f41d5b63355598bd1f4d6
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -675,7 +675,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: Na5acf1ec78304dd9a0b01cce58af836a
+                        value: Ndc2ae96a482b466888f59d0ca8877c81
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -687,25 +687,25 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: vaem:rdfxmlFileURL
+                        value: vaem:turtleFileURL
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: Na5acf1ec78304dd9a0b01cce58af836a
+                        value: Ndc2ae96a482b466888f59d0ca8877c81
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: vaem:hasAspect
+                        value: vaem:hasDiscipline
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: N36a5f688edea4cbd8b02c00a701ece8e
+                        value: Nf254b73378ce43fbbe321c24c80aa280
           owl:versionIRI:
             tag: owl:versionIRI
             value:
@@ -768,7 +768,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: vaem:RulesGraph
+                        value: vaem:LinkSetGraph
                   uri:
                     tag: uri
                     value:
@@ -780,7 +780,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: vaem:RulesGraph
+                        value: vaem:LinkSetGraph
               vaem:Party:
                 tag: vaem:Party
                 value:
@@ -834,13 +834,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Rules Graph
+                        value: Link Set graph
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: vaem:RulesGraph
+                        value: vaem:LinkSetGraph
               vaem:Party:
                 tag: vaem:Party
                 value:
@@ -892,13 +892,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: RULES
+                        value: LINKSET
                       predicate:
                         tag: predicate
                         value: vaem:filePrefix
                       subject:
                         tag: subject
-                        value: vaem:RulesGraph
+                        value: vaem:LinkSetGraph
           vaem:hasGraphMetadata:
             tag: vaem:hasGraphMetadata
             value:
@@ -1335,30 +1335,30 @@ classes:
     see_also:
     - http://voag.linkedmodel.org/vocab/voag
     slots:
+    - dct_abstract
+    - vaem_title
+    - vaem_hasSteward
+    - vaem_hasOwner
+    - vaem_rdfxmlFileURL
+    - vaem_turtleFileURL
+    - vaem_latestPublishedVersion
     - vaem_description
     - vaem_usesNonImportedResource
-    - dct_title
-    - vaem_turtleFileURL
-    - vaem_hasGraphRole
-    - vaem_owner
-    - rdfs_isDefinedBy
-    - vaem_rdfxmlFileURL
     - vaem_intent
-    - vaem_revision
-    - dct_abstract
-    - vaem_withAttributionTo
-    - vaem_namespace
-    - vaem_hasSteward
-    - vaem_latestPublishedVersion
     - vaem_namespacePrefix
-    - dct_created
-    - dct_modified
-    - vaem_title
+    - vaem_revision
     - vaem_previousPublishedVersion
-    - vaem_logo
-    - vaem_name
+    - rdfs_isDefinedBy
+    - dct_created
     - rdfs_label
-    - vaem_hasOwner
+    - vaem_hasGraphRole
+    - vaem_logo
+    - dct_title
+    - vaem_name
+    - vaem_namespace
+    - vaem_owner
+    - dct_modified
+    - vaem_withAttributionTo
     source: http://www.linkedmodel.org/schema/vaem
     title: Graph Metadata
   vaem_GraphRole:
@@ -1386,9 +1386,9 @@ classes:
     is_a: owl_Thing
     name: vaem_Party
     slots:
-    - vaem_url
-    - vaem_name
     - rdfs_label
+    - vaem_name
+    - vaem_url
     - rdfs_isDefinedBy
     source: http://www.linkedmodel.org/schema/vaem
     title: Party
@@ -1413,15 +1413,15 @@ classes:
     name: vaem_Viewpoint
     source: http://www.linkedmodel.org/schema/vaem
     title: ViewpointDimension
-created_on: '2025-07-15T20:23:37.363845'
-default_prefix: okn
+created_on: '2025-07-17T18:43:35.498650'
+default_prefix: okns
 id: okns:vaem
 imports:
 - linkml:types
-- https://purl.org/okn/schema/extended_types
 - okns:owl-rdf-rdfs
+- okns:extended_types
 - okns:dc
-last_updated_on: '2025-07-15T20:23:37.363845'
+last_updated_on: '2025-07-17T18:43:35.498650'
 name: vaem
 prefixes:
   dct: http://purl.org/dc/terms/
@@ -1442,8 +1442,6 @@ slots:
     source: http://purl.org/dc/terms/
     title: author
   owl_versionIRI:
-    comments:
-    - No occurrences of this slot in the graph.
     range: uri
     slot_uri: owl:versionIRI
   vaem_abbreviation:
@@ -1496,7 +1494,6 @@ slots:
   vaem_description:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     name: vaem_description
     range: string
     slot_uri: vaem:description
@@ -1505,7 +1502,6 @@ slots:
   vaem_filePrefix:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:filePrefix" is for specifying a preferred file
       prefix for a graph. For example a schema graph may be given the file prefix
       "SCHEMA" followed by an underscore "_".
@@ -1578,7 +1574,6 @@ slots:
   vaem_hasGraphMetadata:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     name: vaem_hasGraphMetadata
     range: vaem_GraphMetaData
     slot_uri: vaem:hasGraphMetadata
@@ -1586,7 +1581,6 @@ slots:
   vaem_hasGraphRole:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "lms:hasGraphRole" is used to characterize how a resource
       participates in an ontology set.  The property is used to specify the role that
       a graph plays, for example, an ontology graph can be a schema, vocabulary, dataset,
@@ -1633,7 +1627,6 @@ slots:
   vaem_hasOwner:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     name: vaem_hasOwner
     range: vaem_Party
     slot_uri: vaem:hasOwner
@@ -1642,7 +1635,6 @@ slots:
   vaem_hasSteward:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: A property that is used to refer to a "Steward", that is, the party
       or role that is responsible for maintaining an asset, in the case of VAEM, an
       ontology graph.
@@ -1683,7 +1675,6 @@ slots:
   vaem_intent:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:intent" is used to outline  a statement of purpose.
       This typically expresses one or more desired outcomes
     name: vaem_intent
@@ -1706,7 +1697,6 @@ slots:
   vaem_latestPublishedVersion:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:latestPublishedVersion"is a URL to documentation
       for the latest version of a graph.
     name: vaem_latestPublishedVersion
@@ -1717,7 +1707,6 @@ slots:
   vaem_logo:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:logo" is a reference to an image that is used
       for publishing the ontology"
     name: vaem_logo
@@ -1727,7 +1716,6 @@ slots:
   vaem_name:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:name" is intended for general use. In many cases
       "rdfs:label" could be used give names to resources. In the case where compliance
       with a specific naming rule is needed,  "vaem:name" allows  a resource to carry
@@ -1740,7 +1728,6 @@ slots:
   vaem_namespace:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:namespace" is the onotlogy URI with which a graph
       is primarily associated. The intent is to allow multiple graphs to define statements
       for resources in the same Ontology namespace. For example, a foundation level
@@ -1760,7 +1747,6 @@ slots:
   vaem_namespacePrefix:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:namespacePrefix" specifes a short handle or label
       for the URI of an Ontology.  Multiple graphs can define statements for resources
       in the same Ontololgy namespace. For example, a foundation level graph with
@@ -1777,7 +1763,6 @@ slots:
   vaem_owner:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     name: vaem_owner
     range: string
     slot_uri: vaem:owner
@@ -1786,7 +1771,6 @@ slots:
   vaem_previousPublishedVersion:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:previousPublishedVersion"is a URL to documentation
       for the previous version of a graph.
     name: vaem_previousPublishedVersion
@@ -1807,7 +1791,6 @@ slots:
   vaem_rdfxmlFileURL:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:rdfxmlFileURL" is used to provide a link to the
       location of the ontology's RDF/XML file
     name: vaem_rdfxmlFileURL
@@ -1850,7 +1833,6 @@ slots:
   vaem_revision:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:revision" is a property intended for general use
       as the name implies.
     name: vaem_revision
@@ -1876,7 +1858,6 @@ slots:
   vaem_title:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     name: vaem_title
     range: string
     slot_uri: vaem:title
@@ -1896,7 +1877,6 @@ slots:
   vaem_turtleFileURL:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:turtleFileURL" is used to provide a link to the
       location of the ontology's turtle file
     name: vaem_turtleFileURL
@@ -1907,7 +1887,6 @@ slots:
   vaem_url:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:url" is intended for general use as the name implies.  The
       range of the property is set as an XSD URI
     name: vaem_url
@@ -1918,11 +1897,10 @@ slots:
   vaem_usesNonImportedResource:
     any_of:
     - range: rdfs_Resource
-    - range: uri
     - range: owl_AnnotationProperty
+    - range: uri
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:usesNonImportedResource" is used to express dependencies
       on resources from graphs that are not imported
     name: vaem_usesNonImportedResource
@@ -1933,7 +1911,6 @@ slots:
   vaem_withAttributionTo:
     comments:
     - 'source: http://www.linkedmodel.org/2.0/schema/vaem'
-    - No occurrences of this slot in the graph.
     description: The property "vaem:withAttributionTo" is an annotation property that
       is either used to hold either a string or a reference to an instance of "voag:Attribution",
       from the VOAG ontology

@@ -127,16 +127,16 @@ annotations:
             value: http://creativecommons.org/licenses/by/2.0/uk/
           cc:Permission:
             tag: cc:Permission
-            value: cc:DerivativeWorks
+            value: cc:Distribution
           cc:Requirement:
             tag: cc:Requirement
-            value: cc:Attribution
+            value: cc:Notice
           dcmitype:Text:
             tag: dcmitype:Text
-            value: http://purl.org/vocab/frbr/frbr-core-20050810.html
+            value: http://purl.org/vocab/frbr/frbr-core-20050810.rdf
           dct:IMT:
             tag: dct:IMT
-            value: Nc7d9b2c95a3444a3ab7da6a2c9b76285
+            value: Ndbe4cfc43f014c9db82d6452da6e7416
       pairs:
         tag: pairs
         value:
@@ -193,7 +193,7 @@ annotations:
                         value: dc:creator
                       subject:
                         tag: subject
-                        value: N2f3e836275214fadaed3270e592b352a
+                        value: Nb1f0de2c966249cdb9b54875a990723e
           dc:date:
             tag: dc:date
             value:
@@ -205,13 +205,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2005-08-08'
+                        value: '2005-08-10'
                       predicate:
                         tag: predicate
                         value: dc:date
                       subject:
                         tag: subject
-                        value: N2f3e836275214fadaed3270e592b352a
+                        value: Nb1f0de2c966249cdb9b54875a990723e
           dc:format:
             tag: dc:format
             value:
@@ -223,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: N8fc7a3532c4043b29062febc4d4ef124
+                        value: Ndbe4cfc43f014c9db82d6452da6e7416
                       predicate:
                         tag: predicate
                         value: dc:format
                       subject:
                         tag: subject
-                        value: http://purl.org/vocab/frbr/frbr-core-20050810.rdf
+                        value: http://purl.org/vocab/frbr/frbr-core-20050810.html
           rdf:value:
             tag: rdf:value
             value:
@@ -247,7 +247,7 @@ annotations:
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: N8fc7a3532c4043b29062febc4d4ef124
+                        value: Nfbcb582cc242418b8f136d956bf753aa
               untyped:
                 tag: untyped
                 value:
@@ -256,13 +256,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Added isDefinedBy property referring to FRBR core namespace
+                        value: Added domain and range of Work or Expression
                       predicate:
                         tag: predicate
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: N2f3e836275214fadaed3270e592b352a
+                        value: Nb1f0de2c966249cdb9b54875a990723e
           rdfs:label:
             tag: rdfs:label
             value:
@@ -280,7 +280,7 @@ annotations:
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: N8fc7a3532c4043b29062febc4d4ef124
+                        value: Nfbcb582cc242418b8f136d956bf753aa
 classes:
   dct_IMT:
     class_uri: dct:IMT
@@ -296,10 +296,10 @@ classes:
     is_a: skos_Concept
     name: frbr_Concept
     notes:
-    - N61af7406b60c4ec1b35f0823528722c8
-    - N0799c2efb5c648a7bcb75bf331ec71e5
-    - N9de0821adf8e483f82074d40bca7fb83
-    - N9a69e98611ad40c48c7c1ce5d062de46
+    - Nfbfaa1790bb646cebb1f12cfc2bfea73
+    - Need612a1461c44b09ee2a944e860e3f1
+    - Na2c944f183b44188827e0f1303829821
+    - N7c05fc1098f242ee8a47e7e44393af25
     source: http://purl.org/vocab/frbr/core#
     title: concept
   frbr_CorporateBody:
@@ -311,9 +311,9 @@ classes:
     is_a: frbr_ResponsibleEntity
     name: frbr_CorporateBody
     notes:
-    - Na0be4c12ffb948ec965507880fdb7128
-    - Nbb9d1a264df242d986da34d016ffa1f6
-    - N88cac5350f364015992c6d6922591784
+    - N4b8df21dd506410b902873aa1a4db9a8
+    - Ne3a0fbde78ea4d1195f0e7ffee48e6f6
+    - Nc726bee17a504a4c85bf1fe169a70610
     source: http://purl.org/vocab/frbr/core#
     title: corporate body
   frbr_Endeavour:
@@ -323,9 +323,9 @@ classes:
     description: Any of the products of artistic or creative endeavour.
     name: frbr_Endeavour
     notes:
-    - N929069b59309443a94ba10c383773194
-    - Nb552c6bdac3341b89cd18eb0c5e859e1
-    - N5dc399666ee047cdb6b0db25eb558a5f
+    - Nc3a12ec2d0054cb4a5a13d3d626356c8
+    - Nb4892bb3a2054dd3840b2ecde3c786b7
+    - Naafc3ad9509840708d7d45e68d29d839
     source: http://purl.org/vocab/frbr/core#
     title: endeavour
   frbr_Event:
@@ -336,9 +336,9 @@ classes:
     is_a: time-entry_Event
     name: frbr_Event
     notes:
-    - N6a65954bf19e4a66b6221184ed9e9f01
-    - Na05248dcb0db4cb188257c77540ca304
-    - Nb7422f20deac48e4911f75f8c4fe2323
+    - N219cf3c8a33a449dbf75952a2616054b
+    - N9448740b0f1146e5bdf8975641c8bbae
+    - N1d29c422169c493ebb75afc13e001f06
     source: http://purl.org/vocab/frbr/core#
     title: event
   frbr_Expression:
@@ -349,9 +349,9 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Expression
     notes:
-    - N4440c29cb2f4445dbe032b800f6e75ad
-    - N4ab25d467b22488da1e7ab73a4cf92ff
-    - N286377e6a97c4f4fb94975c1deff724e
+    - Nf83f6a14421c49d8847413ce7236dafc
+    - Nbbe25cac44ad4ed89d5b23135005fd7a
+    - N31d974cbf1db4033b5dfde1522bb8e3b
     source: http://purl.org/vocab/frbr/core#
     title: expression
   frbr_Item:
@@ -362,11 +362,11 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Item
     notes:
-    - N13fbfd5ea9d14c7a956ff87e7172f87d
-    - Nb3cb8abdec3f480a812c941a076d47e3
-    - N841d7228a91d4b3b9b6ec24bff3f1729
-    - Ndf21afc334014cf8b2e69e89da009150
-    - N2f554ea15c644899a598499b1c6c552a
+    - N63c7de167c1c449b973063e044c505db
+    - N8e4f211c739b41a6a91c4b5ac0da7ac8
+    - N4896d967b43d4ae9a858cb594a306c64
+    - Na494b012d5b94ec18b889c164a98c8cb
+    - N6ae3047534a94b5a862e1c7d73e66a32
     source: http://purl.org/vocab/frbr/core#
     title: item
   frbr_Manifestation:
@@ -377,9 +377,9 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Manifestation
     notes:
-    - N3fd68e5ea186407385202379d1f6e828
-    - Nbb4bf7f749e94bd38a5115ea32f6cbf4
-    - Nc5f1a09948e34aa19a26c09d9d65befb
+    - N77a1e7c1f2024cfa8ee0756145216a80
+    - N06e05723718f45a59c3cd9752d16ca43
+    - N91a6488446164278a78779e9ed56ef4f
     source: http://purl.org/vocab/frbr/core#
     title: manifestation
   frbr_Object:
@@ -390,10 +390,10 @@ classes:
     is_a: wgs_SpatialThing
     name: frbr_Object
     notes:
-    - Nf5ece44f957d4c869c412aff0a415f68
-    - Nd22502a639124459a9a8e11f2435b8ed
-    - N7e50cc6ce54e437499aa0ee926fea994
-    - N95378607150a4baaa807210eb4813650
+    - N231907163c3d4c5c9b08526c147128d5
+    - N70deff8964e644a684f81d84e6097be1
+    - N1ccb4b6ed2ac4d14ac39c5f33b79c94f
+    - Na99f7788d7f640d7b473a99d21282e8f
     source: http://purl.org/vocab/frbr/core#
     title: object
   frbr_Person:
@@ -403,9 +403,9 @@ classes:
     description: A living or dead individual.
     name: frbr_Person
     notes:
-    - Nda6d1582b7d349f9897b1bcf63d069da
-    - Nfc19a422a0114b72a49752ac4faede6d
-    - Nde3378642ddd4adc9fb8ca6cd0302251
+    - N96c332e6dee14b039eb185519d2e0f95
+    - N6388fadf632f4aa8b0e0d87d991e1480
+    - N1321d8853af04eda8915a52ba8e708a9
     source: http://purl.org/vocab/frbr/core#
     title: person
   frbr_Place:
@@ -416,10 +416,10 @@ classes:
     is_a: wgs_SpatialThing
     name: frbr_Place
     notes:
-    - Nbdb79ee5a2574b6c85c8f9c40e1747ae
-    - Nb1df3d15954444efa3293031dc2f27e1
-    - N673331110f74495489842e9e3ab82123
-    - N516075bee94c4a82813b43b11cf08b3b
+    - Nb23aeffc4be542608459fa8790962a4a
+    - N3f54d8490e0e431586c46b1f520ce67c
+    - N21903356a72c454b871e156a2843aa8f
+    - Ne4769cecb6cf4c4690499af6bdbe3d0e
     source: http://purl.org/vocab/frbr/core#
     title: place
   frbr_ResponsibleEntity:
@@ -430,9 +430,9 @@ classes:
       of artistic or creative content.
     name: frbr_ResponsibleEntity
     notes:
-    - N4b95c90c38ca48779ef121b10d4160d8
-    - N12bb9b94a0cc4bceaffff7a8de00895f
-    - Ne0ac75ffc86642428367e677c46565c2
+    - N4db091c1dc6244d2b8914c71f50a56ad
+    - N24fd0e46fccc43cd8579ef176f66f2a4
+    - N330441b1180d4c4e9327270e6a84a4fb
     source: http://purl.org/vocab/frbr/core#
     title: responsible entity
   frbr_Subject:
@@ -442,9 +442,9 @@ classes:
     description: Something that may serve as the subject of a work.
     name: frbr_Subject
     notes:
-    - N4a42454b75b14342a9be01de12b89d9f
-    - N7c8a492279044b2c819d2d30446dc282
-    - N4ea173deca8f4593aa29e32269b56b40
+    - Nfce5e07742334a4c86ff8ed6631d652a
+    - N5bc892c45c454692b086fb9f82c3a9d9
+    - N95de0f2404884ebb86646b0409c53b12
     source: http://purl.org/vocab/frbr/core#
     title: subject
   frbr_Work:
@@ -455,10 +455,10 @@ classes:
     is_a: wn16_Work~2
     name: frbr_Work
     notes:
-    - N1bf36498690844618107120fdf98f40a
-    - Nbdc8acefb7614964af24d1340707747e
-    - N5df50395dbea4b49adada79dfb40243f
-    - N8d69581b3b3c4e7384a38f64a45e69b6
+    - Nc666d0c6708d4b58a18e78de6ed75b91
+    - N5321d17380354438a43e80cb88bb0428
+    - N0fd6c852c5ad4386b7fcef6fa72fb425
+    - Nc832773f50134bfcb5e1dd64e1f7ff95
     source: http://purl.org/vocab/frbr/core#
     title: work
   wn16_Work~2:
@@ -473,30 +473,30 @@ comments:
   \ entities. It does not yet describe attributes of the entities. Where possible,\
   \ appropriate \u240A      relationships with other vocabularies are included in\
   \ order to place this vocabulary in the \u240A      context of existing RDF work.\u240A"
-created_on: '2025-07-15T20:25:36.808159'
-default_prefix: okn
+created_on: '2025-07-17T18:44:00.045199'
+default_prefix: okns
 description: "\u240A      This vocabulary is an expression in RDF of the concepts\
   \ and relations described in the\u240A      IFLA report on the Functional Requirements\
   \ for Bibliographic Records (FRBR). \u240A"
 id: okns:frbr
 imports:
-- linkml:types
 - okns:dc
-- okns:wgs
-- okns:skos
-- okns:cc
-- https://purl.org/okn/schema/extended_types
 - okns:daml
+- okns:skos
+- okns:extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-15T20:25:36.808159'
+- okns:wgs
+- okns:cc
+- linkml:types
+last_updated_on: '2025-07-17T18:44:00.045199'
 name: frbr
 notes:
-- N228bbed618ef470385b717ddd3e2ef85
-- Nfe3b9e52d18f4470989f97ce39382cac
-- Nd08eff5d52fe450b98f48618cb2e2752
-- Nc538f196713e4c1d8055f709a3597e7c
-- N0d7bb263d3d34c67b48bcd1bddd7101e
-- N3242044765684309962cf1ff7a97cda0
+- N49da4fb4c30f4d7abdceba54b3bde3b8
+- N826625f005124138b7fc1ac3710649f4
+- Nc873d49b49fc432ba9ecb2e861f7fa9f
+- N4d053a25123f41529b8e5306fb4b8221
+- N7493b0d7acd049009cb919bd245f1857
+- Nabf29e547e69442f8cf888f9b1f01727
 prefixes:
   cc: http://web.resource.org/cc/
   dc: http://purl.org/dc/elements/1.1/
@@ -524,9 +524,9 @@ slots:
     inverse: frbr_abridgementOf
     name: frbr_abridgement
     notes:
-    - Nc7b61a2d0611436eba5cdd141b969556
-    - Nb83f82abcc7549bab53479d2a8fed986
-    - N71078cb16bf14fbeb38802e77dec41c3
+    - N1a025b3ffb474e5cbf9bbb35bcee1024
+    - N0f8ee37f6cac4dd1b1e664f15496b4e0
+    - N264e3627fe804238bcecc106fd2e7f40
     range: frbr_Expression
     slot_uri: frbr:abridgement
     source: http://purl.org/vocab/frbr/core#
@@ -540,9 +540,9 @@ slots:
     inverse: frbr_abridgement
     name: frbr_abridgementOf
     notes:
-    - N8dea9daef37b437d9f15dc6dff1003ae
-    - N8e91e744ba8641c082b65140b749d562
-    - N60ad8eefec974e6aa564329eeeb07dd6
+    - N9a05cf640b1744e387c85b15f893351e
+    - N584d5558b17f4ccb8536e49088948623
+    - Ne74e27c9163a4ac89f428455cae50147
     range: frbr_Expression
     slot_uri: frbr:abridgementOf
     source: http://purl.org/vocab/frbr/core#
@@ -555,9 +555,9 @@ slots:
     inverse: frbr_adaptionOf
     name: frbr_adaption
     notes:
-    - N2f3e836275214fadaed3270e592b352a
-    - N01218464dbb648c083d91b5e39bb4dd4
-    - N1ee99dbbd53f4cbb937918ce79dc5ae7
+    - N96f0832b9f6d49ec9413c9db9a52310d
+    - Nea57e0f0dde843899c5d6fd938699ae1
+    - Nb1f0de2c966249cdb9b54875a990723e
     range: Any
     slot_uri: frbr:adaption
     source: http://purl.org/vocab/frbr/core#
@@ -570,9 +570,9 @@ slots:
     inverse: frbr_adaption
     name: frbr_adaptionOf
     notes:
-    - N9151ce03c31e4d529b30b6ad7e7303e2
-    - Nd330227c00694008b8f137f418982292
-    - N452ff766fcad4b7d8525bf3c16bd2933
+    - N4f5f7776aa8e4548a28d4ae50550b93c
+    - Nbedd51a31d1a418c98ac8e3c00f513cb
+    - N9dd1fbf348c0423486daf2b6d4567eb1
     range: Any
     slot_uri: frbr:adaptionOf
     source: http://purl.org/vocab/frbr/core#
@@ -610,9 +610,9 @@ slots:
     inverse: frbr_arrangementOf
     name: frbr_arrangement
     notes:
-    - N35800d2e98ce446eac50b40316ab1210
-    - Nb095af77cb6f48b1b62f186dfb1c0c3a
-    - Nc2c45215c0fd4b89b27921846164551d
+    - Nef7df7c7426047849944aad1b5609acc
+    - N7038146a36b54769947f6a1edd4cdf8a
+    - N9c8d13dbc1a44fb18be2d63005fcd7cd
     range: frbr_Expression
     slot_uri: frbr:arrangement
     source: http://purl.org/vocab/frbr/core#
@@ -626,9 +626,9 @@ slots:
     inverse: frbr_arrangement
     name: frbr_arrangementOf
     notes:
-    - N9f777ab93fb948e6baadd43bf7e517c9
-    - Ne0e4aff48ea6479cb388b4c2cbeece91
-    - N9045fa73d134434c853debcf401838be
+    - N2ce29e945fef4d97bd0b135a8d024579
+    - N679197b9c71d48519c48695532aa7be2
+    - N0482bf6e1bbc45ddb62c58452fce2c13
     range: frbr_Expression
     slot_uri: frbr:arrangementOf
     source: http://purl.org/vocab/frbr/core#
@@ -641,9 +641,9 @@ slots:
     inverse: frbr_complementOf
     name: frbr_complement
     notes:
-    - N265ad3d3702449b18051449ba6145dbc
-    - Nb4243f3f2a4643bcbcea08071cba4db9
-    - Nf34de549e1de402882fb7c73d4c2eb76
+    - N994fb678a36a4cdf9ede321293a28956
+    - N89fbf424b26b47fa838e1117abfcf0aa
+    - Nd9b1967674c4456eb6be6521b2a65289
     range: Any
     slot_uri: frbr:complement
     source: http://purl.org/vocab/frbr/core#
@@ -656,9 +656,9 @@ slots:
     inverse: frbr_complement
     name: frbr_complementOf
     notes:
-    - Necb64fd47e334f6586a1c6498ffe8e51
-    - N8f934406581a4ed590d7154fe69c292c
-    - N24f44d062fff4991a15edf7db7d4292e
+    - Nb191cc868b6b49129e1b34b970b6182e
+    - Nff169b9eb7a34d9b9cd283522da3b557
+    - N91ffdc65baec485d8e14cc96ea2e6c14
     range: Any
     slot_uri: frbr:complementOf
     source: http://purl.org/vocab/frbr/core#
@@ -672,8 +672,8 @@ slots:
     inverse: frbr_creatorOf
     name: frbr_creator
     notes:
-    - N21eefe800bf34bc9ace3233375fdad1a
-    - N00ed93e7618f450694519002dbedfbac
+    - N200c2a408a7e4b47b79fa221801a1902
+    - Ne087f21343d547eeade1cf7afbdaaf4a
     range: frbr_ResponsibleEntity
     slot_uri: frbr:creator
     source: http://purl.org/vocab/frbr/core#
@@ -687,8 +687,8 @@ slots:
     inverse: frbr_creator
     name: frbr_creatorOf
     notes:
-    - N23a3bc6d139a480ebdfbcd68967e9641
-    - N2e2afd65f1734396a048ef2033bd8ffa
+    - N8a43e077045443b6bb66ae88735575fb
+    - N3f6d74f3457e40fba05014889c2ce3cf
     range: frbr_Work
     slot_uri: frbr:creatorOf
     source: http://purl.org/vocab/frbr/core#
@@ -702,8 +702,8 @@ slots:
     inverse: frbr_embodimentOf
     name: frbr_embodiment
     notes:
-    - N1e5f26ba31044d6992093e1e2fd238e5
-    - N77a6729e3997498b84ce60e5da92ca9d
+    - N21eef9dfd5774339a4f34a5ddc6d74e8
+    - N55d4b0e65da64b21a8bf65e52a6d7738
     range: frbr_Manifestation
     slot_uri: frbr:embodiment
     source: http://purl.org/vocab/frbr/core#
@@ -717,8 +717,8 @@ slots:
     inverse: frbr_embodiment
     name: frbr_embodimentOf
     notes:
-    - Nef6f83717a1642e9a2b489201a93525b
-    - Na4d298b47e854c658d985b5e82bf5717
+    - N368ba31c72674196aa275646f9688b81
+    - N937fb93926a54b55a80e4484ae1388d5
     range: frbr_Expression
     slot_uri: frbr:embodimentOf
     source: http://purl.org/vocab/frbr/core#
@@ -732,8 +732,8 @@ slots:
     inverse: frbr_exemplarOf
     name: frbr_exemplar
     notes:
-    - N4c0b1d598c924870bfec42b25de4d307
-    - Nde6f381e9b1442938eea13e11dfb454f
+    - Na062f278625a49b28d02afea51b98957
+    - Ne3247f432afd40ba81753f5cdf28e82f
     range: frbr_Item
     slot_uri: frbr:exemplar
     source: http://purl.org/vocab/frbr/core#
@@ -747,8 +747,8 @@ slots:
     inverse: frbr_exemplar
     name: frbr_exemplarOf
     notes:
-    - N8e0f816d0e1b473f9449f6639fe4a520
-    - N369ef898fb324c03ad322252253cc871
+    - Nda8f30dd2f4947d6814345d50d2fb8a9
+    - N472c0795fcf4434cab4823b72fa281ff
     range: frbr_Manifestation
     slot_uri: frbr:exemplarOf
     source: http://purl.org/vocab/frbr/core#
@@ -761,9 +761,9 @@ slots:
     inverse: frbr_imitationOf
     name: frbr_imitation
     notes:
-    - N27969a0c5b14442b9429691bff0a5c94
-    - Ne900b33f7a244d219517cd444ba26e4d
-    - N9ad8a2b93caa41f386191f5bd25e20c1
+    - N5eb9dd2c577f4a249b411dd1f18b9667
+    - N8a5f3746a88f4017baab0cbf57b9b512
+    - N936693c8f70141e58ab457365e8260eb
     range: Any
     slot_uri: frbr:imitation
     source: http://purl.org/vocab/frbr/core#
@@ -776,9 +776,9 @@ slots:
     inverse: frbr_imitation
     name: frbr_imitationOf
     notes:
-    - N9778867a70ff478683be21d0f1d30370
-    - N903035bb49a0485798cc037b9be93df9
-    - N334a1b5391da4e138d94833f67f0a364
+    - Ncb66883d281b4a548f9e40cee0e8a743
+    - N1737a82fef5b4709aefd89ec8dfd2876
+    - Nc6f23e9c10da477baa260ffbe3bb0569
     range: Any
     slot_uri: frbr:imitationOf
     source: http://purl.org/vocab/frbr/core#
@@ -792,8 +792,8 @@ slots:
     inverse: frbr_ownerOf
     name: frbr_owner
     notes:
-    - Nca2ce15b9cd743899a078d5e72316d64
-    - N4bbf078a2016491c8607bf4a7bd6924a
+    - N96a9d6c2c84145168fe80ebb3999ab7d
+    - N543e09127d034c20b1af319b6247da34
     range: frbr_ResponsibleEntity
     slot_uri: frbr:owner
     source: http://purl.org/vocab/frbr/core#
@@ -807,8 +807,8 @@ slots:
     inverse: frbr_owner
     name: frbr_ownerOf
     notes:
-    - N31697c4d49624519860ed8949aeee148
-    - N1052f7d120b740d6940a6941363a2d72
+    - N7a28f17fbbd94c1b856b9bf6837ea5df
+    - N936dd68c9156459b839fde971db9a708
     range: frbr_Item
     slot_uri: frbr:ownerOf
     source: http://purl.org/vocab/frbr/core#
@@ -821,8 +821,8 @@ slots:
     inverse: frbr_partOf
     name: frbr_part
     notes:
-    - N4504b5d631d940ee8e17bd54adfafcae
-    - N6194874804a84b5ab876fb0ee0f1eab5
+    - N1e76b55f52d44bbd96b4a601709427a0
+    - N0ef728e5118e449cbd7e511bea96385c
     range: Any
     slot_uri: frbr:part
     source: http://purl.org/vocab/frbr/core#
@@ -835,8 +835,8 @@ slots:
     inverse: frbr_part
     name: frbr_partOf
     notes:
-    - N0f25772ff04f4ac788deb2040e0093f1
-    - Necca1806ebc049bb99e4dc2773a61bb0
+    - N851aa1e56bcf4651862875a20c89381c
+    - Nad9684e29d4f4d44965d0a4ecad9ec1a
     range: Any
     slot_uri: frbr:partOf
     source: http://purl.org/vocab/frbr/core#
@@ -850,8 +850,8 @@ slots:
     inverse: frbr_producerOf
     name: frbr_producer
     notes:
-    - N37b475b1ddf24b30bfb1bd32071af7c9
-    - Nca6cc54e12ee4b2d87f9c1769de72531
+    - N930769cca1a34a5684f84be55d67e486
+    - N21ed9ea6f46b4e8283ae1226f8385f26
     range: frbr_ResponsibleEntity
     slot_uri: frbr:producer
     source: http://purl.org/vocab/frbr/core#
@@ -865,8 +865,8 @@ slots:
     inverse: frbr_producer
     name: frbr_producerOf
     notes:
-    - N85719bd044df44d286c12279972006a1
-    - Nea7d7840ec174f978076a619a2c137f7
+    - Na572a2a5b492453691ca6f78ffeed3e2
+    - N2601220faf404ecb8602f09c1f63d7d2
     range: frbr_Manifestation
     slot_uri: frbr:producerOf
     source: http://purl.org/vocab/frbr/core#
@@ -881,8 +881,8 @@ slots:
     inverse: frbr_realizationOf
     name: frbr_realization
     notes:
-    - Nee550afcca0e4db69e7b33ece68e4a47
-    - Nd188e3881d254e59994cf33ae27b65a6
+    - N522847c5390f4bfc92cf3943f8017460
+    - N6493fe68b0dd40f98bebfe1e8908b2c6
     range: frbr_Expression
     slot_uri: frbr:realization
     source: http://purl.org/vocab/frbr/core#
@@ -896,8 +896,8 @@ slots:
     inverse: frbr_realization
     name: frbr_realizationOf
     notes:
-    - N3886425c16b74989ac1802691a186286
-    - N0ea8013b69d04229877ed5da802a48e3
+    - N098ff51e8c93482aab4c53195527a0a7
+    - Nfc5e7ddcf1d64cf88ade3e179d69fcd0
     range: frbr_Work
     slot_uri: frbr:realizationOf
     source: http://purl.org/vocab/frbr/core#
@@ -911,8 +911,8 @@ slots:
     inverse: frbr_realizerOf
     name: frbr_realizer
     notes:
-    - N32fdca1d6b674d768f39c38f84a5483a
-    - N39cd1a25133245adad100bb6b9fce553
+    - N62e3f67b7ef5484b9ba6a7d7b61d498f
+    - N0449bcacdeb44a379f244ff9000d76fe
     range: frbr_ResponsibleEntity
     slot_uri: frbr:realizer
     source: http://purl.org/vocab/frbr/core#
@@ -926,8 +926,8 @@ slots:
     inverse: frbr_realizer
     name: frbr_realizerOf
     notes:
-    - Nc002f3f60dfb45d78fffd3fb16c307e1
-    - N275132463bf74f9280ee19cb18b11532
+    - Nabfc97fd127444a784ca60036e1af8cc
+    - N1c284592b56c4a2f8c3301a992c85828
     range: frbr_Expression
     slot_uri: frbr:realizerOf
     source: http://purl.org/vocab/frbr/core#
@@ -964,8 +964,8 @@ slots:
     domain: frbr_Endeavour
     name: frbr_relatedEndeavour
     notes:
-    - N16328c50dc1b4e08b078f793d6faaa26
-    - Nc5d18a9711da4dda8a7127e54e442bdd
+    - Nb44d5bbfed654862ac71f91ee1a44fed
+    - N4694c3876241457797f007e9a8808bca
     range: frbr_Endeavour
     slot_uri: frbr:relatedEndeavour
     source: http://purl.org/vocab/frbr/core#
@@ -977,9 +977,9 @@ slots:
     inverse: frbr_reproductionOf
     name: frbr_reproduction
     notes:
-    - Neda89d840e5f454e8dad44d6b75176f6
-    - N5d7b2b317a86420a92077b4b76dc7fed
-    - Nf5636429bc654d3399080b65918e0678
+    - Nba33f829fbef4cdda7f596cfe77a5eb7
+    - Naf1daa95d44f474391a1eb3276c748b5
+    - N3710cd24d43545adb0bc855dfafab7e1
     range: Any
     slot_uri: frbr:reproduction
     source: http://purl.org/vocab/frbr/core#
@@ -992,9 +992,9 @@ slots:
     inverse: frbr_reproduction
     name: frbr_reproductionOf
     notes:
-    - N10e334288fae42de9a6ad6a4c6a533c9
-    - Nf2ea37d21fba4bfe806d6f95e3f5a811
-    - Ncb1b09682c864825a177d01277fc77d3
+    - N0f363384b8be4930b214429ae8fb2552
+    - N22e211fd014b41b98a59dc391fbb3f6f
+    - Na8d50998a8a0431bbf25b73658a170f9
     range: Any
     slot_uri: frbr:reproductionOf
     source: http://purl.org/vocab/frbr/core#
@@ -1008,8 +1008,8 @@ slots:
     inverse: frbr_responsibleEntityOf
     name: frbr_responsibleEntity
     notes:
-    - Na1d27feb9f0a4883b3205d500023bcd2
-    - Nefc56ad4019341ccb5004e1688abf2bc
+    - Ne592ee3a831345b8a20a2b53cf60f782
+    - N49ae1774e3cc40829719f17491b6535a
     range: frbr_ResponsibleEntity
     slot_uri: frbr:responsibleEntity
     source: http://purl.org/vocab/frbr/core#
@@ -1022,8 +1022,8 @@ slots:
     inverse: frbr_responsibleEntity
     name: frbr_responsibleEntityOf
     notes:
-    - Na10d0063d72241cb8eb6ba96b632a133
-    - Nd93e6adbaa1d4c21be3d3ce089b8e1de
+    - N10a7f1dc06b74ad2b5b31821b624b0cb
+    - Ncbf0a49cc24f480b834c1df18fcee20b
     range: frbr_Endeavour
     slot_uri: frbr:responsibleEntityOf
     source: http://purl.org/vocab/frbr/core#
@@ -1036,9 +1036,9 @@ slots:
     inverse: frbr_revisionOf
     name: frbr_revision
     notes:
-    - Nb590b7fcc2674a4f97d68f4f6eb058da
-    - N33e762ef0d1149aa9c7b4425f75e3927
-    - N7aa22673c9b0489081dd4d1d7b103ec3
+    - N6f3ffbbeacb04a1590a077a9a4164510
+    - N7ff326fb569a46d78923f57e1aea9e72
+    - Nc107e0890db849819b63828b590bcb70
     range: frbr_Expression
     slot_uri: frbr:revision
     source: http://purl.org/vocab/frbr/core#
@@ -1052,9 +1052,9 @@ slots:
     inverse: frbr_revision
     name: frbr_revisionOf
     notes:
-    - N8de481435bec4490bb7d1a172deb9a21
-    - N2beb53a3498c42a591b36950674ae1ca
-    - N155cd13ce32846f5a48060fc62a826cb
+    - N1903aa9e65b543d7acc2c9b4313f342e
+    - Nae2afc7442224b868fc8392ccd2a534a
+    - N8f2b23e3808c4e0998dd5a79b1a91125
     range: frbr_Expression
     slot_uri: frbr:revisionOf
     source: http://purl.org/vocab/frbr/core#
@@ -1067,8 +1067,8 @@ slots:
     domain: frbr_Work
     name: frbr_subject
     notes:
-    - N8ac28a495f2c4d789a354d495c82aa39
-    - Nf87eafc9fe454f2c8846cadeb8987f89
+    - N0ac34f228cad4a17a3eb389b23ccd8a4
+    - N5047d15c82634d35a556a002bcf7dd8b
     range: Any
     slot_uri: frbr:subject
     source: http://purl.org/vocab/frbr/core#
@@ -1080,9 +1080,9 @@ slots:
     inverse: frbr_successorOf
     name: frbr_successor
     notes:
-    - Nd0006aa0493748a898051f5bbda2728c
-    - Nc2062545bf144a52b2673f1541267954
-    - N174cc24c7c084878a48b16bc9b20b2b6
+    - Nfdc92198fe5e4ba6bf4fafc0428543cd
+    - N3e3b126397ff45a4a4695766832c3dd2
+    - Nb532ddf93fc94f1aa581839be02fe62a
     range: Any
     slot_uri: frbr:successor
     source: http://purl.org/vocab/frbr/core#
@@ -1095,9 +1095,9 @@ slots:
     inverse: frbr_successor
     name: frbr_successorOf
     notes:
-    - N2a02ae5964b74b729323352eb708dbb9
-    - N3dfd2b851212441dbd5dfe5400b3003d
-    - Nf16d4eeb7f1a4e509644ce86821f62c9
+    - Nead6dae0467d4d72a55e75fec1d4e1ca
+    - N8a3af63e0d4b4b54be8662fd95558e8c
+    - N38f4c4ecddae45019dd00e5c4989f72b
     range: Any
     slot_uri: frbr:successorOf
     source: http://purl.org/vocab/frbr/core#
@@ -1110,9 +1110,9 @@ slots:
     inverse: frbr_summarizationOf
     name: frbr_summarization
     notes:
-    - N468a4b808f0940838ccf5797a829c0b7
-    - N8814261a9595400b8b2921204ed89855
-    - N5a81ac4e9c6b494f8237053e87851589
+    - N0f0fb1a4aa5942ad8dfb30097ec638e0
+    - N27bf8b11c6e14567ac446be3cbf23e5d
+    - Nf712ff86f2574e75846b5f7ea9546287
     range: Any
     slot_uri: frbr:summarization
     source: http://purl.org/vocab/frbr/core#
@@ -1125,9 +1125,9 @@ slots:
     inverse: frbr_summarization
     name: frbr_summarizationOf
     notes:
-    - N1319bb1361ae46dab8cb04336bf4d17e
-    - N62700f271f3042ac98204fcb2d4970a4
-    - N1536f2b6605d4c0fb246c57bbe0e8d33
+    - Nd7ae8dd97981498482f1d0d4010fda9a
+    - N04f79922394e47bbbc5b2a3e0c066be3
+    - Nc085f5551725443db7810d7ea5cf3524
     range: Any
     slot_uri: frbr:summarizationOf
     source: http://purl.org/vocab/frbr/core#
@@ -1140,9 +1140,9 @@ slots:
     inverse: frbr_supplementOf
     name: frbr_supplement
     notes:
-    - N9dd8d3a5e6d64d9fac41947a39cc7843
-    - Ne8bf86ee283b464c8f079df8c1b6c9d3
-    - Nd81b835eab4a46a39c104a2ee9fc91d2
+    - N0ab2487617af4cc384495de54b0a74ec
+    - Nf0678ed5c62d47bd91e85ef4c2b51e9c
+    - Nca375ce3aa9a42d996a7968d8195ac6b
     range: Any
     slot_uri: frbr:supplement
     source: http://purl.org/vocab/frbr/core#
@@ -1155,9 +1155,9 @@ slots:
     inverse: frbr_supplement
     name: frbr_supplementOf
     notes:
-    - Nadc7813548604c30af7a44a78472aa59
-    - Nff047d62e4b9435fbc29c2bd0b043c8a
-    - N1bea92e33ec9435aadc388f104c5d388
+    - Nc58ba5f59df1457facf1bfd93e42db90
+    - N43667c1b1f1c4fbfbd3b2a500676bb3a
+    - N6ebaead98dd34f9b99221682e21d9d42
     range: Any
     slot_uri: frbr:supplementOf
     source: http://purl.org/vocab/frbr/core#
@@ -1170,9 +1170,9 @@ slots:
     inverse: frbr_transformationOf
     name: frbr_transformation
     notes:
-    - Ncab07785abaa4d4cbf9d1b80ac88b366
-    - N39c2bab49e4a468cb154ffb9a3f6b04f
-    - N3eda1770d4114843b8e2d939613aab10
+    - N231c4c65593a47939971ec7e07e9a47e
+    - Nff5226b4623c46068c73a6ba820468e3
+    - N149dd7e4ca72475c8b7e73cf6a8b48c8
     range: Any
     slot_uri: frbr:transformation
     source: http://purl.org/vocab/frbr/core#
@@ -1185,9 +1185,9 @@ slots:
     inverse: frbr_transformation
     name: frbr_transformationOf
     notes:
-    - N81e5f279088149b0867cea97f0e78ebd
-    - N55ead7f5396b4970b2cdd929ab22ea0a
-    - N2ebc0ed2a76e4f35a4f4a6aa73d8e614
+    - N75a256a07f6c4045850f955cd4eca996
+    - N3f22ef1bf5264318be5abcd20d1e078f
+    - N610dc97f0f3547689db6ffb6ead3e91d
     range: Any
     slot_uri: frbr:transformationOf
     source: http://purl.org/vocab/frbr/core#
@@ -1201,9 +1201,9 @@ slots:
     inverse: frbr_translationOf
     name: frbr_translation
     notes:
-    - Naee243f3527447508d93b0b75035aefb
-    - N9ff3473ab6c74eef9a87c5942eaca295
-    - N7d8ac6dfef784ab59586085e9f922cd8
+    - Nee418b069b1c4d4fb62a0e9ff4783dbb
+    - Na625e470c41e4db2b3bd105bfc2c09c7
+    - N6f316abf0cbe4ea7bc21fcb1e04ef720
     range: frbr_Expression
     slot_uri: frbr:translation
     source: http://purl.org/vocab/frbr/core#
@@ -1217,9 +1217,9 @@ slots:
     inverse: frbr_translation
     name: frbr_translationOf
     notes:
-    - N5f525894400d48218de937272bf935d8
-    - Nd13aa224a8f143409c51b39ae271273b
-    - N78ef2511b6154a4cb898728e76fc96eb
+    - Nce4a76499f45415388672056980be58a
+    - N3a1daa6c7a034cd89e6a395bc47cccb9
+    - N53dcec06b03943659813a872bd77f8ab
     range: frbr_Expression
     slot_uri: frbr:translationOf
     source: http://purl.org/vocab/frbr/core#

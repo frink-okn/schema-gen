@@ -97,18 +97,18 @@ classes:
     title: Project
 comments:
 - 'title: Friend of a Friend (FOAF) vocabulary'
-created_on: '2025-07-15T20:25:12.561729'
-default_prefix: okn
+created_on: '2025-07-17T18:43:54.528251'
+default_prefix: okns
 description: The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF
   Schema and the Web Ontology Language.
 id: okns:foaf
 imports:
-- okns:wgs
-- okns:owl-rdf-rdfs
-- https://purl.org/okn/schema/extended_types
 - okns:wot
+- okns:wgs
 - okns:skos
-last_updated_on: '2025-07-15T20:25:12.561729'
+- okns:extended_types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-17T18:43:54.528251'
 name: foaf
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -119,7 +119,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  schema: http://schema.org/
+  sdos: http://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
@@ -328,6 +328,17 @@ slots:
     slot_uri: foaf:holdsAccount
     source: http://xmlns.com/foaf/0.1/
     title: account
+  foaf_homepage:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A homepage for some thing.
+    domain: owl_Thing
+    name: foaf_homepage
+    range: foaf_Document
+    slot_uri: foaf:homepage
+    source: http://xmlns.com/foaf/0.1/
+    subproperty_of: foaf_isPrimaryTopicOf
+    title: homepage
   foaf_icqChatID:
     comments:
     - No occurrences of this slot in the graph.
@@ -502,6 +513,17 @@ slots:
     slot_uri: foaf:myersBriggs
     source: http://xmlns.com/foaf/0.1/
     title: myersBriggs
+  foaf_name:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A name for some thing.
+    domain: owl_Thing
+    name: foaf_name
+    range: rdfs_Literal
+    slot_uri: foaf:name
+    source: http://xmlns.com/foaf/0.1/
+    subproperty_of: rdfs_label
+    title: name
   foaf_nick:
     comments:
     - No occurrences of this slot in the graph.

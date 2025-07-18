@@ -104,6 +104,18 @@ annotations:
                   string:
                     tag: string
                     value: 5
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value: 1
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -143,6 +155,9 @@ annotations:
           rdfs:label:
             tag: rdfs:label
             value: 5
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value: 1
           skos:prefLabel:
             tag: skos:prefLabel
             value: 3
@@ -157,7 +172,7 @@ annotations:
             value: org:Head
           owl:Restriction:
             tag: owl:Restriction
-            value: nc17bfcaa8386441bab0688b25da465eeb21
+            value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
       pairs:
         tag: pairs
         value:
@@ -178,7 +193,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb5
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b5
           foaf:mbox:
             tag: foaf:mbox
             value:
@@ -190,13 +205,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: ogiraldo@fi.upm.es
+                        value: dave@epimorphics.com
                       predicate:
                         tag: predicate
                         value: foaf:mbox
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb8
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b1
           foaf:name:
             tag: foaf:name
             value:
@@ -208,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Olga Ximena Giraldo
+                        value: Dave Reynolds
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb8
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b1
           org:roleProperty:
             tag: org:roleProperty
             value:
@@ -262,7 +277,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb21
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
                   rdfs:Class:
                     tag: rdfs:Class
                     value:
@@ -274,7 +289,7 @@ annotations:
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb21
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -292,7 +307,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb21
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
                   rdf:Property:
                     tag: rdf:Property
                     value:
@@ -304,7 +319,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: nc17bfcaa8386441bab0688b25da465eeb21
+                        value: n0cb3a3268e4745ec8a56ffa62c7a2000b21
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -359,6 +374,36 @@ annotations:
                       subject:
                         tag: subject
                         value: org:Head
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: org:FormalOrganization
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subClassOf
+                      subject:
+                        tag: subject
+                        value: gr:BusinessEntity
+                  rdfs:Class:
+                    tag: rdfs:Class
+                    value:
+                      object:
+                        tag: object
+                        value: org:FormalOrganization
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subClassOf
+                      subject:
+                        tag: subject
+                        value: gr:BusinessEntity
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -757,11 +802,11 @@ classes:
     is_a: skos_Concept
     name: org_Role
     slots:
-    - org_roleProperty
     - rdfs_isDefinedBy
     - skos_prefLabel
     - rdfs_label
     - rdfs_comment
+    - org_roleProperty
     source: http://www.w3.org/ns/org
     title: Role
   org_Site:
@@ -829,30 +874,29 @@ comments:
 - 'title: Ontologia delle organizzazioni'
 - "title: Ontolog\xEDa de organizaciones"
 contributors:
-- nc17bfcaa8386441bab0688b25da465eeb1
-- nc17bfcaa8386441bab0688b25da465eeb2
-- nc17bfcaa8386441bab0688b25da465eeb3
-- nc17bfcaa8386441bab0688b25da465eeb4
-- nc17bfcaa8386441bab0688b25da465eeb5
-- nc17bfcaa8386441bab0688b25da465eeb6
-- nc17bfcaa8386441bab0688b25da465eeb7
-- nc17bfcaa8386441bab0688b25da465eeb8
-- nc17bfcaa8386441bab0688b25da465eeb9
-created_on: '2025-07-15T20:27:50.040763'
-default_prefix: okn
+- n0cb3a3268e4745ec8a56ffa62c7a2000b1
+- n0cb3a3268e4745ec8a56ffa62c7a2000b2
+- n0cb3a3268e4745ec8a56ffa62c7a2000b3
+- n0cb3a3268e4745ec8a56ffa62c7a2000b4
+- n0cb3a3268e4745ec8a56ffa62c7a2000b5
+- n0cb3a3268e4745ec8a56ffa62c7a2000b6
+- n0cb3a3268e4745ec8a56ffa62c7a2000b7
+- n0cb3a3268e4745ec8a56ffa62c7a2000b8
+- n0cb3a3268e4745ec8a56ffa62c7a2000b9
+created_on: '2025-07-17T18:44:26.483756'
+default_prefix: okns
 description: Vocabulary for describing organizational structures, specializable to
   a broad variety of types of organization.
 id: okns:org
 imports:
-- okns:foaf
+- okns:extended_types
 - okns:prov
+- okns:skos
 - linkml:types
 - okns:owl-rdf-rdfs
-- okns:skos
-- okns:adms
 - okns:wot
-- https://purl.org/okn/schema/extended_types
-last_updated_on: '2025-07-15T20:27:50.040763'
+- okns:foaf
+last_updated_on: '2025-07-17T18:44:26.483756'
 name: org
 prefixes:
   foaf: http://xmlns.com/foaf/0.1/
@@ -1749,8 +1793,8 @@ slots:
     title: role
   org_roleProperty:
     any_of:
-    - range: rdf_Property
     - range: owl_ObjectProperty
+    - range: rdf_Property
     comments:
     - "title: r\xF4le (propri\xE9t\xE9)"
     - "title: ruolo (propriet\xE0)"
@@ -1780,7 +1824,6 @@ slots:
       the existence of a direct property relationship through an inference rule of
       the form: { [] org:member ?a; org:organization ?o; org:role [org:roleProperty
       ?r] } -> {?a ?r ?o}'
-    - No occurrences of this slot in the graph.
     description: 'This is a metalevel property which is used to annotate an `org:Role`
       instance with a sub-property of `org:memberOf` that can be used to directly
       indicate the role for easy of query. The intended semantics is a Membership

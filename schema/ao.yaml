@@ -34,8 +34,8 @@ classes:
 comments:
 - 'last_updated_on: 2010-09-13T13:59:52+01:00'
 - 'title: The Association Ontology'
-created_on: '2025-07-15T20:28:44.241104'
-default_prefix: okn
+created_on: '2025-07-17T18:44:36.924052'
+default_prefix: okns
 description: "\u240AThe Association Ontology specification provides basic properties\
   \ for describing specific associations to something, e.g. a context, an occasion,\
   \ a genre or a mood, and enables furthermore, a mechanism to like/rate and feedback\
@@ -44,13 +44,13 @@ description: "\u240AThe Association Ontology specification provides basic proper
 id: okns:ao
 imports:
 - okns:wot
-- okns:sim
+- okns:extended_types
 - okns:owl-rdf-rdfs
-- okns:event
-- https://purl.org/okn/schema/extended_types
-- okns:rev
 - okns:dc
-last_updated_on: '2025-07-15T20:28:44.241104'
+- okns:event
+- okns:sim
+- okns:rev
+last_updated_on: '2025-07-17T18:44:36.924052'
 name: ao
 prefixes:
   ao: http://purl.org/ontology/ao/core#

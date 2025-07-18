@@ -35,8 +35,8 @@ annotations:
                   uri:
                     tag: uri
                     value: 3
-          schema:affiliation:
-            tag: schema:affiliation
+          sdos:affiliation:
+            tag: sdos:affiliation
             value:
               untyped:
                 tag: untyped
@@ -56,8 +56,8 @@ annotations:
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value: 3
-          schema:affiliation:
-            tag: schema:affiliation
+          sdos:affiliation:
+            tag: sdos:affiliation
             value: 2
   examples:
     tag: examples
@@ -79,13 +79,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/2011/gld/
+                        value: http://www.w3.org/People/all#phila
                       predicate:
                         tag: predicate
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: n8907f43da50243d3bbea6834a202f17eb5
+                        value: nff339531d2204548aaf7ad976d17be67b1
           foaf:name:
             tag: foaf:name
             value:
@@ -97,14 +97,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Government Linked Data WG, based on output from the
-                          ADMS Working Group
+                        value: Phil Archer
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: n8907f43da50243d3bbea6834a202f17eb5
+                        value: nff339531d2204548aaf7ad976d17be67b1
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -116,15 +115,15 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://andrea-perego.name/foaf/#me
+                        value: http://philarcher.org/foaf.rdf#me
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: n8907f43da50243d3bbea6834a202f17eb2
-          schema:affiliation:
-            tag: schema:affiliation
+                        value: nff339531d2204548aaf7ad976d17be67b1
+          sdos:affiliation:
+            tag: sdos:affiliation
             value:
               untyped:
                 tag: untyped
@@ -137,10 +136,10 @@ annotations:
                         value: http://www.w3.org/data#W3C
                       predicate:
                         tag: predicate
-                        value: schema:affiliation
+                        value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: n8907f43da50243d3bbea6834a202f17eb1
+                        value: nff339531d2204548aaf7ad976d17be67b1
 classes:
   adms_Asset:
     class_uri: adms:Asset
@@ -214,17 +213,17 @@ classes:
 comments:
 - 'title: Asset Description Metadata Schema (ADMS)'
 - 'title: Asset Description Metadata Schema (ADMS)'
-- 'created_by: n8907f43da50243d3bbea6834a202f17eb2'
-- 'created_by: n8907f43da50243d3bbea6834a202f17eb4'
+- 'created_by: nff339531d2204548aaf7ad976d17be67b2'
+- 'created_by: nff339531d2204548aaf7ad976d17be67b4'
 - 'last_updated_on: 2013-05-24'
 - 'last_updated_on: 2013-09-16'
 - 'last_updated_on: 2013-12-21'
 - 'last_updated_on: 2015-07-22'
 - 'description: This file specifies the set of RDF classes and properties used in
   ADMS'
-created_by: n8907f43da50243d3bbea6834a202f17eb1
-created_on: '2025-07-15T20:25:00.794168'
-default_prefix: okn
+created_by: nff339531d2204548aaf7ad976d17be67b1
+created_on: '2025-07-17T18:44:59.193037'
+default_prefix: okns
 description: "This is the RDF encoding of the Asset Description Metadata Schema, originally\
   \ \r\u240A    developed under the European Union's ISA Programme and further developed\
   \ by the W3C Government Linked Data Working Group.\r\u240A    It re-uses terms from\
@@ -232,12 +231,14 @@ description: "This is the RDF encoding of the Asset Description Metadata Schema,
   \ more."
 id: okns:adms
 imports:
-- https://purl.org/okn/schema/extended_types
-- okns:xhv
 - okns:owl-rdf-rdfs
+- okns:extended_types
+- okns:foaf
+- okns:sdo
+- okns:xhv
 - linkml:types
 - okns:skos
-last_updated_on: '2025-07-15T20:25:00.794168'
+last_updated_on: '2025-07-17T18:44:59.193037'
 name: adms
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -249,7 +250,7 @@ prefixes:
   owl: http://www.w3.org/2002/07/owl#
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
-  schema: http://schema.org/
+  sdos: http://schema.org/
   skos: http://www.w3.org/2004/02/skos/core#
   voaf: http://purl.org/vocommons/voaf#
   xhv: http://www.w3.org/1999/xhtml/vocab#
@@ -387,19 +388,4 @@ slots:
     slot_uri: adms:versionNotes
     source: http://www.w3.org/TR/vocab-adms
     title: version info
-  foaf_homepage:
-    comments:
-    - No occurrences of this slot in the graph.
-    range: uri
-    slot_uri: foaf:homepage
-  foaf_name:
-    comments:
-    - No occurrences of this slot in the graph.
-    range: string
-    slot_uri: foaf:name
-  schema_affiliation:
-    comments:
-    - No occurrences of this slot in the graph.
-    range: uri
-    slot_uri: schema:affiliation
 title: No schema name specified

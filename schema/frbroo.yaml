@@ -300,6 +300,8 @@ classes:
     description: This class comprises the sums of concepts which appear in the course
       of the coherent evolution of an original idea into one or more expressions that
       are dominated by the original idea.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F1_Work
     is_a: cidoc-crm_E89_Propositional_Object
     name: frbroo_F1
     notes:
@@ -346,6 +348,8 @@ classes:
       as an instance of F10 Person does not imply that the concept comprises personae.'
     description: This class comprises real persons who live or are assumed to have
       lived.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F10_Person
     is_a: cidoc-crm_E21_Person
     name: frbroo_F10
     notes:
@@ -378,6 +382,8 @@ classes:
       expeditions, exhibitions, festivals, fairs, etc. are modelled as F11 Corporate
       Bodies when they are named and can take collective action, such as approving
       a report or publishing their proceedings.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F11_Corporate_Body
     is_a: cidoc-crm_E74_Group
     name: frbroo_F11
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -402,6 +408,8 @@ classes:
       symbols, sound symbols, ideograms etc.) that are used or can be used to refer
       to and identify a specific instance of some class or category within a certain
       context.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F12_Nomen
     is_a: cidoc-crm_E41_Appellation
     name: frbroo_F12
     notes:
@@ -429,6 +437,8 @@ classes:
       CRM Entity in order to identify them uniquely and permanently within the context
       of one or more organisations. Such codes are often known as inventory numbers,
       registration codes, etc. and are typically composed of alphanumeric sequences.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F13_Identifier
     is_a: frbroo_F12
     name: frbroo_F13
     notes:
@@ -454,6 +464,8 @@ classes:
     description: This class comprises works that are realised by one and only one
       self-contained expression, i.e., works representing the concept as expressed
       by precisely this expression, and that do not have other works as parts.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F14_Individual_Work
     is_a: frbroo_F1
     name: frbroo_F14
     notes:
@@ -494,6 +506,8 @@ classes:
       Work can be taken up by any creator who acquires the spirit of its concept,
       it is never finished in an absolute sense.'
     description: This class comprises works that have more than one work as members.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F15_Complex_Work
     is_a: frbroo_F1
     name: frbroo_F15
     notes:
@@ -540,6 +554,8 @@ classes:
       words, recitation and movement to texts, instrumentation to musical scores etc.
       This does not make the contents of the incorporated expressions part of the
       Container Work, but only part of the resulting expression.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F16_Container_Work
     is_a: frbroo_F1
     name: frbroo_F16
     notes:
@@ -563,6 +579,8 @@ classes:
       does not make the resulting complex work an aggregate work as well. The inclusion
       of expressions from a complex work in an aggregation work does not make the
       aggregation work itself complex.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F17_Aggregation_Work
     is_a: frbroo_F14
     name: frbroo_F17
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -583,6 +601,8 @@ classes:
       part of the Serial Work.'
     description: This class comprises works that are, or have been, planned to result
       in sequences of manifestations with common features.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F18_Serial_Work
     is_a: frbroo_F15
     name: frbroo_F18
     notes:
@@ -606,6 +626,8 @@ classes:
     description: This class comprises works that have been planned to result in a
       manifestation product type and that pertain to the rendering of expressions
       from other works.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F19_Publication_Work
     is_a: frbroo_F16
     name: frbroo_F19
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -652,6 +674,8 @@ classes:
       jokes, musical or choreographic notations, movement pattern, sound pattern,
       images, multimedia objects, or any combination of such forms that have objectively
       recognisable structures.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F2_Expression
     is_a: cidoc-crm_E73_Information_Object
     name: frbroo_F2
     notes:
@@ -705,6 +729,8 @@ classes:
       \ of \"Hamlet\"."
     description: This class comprises the sets of concepts for rendering a particular
       or a series of like performances.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F20_Performance_Work
     is_a: frbroo_F16
     name: frbroo_F20
     notes:
@@ -732,6 +758,8 @@ classes:
       instance of F21 is also an F16 Container Work'
     description: This class comprises works that conceptualise the capturing of features
       of perdurants.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F21_Recording_Work
     is_a: frbroo_F1
     name: frbroo_F21
     notes:
@@ -767,6 +795,8 @@ classes:
       as self-contained.'
     description: This class comprises the immaterial realisations of individual works
       at a particular time that are regarded as a complete whole.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F22_Self_Contained_Expression
     is_a: frbroo_F2
     name: frbroo_F22
     notes:
@@ -806,6 +836,8 @@ classes:
       clip from a movie, etc.).'
     description: This class comprises parts of Expressions and these parts are not
       Self-contained Expressions themselves.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F23_Expression_Fragment
     is_a: frbroo_F2
     name: frbroo_F23
     notes:
@@ -837,6 +869,8 @@ classes:
     description: This class comprises complete sets of signs present in publications,
       reflecting publishers' final decisions as to both selection of content and layout
       of the publications.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F24_Publication_Expression
     is_a: frbroo_F22
     name: frbroo_F24
     notes:
@@ -872,6 +906,8 @@ classes:
     description: This class comprises sets of directions to which individual performances
       of theatrical, choreographic, or musical works and their combinations should
       conform.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F25_Performance_Plan
     is_a: frbroo_F22
     name: frbroo_F25
     notes:
@@ -895,6 +931,8 @@ classes:
     description: This class comprises expressions which are created in instances of
       F29 Recording Event. A recording is intended to convey (and preserve) the features
       of one or more perdurants.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F26_Recording
     is_a: frbroo_F22
     name: frbroo_F26
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -909,6 +947,8 @@ classes:
       library practice to the work; which is usually a later event.'
     description: This class comprises the births of original ideas. It marks the initiation
       of the creation of a work.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F27_Work_Conception
     is_a: cidoc-crm_E65_Creation
     name: frbroo_F27
     notes:
@@ -942,6 +982,8 @@ classes:
       P. 179-195).'
     description: This class comprises activities that result in instances of F2 Expression
       coming into existence.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F28_Expression_Creation
     is_a: cidoc-crm_E12_Production
     name: frbroo_F28
     notes:
@@ -972,6 +1014,8 @@ classes:
     description: This class comprises activities that intend to convey (and preserve)
       the content of events in a recording, such as a live recording of a performance,
       a documentary, or other capture of a perdurant.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F29_Recording_Event
     is_a: frbroo_F28
     name: frbroo_F29
     notes:
@@ -1004,6 +1048,8 @@ classes:
       \ In this sense, it may be said that a typical bibliographic record for a publication\
       \ (not a manuscript) reflects the notion of F3 Manifestation Product Type."
     description: This class comprises the definitions of publication products.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F3_Manifestation_Product_Type
     is_a: cidoc-crm_E55_Type
     name: frbroo_F3
     notes:
@@ -1044,6 +1090,8 @@ classes:
       the file is regarded as the electronic equivalent of F32 Carrier Production
       Event.'
     description: This class comprises the activities of publishing.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F30_Publication_Event
     is_a: frbroo_F28
     name: frbroo_F30
     notes:
@@ -1076,6 +1124,8 @@ classes:
       plan, such as a theatrical play, an expression of a choreographic work or a
       musical work; i.e., they are intended to communicate directly or indirectly
       to an audience.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F31_Performance
     is_a: cidoc-crm_E7_Activity
     name: frbroo_F31
     notes:
@@ -1101,6 +1151,8 @@ classes:
       as source material F24 Publication Expression.'
     description: This class comprises activities that result in instances of F5 Item
       coming into existence.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F32_Carrier_Production_Event
     is_a: cidoc-crm_E12_Production
     name: frbroo_F32
     notes:
@@ -1136,6 +1188,8 @@ classes:
       or less mechanically, of an instance of E84 Information Carrier (such as an
       F5 Item or an F4 Manifestation Singleton which is also instance of E84 Information
       Carrier), preserving the expression carried by it.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F33_Reproduction_Event
     is_a: cidoc-crm_E12_Production
     name: frbroo_F33
     notes:
@@ -1168,6 +1222,8 @@ classes:
     description: This class comprises documents that establish controlled terminology
       (nomina) for consistent use. They may also describe relationships between entities
       and controlled terminology and relationships between entities.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F34_KOS
     is_a: frbroo_F2
     name: frbroo_F34
     notes:
@@ -1188,6 +1244,8 @@ classes:
     description: This class comprises statements relating a Thema with a particular
       Nomen and its usage in the context of a common Complex Work realized by one
       or more KOS.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F35_Nomen_Use_Statement
     is_a: frbroo_F2
     name: frbroo_F35
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1199,6 +1257,8 @@ classes:
       of signs from one script or type set to another.'
     description: This class comprises rule sets for converting signs or arrangements
       of signs from one script or type set to another.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F36_Script_Conversion
     is_a: cidoc-crm_E29_Design_or_Procedure
     name: frbroo_F36
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1214,6 +1274,8 @@ classes:
       as disjoint, but related entities.'
     description: This class comprises fictional or iconographic individuals or groups
       of individual appearing in works in a way relevant as subjects.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F38_Character
     is_a: cidoc-crm_E28_Conceptual_Object
     name: frbroo_F38
     notes:
@@ -1234,6 +1296,8 @@ classes:
       family justified by relationships of birth, marriage, adoption, civil union,
       or similar social or legal status and an assumed common tradition, including
       examples such as royal families, dynasties, houses of nobility, etc.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F39_Family
     is_a: cidoc-crm_E74_Group
     name: frbroo_F39
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1252,6 +1316,8 @@ classes:
     description: This class comprises physical objects that each carry an instance
       of F2 Expression, and that were produced as unique objects, with no siblings
       intended in the course of their production.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F4_Manifestation_Singleton
     is_a: cidoc-crm_E24_Physical_Man-Made_Thing
     name: frbroo_F4
     notes:
@@ -1276,6 +1342,8 @@ classes:
       assignment of uniform titles as controlled access points for works or expressions'
     description: This class comprises activities that result in the allocation of
       an identifier to any E1 CRM Entity.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F40_Identifier_Assignment
     is_a: cidoc-crm_E15_Identifier_Assignment
     name: frbroo_F40
     notes:
@@ -1309,6 +1377,8 @@ classes:
       Type or F4 Manifestation Singleton (most prominently, information about the
       title) can be inferred to also apply to that instance of F2 Expression, no matter
       within which manifestation it is embodied.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F41_Representative_Manifestation_Assignment
     is_a: cidoc-crm_E13_Attribute_Assignment
     name: frbroo_F41
     notes:
@@ -1342,6 +1412,8 @@ classes:
       F2 Expression (most prominently, information about the title) can be inferred
       to also apply to that instance of F15 Complex Work, no matter in which particular
       expression it is realised.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F42_Representative_Expression_Assignment
     is_a: cidoc-crm_E13_Attribute_Assignment
     name: frbroo_F42
     notes:
@@ -1364,6 +1436,8 @@ classes:
       of a unique identifier'
     description: This class comprises sets of instructions relating to the formulation
       of a unique identifier
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F43_Identifier_Rule
     is_a: frbroo_F2
     name: frbroo_F43
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1386,6 +1460,8 @@ classes:
       \ for the description of copies of such publications actually held by libraries,\
       \ and for the description of unique documents (manuscripts, objects \u2026)\
       \ held by libraries."
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F44_Bibliographic_Agency
     is_a: cidoc-crm_E40_Legal_Body
     name: frbroo_F44
     notes:
@@ -1406,6 +1482,8 @@ classes:
     description: This class comprises physical objects (printed books, scores, CDs,
       DVDs, CD-ROMS, etc.) that carry a F24 Publication Expression and were produced
       by an industrial process involving a F3 Manifestation Product Type.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F5_Item
     is_a: cidoc-crm_E84_Information_Carrier
     name: frbroo_F5
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1427,6 +1505,8 @@ classes:
       rules based on widely known and accepted properties for their generation, that
       an independent agency using the same rule would create the same identifier for
       the same thing.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F50_Controlled_Access_Point
     is_a: frbroo_F13
     name: frbroo_F50
     notes:
@@ -1444,6 +1524,8 @@ classes:
       in a specific professional or creative domain or field.'
     description: This class comprises periods of continuous activity of an Actor in
       a specific professional or creative domain or field.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F51_Pursuit
     is_a: cidoc-crm_E7_Activity
     name: frbroo_F51
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1459,6 +1541,8 @@ classes:
       classifying these activities as instances of F52 Name Use Activity.'
     description: This class comprises periods of continuous use of a specific instance
       of E41 Appellation for a particular instance of E1 CRM Entity by an E39 Actor.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F52_Name_Use_Activity
     is_a: cidoc-crm_E13_Attribute_Assignment
     name: frbroo_F52
     notes:
@@ -1488,6 +1572,8 @@ classes:
       the last carrier and the last memory are lost. [Scope note for E28 Conceptual
       Object in CIDOC CRM version 5.0.1]'
     description: An abstract notion or idea.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F6_Concept
     is_a: cidoc-crm_E28_Conceptual_Object
     name: frbroo_F6
     notes:
@@ -1515,6 +1601,8 @@ classes:
       Physical Object in CIDOC CRM version 5.0.1]'
     description: This class comprises all persistent physical items with a relatively
       stable form, man-made or natural.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F7_Object
     is_a: cidoc-crm_E18_Physical_Thing
     name: frbroo_F7
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -1554,6 +1642,8 @@ classes:
       Event, and F30 Publication Event]'
     description: This class comprises sets of coherent phenomena or cultural manifestations
       bounded in time and space.
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F8_Event
     is_a: cidoc-crm_E4_Period
     name: frbroo_F8
     notes:
@@ -1609,6 +1699,8 @@ classes:
     description: 'This class comprises extents in space, in particular on the surface
       of the earth, in the pure sense of physics: independent from temporal phenomena
       and matter.'
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/F9_Place
     is_a: cidoc-crm_E53_Place
     name: frbroo_F9
     notes:
@@ -1632,16 +1724,16 @@ classes:
       \ objects, geographic features, events or geo-political units."
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: Place
-created_on: '2025-07-15T20:26:56.226612'
-default_prefix: okn
+created_on: '2025-07-17T18:44:14.466307'
+default_prefix: okns
 id: okns:frbroo
 imports:
-- okns:skos
-- okns:owl-rdf-rdfs
-- https://purl.org/okn/schema/extended_types
-- linkml:types
 - okns:dc
-last_updated_on: '2025-07-15T20:26:56.226612'
+- okns:owl-rdf-rdfs
+- okns:extended_types
+- linkml:types
+- okns:skos
+last_updated_on: '2025-07-17T18:44:14.466307'
 name: frbroo
 prefixes:
   cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/
@@ -1940,6 +2032,8 @@ slots:
       Product Type, with an instance of E30 Right, which applies to all exemplars
       of that publication, as long as they are recognised as exemplars of that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP104_subject_to
     inverse: frbroo_CLP104i
     name: frbroo_CLP104
     notes:
@@ -1955,6 +2049,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP104_subject_to.
     domain: cidoc-crm_E30_Right
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to
     inverse: frbroo_CLP104
     name: frbroo_CLP104i
     range: frbroo_F3
@@ -1973,6 +2069,8 @@ slots:
       on all exemplars of that publication, as long as they are recognised as exemplars
       of that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP105_right_held_by
     inverse: frbroo_CLP105i
     name: frbroo_CLP105
     range: cidoc-crm_E39_Actor
@@ -1984,6 +2082,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP105_right_held_by.
     domain: cidoc-crm_E39_Actor
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP105i_right_on
     inverse: frbroo_CLP105
     name: frbroo_CLP105i
     range: frbroo_F3
@@ -2008,6 +2108,8 @@ slots:
       Product Type, with an instance of E55 Type, which all exemplars of that publication
       should belong to, as long as they are recognised as exemplars of that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP2_should_have_type
     inverse: frbroo_CLP2i
     name: frbroo_CLP2
     notes:
@@ -2028,6 +2130,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP2_should_have_type.
     domain: cidoc-crm_E55_Type
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP2i_should_be_type_of
     inverse: frbroo_CLP2
     name: frbroo_CLP2i
     range: frbroo_F3
@@ -2053,6 +2157,8 @@ slots:
       publication should have, as long as they are recognised as exemplars of that
       publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP43_should_have_dimension
     inverse: frbroo_CLP43i
     name: frbroo_CLP43
     notes:
@@ -2073,6 +2179,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP43_should_have_dimension.
     domain: cidoc-crm_E54_Dimension
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i_should_be_dimension_of
     inverse: frbroo_CLP43
     name: frbroo_CLP43i
     range: frbroo_F3
@@ -2098,6 +2206,8 @@ slots:
       publication should consist of, as long as they are recognised as exemplars of
       that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP45_should_consist_of
     inverse: frbroo_CLP45i
     name: frbroo_CLP45
     notes:
@@ -2118,6 +2228,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP45_should_consist_of.
     domain: cidoc-crm_E57_Material
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i_should_be_incorporated_in
     inverse: frbroo_CLP45
     name: frbroo_CLP45i
     range: frbroo_F3
@@ -2136,6 +2248,8 @@ slots:
       instance of F3 Manifestation Product Type with that instance of F3 Manifestation
       Product Type.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP46_should_be_composed_of
     inverse: frbroo_CLP46i
     name: frbroo_CLP46
     range: frbroo_F3
@@ -2147,6 +2261,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLP46_should_be_composed_of.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i_may_form_part_of
     inverse: frbroo_CLP46
     name: frbroo_CLP46i
     range: frbroo_F3
@@ -2172,6 +2288,8 @@ slots:
       units all exemplars of that publication should consist of, as long as they are
       recognised as complete exemplars of that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLP57_should_have_number_of_parts
     name: frbroo_CLP57
     notes:
     - 'Typically, this property is observed on one exemplar of a publication, and
@@ -2205,6 +2323,8 @@ slots:
       of that publication should carry, as long as they are recognised as complete
       exemplars of that publication.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLR6_should_carry
     inverse: frbroo_CLR6i
     name: frbroo_CLR6
     notes:
@@ -2225,6 +2345,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of CLR6_should_carry.
     domain: frbroo_F24
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/CLR6i_should_be_carried_by
     inverse: frbroo_CLR6
     name: frbroo_CLR6i
     range: frbroo_F3
@@ -2239,6 +2361,8 @@ slots:
     description: This property associates an instance of F1 Work which logically continues
       the content of another instance of F1 Work with the latter.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of
     inverse: frbroo_R1i
     name: frbroo_R1
     range: frbroo_F1
@@ -2253,6 +2377,8 @@ slots:
       instance of F1 Work that forms part of it. The Work becomes complex by the fact
       that it has other instances of Work as members.
     domain: frbroo_F15
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member
     inverse: frbroo_R10i
     name: frbroo_R10
     range: frbroo_F1
@@ -2265,6 +2391,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R10_has_member.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R10i_is_member_of
     inverse: frbroo_R10
     name: frbroo_R10i
     range: frbroo_F15
@@ -2284,6 +2412,8 @@ slots:
       instance of E29 Design or Procedure that specifies the issuing policy planned
       by this Work, such as sequencing pattern, expected frequency and expected regularity.
     domain: frbroo_F18
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R11_has_issuing_rule
     inverse: frbroo_R11i
     name: frbroo_R11
     notes:
@@ -2298,6 +2428,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R11_has_issuing_rule.
     domain: cidoc-crm_E29_Design_or_Procedure
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R11i_is_issuing_rule_of
     inverse: frbroo_R11
     name: frbroo_R11i
     range: frbroo_F18
@@ -2316,6 +2448,8 @@ slots:
       etc.) which express the directions the instance of F20 Performance Work consists
       of.
     domain: frbroo_F20
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R12_is_realised_in
     inverse: frbroo_R12i
     name: frbroo_R12
     range: frbroo_F25
@@ -2328,6 +2462,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R12_is_realised_in.
     domain: frbroo_F25
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R12i_realises
     inverse: frbroo_R12
     name: frbroo_R12i
     range: frbroo_F20
@@ -2346,6 +2482,8 @@ slots:
     description: This property associates an instance of F21 Recording Work with an
       instance of F26 Recording realising the instance of F21 Recording work.
     domain: frbroo_F21
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R13_is_realised_in
     inverse: frbroo_R13i
     name: frbroo_R13
     notes:
@@ -2362,6 +2500,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R13_is_realised_in.
     domain: frbroo_F26
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R13i_realises
     inverse: frbroo_R13
     name: frbroo_R13i
     range: frbroo_F21
@@ -2390,6 +2530,8 @@ slots:
       of an independent work. The incorporated expression may be self-contained or
       fragmentary.
     domain: frbroo_F22
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R14_incorporates
     inverse: frbroo_R14i
     name: frbroo_R14
     notes:
@@ -2413,6 +2555,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R14_incorporates.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R14i_is_incorporated_in
     inverse: frbroo_R14
     name: frbroo_R14i
     range: frbroo_F22
@@ -2428,6 +2572,8 @@ slots:
     description: This property associates the fragment of an expression and the expression
       of which it is a fragment.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment
     inverse: frbroo_R15i
     name: frbroo_R15
     range: frbroo_F23
@@ -2440,6 +2586,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R15_has_fragment.
     domain: frbroo_F23
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R15i_is_fragment_of
     inverse: frbroo_R15
     name: frbroo_R15i
     range: frbroo_F2
@@ -2458,6 +2606,8 @@ slots:
     description: This property associates the first conception of a work and the work
       itself that ensued from a given initial idea.
     domain: frbroo_F27
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R16_initiated
     inverse: frbroo_R16i
     name: frbroo_R16
     notes:
@@ -2474,6 +2624,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R16_initiated.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R16i_was_initiated_by
     inverse: frbroo_R16
     name: frbroo_R16i
     range: frbroo_F27
@@ -2489,6 +2641,8 @@ slots:
     description: This property associates the expression that was first externalised
       during a particular creation event with that particular creation event.
     domain: frbroo_F28
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R17_created
     inverse: frbroo_R17i
     name: frbroo_R17
     range: frbroo_F2
@@ -2501,6 +2655,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R17_created.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R17i_was_created_by
     inverse: frbroo_R17
     name: frbroo_R17i
     range: frbroo_F28
@@ -2518,6 +2674,8 @@ slots:
       the first physical objects in which the resulting instance of F2 Expression
       was embodied.
     domain: frbroo_F28
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R18_created
     inverse: frbroo_R18i
     name: frbroo_R18
     range: frbroo_F4
@@ -2530,6 +2688,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R18_created.
     domain: frbroo_F4
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R18i_was_created_by
     inverse: frbroo_R18
     name: frbroo_R18i
     range: frbroo_F28
@@ -2548,6 +2708,8 @@ slots:
       the corresponding instance of F14 Individual Work or an instance of F15 Complex
       Work of which the corresponding instance of F14 Individual Work is a member.
     domain: frbroo_F28
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of
     inverse: frbroo_R19i
     name: frbroo_R19
     range: frbroo_F1
@@ -2560,6 +2722,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R19_created_a_realization_of.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through
     inverse: frbroo_R19
     name: frbroo_R19i
     range: frbroo_F28
@@ -2572,6 +2736,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R1_is_logical_successor_of.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R1i_has_successor
     inverse: frbroo_R1
     name: frbroo_R1i
     range: frbroo_F1
@@ -2589,6 +2755,8 @@ slots:
     description: This property associates an instance of F1 Work which modifies the
       content of another instance of F1 Work with the latter.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R2_is_derivative_of
     inverse: frbroo_R2i
     name: frbroo_R2
     notes:
@@ -2607,6 +2775,8 @@ slots:
     description: This property associates an instance of F29 Recording Event with
       the instance of E5 Event which was captured.
     domain: frbroo_F29
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R20_recorded
     inverse: frbroo_R20i
     name: frbroo_R20
     range: cidoc-crm_E2_Temporal_Entity
@@ -2619,6 +2789,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R20_recorded.
     domain: cidoc-crm_E2_Temporal_Entity
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R20i_was_recorded_through
     inverse: frbroo_R20
     name: frbroo_R20i
     range: frbroo_F29
@@ -2634,6 +2806,8 @@ slots:
     description: This property associates an instance of F29 Recording Event with
       the instance of F26 Recording that was created.
     domain: frbroo_F29
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R21_created
     inverse: frbroo_R21i
     name: frbroo_R21
     range: frbroo_F26
@@ -2646,6 +2820,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R21_created.
     domain: frbroo_F26
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R21i_was_created_through
     inverse: frbroo_R21
     name: frbroo_R21i
     range: frbroo_F29
@@ -2661,6 +2837,8 @@ slots:
     description: This property associates an instance of F29 Recording Event with
       the instance of F21 Recording Work it realised.
     domain: frbroo_F29
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R22_created_a_realization_of
     inverse: frbroo_R22i
     name: frbroo_R22
     range: frbroo_F21
@@ -2673,6 +2851,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R22_created_a_realization_of.
     domain: frbroo_F21
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R22i_was_realised_through
     inverse: frbroo_R22
     name: frbroo_R22i
     range: frbroo_F29
@@ -2688,6 +2868,8 @@ slots:
     description: This property associates an instance of F30 Publication Event with
       the instance of F19 Publication Work it realised.
     domain: frbroo_F30
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R23_created_a_realization_of
     inverse: frbroo_R23i
     name: frbroo_R23
     range: frbroo_F19
@@ -2700,6 +2882,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R23_created_a_realization_of.
     domain: frbroo_F19
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R23i_was_realised_through
     inverse: frbroo_R23
     name: frbroo_R23i
     range: frbroo_F30
@@ -2717,6 +2901,8 @@ slots:
       that was created during a particular F30 Publication Event with that F30 Publication
       Event.
     domain: frbroo_F30
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R24_created
     inverse: frbroo_R24i
     name: frbroo_R24
     range: frbroo_F24
@@ -2729,6 +2915,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R24_created.
     domain: frbroo_F24
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R24i_was_created_through
     inverse: frbroo_R24
     name: frbroo_R24i
     range: frbroo_F30
@@ -2746,6 +2934,8 @@ slots:
       instance of F25 Performance Plan to which all those participating in the performance
       were supposed to conform.
     domain: frbroo_F31
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R25_performed
     inverse: frbroo_R25i
     name: frbroo_R25
     range: frbroo_F25
@@ -2758,6 +2948,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R25_performed.
     domain: frbroo_F25
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R25i_was_performed_in
     inverse: frbroo_R25
     name: frbroo_R25i
     range: frbroo_F31
@@ -2773,6 +2965,8 @@ slots:
     description: This property associates an instance of F32 Carrier Production Event
       with the instance of F3 Manifestation Product Type it produced items of.
     domain: frbroo_F32
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R26_produced_things_of_type
     inverse: frbroo_R26i
     name: frbroo_R26
     range: frbroo_F3
@@ -2784,6 +2978,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R26_produced_things_of_type.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R26i_was_produced_by
     inverse: frbroo_R26
     name: frbroo_R26i
     range: frbroo_F32
@@ -2800,6 +2996,8 @@ slots:
       with the set of signs provided by the publisher to be carried by all of the
       produced items.
     domain: frbroo_F32
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R27_used_as_source_material
     inverse: frbroo_R27i
     name: frbroo_R27
     range: frbroo_F24
@@ -2812,6 +3010,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R27_used_as_source_material.
     domain: frbroo_F24
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R27i_was_used_by
     inverse: frbroo_R27
     name: frbroo_R27i
     range: frbroo_F32
@@ -2827,6 +3027,8 @@ slots:
     description: This property associates an instance of F32 Carrier Production Event
       with any one of the produced items (i.e., the instances of F5 Item).
     domain: frbroo_F32
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R28_produced
     inverse: frbroo_R28i
     name: frbroo_R28
     range: frbroo_F5
@@ -2839,6 +3041,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R28_produced.
     domain: frbroo_F5
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R28i_was_produced_by
     inverse: frbroo_R28
     name: frbroo_R28i
     range: frbroo_F32
@@ -2854,6 +3058,8 @@ slots:
     description: This property associates an instance of F33 Reproduction Event with
       an instance of E84 Information Carrier it reproduces.
     domain: frbroo_F33
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R29_reproduced
     inverse: frbroo_R29i
     name: frbroo_R29
     range: cidoc-crm_E84_Information_Carrier
@@ -2866,6 +3072,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R29_reproduced.
     domain: cidoc-crm_E84_Information_Carrier
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R29i_was_reproduced_by
     inverse: frbroo_R29
     name: frbroo_R29i
     range: frbroo_F33
@@ -2878,6 +3086,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R2_is_derivative_of.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R2i_has_derivative
     inverse: frbroo_R2
     name: frbroo_R2i
     range: frbroo_F1
@@ -2902,6 +3112,8 @@ slots:
     description: This property associates an instance of F22 Self-Contained Expression
       with an instance of F1 Work.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R3_is_realised_in
     inverse: frbroo_R3i
     name: frbroo_R3
     notes:
@@ -2928,6 +3140,8 @@ slots:
     description: This property associates an instance of F33 Reproduction Event with
       an instance of E84 Information Carrier it produces.
     domain: frbroo_F33
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R30_produced
     inverse: frbroo_R30i
     name: frbroo_R30
     range: cidoc-crm_E84_Information_Carrier
@@ -2940,6 +3154,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R30_produced.
     domain: cidoc-crm_E84_Information_Carrier
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R30i_was_produced_by
     inverse: frbroo_R30
     name: frbroo_R30i
     range: frbroo_F33
@@ -2961,6 +3177,8 @@ slots:
     description: This property associates an instance of E84 Information Carrier which
       is a reproduction of another instance of E84 Information Carrier with the latter.
     domain: cidoc-crm_E84_Information_Carrier
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R31_is_reproduction_of
     inverse: frbroo_R31i
     name: frbroo_R31
     notes:
@@ -2980,6 +3198,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R31_is_reproduction_of.
     domain: cidoc-crm_E84_Information_Carrier
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R31i_has_reproduction
     inverse: frbroo_R31
     name: frbroo_R31i
     range: cidoc-crm_E84_Information_Carrier
@@ -2999,6 +3219,8 @@ slots:
       an instance of F52 Name Use Activity which provides evidence for the use of
       the particular nomen in the stated sense.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R32_is_warranted_by
     inverse: frbroo_R32i
     name: frbroo_R32
     notes:
@@ -3014,6 +3236,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R32_is_warranted_by.
     domain: frbroo_F52
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R32i_warrants
     inverse: frbroo_R32
     name: frbroo_R32i
     range: frbroo_F35
@@ -3035,6 +3259,8 @@ slots:
     description: This property associates an instance of F12 Nomen with one or more
       equivalent serialized content models for it.
     domain: frbroo_F12
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R33_has_content
     name: frbroo_R33
     notes:
     - 'In digital form the symbol arrangement constituting an instance of F12 Nomen
@@ -3064,6 +3290,8 @@ slots:
       of E52 Time-Span describing the period for which the particular KOS Expression
       was regarded as valid by its maintainers.
     domain: frbroo_F34
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R34_has_validity_period
     inverse: frbroo_R34i
     name: frbroo_R34
     notes:
@@ -3081,6 +3309,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R34_has_validity_period.
     domain: cidoc-crm_E52_Time-Span
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R34i_is_validity_period_of
     inverse: frbroo_R34
     name: frbroo_R34i
     range: frbroo_F34
@@ -3098,6 +3328,8 @@ slots:
     description: This property associates an instance of F35 Nomen Use Statement with
       an instance of F34 KOS in which the Nomen Use Statement has a given status.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R35_specified_by
     inverse: frbroo_R35i
     name: frbroo_R35
     notes:
@@ -3114,6 +3346,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R35_specified_by.
     domain: frbroo_F34
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R35i_specifies
     inverse: frbroo_R35
     name: frbroo_R35i
     range: frbroo_F35
@@ -3134,6 +3368,8 @@ slots:
       the instance of F36 Script Conversion that was used to create the Nomen referred
       to in the Nomen Use Statement.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R36_uses_script_conversion
     inverse: frbroo_R36i
     name: frbroo_R36
     notes:
@@ -3149,6 +3385,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R36_uses_script_conversion.
     domain: frbroo_F36
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R36i_is_script_conversion_used_in
     inverse: frbroo_R36
     name: frbroo_R36i
     range: frbroo_F35
@@ -3163,6 +3401,8 @@ slots:
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of F12 Nomen for which it declares usage
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R37_states_as_nomen
     inverse: frbroo_R37i
     name: frbroo_R37
     range: frbroo_F12
@@ -3175,6 +3415,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R37_states_as_nomen.
     domain: frbroo_F12
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R37i_is_stated_as_nomen_in
     inverse: frbroo_R37
     name: frbroo_R37i
     range: frbroo_F35
@@ -3190,6 +3432,8 @@ slots:
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of E1 CRM Entity for which it declares the usage of a nomen.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R38_refers_to_thema
     inverse: frbroo_R38i
     name: frbroo_R38
     range: cidoc-crm_E1_CRM_Entity
@@ -3201,6 +3445,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R38_refers_to_thema.
     domain: cidoc-crm_E1_CRM_Entity
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R38i_is_thema_of
     inverse: frbroo_R38
     name: frbroo_R38i
     range: frbroo_F35
@@ -3218,6 +3464,8 @@ slots:
       an instance of E74 Group which is the target audience for which the associated
       nomen use is intended.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R39_is_intended_for
     inverse: frbroo_R39i
     name: frbroo_R39
     notes:
@@ -3233,6 +3481,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R39_is_intended_for.
     domain: cidoc-crm_E74_Group
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R39i_is_target_audience_in
     inverse: frbroo_R39
     name: frbroo_R39i
     range: frbroo_F35
@@ -3245,6 +3495,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R3_is_realised_in.
     domain: frbroo_F22
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R3i_realises
     inverse: frbroo_R3
     name: frbroo_R3i
     range: frbroo_F1
@@ -3267,6 +3519,8 @@ slots:
       publication should carry, as long as they are recognised as complete exemplars
       of that publication.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R4_carriers_provided_by
     inverse: frbroo_R4i
     name: frbroo_R4
     notes:
@@ -3311,6 +3565,8 @@ slots:
       that has been chosen as the most characteristic expression of the instance of
       F1 Work of which it is an expression.
     domain: frbroo_F1
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R40_has_representative_expression
     inverse: frbroo_R40i
     name: frbroo_R40
     notes:
@@ -3347,6 +3603,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R40_has_representative_expression.
     domain: frbroo_F22
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R40i_is_representative_expression_for
     inverse: frbroo_R40
     name: frbroo_R40i
     range: frbroo_F1
@@ -3373,6 +3631,8 @@ slots:
       Type that has been chosen as the most characteristic Manifestation Product Type
       of the instance of F2 Expression of which it is a manifestation.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R41_has_representative_manifestation_product_type
     inverse: frbroo_R41i
     name: frbroo_R41
     notes:
@@ -3395,6 +3655,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R41_has_representative_manifestation_product_type.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R41i_is_representative_manifestation_product_type_for
     inverse: frbroo_R41
     name: frbroo_R41i
     range: frbroo_F2
@@ -3425,6 +3687,8 @@ slots:
       Singleton that has been chosen as the most characteristic Manifestation Singleton
       of the instance of F2 Expression of which it is a manifestation.
     domain: frbroo_F4
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R42_is_representative_manifestation_singleton_for
     inverse: frbroo_R42i
     name: frbroo_R42
     notes:
@@ -3447,6 +3711,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R42_is_representative_manifestation_singleton_for.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R42i_has_representative_manifestation_singleton
     inverse: frbroo_R42
     name: frbroo_R42i
     range: frbroo_F4
@@ -3471,6 +3737,8 @@ slots:
       which instance of F3 Manifestation Product Type or F4 Manifestation Singleton)
       is representative for a given expression.
     domain: frbroo_F41
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R43_carried_out_by
     inverse: frbroo_R43i
     name: frbroo_R43
     notes:
@@ -3489,6 +3757,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R43_carried_out_by.
     domain: frbroo_F44
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R43i_performed
     inverse: frbroo_R43
     name: frbroo_R43i
     range: frbroo_F41
@@ -3511,6 +3781,8 @@ slots:
       or more of its cataloguers) and the assigning of which expression is representative
       for a given Work.
     domain: frbroo_F42
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R44_carried_out_by
     inverse: frbroo_R44i
     name: frbroo_R44
     notes:
@@ -3529,6 +3801,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R44_carried_out_by.
     domain: frbroo_F44
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R44i_performed
     inverse: frbroo_R44
     name: frbroo_R44i
     range: frbroo_F42
@@ -3544,6 +3818,8 @@ slots:
     description: This property identifies the entity to which an actor, such as a
       bibliographic agency, assigned an instance of F13 Identifier.
     domain: frbroo_F40
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R45_assigned_to
     inverse: frbroo_R45i
     name: frbroo_R45
     range: cidoc-crm_E1_CRM_Entity
@@ -3556,6 +3832,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R45_assigned_to.
     domain: cidoc-crm_E1_CRM_Entity
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R45i_was_assigned_by
     inverse: frbroo_R45
     name: frbroo_R45i
     range: frbroo_F40
@@ -3571,6 +3849,8 @@ slots:
     description: This property associates the instance of F13 Identifier assigned
       to an instance of E1 CRM Entity and the event of assigning it.
     domain: frbroo_F40
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R46_assigned_to
     inverse: frbroo_R46i
     name: frbroo_R46
     range: frbroo_F13
@@ -3583,6 +3863,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R46_assigned_to.
     domain: frbroo_F13
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R46i_was_assigned_by
     inverse: frbroo_R46
     name: frbroo_R46i
     range: frbroo_F40
@@ -3600,6 +3882,8 @@ slots:
       Identifier to an entity with the elements that an actor used to compose that
       identifier.
     domain: frbroo_F40
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R47_used_constituent
     inverse: frbroo_R47i
     name: frbroo_R47
     range: cidoc-crm_E90_Symbolic_Object
@@ -3612,6 +3896,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R47_used_constituent.
     domain: cidoc-crm_E90_Symbolic_Object
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R47i_was_used_in
     inverse: frbroo_R47
     name: frbroo_R47i
     range: frbroo_F40
@@ -3629,6 +3915,8 @@ slots:
       instance of F3 Manifestation Product Type or F4 Manifestation Singleton with
       the expression to which it was assigned.
     domain: frbroo_F41
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R48_assigned_to
     inverse: frbroo_R48i
     name: frbroo_R48
     range: frbroo_F2
@@ -3641,6 +3929,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R48_assigned_to.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R48i_assigned
     inverse: frbroo_R48
     name: frbroo_R48i
     range: frbroo_F41
@@ -3658,6 +3948,8 @@ slots:
       instance of F3 Manifestation Product Type with the F3 Manifestation Product
       Type which has been assigned.
     domain: frbroo_F41
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R49_assigned
     inverse: frbroo_R49i
     name: frbroo_R49
     range: frbroo_F3
@@ -3670,6 +3962,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R49_assigned.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R49i_was_assigned_by
     inverse: frbroo_R49
     name: frbroo_R49i
     range: frbroo_F41
@@ -3683,6 +3977,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R4_carriers_provided_by.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R4i_comprises_carriers_of
     inverse: frbroo_R4
     name: frbroo_R4i
     range: frbroo_F2
@@ -3703,6 +3999,8 @@ slots:
       Y that conveys in itself the complete concept of a work that is member of (R10)
       the overall work realized by X.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R5_has_component
     inverse: frbroo_R5i
     name: frbroo_R5
     notes:
@@ -3724,6 +4022,8 @@ slots:
       instance of F2 Expression with the instance of F15 Complex Work to which it
       was assigned.
     domain: frbroo_F42
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R50_assigned_to
     inverse: frbroo_R50i
     name: frbroo_R50
     range: frbroo_F15
@@ -3736,6 +4036,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R50_assigned_to.
     domain: frbroo_F15
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R50i_was_assigned_by
     inverse: frbroo_R50
     name: frbroo_R50i
     range: frbroo_F42
@@ -3751,6 +4053,8 @@ slots:
     description: This property associates the event of assigning a representative
       instance of F2 Expression with the F2 Expression which has been assigned.
     domain: frbroo_F42
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R51_assigned
     inverse: frbroo_R51i
     name: frbroo_R51
     range: frbroo_F2
@@ -3763,6 +4067,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R51_assigned.
     domain: frbroo_F2
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R51i_was_assigned_by
     inverse: frbroo_R51
     name: frbroo_R51i
     range: frbroo_F42
@@ -3780,6 +4086,8 @@ slots:
       Identifier with the instructions followed by an actor, such as a Bibliographic
       Agency, in creating that identifier.
     domain: frbroo_F40
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule
     inverse: frbroo_R52i
     name: frbroo_R52
     range: frbroo_F43
@@ -3792,6 +4100,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R52_used_rule.
     domain: frbroo_F43
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_by
     inverse: frbroo_R52
     name: frbroo_R52i
     range: frbroo_F40
@@ -3809,6 +4119,8 @@ slots:
       instance of F4 Manifestation Singleton with the F4 Manifestation Singleton which
       has been assigned.
     domain: frbroo_F41
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R53_assigned
     inverse: frbroo_R53i
     name: frbroo_R53
     range: frbroo_F4
@@ -3821,6 +4133,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R53_assigned.
     domain: frbroo_F4
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R53i_was_assigned_by
     inverse: frbroo_R53
     name: frbroo_R53i
     range: frbroo_F41
@@ -3839,6 +4153,8 @@ slots:
       an instance of E56 Language which is a target language for the associated nomen
       use.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R54_has_nomen_language
     inverse: frbroo_R54i
     name: frbroo_R54
     range: cidoc-crm_E56_Language
@@ -3851,6 +4167,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R54_has_nomen_language.
     domain: cidoc-crm_E56_Language
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R54i_is_language_of_nomen_in
     inverse: frbroo_R54
     name: frbroo_R54i
     range: frbroo_F35
@@ -3870,6 +4188,8 @@ slots:
       Use Statement, such as abbreviation, full name etc. In the case of abbreviations,
       the source of this form may or may not be explicitly mentioned.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form
     inverse: frbroo_R55i
     name: frbroo_R55
     range: cidoc-crm_E55_Type
@@ -3882,6 +4202,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R55_has_nomen_form.
     domain: cidoc-crm_E55_Type
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in
     inverse: frbroo_R55
     name: frbroo_R55i
     range: frbroo_F35
@@ -3901,6 +4223,8 @@ slots:
       another instance of F35 Nomen Use Statement which has a related use in some
       context, such as alternative, lexical variant, replacing former use etc.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R56_has_related_use
     inverse: frbroo_R56i
     name: frbroo_R56
     notes:
@@ -3916,6 +4240,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R56_has_related_use.
     domain: frbroo_F35
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R56i_is_related_use_for
     inverse: frbroo_R56
     name: frbroo_R56i
     range: frbroo_F35
@@ -3933,6 +4259,8 @@ slots:
     description: This property associates an instance of F38 Character with an instance
       of E39 Actor that the character is motivated by or is intended to represent.
     domain: frbroo_F38
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R57_is_based_on
     inverse: frbroo_R57i
     name: frbroo_R57
     notes:
@@ -3947,6 +4275,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R57_is_based_on.
     domain: cidoc-crm_E39_Actor
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R57i_is_basis_for
     inverse: frbroo_R57
     name: frbroo_R57i
     range: frbroo_F38
@@ -3963,6 +4293,8 @@ slots:
       a group with another instance of F38 Character that is presented in relevant
       fiction as a member of the fictional group.
     domain: frbroo_F38
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R58_has_fictional_member
     inverse: frbroo_R58i
     name: frbroo_R58
     range: frbroo_F38
@@ -3974,6 +4306,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R58_has_fictional_member.
     domain: frbroo_F38
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R58i_is_fictional_member_of
     inverse: frbroo_R58
     name: frbroo_R58i
     range: frbroo_F38
@@ -3990,6 +4324,8 @@ slots:
       of E1 CRM Entity that is the typical subject of the associated activity, such
       as an area of expertise in which the actor is engaged or was engaged.
     domain: frbroo_F51
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R59_had_typical_subject
     inverse: frbroo_R59i
     name: frbroo_R59
     range: cidoc-crm_E1_CRM_Entity
@@ -4001,6 +4337,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R59_had_typical_subject.
     domain: cidoc-crm_E1_CRM_Entity
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R59i_was_typical_subject_of
     inverse: frbroo_R59
     name: frbroo_R59i
     range: frbroo_F51
@@ -4012,6 +4350,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R5_has_component.
     domain: frbroo_F22
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R5i_is_component_of
     inverse: frbroo_R5
     name: frbroo_R5i
     range: frbroo_F2
@@ -4027,6 +4367,8 @@ slots:
     description: This property associates an instance of F5 Item with the unique instance
       of F24 Publication Expression it carries.
     domain: frbroo_F5
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R6_carries
     inverse: frbroo_R6i
     name: frbroo_R6
     range: frbroo_F24
@@ -4045,6 +4387,8 @@ slots:
       of E56 Language that was characteristically used for the products of the associated
       activity.
     domain: frbroo_F51
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R60_used_to_use_language
     inverse: frbroo_R60i
     name: frbroo_R60
     notes:
@@ -4059,6 +4403,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R60_used_to_use_language.
     domain: cidoc-crm_E56_Language
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R60i_was_language_used_by
     inverse: frbroo_R60
     name: frbroo_R60i
     range: frbroo_F51
@@ -4075,6 +4421,8 @@ slots:
       the instance of E55 Type that characterizes the kind of role or context within
       which the associated name was used.
     domain: frbroo_F52
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R61_occured_in_kind_of_context
     inverse: frbroo_R61i
     name: frbroo_R61
     range: cidoc-crm_E55_Type
@@ -4086,6 +4434,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R61_occured_in_kind_of_context.
     domain: cidoc-crm_E55_Type
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R61i_was_kind_of_context_for
     inverse: frbroo_R61
     name: frbroo_R61i
     range: frbroo_F52
@@ -4102,6 +4452,8 @@ slots:
       the instance of E74 Group that characterizes the context within which the associated
       name was used as the membership in that group.
     domain: frbroo_F52
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R62_was_used_for_membership_in
     inverse: frbroo_R62i
     name: frbroo_R62
     range: cidoc-crm_E74_Group
@@ -4113,6 +4465,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R62_was_used_for_membership_in.
     domain: cidoc-crm_E74_Group
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R62i_was_context_for
     inverse: frbroo_R62
     name: frbroo_R62i
     range: frbroo_F52
@@ -4127,6 +4481,8 @@ slots:
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E1 CRM Entity that the associated name was used for.
     domain: frbroo_F52
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R63_named
     inverse: frbroo_R63i
     name: frbroo_R63
     range: cidoc-crm_E1_CRM_Entity
@@ -4139,6 +4495,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R63_named.
     domain: cidoc-crm_E1_CRM_Entity
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R63i_was_named_by
     inverse: frbroo_R63
     name: frbroo_R63i
     range: frbroo_F52
@@ -4154,6 +4512,8 @@ slots:
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E41 Appellation that was used for the associated entity.
     domain: frbroo_F52
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R64_used_name
     inverse: frbroo_R64i
     name: frbroo_R64
     range: cidoc-crm_E41_Appellation
@@ -4166,6 +4526,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R64_used_name.
     domain: cidoc-crm_E41_Appellation
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R64i_was_name_used_by
     inverse: frbroo_R64
     name: frbroo_R64i
     range: frbroo_F52
@@ -4178,6 +4540,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R6_carries.
     domain: frbroo_F24
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R6i_is_carried_by
     inverse: frbroo_R6
     name: frbroo_R6i
     range: frbroo_F5
@@ -4194,6 +4558,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: This property associates a publication with one of its exemplars.
     domain: frbroo_F5
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R7_is_example_of
     inverse: frbroo_R7i
     name: frbroo_R7
     notes:
@@ -4210,6 +4576,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R7_is_example_of.
     domain: frbroo_F3
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R7i_has_example
     inverse: frbroo_R7
     name: frbroo_R7i
     range: frbroo_F5
@@ -4225,6 +4593,8 @@ slots:
     description: This property associates an instance of F13 Identifier with one of
       the non-syntactic instances of E90 Symbolic Object which form part of it.
     domain: frbroo_F13
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R8_consists_of
     inverse: frbroo_R8i
     name: frbroo_R8
     range: cidoc-crm_E90_Symbolic_Object
@@ -4237,6 +4607,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R8_consists_of.
     domain: cidoc-crm_E90_Symbolic_Object
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R8i_forms_part_of
     inverse: frbroo_R8
     name: frbroo_R8i
     range: frbroo_F13
@@ -4254,6 +4626,8 @@ slots:
     description: This property associates an F14 Individual Work with the unique F22
       Self-Contained Expression that completely conveys it.
     domain: frbroo_F14
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R9_is_realised_in
     inverse: frbroo_R9i
     name: frbroo_R9
     notes:
@@ -4269,6 +4643,8 @@ slots:
     - No occurrences of this slot in the graph.
     description: Inverse of R9_is_realised_in.
     domain: frbroo_F22
+    exact_mappings:
+    - http://iflastandards.info/ns/fr/frbr/frbroo/R9i_realises
     inverse: frbroo_R9
     name: frbroo_R9i
     range: frbroo_F14

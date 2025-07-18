@@ -87,14 +87,14 @@ annotations:
                         tag: subject
                         value: http://www.w3.org/1999/xhtml/vocab
 classes: {}
-created_on: '2025-07-15T20:24:49.011910'
-default_prefix: okn
+created_on: '2025-07-17T18:43:50.909381'
+default_prefix: okns
 id: okns:xhv
 imports:
-- https://purl.org/okn/schema/extended_types
 - linkml:types
+- okns:extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-15T20:24:49.011910'
+last_updated_on: '2025-07-17T18:43:50.909381'
 name: xhv
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -677,8 +677,6 @@ slots:
     range: Any
     slot_uri: xhv:status
   xhv_stylesheet:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "stylesheet refers to a resource\u240A      serving as a stylesheet\
       \ for a resource."
     name: xhv_stylesheet

@@ -163,10 +163,10 @@ annotations:
         value:
           dcam:VocabularyEncodingScheme:
             tag: dcam:VocabularyEncodingScheme
-            value: dct:IMT
+            value: dct:UDC
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: dct:ISO3166
+            value: dct:Box
       pairs:
         tag: pairs
         value:
@@ -181,13 +181,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: RFC 3066 has been obsoleted by RFC 4646.
+                        value: RFC 4646 obsoletes RFC 3066.
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:RFC4646
           dct:issued:
             tag: dct:issued
             value:
@@ -214,13 +214,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2002-07-13'
+                        value: '2000-07-11'
                       predicate:
                         tag: predicate
                         value: dct:issued
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:W3CDTF
           dct:modified:
             tag: dct:modified
             value:
@@ -302,14 +302,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The set of tags constructed according to RFC 3066 for
-                          the identification of languages.
+                        value: The set of dates and times constructed according to
+                          the W3C Date and Time Formats Specification.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:W3CDTF
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -342,7 +342,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:W3CDTF
           rdfs:label:
             tag: rdfs:label
             value:
@@ -369,13 +369,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: RFC 3066
+                        value: W3C-DTF
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:W3CDTF
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -402,13 +402,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.ietf.org/rfc/rfc3066.txt
+                        value: http://www.w3.org/TR/NOTE-datetime
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: dct:RFC3066
+                        value: dct:W3CDTF
 classes:
   dcam_VocabularyEncodingScheme:
     class_uri: dcam:VocabularyEncodingScheme
@@ -417,10 +417,10 @@ classes:
     see_also:
     - https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/
     slots:
-    - rdfs_isDefinedBy
+    - rdfs_comment
     - rdfs_seeAlso
     - dct_issued
-    - rdfs_comment
+    - rdfs_isDefinedBy
     - rdfs_label
     source: http://purl.org/dc/dcam/
     title: Vocabulary Encoding Scheme
@@ -700,14 +700,14 @@ classes:
     name: dct_Standard
     source: http://purl.org/dc/terms/
     title: Standard
-created_on: '2025-07-15T20:22:38.282819'
-default_prefix: okn
+created_on: '2025-07-17T18:43:15.388579'
+default_prefix: okns
 id: okns:dc
 imports:
-- okns:owl-rdf-rdfs
+- okns:extended_types
 - linkml:types
-- https://purl.org/okn/schema/extended_types
-last_updated_on: '2025-07-15T20:22:38.282819'
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-17T18:43:15.388579'
 name: dc
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -1254,7 +1254,6 @@ slots:
   dct_description:
     comments:
     - 'description: An account of the resource.'
-    - No occurrences of this slot in the graph.
     description: 'Description may include but is not limited to: an abstract, a table
       of contents, a graphical representation, or a free-text account of the resource.'
     name: dct_description
@@ -1451,11 +1450,10 @@ slots:
     title: Is Version Of
   dct_issued:
     any_of:
-    - range: date
     - range: rdfs_Literal
+    - range: date
     comments:
     - 'description: Date of formal issuance of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.
     name: dct_issued
@@ -1516,11 +1514,10 @@ slots:
     title: Medium
   dct_modified:
     any_of:
-    - range: date
     - range: rdfs_Literal
+    - range: date
     comments:
     - 'description: Date on which the resource was changed.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.
     name: dct_modified
@@ -1543,8 +1540,6 @@ slots:
     source: http://purl.org/dc/terms/
     title: Provenance
   dct_publisher:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity responsible for making the resource available.
     name: dct_publisher
     range: uri
@@ -1692,8 +1687,6 @@ slots:
     any_of:
     - range: string
     - range: rdfs_Literal
-    comments:
-    - No occurrences of this slot in the graph.
     description: A name given to the resource.
     name: dct_title
     range: Any

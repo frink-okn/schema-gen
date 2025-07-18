@@ -175,20 +175,20 @@ classes:
 comments:
 - 'title: RDF Review Vocabulary'
 - 'last_updated_on: 2007-11-08'
-created_on: '2025-07-15T20:28:30.968267'
-default_prefix: okn
+created_on: '2025-07-17T18:44:33.739512'
+default_prefix: okns
 description: Vocabulary for expressing reviews and ratings using the Resource Description
   Framework. It is compatible with hReview and conforms to OWL Lite
 id: okns:rev
 imports:
-- https://purl.org/okn/schema/extended_types
-- okns:dc
 - okns:owl-rdf-rdfs
-- okns:foaf
-- okns:cc
-- linkml:types
+- okns:dc
 - okns:wot
-last_updated_on: '2025-07-15T20:28:30.968267'
+- linkml:types
+- okns:extended_types
+- okns:cc
+- okns:foaf
+last_updated_on: '2025-07-17T18:44:33.739512'
 name: rev
 prefixes:
   cc: http://web.resource.org/cc/

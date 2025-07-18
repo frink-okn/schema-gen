@@ -289,13 +289,13 @@ annotations:
         value:
           owl:Restriction:
             tag: owl:Restriction
-            value: n76ec6414c2294841b7df14b0adb39433b16
+            value: n10cb401668a8495ebd80308243a7741db21
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: time:generalDay
           time:DayOfWeek:
             tag: time:DayOfWeek
-            value: time:Saturday
+            value: time:Thursday
           time:TemporalUnit:
             tag: time:TemporalUnit
             value: time:unitMinute
@@ -313,13 +313,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: xsd:decimal
+                        value: xsd:gYear
                       predicate:
                         tag: predicate
                         value: owl:allValuesFrom
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b10
+                        value: n10cb401668a8495ebd80308243a7741db3
           owl:cardinality:
             tag: owl:cardinality
             value:
@@ -337,7 +337,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b54
+                        value: n10cb401668a8495ebd80308243a7741db54
                   unsignedinteger:
                     tag: unsignedinteger
                     value:
@@ -349,7 +349,7 @@ annotations:
                         value: owl:cardinality
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b6
+                        value: n10cb401668a8495ebd80308243a7741db5
           owl:hasValue:
             tag: owl:hasValue
             value:
@@ -367,7 +367,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b36
+                        value: n10cb401668a8495ebd80308243a7741db36
                   time:TemporalUnit:
                     tag: time:TemporalUnit
                     value:
@@ -379,7 +379,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b44
+                        value: n10cb401668a8495ebd80308243a7741db35
                   uri:
                     tag: uri
                     value:
@@ -391,7 +391,7 @@ annotations:
                         value: owl:hasValue
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b4
+                        value: n10cb401668a8495ebd80308243a7741db4
           owl:maxCardinality:
             tag: owl:maxCardinality
             value:
@@ -409,7 +409,7 @@ annotations:
                         value: owl:maxCardinality
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b17
+                        value: n10cb401668a8495ebd80308243a7741db18
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -427,7 +427,7 @@ annotations:
                         value: owl:onDatatype
                       subject:
                         tag: subject
-                        value: time:generalYear
+                        value: time:generalMonth
           owl:onProperty:
             tag: owl:onProperty
             value:
@@ -439,13 +439,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: time:months
+                        value: time:year
                       predicate:
                         tag: predicate
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b10
+                        value: n10cb401668a8495ebd80308243a7741db3
                   owl:FunctionalProperty:
                     tag: owl:FunctionalProperty
                     value:
@@ -457,7 +457,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b47
+                        value: n10cb401668a8495ebd80308243a7741db4
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
@@ -469,7 +469,7 @@ annotations:
                         value: owl:onProperty
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b44
+                        value: n10cb401668a8495ebd80308243a7741db15
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -481,18 +481,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Year number - formulated as a text string with a pattern\
-                          \ constraint to reproduce the same lexical form as gYear,\
-                          \ but not restricted to values from the Gregorian calendar.\
-                          \ \nNote that the value-space is not defined, so a generic\
-                          \ OWL2 processor cannot compute ordering relationships of\
-                          \ values of this type."
+                        value: "Month of year - formulated as a text string with a\
+                          \ pattern constraint to reproduce the same lexical form\
+                          \ as gMonth, except that values up to 20 are permitted,\
+                          \ in order to support calendars with more than 12 months\
+                          \ in the year. \nNote that the value-space is not defined,\
+                          \ so a generic OWL2 processor cannot compute ordering relationships\
+                          \ of values of this type."
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: time:generalYear
+                        value: time:generalMonth
           rdfs:label:
             tag: rdfs:label
             value:
@@ -504,13 +505,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Generalized year
+                        value: Generalized month
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:generalYear
+                        value: time:generalMonth
               time:DayOfWeek:
                 tag: time:DayOfWeek
                 value:
@@ -519,13 +520,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Tuesday
+                        value: Monday
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:Tuesday
+                        value: time:Monday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -534,13 +535,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Week (unit of temporal duration)
+                        value: Hour (unit of temporal duration)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
               untyped:
                 tag: untyped
                 value:
@@ -567,18 +568,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Year number - formulated as a text string with a pattern\
-                          \ constraint to reproduce the same lexical form as gYear,\
-                          \ but not restricted to values from the Gregorian calendar.\
-                          \ \nNote that the value-space is not defined, so a generic\
-                          \ OWL2 processor cannot compute ordering relationships of\
-                          \ values of this type."
+                        value: "Month of year - formulated as a text string with a\
+                          \ pattern constraint to reproduce the same lexical form\
+                          \ as gMonth, except that values up to 20 are permitted,\
+                          \ in order to support calendars with more than 12 months\
+                          \ in the year. \nNote that the value-space is not defined,\
+                          \ so a generic OWL2 processor cannot compute ordering relationships\
+                          \ of values of this type."
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: time:generalYear
+                        value: time:generalMonth
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -590,13 +592,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Dienstag
+                        value: Lundi
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:Tuesday
+                        value: time:Monday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -605,13 +607,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Woche
+                        value: Stunde
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:days:
             tag: time:days
             value:
@@ -629,7 +631,7 @@ annotations:
                         value: time:days
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:hours:
             tag: time:hours
             value:
@@ -641,13 +643,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '0'
+                        value: '1'
                       predicate:
                         tag: predicate
                         value: time:hours
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:minutes:
             tag: time:minutes
             value:
@@ -665,7 +667,7 @@ annotations:
                         value: time:minutes
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:months:
             tag: time:months
             value:
@@ -683,7 +685,7 @@ annotations:
                         value: time:months
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:seconds:
             tag: time:seconds
             value:
@@ -701,7 +703,7 @@ annotations:
                         value: time:seconds
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:weeks:
             tag: time:weeks
             value:
@@ -713,13 +715,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '1'
+                        value: '0'
                       predicate:
                         tag: predicate
                         value: time:weeks
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           time:years:
             tag: time:years
             value:
@@ -737,7 +739,7 @@ annotations:
                         value: time:years
                       subject:
                         tag: subject
-                        value: time:unitWeek
+                        value: time:unitHour
           xsd:pattern:
             tag: xsd:pattern
             value:
@@ -749,13 +751,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?'
+                        value: -?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?
                       predicate:
                         tag: predicate
                         value: xsd:pattern
                       subject:
                         tag: subject
-                        value: n76ec6414c2294841b7df14b0adb39433b60
+                        value: n10cb401668a8495ebd80308243a7741db64
 classes:
   time_DateTimeDescription:
     class_uri: time:DateTimeDescription
@@ -833,8 +835,8 @@ classes:
     - "La pertenencia a la clase 'd\xEDa de la semana' est\xE1 abierta, para permitir\
       \ longitudes de semana alternativas y diferentes nombres de d\xEDas."
     slots:
-    - rdfs_label
     - skos_prefLabel
+    - rdfs_label
     title: Day of week
   time_Duration:
     class_uri: time:Duration
@@ -1108,15 +1110,15 @@ classes:
       \ otras unidades de tiempo utilizadas en algunas aplicaciones t\xE9cnicas (por\
       \ ejemplo, millones de a\xF1os o el mes Baha'i)."
     slots:
-    - time_months
-    - time_years
-    - time_weeks
-    - time_seconds
-    - skos_prefLabel
-    - time_days
-    - time_hours
-    - rdfs_label
     - time_minutes
+    - time_days
+    - time_seconds
+    - time_weeks
+    - time_months
+    - rdfs_label
+    - time_years
+    - skos_prefLabel
+    - time_hours
     title: Temporal unit
   time_TimePosition:
     class_uri: time:TimePosition
@@ -1259,15 +1261,15 @@ contributors:
 - mailto:chris.little@metoffice.gov.uk
 - https://orcid.org/0000-0001-8269-8171
 created_by: http://orcid.org/0000-0002-3884-3420
-created_on: '2025-07-15T20:22:49.201545'
-default_prefix: okn
+created_on: '2025-07-17T18:43:17.537000'
+default_prefix: okns
 id: okns:time
 imports:
-- linkml:types
-- okns:skos
+- okns:extended_types
 - okns:owl-rdf-rdfs
-- https://purl.org/okn/schema/extended_types
-last_updated_on: '2025-07-15T20:22:49.201545'
+- okns:skos
+- linkml:types
+last_updated_on: '2025-07-17T18:43:17.537000'
 name: time
 notes:
 - '2016-06-15 - initial update of OWL-Time - modified to support arbitrary temporal
@@ -1400,7 +1402,6 @@ slots:
       in days'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en d\xEDas."
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in days
     domain: time_GeneralDurationDescription
@@ -1577,7 +1578,6 @@ slots:
       in hours'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en horas."
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in hours
     domain: time_GeneralDurationDescription
@@ -2101,7 +2101,6 @@ slots:
     - 'description: length, or element of, a temporal extent expressed in minutes'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en minutos."
-    - No occurrences of this slot in the graph.
     description: length, or element of, a temporal extent expressed in minutes
     domain: time_GeneralDurationDescription
     name: time_minutes
@@ -2161,7 +2160,6 @@ slots:
       in months'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en meses."
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in months
     domain: time_GeneralDurationDescription
@@ -2236,7 +2234,6 @@ slots:
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en segundos."
     - "title: duraci\xF3n en segundos"
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in seconds
     domain: time_GeneralDurationDescription
@@ -2329,7 +2326,6 @@ slots:
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en semanas."
     - "title: duraci\xF3n en semanas"
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in weeks
     domain: time_GeneralDurationDescription
@@ -2387,7 +2383,6 @@ slots:
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en a\xF1os."
     - "title: duraci\xF3n en a\xF1os"
-    - No occurrences of this slot in the graph.
     description: length of, or element of the length of, a temporal extent expressed
       in years
     domain: time_GeneralDurationDescription
@@ -2396,8 +2391,6 @@ slots:
     slot_uri: time:years
     title: years duration
   xsd_pattern:
-    comments:
-    - No occurrences of this slot in the graph.
     range: string
     slot_uri: xsd:pattern
 title: No schema name specified

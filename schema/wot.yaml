@@ -87,15 +87,15 @@ classes:
 comments:
 - 'last_updated_on: 2004-02-23'
 - 'title: Web Of Trust vocabulary'
-created_on: '2025-07-15T20:24:37.055115'
-default_prefix: okn
+created_on: '2025-07-17T18:43:48.399978'
+default_prefix: okns
 description: Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and
   the Web Ontology Language.
 id: okns:wot
 imports:
-- linkml:types
 - okns:ical
-last_updated_on: '2025-07-15T20:24:37.055115'
+- linkml:types
+last_updated_on: '2025-07-17T18:43:48.399978'
 name: wot
 prefixes:
   foaf: http://xmlns.com/foaf/0.1/

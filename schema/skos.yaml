@@ -58,17 +58,17 @@ classes:
     title: Ordered Collection
 comments:
 - 'title: SKOS Vocabulary'
-created_on: '2025-07-15T20:22:26.281912'
-default_prefix: okn
+created_on: '2025-07-17T18:43:13.198398'
+default_prefix: okns
 description: An RDF vocabulary for describing the basic structure and content of concept
   schemes such as thesauri, classification schemes, subject heading lists, taxonomies,
   'folksonomies', other types of controlled vocabulary, and also concept schemes embedded
   in glossaries and terminologies.
 id: okns:skos
 imports:
+- okns:extended_types
 - okns:owl-rdf-rdfs
-- https://purl.org/okn/schema/extended_types
-last_updated_on: '2025-07-15T20:22:26.281912'
+last_updated_on: '2025-07-17T18:43:13.198398'
 name: skos
 prefixes:
   okn: https://purl.org/okn/
