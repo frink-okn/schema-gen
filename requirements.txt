@@ -3,3 +3,5 @@ linkml
 rdflib==7.0.0
 rdflib-hdt
 eralchemy
+requests
+python-frontmatter
