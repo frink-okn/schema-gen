@@ -1,0 +1,4019 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          kwgo:AirPollutant:
+            tag: kwgo:AirPollutant
+            value: 7
+          kwgo:BlueskyWildfireObservableProperty:
+            tag: kwgo:BlueskyWildfireObservableProperty
+            value: 4
+          kwgo:CensusObservableProperty:
+            tag: kwgo:CensusObservableProperty
+            value: 4
+          kwgo:ClimateObservableProperty:
+            tag: kwgo:ClimateObservableProperty
+            value: 10
+          kwgo:CroplandObservableProperty:
+            tag: kwgo:CroplandObservableProperty
+            value: 132
+          kwgo:DroughtIntensity:
+            tag: kwgo:DroughtIntensity
+            value: 5
+          kwgo:EarthquakeObservableProperty:
+            tag: kwgo:EarthquakeObservableProperty
+            value: 16
+          kwgo:FireCause:
+            tag: kwgo:FireCause
+            value: 4
+          kwgo:HelipadAvailability:
+            tag: kwgo:HelipadAvailability
+            value: 2
+          kwgo:HospitalStatus:
+            tag: kwgo:HospitalStatus
+            value: 2
+          kwgo:HospitalType:
+            tag: kwgo:HospitalType
+            value: 10
+          kwgo:ImpactObservableProperty:
+            tag: kwgo:ImpactObservableProperty
+            value: 6
+          kwgo:LSADArea:
+            tag: kwgo:LSADArea
+            value: 2
+          kwgo:MTBSFireObservableProperty:
+            tag: kwgo:MTBSFireObservableProperty
+            value: 3
+          kwgo:MagnitudeObservableProperty:
+            tag: kwgo:MagnitudeObservableProperty
+            value: 7
+          kwgo:NIFCFireObservableProperty:
+            tag: kwgo:NIFCFireObservableProperty
+            value: 3
+          kwgo:PublicHealthObservableProperty:
+            tag: kwgo:PublicHealthObservableProperty
+            value: 3
+          kwgo:RoadType:
+            tag: kwgo:RoadType
+            value: 6
+          kwgo:SmokePlumeObservableProperty:
+            tag: kwgo:SmokePlumeObservableProperty
+            value: 1
+          kwgo:SoilMapUnitObservableProperty:
+            tag: kwgo:SoilMapUnitObservableProperty
+            value: 10
+          kwgo:StormTrackObservableProperty:
+            tag: kwgo:StormTrackObservableProperty
+            value: 3
+          kwgo:StormTrackletObservableProperty:
+            tag: kwgo:StormTrackletObservableProperty
+            value: 3
+          kwgo:VulnerabilityObservableProperty:
+            tag: kwgo:VulnerabilityObservableProperty
+            value: 1
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: 244
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 303
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 50
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 31
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 87
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 216
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 166
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 52
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              kwgo:LSADArea:
+                tag: kwgo:LSADArea
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              kwgo:MTBSFireObservableProperty:
+                tag: kwgo:MTBSFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:SoilMapUnitObservableProperty:
+                tag: kwgo:SoilMapUnitObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 10
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 19
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 4
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              kwgo:AirPollutant:
+                tag: kwgo:AirPollutant
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              kwgo:BlueskyWildfireObservableProperty:
+                tag: kwgo:BlueskyWildfireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              kwgo:ClimateObservableProperty:
+                tag: kwgo:ClimateObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 10
+              kwgo:CroplandObservableProperty:
+                tag: kwgo:CroplandObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 132
+              kwgo:DroughtIntensity:
+                tag: kwgo:DroughtIntensity
+                value:
+                  string:
+                    tag: string
+                    value: 5
+              kwgo:FireCause:
+                tag: kwgo:FireCause
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              kwgo:HelipadAvailability:
+                tag: kwgo:HelipadAvailability
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              kwgo:HospitalStatus:
+                tag: kwgo:HospitalStatus
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              kwgo:HospitalType:
+                tag: kwgo:HospitalType
+                value:
+                  string:
+                    tag: string
+                    value: 10
+              kwgo:ImpactObservableProperty:
+                tag: kwgo:ImpactObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              kwgo:LSADArea:
+                tag: kwgo:LSADArea
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              kwgo:MTBSFireObservableProperty:
+                tag: kwgo:MTBSFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:MagnitudeObservableProperty:
+                tag: kwgo:MagnitudeObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 7
+              kwgo:NIFCFireObservableProperty:
+                tag: kwgo:NIFCFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:PublicHealthObservableProperty:
+                tag: kwgo:PublicHealthObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:RoadType:
+                tag: kwgo:RoadType
+                value:
+                  string:
+                    tag: string
+                    value: 6
+              kwgo:SmokePlumeObservableProperty:
+                tag: kwgo:SmokePlumeObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              kwgo:SoilMapUnitObservableProperty:
+                tag: kwgo:SoilMapUnitObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 10
+              kwgo:StormTrackObservableProperty:
+                tag: kwgo:StormTrackObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:StormTrackletObservableProperty:
+                tag: kwgo:StormTrackletObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 3
+              kwgo:VulnerabilityObservableProperty:
+                tag: kwgo:VulnerabilityObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value: 1
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 228
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 294
+      slots:
+        tag: slots
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 83
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 303
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 220
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 19
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 4
+          rdfs:label:
+            tag: rdfs:label
+            value: 228
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value: 294
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          kwgo:AirPollutant:
+            tag: kwgo:AirPollutant
+            value: kwgr:airQualityObservableProperty.Ozone
+          kwgo:BlueskyWildfireObservableProperty:
+            tag: kwgo:BlueskyWildfireObservableProperty
+            value: kwgr:blueskyObservableProperty.PM25ModeledDailyEmission
+          kwgo:CensusObservableProperty:
+            tag: kwgo:CensusObservableProperty
+            value: kwgr:censusObservableProperty.totalPopulation
+          kwgo:ClimateObservableProperty:
+            tag: kwgo:ClimateObservableProperty
+            value: kwgr:climateObservableProperty.PDSI
+          kwgo:CroplandObservableProperty:
+            tag: kwgo:CroplandObservableProperty
+            value: kwgr:croplandObservableProperty.apricotsArea
+          kwgo:DroughtIntensity:
+            tag: kwgo:DroughtIntensity
+            value: kwgr:droughtObservableProperty.DroughtIntensity.D2
+          kwgo:EarthquakeObservableProperty:
+            tag: kwgo:EarthquakeObservableProperty
+            value: kwgr:earthquakeObservableProperty.magSource
+          kwgo:FireCause:
+            tag: kwgo:FireCause
+            value: kwgr:nifcFireNaturalCause
+          kwgo:HelipadAvailability:
+            tag: kwgo:HelipadAvailability
+            value: kwgr:yes
+          kwgo:HospitalStatus:
+            tag: kwgo:HospitalStatus
+            value: kwgr:open
+          kwgo:HospitalType:
+            tag: kwgo:HospitalType
+            value: kwgr:generalAcuteCare
+          kwgo:ImpactObservableProperty:
+            tag: kwgo:ImpactObservableProperty
+            value: kwgr:impactObservableProperty.damageCrop
+          kwgo:LSADArea:
+            tag: kwgo:LSADArea
+            value: kwgr:LSADArea.M2
+          kwgo:MTBSFireObservableProperty:
+            tag: kwgo:MTBSFireObservableProperty
+            value: kwgr:mtbsFireObservableProperty.MeandNBRValue
+          kwgo:MagnitudeObservableProperty:
+            tag: kwgo:MagnitudeObservableProperty
+            value: kwgr:magnitudeObservableProperty.width
+          kwgo:NIFCFireObservableProperty:
+            tag: kwgo:NIFCFireObservableProperty
+            value: kwgr:nifcFireObservableProperty.fireDiscoveryDateTime
+          kwgo:PublicHealthObservableProperty:
+            tag: kwgo:PublicHealthObservableProperty
+            value: kwgr:publicHealthObservableProperty.diabetesAgeAdjusted20PlusPercent
+          kwgo:RoadType:
+            tag: kwgo:RoadType
+            value: kwgr:roadType.M
+          kwgo:SmokePlumeObservableProperty:
+            tag: kwgo:SmokePlumeObservableProperty
+            value: kwgr:smokePlumeObservableProperty.smokeDensity
+          kwgo:SoilMapUnitObservableProperty:
+            tag: kwgo:SoilMapUnitObservableProperty
+            value: kwgr:soilMapUnitObservableProperty.castorieindex
+          kwgo:StormTrackObservableProperty:
+            tag: kwgo:StormTrackObservableProperty
+            value: kwgr:stormTrackObservableProperty.category
+          kwgo:StormTrackletObservableProperty:
+            tag: kwgo:StormTrackletObservableProperty
+            value: kwgr:stormTrackletObservableProperty.minPressure
+          kwgo:VulnerabilityObservableProperty:
+            tag: kwgo:VulnerabilityObservableProperty
+            value: kwgr:publicHealthObservableProperty.socialVulnerabilityIndex
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: kwgr:climateObservableProperty.PDSI
+          owl:Restriction:
+            tag: owl:Restriction
+            value: n7475141ef9ad436b9f92111d31b27347b295
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: wgs:wktLiteral
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: time:TemporalEntity
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b194
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value:
+                      object:
+                        tag: object
+                        value: geo:wktLiteral
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b8
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdfs:Literal
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b294
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: kwgo:detailsURL
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b235
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: sosa:observedProperty
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b165
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: kwgo:SmokePlumeObservableProperty
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b165
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value:
+                      object:
+                        tag: object
+                        value: geo:wktLiteral
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b66
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: rdfs:Literal
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b235
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'ACS label: HOUSEHOLD TYPE BY UNITS IN STRUCTURE: Total:
+                          Households -- (Estimate)'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: kwgr:censusObservableProperty.householdUnits
+              kwgo:LSADArea:
+                tag: kwgo:LSADArea
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'ACS label: Metro Area (suffix)'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: kwgr:LSADArea.M1
+              kwgo:MTBSFireObservableProperty:
+                tag: kwgo:MTBSFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The standard deviation of the mean dNBR value sampled
+                          from an unburned area outside the fire perimeter
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: kwgr:mtbsFireObservableProperty.StandardDeviationOfMeandNBRValue
+              kwgo:SoilMapUnitObservableProperty:
+                tag: kwgo:SoilMapUnitObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: overlap area in square meters
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: kwgr:overlapArea.squareMeter
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'ACS label: Metro Area (suffix)'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: kwgr:LSADArea.M1
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'ACS variable: B11011e1'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: kwgr:censusObservableProperty.householdUnits
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'ACS variable: B11011e1'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: kwgr:censusObservableProperty.householdUnits
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              kwgo:AirPollutant:
+                tag: kwgo:AirPollutant
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Daily Mean Pb Concentration
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:airQualityObservableProperty.Pb
+              kwgo:BlueskyWildfireObservableProperty:
+                tag: kwgo:BlueskyWildfireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Modeled Growth Number of Locations
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:blueskyObservableProperty.modeledGrowthNumLocation
+              kwgo:CensusObservableProperty:
+                tag: kwgo:CensusObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: household units
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:censusObservableProperty.householdUnits
+              kwgo:ClimateObservableProperty:
+                tag: kwgo:ClimateObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: precipitation
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:climateObservableProperty.precipitation
+              kwgo:CroplandObservableProperty:
+                tag: kwgo:CroplandObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: developed med intensity area
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:croplandObservableProperty.developedMedIntensityArea
+              kwgo:DroughtIntensity:
+                tag: kwgo:DroughtIntensity
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: droughtIntensity.D3
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:droughtObservableProperty.DroughtIntensity.D3
+              kwgo:FireCause:
+                tag: kwgo:FireCause
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: unknown cause
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:nifcFireUnknownCause
+              kwgo:HelipadAvailability:
+                tag: kwgo:HelipadAvailability
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: 'no'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:no
+              kwgo:HospitalStatus:
+                tag: kwgo:HospitalStatus
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: closed
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:closed
+              kwgo:HospitalType:
+                tag: kwgo:HospitalType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: children
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:children
+              kwgo:ImpactObservableProperty:
+                tag: kwgo:ImpactObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: injury indirect
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:impactObservableProperty.injuryIndirect
+              kwgo:LSADArea:
+                tag: kwgo:LSADArea
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Metropolitan Statistical Area
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:LSADArea.M1
+              kwgo:MTBSFireObservableProperty:
+                tag: kwgo:MTBSFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: differenced Normalized Burn Ratio (standard deviation)
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:mtbsFireObservableProperty.StandardDeviationOfMeandNBRValue
+              kwgo:MagnitudeObservableProperty:
+                tag: kwgo:MagnitudeObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: wind estimated gust
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:magnitudeObservableProperty.windEstimatedGust
+              kwgo:NIFCFireObservableProperty:
+                tag: kwgo:NIFCFireObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: fire out date time
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:nifcFireObservableProperty.fireOutDateTime
+              kwgo:PublicHealthObservableProperty:
+                tag: kwgo:PublicHealthObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: below poverty level percent
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:publicHealthObservableProperty.belowPovertyLevelPercent
+              kwgo:RoadType:
+                tag: kwgo:RoadType
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: county
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:roadType.C
+              kwgo:SmokePlumeObservableProperty:
+                tag: kwgo:SmokePlumeObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: smoke density
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:smokePlumeObservableProperty.smokeDensity
+              kwgo:SoilMapUnitObservableProperty:
+                tag: kwgo:SoilMapUnitObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: overlapArea
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:overlapArea.squareMeter
+              kwgo:StormTrackObservableProperty:
+                tag: kwgo:StormTrackObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: storm track min pressure
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:stormTrackObservableProperty.minPressure
+              kwgo:StormTrackletObservableProperty:
+                tag: kwgo:StormTrackletObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: storm tracklet max wind speed
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:stormTrackletObservableProperty.maxWindSpeed
+              kwgo:VulnerabilityObservableProperty:
+                tag: kwgo:VulnerabilityObservableProperty
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: social vulnerability index
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:publicHealthObservableProperty.socialVulnerabilityIndex
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Daily Mean Pb Concentration
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: kwgr:airQualityObservableProperty.Pb
+          rdfs:subClassOf:
+            tag: rdfs:subClassOf
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: kwgo:StormTrackObservation
+                      predicate:
+                        tag: predicate
+                        value: rdfs:subClassOf
+                      subject:
+                        tag: subject
+                        value: n7475141ef9ad436b9f92111d31b27347b235
+classes:
+  gnis-ld-gnis_County:
+    class_uri: gnis-ld-gnis:County
+    comments:
+    - 'description: Source - https://gnis-ld.org/'
+    description: Second-order division of a nation such as parish, borough, county,
+      municipio, or judicial division, and independent cities in Maryland, Missouri,
+      Nevada, and Virginia.
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-gnis_County
+    title: County
+  gnis-ld-gnis_State:
+    class_uri: gnis-ld-gnis:State
+    comments:
+    - 'description: Source - https://gnis-ld.org/'
+    description: First-order division of a nation.
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-gnis_State
+    title: State
+  gnis-ld-gnis_alternativeName:
+    class_uri: gnis-ld-gnis:alternativeName
+    is_a: skos_altLabel
+    name: gnis-ld-gnis_alternativeName
+    title: alternative name
+  gnis-ld-usgs_Feature:
+    class_uri: gnis-ld-usgs:Feature
+    name: gnis-ld-usgs_Feature
+    title: USGS Feature
+  http___purl.org_vocab_frbr_core_Endeavour:
+    class_uri: http://purl.org/vocab/frbr/core/Endeavour
+    description: Source - Functional Requirements for Bibliographic Record (FRBR)
+      ontology - http://www.sparontologies.net/ontologies/frbr
+    name: http___purl.org_vocab_frbr_core_Endeavour
+    title: Endeavour
+  iospress_GeoCodedLocation:
+    class_uri: iospress:GeoCodedLocation
+    description: Source - iospress LD-Connect ontology - https://github.com/stko-lab/LD-Connect
+    name: iospress_GeoCodedLocation
+    title: Geocoded Location
+  irdr_AnimalIncident:
+    class_uri: irdr:AnimalIncident
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Biological
+    name: irdr_AnimalIncident
+    title: Animal Incident
+  irdr_Biological:
+    class_uri: irdr:Biological
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Biological
+    title: Biological
+  irdr_Climatological:
+    class_uri: irdr:Climatological
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Climatological
+    title: Climatological
+  irdr_ConvectiveStorm:
+    class_uri: irdr:ConvectiveStorm
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Metereological
+    name: irdr_ConvectiveStorm
+    title: Convective Storm
+  irdr_Disease:
+    class_uri: irdr:Disease
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Biological
+    name: irdr_Disease
+    title: Disease
+  irdr_Drought:
+    class_uri: irdr:Drought
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Climatological
+    name: irdr_Drought
+    title: Drought
+  irdr_Earthquake:
+    class_uri: irdr:Earthquake
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Geophysical
+    name: irdr_Earthquake
+    title: Earthquake
+  irdr_Extraterrestrial:
+    class_uri: irdr:Extraterrestrial
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Extraterrestrial
+    title: Extraterrestrial
+  irdr_ExtratropicalStorm:
+    class_uri: irdr:ExtratropicalStorm
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Metereological
+    name: irdr_ExtratropicalStorm
+    title: Extratropical Storm
+  irdr_ExtremeTemperature:
+    class_uri: irdr:ExtremeTemperature
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Metereological
+    name: irdr_ExtremeTemperature
+    title: Extreme Temperature
+  irdr_Flood:
+    class_uri: irdr:Flood
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Hydrological
+    name: irdr_Flood
+    title: Flood
+  irdr_Fog:
+    class_uri: irdr:Fog
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Metereological
+    name: irdr_Fog
+    title: Fog
+  irdr_Geophysical:
+    class_uri: irdr:Geophysical
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Geophysical
+    title: Geophysical
+  irdr_GlacialLakeOutburst:
+    class_uri: irdr:GlacialLakeOutburst
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Climatological
+    name: irdr_GlacialLakeOutburst
+    title: Glacial Lake Outburst
+  irdr_Hydrological:
+    class_uri: irdr:Hydrological
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Hydrological
+    title: Hydrological
+  irdr_Impact:
+    class_uri: irdr:Impact
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Extraterrestrial
+    name: irdr_Impact
+    title: Impact
+  irdr_InsectInfestation:
+    class_uri: irdr:InsectInfestation
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Biological
+    name: irdr_InsectInfestation
+    title: Insect Infestation
+  irdr_Landslide:
+    class_uri: irdr:Landslide
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Hydrological
+    name: irdr_Landslide
+    title: Landslide
+  irdr_MassMovement:
+    class_uri: irdr:MassMovement
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Geophysical
+    name: irdr_MassMovement
+    title: Mass Movement
+  irdr_Metereological:
+    class_uri: irdr:Metereological
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: kwgo_Hazard
+    name: irdr_Metereological
+    title: Meterological
+  irdr_SpaceWeather:
+    class_uri: irdr:SpaceWeather
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Extraterrestrial
+    name: irdr_SpaceWeather
+    title: Space Weather
+  irdr_TropicalCyclone:
+    class_uri: irdr:TropicalCyclone
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Metereological
+    name: irdr_TropicalCyclone
+    title: Tropical Cyclone
+  irdr_VolcanicActivity:
+    class_uri: irdr:VolcanicActivity
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Geophysical
+    name: irdr_VolcanicActivity
+    title: Volcanic Activity
+  irdr_WaveAction:
+    class_uri: irdr:WaveAction
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Hydrological
+    name: irdr_WaveAction
+    title: Wave Action
+  irdr_Wildfire:
+    class_uri: irdr:Wildfire
+    description: Source - IRDR - https://www.irdrinternational.org/knowledge_pool/publications/173
+    is_a: irdr_Climatological
+    name: irdr_Wildfire
+    title: Wildfire
+  kwgo_ATH:
+    class_uri: kwgo:ATH
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_ATH
+    title: Trauma Care ATH
+  kwgo_AdministrativeRegion:
+    class_uri: kwgo:AdministrativeRegion
+    description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)
+    is_a: geo_Feature
+    name: kwgo_AdministrativeRegion
+    title: Administrative Region
+  kwgo_AdministrativeRegion_0:
+    class_uri: kwgo:AdministrativeRegion_0
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 0 - earth
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_0
+    title: Administrative Region Level 0
+  kwgo_AdministrativeRegion_1:
+    class_uri: kwgo:AdministrativeRegion_1
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 1 - national level
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_1
+    title: Administrative Region Level 1
+  kwgo_AdministrativeRegion_2:
+    class_uri: kwgo:AdministrativeRegion_2
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 2 - state/province/equivalent level
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_2
+    title: Administrative Region Level 2
+  kwgo_AdministrativeRegion_3:
+    class_uri: kwgo:AdministrativeRegion_3
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 3 - county/district/equivalent level
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_AdministrativeRegion_3
+    title: Administrative Region Level 3
+  kwgo_AdministrativeRegion_4:
+    class_uri: kwgo:AdministrativeRegion_4
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 4 - smaller level
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_4
+    title: Administrative Region Level 4
+  kwgo_AdministrativeRegion_5:
+    class_uri: kwgo:AdministrativeRegion_5
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 5 - smaller level
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_5
+    title: Administrative Region Level 5
+  kwgo_AdministrativeRegion_6:
+    class_uri: kwgo:AdministrativeRegion_6
+    comments:
+    - 'description: Source - Global Administrative area database (GADM) (https://gadm.org/data.html)'
+    description: Administrative Region Level 6 - smaller level
+    is_a: kwgo_AdministrativeRegion
+    name: kwgo_AdministrativeRegion_6
+    title: Administrative Region Level 6
+  kwgo_AirPollutant:
+    class_uri: kwgo:AirPollutant
+    description: Source - EPA (https://www.epa.gov/outdoor-air-quality-data)
+    is_a: sosa_ObservableProperty
+    name: kwgo_AirPollutant
+    slots:
+    - rdfs_label
+    title: EPA Air Pollutant Type
+  kwgo_AirQualityInstrument:
+    class_uri: kwgo:AirQualityInstrument
+    description: Source - EPA (https://www.epa.gov/outdoor-air-quality-data)
+    is_a: sosa_Sensor
+    name: kwgo_AirQualityInstrument
+    title: EPA Air Quality Instrument/Sensor
+  kwgo_AirQualityObservation:
+    class_uri: kwgo:AirQualityObservation
+    description: Source - EPA (https://www.epa.gov/outdoor-air-quality-data)
+    is_a: sosa_Observation
+    name: kwgo_AirQualityObservation
+    title: EPA Air Quality Observation
+  kwgo_AirQualityObservationCollection:
+    class_uri: kwgo:AirQualityObservationCollection
+    description: Source - EPA (https://www.epa.gov/outdoor-air-quality-data)
+    is_a: sosa_ObservationCollection
+    name: kwgo_AirQualityObservationCollection
+    title: EPA Air Quality Observation Collection
+  kwgo_AirQualitySite:
+    class_uri: kwgo:AirQualitySite
+    description: Source - EPA (https://www.epa.gov/outdoor-air-quality-data)
+    is_a: sosa_Platform
+    name: kwgo_AirQualitySite
+    title: EPA Air Quality Site
+  kwgo_BlueskyModel:
+    class_uri: kwgo:BlueskyModel
+    description: Source - Bluesky forecast (https://tools.airfire.org/websky/v1/#status)
+    is_a: sosa_Sensor
+    name: kwgo_BlueskyModel
+    title: Bluesky Model
+  kwgo_BlueskyModeledWildfire:
+    class_uri: kwgo:BlueskyModeledWildfire
+    description: Source - Bluesky forecast (https://tools.airfire.org/websky/v1/#status)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_BlueskyModeledWildfire
+    title: Bluesky Modeled Wildfire
+  kwgo_BlueskyWildfireObservableProperty:
+    class_uri: kwgo:BlueskyWildfireObservableProperty
+    description: Source - Bluesky forecast (https://tools.airfire.org/websky/v1/#status)
+    is_a: sosa_ObservableProperty
+    name: kwgo_BlueskyWildfireObservableProperty
+    slots:
+    - rdfs_label
+    title: Bluesky Wildfire Observable Property
+  kwgo_BlueskyWildfireObservation:
+    class_uri: kwgo:BlueskyWildfireObservation
+    description: Source - Bluesky forecast (https://tools.airfire.org/websky/v1/#status)
+    is_a: sosa_Observation
+    name: kwgo_BlueskyWildfireObservation
+    title: Blueky Wildfire Observation
+  kwgo_BlueskyWildfireObservationCollection:
+    class_uri: kwgo:BlueskyWildfireObservationCollection
+    description: Source - Bluesky forecast (https://tools.airfire.org/websky/v1/#status)
+    is_a: sosa_ObservationCollection
+    name: kwgo_BlueskyWildfireObservationCollection
+    title: Bluesky Wildfire Observation Collection
+  kwgo_CTH:
+    class_uri: kwgo:CTH
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_CTH
+    title: Trauma Care CTH
+  kwgo_Cell:
+    class_uri: kwgo:Cell
+    description: "A unit defined in a discrete global grid system (DGG) to partition\
+      \ the Earth\u2019s surface."
+    is_a: geo_SpatialObject
+    name: kwgo_Cell
+    title: Cell
+  kwgo_CensusACS5YearEstimatesObservation:
+    class_uri: kwgo:CensusACS5YearEstimatesObservation
+    comments:
+    - 'description: Source - US Census Bureau (https://www.census.gov/data/datasets.html)'
+    description: American Community Survey 5-Year Estimate Observation
+    is_a: sosa_Observation
+    name: kwgo_CensusACS5YearEstimatesObservation
+    title: American Community Survey 5-Year Estimate Observation
+  kwgo_CensusACS5YearEstimatesObservationCollection:
+    class_uri: kwgo:CensusACS5YearEstimatesObservationCollection
+    comments:
+    - 'description: Source - US Census Bureau (https://www.census.gov/data/datasets.html)'
+    description: American Community Survey 5-Year Estimates Observation Collection
+    is_a: sosa_ObservationCollection
+    name: kwgo_CensusACS5YearEstimatesObservationCollection
+    title: American Community Survey 5-Year Estimates
+  kwgo_CensusObservableProperty:
+    class_uri: kwgo:CensusObservableProperty
+    comments:
+    - 'description: Source - US Census Bureau (https://www.census.gov/data/datasets.html)'
+    description: American Community Survey 5-Year Estimate Observed Property
+    is_a: sosa_ObservableProperty
+    name: kwgo_CensusObservableProperty
+    slots:
+    - rdfs_isDefinedBy
+    - rdfs_comment
+    - rdfs_label
+    title: American Community Survey 5-Year Estimate Property
+  kwgo_ChiefJudge:
+    class_uri: kwgo:ChiefJudge
+    description: Source - HIFLD (https://hifld-geoplatform.opendata.arcgis.com/datasets/us-district-court-jurisdictions/explore?location=40.830482%2C-90.571266%2C4.68,
+      https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links)
+    name: kwgo_ChiefJudge
+    title: Chief Judge
+  kwgo_ClimateDivisionObservationCollection:
+    class_uri: kwgo:ClimateDivisionObservationCollection
+    comments:
+    - 'description: Source - NOAA (https://www.ncdc.noaa.gov/cag/divisional/mapping)'
+    description: Observation Collection for each individual climate division
+    is_a: sosa_ObservationCollection
+    name: kwgo_ClimateDivisionObservationCollection
+    title: Climate Division Observation Collection
+  kwgo_ClimateDivisionObservationResult:
+    class_uri: kwgo:ClimateDivisionObservationResult
+    description: Source - NOAA (https://www.ncdc.noaa.gov/cag/divisional/mapping)
+    is_a: sosa_Result
+    name: kwgo_ClimateDivisionObservationResult
+    title: Climate DIvision Observation Result
+  kwgo_ClimateDivisionPropertyObservationCollection:
+    class_uri: kwgo:ClimateDivisionPropertyObservationCollection
+    comments:
+    - 'description: Source - NOAA (https://www.ncdc.noaa.gov/cag/divisional/mapping)'
+    description: Observation Collection for each individual climate division boundary
+      and climate property
+    is_a: sosa_ObservationCollection
+    name: kwgo_ClimateDivisionPropertyObservationCollection
+    title: Climate Division Property Observation Collection
+  kwgo_ClimateObservableProperty:
+    class_uri: kwgo:ClimateObservableProperty
+    comments:
+    - 'description: Source - NOAA (https://www.ncdc.noaa.gov/cag/divisional/mapping)'
+    description: Climate Properties measured by NOAA for their Climate Division Boundaries
+    is_a: sosa_ObservableProperty
+    name: kwgo_ClimateObservableProperty
+    slots:
+    - rdfs_label
+    title: Climate Observable Property
+  kwgo_ClimateObservation:
+    class_uri: kwgo:ClimateObservation
+    comments:
+    - 'description: Source - NOAA (https://www.ncdc.noaa.gov/cag/divisional/mapping)'
+    description: NOAA Climate Division individual observations
+    is_a: sosa_Observation
+    name: kwgo_ClimateObservation
+    title: Climate Observation
+  kwgo_ComplexFire:
+    class_uri: kwgo:ComplexFire
+    is_a: kwgo_Fire
+    name: kwgo_ComplexFire
+    title: Complex Fire
+  kwgo_CrisisCounselling:
+    class_uri: kwgo:CrisisCounselling
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_CrisisCounselling
+    title: Crisis Counselling
+  kwgo_CroplandObservableProperty:
+    class_uri: kwgo:CroplandObservableProperty
+    description: Source - https://nassgeodata.gmu.edu/CropScape/
+    is_a: sosa_ObservableProperty
+    name: kwgo_CroplandObservableProperty
+    slots:
+    - rdfs_label
+    title: Cropland Observable Property
+  kwgo_CroplandObservation:
+    class_uri: kwgo:CroplandObservation
+    description: Source - https://nassgeodata.gmu.edu/CropScape/
+    is_a: sosa_Observation
+    name: kwgo_CroplandObservation
+    title: Cropland Observation
+  kwgo_CroplandObservationCollection:
+    class_uri: kwgo:CroplandObservationCollection
+    description: Source - https://nassgeodata.gmu.edu/CropScape/
+    is_a: sosa_ObservationCollection
+    name: kwgo_CroplandObservationCollection
+    title: Cropland Observation Collection
+  kwgo_CroplandResult:
+    class_uri: kwgo:CroplandResult
+    description: Source - https://nassgeodata.gmu.edu/CropScape/
+    is_a: sosa_Result
+    name: kwgo_CroplandResult
+    title: Cropland Result
+  kwgo_DebrisRemoval-PA-A:
+    class_uri: kwgo:DebrisRemoval-PA-A
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_DebrisRemoval-PA-A
+    title: Debris Removal (PA-A)
+  kwgo_Declaration:
+    class_uri: kwgo:Declaration
+    comments:
+    - 'description: The class that is used to represent all instances of declaration
+      from the OpenFEMA dataset'
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    name: kwgo_Declaration
+    title: FEMA Declaration
+  kwgo_DirectFederalAssistance:
+    class_uri: kwgo:DirectFederalAssistance
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_DirectFederalAssistance
+    title: Direct Federal Assistance
+  kwgo_Disaster:
+    class_uri: kwgo:Disaster
+    comments:
+    - 'description: The class that is used to represent all emergency, fire and major
+      disasters from the OpemFEMA dataset'
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: geo_Feature
+    name: kwgo_Disaster
+    title: Disaster from FEMA
+  kwgo_DisasterHousing:
+    class_uri: kwgo:DisasterHousing
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_DisasterHousing
+    title: Disaster Housing
+  kwgo_DisasterUnemploymentAssistance:
+    class_uri: kwgo:DisasterUnemploymentAssistance
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_DisasterUnemploymentAssistance
+    title: Disaster Unemployment-Assistance
+  kwgo_DoD:
+    class_uri: kwgo:DoD
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_DoD
+    title: DoD
+  kwgo_DroughtIntensity:
+    class_uri: kwgo:DroughtIntensity
+    description: Source - https://droughtmonitor.unl.edu/DmData/GISData.aspx
+    is_a: sosa_ObservableProperty
+    name: kwgo_DroughtIntensity
+    slots:
+    - rdfs_label
+    title: Drought Intensity
+  kwgo_DroughtZone:
+    class_uri: kwgo:DroughtZone
+    description: Source - https://droughtmonitor.unl.edu/DmData/GISData.aspx
+    is_a: geo_Feature
+    name: kwgo_DroughtZone
+    title: Drought Zone
+  kwgo_DroughtZoneOverlapObservation:
+    class_uri: kwgo:DroughtZoneOverlapObservation
+    description: Source - https://droughtmonitor.unl.edu/DmData/GISData.aspx
+    is_a: sosa_Observation
+    name: kwgo_DroughtZoneOverlapObservation
+    title: Drought Zone Overlap Observation
+  kwgo_DroughtZoneOverlapObservationCollection:
+    class_uri: kwgo:DroughtZoneOverlapObservationCollection
+    description: Source - https://droughtmonitor.unl.edu/DmData/GISData.aspx
+    is_a: sosa_ObservationCollection
+    name: kwgo_DroughtZoneOverlapObservationCollection
+    title: Drought Zone Overlap Observation Collection
+  kwgo_Earthquake:
+    class_uri: kwgo:Earthquake
+    description: Source - USGS (https://earthquake.usgs.gov/earthquakes/search/)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_Earthquake
+    title: Earthquake
+  kwgo_EarthquakeObservableProperty:
+    class_uri: kwgo:EarthquakeObservableProperty
+    description: Source - USGS (https://earthquake.usgs.gov/earthquakes/search/)
+    is_a: sosa_ObservableProperty
+    name: kwgo_EarthquakeObservableProperty
+    title: Earthquake Observable Property
+  kwgo_EarthquakeObservationCollection:
+    class_uri: kwgo:EarthquakeObservationCollection
+    description: Source - USGS (https://earthquake.usgs.gov/earthquakes/search/)
+    is_a: sosa_ObservationCollection
+    name: kwgo_EarthquakeObservationCollection
+    title: Earthquake Observation Collection
+  kwgo_EmergencyDeclaration:
+    class_uri: kwgo:EmergencyDeclaration
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Declaration
+    name: kwgo_EmergencyDeclaration
+    title: Emergency Declaration
+  kwgo_EventSegment:
+    class_uri: kwgo:EventSegment
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    name: kwgo_EventSegment
+    title: NOAA Hazard Event Segment
+  kwgo_ExpertiseTopic:
+    class_uri: kwgo:ExpertiseTopic
+    name: kwgo_ExpertiseTopic
+    title: Expertise Topic
+  kwgo_FederalJudicalDistrict:
+    class_uri: kwgo:FederalJudicalDistrict
+    description: Source - HIFLD (https://hifld-geoplatform.opendata.arcgis.com/datasets/us-district-court-jurisdictions/explore?location=40.830482%2C-90.571266%2C4.68,
+      https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links)
+    is_a: geo_Feature
+    name: kwgo_FederalJudicalDistrict
+    title: Federal Judicial District
+  kwgo_FieldsOfStudy:
+    class_uri: kwgo:FieldsOfStudy
+    name: kwgo_FieldsOfStudy
+    title: Fields of study
+  kwgo_Fire:
+    class_uri: kwgo:Fire
+    is_a: kwgo_Hazard
+    name: kwgo_Fire
+    title: Fire
+  kwgo_FireCause:
+    class_uri: kwgo:FireCause
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: A classification of an event that causes a fire, e.g. "human-caused"
+    name: kwgo_FireCause
+    slots:
+    - rdfs_label
+    title: NIFC Fire Cause
+  kwgo_FireManagementAssistance-PA-I:
+    class_uri: kwgo:FireManagementAssistance-PA-I
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_FireManagementAssistance-PA-I
+    title: Fire Management Assistance (PA-I)
+  kwgo_FireManagementDeclaration:
+    class_uri: kwgo:FireManagementDeclaration
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Declaration
+    name: kwgo_FireManagementDeclaration
+    title: Fire Management Declaration
+  kwgo_FireMappingAssessmentLabel:
+    class_uri: kwgo:FireMappingAssessmentLabel
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    name: kwgo_FireMappingAssessmentLabel
+    title: MTBS Fire Mapping Assessment Label
+  kwgo_Fix:
+    class_uri: kwgo:Fix
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    name: kwgo_Fix
+    title: NOAA Hazard Fix
+  kwgo_Geometry:
+    class_uri: kwgo:Geometry
+    name: kwgo_Geometry
+  kwgo_GeometryCollection:
+    class_uri: kwgo:GeometryCollection
+    is_a: geo_SpatialObject
+    name: kwgo_GeometryCollection
+    title: Geometry Collection
+  kwgo_Hazard:
+    class_uri: kwgo:Hazard
+    comments:
+    - 'description: The general hazard event class in KWG'
+    - 'description: event'
+    description: Hazard
+    name: kwgo_Hazard
+    title: Hazard
+  kwgo_HazardEpisode:
+    class_uri: kwgo:HazardEpisode
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    name: kwgo_HazardEpisode
+    title: NOAA Hazard Episode
+  kwgo_HazardMitigation:
+    class_uri: kwgo:HazardMitigation
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_HazardMitigation
+    title: Hazard Mitigation
+  kwgo_HelipadAvailability:
+    class_uri: kwgo:HelipadAvailability
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals-2/about
+    name: kwgo_HelipadAvailability
+    slots:
+    - rdfs_label
+    title: Helipad Availability
+  kwgo_Hospital:
+    class_uri: kwgo:Hospital
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals-2/about
+    is_a: geo_Feature
+    name: kwgo_Hospital
+    title: Hospital
+  kwgo_HospitalStatus:
+    class_uri: kwgo:HospitalStatus
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals-2/about
+    name: kwgo_HospitalStatus
+    slots:
+    - rdfs_label
+    title: Hospital Status
+  kwgo_HospitalType:
+    class_uri: kwgo:HospitalType
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/hospitals-2/about
+    name: kwgo_HospitalType
+    slots:
+    - rdfs_label
+    title: Hospital Type
+  kwgo_HousingAssistance:
+    class_uri: kwgo:HousingAssistance
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_HousingAssistance
+    title: Housing Assistance
+  kwgo_ImpactObservableProperty:
+    class_uri: kwgo:ImpactObservableProperty
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_ObservableProperty
+    name: kwgo_ImpactObservableProperty
+    slots:
+    - rdfs_label
+    title: Impact Observable Property
+  kwgo_ImpactObservation:
+    class_uri: kwgo:ImpactObservation
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_Observation
+    name: kwgo_ImpactObservation
+    title: Impact Observation
+  kwgo_ImpactObservationCollection:
+    class_uri: kwgo:ImpactObservationCollection
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_ObservationCollection
+    name: kwgo_ImpactObservationCollection
+    title: Impact Observation Collection
+  kwgo_IndividualAndFamilyGrant:
+    class_uri: kwgo:IndividualAndFamilyGrant
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_IndividualAndFamilyGrant
+    title: Individual & Family Grant
+  kwgo_IndividualAssistance:
+    class_uri: kwgo:IndividualAssistance
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_IndividualAssistance
+    title: Individual Assistance
+  kwgo_IndividualAssistance-PA-C:
+    class_uri: kwgo:IndividualAssistance-PA-C
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_IndividualAssistance-PA-C
+    title: Individual Assistance (PA-C)
+  kwgo_IndividualsAndHouseholds:
+    class_uri: kwgo:IndividualsAndHouseholds
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_IndividualsAndHouseholds
+    title: Individuals & Households
+  kwgo_JudegeInfo:
+    class_uri: kwgo:JudegeInfo
+    description: Source - HIFLD (https://hifld-geoplatform.opendata.arcgis.com/datasets/us-district-court-jurisdictions/explore?location=40.830482%2C-90.571266%2C4.68,
+      https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links)
+    name: kwgo_JudegeInfo
+    title: Judge Info
+  kwgo_LSADArea:
+    class_uri: kwgo:LSADArea
+    comments:
+    - 'description: Source - US Census Bureau (https://www.census.gov/data/datasets.html)'
+    description: For legal entities, the LSAD reflects the term that appears in legal
+      documentation pertaining to the entity, such as a treaty, charter, legislation,
+      resolution, or ordinance. For statistical entities, the LSAD is the term assigned
+      by the Census Bureau or other agency defining the entity. The LSAD code is a
+      two-character field that corresponds to a description of the legal or statistical
+      type of entity and identifies whether the LSAD term should be capitalized and
+      should precede or follow the name of the geographic entity.
+    name: kwgo_LSADArea
+    slots:
+    - rdfs_label
+    - rdfs_comment
+    title: Legal/Statistical Area Description (LSAD)
+  kwgo_Level_I:
+    class_uri: kwgo:Level_I
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_I
+    title: Trauma Level I
+  kwgo_Level_II:
+    class_uri: kwgo:Level_II
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_II
+    title: Trauma Level II
+  kwgo_Level_III:
+    class_uri: kwgo:Level_III
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_III
+    title: Trauma Level III
+  kwgo_Level_III_Pediatric:
+    class_uri: kwgo:Level_III_Pediatric
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_III_Pediatric
+    title: Trauma Level III Pediatric
+  kwgo_Level_II_Pediatric:
+    class_uri: kwgo:Level_II_Pediatric
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_II_Pediatric
+    title: Trauma Level II Pediatric
+  kwgo_Level_II_Rehab:
+    class_uri: kwgo:Level_II_Rehab
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_II_Rehab
+    title: Trauma Level II Rehab
+  kwgo_Level_IV:
+    class_uri: kwgo:Level_IV
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_IV
+    title: Trauma Level IV
+  kwgo_Level_I_Pediatric:
+    class_uri: kwgo:Level_I_Pediatric
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_I_Pediatric
+    title: Trauma Level I Pediatric
+  kwgo_Level_I_Pediatric_Rehab:
+    class_uri: kwgo:Level_I_Pediatric_Rehab
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_I_Pediatric_Rehab
+    title: Trauma Level I Pediatric Rehab
+  kwgo_Level_I_Rehab:
+    class_uri: kwgo:Level_I_Rehab
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_I_Rehab
+    title: Trauma Level I Rehab
+  kwgo_Level_Pediatric:
+    class_uri: kwgo:Level_Pediatric
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_Pediatric
+    title: Trauma Level Pediatric
+  kwgo_Level_V:
+    class_uri: kwgo:Level_V
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_Level_V
+    title: Trauma Level V
+  kwgo_MTBSComplexFire:
+    class_uri: kwgo:MTBSComplexFire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_MTBSFire
+    name: kwgo_MTBSComplexFire
+    title: MTBS Complex Fire
+  kwgo_MTBSFire:
+    class_uri: kwgo:MTBSFire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_MTBSFire
+    title: MTBS Fire
+  kwgo_MTBSFireObservableProperty:
+    class_uri: kwgo:MTBSFireObservableProperty
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: sosa_ObservableProperty
+    name: kwgo_MTBSFireObservableProperty
+    slots:
+    - rdfs_label
+    - rdfs_comment
+    title: MTBS Fire Observable Property
+  kwgo_MTBSFireObservation:
+    class_uri: kwgo:MTBSFireObservation
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: sosa_Observation
+    name: kwgo_MTBSFireObservation
+    title: MTBS Fire Observation
+  kwgo_MTBSFireObservationCollection:
+    class_uri: kwgo:MTBSFireObservationCollection
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: sosa_ObservationCollection
+    name: kwgo_MTBSFireObservationCollection
+    title: MTBS Fire Observation Collection
+  kwgo_MTBSOutOfAreaResponseFire:
+    class_uri: kwgo:MTBSOutOfAreaResponseFire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_OutOfAreaResponseFire
+    name: kwgo_MTBSOutOfAreaResponseFire
+    title: MTBS Out Of Area Response Fire
+  kwgo_MTBSPrescribedFire:
+    class_uri: kwgo:MTBSPrescribedFire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_PrescribedFire
+    name: kwgo_MTBSPrescribedFire
+    title: MTBS Prescribed Fire
+  kwgo_MTBSUnknownFire:
+    class_uri: kwgo:MTBSUnknownFire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_MTBSFire
+    name: kwgo_MTBSUnknownFire
+    title: MTBS Unknown Fire
+  kwgo_MTBSWildfire:
+    class_uri: kwgo:MTBSWildfire
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_Wildfire
+    name: kwgo_MTBSWildfire
+    title: MTBS Wildfire
+  kwgo_MTBSWildlandFireUse:
+    class_uri: kwgo:MTBSWildlandFireUse
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    is_a: kwgo_WildlandFireUse
+    name: kwgo_MTBSWildlandFireUse
+    title: MTBS Wildland Fire
+  kwgo_MagnitudeObservableProperty:
+    class_uri: kwgo:MagnitudeObservableProperty
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_ObservableProperty
+    name: kwgo_MagnitudeObservableProperty
+    slots:
+    - rdfs_label
+    title: Magnitude Obervable Property
+  kwgo_MagnitudeObservation:
+    class_uri: kwgo:MagnitudeObservation
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_Observation
+    name: kwgo_MagnitudeObservation
+    title: Magnitude Observation
+  kwgo_MagnitudeObservationCollection:
+    class_uri: kwgo:MagnitudeObservationCollection
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_ObservationCollection
+    name: kwgo_MagnitudeObservationCollection
+    title: Magnitude Observation Collection
+  kwgo_MajorDisasterDeclaration:
+    class_uri: kwgo:MajorDisasterDeclaration
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Declaration
+    name: kwgo_MajorDisasterDeclaration
+    title: Major Disaster Declaration
+  kwgo_MappingProgram:
+    class_uri: kwgo:MappingProgram
+    description: Source - MTBS (https://mtbs.gov/direct-downloadhttps://mtbs.gov/direct-download)
+    name: kwgo_MappingProgram
+    title: MTBS Mapping Label
+  kwgo_NIFCFire:
+    class_uri: kwgo:NIFCFire
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: Any fire that covers a geographically-significant amount of land.
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_NIFCFire
+    title: NIFC Fire
+  kwgo_NIFCFireObservableProperty:
+    class_uri: kwgo:NIFCFireObservableProperty
+    description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)
+    is_a: sosa_ObservableProperty
+    name: kwgo_NIFCFireObservableProperty
+    slots:
+    - rdfs_label
+    title: NIFC Fire Observable Property
+  kwgo_NIFCFireObservation:
+    class_uri: kwgo:NIFCFireObservation
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: An observation of a fire, extracted from the NIFC historical fire
+      dataset.
+    is_a: sosa_Observation
+    name: kwgo_NIFCFireObservation
+    title: NIFC Fire Observation
+  kwgo_NIFCIncidentComplexFire:
+    class_uri: kwgo:NIFCIncidentComplexFire
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: An incident consisting of multiple fires.
+    is_a: kwgo_NIFCFire
+    name: kwgo_NIFCIncidentComplexFire
+    title: NIFC Incident Complex Fire
+  kwgo_NIFCPrescribedFire:
+    class_uri: kwgo:NIFCPrescribedFire
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: An intentionally-set fire.
+    is_a: kwgo_PrescribedFire
+    name: kwgo_NIFCPrescribedFire
+    title: NIFC Prescribed Fire
+  kwgo_NIFCWildfire:
+    class_uri: kwgo:NIFCWildfire
+    comments:
+    - 'description: Source - NIFC (https://data-nifc.opendata.arcgis.com/datasets/wildland-fire-locations-full-history?geometry=98.438%2C-88.438%2C-98.438%2C88.438)'
+    description: An unintentional fire or a fire that is declared a wildfire
+    is_a: kwgo_Wildfire
+    name: kwgo_NIFCWildfire
+    title: NIFC Wildfire
+  kwgo_NOAAAstronomicalLowTide:
+    class_uri: kwgo:NOAAAstronomicalLowTide
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAAstronomicalLowTide
+    title: NOAA Astronomical Low Tide Event
+  kwgo_NOAAAvalanche:
+    class_uri: kwgo:NOAAAvalanche
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAAvalanche
+    title: NOAA Avalanche Event
+  kwgo_NOAABlizzard:
+    class_uri: kwgo:NOAABlizzard
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAABlizzard
+    title: NOAA Blizzard Event
+  kwgo_NOAACoastalFlood:
+    class_uri: kwgo:NOAACoastalFlood
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAACoastalFlood
+    title: NOAA Coastal Flood Event
+  kwgo_NOAAColdWindChill:
+    class_uri: kwgo:NOAAColdWindChill
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAColdWindChill
+    title: NOAA Cold/Wind Chill Event
+  kwgo_NOAADebrisFlow:
+    class_uri: kwgo:NOAADebrisFlow
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADebrisFlow
+    title: NOAA Debris Flow Event
+  kwgo_NOAADenseFog:
+    class_uri: kwgo:NOAADenseFog
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADenseFog
+    title: NOAA Dense Fog Event
+  kwgo_NOAADenseSmoke:
+    class_uri: kwgo:NOAADenseSmoke
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADenseSmoke
+    title: NOAA Dense Smoke Event
+  kwgo_NOAADrought:
+    class_uri: kwgo:NOAADrought
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADrought
+    title: NOAA Drought Event
+  kwgo_NOAADustDevil:
+    class_uri: kwgo:NOAADustDevil
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADustDevil
+    title: NOAA Dust Devil Event
+  kwgo_NOAADustStorm:
+    class_uri: kwgo:NOAADustStorm
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAADustStorm
+    title: NOAA Dust Storm Event
+  kwgo_NOAAExcessiveHeat:
+    class_uri: kwgo:NOAAExcessiveHeat
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAExcessiveHeat
+    title: NOAA Excessive Heat Event
+  kwgo_NOAAExtremeColdWindChill:
+    class_uri: kwgo:NOAAExtremeColdWindChill
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAExtremeColdWindChill
+    title: NOAA Extreme Cold/Wind Chill Event
+  kwgo_NOAAFlashFlood:
+    class_uri: kwgo:NOAAFlashFlood
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAFlashFlood
+    title: NOAA Flash Flood Event
+  kwgo_NOAAFlood:
+    class_uri: kwgo:NOAAFlood
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAFlood
+    title: NOAA Flood Event
+  kwgo_NOAAFreezingFog:
+    class_uri: kwgo:NOAAFreezingFog
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAFreezingFog
+    title: NOAA Freezing Fog Event
+  kwgo_NOAAFrostFreeze:
+    class_uri: kwgo:NOAAFrostFreeze
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAFrostFreeze
+    title: NOAA Frost/Freeze Event
+  kwgo_NOAAFunnelCloud:
+    class_uri: kwgo:NOAAFunnelCloud
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAFunnelCloud
+    title: NOAA Funnel Cloud Event
+  kwgo_NOAAHail:
+    class_uri: kwgo:NOAAHail
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHail
+    title: NOAA Hail Event
+  kwgo_NOAAHazard:
+    class_uri: kwgo:NOAAHazard
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_NOAAHazard
+    title: NOAA Hazard
+  kwgo_NOAAHeat:
+    class_uri: kwgo:NOAAHeat
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHeat
+    title: NOAA Heat Event
+  kwgo_NOAAHeavyRain:
+    class_uri: kwgo:NOAAHeavyRain
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHeavyRain
+    title: NOAA Heavy Rain Event
+  kwgo_NOAAHeavySnow:
+    class_uri: kwgo:NOAAHeavySnow
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHeavySnow
+    title: NOAA Heavy Snow Event
+  kwgo_NOAAHighSurf:
+    class_uri: kwgo:NOAAHighSurf
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHighSurf
+    title: NOAA High Surf Event
+  kwgo_NOAAHighWind:
+    class_uri: kwgo:NOAAHighWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHighWind
+    title: NOAA High Wind Event
+  kwgo_NOAAHurricane:
+    class_uri: kwgo:NOAAHurricane
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAHurricane
+    title: NOAA Hurricane Event
+  kwgo_NOAAIceStorm:
+    class_uri: kwgo:NOAAIceStorm
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAIceStorm
+    title: NOAA Ice Storm Event
+  kwgo_NOAALake-EffectSnow:
+    class_uri: kwgo:NOAALake-EffectSnow
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAALake-EffectSnow
+    title: NOAA Lake-Effect Snow Event
+  kwgo_NOAALakeshoreFlood:
+    class_uri: kwgo:NOAALakeshoreFlood
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAALakeshoreFlood
+    title: NOAA Lakeshore Flood Event
+  kwgo_NOAALightning:
+    class_uri: kwgo:NOAALightning
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAALightning
+    title: NOAA Lightning Event
+  kwgo_NOAAMarineHail:
+    class_uri: kwgo:NOAAMarineHail
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineHail
+    title: NOAA Marine Hail Event
+  kwgo_NOAAMarineHighWind:
+    class_uri: kwgo:NOAAMarineHighWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineHighWind
+    title: NOAA Marine High Wind Event
+  kwgo_NOAAMarineHurricaneTyphoon:
+    class_uri: kwgo:NOAAMarineHurricaneTyphoon
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineHurricaneTyphoon
+    title: NOAA Marine Hurricane/Typhoon Event
+  kwgo_NOAAMarineStrongWind:
+    class_uri: kwgo:NOAAMarineStrongWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineStrongWind
+    title: NOAA Marine Strong Wind Event
+  kwgo_NOAAMarineThunderstormWind:
+    class_uri: kwgo:NOAAMarineThunderstormWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineThunderstormWind
+    title: NOAA Marine Thunderstorm Wind Event
+  kwgo_NOAAMarineTropicalDepression:
+    class_uri: kwgo:NOAAMarineTropicalDepression
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineTropicalDepression
+    title: NOAA Marine Tropical Depression Event
+  kwgo_NOAAMarineTropicalStorm:
+    class_uri: kwgo:NOAAMarineTropicalStorm
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAMarineTropicalStorm
+    title: NOAA Marine Tropical Storm Event
+  kwgo_NOAARipCurrent:
+    class_uri: kwgo:NOAARipCurrent
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAARipCurrent
+    title: NOAA Rip Current Event
+  kwgo_NOAASleet:
+    class_uri: kwgo:NOAASleet
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAASleet
+    title: NOAA Sleet Event
+  kwgo_NOAASneakerwave:
+    class_uri: kwgo:NOAASneakerwave
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAASneakerwave
+    title: NOAA Sneakerwave Event
+  kwgo_NOAAStormSurgeTide:
+    class_uri: kwgo:NOAAStormSurgeTide
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAStormSurgeTide
+    title: NOAA Storm Surge/Tide Event
+  kwgo_NOAAStrongWind:
+    class_uri: kwgo:NOAAStrongWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAStrongWind
+    title: NOAA Strong Wind Event
+  kwgo_NOAAThunderstormWind:
+    class_uri: kwgo:NOAAThunderstormWind
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAThunderstormWind
+    title: NOAA Thunderstorm Wind Event
+  kwgo_NOAATornado:
+    class_uri: kwgo:NOAATornado
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAATornado
+    title: NOAA Tornado Event
+  kwgo_NOAATropicalDepression:
+    class_uri: kwgo:NOAATropicalDepression
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAATropicalDepression
+    title: NOAA Tropical Depression Event
+  kwgo_NOAATropicalStorm:
+    class_uri: kwgo:NOAATropicalStorm
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAATropicalStorm
+    title: NOAA Tropical Storm Event
+  kwgo_NOAAWaterspout:
+    class_uri: kwgo:NOAAWaterspout
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAWaterspout
+    title: NOAA Waterspout Event
+  kwgo_NOAAWildfire:
+    class_uri: kwgo:NOAAWildfire
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_Wildfire
+    name: kwgo_NOAAWildfire
+    title: NOAA Wildfire Event
+  kwgo_NOAAWinterStorm:
+    class_uri: kwgo:NOAAWinterStorm
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAWinterStorm
+    title: NOAA Winter Storm Event
+  kwgo_NOAAWinterWeather:
+    class_uri: kwgo:NOAAWinterWeather
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_NOAAHazard
+    name: kwgo_NOAAWinterWeather
+    title: NOAA Winter Weather Event
+  kwgo_NWZone:
+    class_uri: kwgo:NWZone
+    description: Source - https://www.weather.gov/gis/PublicZones
+    is_a: geo_Feature
+    name: kwgo_NWZone
+    title: National Weather Zone
+  kwgo_NielsenMarketZone:
+    class_uri: kwgo:NielsenMarketZone
+    comments:
+    - 'description: Source - Nielsen (https://www.nielsen.com/us/en/contact-us/intl-campaigns/dma-maps/)'
+    description: DMA (Designated Market Area) regions are the geographic areas in
+      the U.S. in which local television viewing is measured by Nielsen.
+    is_a: geo_Feature
+    name: kwgo_NielsenMarketZone
+    title: Nielsen Market Zone
+  kwgo_Other:
+    class_uri: kwgo:Other
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_Other
+    title: Other
+  kwgo_OutOfAreaResponseFire:
+    class_uri: kwgo:OutOfAreaResponseFire
+    is_a: kwgo_Fire
+    name: kwgo_OutOfAreaResponseFire
+    title: Out Of Area Response Fire
+  kwgo_PARC:
+    class_uri: kwgo:PARC
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_PARC
+    title: Trauma Care PARC
+  kwgo_PrescribedFire:
+    class_uri: kwgo:PrescribedFire
+    is_a: kwgo_Fire
+    name: kwgo_PrescribedFire
+    title: Prescribed Fire
+  kwgo_Program:
+    class_uri: kwgo:Program
+    comments:
+    - 'description: The class that is used to denote all relief/assistance programs
+      in the OpenFEMA dataset'
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    name: kwgo_Program
+    title: Program
+  kwgo_ProtectiveMeasures-PA-B:
+    class_uri: kwgo:ProtectiveMeasures-PA-B
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_ProtectiveMeasures-PA-B
+    title: Protective Measures (PA-B)
+  kwgo_PublicAssistance:
+    class_uri: kwgo:PublicAssistance
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_PublicAssistance
+    title: Public Assistance
+  kwgo_PublicBuildings-PA-F:
+    class_uri: kwgo:PublicBuildings-PA-F
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_PublicBuildings-PA-F
+    title: Public Buildings (PA-F)
+  kwgo_PublicHealthObservableProperty:
+    class_uri: kwgo:PublicHealthObservableProperty
+    description: Source - https://nccd.cdc.gov/DHDSPAtlas/?state=County
+    is_a: sosa_ObservableProperty
+    name: kwgo_PublicHealthObservableProperty
+    slots:
+    - rdfs_label
+    title: Public Health Observable Property
+  kwgo_PublicHealthObservation:
+    class_uri: kwgo:PublicHealthObservation
+    description: Source - https://nccd.cdc.gov/DHDSPAtlas/?state=County
+    is_a: sosa_Observation
+    name: kwgo_PublicHealthObservation
+    title: Public Health Observation
+  kwgo_PublicHealthObservationCollection:
+    class_uri: kwgo:PublicHealthObservationCollection
+    description: Source - https://nccd.cdc.gov/DHDSPAtlas/?state=County
+    is_a: sosa_ObservationCollection
+    name: kwgo_PublicHealthObservationCollection
+    title: Public Health Observation Collection
+  kwgo_PublicUtilitiesPA-G:
+    class_uri: kwgo:PublicUtilitiesPA-G
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_PublicUtilitiesPA-G
+    title: Public Utilities (PA-G)
+  kwgo_Quantity:
+    class_uri: kwgo:Quantity
+    is_a: qudt_QuantityValue
+    name: kwgo_Quantity
+  kwgo_RPTC:
+    class_uri: kwgo:RPTC
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_RPTC
+    title: Trauma Care RPTC
+  kwgo_RTC:
+    class_uri: kwgo:RTC
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_RTC
+    title: Trauma Care RTC
+  kwgo_RTH:
+    class_uri: kwgo:RTH
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_RTH
+    title: Trauma Care RTH
+  kwgo_RecreationalOrOther-PA-H:
+    class_uri: kwgo:RecreationalOrOther-PA-H
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_RecreationalOrOther-PA-H
+    title: Recreational or Other (PA-H)
+  kwgo_Region:
+    class_uri: kwgo:Region
+    description: A geographic entity created by the selection of characteristics that
+      are relevant to an area of interest. It can have geometries including point,
+      polyline and polygon.
+    name: kwgo_Region
+    title: Region
+  kwgo_RegionalCircuit:
+    class_uri: kwgo:RegionalCircuit
+    description: Source - HIFLD (https://hifld-geoplatform.opendata.arcgis.com/datasets/us-district-court-jurisdictions/explore?location=40.830482%2C-90.571266%2C4.68,
+      https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links)
+    name: kwgo_RegionalCircuit
+    title: Regional Circuit
+  kwgo_RoadSegment:
+    class_uri: kwgo:RoadSegment
+    description: Source - https://data-usdot.opendata.arcgis.com/datasets/usdot::national-highway-planning-network/about
+    is_a: geo_Feature
+    name: kwgo_RoadSegment
+    title: Road Segment
+  kwgo_RoadSegmentNode:
+    class_uri: kwgo:RoadSegmentNode
+    description: Source - https://data-usdot.opendata.arcgis.com/datasets/usdot::national-highway-planning-network/about
+    is_a: geo_Feature
+    name: kwgo_RoadSegmentNode
+    title: Road Segment Node
+  kwgo_RoadType:
+    class_uri: kwgo:RoadType
+    description: Source - https://www.census.gov/library/reference/code-lists/route-type-codes.html
+    name: kwgo_RoadType
+    slots:
+    - rdfs_label
+    title: Road Type
+  kwgo_RoadsAndBridges-PA-D:
+    class_uri: kwgo:RoadsAndBridges-PA-D
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_RoadsAndBridges-PA-D
+    title: Roads & Bridges (PA-D)
+  kwgo_S2Cell:
+    class_uri: kwgo:S2Cell
+    comments:
+    - 'description: Source - https://s2geometry.io/'
+    description: S2 Cell
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_S2Cell
+    title: S2 Cell
+  kwgo_SmallBusinessAdministration:
+    class_uri: kwgo:SmallBusinessAdministration
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_Program
+    name: kwgo_SmallBusinessAdministration
+    title: Small Business Administration
+  kwgo_SmokePlumeObservableProperty:
+    class_uri: kwgo:SmokePlumeObservableProperty
+    description: Source - https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/Shapefile/
+    is_a: sosa_ObservableProperty
+    name: kwgo_SmokePlumeObservableProperty
+    slots:
+    - rdfs_label
+    title: Smoke Plume Observable Property
+  kwgo_SmokePlumeObservation:
+    class_uri: kwgo:SmokePlumeObservation
+    description: Source - https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/Shapefile/
+    is_a: sosa_Observation
+    name: kwgo_SmokePlumeObservation
+    title: Smoke Plume Observation
+  kwgo_SmokePlumeSnapshot:
+    class_uri: kwgo:SmokePlumeSnapshot
+    description: Source - https://satepsanone.nesdis.noaa.gov/pub/FIRE/web/HMS/Smoke_Polygons/Shapefile/
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_SmokePlumeSnapshot
+    title: Smoke Plume Snapshot
+  kwgo_SoilMapUnit:
+    class_uri: kwgo:SoilMapUnit
+    description: Source - NRCS-USDA (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053627)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_SoilMapUnit
+    title: Soil Map Unit
+  kwgo_SoilMapUnitObservableProperty:
+    class_uri: kwgo:SoilMapUnitObservableProperty
+    description: Source - NRCS-USDA (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053627)
+    is_a: sosa_ObservableProperty
+    name: kwgo_SoilMapUnitObservableProperty
+    slots:
+    - rdfs_label
+    - rdfs_comment
+    title: Soil Map Unit Observable Property
+  kwgo_SoilMapUnitObservation:
+    class_uri: kwgo:SoilMapUnitObservation
+    description: Source - NRCS-USDA (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053627)
+    is_a: sosa_Observation
+    name: kwgo_SoilMapUnitObservation
+    title: Soil Map Unit Observation
+  kwgo_SoilMapUnitObservationCollection:
+    class_uri: kwgo:SoilMapUnitObservationCollection
+    description: Source - NRCS-USDA (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053627)
+    is_a: sosa_ObservationCollection
+    name: kwgo_SoilMapUnitObservationCollection
+    title: Soil Map Unit Observation Collection
+  kwgo_SoilMapUnitOverlapObservation:
+    class_uri: kwgo:SoilMapUnitOverlapObservation
+    comments:
+    - 'description: This is a computed value within KWG'
+    description: Source - NRCS-USDA (https://www.nrcs.usda.gov/wps/portal/nrcs/detail/soils/survey/?cid=nrcs142p2_053627)
+    is_a: sosa_Observation
+    name: kwgo_SoilMapUnitOverlapObservation
+    title: Soil Map Unit Overlap Observation
+  kwgo_StormTrack:
+    class_uri: kwgo:StormTrack
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_StormTrack
+    title: Storm Track
+  kwgo_StormTrackObservableProperty:
+    class_uri: kwgo:StormTrackObservableProperty
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_ObservableProperty
+    name: kwgo_StormTrackObservableProperty
+    slots:
+    - rdfs_label
+    title: Storm Track Observable Property
+  kwgo_StormTrackObservation:
+    class_uri: kwgo:StormTrackObservation
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_Observation
+    name: kwgo_StormTrackObservation
+    title: Storm Track Observation
+  kwgo_StormTrackObservationCollection:
+    class_uri: kwgo:StormTrackObservationCollection
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_ObservationCollection
+    name: kwgo_StormTrackObservationCollection
+    title: Storm Track Observation Collection
+  kwgo_StormTracklet:
+    class_uri: kwgo:StormTracklet
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_StormTracklet
+    title: Storm Tracklet
+  kwgo_StormTrackletObservableProperty:
+    class_uri: kwgo:StormTrackletObservableProperty
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_ObservableProperty
+    name: kwgo_StormTrackletObservableProperty
+    slots:
+    - rdfs_label
+    title: Storm Tracklet Observable Property
+  kwgo_StormTrackletObservation:
+    class_uri: kwgo:StormTrackletObservation
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_Observation
+    name: kwgo_StormTrackletObservation
+    title: Storm Tracklet Observation
+  kwgo_StormTrackletObservationCollection:
+    class_uri: kwgo:StormTrackletObservationCollection
+    description: 'Source: https://coast.noaa.gov/hurricanes'
+    is_a: sosa_ObservationCollection
+    name: kwgo_StormTrackletObservationCollection
+    title: Storm Tracklet Observation Collection
+  kwgo_TRF:
+    class_uri: kwgo:TRF
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_TRF
+    title: Trauma Care TRF
+  kwgo_TRH:
+    class_uri: kwgo:TRH
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    is_a: kwgo_TraumaLevelCare
+    name: kwgo_TRH
+    title: Trauma Care TRH
+  kwgo_TornadoMagnitudeObservationCollection:
+    class_uri: kwgo:TornadoMagnitudeObservationCollection
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_MagnitudeObservationCollection
+    name: kwgo_TornadoMagnitudeObservationCollection
+    title: Tornado Magnitude Observation Collection
+  kwgo_TraumaDescription:
+    class_uri: kwgo:TraumaDescription
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    name: kwgo_TraumaDescription
+    title: Trauma Description
+  kwgo_TraumaLevelCare:
+    class_uri: kwgo:TraumaLevelCare
+    description: Source - https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::trauma-levels-1/explore
+    name: kwgo_TraumaLevelCare
+    title: Trauma Level Care
+  kwgo_USCensusMSA:
+    class_uri: kwgo:USCensusMSA
+    comments:
+    - 'description: The general concept of a metropolitan or micropolitan statistical
+      area is that of a core area containing a substantial population nucleus, together
+      with adjacent communities having a high degree of economic and social integration
+      with that core.'
+    description: Source - US Census Bureau (https://www.census.gov/data/datasets.html)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_USCensusMSA
+    title: Metropolitan and micropolitan statistical areas
+  kwgo_USClimateDivision:
+    class_uri: kwgo:USClimateDivision
+    description: Source - NOAA (https://psl.noaa.gov/data/usclimdivs/boundaries.html)
+    is_a: sosa_FeatureOfInterest
+    name: kwgo_USClimateDivision
+    title: US Climate Division
+  kwgo_USPresident:
+    class_uri: kwgo:USPresident
+    description: Source - HIFLD (https://hifld-geoplatform.opendata.arcgis.com/datasets/us-district-court-jurisdictions/explore?location=40.830482%2C-90.571266%2C4.68,
+      https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links)
+    name: kwgo_USPresident
+    title: US President
+  kwgo_Venue:
+    class_uri: kwgo:Venue
+    name: kwgo_Venue
+    title: Venue
+  kwgo_VulnerabilityIndexObservation:
+    class_uri: kwgo:VulnerabilityIndexObservation
+    description: Source - https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
+    is_a: sosa_Observation
+    name: kwgo_VulnerabilityIndexObservation
+    title: Vulnerability Index Observation
+  kwgo_VulnerabilityObservableProperty:
+    class_uri: kwgo:VulnerabilityObservableProperty
+    description: Source - https://www.atsdr.cdc.gov/placeandhealth/svi/data_documentation_download.html
+    is_a: sosa_ObservableProperty
+    name: kwgo_VulnerabilityObservableProperty
+    slots:
+    - rdfs_label
+    title: Vulnerability Observable Property
+  kwgo_WaterControlFacilities-PA-E:
+    class_uri: kwgo:WaterControlFacilities-PA-E
+    description: Source - OpenFEMA (https://www.fema.gov/about/openfema/data-sets)
+    is_a: kwgo_PublicAssistance
+    name: kwgo_WaterControlFacilities-PA-E
+    title: Water Control Facilities (PA-E)
+  kwgo_Wildfire:
+    class_uri: kwgo:Wildfire
+    is_a: kwgo_Fire
+    name: kwgo_Wildfire
+    title: Wildfire
+  kwgo_WildlandFireUse:
+    class_uri: kwgo:WildlandFireUse
+    is_a: kwgo_Fire
+    name: kwgo_WildlandFireUse
+    title: Wildland Fire
+  kwgo_WindMagnitudeObservationCollection:
+    class_uri: kwgo:WindMagnitudeObservationCollection
+    description: Source - NOAA (https://www.ncdc.noaa.gov/stormevents/ftp.jsp)
+    is_a: kwgo_MagnitudeObservationCollection
+    name: kwgo_WindMagnitudeObservationCollection
+    title: Wind Magnitude Observation Collection
+  kwgo_ZipCodeArea:
+    class_uri: kwgo:ZipCodeArea
+    comments:
+    - 'description: Source - https://www.openstreetmap.org/'
+    description: Source - https://gadm.org/data.html
+    is_a: geo_Feature
+    name: kwgo_ZipCodeArea
+    title: Zip Code Area
+  sf_#LineString:
+    class_uri: sf:#LineString
+    is_a: geo_Geometry
+    name: sf_#LineString
+  sf_#Point:
+    class_uri: sf:#Point
+    is_a: geo_Geometry
+    name: sf_#Point
+  sosa_EarthquakeObservation:
+    class_uri: sosa:EarthquakeObservation
+    description: Source - USGS (https://earthquake.usgs.gov/earthquakes/search/)
+    is_a: sosa_Observation
+    name: sosa_EarthquakeObservation
+    title: Earthquake Observation
+  sosa_FeatureOfInterest:
+    class_uri: sosa:FeatureOfInterest
+    name: sosa_FeatureOfInterest
+    title: Feature Of Interest
+  sosa_ObservableProperty:
+    class_uri: sosa:ObservableProperty
+    name: sosa_ObservableProperty
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  sosa_Observation:
+    class_uri: sosa:Observation
+    name: sosa_Observation
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  sosa_ObservationCollection:
+    class_uri: sosa:ObservationCollection
+    name: sosa_ObservationCollection
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  sosa_Platform:
+    class_uri: sosa:Platform
+    name: sosa_Platform
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  sosa_Result:
+    class_uri: sosa:Result
+    name: sosa_Result
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  sosa_Sensor:
+    class_uri: sosa:Sensor
+    name: sosa_Sensor
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+comments:
+- 'created_on: 2022-02-24'
+- 'title: KWG Integrated Ontology'
+created_on: '2025-07-24T16:19:50.782559'
+default_prefix: okns
+description: This ontology supports the KnowWhereGraph
+id: okns:kwg
+imports:
+- okns:geo
+- okns:owl-rdf-rdfs
+- okns:qudt
+- okns:skos
+- okns:gnis-ld-usgs
+- linkml:types
+- okns:extended_types
+last_updated_on: '2025-07-24T16:19:50.782559'
+name: kwg
+prefixes:
+  c4o: http://purl.org/spar/c4o/
+  dct: http://purl.org/dc/terms/
+  geo: http://www.opengis.net/ont/geosparql#
+  gnis-ld-gnis: http://gnis-ld.org/lod/gnis/ontology/
+  gnis-ld-usgs: http://gnis-ld.org/lod/usgs/ontology/
+  iospress: http://ld.iospress.nl/rdf/ontology/
+  iospress-datatype: http://ld.iospress.nl/rdf/datatype/
+  iospress-geocode: http://ld.iospress.nl/rdf/geocode/
+  irdr: http://www.knowwheregraph.org/ontologies/hazard/IRDR/
+  kwgo: http://stko-kwg.geog.ucsb.edu/lod/ontology/
+  kwgr: http://stko-kwg.geog.ucsb.edu/lod/resource/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  qudt: http://qudt.org/schema/qudt/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sdos: https://schema.org/
+  sf: http://www.opengis.net/ont/sf
+  skos: http://www.w3.org/2004/02/skos/core#
+  sosa: http://www.w3.org/ns/sosa/
+  time: http://www.w3.org/2006/time#
+  wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  geo_hasName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: geo_hasName
+    range: Any
+    slot_uri: geo:hasName
+    title: has federal judicial district name
+  geo_spatialRelation:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: geo_spatialRelation
+    range: Any
+    slot_uri: geo:spatialRelation
+  gnis-ld-gnis_alternativeName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_alternativeName
+    range: string
+    slot_uri: gnis-ld-gnis:alternativeName
+    title: alternative name
+  gnis-ld-gnis_citation:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_citation
+    range: string
+    slot_uri: gnis-ld-gnis:citation
+    title: citation
+  gnis-ld-gnis_country:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_country
+    range: Any
+    slot_uri: gnis-ld-gnis:country
+    title: country
+  gnis-ld-gnis_county:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-gnis_County
+    name: gnis-ld-gnis_county
+    range: Any
+    slot_uri: gnis-ld-gnis:county
+    title: county
+  gnis-ld-gnis_countyCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_countyCode
+    range: string
+    slot_uri: gnis-ld-gnis:countyCode
+    title: county code
+  gnis-ld-gnis_countyId:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_countyId
+    range: Any
+    slot_uri: gnis-ld-gnis:countyId
+    title: county id
+  gnis-ld-gnis_countyName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_countyName
+    range: string
+    slot_uri: gnis-ld-gnis:countyName
+    title: county name
+  gnis-ld-gnis_dateFeatureCreated:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_dateFeatureCreated
+    range: date
+    slot_uri: gnis-ld-gnis:dateFeatureCreated
+    title: date feature created
+  gnis-ld-gnis_dateFeatureEdited:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_dateFeatureEdited
+    range: date
+    slot_uri: gnis-ld-gnis:dateFeatureEdited
+    title: date feature edited
+  gnis-ld-gnis_dateNameCreated:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_dateNameCreated
+    range: date
+    slot_uri: gnis-ld-gnis:dateNameCreated
+    title: date name created
+  gnis-ld-gnis_description:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_description
+    range: string
+    slot_uri: gnis-ld-gnis:description
+    title: description
+  gnis-ld-gnis_elevation:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_elevation
+    range: qudt_Quantity
+    slot_uri: gnis-ld-gnis:elevation
+    title: elevation
+  gnis-ld-gnis_featureId:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_featureId
+    range: string
+    slot_uri: gnis-ld-gnis:featureId
+    title: feature id
+  gnis-ld-gnis_history:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_history
+    range: string
+    slot_uri: gnis-ld-gnis:history
+    title: history
+  gnis-ld-gnis_mapName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_mapName
+    range: string
+    slot_uri: gnis-ld-gnis:mapName
+    title: map name
+  gnis-ld-gnis_officialName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_officialName
+    range: string
+    slot_uri: gnis-ld-gnis:officialName
+    title: official name
+  gnis-ld-gnis_state:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_state
+    range: gnis-ld-gnis_State
+    slot_uri: gnis-ld-gnis:state
+    title: state
+  gnis-ld-gnis_stateCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_stateCode
+    range: string
+    slot_uri: gnis-ld-gnis:stateCode
+    title: state code
+  gnis-ld-gnis_stateId:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_stateId
+    range: string
+    slot_uri: gnis-ld-gnis:stateId
+    title: state id
+  gnis-ld-gnis_stateName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_stateName
+    range: string
+    slot_uri: gnis-ld-gnis:stateName
+    title: state name
+  http___qudt.org_1.1_vocab_unit#numericValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: http___qudt.org_1.1_vocab_unit#numericValue
+    range: Any
+    slot_uri: http://qudt.org/1.1/vocab/unit#numericValue
+  http___qudt.org_1.1_vocab_unit#unit:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: http___qudt.org_1.1_vocab_unit#unit
+    range: Any
+    slot_uri: http://qudt.org/1.1/vocab/unit#unit
+  kwgo_affectedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_affectedByInverse
+    name: kwgo_affectedBy
+    range: Any
+    slot_uri: kwgo:affectedBy
+    title: affected by
+  kwgo_affectedByInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_affectedByInverse
+    range: Any
+    slot_uri: kwgo:affectedByInverse
+    title: inverse of affected by
+  kwgo_amountApproved_HA:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total amount approved for Housing Assistance from the Individual
+      and Households Program in dollars
+    name: kwgo_amountApproved_HA
+    range: Any
+    slot_uri: kwgo:amountApproved_HA
+    title: amount approved for housing assistance
+  kwgo_amountApproved_IHP:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total amount approved for the Individual and Households Program
+      in dollars
+    name: kwgo_amountApproved_IHP
+    range: Any
+    slot_uri: kwgo:amountApproved_IHP
+    title: amount approved for individuals and households
+  kwgo_amountApproved_ONA:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The total amount approved for Other Needs Assistance from the Individual
+      and Households Program in dollars
+    name: kwgo_amountApproved_ONA
+    range: Any
+    slot_uri: kwgo:amountApproved_ONA
+    title: amount approved for other needs assistance
+  kwgo_anomaly:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Divisional anomaly (1-month period) for the measured climate property
+    name: kwgo_anomaly
+    range: Any
+    slot_uri: kwgo:anomaly
+    title: anomaly
+  kwgo_cbsaCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A core-based statistical area is a U.S. geographic area defined by
+      the Office of Management and Budget that consists of one or more counties anchored
+      by an urban center of at least 10,000 people plus adjacent counties that are
+      socioeconomically tied to the urban center by commuting
+    domain: kwgo_AirQualitySite
+    name: kwgo_cbsaCode
+    range: rdfs_Literal
+    slot_uri: kwgo:cbsaCode
+    title: cbsa code
+  kwgo_cbsaName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A core-based statistical area is a U.S. geographic area defined by
+      the Office of Management and Budget that consists of one or more counties anchored
+      by an urban center of at least 10,000 people plus adjacent counties that are
+      socioeconomically tied to the urban center by commuting
+    domain: kwgo_AirQualitySite
+    name: kwgo_cbsaName
+    range: rdfs_Literal
+    slot_uri: kwgo:cbsaName
+    title: cbsa name
+  kwgo_censusGeographyTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_censusGeographyTime
+    range: Any
+    slot_uri: kwgo:censusGeographyTime
+  kwgo_climateDivisionFIPS:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: FIPS code for the climate division boundary
+    name: kwgo_climateDivisionFIPS
+    range: Any
+    slot_uri: kwgo:climateDivisionFIPS
+    title: climate division FIPS
+  kwgo_climateDivisionNCDC_GEO:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: National Climatic Data Center identifier
+    name: kwgo_climateDivisionNCDC_GEO
+    range: Any
+    slot_uri: kwgo:climateDivisionNCDC_GEO
+    title: climate division NCDC GEO
+  kwgo_climateDivisionName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Name of climate division boundary
+    name: kwgo_climateDivisionName
+    range: Any
+    slot_uri: kwgo:climateDivisionName
+    title: climate division name
+  kwgo_climateDivisionNumber:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: NOAA climate division number
+    name: kwgo_climateDivisionNumber
+    range: Any
+    slot_uri: kwgo:climateDivisionNumber
+    title: climate division number
+  kwgo_compositePercentageInformation:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_compositePercentageInformation
+    range: Any
+    slot_uri: kwgo:compositePercentageInformation
+    title: composite drought zone percentage information
+  kwgo_correspondingMapID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_correspondingMapID
+    range: Any
+    slot_uri: kwgo:correspondingMapID
+    title: corresponding map ID
+  kwgo_dailyAQIValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Air Quality Index values for the specified year and location recorded
+      by EPA
+    name: kwgo_dailyAQIValue
+    range: Any
+    slot_uri: kwgo:dailyAQIValue
+    title: daily AQI value
+  kwgo_dataSource:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_dataSource
+    range: Any
+    slot_uri: kwgo:dataSource
+    title: data source
+  kwgo_designatedArea:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The name or phrase describing the U.S. county that was included in
+      the declaration
+    name: kwgo_designatedArea
+    range: Any
+    slot_uri: kwgo:designatedArea
+    title: designated area
+  kwgo_detailsURL:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_detailsURL
+    range: Any
+    slot_uri: kwgo:detailsURL
+  kwgo_endsAt:
+    comments:
+    - 'title: road segment ends at'
+    - No occurrences of this slot in the graph.
+    name: kwgo_endsAt
+    range: Any
+    slot_uri: kwgo:endsAt
+    title: hazard ends at
+  kwgo_fallsUnderTopic:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_fallsUnderTopic
+    range: Any
+    slot_uri: kwgo:fallsUnderTopic
+    title: falls under topic
+  kwgo_hasAlias:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasAlias
+    range: Any
+    slot_uri: kwgo:hasAlias
+    title: has alias
+  kwgo_hasAzimuth:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: kwgo_Fix
+    name: kwgo_hasAzimuth
+    range: rdfs_Literal
+    slot_uri: kwgo:hasAzimuth
+    title: has azimuth
+  kwgo_hasChiefJudge:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasChiefJudge
+    range: Any
+    slot_uri: kwgo:hasChiefJudge
+    title: has chief judge
+  kwgo_hasCode:
+    comments:
+    - 'title: has drought intensity code'
+    - No occurrences of this slot in the graph.
+    description: metropolitan and micropolitan statistical area code
+    name: kwgo_hasCode
+    range: Any
+    slot_uri: kwgo:hasCode
+    title: census area code
+  kwgo_hasContributor:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasContributorInverse
+    name: kwgo_hasContributor
+    range: Any
+    slot_uri: kwgo:hasContributor
+    title: has contributor
+  kwgo_hasContributorInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasContributorInverse
+    range: Any
+    slot_uri: kwgo:hasContributorInverse
+    title: has contributor inverse
+  kwgo_hasDBLPID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasDBLPID
+    range: Any
+    slot_uri: kwgo:hasDBLPID
+    title: has DBLPID
+  kwgo_hasDataSource:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasDataSource
+    range: Any
+    slot_uri: kwgo:hasDataSource
+    title: has data source
+  kwgo_hasDeclaration:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The relationship between a diasaster and declaration in the OpenFEMA
+      dataset
+    name: kwgo_hasDeclaration
+    range: Any
+    slot_uri: kwgo:hasDeclaration
+    title: has declaration
+  kwgo_hasDeclarationDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date a declaration was approved
+    name: kwgo_hasDeclarationDate
+    range: Any
+    slot_uri: kwgo:hasDeclarationDate
+    title: has declaration date
+  kwgo_hasDeclarationID:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Unique identifier of each declaration
+    name: kwgo_hasDeclarationID
+    range: Any
+    slot_uri: kwgo:hasDeclarationID
+    title: has declaration ID
+  kwgo_hasDeclarationRequestNo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The identifier of the declaration when it was submitted for approval/request
+    name: kwgo_hasDeclarationRequestNo
+    range: Any
+    slot_uri: kwgo:hasDeclarationRequestNo
+    title: has declaration request no
+  kwgo_hasDeclarationTitle:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Title of the declaration
+    name: kwgo_hasDeclarationTitle
+    range: Any
+    slot_uri: kwgo:hasDeclarationTitle
+    title: has declaration title
+  kwgo_hasDefaultGeometry:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasDefaultGeometry
+    range: Any
+    slot_uri: kwgo:hasDefaultGeometry
+  kwgo_hasDisasterName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Name of the Disaster that the declaration was submitted or approved
+      for
+    name: kwgo_hasDisasterName
+    range: Any
+    slot_uri: kwgo:hasDisasterName
+    title: has disaster name
+  kwgo_hasDisasterNumber:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The identifier of each disaster - this is unique to the FEMA declaration
+      dataset. Storm related disaster are related to NOAA Storm dataset. See property
+      kwg-ont:noaaDisasterID
+    name: kwgo_hasDisasterNumber
+    range: Any
+    slot_uri: kwgo:hasDisasterNumber
+    title: has disaster number
+  kwgo_hasExpertise:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasExpertise
+    range: Any
+    slot_uri: kwgo:hasExpertise
+    title: expertise
+  kwgo_hasFieldsOfStudy:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasFieldsOfStudyInverse
+    name: kwgo_hasFieldsOfStudy
+    range: Any
+    slot_uri: kwgo:hasFieldsOfStudy
+    title: has fields of study
+  kwgo_hasFieldsOfStudyInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasFieldsOfStudyInverse
+    range: Any
+    slot_uri: kwgo:hasFieldsOfStudyInverse
+    title: has fields of study inverse
+  kwgo_hasFireCause:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasFireCause
+    range: Any
+    slot_uri: kwgo:hasFireCause
+    title: has fire cause
+  kwgo_hasFireMappingAssessmentLabel:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasFireMappingAssessmentLabelInverse
+    name: kwgo_hasFireMappingAssessmentLabel
+    range: Any
+    slot_uri: kwgo:hasFireMappingAssessmentLabel
+    title: has fire mapping assessment label
+  kwgo_hasFireMappingAssessmentLabelInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasFireMappingAssessmentLabelInverse
+    range: Any
+    slot_uri: kwgo:hasFireMappingAssessmentLabelInverse
+    title: has fire mapping label inverse
+  kwgo_hasFireName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasFireName
+    range: Any
+    slot_uri: kwgo:hasFireName
+    title: has mtbs fire name
+  kwgo_hasGeometry:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasGeometry
+    range: Any
+    slot_uri: kwgo:hasGeometry
+    title: kwg - has geometry
+  kwgo_hasGeometryCollection:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasGeometryCollection
+    range: Any
+    slot_uri: kwgo:hasGeometryCollection
+    title: has geometry collection
+  kwgo_hasGeometryMember:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasGeometryMemberInverse
+    name: kwgo_hasGeometryMember
+    range: Any
+    slot_uri: kwgo:hasGeometryMember
+    title: has geometry member
+  kwgo_hasGeometryMemberInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasGeometryMemberInverse
+    range: Any
+    slot_uri: kwgo:hasGeometryMemberInverse
+    title: inverse of has geometry member
+  kwgo_hasHomepage:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasHomepage
+    range: Any
+    slot_uri: kwgo:hasHomepage
+    title: has homepage
+  kwgo_hasIncidentName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasIncidentName
+    range: Any
+    slot_uri: kwgo:hasIncidentName
+    title: has incident name
+  kwgo_hasJudgeInfo:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasJudgeInfo
+    range: Any
+    slot_uri: kwgo:hasJudgeInfo
+    title: has judge info
+  kwgo_hasLength:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasLength
+    range: Any
+    slot_uri: kwgo:hasLength
+    title: road length
+  kwgo_hasMapUnitAreaSymbol:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasMapUnitAreaSymbol
+    range: Any
+    slot_uri: kwgo:hasMapUnitAreaSymbol
+    title: has map unit area symbol
+  kwgo_hasMappingProgram:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasMappingProgramInverse
+    name: kwgo_hasMappingProgram
+    range: Any
+    slot_uri: kwgo:hasMappingProgram
+    title: has mapping program
+  kwgo_hasMappingProgramInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasMappingProgramInverse
+    range: Any
+    slot_uri: kwgo:hasMappingProgramInverse
+    title: has mapping program inverse
+  kwgo_hasNarrative:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: kwgo_HazardEpisode
+    name: kwgo_hasNarrative
+    range: rdfs_Literal
+    slot_uri: kwgo:hasNarrative
+    title: has hazard narrative
+  kwgo_hasORCID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasORCID
+    range: Any
+    slot_uri: kwgo:hasORCID
+    title: has ORCID
+  kwgo_hasPart:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasPart
+    range: Any
+    slot_uri: kwgo:hasPart
+    title: has part
+  kwgo_hasProgram:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The relationship between disaster and program in the OpenFEMA dataset
+    name: kwgo_hasProgram
+    range: Any
+    slot_uri: kwgo:hasProgram
+    title: has program
+  kwgo_hasProgramCloseOutDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date when the relief program was closed
+    name: kwgo_hasProgramCloseOutDate
+    range: Any
+    slot_uri: kwgo:hasProgramCloseOutDate
+    title: has program close out date
+  kwgo_hasProgramDescription:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The description of the relief program
+    name: kwgo_hasProgramDescription
+    range: Any
+    slot_uri: kwgo:hasProgramDescription
+    title: has program description
+  kwgo_hasProgramDesignatedDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date when the relief program began
+    name: kwgo_hasProgramDesignatedDate
+    range: Any
+    slot_uri: kwgo:hasProgramDesignatedDate
+    title: has program designated date
+  kwgo_hasProgramID:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Unique Identifier of the Program
+    name: kwgo_hasProgramID
+    range: Any
+    slot_uri: kwgo:hasProgramID
+    title: has program ID
+  kwgo_hasPublicationYear:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasPublicationYearInverse
+    name: kwgo_hasPublicationYear
+    range: Any
+    slot_uri: kwgo:hasPublicationYear
+    title: has publication year
+  kwgo_hasPublicationYearInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasPublicationYearInverse
+    range: Any
+    slot_uri: kwgo:hasPublicationYearInverse
+    title: has publication year inverse
+  kwgo_hasRange:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: kwgo_Fix
+    name: kwgo_hasRange
+    range: rdfs_Literal
+    slot_uri: kwgo:hasRange
+    title: has range
+  kwgo_hasRoadName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasRoadName
+    range: Any
+    slot_uri: kwgo:hasRoadName
+    title: has road name
+  kwgo_hasRoadSign:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasRoadSign
+    range: Any
+    slot_uri: kwgo:hasRoadSign
+    title: has road sign
+  kwgo_hasRoadType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasRoadType
+    range: Any
+    slot_uri: kwgo:hasRoadType
+    title: has road type
+  kwgo_hasSegment:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasSegment
+    range: Any
+    slot_uri: kwgo:hasSegment
+    title: has hazard segment
+  kwgo_hasSoilMapUnitKey:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasSoilMapUnitKey
+    range: Any
+    slot_uri: kwgo:hasSoilMapUnitKey
+    title: has soil map unit key
+  kwgo_hasSoilMapUnitSymbol:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasSoilMapUnitSymbol
+    range: Any
+    slot_uri: kwgo:hasSoilMapUnitSymbol
+    title: has soil map unit symbol
+  kwgo_hasStormTracklet:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Relation between hurricane storm and smaller storm tracklets
+    name: kwgo_hasStormTracklet
+    range: Any
+    slot_uri: kwgo:hasStormTracklet
+    title: has storm tracklet
+  kwgo_hasSubTopic:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasSubTopic
+    range: Any
+    slot_uri: kwgo:hasSubTopic
+    title: has sub topic
+  kwgo_hasTemporalScope:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The temporal scoping property in KWG to represent the temporal extent
+      of a hazard feature
+    name: kwgo_hasTemporalScope
+    range: Any
+    slot_uri: kwgo:hasTemporalScope
+    title: has temporal scope
+  kwgo_hasTraumaDefinition:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasTraumaDefinition
+    range: Any
+    slot_uri: kwgo:hasTraumaDefinition
+    title: has trauma definition
+  kwgo_hasTraumaDescription:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasTraumaDescription
+    range: Any
+    slot_uri: kwgo:hasTraumaDescription
+    title: has trauma description
+  kwgo_hasUri:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasUri
+    range: Any
+    slot_uri: kwgo:hasUri
+    title: has URI
+  kwgo_hasVenue:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: kwgo_hasVenueInverse
+    name: kwgo_hasVenue
+    range: Any
+    slot_uri: kwgo:hasVenue
+    title: has venue
+  kwgo_hasVenueInverse:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasVenueInverse
+    range: Any
+    slot_uri: kwgo:hasVenueInverse
+    title: has venue inverse
+  kwgo_hasVenueName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasVenueName
+    range: Any
+    slot_uri: kwgo:hasVenueName
+    title: has venue name
+  kwgo_hasZipCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hasZipCode
+    range: Any
+    slot_uri: kwgo:hasZipCode
+    title: has zip code
+  kwgo_helipadAvailability:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_helipadAvailability
+    range: Any
+    slot_uri: kwgo:helipadAvailability
+    title: helipad availability
+  kwgo_hospitalAddress:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hospitalAddress
+    range: Any
+    slot_uri: kwgo:hospitalAddress
+    title: hospital address
+  kwgo_hospitalName:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hospitalName
+    range: Any
+    slot_uri: kwgo:hospitalName
+    title: hospital name
+  kwgo_hospitalStatus:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hospitalStatus
+    range: Any
+    slot_uri: kwgo:hospitalStatus
+    title: hospital status
+  kwgo_hospitalType:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_hospitalType
+    range: Any
+    slot_uri: kwgo:hospitalType
+    title: hospital type
+  kwgo_inCircuit:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_inCircuit
+    range: Any
+    slot_uri: kwgo:inCircuit
+    title: in circuit
+  kwgo_isHMProgramDeclared:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Denotes whether the Hazard Mitigation program was declared
+    name: kwgo_isHMProgramDeclared
+    range: Any
+    slot_uri: kwgo:isHMProgramDeclared
+    title: is hazard mitigation program declared
+  kwgo_isIAProgramDeclared:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Denotes whether the Individual Assistance program was declared
+    name: kwgo_isIAProgramDeclared
+    range: Any
+    slot_uri: kwgo:isIAProgramDeclared
+    title: is individual assistance program declared
+  kwgo_isIHProgramDeclared:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Denotes whether the Individuals and Households program was declared
+    name: kwgo_isIHProgramDeclared
+    range: Any
+    slot_uri: kwgo:isIHProgramDeclared
+    title: is individual and households program declared
+  kwgo_isPAProgramDeclared:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Denotes whether the Public Assistance program was declared
+    name: kwgo_isPAProgramDeclared
+    range: Any
+    slot_uri: kwgo:isPAProgramDeclared
+    title: is public assistance program declared
+  kwgo_locatedIn:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_locatedIn
+    range: Any
+    slot_uri: kwgo:locatedIn
+    title: located in
+  kwgo_mean:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Divisional mean (1901-2000 period) for the measured climate property
+    name: kwgo_mean
+    range: Any
+    slot_uri: kwgo:mean
+    title: mean
+  kwgo_nielsenMarketZoneDMA:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nielsenMarketZoneDMA
+    range: Any
+    slot_uri: kwgo:nielsenMarketZoneDMA
+    title: nielsen market zone DMA
+  kwgo_nielsenMarketZoneHHTV:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nielsenMarketZoneHHTV
+    range: Any
+    slot_uri: kwgo:nielsenMarketZoneHHTV
+    title: nielsen market zone HHTV
+  kwgo_nielsenMarketZoneID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nielsenMarketZoneID
+    range: Any
+    slot_uri: kwgo:nielsenMarketZoneID
+    title: nielsen market zone ID
+  kwgo_nielsenMarketZonePUSA:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nielsenMarketZonePUSA
+    range: Any
+    slot_uri: kwgo:nielsenMarketZonePUSA
+    title: nielsen market zone PUSA
+  kwgo_nielsenMarketZoneRank:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nielsenMarketZoneRank
+    range: Any
+    slot_uri: kwgo:nielsenMarketZoneRank
+    title: nielsen market zone rank
+  kwgo_noHospitalBeds:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_noHospitalBeds
+    range: Any
+    slot_uri: kwgo:noHospitalBeds
+    title: no of hospital beds
+  kwgo_noaaDisasterID:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Disaster ID from NOAA Storm Event dataset
+    name: kwgo_noaaDisasterID
+    range: Any
+    slot_uri: kwgo:noaaDisasterID
+    title: noaa disaster impact ID
+  kwgo_nominatedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nominatedBy
+    range: Any
+    slot_uri: kwgo:nominatedBy
+    title: nominated by
+  kwgo_nominatedTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_nominatedTime
+    range: Any
+    slot_uri: kwgo:nominatedTime
+    title: nominated time
+  kwgo_obligatedAmountCat_AB:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'The Public Assistance grant funding available in dollars to the
+      grantee (State), for sub-grantee approved Project Worksheets in categories A
+      and B, or Emergency Work. Category A: Debris removal; Category B: Emergency
+      protective measures'
+    name: kwgo_obligatedAmountCat_AB
+    range: Any
+    slot_uri: kwgo:obligatedAmountCat_AB
+    title: obligated amount category AB
+  kwgo_obligatedAmountCat_C_G:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: 'The Public Assistance grant funding available in dollars to the
+      grantee (State), for sub-grantee approved Project Worksheets in categories C
+      through G, or Permanent Work. Category C: Roads and bridges; Category D: Water
+      control facilities; Category E: Public buildings and contents; Category F: Public
+      utilities; Category G: Parks, recreational, and other facilities'
+    name: kwgo_obligatedAmountCat_C_G
+    range: Any
+    slot_uri: kwgo:obligatedAmountCat_C_G
+    title: obligated amount category C-G
+  kwgo_obligatedAmount_HMGP:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Total amount obligated under the Hazard Mitigation Grant Program
+      in dollars. The total amount obligated represents the amount obligated for Regular
+      Project Costs, Planning Costs, Initiative Project Costs, Recipient Management
+      Costs, Recipient Admin Costs and Subrecipient Admin Costs
+    name: kwgo_obligatedAmount_HMGP
+    range: Any
+    slot_uri: kwgo:obligatedAmount_HMGP
+    title: obligated amount hazard mitigation program
+  kwgo_obligatedAmount_PA:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The Public Assistance grant funding available in dollars to the grantee
+      (State), for sub-grantee approved Project Worksheets
+    name: kwgo_obligatedAmount_PA
+    range: Any
+    slot_uri: kwgo:obligatedAmount_PA
+    title: obligated amount public assistance
+  kwgo_pocValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: EPA Air Quality Instrument ID
+    domain: kwgo_AirQualityInstrument
+    name: kwgo_pocValue
+    range: rdfs_Literal
+    slot_uri: kwgo:pocValue
+    title: poc value
+  kwgo_rank:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Dvisional rank (1-month period)for the measured climate property
+    name: kwgo_rank
+    range: Any
+    slot_uri: kwgo:rank
+    title: rank
+  kwgo_sfContains:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial contains relation
+    name: kwgo_sfContains
+    range: Any
+    slot_uri: kwgo:sfContains
+    subproperty_of: kwgo_spatialRelation
+    title: contains (simple feature)
+  kwgo_sfCrosses:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial comment relation
+    name: kwgo_sfCrosses
+    range: Any
+    slot_uri: kwgo:sfCrosses
+    subproperty_of: kwgo_spatialRelation
+    title: crosses (simple feature)
+  kwgo_sfEquals:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial equal relation
+    name: kwgo_sfEquals
+    range: Any
+    slot_uri: kwgo:sfEquals
+    subproperty_of: kwgo_spatialRelation
+    title: equals (simple feature)
+  kwgo_sfOverlaps:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial overlap relation
+    name: kwgo_sfOverlaps
+    range: Any
+    slot_uri: kwgo:sfOverlaps
+    subproperty_of: kwgo_spatialRelation
+    title: overlaps (simple feature)
+  kwgo_sfTouches:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial touches relation
+    name: kwgo_sfTouches
+    range: Any
+    slot_uri: kwgo:sfTouches
+    subproperty_of: kwgo_spatialRelation
+    title: touches (simple feature)
+  kwgo_sfWithin:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's spatial within relation
+    name: kwgo_sfWithin
+    range: Any
+    slot_uri: kwgo:sfWithin
+    subproperty_of: kwgo_spatialRelation
+    title: within (simple feature)
+  kwgo_siteID:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: EPA Air Quality Sensor ID
+    domain: kwgo_AirQualitySite
+    name: kwgo_siteID
+    range: rdfs_Literal
+    slot_uri: kwgo:siteID
+    title: site ID
+  kwgo_siteName:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: EPA Air Quality Sensor Name
+    domain: kwgo_AirQualitySite
+    name: kwgo_siteName
+    range: rdfs_Literal
+    slot_uri: kwgo:siteName
+    title: site name
+  kwgo_spatialRelation:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: KWG's general spatial relation
+    name: kwgo_spatialRelation
+    range: Any
+    slot_uri: kwgo:spatialRelation
+    title: spatial relation
+  kwgo_startsFrom:
+    comments:
+    - 'title: road segment starts from'
+    - No occurrences of this slot in the graph.
+    name: kwgo_startsFrom
+    range: Any
+    slot_uri: kwgo:startsFrom
+    title: hazard starts from
+  kwgo_target:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This property denotes the relation between an observation and a S2
+      Cell. This is analogous to a the property sosa:hasFearureOfInterest.
+    name: kwgo_target
+    range: Any
+    slot_uri: kwgo:target
+    title: target
+  kwgo_telephoneNo:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_telephoneNo
+    range: Any
+    slot_uri: kwgo:telephoneNo
+    title: telephone no
+  kwgo_timeScale:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Property that measures the duration over which NOAA's climate division
+      observation measurements are made
+    name: kwgo_timeScale
+    range: Any
+    slot_uri: kwgo:timeScale
+    title: time scale
+  kwgo_totalNumberApproved_IA:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The number of disaster assistance applications that were approved
+      for Individual Assistance
+    name: kwgo_totalNumberApproved_IA
+    range: Any
+    slot_uri: kwgo:totalNumberApproved_IA
+    title: total number approved individual assistance
+  kwgo_traumaDescriptionForState:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_traumaDescriptionForState
+    range: Any
+    slot_uri: kwgo:traumaDescriptionForState
+    title: trauma description for state
+  kwgo_traumaDescriptionSource:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_traumaDescriptionSource
+    range: Any
+    slot_uri: kwgo:traumaDescriptionSource
+    title: trauma description source
+  kwgo_traumaDescriptionSourceDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_traumaDescriptionSourceDate
+    range: Any
+    slot_uri: kwgo:traumaDescriptionSourceDate
+    title: trauma description source date
+  kwgo_typeOfLSAD:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The legal/statistical area description (LSAD) codes describe the
+      particular typology for each geographic entity.
+    name: kwgo_typeOfLSAD
+    range: Any
+    slot_uri: kwgo:typeOfLSAD
+    title: type of legal/statistical area description (LSAD) area
+  kwgo_value:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: Divisional value (1-month period)of the measured climate property
+    name: kwgo_value
+    range: Any
+    slot_uri: kwgo:value
+    title: value
+  kwgo_website:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_website
+    range: Any
+    slot_uri: kwgo:website
+    title: website
+  kwgo_zipCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: kwgo_zipCode
+    range: Any
+    slot_uri: kwgo:zipCode
+    title: zip code
+  qudt_unit:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: qudt_unit
+    range: Any
+    slot_uri: qudt:unit
+  sosa_hasABBR:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hasABBR
+    range: Any
+    slot_uri: sosa:hasABBR
+    title: has abbreviation
+  sosa_hasFeatureOfInterest:
+    comments:
+    - No occurrences of this slot in the graph.
+    inverse: sosa_isFeatureOfInterestOf
+    name: sosa_hasFeatureOfInterest
+    range: Any
+    slot_uri: sosa:hasFeatureOfInterest
+    title: hasFeatureOfInterest
+  sosa_hasMember:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hasMember
+    range: Any
+    slot_uri: sosa:hasMember
+    title: hasMember
+  sosa_hasObservation:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hasObservation
+    range: Any
+    slot_uri: sosa:hasObservation
+  sosa_hasResult:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hasResult
+    range: Any
+    slot_uri: sosa:hasResult
+  sosa_hasSimpleResult:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hasSimpleResult
+    range: Any
+    slot_uri: sosa:hasSimpleResult
+    title: hasSimpleResult
+  sosa_hosts:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_hosts
+    range: Any
+    slot_uri: sosa:hosts
+  sosa_isFeatureOfInterestOf:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_isFeatureOfInterestOf
+    range: Any
+    slot_uri: sosa:isFeatureOfInterestOf
+  sosa_madeBySensor:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_madeBySensor
+    range: Any
+    slot_uri: sosa:madeBySensor
+  sosa_observedProperty:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_observedProperty
+    range: Any
+    slot_uri: sosa:observedProperty
+    title: observedProperty
+  sosa_phenomenonTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_phenomenonTime
+    range: Any
+    slot_uri: sosa:phenomenonTime
+  sosa_resultTime:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: sosa_resultTime
+    range: Any
+    slot_uri: sosa:resultTime
+  wgs_asWKT:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: wgs_asWKT
+    range: Any
+    slot_uri: wgs:asWKT
+title: No schema name specified
+types:
+  wgs_wktLiteral:
+    name: wgs_wktLiteral
+    typeof: string
+    uri: wgs:wktLiteral

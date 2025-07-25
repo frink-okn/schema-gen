@@ -1,0 +1,520 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+      slots:
+        tag: slots
+        value: {}
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+classes:
+  gnis-ld-usgs_Airport:
+    class_uri: gnis-ld-usgs:Airport
+    description: A facility, on land, where aircraft can take off and land; usually
+      consists of hard-surfaced landing strips, a control tower, hangars, and accommodations
+      for passengers and cargo
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Airport
+    title: Airport
+  gnis-ld-usgs_Arch:
+    class_uri: gnis-ld-usgs:Arch
+    comments:
+    - 'description: A curved structure that supports the weight of material over an
+      open space'
+    description: A naturally occuring, freestanding curved structure that spans an
+      opening
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Arch
+    title: Arch
+  gnis-ld-usgs_Area:
+    class_uri: gnis-ld-usgs:Area
+    name: gnis-ld-usgs_Area
+    title: Area
+  gnis-ld-usgs_Arroyo:
+    class_uri: gnis-ld-usgs:Arroyo
+    description: Watercourse or channel through which water may occasionally flow
+      (coulee, draw, gully, wash)
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Arroyo
+    title: Arroyo
+  gnis-ld-usgs_Bar:
+    class_uri: gnis-ld-usgs:Bar
+    comments:
+    - 'description: A natural accumulation of sand, gravel, or other material forming
+      an underwater or exposed embankment'
+    description: A submerged or emerged mound, ridge, or succession of ridges of sand
+      or other material extending across the bottom,and which may obstruct navigation
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Bar
+    title: Bar
+  gnis-ld-usgs_Basin:
+    class_uri: gnis-ld-usgs:Basin
+    description: A bowl-shaped depression in the surface of the land or ocean floor
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Basin
+    title: Basin
+  gnis-ld-usgs_Bay:
+    class_uri: gnis-ld-usgs:Bay
+    description: water area that is an opening of the sea or ocean into the land,
+      or of an estuary, lake, or river into its shore
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Bay
+    title: Bay
+  gnis-ld-usgs_Beach:
+    class_uri: gnis-ld-usgs:Beach
+    description: A gently sloping shore which is washed by waves or tides, especially
+      the parts covered by sand or pebbles
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Beach
+    title: Beach
+  gnis-ld-usgs_Bench:
+    class_uri: gnis-ld-usgs:Bench
+    description: An area of relatively level land on the flank of an elevation such
+      as a hill, ridge, or mountain where the slope of the land rises on one side
+      and descends on the opposite side (level)
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Bench
+    title: Bench
+  gnis-ld-usgs_Bend:
+    class_uri: gnis-ld-usgs:Bend
+    description: A curve in the course of a stream or the land within the curve
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Bend
+    title: Bend
+  gnis-ld-usgs_Bridge:
+    class_uri: gnis-ld-usgs:Bridge
+    description: A structure erected over a depression or obstacle to carry traffic
+      or some facility such as a pipeline
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Bridge
+    title: Bridge
+  gnis-ld-usgs_Building:
+    class_uri: gnis-ld-usgs:Building
+    description: A permanent walled and roofed construction
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Building
+    title: Building
+  gnis-ld-usgs_BuiltUpArea:
+    class_uri: gnis-ld-usgs:BuiltUpArea
+    description: An area of intensive use, with much of the land covered by structures
+    is_a: geo_SpatialObject
+    name: gnis-ld-usgs_BuiltUpArea
+    title: Built Up Area
+  gnis-ld-usgs_Canal:
+    class_uri: gnis-ld-usgs:Canal
+    description: Manmade waterway used by watercraft or for drainage, irrigation,
+      mining, or water power
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Canal
+    title: Canal
+  gnis-ld-usgs_Cape:
+    class_uri: gnis-ld-usgs:Cape
+    description: A relatively extensive land area jutting into a water body, which
+      prominently marks a change in or interrupts notably the coastal trend of that
+      water body
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Cape
+    title: Cape
+  gnis-ld-usgs_Cemetery:
+    class_uri: gnis-ld-usgs:Cemetery
+    description: A place for burying the dead
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Cemetery
+    title: Cemetery
+  gnis-ld-usgs_Census:
+    class_uri: gnis-ld-usgs:Census
+    description: A statistical area delineated locally specifically for the tabulation
+      of Census Bureau data
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-usgs_Census
+    title: Census
+  gnis-ld-usgs_Channel:
+    class_uri: gnis-ld-usgs:Channel
+    description: Linear deep part of a body of water through which the main volume
+      of water flows and is frequently used as aroute for watercraft (passage, reach,
+      strait, thoroughfare, throughfare)
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Channel
+    title: Channel
+  gnis-ld-usgs_Church:
+    class_uri: gnis-ld-usgs:Church
+    description: Building used for religious worship (chapel, mosque, synagogue, tabernacle,
+      temple).
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Church
+    title: Church
+  gnis-ld-usgs_CivilGovernment:
+    class_uri: gnis-ld-usgs:CivilGovernment
+    name: gnis-ld-usgs_CivilGovernment
+    title: Civil Government
+  gnis-ld-usgs_Cliff:
+    class_uri: gnis-ld-usgs:Cliff
+    description: Very steep or vertical slope
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Cliff
+    title: Cliff
+  gnis-ld-usgs_Crater:
+    class_uri: gnis-ld-usgs:Crater
+    description: Circular-shaped depression at the summit of a volcanic cone or one
+      on the surface of the land caused by the impact of a meteorite; a manmade depression
+      caused by an explosion
+    is_a: gnis-ld-usgs_Basin
+    name: gnis-ld-usgs_Crater
+    title: Crater
+  gnis-ld-usgs_Crossing:
+    class_uri: gnis-ld-usgs:Crossing
+    description: A place where two or more routes of transportation form a junction
+      or intersection
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Crossing
+    title: Crossing
+  gnis-ld-usgs_Dam:
+    class_uri: gnis-ld-usgs:Dam
+    description: Water barrier or embankment built across the course of a stream or
+      into a body of water to control and (or) impound the flow of water
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Dam
+    title: Dam
+  gnis-ld-usgs_Division:
+    class_uri: gnis-ld-usgs:Division
+    name: gnis-ld-usgs_Division
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  gnis-ld-usgs_EcologicalRegime:
+    class_uri: gnis-ld-usgs:EcologicalRegime
+    name: gnis-ld-usgs_EcologicalRegime
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  gnis-ld-usgs_Embankment:
+    class_uri: gnis-ld-usgs:Embankment
+    name: gnis-ld-usgs_Embankment
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  gnis-ld-usgs_Flat:
+    class_uri: gnis-ld-usgs:Flat
+    description: A level tract lying at a small depth below the surface of water,
+      or alternately covered and left bare by the tide
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Flat
+    title: Flat
+  gnis-ld-usgs_Forest:
+    class_uri: gnis-ld-usgs:Forest
+    description: and with a tree-crown areal density (crown closure percentage) of
+      10 percent or more, are stocked with trees capable of producing timber or other
+      wood products, and exert an influence on the climate or water regime
+    is_a: gnis-ld-usgs_EcologicalRegime
+    name: gnis-ld-usgs_Forest
+    title: Forest
+  gnis-ld-usgs_Gap:
+    class_uri: gnis-ld-usgs:Gap
+    description: A low point or opening between mounts or in a ridge
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Gap
+    title: Gap
+  gnis-ld-usgs_Glacier:
+    class_uri: gnis-ld-usgs:Glacier
+    description: Body or stream of ice moving outward and downslope from an area of
+      accumulation; an area of relatively permanent snow or ice on the top or side
+      of a mountain or mountainous area
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Glacier
+    title: Glacier
+  gnis-ld-usgs_Gut:
+    class_uri: gnis-ld-usgs:Gut
+    description: A narrow natural passage or contracte strait connecting two bodies
+      of water where no flow can be determined.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Gut
+    title: Gut
+  gnis-ld-usgs_Harbor:
+    class_uri: gnis-ld-usgs:Harbor
+    description: An area of water where ships, planes or other watercraft can anchor
+      or dock
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Harbor
+    title: Harbor
+  gnis-ld-usgs_Hospital:
+    class_uri: gnis-ld-usgs:Hospital
+    description: Building where the sick or injured may receive medical or surgical
+      attention
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Hospital
+    title: Hospital
+  gnis-ld-usgs_Island:
+    class_uri: gnis-ld-usgs:Island
+    description: An area of dry or relatively dry land surrounded by water or low
+      wet land
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Island
+    title: Island
+  gnis-ld-usgs_Isthmus:
+    class_uri: gnis-ld-usgs:Isthmus
+    description: A narrow strip of land, bordered on both sides by water, connecting
+      two larger land areas
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Isthmus
+    title: Isthmus
+  gnis-ld-usgs_Lake:
+    class_uri: gnis-ld-usgs:Lake
+    description: A standing body of water with a predominantly natural shoreliine
+      surrounded by land
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Lake
+    title: Lake
+  gnis-ld-usgs_Lava:
+    class_uri: gnis-ld-usgs:Lava
+    description: Formations resulting from the consolidation of molten rock on the
+      surface of the Earth
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Lava
+    title: Lava
+  gnis-ld-usgs_Levee:
+    class_uri: gnis-ld-usgs:Levee
+    description: Natural or manmade embankment flanking alongside a stream
+    is_a: gnis-ld-usgs_Embankment
+    name: gnis-ld-usgs_Levee
+    title: Levee
+  gnis-ld-usgs_Locale:
+    class_uri: gnis-ld-usgs:Locale
+    description: A named place not otherwise categorized.
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-usgs_Locale
+    title: Locale
+  gnis-ld-usgs_Military:
+    class_uri: gnis-ld-usgs:Military
+    name: gnis-ld-usgs_Military
+    title: Military
+  gnis-ld-usgs_Mine:
+    class_uri: gnis-ld-usgs:Mine
+    description: An excavation in the earth for the purpose of extracting earth materials
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Mine
+    title: Mine
+  gnis-ld-usgs_MountainRange:
+    class_uri: gnis-ld-usgs:MountainRange
+    description: A series of connected and aligned mountains or mountain ridges
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_MountainRange
+    title: Mountain Range
+  gnis-ld-usgs_Ocean:
+    class_uri: gnis-ld-usgs:Ocean
+    name: gnis-ld-usgs_Ocean
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  gnis-ld-usgs_OilField:
+    class_uri: gnis-ld-usgs:OilField
+    description: An area where petroleum is or was removed from the Earth
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_OilField
+    title: Oil Field
+  gnis-ld-usgs_Park:
+    class_uri: gnis-ld-usgs:Park
+    description: A place or area developed for public use, recreation, or preservation
+      of a cultural or natural resource.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Park
+    title: Park
+  gnis-ld-usgs_Plain:
+    class_uri: gnis-ld-usgs:Plain
+    description: A structure built out into the water, usually with its greatest dimension
+      at right angles to the shore, forming a landing place or a place alongside which
+      vessels can lie.
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Plain
+    title: Plain
+  gnis-ld-usgs_PopulatedPlace:
+    class_uri: gnis-ld-usgs:PopulatedPlace
+    description: Place or area with clustered or scattered buildings and a permanent
+      human population (city, settlement, town, village). A populated place is usually
+      not incorporated and by definition has no legal boundaries. However, a populated
+      place may have a corresponding "civil" record, the legal boundaries of which
+      may or may not coincide with the perceived populated place. Distinct from Census
+      and Civil classes.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_PopulatedPlace
+    title: Populated Place
+  gnis-ld-usgs_PostOffice:
+    class_uri: gnis-ld-usgs:PostOffice
+    description: An official facility of the U.S. Postal Service used for processing
+      and distributing mail and other postal material.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_PostOffice
+    title: Post Office
+  gnis-ld-usgs_Rapids:
+    class_uri: gnis-ld-usgs:Rapids
+    description: An area of broken, fast flowing water in a stream, where the slope
+      of the bed increases (but without a prominent break of slope which might result
+      in a waterfall), or where a gently dipping bar of harder rock outcrops.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Rapids
+    title: Rapids
+  gnis-ld-usgs_Reserve:
+    class_uri: gnis-ld-usgs:Reserve
+    description: A tract of land set aside for a specific use (does not include forests,
+      civil divisions, parks).
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-usgs_Reserve
+    title: Reserve
+  gnis-ld-usgs_Reservoir:
+    class_uri: gnis-ld-usgs:Reservoir
+    description: A constructed basin formed to contain water or other liquids.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Reservoir
+    title: Reservoir
+  gnis-ld-usgs_Ridge:
+    class_uri: gnis-ld-usgs:Ridge
+    description: A long and narrow upland with steep sides; Elevation with a narrow,
+      elongated crest which can be part of a hill or mountain (crest, cuesta, escarpment,
+      hogback, lae, rim, spur).
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Ridge
+    title: Ridge
+  gnis-ld-usgs_Rock:
+    class_uri: gnis-ld-usgs:Rock
+    description: An isolated concreted mass of stony material or a single large stone,
+      usually one constituting a danger to navigation. It may be always submerged,
+      always uncovered, or alternately covered and uncovered by the tide.
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Rock
+    title: Rock
+  gnis-ld-usgs_School:
+    class_uri: gnis-ld-usgs:School
+    description: Building or group of buildings used as an institution for study,
+      teaching, and learning.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_School
+    title: School
+  gnis-ld-usgs_Sea:
+    class_uri: gnis-ld-usgs:Sea
+    description: A body of salt water usaly surrounded by land but often connected
+      to the Ocean
+    is_a: gnis-ld-usgs_Ocean
+    name: gnis-ld-usgs_Sea
+    title: Sea
+  gnis-ld-usgs_Slope:
+    class_uri: gnis-ld-usgs:Slope
+    description: A gently inclined part of the Earth's surface (grade, pitch).
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Slope
+    title: Slope
+  gnis-ld-usgs_Spring:
+    class_uri: gnis-ld-usgs:Spring
+    description: A place where water issues from the ground naturally
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Spring
+    title: Spring
+  gnis-ld-usgs_Stream:
+    class_uri: gnis-ld-usgs:Stream
+    description: Linear body of water flowing on the Earth's surface.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Stream
+    title: Stream
+  gnis-ld-usgs_Summit:
+    class_uri: gnis-ld-usgs:Summit
+    description: Prominent elevation rising above the surrounding level of the Earth's
+      surface.
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Summit
+    title: Summit
+  gnis-ld-usgs_SurfaceWater:
+    class_uri: gnis-ld-usgs:SurfaceWater
+    is_a: geo_SpatialObject
+    name: gnis-ld-usgs_SurfaceWater
+    title: Surface Water
+  gnis-ld-usgs_Swamp:
+    class_uri: gnis-ld-usgs:Swamp
+    description: Poorly drained wetland, fresh or saltwater, wooded or grassy, possibly
+      covered with open water.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Swamp
+    title: Swamp
+  gnis-ld-usgs_Terrain:
+    class_uri: gnis-ld-usgs:Terrain
+    is_a: geo_SpatialObject
+    name: gnis-ld-usgs_Terrain
+    title: Terrain
+  gnis-ld-usgs_Tower:
+    class_uri: gnis-ld-usgs:Tower
+    description: A tall framework or structure, the height of which is required by
+      its function; generally used for observation, storage, or electronic transmission.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Tower
+    title: Tower
+  gnis-ld-usgs_Trail:
+    class_uri: gnis-ld-usgs:Trail
+    description: A cleared path, beaten track, or improved surface, as through woods
+      or wilderness, not usually trafficed by vehicles because of width, seasonal
+      conditions, or access restrictions.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Trail
+    title: Trail
+  gnis-ld-usgs_Tunnel:
+    class_uri: gnis-ld-usgs:Tunnel
+    description: An underground or underwater passage.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Tunnel
+    title: Tunnel
+  gnis-ld-usgs_Unknown:
+    class_uri: gnis-ld-usgs:Unknown
+    description: Unknown feature type
+    name: gnis-ld-usgs_Unknown
+    title: Unknown
+  gnis-ld-usgs_Valley:
+    class_uri: gnis-ld-usgs:Valley
+    description: An elongated depression in the earth's surface which generally slopes
+      from one end to the other.
+    is_a: gnis-ld-usgs_Terrain
+    name: gnis-ld-usgs_Valley
+    title: Valley
+  gnis-ld-usgs_Waterfall:
+    class_uri: gnis-ld-usgs:Waterfall
+    description: A vertical or near vertical descent of water over a step or ledge
+      in the bed of a river.
+    is_a: gnis-ld-usgs_SurfaceWater
+    name: gnis-ld-usgs_Waterfall
+    title: Waterfall
+  gnis-ld-usgs_Well:
+    class_uri: gnis-ld-usgs:Well
+    description: A pit or hole dug or bored into the earth for the extraction of oil,
+      water, other fluids, or gases.
+    is_a: gnis-ld-usgs_BuiltUpArea
+    name: gnis-ld-usgs_Well
+    title: Well
+  gnis-ld-usgs_Woodland:
+    class_uri: gnis-ld-usgs:Woodland
+    description: Land having a cover of trees, shrubs, or both.
+    is_a: gnis-ld-usgs_Forest
+    name: gnis-ld-usgs_Woodland
+    title: Woodland
+comments:
+- 'title: U.S. Geological Survey (USGS)'
+- 'created_on: 2018-03-01'
+created_on: '2025-07-24T16:19:29.300860'
+default_prefix: okns
+description: This ontology supports USGS features across datasets.
+id: okns:gnis-ld-usgs
+imports:
+- okns:geo
+last_updated_on: '2025-07-24T16:19:29.300860'
+name: gnis-ld-usgs
+prefixes:
+  geo: http://www.opengis.net/ont/geosparql#
+  gnis-ld-usgs: http://gnis-ld.org/lod/usgs/ontology/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+slots: {}
+title: No schema name specified

@@ -1,0 +1,844 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 9
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 1
+          swrl:AtomList:
+            tag: swrl:AtomList
+            value: 4
+          swrl:ClassAtom:
+            tag: swrl:ClassAtom
+            value: 1
+          swrl:Imp:
+            tag: swrl:Imp
+            value: 1
+          swrl:IndividualPropertyAtom:
+            tag: swrl:IndividualPropertyAtom
+            value: 3
+          swrl:Variable:
+            tag: swrl:Variable
+            value: 3
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 2
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 3
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 1
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 1
+          owl:onClass:
+            tag: owl:onClass
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value: 1
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 6
+                  uri:
+                    tag: uri
+                    value: 2
+          owl:qualifiedCardinality:
+            tag: owl:qualifiedCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value: 1
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+          swrl:argument1:
+            tag: swrl:argument1
+            value:
+              swrl:ClassAtom:
+                tag: swrl:ClassAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value: 1
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value: 3
+          swrl:argument2:
+            tag: swrl:argument2
+            value:
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value: 3
+          swrl:body:
+            tag: swrl:body
+            value:
+              swrl:Imp:
+                tag: swrl:Imp
+                value:
+                  swrl:AtomList:
+                    tag: swrl:AtomList
+                    value: 1
+          swrl:classPredicate:
+            tag: swrl:classPredicate
+            value:
+              swrl:ClassAtom:
+                tag: swrl:ClassAtom
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 1
+          swrl:head:
+            tag: swrl:head
+            value:
+              swrl:Imp:
+                tag: swrl:Imp
+                value:
+                  swrl:AtomList:
+                    tag: swrl:AtomList
+                    value: 1
+          swrl:propertyPredicate:
+            tag: swrl:propertyPredicate
+            value:
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 1
+      slots:
+        tag: slots
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 2
+          owl:cardinality:
+            tag: owl:cardinality
+            value: 3
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value: 1
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value: 1
+          owl:onClass:
+            tag: owl:onClass
+            value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 9
+          owl:qualifiedCardinality:
+            tag: owl:qualifiedCardinality
+            value: 1
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value: 1
+          swrl:argument1:
+            tag: swrl:argument1
+            value: 4
+          swrl:argument2:
+            tag: swrl:argument2
+            value: 3
+          swrl:body:
+            tag: swrl:body
+            value: 1
+          swrl:classPredicate:
+            tag: swrl:classPredicate
+            value: 1
+          swrl:head:
+            tag: swrl:head
+            value: 1
+          swrl:propertyPredicate:
+            tag: swrl:propertyPredicate
+            value: 3
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: nb4665b86d8ff4e6998866afb13835408b11
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: xsd:date
+          swrl:AtomList:
+            tag: swrl:AtomList
+            value: nb4665b86d8ff4e6998866afb13835408b16
+          swrl:ClassAtom:
+            tag: swrl:ClassAtom
+            value: nb4665b86d8ff4e6998866afb13835408b15
+          swrl:Imp:
+            tag: swrl:Imp
+            value: nb4665b86d8ff4e6998866afb13835408b13
+          swrl:IndividualPropertyAtom:
+            tag: swrl:IndividualPropertyAtom
+            value: nb4665b86d8ff4e6998866afb13835408b19
+          swrl:Variable:
+            tag: swrl:Variable
+            value: urn:swrl#l
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: c4o:InTextReferencePointerListItem
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b10
+          owl:cardinality:
+            tag: owl:cardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:cardinality
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b12
+          owl:maxCardinality:
+            tag: owl:maxCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:maxCardinality
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b4
+          owl:minCardinality:
+            tag: owl:minCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '2'
+                      predicate:
+                        tag: predicate
+                        value: owl:minCardinality
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b8
+          owl:onClass:
+            tag: owl:onClass
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: biro:BibliographicReference
+                      predicate:
+                        tag: predicate
+                        value: owl:onClass
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b11
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:DatatypeProperty:
+                    tag: owl:DatatypeProperty
+                    value:
+                      object:
+                        tag: object
+                        value: c4o:hasContent
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b4
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: c4o:hasContext
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b12
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://purl.org/co/item
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b10
+          owl:qualifiedCardinality:
+            tag: owl:qualifiedCardinality
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  unsignedinteger:
+                    tag: unsignedinteger
+                    value:
+                      object:
+                        tag: object
+                        value: '1'
+                      predicate:
+                        tag: predicate
+                        value: owl:qualifiedCardinality
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b11
+          owl:someValuesFrom:
+            tag: owl:someValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: biro:BibliographicReference
+                      predicate:
+                        tag: predicate
+                        value: owl:someValuesFrom
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b9
+          swrl:argument1:
+            tag: swrl:argument1
+            value:
+              swrl:ClassAtom:
+                tag: swrl:ClassAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value:
+                      object:
+                        tag: object
+                        value: urn:swrl#l
+                      predicate:
+                        tag: predicate
+                        value: swrl:argument1
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b15
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value:
+                      object:
+                        tag: object
+                        value: urn:swrl#l
+                      predicate:
+                        tag: predicate
+                        value: swrl:argument1
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b17
+          swrl:argument2:
+            tag: swrl:argument2
+            value:
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  swrl:Variable:
+                    tag: swrl:Variable
+                    value:
+                      object:
+                        tag: object
+                        value: urn:swrl#p
+                      predicate:
+                        tag: predicate
+                        value: swrl:argument2
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b17
+          swrl:body:
+            tag: swrl:body
+            value:
+              swrl:Imp:
+                tag: swrl:Imp
+                value:
+                  swrl:AtomList:
+                    tag: swrl:AtomList
+                    value:
+                      object:
+                        tag: object
+                        value: nb4665b86d8ff4e6998866afb13835408b14
+                      predicate:
+                        tag: predicate
+                        value: swrl:body
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b13
+          swrl:classPredicate:
+            tag: swrl:classPredicate
+            value:
+              swrl:ClassAtom:
+                tag: swrl:ClassAtom
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: c4o:InTextReferencePointerList
+                      predicate:
+                        tag: predicate
+                        value: swrl:classPredicate
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b15
+          swrl:head:
+            tag: swrl:head
+            value:
+              swrl:Imp:
+                tag: swrl:Imp
+                value:
+                  swrl:AtomList:
+                    tag: swrl:AtomList
+                    value:
+                      object:
+                        tag: object
+                        value: nb4665b86d8ff4e6998866afb13835408b20
+                      predicate:
+                        tag: predicate
+                        value: swrl:head
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b13
+          swrl:propertyPredicate:
+            tag: swrl:propertyPredicate
+            value:
+              swrl:IndividualPropertyAtom:
+                tag: swrl:IndividualPropertyAtom
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: c4o:pertainsTo
+                      predicate:
+                        tag: predicate
+                        value: swrl:propertyPredicate
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b21
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://purl.org/co/element
+                      predicate:
+                        tag: predicate
+                        value: swrl:propertyPredicate
+                      subject:
+                        tag: subject
+                        value: nb4665b86d8ff4e6998866afb13835408b17
+classes:
+  c4o_BibliographicInformationSource:
+    class_uri: c4o:BibliographicInformationSource
+    description: A source of information about bibliographic citations, such as Google
+      Scholar, Web of Science or Scopus.
+    name: c4o_BibliographicInformationSource
+    title: bibliographic information source
+  c4o_GlobalCitationCount:
+    class_uri: c4o:GlobalCitationCount
+    description: The number of times a work has been cited globally, as determined
+      from a particular bibliographic information source on a particular date.
+    name: c4o_GlobalCitationCount
+    title: global citation count
+  c4o_InTextReferencePointer:
+    class_uri: c4o:InTextReferencePointer
+    comments:
+    - 'description: An in-text reference pointer is a textual device denoting a single
+      bibliographic reference that is embedded in the text of a document within the
+      context of a particular sentence.'
+    - "description: The in-text reference pointer is a textual element, usually embedded\
+      \ at the end of a phrase or sentence within the text of a document, that denotes\
+      \ a specific bibliographic reference present in the reference list of that document.\
+      \ For example, if the item in the reference list is: \n\n4.  Ko AI, Reis MG,\
+      \ Ribeiro Dourado CM, Johnson WD Jr, Riley LW (1999). Urban epidemic of severe\
+      \ leptospirosis in Brazil. Salvador Leptospirosis Study Group. Lancet 354: 820-825.\n\
+      \nthe in-text reference pointer to this paper in a journal article may be manifested\
+      \ in a number of ways:\t\n\nNumerically, for example by using the numeral 4\
+      \ in superscript or between square brackets, thus: \"[4]\".\n\nOr by use of\
+      \ the author names (or the first author's name plus et al.) and the publication\
+      \ year in parentheses, thus: \"(Ko et al., 1999)\". \n\nOr, less commonly, by\
+      \ the use of a code, e.g. by specifying the first surname letter of the first\
+      \ three author of the cited work followed by the last two digits of the year\
+      \ of publication, this string of characters being enclosed within square brackets,\
+      \ thus: \"[KRR99]\".\n\nIf reference pointers are aggregated, e.g. \"[4, 5,\
+      \ 6-9]\", they may be described by means of the class c4o:SingleLocationPointerList."
+    description: http://purl.org/spar/c4o/InTextReferencePointer%20module.png
+    is_a: frbr_Expression
+    name: c4o_InTextReferencePointer
+    title: in-text reference pointer
+  c4o_InTextReferencePointerList:
+    class_uri: c4o:InTextReferencePointerList
+    comments:
+    - 'description: A list containing only in-text reference pointers denoting the
+      specific bibliographic references to which the list pertains.'
+    description: An in-text reference pointer list can only contain in-text reference
+      pointer list items, and it always pertains to one or more bibliographic references.
+    is_a: http___purl.org_co_List
+    name: c4o_InTextReferencePointerList
+    title: in-text reference pointer list
+  c4o_InTextReferencePointerListItem:
+    class_uri: c4o:InTextReferencePointerListItem
+    comments:
+    - 'description: This class describes all the list items that must be used in the
+      context of an in-text reference pointer list.'
+    description: "An in-text reference pointer list item can contain only a single\
+      \ in-text reference pointer.\u240A\u240ANote that, as specified through the\
+      \ hasKey assertion, such a list cannot contain more than one item containing\
+      \ the same in-text reference pointer entity."
+    is_a: http___purl.org_co_ListItem
+    name: c4o_InTextReferencePointerListItem
+    title: in-text reference pointer list item
+  c4o_SingleLocationPointerList:
+    class_uri: c4o:SingleLocationPointerList
+    comments:
+    - 'description: An in-text reference pointer list that pertains to all the in-text
+      reference pointers to two or more references occurring at a single location
+      in the text of the citing work.'
+    description: A single location pointer list pertains to two or more references
+      occurring at a single location in the text of the citing work - e.g. "[3,4,9]"
+      or "[7-12]".
+    is_a: frbr_Expression
+    name: c4o_SingleLocationPointerList
+    title: single location pointer list
+  c4o_SingleReferencePointerList:
+    class_uri: c4o:SingleReferencePointerList
+    comments:
+    - 'description: An in-text reference pointer list that pertains to exactly one
+      bibliographic reference.'
+    description: "A single reference pointer list pertains only to one bibliographic\
+      \ reference, being a list of all the in-text reference pointers to that single\
+      \ reference to be found in the citing work.\u240A\u240ANote that this semantic\
+      \ constraint is handled by the combined use of a particular restriction of this\
+      \ class, i.e. that the list pertains to exactly one owl:Thing, and that the\
+      \ following SWRL rule applies:\u240A\u240Ac4o:InTextReferencePointerList(?l),\
+      \ c4o:denotes(?p, ?r), swan:item(?l, ?i), swan:itemContent(?i, ?p) -> c4o:pertainsTo(?l,\
+      \ ?r)"
+    is_a: c4o_InTextReferencePointerList
+    name: c4o_SingleReferencePointerList
+    title: single reference pointer list
+  http___purl.org_co_ListItem:
+    class_uri: http://purl.org/co/ListItem
+    name: http___purl.org_co_ListItem
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+comments:
+- 'last_updated_on: 2018-06-22'
+- "description: C4O, the Citation Counting and Context Characterization Ontology (C4O)\
+  \ allows the characterization of bibliographic citations in terms of their number\
+  \ and their context.\u240A\u240AIt provides the ontological structures to permit\
+  \ the number of in-text citations of a cited source (i.e. the number of in-text\
+  \ reference pointers to a single reference in the citing article's reference list)\
+  \ to be recorded, and also the number of citations a cited entity has received globally,\
+  \ as determined by a bibliographic information resource such as Google Scholar,\
+  \ Scopus or Web of Knowledge on a particular date.\u240A\u240AMoreover, it enables\
+  \ ontological descriptions of the context within the citing document in which an\
+  \ in-text reference pointer appears, and permits that context to be related to relevant\
+  \ textual passages in the cited document.\u240A"
+- 'title: C4O, the Citation Counting and Context Characterization Ontology'
+- "description: The Citation Counting and Context Characterisation Ontology (C4O)\
+  \ is an ontology that permits the number of in-text citations of a cited source\
+  \ to be recorded, together with their textual citation contexts, along with the\
+  \ number of citations a cited entity has received globally on a particular date.\u240A\
+  \u240A**URL:** http://purl.org/spar/c4o\u240A\u240A**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X),\
+  \ [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\u240A\u240A**License:**\
+  \ [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\u240A\
+  \u240A**Website:** http://www.sparontologies.net/ontologies/c4o\u240A\u240A**Cite\
+  \ as:** Di Iorio, A., Nuzzolese, A. G., Peroni, S., Shotton, D., Vitali, F. (2014).\
+  \ Describing bibliographic references in RDF. In Proceedings of 4th Workshop on\
+  \ Semantic Publishing (SePublica 2014). http://ceur-ws.org/Vol-1155/paper-05.pdf"
+created_on: '2025-07-24T16:18:01.467511'
+default_prefix: okns
+description: http://purl.org/spar/c4o/CitationCounting%20module.png
+id: okns:c4o
+imports:
+- okns:biro
+- okns:swrl
+- okns:frbr
+- linkml:types
+- okns:extended_types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-07-24T16:18:01.467511'
+name: c4o
+prefixes:
+  biro: http://purl.org/spar/biro/
+  c4o: http://purl.org/spar/c4o/
+  dc: http://purl.org/dc/elements/1.1/
+  frbr: http://purl.org/vocab/frbr/core#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  swrl: http://www.w3.org/2003/11/swrl#
+  vann: http://purl.org/vocab/vann/
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  c4o_denotes:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property used to assert the connection between an in-text reference
+      pointer and the bibliographic reference it points to.
+    domain: c4o_InTextReferencePointer
+    inverse: c4o_isDenotedBy
+    name: c4o_denotes
+    range: biro_BibliographicReference
+    slot_uri: c4o:denotes
+    subproperty_of: owl_topObjectProperty
+    title: denotes
+  c4o_hasContent:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: It is used to specify the textual content of a particular FRBR expression.
+    domain: frbr_Expression
+    name: c4o_hasContent
+    range: rdfs_Literal
+    slot_uri: c4o:hasContent
+    subproperty_of: owl_topDataProperty
+    title: has content
+  c4o_hasContext:
+    comments:
+    - 'description: This property is used to indicate the textual context (e.g. a
+      sentence or a paragraph) of a particular in-text reference pointer, this context
+      providing the rhetorical motivation for the existence of that citation.'
+    - No occurrences of this slot in the graph.
+    description: Any FRBR expression that constitutes the range of this property can
+      have at most one particular literal textual content specified through the property
+      c4o:hasContent.
+    domain: c4o_InTextReferencePointer
+    name: c4o_hasContext
+    range: Any
+    slot_uri: c4o:hasContext
+    subproperty_of: owl_topObjectProperty
+    title: has context
+  c4o_hasGlobalCitationFrequency:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking a publication entity to the property c40:GlobalCitationCount
+      that specify how many times a work has been cited by others, according to a
+      particular information source on a particular date.
+    domain: frbr_Endeavour
+    name: c4o_hasGlobalCitationFrequency
+    range: c4o_GlobalCitationCount
+    slot_uri: c4o:hasGlobalCitationFrequency
+    subproperty_of: owl_topObjectProperty
+    title: has global citation frequency
+  c4o_hasGlobalCountDate:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The date on which the global citation count of the cited entity was
+      recorded from a named bibliographic information source.
+    domain: c4o_GlobalCitationCount
+    name: c4o_hasGlobalCountDate
+    range: date
+    slot_uri: c4o:hasGlobalCountDate
+    title: has global count date
+  c4o_hasGlobalCountSource:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property linking the property c40:GlobalCitationCount to the bibliographic
+      information source providing the global citation count information for a particular
+      publication on a particular date.
+    domain: c4o_GlobalCitationCount
+    name: c4o_hasGlobalCountSource
+    range: c4o_BibliographicInformationSource
+    slot_uri: c4o:hasGlobalCountSource
+    subproperty_of: owl_topObjectProperty
+    title: has global count source
+  c4o_hasGlobalCountValue:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: An integer defining the value of the global citation count of a cited
+      entity recorded from a named bibliographic information source on a particular
+      date.
+    domain: c4o_GlobalCitationCount
+    name: c4o_hasGlobalCountValue
+    range: unsignedinteger
+    slot_uri: c4o:hasGlobalCountValue
+    title: has global count value
+  c4o_hasInTextCitationFrequency:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: This property allows one to specify how many separate in-text reference
+      pointers exist within the text of a citing document that all denote the same
+      single bibliographic reference to a cited document (i.e how many distinct textual
+      contexts exist within the citing document from which a citation is made to a
+      particular document).
+    domain: biro_BibliographicReference
+    name: c4o_hasInTextCitationFrequency
+    range: unsignedinteger
+    slot_uri: c4o:hasInTextCitationFrequency
+    title: has in text citation frequency
+  c4o_isDenotedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property used to assert the connection between a bibliographic
+      reference and the in-text reference pointer that points to it.
+    domain: biro_BibliographicReference
+    name: c4o_isDenotedBy
+    range: c4o_InTextReferencePointer
+    slot_uri: c4o:isDenotedBy
+    subproperty_of: owl_topObjectProperty
+    title: is denoted by
+  c4o_isRelevantTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: A property allowing one FRBR expression to be declared to be of rhetorical
+      relevance to another, for instance that the textual context of a particular
+      in-text reference pointer in one document is relevant to a section of text within
+      the published document that is referenced by the bibliographic reference denoted
+      by the in-text reference pointer, and vice versa that the converse relevance
+      also exists.
+    domain: frbr_Expression
+    name: c4o_isRelevantTo
+    range: frbr_Expression
+    slot_uri: c4o:isRelevantTo
+    subproperty_of: owl_topObjectProperty
+    title: is relevant to
+  c4o_pertainsTo:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The property linking an in-text reference pointer list to the bibliographic
+      reference or references denoted by the in-text reference pointers within that
+      list.
+    domain: c4o_InTextReferencePointerList
+    name: c4o_pertainsTo
+    range: biro_BibliographicReference
+    slot_uri: c4o:pertainsTo
+    subproperty_of: owl_topObjectProperty
+    title: pertains to
+  http___www.semanticweb.org_owlapi#nodeID:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: http___www.semanticweb.org_owlapi#nodeID
+    range: Any
+    slot_uri: http://www.semanticweb.org/owlapi#nodeID
+  vann_preferredNamespaceURI:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: vann_preferredNamespaceURI
+    range: Any
+    slot_uri: vann:preferredNamespaceURI
+    title: http://purl.org/vocab/vann/preferredNamespaceURI
+title: No schema name specified

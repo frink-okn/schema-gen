@@ -1,0 +1,277 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: 9
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 8
+                  owl:Restriction:
+                    tag: owl:Restriction
+                    value: 1
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value: 5
+                  uri:
+                    tag: uri
+                    value: 4
+      slots:
+        tag: slots
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value: 9
+          owl:onProperty:
+            tag: owl:onProperty
+            value: 9
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Restriction:
+            tag: owl:Restriction
+            value: nd77a005d98c44fefb8b5a3dc866bd49cb8
+      pairs:
+        tag: pairs
+        value:
+          owl:allValuesFrom:
+            tag: owl:allValuesFrom
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: biro:BibliographicList
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: nd77a005d98c44fefb8b5a3dc866bd49cb9
+                  owl:Restriction:
+                    tag: owl:Restriction
+                    value:
+                      object:
+                        tag: object
+                        value: nd77a005d98c44fefb8b5a3dc866bd49cb14
+                      predicate:
+                        tag: predicate
+                        value: owl:allValuesFrom
+                      subject:
+                        tag: subject
+                        value: nd77a005d98c44fefb8b5a3dc866bd49cb13
+          owl:onProperty:
+            tag: owl:onProperty
+            value:
+              owl:Restriction:
+                tag: owl:Restriction
+                value:
+                  owl:ObjectProperty:
+                    tag: owl:ObjectProperty
+                    value:
+                      object:
+                        tag: object
+                        value: frbr:realization
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nd77a005d98c44fefb8b5a3dc866bd49cb9
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://purl.org/co/element
+                      predicate:
+                        tag: predicate
+                        value: owl:onProperty
+                      subject:
+                        tag: subject
+                        value: nd77a005d98c44fefb8b5a3dc866bd49cb13
+classes:
+  biro_BibliographicCollection:
+    class_uri: biro:BibliographicCollection
+    comments:
+    - 'description: A collection of bibliographic records, each of which references
+      a publication (or a work in preparation for publication). Examples of bibliographic
+      collections include a collection of the bibliographic records of all the publications
+      that a single individual has authored, or a collection of those bibliographic
+      records to be included in a research paper, where they are expressed as a reference
+      list.'
+    description: A bibliographic collection is composed only of items containing bibliographic
+      records.  Moreover, it cannot be part of other bibliographic collections, and
+      it is realized only by bibliographic lists.
+    is_a: frbr_Work
+    name: biro_BibliographicCollection
+    title: bibliographic collection
+  biro_BibliographicList:
+    class_uri: biro:BibliographicList
+    comments:
+    - 'description: An ordered list of bibliographic items, each of which contains
+      a bibliographic reference.'
+    description: A bibliographic list is composed only of items containing bibliographic
+      references.  Moreover, it is always a realization of a bibliographic collection.
+    is_a: frbr_Expression
+    name: biro_BibliographicList
+    title: bibliographic list
+  biro_BibliographicRecord:
+    class_uri: biro:BibliographicRecord
+    comments:
+    - 'description: A record that uniquely describes a particular textual or data
+      publication (or a work in preparation for publication). Each bibliographic record
+      is a set of entities describing aspects of the referenced work, including, for
+      example, but not restricted to: authors, title, journal, publication year, DOI,
+      ISSN, publisher and copyright information, or, in the case of a data publication:
+      creators, title, version, archive, publication year, DOI or other identifier).
+      The FRBR expression of a bibliographic record is a bibliographic reference,
+      which usually contains only a sub-set of these entities, ordered in a particular
+      way that corresponds to the house style of the publication in which it occurs.'
+    description: A bibliographic record is realized only through bibliographic references.
+    is_a: frbr_Work
+    name: biro_BibliographicRecord
+    title: bibliographic record
+  biro_BibliographicReference:
+    class_uri: biro:BibliographicReference
+    comments:
+    - 'description: An expression of a bibliographic record in a specific format,
+      that references a particular textual or data publication (or a work in preparation
+      for publication). Each bibliographic reference is a list of items containing
+      entities that describe aspects of the referenced work - for example authors,
+      title, journal, publication year - selected from the bibliographic record.  Note
+      that because different journal styles may require omission of elements of the
+      bibliographic record in references included in a paper''s reference list (e.g.
+      the title, the identifier, the names of the eighth and subsequent authors),
+      and because errors can be introduced when an author creates a bibliographic
+      reference, the bibliographic reference to a published work may not be a complete
+      or fully accurate expression of the information contained within the authoritative
+      bibliographic record for that work.'
+    description: A bibliographic reference is a realization of a bibliographic record.
+      Moreover, it can contain only items referring to elements contained by the bibliographic
+      record it realizes.
+    is_a: frbr_Expression
+    name: biro_BibliographicReference
+    title: bibliographic reference
+  biro_LibraryCatalogue:
+    class_uri: biro:LibraryCatalogue
+    description: A catalogue of the bibliographic holdings of a library.
+    is_a: biro_BibliographicCollection
+    name: biro_LibraryCatalogue
+    title: library catalogue
+  biro_ReferenceList:
+    class_uri: biro:ReferenceList
+    description: A list used to describe the bibliography of a research paper, a journal
+      article, a book, a book chapter or similar publication.
+    is_a: biro_BibliographicList
+    name: biro_ReferenceList
+    title: reference list
+  http___purl.org_co_List:
+    class_uri: http://purl.org/co/List
+    name: http___purl.org_co_List
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  http___purl.org_co_Set:
+    class_uri: http://purl.org/co/Set
+    name: http___purl.org_co_Set
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+comments:
+- 'last_updated_on: 2013-05-11'
+- "description: BiRO, the Bibliographic Reference Ontology, is an ontology structured\
+  \ according to the FRBR model to define bibliographic records (as subclasses of\
+  \ frbr:Work) and bibliographic references (as subclasses of frbr:Expression), and\
+  \ their compilations into bibliographic collections such as library catalogues,\
+  \ and into bibliographic lists such as reference lists in journal articles, respectively.\u240A\
+  \u240AIt provides a logical system for relating an individual bibliographic reference,\
+  \ such as appears in the reference list of a published article (which may lack the\
+  \ title of the cited article, the full names of the listed authors, or indeed the\
+  \ full list of authors):\u240A- to the full bibliographic record for that cited\
+  \ article, which in addition to missing reference fields may also include the name\
+  \ of the publisher, and the ISSN or ISBN of the publication;\u240A- to collections\
+  \ of bibliographic records such as library catatlogues; and\u240A- to bibliographic\
+  \ lists, such as reference lists."
+- 'title: BiRO, the Bibliographic Reference Ontology'
+- "description: The Bibliographic Reference Ontology (BiRO) is an ontology meant to\
+  \ define bibliographic records, bibliographic references, and their compilation\
+  \ into bibliographic collections and bibliographic lists, respectively.\u240A\u240A\
+  **URL:** http://purl.org/spar/biro\u240A\u240A**Creators**: [David Shotton](http://orcid.org/0000-0001-5506-523X),\
+  \ [Silvio Peroni](http://orcid.org/0000-0003-0530-4305)\u240A\u240A**License:**\
+  \ [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode)\u240A\
+  \u240A**Website:** http://www.sparontologies.net/ontologies/biro\u240A\u240A**Cite\
+  \ as:** Di Iorio, A., Nuzzolese, A. G., Peroni, S., Shotton, D., Vitali, F. (2014).\
+  \ Describing bibliographic references in RDF. In Proceedings of 4th Workshop on\
+  \ Semantic Publishing (SePublica 2014). http://ceur-ws.org/Vol-1155/paper-05.pdf"
+- 'description: This ontology is available at http://purl.org/spar/biro, and uses
+  the namespace prefix biro.'
+created_on: '2025-07-24T16:16:42.830849'
+default_prefix: okns
+description: http://purl.org/spar/biro/biro.png
+id: okns:biro
+imports:
+- okns:owl-rdf-rdfs
+- okns:frbr
+- linkml:types
+- okns:extended_types
+last_updated_on: '2025-07-24T16:16:42.830849'
+name: biro
+prefixes:
+  biro: http://purl.org/spar/biro/
+  dc: http://purl.org/dc/elements/1.1/
+  frbr: http://purl.org/vocab/frbr/core#
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+slots:
+  biro_isReferencedBy:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The relation between a publication and the bibliographic record or
+      bibliographic reference describing it.
+    domain: frbr_Endeavour
+    name: biro_isReferencedBy
+    range: Any
+    slot_uri: biro:isReferencedBy
+    subproperty_of: owl_topObjectProperty
+    title: is referenced by
+  biro_references:
+    comments:
+    - No occurrences of this slot in the graph.
+    description: The relation between a bibliographic record or a bibliographic reference
+      and the publication being referenced.
+    inverse: biro_isReferencedBy
+    name: biro_references
+    range: frbr_Endeavour
+    slot_uri: biro:references
+    subproperty_of: owl_topObjectProperty
+    title: references
+title: No schema name specified

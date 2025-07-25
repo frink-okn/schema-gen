@@ -1,0 +1,224 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+      slots:
+        tag: slots
+        value: {}
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value: {}
+      pairs:
+        tag: pairs
+        value: {}
+classes:
+  gnis-ld-gnis_County:
+    class_uri: gnis-ld-gnis:County
+    description: Second-order division of a nation such as parish, borough, county,
+      municipio, or judicial division, and independent cities in Maryland, Missouri,
+      Nevada, and Virginia.
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-gnis_County
+    title: County
+  gnis-ld-gnis_State:
+    class_uri: gnis-ld-gnis:State
+    description: First-order division of a nation.
+    is_a: gnis-ld-usgs_Division
+    name: gnis-ld-gnis_State
+    title: State
+  gnis-ld-usgs_Feature:
+    class_uri: gnis-ld-usgs:Feature
+    name: gnis-ld-usgs_Feature
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+  gnis-ld-usgs_State:
+    class_uri: gnis-ld-usgs:State
+    name: gnis-ld-usgs_State
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+comments:
+- 'title: Geographic Names Information Systems (GNIS)'
+- 'created_on: 2018-03-01'
+created_on: '2025-07-24T16:19:37.862106'
+default_prefix: okns
+description: This ontology supports GNIS features.
+id: okns:gnis-ld-gnis
+imports:
+- okns:qudt
+- okns:gnis-ld-usgs
+- okns:extended_types
+- linkml:types
+last_updated_on: '2025-07-24T16:19:37.862106'
+name: gnis-ld-gnis
+prefixes:
+  gnis-ld-gnis: http://gnis-ld.org/lod/gnis/ontology/
+  gnis-ld-usgs: http://gnis-ld.org/lod/usgs/ontology/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  qudt: http://qudt.org/schema/qudt/
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  gnis-ld-gnis_alternativeName:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_alternativeName
+    range: string
+    slot_uri: gnis-ld-gnis:alternativeName
+    title: Alternative Name
+  gnis-ld-gnis_citation:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_citation
+    range: string
+    slot_uri: gnis-ld-gnis:citation
+    title: Citation
+  gnis-ld-gnis_country:
+    comments:
+    - No occurrences of this slot in the graph.
+    name: gnis-ld-gnis_country
+    range: Any
+    slot_uri: gnis-ld-gnis:country
+    title: Country
+  gnis-ld-gnis_county:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-gnis_County
+    name: gnis-ld-gnis_county
+    range: string
+    slot_uri: gnis-ld-gnis:county
+    title: County
+  gnis-ld-gnis_countyCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-gnis_County
+    name: gnis-ld-gnis_countyCode
+    range: string
+    slot_uri: gnis-ld-gnis:countyCode
+    title: County Code
+  gnis-ld-gnis_countyName:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-gnis_County
+    name: gnis-ld-gnis_countyName
+    range: string
+    slot_uri: gnis-ld-gnis:countyName
+    title: County Name
+  gnis-ld-gnis_dateFeatureCreated:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_dateFeatureCreated
+    range: date
+    slot_uri: gnis-ld-gnis:dateFeatureCreated
+    title: Date Feature Created
+  gnis-ld-gnis_dateFeatureEdited:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_dateFeatureEdited
+    range: date
+    slot_uri: gnis-ld-gnis:dateFeatureEdited
+    title: Date Feature Edited
+  gnis-ld-gnis_dateNameCreated:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_dateNameCreated
+    range: date
+    slot_uri: gnis-ld-gnis:dateNameCreated
+    title: Date Name Created
+  gnis-ld-gnis_description:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_description
+    range: string
+    slot_uri: gnis-ld-gnis:description
+    title: Description
+  gnis-ld-gnis_elevation:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_elevation
+    range: qudt_Quantity
+    slot_uri: gnis-ld-gnis:elevation
+    title: Elevation
+  gnis-ld-gnis_featureId:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_featureId
+    range: string
+    slot_uri: gnis-ld-gnis:featureId
+    title: Feature Id
+  gnis-ld-gnis_history:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_history
+    range: string
+    slot_uri: gnis-ld-gnis:history
+    title: History
+  gnis-ld-gnis_mapName:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_mapName
+    range: string
+    slot_uri: gnis-ld-gnis:mapName
+    title: Map Name
+  gnis-ld-gnis_officialName:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_officialName
+    range: string
+    slot_uri: gnis-ld-gnis:officialName
+    title: Official Name
+  gnis-ld-gnis_state:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_Feature
+    name: gnis-ld-gnis_state
+    range: gnis-ld-gnis_State
+    slot_uri: gnis-ld-gnis:state
+    title: State
+  gnis-ld-gnis_stateCode:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_State
+    name: gnis-ld-gnis_stateCode
+    range: string
+    slot_uri: gnis-ld-gnis:stateCode
+    title: State Code
+  gnis-ld-gnis_stateId:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_State
+    name: gnis-ld-gnis_stateId
+    range: string
+    slot_uri: gnis-ld-gnis:stateId
+    title: State Id
+  gnis-ld-gnis_stateName:
+    comments:
+    - No occurrences of this slot in the graph.
+    domain: gnis-ld-usgs_State
+    name: gnis-ld-gnis_stateName
+    range: string
+    slot_uri: gnis-ld-gnis:stateName
+    title: State Name
+title: No schema name specified
