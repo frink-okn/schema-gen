@@ -1049,11 +1049,6 @@ classes:
     is_a: gnis-ld-usgs_Division
     name: gnis-ld-gnis_State
     title: State
-  gnis-ld-gnis_alternativeName:
-    class_uri: gnis-ld-gnis:alternativeName
-    is_a: skos_altLabel
-    name: gnis-ld-gnis_alternativeName
-    title: alternative name
   gnis-ld-usgs_Feature:
     class_uri: gnis-ld-usgs:Feature
     name: gnis-ld-usgs_Feature

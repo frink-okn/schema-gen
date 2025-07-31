@@ -10768,9 +10768,6 @@
       "GeoSpatialObjectCollection": {
          "@id": "geo:SpatialObjectCollection"
       },
-      "Gnis-ld-gnisAlternativeName": {
-         "@id": "gnis-ld-gnis:alternativeName"
-      },
       "Gnis-ld-gnisCounty": {
          "@id": "gnis-ld-gnis:County"
       },
