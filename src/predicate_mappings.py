@@ -1,4 +1,5 @@
 from linkml_runtime.utils.metamodelcore import URIorCURIE, XSDDateTime
+from rdflib import URIRef
 from rdflib.namespace import Namespace, XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV, DC
 
 SHEX = Namespace("http://www.w3.org/ns/shex#")
@@ -29,15 +30,18 @@ TYPE_TYPES = {
 METADATA_TYPES = {OWL.Ontology, OWL.AllDisjointClasses, OWL.Restriction} | set(CLASS_TYPES.keys()) | set(SLOT_TYPES.keys()) | set(TYPE_TYPES.keys()) | {RDF.List}
 
 SLOTS_TO_PREDICATES_SINGLE = {
+    DCTERMS.conformsTo: ("conforms_to", str),
     DCTERMS.description: ("description", str),
     DC.description: ("description", str),
     SKOS.definition: ("description", str),
+    PROV.definition: ("description", str),
     RDFS.comment: ("description", str),
     DCTERMS.title: ("title", str),
     DC.title: ("title", str),
     RDFS.label: ("title", str),
     OWL.deprecated: ("deprecated", str),
     RDFS.isDefinedBy: ("source", URIorCURIE),
+    URIRef("https://schema.org/source"): ("source", URIorCURIE),
     DCTERMS.language: ("in_language", str),
     DCTERMS.isReplacedBy: ("deprecated_element_has_exact_replacement", URIorCURIE),
     DCTERMS.creator: ("created_by", URIorCURIE),
@@ -56,11 +60,15 @@ SLOTS_TO_PREDICATES_MULTIPLE_STR = {
     SKOS.altLabel: ("aliases", str),
     SKOS.mappingRelation: ("mappings", URIorCURIE),
     SKOS.exactMatch: ("exact_mappings", URIorCURIE),
+    OWL.sameAs: ("exact_mappings", URIorCURIE),
+    SDO.sameAs: ("exact_mappings", URIorCURIE),
+    OWL.equivalentProperty: ("exact_mappings", URIorCURIE),
     SKOS.closeMatch: ("close_mappings", URIorCURIE),
     SKOS.relatedMatch: ("related_mappings", URIorCURIE),
     SKOS.narrowMatch: ("narrow_mappings", URIorCURIE),
     SKOS.broadMatch: ("broad_mappings", URIorCURIE),
     DCTERMS.contributor: ("contributors", URIorCURIE),
+    SDO.contributor: ("contributors", URIorCURIE),
     DCAT.theme: ("categories", URIorCURIE),
     DCAT.keyword: ("keywords", str),
     SDO.keywords: ("keywords", str),
@@ -80,34 +88,37 @@ SINGLE_VALUE_RESTRICTIONS = {
 
 linkml_prefixes = {"linkml": "https://w3id.org/linkml/"}
 
+types_url = 'linkml:types'
+extended_types_url = 'okns:extended_types'
+
 # Only mappings to LinkML types are listed here.
 datatype_to_type = {
-    XSD.string: ['string', 'linkml:types', linkml_prefixes],
-    XSD.integer: ['integer', 'linkml:types', linkml_prefixes],
-    XSD.boolean: ['boolean', 'linkml:types', linkml_prefixes],
-    XSD.float: ['float', 'linkml:types', linkml_prefixes],
-    XSD.double: ['double', 'linkml:types', linkml_prefixes],
-    XSD.decimal: ['decimal', 'linkml:types', linkml_prefixes],
-    XSD.time: ['time', 'linkml:types', linkml_prefixes],
-    XSD.date: ['date', 'linkml:types', linkml_prefixes],
-    XSD.dateTime: ['datetime', 'linkml:types', linkml_prefixes],
-    XSD.anyURI: ['uri', 'linkml:types', linkml_prefixes],
+    XSD.string: ['string', types_url, linkml_prefixes],
+    XSD.integer: ['integer', types_url, linkml_prefixes],
+    XSD.boolean: ['boolean', types_url, linkml_prefixes],
+    XSD.float: ['float', types_url, linkml_prefixes],
+    XSD.double: ['double', types_url, linkml_prefixes],
+    XSD.decimal: ['decimal', types_url, linkml_prefixes],
+    XSD.time: ['time', types_url, linkml_prefixes],
+    XSD.date: ['date', types_url, linkml_prefixes],
+    XSD.dateTime: ['datetime', types_url, linkml_prefixes],
+    XSD.anyURI: ['uri', types_url, linkml_prefixes],
     # date_or_datetime, uriorcurie, curie
-    XSD.NCName: ['ncname', 'linkml:types', linkml_prefixes],
-    SHEX.iri: ['objectidentifier', 'linkml:types', linkml_prefixes],
-    SHEX.nonLiteral: ['nodeidentifier', 'linkml:types', linkml_prefixes],
+    XSD.NCName: ['ncname', types_url, linkml_prefixes],
+    SHEX.iri: ['objectidentifier', types_url, linkml_prefixes],
+    SHEX.nonLiteral: ['nodeidentifier', types_url, linkml_prefixes],
     # jsonpointer, jsonpath, sparqlpath
 
     # any_number, signedInteger
-    XSD.nonNegativeInteger: ['unsignedinteger', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.byte: ['int8', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.short: ['int16', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.int: ['int32', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.long: ['int64', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.unsignedByte: ['uint8', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.unsignedShort: ['uint16', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.unsignedInt: ['uint32', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
-    XSD.unsignedLong: ['uint64', 'https://raw.githubusercontent.com/linkml/linkml-model/refs/heads/main/linkml_model/model/schema/extended_types', linkml_prefixes],
+    XSD.nonNegativeInteger: ['unsignedinteger', extended_types_url, linkml_prefixes],
+    XSD.byte: ['int8', extended_types_url, linkml_prefixes],
+    XSD.short: ['int16', extended_types_url, linkml_prefixes],
+    XSD.int: ['int32', extended_types_url, linkml_prefixes],
+    XSD.long: ['int64', extended_types_url, linkml_prefixes],
+    XSD.unsignedByte: ['uint8', extended_types_url, linkml_prefixes],
+    XSD.unsignedShort: ['uint16', extended_types_url, linkml_prefixes],
+    XSD.unsignedInt: ['uint32', extended_types_url, linkml_prefixes],
+    XSD.unsignedLong: ['uint64', extended_types_url, linkml_prefixes],
     # float16, float32, float64
 }
 linkml_type_names = [v[0] for v in datatype_to_type.values()]

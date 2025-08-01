@@ -38,8 +38,8 @@ _{{ element_description_line }}_
 * __NOTE__: this is an abstract slot and should not be populated directly
 {% endif %}
 
-{% if 'count' in element.annotations %}
-This slot occurs {{ element.annotations.count.value }} times.
+{% if element.slot_uri in schemaview.schema.annotations['counts'].value['slots'].value %}
+This slot occurs {{ schemaview.schema.annotations['counts'].value['slots'].value[element.slot_uri].value }} times.
 {% endif %}
 
 URI: {{ gen.uri_link(element) }}

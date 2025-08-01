@@ -4,14 +4,14 @@ from collections import defaultdict
 def linkml_schema(graph_name, graph_title):
     update_time = f"{datetime.datetime.now().isoformat()}"
     output_schema = {
-        "id": graph_name,
-        "version": "No schema version available",
+        "id": 'okns:' + graph_name,
+        # version
         "imports": set([]),
-        "license": "No schema license specified",
-        "prefixes": {},
+        # license
+        "prefixes": {"okns": "https://purl.org/okn/schema/", "okn": "https://purl.org/okn/"},
         # emit_prefixes
         # default_curi_maps
-        # default_prefix
+        "default_prefix": "okns",
         # default_range
         # subsets
         "types": defaultdict(linkml_type),
@@ -31,12 +31,22 @@ def linkml_schema(graph_name, graph_title):
         # id_prefixes_are_closed
         # definition_uri
         # local_names
-        "conforms_to": "No schema conformance document specified",
+        # conforms_to
         # implements
         # instantiates
         # extensions
-        # annotations
-        "description": "No schema description specified",
+        "annotations": {
+            "counts": {
+                "classes": defaultdict(int),
+                "slots": defaultdict(int),
+                "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+            },
+            "examples": {
+                "classes": defaultdict(str),
+                "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+            }
+        },
+        # description
         # alt_descriptions
         "title": graph_title or "No schema name specified",
         # deprecated
@@ -70,12 +80,11 @@ def linkml_schema(graph_name, graph_title):
         # categories
         # keywords
     }
-    output_schema['classes']['Any'] = {'name': 'Any', 'class_uri': 'linkml:Any'}
     return output_schema
 
 def linkml_type():
     return {
-        # typeof
+        'typeof': "string",
         # base
         'uri': "",
         # repr
@@ -98,16 +107,14 @@ def linkml_type():
         # id_prefixes_are_closed
         # definition_uri
         # local_names
-        "conforms_to": "No schema conformance document specified",
+        # conforms_to
         # implements
         # instantiates
         # extensions
-        'annotations': {
-            'count': 0
-        },
-        'description': 'No class (type) description specified',
+        # annotations
+        # description
         # alt_descriptions
-        'title': "No class (type) name specified",
+        # title
         # deprecated
         # todos
         'notes': [],
@@ -143,9 +150,9 @@ def linkml_type():
 def linkml_class():
     return {
         'slots': set(),
-        'slot_usage': {},
+        # slot_usage
         # attributes
-        'class_uri': "",
+        # class_uri
         # subclass_of
         # union_of
         # defining_slots
@@ -174,16 +181,14 @@ def linkml_class():
         # id_prefixes_are_closed
         # definition_uri
         # local_names
-        "conforms_to": "No schema conformance document specified",
+        # conforms_to
         # implements
         # instantiates
         # extensions
-        'annotations': {
-            'count': 0
-        },
-        'description': 'No class (type) description specified',
+        # annotations
+        # description
         # alt_descriptions
-        'title': "No class (type) name specified",
+        # title
         # deprecated
         # todos
         'notes': [],
@@ -220,7 +225,7 @@ def linkml_slot():
     return {
         # singular_name
         # domain
-        'slot_uri': '',
+        # slot_uri
         # array
         # inherited
         # readonly
@@ -301,17 +306,15 @@ def linkml_slot():
         # implements
         # instantiates
         # extensions
-        'annotations': {
-            'count': 0
-        },
-        'description': 'No slot (predicate) description specified',
+        # annotations
+        # description
         # alt_descriptions
         # title
         # deprecated
         # todos
         # notes
         'comments': [],
-        'examples': {},
+        # examples
         # in_subset
         # from_schema
         # imported_from

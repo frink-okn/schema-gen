@@ -204,16 +204,22 @@ class DocGenerator(Generator):
             "include_top_level_diagram": self.include_top_level_diagram,
         }
         self._write(self.yaml(sv.schema), f"{directory}", sv.schema.id + '.yaml', quoted=True)
+
+        all_class_ancestors = set()
+        for cn, c in sv.all_classes(imports=self.render_imports).items():
+            all_class_ancestors.update(sv.class_ancestors(cn))
+
         self.logger.debug("Processing Index")
         template = self._get_template("index")
-        out_str = template.render(gen=self, schema=sv.schema, schemaview=sv, **template_vars)
+        out_str = template.render(gen=self, schema=sv.schema, schemaview=sv, all_class_ancestors=all_class_ancestors, **template_vars)
         self._write(out_str, directory, self.index_name)
         if self._is_single_file_format(self.format):
             self.logger.info(f"{self.format} is a single-page format, skipping non-index elements")
             return
+
         self.logger.debug("Processing Schemas...")
         template = self._get_template("schema")
-        for schema_name in sv.imports_closure():
+        for schema_name in sv.imports_closure(imports=self.render_imports):
             self.logger.debug(f"  Generating doc for {schema_name}")
             imported_schema = sv.schema_map.get(schema_name)
             out_str = template.render(gen=self, schema=imported_schema, schemaview=sv, **template_vars)
@@ -222,6 +228,22 @@ class DocGenerator(Generator):
                 f"{directory}/{SCHEMA_SUBFOLDER}" if self.subfolder_type_separation else directory,
                 imported_schema.name,
             )
+
+        # Mapping from all class URIs to class names
+        class_uris_to_classes = {}
+        for cn, c in sv.all_classes().items():
+            class_uris_to_classes[c.class_uri] = c
+
+        # List of classes defined by this schema
+        processed_classes = set()
+
+        # List of classes with instances in this schema
+        try:
+            instantiated_classes = sv.schema.annotations['counts'].value['classes'].value._as_json_obj()
+        except KeyError:
+            instantiated_classes = {}
+
+        # Process defined classes
         self.logger.debug("Processing Classes...")
         template = self._get_template("class")
         for cn, c in sv.all_classes(imports=self.render_imports).items():
@@ -233,6 +255,32 @@ class DocGenerator(Generator):
             self.logger.debug(f"  Generating doc for {n}")
             out_str = template.render(gen=self, element=c, schemaview=sv, **template_vars)
             self._write(out_str, f"{directory}/{CLASS_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
+            processed_classes.add(c.class_uri)
+        # Finish remaining instantiated classes
+        for k, v in instantiated_classes.items():
+            if k in processed_classes:
+                continue
+            c = class_uris_to_classes[k]
+            n = self.name(c)
+            self.logger.debug(f"  Generating doc for {n}")
+            out_str = template.render(gen=self, element=c, schemaview=sv, **template_vars)
+            self._write(out_str, f"{directory}/{CLASS_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
+
+        # Mapping from all slot URIs to slots
+        slot_uris_to_slots = {}
+        for sn, s in sv.all_slots().items():
+            slot_uris_to_slots[s.slot_uri] = s
+
+        # List of slots defined by this schema
+        processed_slots = set()
+
+        # List of slots with instances in this schema
+        try:
+            instantiated_slots = sv.schema.annotations['counts'].value['slots'].value._as_json_obj()
+        except KeyError:
+            instantiated_slots = {}
+
+        # Process defined slots
         self.logger.debug("Processing Slots...")
         template = self._get_template("slot")
         for sn, s in sv.all_slots(imports=self.render_imports).items():
@@ -243,6 +291,17 @@ class DocGenerator(Generator):
             s = sv.induced_slot(sn)
             out_str = template.render(gen=self, element=s, schemaview=sv, **template_vars)
             self._write(out_str, f"{directory}/{SLOT_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
+            processed_slots.add(s.slot_uri)
+        # Finish remaining used slots
+        for k, v in instantiated_slots.items():
+            if k in processed_slots:
+                continue
+            c = slot_uris_to_slots[k]
+            n = self.name(c)
+            self.logger.debug(f"  Generating doc for {n}")
+            out_str = template.render(gen=self, element=c, schemaview=sv, **template_vars)
+            self._write(out_str, f"{directory}/{SLOT_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
+
         self.logger.debug("Processing Enums...")
         template = self._get_template("enum")
         for en, e in sv.all_enums(imports=self.render_imports).items():
@@ -880,7 +939,7 @@ class DocGenerator(Generator):
         :return: tuples (depth: int, cls: ClassDefinitionName)
         """
         sv = self.schemaview
-        roots = sv.class_roots(mixins=False, imports=self.render_imports)
+        roots = sv.class_roots(mixins=False)
 
         # by default the classes are sorted alphabetically
         roots = sorted(roots, key=str.casefold, reverse=True)
@@ -894,7 +953,7 @@ class DocGenerator(Generator):
             depth, class_name = stack.pop()
             yield depth, class_name
             children = sorted(
-                sv.class_children(class_name=class_name, mixins=False, imports=self.render_imports),
+                sv.class_children(class_name=class_name, mixins=False),
                 key=str.casefold,
                 reverse=True,
             )
