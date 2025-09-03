@@ -851,14 +851,6 @@ classes:
     name: seegrid-basic_Measure
     source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
     title: Measure
-  seegrid-basic_Number:
-    class_uri: seegrid-basic:Number
-    comments:
-    - 'description: The set of numbers'
-    description: 'Note: integer is a specialization of decimal'
-    name: seegrid-basic_Number
-    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
-    title: Number
   seegrid-basic_Scale:
     class_uri: seegrid-basic:Scale
     description: Factor by which a representation should be magnified to match the
