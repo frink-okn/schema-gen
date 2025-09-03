@@ -8,39 +8,12 @@ annotations:
           foaf:Person:
             tag: foaf:Person
             value: 2
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 1
       pairs:
         tag: pairs
-        value:
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 1
+        value: {}
       slots:
         tag: slots
-        value:
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 1
+        value: {}
   examples:
     tag: examples
     value:
@@ -50,48 +23,9 @@ annotations:
           foaf:Person:
             tag: foaf:Person
             value: http://moustaki.org/foaf.rdf#moustaki
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n4d795616a70445a48c7634b7a95a6e7cb1
       pairs:
         tag: pairs
-        value:
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: n4d795616a70445a48c7634b7a95a6e7cb1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: sim:method
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n4d795616a70445a48c7634b7a95a6e7cb1
+        value: {}
 classes:
   sim_Association:
     class_uri: sim:Association
@@ -143,7 +77,7 @@ comments:
 - 'title: The Similarity Ontology'
 - 'created_by: http://moustaki.org/foaf.rdf#moustaki'
 created_by: http://kurtisrandom.com/foaf.rdf#kurtjx
-created_on: '2025-07-17T19:20:42.256297'
+created_on: '2025-09-03T11:22:40.312264'
 default_prefix: okns
 description: This is an ontology to express associations between entities whether
   artists, tracks, albums, compositional styles, sections of tracks, playing techniques
@@ -151,16 +85,14 @@ description: This is an ontology to express associations between entities whethe
   expressive, and still computationally reasonable.
 id: okns:sim
 imports:
-- okns:owl-rdf-rdfs
-- okns:extended_types
 - okns:foaf
-- linkml:types
-last_updated_on: '2025-07-17T19:20:42.256297'
+- okns:extended_types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-09-03T11:22:40.312264'
 name: sim
 prefixes:
   dct: http://purl.org/dc/terms/
   foaf: http://xmlns.com/foaf/0.1/
-  linkml: https://w3id.org/linkml/
   okn: https://purl.org/okn/
   okns: https://purl.org/okn/schema/
   owl: http://www.w3.org/2002/07/owl#
@@ -169,18 +101,16 @@ prefixes:
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
 slots:
   sim_association:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Binds a sim:Association to an arbitrary thing.
     domain: owl_Thing
     name: sim_association
+    notes:
+    - No occurrences of this slot in the graph.
     range: sim_Association
     slot_uri: sim:association
     source: http://purl.org/ontology/similarity/
     title: association
   sim_description:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies some description that discloses the process or set of processes
       used to derive association statements for the given <code>AssociationMethod</code>.  This
       property is depricated in favor of the more appropriately named <code>sim:workflow</code>
@@ -189,153 +119,154 @@ slots:
     exact_mappings:
     - http://purl.org/ontology/similarity/workflow
     name: sim_description
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:description
     source: http://purl.org/ontology/similarity/
     title: description
   sim_distance:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A weighting value for an Association where a value of 0 implies two
       elements are the same individual.
     domain: sim_Association
     name: sim_distance
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:distance
     source: http://purl.org/ontology/similarity/
     title: distance
   sim_domain:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies appropriate object types for the <code>sim:subject</code>
       predicate for <code>sim:Association</code>s bound to the given <code>sim:AssociationMethod</code>.  The
       presence of this predicate implies the given <code>sim:AssociationMethod</code>
       begets <i>directed</i> associations.
     domain: sim_AssociationMethod
     name: sim_domain
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: sim:domain
     source: http://purl.org/ontology/similarity/
     title: domain
   sim_edge:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies an edge in a <code>sim:Network</code>
     domain: sim_Network
     name: sim_edge
+    notes:
+    - No occurrences of this slot in the graph.
     range: sim_Association
     slot_uri: sim:edge
     source: http://purl.org/ontology/similarity/
     title: edge
   sim_element:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies an entity involved in the given <code>sim:Association</code>
       and implies the given association is undirected.
     domain: sim_Association
     name: sim_element
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:element
     source: http://purl.org/ontology/similarity/
     title: element
   sim_grounding:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Binds an <code>sim:Association</code> statement directly instantiated
       N3-Tr formulae or some other workflow graph which enabled the association derivation.
     domain: sim_Association
     name: sim_grounding
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:grounding
     source: http://purl.org/ontology/similarity/
     title: grounding
   sim_method:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies the <code>sim:AssociationMethod</code> used to derive a
       particular Association statement.  This should be used when the process for
       deriving association statements can be described further.
     domain: sim_Association
     name: sim_method
+    notes:
+    - No occurrences of this slot in the graph.
     range: sim_AssociationMethod
     slot_uri: sim:method
     source: http://purl.org/ontology/similarity/
     title: method
   sim_object:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies the object of a <code>sim:Association</code> implying a
       directed association where "subject is associated to object" but the reverse
       association does not necessarily exist, and if it does exist, it is not an equivalent
       association.
     domain: sim_Association
     name: sim_object
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:object
     source: http://purl.org/ontology/similarity/
     subproperty_of: sim_element
     title: object
   sim_range:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies appropriate object types for the <code>sim:object</code>
       predicate for <code>sim:Association</code>s bound to the given <code>sim:AssociationMethod</code>.  The
       presence of this predicate implies the given <code>sim:AssociationMethod</code>
       begets <i>directed</i> associations.
     domain: sim_AssociationMethod
     name: sim_range
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: sim:range
     source: http://purl.org/ontology/similarity/
     title: domain
   sim_scope:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies appropriate object types for the <code>sim:element</code>
       predicate for <code>sim:Association</code>s bound to the given <code>sim:AssociationMethod</code>.  The
       presence of this predicate implies the given <code>sim:AssociationMethod</code>
       begets <i>undirected</i> associations.
     domain: sim_AssociationMethod
     name: sim_scope
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: sim:scope
     source: http://purl.org/ontology/similarity/
     title: domain
   sim_subject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies the subject of an <code>sim:Association</code> implying
       a directed association where "subject is associated to object" but the reverse
       association does not necessarily exist, and if it does exist, it is not an equivalent
       association.
     domain: sim_Association
     name: sim_subject
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:subject
     source: http://purl.org/ontology/similarity/
     subproperty_of: sim_element
     title: subject
   sim_weight:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A weighting value bound to a <code>sim:Association</code> where a
       value of 0 implies two elements are not at all associated and a higher value
       implies a closer association.
     domain: sim_Association
     name: sim_weight
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:weight
     source: http://purl.org/ontology/similarity/
     title: weight
   sim_workflow:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Specifies a workflow that discloses the process or set of processes
       used to derive association statements for the given <code>sim:AssociationMethod</code>
     domain: sim_AssociationMethod
     name: sim_workflow
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sim:workflow
     source: http://purl.org/ontology/similarity/
     title: workflow
-title: No schema name specified

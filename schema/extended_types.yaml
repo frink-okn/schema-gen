@@ -1,12 +1,16 @@
 title: Core LinkML metamodel extended types
 name: extended_types
-id: https://w3id.org/linkml/extended_types
+id: okns:extended_types
 
 description: Extensions to core LinkML types
 license: https://creativecommons.org/publicdomain/zero/1.0/
-
+comments:
+  - Several new types and slots from both XML Schema and OWL have been added by Mahir Morshed <mmorshed@scripps.edu>.
 prefixes:
   linkml: https://w3id.org/linkml/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   xsd: http://www.w3.org/2001/XMLSchema#
   schema: http://schema.org/
 
@@ -22,7 +26,53 @@ classes:
     class_uri: linkml:Any
     description: An unconstrained type or object
 
+slots:
+  length:
+    slot_uri: xsd:length
+    description: Number of units of length, where units of length varies depending on the type that is being derived from.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+  minlength:
+    slot_uri: xsd:minLength
+    description: Minimum number of units of length, where units of length varies depending on the type that is being derived from.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+  maxlength:
+    slot_uri: xsd:maxLength
+    description: Maximum number of units of length, where units of length varies depending on the type that is being derived from.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+  minexclusive:
+    slot_uri: xsd:minExclusive
+    description: Exclusive lower bound of the ·value space· for a datatype with the ordered property.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+  maxexclusive:
+    slot_uri: xsd:maxExclusive
+    description: Exclusive upper bound of the ·value space· for a datatype with the ordered property.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+  langrange:
+    slot_uri: rdf:langRange
+    description: Used to refer to a subset of strings containing a particular language tag.
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
 types:
+
+  rational:
+    typeof: decimal
+    description: Rational number.
+    uri: owl:rational
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
+  real:
+    typeof: decimal
+    description: Real number.
+    uri: owl:real
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
 
   signedinteger:
     typeof: integer
@@ -39,10 +89,37 @@ types:
       - https://www.w3.org/TR/xmlschema-2/#nonNegativeInteger
       - https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.unsignedinteger
 
+  negativeinteger:
+    uri: xsd:negativeInteger
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+    typeof: integer
+    description: An integer that is negative
+    maximum_value: -1
+
+  positiveinteger:
+    uri: xsd:positiveInteger
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+    typeof: integer
+    description: An integer that is positive
+    minimum_value: 1
+
+  nonpositiveinteger:
+    uri: xsd:nonPositiveInteger
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+    typeof: integer
+    description: An integer that is not positive
+    maximum_value: 0
+
   int8:
     aliases:
       - byte
       - b
+    uri: xsd:byte
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: signedinteger
     description: An 8-bit signed integer
     minimum_value: -128
@@ -54,6 +131,9 @@ types:
     aliases:
       - short
       - h
+    uri: xsd:short
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: signedinteger
     description: A 16-bit signed integer
     minimum_value: -32_768
@@ -65,6 +145,9 @@ types:
     aliases:
       - intc
       - i
+    uri: xsd:int
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: signedinteger
     description: A 32-bit signed integer
     minimum_value: -2_147_483_648
@@ -77,6 +160,9 @@ types:
       - long
       - l
       - int_
+    uri: xsd:long
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: signedinteger
     description: A 64-bit signed integer
     minimum_value: -9_223_372_036_854_775_808
@@ -88,6 +174,9 @@ types:
     aliases:
       - ubyte
       - B
+    uri: xsd:unsignedByte
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: unsignedinteger
     description: An 8-bit unsigned integer
     maximum_value: 255
@@ -98,6 +187,9 @@ types:
     aliases:
       - ushort
       - H
+    uri: xsd:unsignedShort
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: unsignedinteger
     description: A 16-bit unsigned integer
     maximum_value: 65_535
@@ -106,6 +198,9 @@ types:
     aliases:
       - uintc
       - I
+    uri: xsd:unsignedInt
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: unsignedinteger
     description: A 32-bit unsigned integer
     maximum_value: 4_294_967_295
@@ -115,6 +210,9 @@ types:
       - ulong
       - L
       - uint_
+    uri: xsd:unsignedLong
+    comments:
+      - uri added by Mahir Morshed <mmorshed@scripps.edu>
     typeof: unsignedinteger
     description: A 64-bit unsigned integer
     maximum_value: 18_446_744_073_709_551_615
@@ -143,3 +241,55 @@ types:
     description: A 64-bit floating point number
     see_also:
       - https://numpy.org/doc/stable/reference/arrays.scalars.html#numpy.float64
+
+  normalizedstring:
+    typeof: string
+    description: Normalized string, one that does not contain the carriage return (#xD), line feed (#xA) nor tab (#x9) characters.
+    uri: xsd:normalizedString
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
+  token:
+    typeof: normalizedstring
+    description: Tokenized string, one that does not contain the carriage return (#xD), line feed (#xA) nor tab (#x9) characters, that has no leading or trailing spaces (#x20) and that has no internal sequences of two or more spaces.
+    uri: xsd:token
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
+  language:
+    typeof: token
+    description: Formal natural language identifier, as defined by [BCP 47] (currently represented by [RFC 4646] and [RFC 4647]) or its successor(s).
+    uri: xsd:language
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
+  hexbinary:
+    base: string
+    description: Arbitrary hex-encoded binary data.
+    uri: xsd:hexBinary
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+      - used 'string' as base type since no 'binary' base type exists
+
+  base64binary:
+    base: string
+    description: Arbitrary Base64-encoded binary data.
+    uri: xsd:hexBinary
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+      - used 'string' as base type since no 'binary' base type exists
+
+  name:
+    typeof: token
+    description: XML Name.
+    uri: xsd:Name
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+
+  nmtoken:
+    typeof: token
+    description: NMTOKEN attribute type from [XML].
+    uri: xsd:NMTOKEN
+    comments:
+      - added by Mahir Morshed <mmorshed@scripps.edu>
+

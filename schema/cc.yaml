@@ -94,7 +94,7 @@ annotations:
             value: cc:PublicDomain
           cc:Permission:
             tag: cc:Permission
-            value: cc:Reproduction
+            value: cc:Distribution
           cc:Prohibition:
             tag: cc:Prohibition
             value: cc:CommercialUse
@@ -130,13 +130,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: creation and distribution of derivative works
+                        value: making multiple copies
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:DerivativeWorks
+                        value: cc:Reproduction
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -160,13 +160,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: copyright and license notices be kept intact
+                        value: credit be given to copyright holder and/or author
                       predicate:
                         tag: predicate
                         value: dc:description
                       subject:
                         tag: subject
-                        value: cc:Notice
+                        value: cc:Attribution
           dc:title:
             tag: dc:title
             value:
@@ -193,13 +193,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: derivative works
+                        value: reproduction
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:DerivativeWorks
+                        value: cc:Reproduction
               cc:Prohibition:
                 tag: cc:Prohibition
                 value:
@@ -223,13 +223,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: copyright notices
+                        value: attribution
                       predicate:
                         tag: predicate
                         value: dc:title
                       subject:
                         tag: subject
-                        value: cc:Notice
+                        value: cc:Attribution
 classes:
   cc_Agent:
     class_uri: cc:Agent
@@ -243,32 +243,32 @@ classes:
       license, the public domain, information for distributors
     name: cc_License
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: license
   cc_Permission:
     class_uri: cc:Permission
     description: an action that may or may not be allowed or desired
     name: cc_Permission
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: permission
   cc_Prohibition:
     class_uri: cc:Prohibition
     description: something you may be asked not to do
     name: cc_Prohibition
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: prohibition
   cc_Requirement:
     class_uri: cc:Requirement
     description: an action that may or may not be requested of you
     name: cc_Requirement
     slots:
-    - dc_title
     - dc_description
+    - dc_title
     title: requirement
   cc_Work:
     class_uri: cc:Work
@@ -277,13 +277,13 @@ classes:
     see_also:
     - http://www.w3.org/2000/10/swap/pim/doc#Work
     title: work
-created_on: '2025-07-17T19:20:10.914188'
+created_on: '2025-09-03T11:21:55.825020'
 default_prefix: okns
 id: okns:cc
 imports:
 - linkml:types
 - okns:dc
-last_updated_on: '2025-07-17T19:20:10.914188'
+last_updated_on: '2025-09-03T11:21:55.825020'
 name: cc
 prefixes:
   cc: http://web.resource.org/cc/
@@ -296,20 +296,20 @@ prefixes:
   rdfs: http://www.w3.org/2000/01/rdf-schema#
 slots:
   cc_derivativeWork:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: cc_Work
     name: cc_derivativeWork
+    notes:
+    - No occurrences of this slot in the graph.
     range: cc_Work
     see_also:
     - http://purl.org/dc/elements/1.1/source
     slot_uri: cc:derivativeWork
     title: has a derivative work
   cc_license:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: cc_Work
     name: cc_license
+    notes:
+    - No occurrences of this slot in the graph.
     range: cc_License
     see_also:
     - http://www.w3.org/2000/10/swap/pim/doc#ipr
@@ -317,27 +317,26 @@ slots:
     subproperty_of: dct_license
     title: has license
   cc_permits:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: cc_License
     name: cc_permits
+    notes:
+    - No occurrences of this slot in the graph.
     range: cc_Permission
     slot_uri: cc:permits
     title: permits
   cc_prohibits:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: cc_License
     name: cc_prohibits
+    notes:
+    - No occurrences of this slot in the graph.
     range: cc_Prohibition
     slot_uri: cc:prohibits
     title: prohibits
   cc_requires:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: cc_License
     name: cc_requires
+    notes:
+    - No occurrences of this slot in the graph.
     range: cc_Requirement
     slot_uri: cc:requires
     title: requires
-title: No schema name specified

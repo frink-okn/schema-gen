@@ -174,21 +174,20 @@ classes:
     title: Review
 comments:
 - 'title: RDF Review Vocabulary'
-- 'last_updated_on: 2007-11-08'
-created_on: '2025-07-17T19:20:45.416581'
+created_on: '2025-09-03T11:22:45.111531'
 default_prefix: okns
 description: Vocabulary for expressing reviews and ratings using the Resource Description
   Framework. It is compatible with hReview and conforms to OWL Lite
 id: okns:rev
 imports:
-- okns:dc
-- okns:foaf
-- okns:extended_types
+- okns:wot
 - okns:cc
+- okns:dc
+- okns:extended_types
+- okns:foaf
 - linkml:types
 - okns:owl-rdf-rdfs
-- okns:wot
-last_updated_on: '2025-07-17T19:20:45.416581'
+last_updated_on: '2007-11-08'
 name: rev
 prefixes:
   cc: http://web.resource.org/cc/
@@ -205,43 +204,43 @@ prefixes:
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
 slots:
   rev_commenter:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The commenter on the review
     name: rev_commenter
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: rev:commenter
     source: http://purl.org/stuff/rev#
     title: commenter
     union_of:
-    - rev_Comment
     - rev_Feedback
+    - rev_Comment
   rev_hasComment:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Used to associate a review with a comment on the review
     domain: rev_Review
     name: rev_hasComment
+    notes:
+    - No occurrences of this slot in the graph.
     range: rev_Comment
     slot_uri: rev:hasComment
     source: http://purl.org/stuff/rev#
     title: hasComment
   rev_hasFeedback:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Associates a review with a feedback on the review
     domain: rev_Review
     name: rev_hasFeedback
+    notes:
+    - No occurrences of this slot in the graph.
     range: rev_Feedback
     slot_uri: rev:hasFeedback
     source: http://purl.org/stuff/rev#
     title: hasFeedback
   rev_hasReview:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Associates a work with a a review
     domain: rdfs_Resource
     name: rev_hasReview
+    notes:
+    - No occurrences of this slot in the graph.
     range: rev_Review
     slot_uri: rev:hasReview
     source: http://purl.org/stuff/rev#
@@ -249,9 +248,10 @@ slots:
   rev_maxRating:
     comments:
     - 'description: Maximum value for rating property'
-    - No occurrences of this slot in the graph.
     description: A numeric value
     name: rev_maxRating
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: rev:maxRating
     source: http://purl.org/stuff/rev#
@@ -259,79 +259,79 @@ slots:
   rev_minRating:
     comments:
     - 'description: Minimum value for rating property'
-    - No occurrences of this slot in the graph.
     description: A numeric value
     name: rev_minRating
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: rev:minRating
     source: http://purl.org/stuff/rev#
     title: min Rating
   rev_positiveVotes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Number of positive usefulness votes (integer)
     domain: rev_Review
     name: rev_positiveVotes
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: rev:positiveVotes
     source: http://purl.org/stuff/rev#
     title: positiveVotes
   rev_rating:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A numeric value
     name: rev_rating
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: rev:rating
     source: http://purl.org/stuff/rev#
     title: rating
   rev_reviewer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The person that has written the review
     domain: rev_Review
     name: rev_reviewer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Person
     slot_uri: rev:reviewer
     source: http://purl.org/stuff/rev#
     title: reviewer
   rev_text:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The text of the review
     name: rev_text
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: rev:text
     source: http://purl.org/stuff/rev#
     title: text
   rev_title:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The title of the review
     domain: rev_Review
     name: rev_title
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: rev:title
     source: http://purl.org/stuff/rev#
     subproperty_of: dc_title
     title: title
   rev_totalVotes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Number of usefulness votes (integer)
     domain: rev_Review
     name: rev_totalVotes
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: rev:totalVotes
     source: http://purl.org/stuff/rev#
     title: totalVotes
   rev_type:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The type of media of a work under review
     name: rev_type
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: rev:type
     source: http://purl.org/stuff/rev#
     title: type
-title: No schema name specified

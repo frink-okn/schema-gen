@@ -74,9 +74,6 @@ annotations:
                   owl:Class:
                     tag: owl:Class
                     value: 1
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 1
           rdfs:label:
             tag: rdfs:label
             value:
@@ -208,16 +205,16 @@ annotations:
         value:
           adms:SemanticAssetDistribution:
             tag: adms:SemanticAssetDistribution
-            value: http://vocab.deri.ie/void#ttl
+            value: http://vocab.deri.ie/void#rdf
           rdf:DatatypeProperty:
             tag: rdf:DatatypeProperty
             value: void:uriRegexPattern
           sdos:Organization:
             tag: sdos:Organization
-            value: n5131488baad04e81a53494c19460bc0fb5
+            value: n8a57546e3b2e46bc805fde2d33a00551b9
           sdos:Person:
             tag: sdos:Person
-            value: n5131488baad04e81a53494c19460bc0fb4
+            value: n8a57546e3b2e46bc805fde2d33a00551b2
       pairs:
         tag: pairs
         value:
@@ -232,13 +229,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://vocab.deri.ie/void.rdf
+                        value: http://vocab.deri.ie/void.ttl
                       predicate:
                         tag: predicate
                         value: adms:accessURL
                       subject:
                         tag: subject
-                        value: http://vocab.deri.ie/void#rdf
+                        value: http://vocab.deri.ie/void#ttl
           adms:status:
             tag: adms:status
             value:
@@ -256,7 +253,7 @@ annotations:
                         value: adms:status
                       subject:
                         tag: subject
-                        value: http://vocab.deri.ie/void#rdf
+                        value: http://vocab.deri.ie/void#ttl
           foaf:homepage:
             tag: foaf:homepage
             value:
@@ -274,7 +271,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb3
+                        value: n8a57546e3b2e46bc805fde2d33a00551b3
           foaf:name:
             tag: foaf:name
             value:
@@ -292,7 +289,7 @@ annotations:
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb3
+                        value: n8a57546e3b2e46bc805fde2d33a00551b3
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -320,18 +317,6 @@ annotations:
                 value:
                   owl:Class:
                     tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: void:Dataset
-                      predicate:
-                        tag: predicate
-                        value: rdfs:domain
-                      subject:
-                        tag: subject
-                        value: void:uriRegexPattern
-                  rdfs:Class:
-                    tag: rdfs:Class
                     value:
                       object:
                         tag: object
@@ -377,7 +362,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb1
+                        value: n8a57546e3b2e46bc805fde2d33a00551b1
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -389,13 +374,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n5131488baad04e81a53494c19460bc0fb9
+                        value: n8a57546e3b2e46bc805fde2d33a00551b5
                       predicate:
                         tag: predicate
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb8
+                        value: n8a57546e3b2e46bc805fde2d33a00551b4
           sdos:email:
             tag: sdos:email
             value:
@@ -407,13 +392,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: mailto:michael.hausenblas@deri.org
+                        value: mailto:jun.zhao@zoo.ox.ac.uk
                       predicate:
                         tag: predicate
                         value: sdos:email
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb8
+                        value: n8a57546e3b2e46bc805fde2d33a00551b4
           sdos:identifier:
             tag: sdos:identifier
             value:
@@ -431,7 +416,7 @@ annotations:
                         value: sdos:identifier
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb1
+                        value: n8a57546e3b2e46bc805fde2d33a00551b1
           sdos:name:
             tag: sdos:name
             value:
@@ -449,7 +434,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb7
+                        value: n8a57546e3b2e46bc805fde2d33a00551b7
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -458,13 +443,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Michael Hausenblas
+                        value: Jun Zhao
                       predicate:
                         tag: predicate
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb8
+                        value: n8a57546e3b2e46bc805fde2d33a00551b4
               untyped:
                 tag: untyped
                 value:
@@ -479,7 +464,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb1
+                        value: n8a57546e3b2e46bc805fde2d33a00551b1
           sdos:url:
             tag: sdos:url
             value:
@@ -497,7 +482,7 @@ annotations:
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb7
+                        value: n8a57546e3b2e46bc805fde2d33a00551b7
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -506,26 +491,26 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://sw-app.org/about.html
+                        value: http://users.ox.ac.uk/~zool0770/
                       predicate:
                         tag: predicate
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n5131488baad04e81a53494c19460bc0fb8
+                        value: n8a57546e3b2e46bc805fde2d33a00551b4
 classes:
   adms_SemanticAssetDistribution:
     class_uri: adms:SemanticAssetDistribution
     name: adms_SemanticAssetDistribution
     slots:
-    - adms_status
     - adms_accessURL
+    - adms_status
   rdf_DatatypeProperty:
     class_uri: rdf:DatatypeProperty
     name: rdf_DatatypeProperty
     slots:
-    - rdfs_comment
     - rdfs_domain
+    - rdfs_comment
     - rdfs_label
   void_Dataset:
     class_uri: void:Dataset
@@ -553,13 +538,11 @@ classes:
     title: technical feature
 comments:
 - 'title: Vocabulary of Interlinked Datasets (VoID)'
-- 'last_updated_on: 2011-03-06'
-- 'created_on: 2010-01-26'
-- 'created_by: n5131488baad04e81a53494c19460bc0fb4'
-- 'created_by: n5131488baad04e81a53494c19460bc0fb6'
-- 'created_by: n5131488baad04e81a53494c19460bc0fb8'
-created_by: n5131488baad04e81a53494c19460bc0fb2
-created_on: '2025-07-17T19:21:22.084650'
+- 'created_by: n8a57546e3b2e46bc805fde2d33a00551b4'
+- 'created_by: n8a57546e3b2e46bc805fde2d33a00551b8'
+- 'created_by: n8a57546e3b2e46bc805fde2d33a00551b6'
+created_by: n8a57546e3b2e46bc805fde2d33a00551b2
+created_on: '2010-01-26'
 default_prefix: okns
 description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema vocabulary
   for expressing metadata about RDF datasets. It is intended as a bridge between the
@@ -570,14 +553,14 @@ description: The Vocabulary of Interlinked Datasets (VoID) is an RDF Schema voca
   Linked Datasets with the VoID Vocabulary</a></em>.
 id: okns:void
 imports:
+- okns:foaf
+- linkml:types
 - okns:sdo
 - okns:wot
-- linkml:types
 - okns:extended_types
 - okns:owl-rdf-rdfs
 - okns:adms
-- okns:foaf
-last_updated_on: '2025-07-17T19:21:22.084650'
+last_updated_on: '2011-03-06'
 name: void
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -596,72 +579,70 @@ slots:
     range: string
     slot_uri: adms:accessURL
   void_class:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The rdfs:Class that is the rdf:type of all entities in a class-based
       partition.
     domain: void_Dataset
     multivalued: false
     name: void_class
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: void:class
     title: class
   void_classPartition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A subset of a void:Dataset that contains only the entities of a certain
       rdfs:Class.
     domain: void_Dataset
     name: void_classPartition
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:classPartition
     subproperty_of: void_subset
     title: class partition
   void_classes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of distinct classes in a void:Dataset. In other
       words, the number of distinct resources occuring as objects of rdf:type triples
       in the dataset.
     domain: void_Dataset
     name: void_classes
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:classes
     title: classes
   void_dataDump:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An RDF dump, partial or complete, of a void:Dataset.
     domain: void_Dataset
     name: void_dataDump
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: void:dataDump
     title: Data Dump
   void_distinctObjects:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of distinct objects in a void:Dataset. In other
       words, the number of distinct resources that occur in the object position of
       triples in the dataset. Literals are included in this count.
     domain: void_Dataset
     name: void_distinctObjects
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:distinctObjects
     title: distinct objects
   void_distinctSubjects:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of distinct subjects in a void:Dataset. In other
       words, the number of distinct resources that occur in the subject position of
       triples in the dataset.
     domain: void_Dataset
     name: void_distinctSubjects
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:distinctSubjects
     title: distinct subjects
   void_documents:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of documents, for datasets that are published as
       a set of individual documents, such as RDF/XML documents or RDFa-annotated web
       pages. Non-RDF documents, such as web pages in HTML or images, are usually not
@@ -670,188 +651,189 @@ slots:
       should be preferred where practical.
     domain: void_Dataset
     name: void_documents
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:documents
     title: number of documents
   void_entities:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of entities that are described in a void:Dataset.
     domain: void_Dataset
     name: void_entities
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:entities
     title: number of entities
   void_exampleResource:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: void_Dataset
     name: void_exampleResource
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: void:exampleResource
     title: example resource of dataset
   void_feature:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: void_Dataset
     name: void_feature
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_TechnicalFeature
     slot_uri: void:feature
     title: feature
   void_inDataset:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Points to the void:Dataset that a document is a part of.
     domain: foaf_Document
     name: void_inDataset
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:inDataset
     title: in dataset
   void_linkPredicate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: void_Linkset
     name: void_linkPredicate
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: void:linkPredicate
     title: a link predicate
   void_objectsTarget:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dataset describing the objects of the triples contained in the
       Linkset.
     domain: void_Linkset
     multivalued: false
     name: void_objectsTarget
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:objectsTarget
     subproperty_of: void_target
     title: Objects Target
   void_openSearchDescription:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An OpenSearch description document for a free-text search service
       over a void:Dataset.
     domain: void_Dataset
     name: void_openSearchDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: void:openSearchDescription
     title: open search description
   void_properties:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of distinct properties in a void:Dataset. In other
       words, the number of distinct resources that occur in the predicate position
       of triples in the dataset.
     domain: void_Dataset
     name: void_properties
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:properties
     title: number of properties
   void_property:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The rdf:Property that is the predicate of all triples in a property-based
       partition.
     domain: void_Dataset
     multivalued: false
     name: void_property
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: void:property
     title: property
   void_propertyPartition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A subset of a void:Dataset that contains only the triples of a certain
       rdf:Property.
     domain: void_Dataset
     name: void_propertyPartition
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:propertyPartition
     subproperty_of: void_subset
     title: property partition
   void_rootResource:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A top concept or entry point for a void:Dataset that is structured
       in a tree-like fashion. All resources in a dataset can be reached by following
       links from its root resources in a small number of steps.
     domain: void_Dataset
     name: void_rootResource
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: void:rootResource
     title: root resource
   void_sparqlEndpoint:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: void_Dataset
     name: void_sparqlEndpoint
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: void:sparqlEndpoint
     title: has a SPARQL endpoint at
   void_subjectsTarget:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dataset describing the subjects of triples contained in the Linkset.
     domain: void_Linkset
     multivalued: false
     name: void_subjectsTarget
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:subjectsTarget
     subproperty_of: void_target
     title: Subjects Target
   void_subset:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: void_Dataset
     name: void_subset
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:subset
     title: has subset
   void_target:
-    comments:
-    - No occurrences of this slot in the graph.
     description: One of the two datasets linked by the Linkset.
     domain: void_Linkset
     name: void_target
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: void:target
     title: Target
   void_triples:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total number of triples contained in a void:Dataset.
     domain: void_Dataset
     name: void_triples
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: void:triples
     title: number of triples
   void_uriLookupEndpoint:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Defines a simple URI look-up protocol for accessing a dataset.
     domain: void_Dataset
     name: void_uriLookupEndpoint
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: void:uriLookupEndpoint
     title: has an URI look-up endpoint at
   void_uriSpace:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A URI that is a common string prefix of all the entity URIs in a
       void:Dataset.
     domain: void_Dataset
     name: void_uriSpace
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: void:uriSpace
     title: URI space
   void_vocabulary:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A vocabulary that is used in the dataset.
     domain: void_Dataset
     name: void_vocabulary
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: void:vocabulary
     title: vocabulary
-title: No schema name specified

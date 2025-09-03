@@ -17,9 +17,6 @@ annotations:
           frbr:Manifestation:
             tag: frbr:Manifestation
             value: 12
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 2
       pairs:
         tag: pairs
         value:
@@ -59,24 +56,6 @@ annotations:
                   frbr:Manifestation:
                     tag: frbr:Manifestation
                     value: 6
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 2
           owl:versionInfo:
             tag: owl:versionInfo
             value:
@@ -110,12 +89,6 @@ annotations:
           frbr:embodiment:
             tag: frbr:embodiment
             value: 6
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 2
           owl:versionInfo:
             tag: owl:versionInfo
             value: 6
@@ -136,13 +109,10 @@ annotations:
             value: http://data.semanticweb.org/person/pierre-yves-vandenbussche
           frbr:Expression:
             tag: frbr:Expression
-            value: http://purl.org/vocommons/voaf/v2.1
+            value: http://purl.org/vocommons/voaf/v2.0
           frbr:Manifestation:
             tag: frbr:Manifestation
-            value: http://purl.org/vocommons/voaf/v2.1/index.html
-          owl:Restriction:
-            tag: owl:Restriction
-            value: Ndeddfdd317ff4ca3ab7d1d0188c5a2b0
+            value: http://purl.org/vocommons/voaf/v1.0/voaf_v1.0.rdf
       pairs:
         tag: pairs
         value:
@@ -163,7 +133,7 @@ annotations:
                         value: dct:creator
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.2
+                        value: http://purl.org/vocommons/voaf/v2.3
           dct:date:
             tag: dct:date
             value:
@@ -175,13 +145,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2013-04-24'
+                        value: '2011-03-11'
                       predicate:
                         tag: predicate
                         value: dct:date
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.2
+                        value: http://purl.org/vocommons/voaf/v1.0
           frbr:alternate:
             tag: frbr:alternate
             value:
@@ -211,49 +181,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://purl.org/vocommons/voaf/v2.2/voaf_v2.2.rdf
+                        value: http://purl.org/vocommons/voaf/v1.0/voaf_v1.0.rdf
                       predicate:
                         tag: predicate
                         value: frbr:embodiment
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.2
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:minCardinality
-                      subject:
-                        tag: subject
-                        value: N51193d9fbfcb4849a48f9ff7c67c0e70
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: voaf:usedBy
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N51193d9fbfcb4849a48f9ff7c67c0e70
+                        value: http://purl.org/vocommons/voaf/v1.0
           owl:versionInfo:
             tag: owl:versionInfo
             value:
@@ -265,13 +199,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2.2'
+                        value: '1.0'
                       predicate:
                         tag: predicate
                         value: owl:versionInfo
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.2
+                        value: http://purl.org/vocommons/voaf/v1.0
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -283,14 +217,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Added properties to represent metrics of vocabulary
-                          elements usage in LOV and LOD
+                        value: First published version
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: http://purl.org/vocommons/voaf/v2.2
+                        value: http://purl.org/vocommons/voaf/v1.0
 classes:
   voaf_DatasetOccurrences:
     class_uri: voaf:DatasetOccurrences
@@ -337,27 +270,26 @@ classes:
 comments:
 - 'title: Vocabulary of a Friend'
 - 'title: Vocabulaire d''un ami'
-- 'last_updated_on: 2013-05-24'
 - 'description: Un vocabulaire de description des vocabulaires RDF et de leurs relations
   mutuelles'
 contributors:
 - http://data.semanticweb.org/person/lise-rozat
 - http://data.semanticweb.org/person/pierre-yves-vandenbussche
 created_by: http://data.semanticweb.org/person/bernard-vatant
-created_on: '2025-07-17T19:21:33.283020'
+created_on: '2025-09-03T11:24:06.405386'
 default_prefix: okns
 description: A vocabulary to describe linked data vocabularies and their relations.
 id: okns:voaf
 imports:
 - okns:foaf
-- okns:frbr
-- okns:owl-rdf-rdfs
-- linkml:types
-- okns:extended_types
 - okns:dc
+- okns:extended_types
+- okns:frbr
 - okns:void
 - okns:ical
-last_updated_on: '2025-07-17T19:21:33.283020'
+- okns:owl-rdf-rdfs
+- linkml:types
+last_updated_on: '2013-05-24'
 name: voaf
 prefixes:
   dct: http://purl.org/dc/terms/
@@ -387,11 +319,12 @@ slots:
       \t\t{?class a rdfs:Class.}\n\t\t\t\tUNION{?class a owl:Class.}\n\t\t\t\t?class\
       \ a ?type.\n\t\t\t\tFILTER(?type!=owl:DeprecatedClass)\n\t\t\t\t?class rdfs:isDefinedBy\
       \ ?vocab.\n\t\t\t\t?vocab a voaf:Vocabulary.\n\t\t\t}GROUP BY ?vocab\n\t\t}"
-    - No occurrences of this slot in the graph.
     description: The number of classes defined in the vocabulary namespace. Classes
       imported from other namespaces are not taken into account.
     domain: voaf_Vocabulary
     name: voaf_classNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:classNumber
     source: http://purl.org/vocommons/voaf
@@ -400,12 +333,13 @@ slots:
     comments:
     - "title: jeu de donn\xE9es"
     - "description: D\xE9pr\xE9ci\xE9 depuis la v2.4"
-    - No occurrences of this slot in the graph.
     deprecated_element_has_exact_replacement: http://purl.org/vocommons/voaf#DatasetOccurrences
     description: Deprecated since v2.4
     domain: voaf_Vocabulary
     inverse: void_vocabulary
     name: voaf_dataset
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: voaf:dataset
     source: http://purl.org/vocommons/voaf
@@ -414,10 +348,11 @@ slots:
     comments:
     - "title: exemple de jeu de donn\xE9es"
     - "description: D\xE9pr\xE9ci\xE9 depuis la v1.1"
-    - No occurrences of this slot in the graph.
     deprecated_element_has_exact_replacement: http://purl.org/vocommons/voaf#dataset
     description: Deprecated since v1.1
     name: voaf_exampleDataset
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: voaf:exampleDataset
     source: http://purl.org/vocommons/voaf
@@ -425,10 +360,6 @@ slots:
   voaf_extends:
     comments:
     - "title: \xE9tend"
-    - "description: Indique que le vocabulaire sujet \xE9tend l'expressivit\xE9 du\
-      \ vocabulaire objet en d\xE9clarant des relations de subsomption avec ce dernier,\
-      \ ou en utilisant ses classes comme domaine ou co-domaine d'un propri\xE9t\xE9\
-      \ du vocabulaire sujet, ou en d\xE9finissant des contraintes locales etc."
     - "description: PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\t\tPREFIX\
       \ owl:<http://www.w3.org/2002/07/owl#>\n\t\tPREFIX voaf:<http://purl.org/vocommons/voaf#>\n\
       \n\t\tCONSTRUCT{\n\t\t\t?vocab1 voaf:extends ?vocab2\n\t\t}\n\t\tWHERE{\n\t\t\
@@ -439,13 +370,18 @@ slots:
       \t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\t\t\t?vocab1 a voaf:Vocabulary.\n\t\
       \t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\t\t?vocab2 a voaf:Vocabulary.\n\t\t\
       \tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
+    - "description: Indique que le vocabulaire sujet \xE9tend l'expressivit\xE9 du\
+      \ vocabulaire objet en d\xE9clarant des relations de subsomption avec ce dernier,\
+      \ ou en utilisant ses classes comme domaine ou co-domaine d'un propri\xE9t\xE9\
+      \ du vocabulaire sujet, ou en d\xE9finissant des contraintes locales etc."
     description: Indicates that the subject vocabulary extends the expressivity of
       the object vocabulary by declaring subsumption relationships, using object vocabulary
       class as domain or range of a subject vocabulary property, defining local restrictions
       etc ...
     domain: voaf_Vocabulary
     name: voaf_extends
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:extends
     source: http://purl.org/vocommons/voaf
@@ -454,8 +390,6 @@ slots:
   voaf_generalizes:
     comments:
     - "title: g\xE9n\xE9ralise"
-    - "description: Indique que le vocabulaire sujet d\xE9finit des super-classes\
-      \ ou super-propri\xE9t\xE9s du vocabulaire objet"
     - "description: PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>\n\t\t\
       PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\t\tPREFIX owl:<http://www.w3.org/2002/07/owl#>\n\
       \t\tPREFIX voaf:<http://purl.org/vocommons/voaf#>\n\t\tPREFIX skos:<http://www.w3.org/2004/02/skos/core#>\n\
@@ -473,11 +407,14 @@ slots:
       \ ?elem2.}\n\t\t\tFILTER(!isBlank(?elem2))\n\t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\
       \t\t\t?vocab1 a voaf:Vocabulary.\n\t\t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\
       \t\t?vocab2 a voaf:Vocabulary.\n\t\t\tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
+    - "description: Indique que le vocabulaire sujet d\xE9finit des super-classes\
+      \ ou super-propri\xE9t\xE9s du vocabulaire objet"
     description: Indicates that the subject vocabulary generalizes by some superclasses
       or superproperties the object vocabulary.
     domain: voaf_Vocabulary
     name: voaf_generalizes
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:generalizes
     source: http://purl.org/vocommons/voaf
@@ -495,11 +432,12 @@ slots:
       \t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\t\t\t?vocab1 a voaf:Vocabulary.\n\t\
       \t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\t\t?vocab2 a voaf:Vocabulary.\n\t\t\
       \tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
     description: Indicates that the subject vocabulary contains some declaration of
       disjoint classes with the object vocabulary.
     domain: voaf_Vocabulary
     name: voaf_hasDisjunctionsWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:hasDisjunctionsWith
     source: http://purl.org/vocommons/voaf
@@ -508,8 +446,6 @@ slots:
   voaf_hasEquivalencesWith:
     comments:
     - "title: a des \xE9quivalences avec"
-    - "description: Indique que le vocabulaire sujet d\xE9clare des \xE9quivalences\
-      \ de classes ou de propri\xE9t\xE9s avec le vocabulaire objet"
     - "description: PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\t\tPREFIX\
       \ owl:<http://www.w3.org/2002/07/owl#>\n\t\tPREFIX voaf:<http://purl.org/vocommons/voaf#>\n\
       \t\tPREFIX skos:<http://www.w3.org/2004/02/skos/core#>\n\t\t\n\t\tCONSTRUCT{\n\
@@ -521,11 +457,14 @@ slots:
       \tFILTER(!isBlank(?elem2))\n\t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\t\t\t?vocab1\
       \ a voaf:Vocabulary.\n\t\t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\t\t?vocab2\
       \ a voaf:Vocabulary.\n\t\t\tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
+    - "description: Indique que le vocabulaire sujet d\xE9clare des \xE9quivalences\
+      \ de classes ou de propri\xE9t\xE9s avec le vocabulaire objet"
     description: Indicates that the subject vocabulary declares some equivalent classes
       or properties with the object vocabulary.
     domain: voaf_Vocabulary
     name: voaf_hasEquivalencesWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:hasEquivalencesWith
     source: http://purl.org/vocommons/voaf
@@ -535,10 +474,11 @@ slots:
     comments:
     - "title: dans le jeu de donn\xE9es"
     - "description: jeu de donn\xE9es dans lequel un vocabulaire apparait"
-    - No occurrences of this slot in the graph.
     description: dataset in which a vocabulary occurred
     domain: voaf_DatasetOccurrences
     name: voaf_inDataset
+    notes:
+    - No occurrences of this slot in the graph.
     range: void_Dataset
     slot_uri: voaf:inDataset
     source: http://purl.org/vocommons/voaf
@@ -555,11 +495,12 @@ slots:
       \t\t\t?elem1 ?elem2 ?o.\n\t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\t\t\t?vocab1\
       \ a voaf:Vocabulary.\n\t\t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\t\t?vocab2\
       \ a voaf:Vocabulary.\n\t\t\tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
     description: Indicates that the subject vocabulary uses the object vocabulary
       in metadata at global vocabulary level or at element level
     domain: voaf_Vocabulary
     name: voaf_metadataVoc
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:metadataVoc
     source: http://purl.org/vocommons/voaf
@@ -569,10 +510,11 @@ slots:
     comments:
     - 'title: occurrences'
     - 'description: nombre d''occurrences d''un vocabulaire dans un dataset'
-    - No occurrences of this slot in the graph.
     description: Number of occurrences of a vocabulary in a dataset
     domain: voaf_DatasetOccurrences
     name: voaf_occurrences
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:occurrences
     source: http://purl.org/vocommons/voaf
@@ -581,9 +523,10 @@ slots:
     comments:
     - 'title: occurences dans des datasets'
     - "description: Nombre de jeux de donn\xE9es utilisant une ressource."
-    - No occurrences of this slot in the graph.
     description: Number of datasets using a resource.
     name: voaf_occurrencesInDatasets
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:occurrencesInDatasets
     source: http://purl.org/vocommons/voaf
@@ -592,9 +535,10 @@ slots:
     comments:
     - 'title: occurences dans des vocabulaires'
     - 'description: Nombre de vocabulaires utilisant une ressource.'
-    - No occurrences of this slot in the graph.
     description: Number of vocabularies using a resource
     name: voaf_occurrencesInVocabularies
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:occurrencesInVocabularies
     source: http://purl.org/vocommons/voaf
@@ -619,11 +563,12 @@ slots:
       \t\t\t\t?prop a ?type.\n\t\t\t\tFILTER(?type!=owl:DeprecatedProperty)\n\t\t\t\
       \t?prop rdfs:isDefinedBy ?vocab.\n\t\t\t\t?vocab a voaf:Vocabulary.\n\t\t\t\
       }GROUP BY ?vocab\n\t\t}"
-    - No occurrences of this slot in the graph.
     description: The number of properties defined in the vocabulary namespace. Properties
       imported from other namespaces are not taken into account.
     domain: voaf_Vocabulary
     name: voaf_propertyNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:propertyNumber
     source: http://purl.org/vocommons/voaf
@@ -633,11 +578,12 @@ slots:
     - "title: r\xE9utilise"
     - "description: Indique que le vocabulaire sujet utilise ou \xE9tend au moins\
       \ une classe ou propri\xE9t\xE9 du vocabulaire objet"
-    - No occurrences of this slot in the graph.
     description: Indicates that the subject vocabulary uses or extends some class
       or property of the object vocabulary
     domain: voaf_Vocabulary
     name: voaf_reliesOn
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:reliesOn
     source: http://purl.org/vocommons/voaf
@@ -647,9 +593,10 @@ slots:
     comments:
     - "title: r\xE9utilis\xE9 par des jeux de donn\xE9es"
     - "description: Nombre distinct de jeux de donn\xE9es reutilisant une resource."
-    - No occurrences of this slot in the graph.
     description: Distinct number of datasets reusing a resource.
     name: voaf_reusedByDatasets
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:reusedByDatasets
     source: http://purl.org/vocommons/voaf
@@ -658,9 +605,10 @@ slots:
     comments:
     - "title: r\xE9utilis\xE9 par des vocabulaires"
     - 'description: Nombre distinct de vocabulaires reutilisant une resource.'
-    - No occurrences of this slot in the graph.
     description: Distinct number of vocabularies reusing a resource.
     name: voaf_reusedByVocabularies
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: voaf:reusedByVocabularies
     source: http://purl.org/vocommons/voaf
@@ -671,11 +619,12 @@ slots:
     - "description: Indique que deux vocabulaires sont similaires dans leur domaine\
       \ et/ou leurs objectifs, sans \xEAtre n\xE9cessairement reli\xE9s par des r\xE9\
       f\xE9rences."
-    - No occurrences of this slot in the graph.
     description: Used to assert that two vocabularies are similar in scope and objectives,
       independently of the fact that they otherwise refer to each other.
     domain: voaf_Vocabulary
     name: voaf_similar
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:similar
     source: http://purl.org/vocommons/voaf
@@ -683,8 +632,6 @@ slots:
   voaf_specializes:
     comments:
     - "title: sp\xE9cialise"
-    - "description: Indique que le vocabulaire sujet d\xE9finit des sous-classes ou\
-      \ sous-propri\xE9t\xE9s du vocabulaire objet"
     - "description: PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>\n\t\tPREFIX\
       \ voaf:<http://purl.org/vocommons/voaf#>\n\t\tPREFIX skos:<http://www.w3.org/2004/02/skos/core#>\n\
       \t\t\n\t\tCONSTRUCT{\n\t\t\t?vocab1 voaf:specializes ?vocab2\n\t\t}\n\t\tWHERE{\n\
@@ -693,11 +640,14 @@ slots:
       \ ?elem2. FILTER(!isBlank(?elem2))}\n\t\t\t?elem1 rdfs:isDefinedBy ?vocab1.\n\
       \t\t\t?vocab1 a voaf:Vocabulary.\n\t\t\t?elem2 rdfs:isDefinedBy ?vocab2.\n\t\
       \t\t?vocab2 a voaf:Vocabulary.\n\t\t\tFILTER(?vocab1!=?vocab2)\n\t\t}"
-    - No occurrences of this slot in the graph.
+    - "description: Indique que le vocabulaire sujet d\xE9finit des sous-classes ou\
+      \ sous-propri\xE9t\xE9s du vocabulaire objet"
     description: Indicates that the subject vocabulary defines some subclasses or
       subproperties of the object vocabulary, or local restrictions on those.
     domain: voaf_Vocabulary
     name: voaf_specializes
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:specializes
     source: http://purl.org/vocommons/voaf
@@ -711,12 +661,13 @@ slots:
       \ ou de jeu de donn\xE9es mais son doamine est ouvert, elle peut \xEAtre utilis\xE9\
       e pour n'importe quelle ressource. Utiliser la classe ical:Vtodo pour une description\
       \ fine des t\xE2ches : calendrier, priorit\xE9s etc"
-    - No occurrences of this slot in the graph.
     description: Describes future tasks planned by a resource curator. This property
       is primarily intended to be used for vocabularies or datasets, but the domain
       is left open, it can be used for any resource. Use iCalendar Vtodo class and
       its properties to further describe the task calendar, priorities etc.
     name: voaf_toDoList
+    notes:
+    - No occurrences of this slot in the graph.
     range: ical_Vtodo
     slot_uri: voaf:toDoList
     source: http://purl.org/vocommons/voaf
@@ -725,10 +676,11 @@ slots:
     comments:
     - "title: utilisation dans un jeu de donn\xE9es"
     - "description: statistiques d'utilisation dans un jeu de donn\xE9es"
-    - No occurrences of this slot in the graph.
     description: usage statistics in a dataset
     domain: voaf_Vocabulary
     name: voaf_usageInDataset
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_DatasetOccurrences
     slot_uri: voaf:usageInDataset
     source: http://purl.org/vocommons/voaf
@@ -738,13 +690,13 @@ slots:
     - "title: utilis\xE9 par"
     - "description: Indique que le vocabulaire sujet est utilis\xE9 par le vocabulaire\
       \ objet"
-    - No occurrences of this slot in the graph.
     description: Indicates that the subject vocabulary is used by the object vocabulary
     domain: voaf_Vocabulary
     inverse: voaf_reliesOn
     name: voaf_usedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: voaf_Vocabulary
     slot_uri: voaf:usedBy
     source: http://purl.org/vocommons/voaf
     title: used by
-title: No schema name specified

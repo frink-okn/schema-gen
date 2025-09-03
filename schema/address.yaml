@@ -61,10 +61,10 @@ annotations:
         value:
           dcmitype:Text:
             tag: dcmitype:Text
-            value: http://schemas.talis.com/2005/address/schema-20060627.rdf
+            value: http://schemas.talis.com/2005/address/schema-20060627.html
           dct:IMT:
             tag: dct:IMT
-            value: N105fa2e54d5b4de8a2f3937e4c385a8e
+            value: Nd0b7905f14634d05b2603b94a661f203
       pairs:
         tag: pairs
         value:
@@ -79,13 +79,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Naaf5e699a3a74c10adbe7c3735b16585
+                        value: Na94478b426d64dfabd56b84ee6a85b58
                       predicate:
                         tag: predicate
                         value: dc:format
                       subject:
                         tag: subject
-                        value: http://schemas.talis.com/2005/address/schema-20060627.html
+                        value: http://schemas.talis.com/2005/address/schema-20060627.rdf
           rdf:value:
             tag: rdf:value
             value:
@@ -97,13 +97,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: text/html
+                        value: application/rdf+xml
                       predicate:
                         tag: predicate
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: Naaf5e699a3a74c10adbe7c3735b16585
+                        value: Na94478b426d64dfabd56b84ee6a85b58
           rdfs:label:
             tag: rdfs:label
             value:
@@ -115,27 +115,26 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: HTML
+                        value: RDF
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: Naaf5e699a3a74c10adbe7c3735b16585
+                        value: Na94478b426d64dfabd56b84ee6a85b58
 classes: {}
 comments:
-- 'last_updated_on: 2006-06-26'
 - 'title: Address Schema'
-created_on: '2025-07-17T19:20:23.015034'
+created_on: '2025-09-03T11:22:11.514514'
 default_prefix: okns
 id: okns:address
 imports:
-- okns:owl-rdf-rdfs
 - linkml:types
-- okns:dc
 - okns:frbr
 - okns:extended_types
-last_updated_on: '2025-07-17T19:20:23.015034'
+- okns:dc
+- okns:owl-rdf-rdfs
+last_updated_on: '2006-06-26'
 name: address
 prefixes:
   address: http://schemas.talis.com/2005/address/schema#
@@ -152,9 +151,10 @@ slots:
   address_countryName:
     comments:
     - 'description: For example: "Egypt"'
-    - No occurrences of this slot in the graph.
     description: the name of the country, principality or national entity
     name: address_countryName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:countryName
     source: http://schemas.talis.com/2005/address/schema#
@@ -163,9 +163,10 @@ slots:
     comments:
     - 'description: The number must be in standard international format. For example:
       "+43 1 53410434"'
-    - No occurrences of this slot in the graph.
     description: a fax number which can be used to contact a person at the address
     name: address_fax
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:fax
     source: http://schemas.talis.com/2005/address/schema#
@@ -173,10 +174,11 @@ slots:
   address_localityName:
     comments:
     - 'description: For example: "Santiago 1400"'
-    - No occurrences of this slot in the graph.
     description: the name of the city, town, village or other geopolitical region
       for which the streetAddress is unambiguous
     name: address_localityName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:localityName
     source: http://schemas.talis.com/2005/address/schema#
@@ -184,9 +186,10 @@ slots:
   address_postalCode:
     comments:
     - 'description: For example: "NN14 7DS"'
-    - No occurrences of this slot in the graph.
     description: the postcode or zipcode of the address
     name: address_postalCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:postalCode
     source: http://schemas.talis.com/2005/address/schema#
@@ -194,10 +197,11 @@ slots:
   address_regionName:
     comments:
     - 'description: For example: "Alabama"'
-    - No occurrences of this slot in the graph.
     description: the name of the region within the country, principality or national
       entity
     name: address_regionName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:regionName
     source: http://schemas.talis.com/2005/address/schema#
@@ -205,9 +209,10 @@ slots:
   address_streetAddress:
     comments:
     - 'description: For example: "13 Queen Street"'
-    - No occurrences of this slot in the graph.
     description: the building name and number and street name
     name: address_streetAddress
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:streetAddress
     source: http://schemas.talis.com/2005/address/schema#
@@ -216,11 +221,11 @@ slots:
     comments:
     - 'description: The number must be in standard international format. For example:
       "+43 1 53410437"'
-    - No occurrences of this slot in the graph.
     description: a telephone number which can be used to contact a person at the address
     name: address_tel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: address:tel
     source: http://schemas.talis.com/2005/address/schema#
     title: tel
-title: No schema name specified

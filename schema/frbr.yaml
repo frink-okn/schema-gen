@@ -127,16 +127,16 @@ annotations:
             value: http://creativecommons.org/licenses/by/2.0/uk/
           cc:Permission:
             tag: cc:Permission
-            value: cc:DerivativeWorks
+            value: cc:Reproduction
           cc:Requirement:
             tag: cc:Requirement
-            value: cc:Notice
+            value: cc:Attribution
           dcmitype:Text:
             tag: dcmitype:Text
             value: http://purl.org/vocab/frbr/frbr-core-20050810.rdf
           dct:IMT:
             tag: dct:IMT
-            value: Nccdb3e9748e44f199cf67058edc6225a
+            value: N0c0aeb1a858e435bb85e4a307bd525bb
       pairs:
         tag: pairs
         value:
@@ -193,7 +193,7 @@ annotations:
                         value: dc:creator
                       subject:
                         tag: subject
-                        value: N8ab79e1809584548a67bb92e330ccc15
+                        value: Ndd48068eb6f44cc0aff499065c11d801
           dc:date:
             tag: dc:date
             value:
@@ -205,13 +205,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2005-08-09'
+                        value: '2005-08-10'
                       predicate:
                         tag: predicate
                         value: dc:date
                       subject:
                         tag: subject
-                        value: N8ab79e1809584548a67bb92e330ccc15
+                        value: Ndd48068eb6f44cc0aff499065c11d801
           dc:format:
             tag: dc:format
             value:
@@ -223,7 +223,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Nccdb3e9748e44f199cf67058edc6225a
+                        value: N0c0aeb1a858e435bb85e4a307bd525bb
                       predicate:
                         tag: predicate
                         value: dc:format
@@ -247,7 +247,7 @@ annotations:
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: Ne6980c599b664ec9bcc9892dd3c02561
+                        value: Nf79986f89ca44c97bd6230187296a28b
               untyped:
                 tag: untyped
                 value:
@@ -256,13 +256,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Added definition
+                        value: Added domain and range of Work or Expression
                       predicate:
                         tag: predicate
                         value: rdf:value
                       subject:
                         tag: subject
-                        value: N8ab79e1809584548a67bb92e330ccc15
+                        value: Ndd48068eb6f44cc0aff499065c11d801
           rdfs:label:
             tag: rdfs:label
             value:
@@ -280,7 +280,7 @@ annotations:
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: Ne6980c599b664ec9bcc9892dd3c02561
+                        value: Nf79986f89ca44c97bd6230187296a28b
 classes:
   dct_IMT:
     class_uri: dct:IMT
@@ -296,10 +296,10 @@ classes:
     is_a: skos_Concept
     name: frbr_Concept
     notes:
-    - N331e2a8b67254cd988aa63a17b3b177e
-    - Na05e1dae374142528b3c37301236ab0a
-    - Ndbd81bee44714d04a49986ea05e9ae2c
-    - N260b22a115ba42258af0c8703f63ba71
+    - Neb3e310a3aca4c30b4ab0dd6e27b06ed
+    - N0700dd006c204902af73cf16bc783f0e
+    - N6a66620bbb5b4f14bdd478d690ccb827
+    - Nefc66e4078bd4e058f1410d55d0d814d
     source: http://purl.org/vocab/frbr/core#
     title: concept
   frbr_CorporateBody:
@@ -311,9 +311,9 @@ classes:
     is_a: frbr_ResponsibleEntity
     name: frbr_CorporateBody
     notes:
-    - Nfe1fc9f888a7443ea956223d8871662d
-    - N69871272c5e74e61bdd4f5b60335cc5a
-    - N390433055daf490ab3bf03f806a6b462
+    - Nd637f86269e44eda9faa4e535b3e2dd7
+    - Nef1629fb0380414b9b619c305e9b54f2
+    - N7844fc43281c4c0b94fb3de4092b55bd
     source: http://purl.org/vocab/frbr/core#
     title: corporate body
   frbr_Endeavour:
@@ -323,9 +323,9 @@ classes:
     description: Any of the products of artistic or creative endeavour.
     name: frbr_Endeavour
     notes:
-    - Ne3eb42f0c7744581872d8f4dead46968
-    - N54027bddaedf4ccaaaf8629b852084b1
-    - N9780650499b243a09b17fedcd45c1192
+    - Nbe61b733e4e64a7e9324081b37b42673
+    - N8dd72b6b9eff45c298d4dc53e52e655c
+    - Nff7df09854724fa98fbdb2752d248d03
     source: http://purl.org/vocab/frbr/core#
     title: endeavour
   frbr_Event:
@@ -336,9 +336,9 @@ classes:
     is_a: time-entry_Event
     name: frbr_Event
     notes:
-    - Nfd334fc2799741d4b4f6640b01466ce0
-    - N348cc30dd1764e22b2029d33fa566f8a
-    - N22b2c2a2dc7d439eabb9ea575d4f61f8
+    - Nf192cef2e52c43ea985654628f2df832
+    - N7ae9bcee39154d4c8edb1c71231aa4bb
+    - Nae890efc55e94163b9dd6f42be868904
     source: http://purl.org/vocab/frbr/core#
     title: event
   frbr_Expression:
@@ -349,9 +349,9 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Expression
     notes:
-    - N82de6c0fe206448397c935cad55978c1
-    - Nae5d1e9009714b388ac14d1386144533
-    - N90fead6a8ddc4e4d93eb17bdec9c0a88
+    - N450c285c097b4781a1ffeb7e70e1ca13
+    - N748d92d042344fcf8e49a2a8ab79c87d
+    - N3bd4139074924d3882e40967dd357662
     source: http://purl.org/vocab/frbr/core#
     title: expression
   frbr_Item:
@@ -362,11 +362,11 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Item
     notes:
-    - N934e00c3790b45449c5af9db250faeb4
-    - Ndba5dbdc85694962a26456b12c9334d7
-    - N4000a3d3d21c4644829f050e4c6d83e3
-    - N68ac5f6383a24ef7abac60ec3a5c1021
-    - N16cadcdcfa734a928bb1587edd25b62c
+    - N042043e7d60c4a3d99c212ac711f06c0
+    - Nbc61d1e9ad66430bb3e3072d119a07c9
+    - N4787cfb2c21649eda3977ea1eaa4892d
+    - N4408d3925a9745a188c3b2c300e9bfab
+    - N695d2786b3984954aa9201f353175a77
     source: http://purl.org/vocab/frbr/core#
     title: item
   frbr_Manifestation:
@@ -377,9 +377,9 @@ classes:
     is_a: frbr_Endeavour
     name: frbr_Manifestation
     notes:
-    - N3af06c79c16149618c4350e35f2d8d75
-    - N20e661bd2b1b49d7920f8f28c20c3510
-    - Ne84c3a44c0d543279eb683228c145e54
+    - N6446c020e94942fb85596d8d9e02451a
+    - Ne9807fb980274ede8d37a38c54c8908d
+    - N38f57c70af3a4cafa7d361b87333fde8
     source: http://purl.org/vocab/frbr/core#
     title: manifestation
   frbr_Object:
@@ -390,10 +390,10 @@ classes:
     is_a: wgs_SpatialThing
     name: frbr_Object
     notes:
-    - N59762eda989e4dcdbfc81a9014dbd1f3
-    - N31e9c9bc06a54318a5db5c165958a074
-    - Na5649baff2e14353b7b99f6dce843853
-    - N6663d893902a4193a3598250b00f833b
+    - N12a9782a0bea4e15981509b9e1994fc4
+    - Nc5a35175cb5e4d6796bd865ce3616634
+    - N79db2676181e4c54946ff0aeb4db7eae
+    - N91d2223903464c18bab8f5512ec69cc4
     source: http://purl.org/vocab/frbr/core#
     title: object
   frbr_Person:
@@ -403,9 +403,9 @@ classes:
     description: A living or dead individual.
     name: frbr_Person
     notes:
-    - N7751c154841247dd9463c60f624f0d78
-    - N16cd6c2146d842a0a0a0603d3e4b7c08
-    - N5f5c00fe6c9d4b4d9929a395d0d27077
+    - N7d4a4e9ac98c4c1b98adf5f82190733c
+    - N6a8e567782d7409ea059943d2c8f7c0c
+    - N2a2cf99698ba4492a74e6828348b9ec5
     source: http://purl.org/vocab/frbr/core#
     title: person
   frbr_Place:
@@ -416,10 +416,10 @@ classes:
     is_a: wgs_SpatialThing
     name: frbr_Place
     notes:
-    - N3541673b268a4ac6b78ed8aa1466c28d
-    - Nb03feac38d2b4c56a3f62c83306445bc
-    - N479e7523b4ae43989307b9d5d81cac73
-    - Nff14f28a49154dbe8b4c0b1940bde106
+    - Nc12693d9241744efa3bf3a4069e56306
+    - N3b417383d3c3435fb4f1f7dd74e24080
+    - Nee958ddd3d9840799b14b1e985c478e7
+    - N12e2c56320dc4fe893a172c83ae9e740
     source: http://purl.org/vocab/frbr/core#
     title: place
   frbr_ResponsibleEntity:
@@ -430,9 +430,9 @@ classes:
       of artistic or creative content.
     name: frbr_ResponsibleEntity
     notes:
-    - N20a18c91f4fa4c29bf381c7d94c06178
-    - N960ebcca432e4fd9920752a7129b2ea0
-    - N3a7f8e9d05c147a7a2696913bec2c02f
+    - N68ac490f3d254485be1cb53a65eed590
+    - N644b3d0b35fb4665a54047db49029c16
+    - Na5b3a1774293400d97841b2bb007e167
     source: http://purl.org/vocab/frbr/core#
     title: responsible entity
   frbr_Subject:
@@ -442,9 +442,9 @@ classes:
     description: Something that may serve as the subject of a work.
     name: frbr_Subject
     notes:
-    - Nc8f7771116a144ae9c0e60524b499904
-    - N53af67d9bc714a0884cb683be012fbb8
-    - N9ab78319727c4660b7efd9bce0f34cd8
+    - N3d89dfcc4b8444e2a90d4927e75cd031
+    - N2ee373921f494d389d178bfc65afb1a8
+    - N8e57c30ecf7b42669a8fb31d7eded226
     source: http://purl.org/vocab/frbr/core#
     title: subject
   frbr_Work:
@@ -455,17 +455,16 @@ classes:
     is_a: wn16_Work~2
     name: frbr_Work
     notes:
-    - N8774953c3ad6433ebfc1df5704a4e5e5
-    - Nd6380d7c58b54db4af8c29f0031f1b62
-    - N53c16f66c6764394bb6b2ed0ceb22205
-    - Nfd8a2f8fd8dd4e9ea803474f67c9e3bb
+    - Nd7448abd61bb479c859fd8287b17d96e
+    - N7e49ec98377c446d93042554eed74edb
+    - Ndf107e4b600e4f2991ce940e0790130b
+    - N8f74280acd0d446682229c09b9af1b16
     source: http://purl.org/vocab/frbr/core#
     title: work
   wn16_Work~2:
     class_uri: wn16:Work~2
     name: wn16_Work~2
 comments:
-- 'last_updated_on: 2005-08-10'
 - 'title: Expression of Core FRBR Concepts in RDF'
 - "description: \u240A      This vocabulary is a work in progress, it includes RDF\
   \ classes for the group 1, 2 and 3 entities\u240A      described by the FRBR report\
@@ -473,30 +472,30 @@ comments:
   \ entities. It does not yet describe attributes of the entities. Where possible,\
   \ appropriate \u240A      relationships with other vocabularies are included in\
   \ order to place this vocabulary in the \u240A      context of existing RDF work.\u240A"
-created_on: '2025-07-17T19:20:14.230272'
+created_on: '2025-09-03T11:21:59.699459'
 default_prefix: okns
 description: "\u240A      This vocabulary is an expression in RDF of the concepts\
   \ and relations described in the\u240A      IFLA report on the Functional Requirements\
   \ for Bibliographic Records (FRBR). \u240A"
 id: okns:frbr
 imports:
+- okns:dc
+- okns:owl-rdf-rdfs
+- linkml:types
 - okns:skos
 - okns:daml
-- okns:extended_types
 - okns:wgs
-- linkml:types
-- okns:dc
 - okns:cc
-- okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T19:20:14.230272'
+- okns:extended_types
+last_updated_on: '2005-08-10'
 name: frbr
 notes:
-- N3d76ff7873e640ce9166ae44649bc7c3
-- N24a97c1a58964dc6ae13f4f8d0785406
-- N008d3acb8b4444169f556d9240b728f1
-- N2a4d7c6bf0b0407d96dfaa6e5a7b5b6f
-- N88714dbdb1ae4cdf96f29d1223a413cc
-- N117b1f920c43461990002162dae87310
+- N76b51998059842fd9fc06c54c5d3a70f
+- Nd1ce07e3511b4c2e82cbaf8f0bb82762
+- N55e7e13f89d044cf8c33af3e49fd4f84
+- N6e9a44d928a2479ab577bd3f9a898418
+- Nc9af87c6833042498e0b5abb7e114cb5
+- Nc43a9c815eb7412eb7cedabdd0dfdeaa
 prefixes:
   cc: http://web.resource.org/cc/
   dc: http://purl.org/dc/elements/1.1/
@@ -517,730 +516,685 @@ prefixes:
   wn16: http://xmlns.com/wordnet/1.6/
 slots:
   frbr_abridgement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An abridgment of an expression.
     domain: frbr_Expression
     inverse: frbr_abridgementOf
     name: frbr_abridgement
     notes:
-    - Na9e5d174369e42e48ba94ba5a3216dbe
-    - Nfa4475cc529f4b6786be436defe43724
-    - Ne58037c59d434f36b978a695c0516323
+    - N53f44b1328b8426f8afa5f29c31ea02b
+    - N9075c196f3f54eb9ad7fe60038d0b116
+    - Nf05e5a3f0dbe4e31ba6fb825fd2724db
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:abridgement
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: abridgement
   frbr_abridgementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is abridged.
     domain: frbr_Expression
     inverse: frbr_abridgement
     name: frbr_abridgementOf
     notes:
-    - N8b7964c06840461583b496f58f8fd014
-    - N952753ff275845e09cc415e9a3faeebd
-    - Nd031c116091e46f39c5e561114b07603
+    - Nb8e0e48d0fc341c3ab525b3ebb30e26d
+    - Ndb7f22c6d95a47c49ae1f77a33f8058b
+    - Na1d6cf78ceb64de6b50c8932c6ddcb34
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:abridgementOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: abridgement of
   frbr_adaption:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An adaption of a work or expression.
     inverse: frbr_adaptionOf
     name: frbr_adaption
     notes:
-    - Nf74c1c1483874f27a6bbd32129f76385
-    - N608c332ac70848c7be622be737cf9cdc
-    - Nb921ec69d5e147bdaed5102625eb7c9d
+    - N06f3c0b5e1e747618c169ed2f1211d40
+    - Ncc9909c93d4a489a8f2298b3c451ea21
+    - N07f795a57c5c48eb94fd0ec121833b81
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:adaption
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: adaption
   frbr_adaptionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is adapted.
     inverse: frbr_adaption
     name: frbr_adaptionOf
     notes:
-    - N2f6dff0246c04bdd921692e389f12c99
-    - N8aaeb177652e46aba416bf0b653014eb
-    - Nba8cf32386b943d5bf2551209ad8e96b
+    - N1b504a0124654f88bcd19341c16cf540
+    - N224ce65ca0004af6966c1bb46889b98b
+    - N0a95918a620045e5957be335ba7fea35
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:adaptionOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: adaption of
   frbr_alternate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An alternative to a manifestation.
     domain: frbr_Manifestation
     inverse: frbr_alternateOf
     name: frbr_alternate
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbr_Manifestation
     slot_uri: frbr:alternate
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: alternate
   frbr_alternateOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A manifestation that is alternated.
     domain: frbr_Manifestation
     inverse: frbr_alternate
     name: frbr_alternateOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbr_Manifestation
     slot_uri: frbr:alternateOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: alternate of
   frbr_arrangement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An arrangement of an expression.
     domain: frbr_Expression
     inverse: frbr_arrangementOf
     name: frbr_arrangement
     notes:
-    - N383d11c1c8034df88b5a20a83a21a548
-    - Nf94a62f930214202a866d9da56928a80
-    - Nc00f18d459b542929510bf1f20dfe6f0
+    - N79ec4ebb8a6f481f90c16626db4dca8a
+    - N04eea93a51674a5d89551c9bce5f5271
+    - Nd9d92d5819104cc79dc66c30184eb10e
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:arrangement
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: arrangement
   frbr_arrangementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is arranged.
     domain: frbr_Expression
     inverse: frbr_arrangement
     name: frbr_arrangementOf
     notes:
-    - N703b59e9d2874258b7ab6965f2ae4e23
-    - Neba1440beb1c411d8aa38d0626d1128a
-    - N4a36e8e8c0c2418fbff95dbc1cf56282
+    - Nda5514c3154b488e89acb931e3408378
+    - N58f803ac9893451d88563e99735c848c
+    - N63442c6cdfc74b28b529d97e6950b213
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:arrangementOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: arrangement of
   frbr_complement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A complement to a work or expression.
     inverse: frbr_complementOf
     name: frbr_complement
     notes:
-    - N30be42e5fd6f484b9f3c0a08ef959ab6
-    - N2e032a01981844d394fafa12172928dd
-    - N809b0479ac4748bd84453aca0c5560a4
+    - N5b1b0f4356d0438e85a957c660a066b0
+    - N3ed7ccbf34354511b4e3a2f7a3e410a1
+    - Ndd48068eb6f44cc0aff499065c11d801
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:complement
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: complement
   frbr_complementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is complemented.
     inverse: frbr_complement
     name: frbr_complementOf
     notes:
-    - Nafbef401f5c944ad9c8da627b40fc222
-    - N7f559de1c46e428d812c8be5e8590dd6
-    - N0ec91abc671648ce941d435be008471f
+    - N4b351cb23ab14863b90379b8a22d29d2
+    - Nd643b473bf8f48178e4c4d35f06dd88b
+    - Ne9760d5499a24a76a7877416b873dbe0
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:complementOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: complement of
   frbr_creator:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity in some way responsible for the creation of a work.
     domain: frbr_Work
     inverse: frbr_creatorOf
     name: frbr_creator
     notes:
-    - N9869602df2fb43c2a9b4d36f0629bc98
-    - N2610c90ab7874d9791a3f3dc4225dd5e
+    - N624e2cd580484e779d37e0fbb8576652
+    - Ndaf6654e70474a57bfaeea242d91cc7d
+    - No occurrences of this slot in the graph.
     range: frbr_ResponsibleEntity
     slot_uri: frbr:creator
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntity
     title: creator
   frbr_creatorOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work that was in some way created by of an entity.
     domain: frbr_ResponsibleEntity
     inverse: frbr_creator
     name: frbr_creatorOf
     notes:
-    - Nbcbd516db1ae4f9f8e0f87c8a67df3b9
-    - N01bb520da4c5483b92c76572c4433c48
+    - N7e9edf2b784c4b1fb73616381ec76d1a
+    - Nbe9b10a808684d6a80c9fbccca1bef89
+    - No occurrences of this slot in the graph.
     range: frbr_Work
     slot_uri: frbr:creatorOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntityOf
     title: creator of
   frbr_embodiment:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A manifestation that embodies an expression.
     domain: frbr_Expression
     inverse: frbr_embodimentOf
     name: frbr_embodiment
     notes:
-    - N2b455135c9fa4b11be3fb6b70340e7df
-    - Nde7b58e760c3481389ed92912ea3177a
+    - N3559b6651b5047c4a35f453761bb06b0
+    - N02934a353f4645ce943310f1bfdd28cf
+    - No occurrences of this slot in the graph.
     range: frbr_Manifestation
     slot_uri: frbr:embodiment
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: embodiment
   frbr_embodimentOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is embodied by a manifestation.
     domain: frbr_Manifestation
     inverse: frbr_embodiment
     name: frbr_embodimentOf
     notes:
-    - N06aeb9f877bd4aabb93f741e3c11be89
-    - N76c100c8103e48cea9f8249bb82df3f6
+    - N7703209c64c443548cfe0b2b35a83604
+    - Nefee085fa0ff45648834b29e38dcf322
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:embodimentOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: embodiment of
   frbr_exemplar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An item that is an exemplar of a manifestation.
     domain: frbr_Manifestation
     inverse: frbr_exemplarOf
     name: frbr_exemplar
     notes:
-    - N26464d9c48b545d6929ad1b1f28cbc06
-    - N418054426955429ea2e6e07669cbd8c9
+    - N958e21883c704c89b174428a0cf5d31b
+    - N055be709e2d14472969b55ee355d2119
+    - No occurrences of this slot in the graph.
     range: frbr_Item
     slot_uri: frbr:exemplar
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: exemplar
   frbr_exemplarOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The manifestation that is exemplified by a item.
     domain: frbr_Item
     inverse: frbr_exemplar
     name: frbr_exemplarOf
     notes:
-    - Ne715b1f206794164b4625b073cde023c
-    - N1cfdac9a71f549aab4b53a040e4140fc
+    - Nf821047dcf594e86a7464933e8472db1
+    - N13c2217aa96743c6a63dea80eb4d6ba9
+    - No occurrences of this slot in the graph.
     range: frbr_Manifestation
     slot_uri: frbr:exemplarOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: exemplar of
   frbr_imitation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An imitation of a work or expression.
     inverse: frbr_imitationOf
     name: frbr_imitation
     notes:
-    - N19266e4afd7e4b7baf21a5742640b121
-    - Nd13fd677cd794a1ea03e282cd48786fd
-    - N5aef9b0045e24d4d9db2e280eaaf09d4
+    - Nd31eedc644e14373b54bf3496acaa372
+    - N855b406439e1463b926760eacd02b46a
+    - N1b30cb54c0514ec99dd992b00039fb6c
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:imitation
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: imitation
   frbr_imitationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is imitated.
     inverse: frbr_imitation
     name: frbr_imitationOf
     notes:
-    - N2053cec995b64664839a9c1977a63c38
-    - N1e8b9b57fb1241d6922a7228a6b68d31
-    - Nab1c077dd9294a59a5b996c08430f478
+    - N4a4a5041f31f4c67b9d00b3f3f720a7e
+    - N211adae207fb469ea2b3f764e20a135c
+    - N3ce63f536113413996a42f480c47360b
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:imitationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: imitation of
   frbr_owner:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity that owns an item.
     domain: frbr_Item
     inverse: frbr_ownerOf
     name: frbr_owner
     notes:
-    - Nf122324b77a44b119e5ea5ab7ef503bf
-    - N94d5bad228074f55bb6cf7a9e4dd6365
+    - N2adb586b387442a1a1452d3de443d3fb
+    - N67b26f2782bc4a5c9cecedb66605fa9e
+    - No occurrences of this slot in the graph.
     range: frbr_ResponsibleEntity
     slot_uri: frbr:owner
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntity
     title: owner
   frbr_ownerOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An item that is in some way owned an entity.
     domain: frbr_ResponsibleEntity
     inverse: frbr_owner
     name: frbr_ownerOf
     notes:
-    - N9379fae061e4458ba498df4b2643fffc
-    - Nccbed1ae59674727829106e5cae62d4f
+    - N0ce2b4c9f3194c29bd86af95b2e97805
+    - N8ed1a33ea09b4e3a8d4dc62a24f16ba1
+    - No occurrences of this slot in the graph.
     range: frbr_Item
     slot_uri: frbr:ownerOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntityOf
     title: owner of
   frbr_part:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A part of an endeavour.
     inverse: frbr_partOf
     name: frbr_part
     notes:
-    - Nb5e930a8b17b4e848a67363842503b6f
-    - N9d6429e792fd46e4ab350047f3d54e4c
+    - N8898c09ad1614022a3dd18d67ef04aed
+    - Ne3a2b11c644940368feb5ae0b5133d80
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:part
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: part
   frbr_partOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An endeavour incorporating an endeavour.
     inverse: frbr_part
     name: frbr_partOf
     notes:
-    - N15afd2e19d614583a3746fbab83cf6b5
-    - N7c2da8d5af2a4b0bbc0588fd45c689f1
+    - N7daed7b9dbe54472b639af93b9b1c350
+    - Ne3a3c80751314efaba5c3d97652284e3
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:partOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: part of
   frbr_producer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity in some way responsible for producing a manifestation.
     domain: frbr_Manifestation
     inverse: frbr_producerOf
     name: frbr_producer
     notes:
-    - N3ed0df96e0154d99ba08064e81229889
-    - N216e4b6497f64d4b969cf1128f2cde1e
+    - N09c1942d42504c92be517d01f682a6ed
+    - Nbb3138354a9947cbb92bb80b7e207698
+    - No occurrences of this slot in the graph.
     range: frbr_ResponsibleEntity
     slot_uri: frbr:producer
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntity
     title: producer
   frbr_producerOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A manifestation that was in some way produced an entity.
     domain: frbr_ResponsibleEntity
     inverse: frbr_producer
     name: frbr_producerOf
     notes:
-    - N3d5b86f1dad54691bd6cc4a33bc50178
-    - Nef5b40cb68e94fd4890b97ea043da2a5
+    - Ne418147c07b649589d8ac08f1f733bcc
+    - N1c3846fb8dae4bc6b3b2a499cf78e0dc
+    - No occurrences of this slot in the graph.
     range: frbr_Manifestation
     slot_uri: frbr:producerOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntityOf
     title: producer of
   frbr_realization:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is an intellectual or artistic realization of
       a work.
     domain: frbr_Work
     inverse: frbr_realizationOf
     name: frbr_realization
     notes:
-    - N1a33864b2d1b429bb0e701651d441270
-    - Nfca9a8ce65214c4e83b26212e660f70f
+    - N64f0edca05c043858980ef4d9a97e5e8
+    - N5c62a4f58b63498ba3c322206e0d1109
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:realization
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: realization
   frbr_realizationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The work that has been realized by an expression.
     domain: frbr_Expression
     inverse: frbr_realization
     name: frbr_realizationOf
     notes:
-    - Nec43db459d544396a603bc225dc8c670
-    - N430bc883b293417db3e9d9bcd5838dc9
+    - Nc9581f7fe6ce441495bfc1faed879cb8
+    - Ne90922840f2a4814ae079a3460bbd457
+    - No occurrences of this slot in the graph.
     range: frbr_Work
     slot_uri: frbr:realizationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: realization of
   frbr_realizer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity in some way responsible for realizing an expression.
     domain: frbr_Expression
     inverse: frbr_realizerOf
     name: frbr_realizer
     notes:
-    - N7ab64e2891ff47d1848c5fc36e078c23
-    - N688d3055adca49f994dcdff919ae895a
+    - N25977bf53f1a46b1a8fa0b25a0a4d387
+    - N81e543c93181451cb459ac8243386e19
+    - No occurrences of this slot in the graph.
     range: frbr_ResponsibleEntity
     slot_uri: frbr:realizer
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntity
     title: realizer
   frbr_realizerOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that was in some way realized by an entity.
     domain: frbr_ResponsibleEntity
     inverse: frbr_realizer
     name: frbr_realizerOf
     notes:
-    - N8e59f5a72b7a4af29f19c26199d56aa1
-    - Ne3176b9487e14fb9af902fb6ea5862ac
+    - Nd861ec19934349f3b628990def34a6b7
+    - N9d1c53fdbba04ef9bad2aba7e81a103f
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:realizerOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_responsibleEntityOf
     title: realizer of
   frbr_reconfiguration:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A recongifuration of an item.
     domain: frbr_Item
     inverse: frbr_reconfigurationOf
     name: frbr_reconfiguration
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbr_Item
     slot_uri: frbr:reconfiguration
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: reconfiguration
   frbr_reconfigurationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An item that is reconfigured.
     domain: frbr_Item
     inverse: frbr_reconfiguration
     name: frbr_reconfigurationOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbr_Item
     slot_uri: frbr:reconfigurationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: reconfiguration of
   frbr_relatedEndeavour:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Another endeavour that is related in some way to an endeavour.
     domain: frbr_Endeavour
     name: frbr_relatedEndeavour
     notes:
-    - Ncfce999d749e46a79d77691006db8393
-    - Ndd58479f428d4b5dabe66cfe96e7d9c5
+    - N15c6bc1db7f345b1973823d079ba3054
+    - Nbe7b8cbc2f62455aba816b6bd60221fd
+    - No occurrences of this slot in the graph.
     range: frbr_Endeavour
     slot_uri: frbr:relatedEndeavour
     source: http://purl.org/vocab/frbr/core#
     title: related endeavour
   frbr_reproduction:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A reproduction of a manifestation or item.
     inverse: frbr_reproductionOf
     name: frbr_reproduction
     notes:
-    - N6166e018591942fd91d5cde53bdb827f
-    - Nc64f5249c0384647a6ccaf28fff94fc6
-    - Na9ba490465ed4f3e92960c1ed785de53
+    - Nda710445ec2546759d24678e0614c2e0
+    - N7c8202fc64f0479f876a33c62b133a3f
+    - N22039df0be3447c090bcb16e74c7d171
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:reproduction
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: reproduction
   frbr_reproductionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A manifestation or item that is reproduced.
     inverse: frbr_reproduction
     name: frbr_reproductionOf
     notes:
-    - N4b6aff8824084fd887a638c6a651f7c4
-    - Ndaee74366da9459cb24e5146dc1415ae
-    - N52f6613518b54634b0de7a1b51082523
+    - Ndeae1dd6d7e54466837e7de11e757304
+    - N56fa8d17650644589c90842d38b6fb62
+    - N072e529762ea45d6b167cd4a42b893dc
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:reproductionOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: reproduction of
   frbr_responsibleEntity:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity in some way responsible for an endeavour.
     domain: frbr_Endeavour
     inverse: frbr_responsibleEntityOf
     name: frbr_responsibleEntity
     notes:
-    - N5f113a22f2e4434ea4254308c1e73854
-    - N60f25ae2b3fc4ae7a88a17cd795ce43f
+    - Nfff80747af3d4aa89f6030a61ed76949
+    - Ncec984f0def64ac981f73592bf1c4802
+    - No occurrences of this slot in the graph.
     range: frbr_ResponsibleEntity
     slot_uri: frbr:responsibleEntity
     source: http://purl.org/vocab/frbr/core#
     title: responsible entity
   frbr_responsibleEntityOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An endeavour that is the responsibility of an entity.
     domain: frbr_ResponsibleEntity
     inverse: frbr_responsibleEntity
     name: frbr_responsibleEntityOf
     notes:
-    - N7d5c7d3feb874dacb3ea009260aaeed5
-    - Naddb5763676c4789b56b1de02925f779
+    - N82257a5f524c424b9a99dd15e38f52c5
+    - Ncd498d5bd69546f4a0e3819069a5d05e
+    - No occurrences of this slot in the graph.
     range: frbr_Endeavour
     slot_uri: frbr:responsibleEntityOf
     source: http://purl.org/vocab/frbr/core#
     title: responsible entity of
   frbr_revision:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A revision of an expression.
     domain: frbr_Expression
     inverse: frbr_revisionOf
     name: frbr_revision
     notes:
-    - Nafe342212ba747d4b809bd9eac4ffac4
-    - N93a12efb64864bf38a60ba13d94e03cc
-    - Nbdc2a8bd998a42dca99da1775498acc2
+    - N56326931a116444d89263d5a466edcc6
+    - Nf1860089f8054b2c8f26dba23f2ae1af
+    - N5e24eca6157c48a3bb3872cb12c30537
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:revision
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: revision
   frbr_revisionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is revised.
     domain: frbr_Expression
     inverse: frbr_revision
     name: frbr_revisionOf
     notes:
-    - N398f4e9ff05b43259e24eb98e1834a6e
-    - Nde3ab5ef0cef440ca8748b59a904426e
-    - N4525fd2e4dc04db2bfde8863ce19c6f9
+    - N934f199deb924d27b6656663c3397b27
+    - N4917721ec671477f91fa80da716216f2
+    - N85bfe5c8ea9843d48811433c04987d20
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:revisionOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: revision of
   frbr_subject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The subject of a work.
     domain: frbr_Work
     name: frbr_subject
     notes:
-    - N5410cf050ec54f9fbe87f028ccf83ffc
-    - N68d18ff3fd3c4f7ea2852f438ed45e3c
+    - N4c2054568144473f913b9242a7ece86b
+    - N27c0ba612d564c74a2ef599260626410
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:subject
     source: http://purl.org/vocab/frbr/core#
     title: subject
   frbr_successor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A successor to a work or expression.
     inverse: frbr_successorOf
     name: frbr_successor
     notes:
-    - N979efb12342d49cebc086abbb5df0456
-    - N5cc4b0e842b1438b9dd7d86fd34a45c5
-    - N325580f96a58444782c119b06bdbc091
+    - N02dfcb9c24f64608995ed6331e7bd5ed
+    - N16764e93f5f04eadbc4ad37d1b5a1fc4
+    - N320f6cad1aa84382b1407bb9472ccc4a
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:successor
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: successor
   frbr_successorOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is succeeded.
     inverse: frbr_successor
     name: frbr_successorOf
     notes:
-    - Na0164f90279e46809d99dc64f493afdb
-    - Nb0c410f1e7544c5c9c45d603422264a4
-    - N83e7b32376684ce5aa2bd919dfd6bbcb
+    - N9896ef30b041409ba12f2f5f5e04e010
+    - N151e25f414824bd0ae86c258997c4832
+    - N89b9545e83af4b5890b7ba270bc051fe
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:successorOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: successor of
   frbr_summarization:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A summarization of a work or expression.
     inverse: frbr_summarizationOf
     name: frbr_summarization
     notes:
-    - N799202adf2914bd0a5b261c6490c8196
-    - Na42f5651dd9045c29ec304cde2270933
-    - Na2eda541d5b3438e83f6bd639298cf4e
+    - N67a8c0415a8d4135ae7d050c46a190b8
+    - N8a6f3f17fce94cd29fd3a0f20736670a
+    - N163e9185402445cc82859899c49e9743
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:summarization
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: summarization
   frbr_summarizationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is summarized.
     inverse: frbr_summarization
     name: frbr_summarizationOf
     notes:
-    - N21b309d2838e4d75ac2668fc6032ae07
-    - N1fa00a022db54dcb8e2f10eff0981839
-    - N7e79e41d657047d4aeae72929fad74d9
+    - N0137cf1485d54b33b520a35ffac1c214
+    - N806a57b683b5484a984a7e449e07e27c
+    - N884c6e298a3a45a0aa0c80a7f2bbdc54
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:summarizationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: summarization of
   frbr_supplement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A supplement to a work or expression.
     inverse: frbr_supplementOf
     name: frbr_supplement
     notes:
-    - N748004ed5c8d401f875dede6f5eeabcb
-    - N04d28c2d4f7c42d08048521a76e5f3f9
-    - N9d82a0d4fe044a27a0a36940d9f6a0c5
+    - Na4621fee86294594826fdc9c6e2b5061
+    - Nc7b0aa4a4cbe411396aaf25a3019dc74
+    - N8236bf9a5ea64a2b9e3fc67fb12664c7
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:supplement
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: supplement
   frbr_supplementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is supplemented.
     inverse: frbr_supplement
     name: frbr_supplementOf
     notes:
-    - N36cf38b497b44ae9b767610c45a54b38
-    - Nc11ce1cf18a24c378b2d80dc60198277
-    - N5e22997cfdfd489b96632b0ac6956b64
+    - Nce389cf2062d4bb19d3220dd4ea3a7fd
+    - N1471afc748a6483b8dacd914f97545d2
+    - Nd5603796fef541a992a9285f2c9d7976
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:supplementOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: supplement of
   frbr_transformation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A transformation of a work or expression.
     inverse: frbr_transformationOf
     name: frbr_transformation
     notes:
-    - N08105ed2132840588804d0d10fbf3359
-    - N21116b81b3724b1592b77d041f542fe0
-    - Nd71849466dd142209d4f64ff8d51628f
+    - N23bcc8d410d3437a9ddf4c13da330b6d
+    - Nef44ff607f8c40cd8598367e3cda4f32
+    - N97dfee91d8fd45f3af23808af583c1f0
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:transformation
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: transformation
   frbr_transformationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work or expression that is transformed.
     inverse: frbr_transformation
     name: frbr_transformationOf
     notes:
-    - N0bfaebbcd1ef486b9ebce25a2c15c03e
-    - N1ffb8ac86f484827b9eb9f8c92950c2c
-    - Nf951ff06b0bf43b980f362a3abcf70f9
+    - Nc6388a8e3aac4182ae11665763a67a8b
+    - Nd252db20c8034a6ba8637ccc5ff12bfc
+    - Ne566164d5a394f17ac1c42de9e70b780
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: frbr:transformationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: transformation of
   frbr_translation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A translation of an expression.
     domain: frbr_Expression
     inverse: frbr_translationOf
     name: frbr_translation
     notes:
-    - Nd2c0ac2f24dc4411a2c9d757c6fdde43
-    - N9149222587ca4d8db8152970075ea298
-    - N0029377a89224bccb007aa8ab97fee3d
+    - Nde612754755547d78cd578318ffbad8a
+    - N813c423bb86c433384a649c8927d0a8f
+    - Nc787de18329044c58347d68028cc6666
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:translation
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: translation
   frbr_translationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An expression that is translated.
     domain: frbr_Expression
     inverse: frbr_translation
     name: frbr_translationOf
     notes:
-    - N122e0938fb904a1a9b1cd070955cb570
-    - N8ab79e1809584548a67bb92e330ccc15
-    - Ncad9226ddf224563af1ff061ba9647ce
+    - Nfb13e668960c49cfa63d6d32a4c60113
+    - N5718bd90898b489285a4b9f2addcf13e
+    - N73a5120b039f40a9be70584431acfbbc
+    - No occurrences of this slot in the graph.
     range: frbr_Expression
     slot_uri: frbr:translationOf
     source: http://purl.org/vocab/frbr/core#
     subproperty_of: frbr_relatedEndeavour
     title: translation of
   vann_changes:
-    comments:
-    - No occurrences of this slot in the graph.
     name: vann_changes
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:changes
   vann_preferredNamespacePrefix:
-    comments:
-    - No occurrences of this slot in the graph.
     name: vann_preferredNamespacePrefix
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:preferredNamespacePrefix
   vann_preferredNamespaceUri:
-    comments:
-    - No occurrences of this slot in the graph.
     name: vann_preferredNamespaceUri
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:preferredNamespaceUri
-title: No schema name specified

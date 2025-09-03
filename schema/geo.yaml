@@ -5,9 +5,6 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 3
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 5
@@ -20,27 +17,6 @@ annotations:
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 3
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 3
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  uri:
-                    tag: uri
-                    value: 3
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -149,12 +125,6 @@ annotations:
       slots:
         tag: slots
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 3
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 3
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value: 12
@@ -191,69 +161,18 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n80d73ed2777b4edbb176135f89b4ec63b12
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: geo:dggsLiteral
+            value: geo:gmlLiteral
           sdos:Organization:
             tag: sdos:Organization
-            value: n80d73ed2777b4edbb176135f89b4ec63b1
+            value: n9261cb624cf74889b19397c1d105a8e8b1
           sdos:Person:
             tag: sdos:Person
-            value: n80d73ed2777b4edbb176135f89b4ec63b3
+            value: n9261cb624cf74889b19397c1d105a8e8b8
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: geo:Feature
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b10
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: geo:Feature
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b10
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: rdfs:member
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b10
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -271,7 +190,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: geo:geoJSONLiteral
+                        value: geo:kmlLiteral
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -283,13 +202,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: https://tools.ietf.org/html/rfc7946
+                        value: https://www.ogc.org/standards/kml/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: geo:geoJSONLiteral
+                        value: geo:kmlLiteral
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -301,13 +220,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: SURROUND Australia Pty Ltd
+                        value: CSIRO Australia
                       predicate:
                         tag: predicate
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b4
+                        value: n9261cb624cf74889b19397c1d105a8e8b7
           sdos:email:
             tag: sdos:email
             value:
@@ -319,13 +238,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: nicholas.car@surroundaustralia.com
+                        value: simon.cox@csiro.au
                       predicate:
                         tag: predicate
                         value: sdos:email
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b4
+                        value: n9261cb624cf74889b19397c1d105a8e8b7
           sdos:name:
             tag: sdos:name
             value:
@@ -343,7 +262,7 @@ annotations:
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b1
+                        value: n9261cb624cf74889b19397c1d105a8e8b1
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -352,13 +271,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Nicholas J. Car
+                        value: Simon J D Cox
                       predicate:
                         tag: predicate
                         value: sdos:name
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b4
+                        value: n9261cb624cf74889b19397c1d105a8e8b7
           sdos:url:
             tag: sdos:url
             value:
@@ -376,7 +295,7 @@ annotations:
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b1
+                        value: n9261cb624cf74889b19397c1d105a8e8b1
               sdos:Person:
                 tag: sdos:Person
                 value:
@@ -385,13 +304,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: https://orcid.org/0000-0002-8742-7730
+                        value: https://orcid.org/0000-0002-3884-3420
                       predicate:
                         tag: predicate
                         value: sdos:url
                       subject:
                         tag: subject
-                        value: n80d73ed2777b4edbb176135f89b4ec63b4
+                        value: n9261cb624cf74889b19397c1d105a8e8b7
           skos:definition:
             tag: skos:definition
             value:
@@ -403,13 +322,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: A GeoJSON serialization of a Geometry object.
+                        value: A KML serialization of a Geometry object.
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: geo:geoJSONLiteral
+                        value: geo:kmlLiteral
           skos:example:
             tag: skos:example
             value:
@@ -439,7 +358,7 @@ annotations:
                         value: skos:example
                       subject:
                         tag: subject
-                        value: geo:geoJSONLiteral
+                        value: geo:kmlLiteral
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -451,13 +370,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: GeoJSON Literal
+                        value: KML Literal
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: geo:geoJSONLiteral
+                        value: geo:kmlLiteral
           skos:scopeNote:
             tag: skos:scopeNote
             value:
@@ -483,9 +402,7 @@ classes:
     class_uri: geo:Feature
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/core/feature-class'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/core/feature-class'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/feature-class'
     - 'description: A discrete spatial phenomenon in a universe of discourse.'
     description: A discrete spatial phenomenon in a universe of discourse.
@@ -505,7 +422,6 @@ classes:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/feature-collection-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/feature-collection-class'
     - 'description: A collection of individual Features.'
     description: A collection of individual Features.
     is_a: geo_SpatialObjectCollection
@@ -514,8 +430,6 @@ classes:
   geo_Geometry:
     class_uri: geo:Geometry
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-class'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-class'
@@ -532,7 +446,6 @@ classes:
   geo_GeometryCollection:
     class_uri: geo:GeometryCollection
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/geometry-collection-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/geometry-collection-class'
     - 'description: A collection of individual Geometries.'
@@ -544,9 +457,7 @@ classes:
     class_uri: geo:SpatialObject
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/core/spatial-object-class'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/core/spatial-object-class'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-class'
     - 'description: Anything spatial (being or having a shape, position or an extent).'
     description: Anything spatial (being or having a shape, position or an extent).
@@ -561,7 +472,6 @@ classes:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-collection-class'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/core/spatial-object-collection-class'
     - 'description: A collection of individual Spatial Objects.'
     description: A collection of individual Spatial Objects.
     is_a: rdfs_Container
@@ -573,28 +483,27 @@ classes:
       of another class in this graph but has not itself been defined.
 comments:
 - 'title: GeoSPARQL Ontology'
-- 'created_on: 2020-09-09'
-- 'last_updated_on: 2021-10-27'
+- 'created_by: OGC GeoSPARQL Standards Working Group'
 contributors:
-- n80d73ed2777b4edbb176135f89b4ec63b2
-- n80d73ed2777b4edbb176135f89b4ec63b3
-- n80d73ed2777b4edbb176135f89b4ec63b4
-- n80d73ed2777b4edbb176135f89b4ec63b5
-- n80d73ed2777b4edbb176135f89b4ec63b6
-- n80d73ed2777b4edbb176135f89b4ec63b7
-- n80d73ed2777b4edbb176135f89b4ec63b8
-- n80d73ed2777b4edbb176135f89b4ec63b9
-created_on: '2025-07-24T16:18:09.929388'
+- n9261cb624cf74889b19397c1d105a8e8b2
+- n9261cb624cf74889b19397c1d105a8e8b3
+- n9261cb624cf74889b19397c1d105a8e8b4
+- n9261cb624cf74889b19397c1d105a8e8b5
+- n9261cb624cf74889b19397c1d105a8e8b6
+- n9261cb624cf74889b19397c1d105a8e8b7
+- n9261cb624cf74889b19397c1d105a8e8b8
+- n9261cb624cf74889b19397c1d105a8e8b9
+created_on: '2020-09-09'
 default_prefix: okns
 description: An RDF/OWL vocabulary for representing spatial information
 id: okns:geo
 imports:
-- okns:owl-rdf-rdfs
-- okns:extended_types
 - okns:sdo
+- okns:extended_types
 - okns:skos
 - linkml:types
-last_updated_on: '2025-07-24T16:18:09.929388'
+- okns:owl-rdf-rdfs
+last_updated_on: '2021-10-27'
 name: geo
 prefixes:
   geo: http://www.opengis.net/ont/geosparql#
@@ -614,42 +523,41 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-dggs-literal'
     - 'description: The Discrete Global Grid System (DGGS) serialization of a Geometry'
-    - No occurrences of this slot in the graph.
     description: The Discrete Global Grid System (DGGS) serialization of a Geometry
     domain: geo_Geometry
     name: geo_asDGGS
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_dggsLiteral
     slot_uri: geo:asDGGS
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasSerialization
   geo_asGML:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-gml-literal'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-gml-literal'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-gml-literal'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-gml-literal'
     - 'description: The GML serialization of a Geometry'
-    - No occurrences of this slot in the graph.
     description: The GML serialization of a Geometry
     domain: geo_Geometry
     name: geo_asGML
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_gmlLiteral
     slot_uri: geo:asGML
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasSerialization
   geo_asGeoJSON:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-geojson-literal'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-geojson-literal'
     - 'description: The GeoJSON serialization of a Geometry'
-    - No occurrences of this slot in the graph.
     description: The GeoJSON serialization of a Geometry
     domain: geo_Geometry
     name: geo_asGeoJSON
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_geoJSONLiteral
     see_also:
     - https://tools.ietf.org/html/rfc7946
@@ -658,14 +566,14 @@ slots:
     subproperty_of: geo_hasSerialization
   geo_asKML:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-kml-literal'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-kml-literal'
     - 'description: The KML serialization of a Geometry'
-    - No occurrences of this slot in the graph.
     description: The KML serialization of a Geometry
     domain: geo_Geometry
     name: geo_asKML
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_kmlLiteral
     see_also:
     - https://www.ogc.org/standards/kml
@@ -675,15 +583,14 @@ slots:
   geo_asWKT:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-wkt-literal'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-as-wkt-literal'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-as-wkt-literal'
     - 'description: The WKT serialization of a Geometry'
-    - No occurrences of this slot in the graph.
     description: The WKT serialization of a Geometry
     domain: geo_Geometry
     name: geo_asWKT
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_wktLiteral
     slot_uri: geo:asWKT
     source: http://www.opengis.net/ont/geosparql#
@@ -692,14 +599,14 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The number of measurements or axes needed to describe the position
       of this Geometry in a coordinate system.'
-    - No occurrences of this slot in the graph.
     description: The number of measurements or axes needed to describe the position
       of this Geometry in a coordinate system.
     domain: geo_Geometry
     name: geo_coordinateDimension
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: geo:coordinateDimension
     source: http://www.opengis.net/ont/geosparql#
@@ -707,10 +614,8 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: The default Geometry to be used in spatial calculations. It is
       usually the most detailed Geometry.'
-    - No occurrences of this slot in the graph.
     description: The default Geometry to be used in spatial calculations. It is usually
       the most detailed Geometry.
     domain: geo_Feature
@@ -721,6 +626,7 @@ slots:
     - Duplicate properties defaultGeometry and hasDefaultGeometry exist because of
       an inconsistency between ontology and documentation in GeoSPARQL 1.0. Only hasDefaultGeometry
       is described in the documention.
+    - No occurrences of this slot in the graph.
     range: geo_Geometry
     slot_uri: geo:defaultGeometry
     source: http://www.opengis.net/ont/geosparql#
@@ -729,33 +635,32 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The topological dimension of this geometric object, which must
       be less than or equal to the coordinate dimension. In non-homogeneous collections,
       this will return the largest topological dimension of the contained objects.'
-    - No occurrences of this slot in the graph.
     description: The topological dimension of this geometric object, which must be
       less than or equal to the coordinate dimension. In non-homogeneous collections,
       this will return the largest topological dimension of the contained objects.
     domain: geo_Geometry
     name: geo_dimension
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: geo:dimension
     source: http://www.opengis.net/ont/geosparql#
   geo_ehContains:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: T*TFF*FF*'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: T*TFF*FF*'
     domain: geo_SpatialObject
     name: geo_ehContains
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -763,18 +668,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehCoveredBy:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially covered by
       the object SpatialObject. DE-9IM: TFF*TFT**'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially covered by the
       object SpatialObject. DE-9IM: TFF*TFT**'
     domain: geo_SpatialObject
     name: geo_ehCoveredBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -782,18 +686,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehCovers:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject spatially covers the object
       SpatialObject. DE-9IM: T*TFT*FF*'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially covers the object
       SpatialObject. DE-9IM: T*TFT*FF*'
     domain: geo_SpatialObject
     name: geo_ehCovers
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -801,14 +704,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehDisjoint:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FF*FF****'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FF*FF****'
     domain: geo_SpatialObject
@@ -816,6 +716,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfDisjoint
     - http://www.opengis.net/ont/geosparql#rcc8dc
     name: geo_ehDisjoint
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -823,14 +725,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehEquals:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
     domain: geo_SpatialObject
@@ -838,6 +737,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfEquals
     - http://www.opengis.net/ont/geosparql#rcc8eq
     name: geo_ehEquals
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -845,18 +746,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehInside:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially inside the
       object SpatialObject. DE-9IM: TFF*FFT**'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially inside the object
       SpatialObject. DE-9IM: TFF*FFT**'
     domain: geo_SpatialObject
     name: geo_ehInside
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -864,14 +764,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehMeet:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject spatially meets the object
       SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially meets the object
       SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****'
     domain: geo_SpatialObject
@@ -879,6 +776,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfTouches
     - http://www.opengis.net/ont/geosparql#rcc8ec
     name: geo_ehMeet
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -886,14 +785,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_ehOverlap:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/eh-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/eh-spatial-relations'
     - 'description: States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: T*T***T**'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: T*T***T**'
     domain: geo_SpatialObject
@@ -901,6 +797,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfOverlaps
     - http://www.opengis.net/ont/geosparql#rcc8po
     name: geo_ehOverlap
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -908,14 +806,14 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_hasArea:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The area of a Spatial Object.'
-    - No occurrences of this slot in the graph.
     description: The area of a Spatial Object.
     domain: geo_SpatialObject
     name: geo_hasArea
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasArea
     source: http://www.opengis.net/ont/geosparql#
@@ -924,9 +822,7 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: The minimum or smallest bounding or enclosing box of a given Feature.'
-    - No occurrences of this slot in the graph.
     description: The minimum or smallest bounding or enclosing box of a given Feature.
     domain: geo_Feature
     name: geo_hasBoundingBox
@@ -934,6 +830,7 @@ slots:
     - The target is a Geometry that defines a rectilinear region whose edges are aligned
       with the axes of the coordinate reference system, which exactly contains the
       Feature, for example an instance of http://www.opengis.net/ont/sf#envelope.
+    - No occurrences of this slot in the graph.
     range: geo_Geometry
     slot_uri: geo:hasBoundingBox
     source: http://www.opengis.net/ont/geosparql#
@@ -942,30 +839,26 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: The arithmetic mean position of all the Geometry points of a given
       Feature.'
-    - No occurrences of this slot in the graph.
     description: The arithmetic mean position of all the Geometry points of a given
       Feature.
     domain: geo_Feature
     name: geo_hasCentroid
     notes:
     - The target Geometry shall describe a point, for example an instance of http://www.opengis.net/ont/sf#Point.
+    - No occurrences of this slot in the graph.
     range: geo_Geometry
     slot_uri: geo:hasCentroid
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasGeometry
   geo_hasDefaultGeometry:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: The default Geometry to be used in spatial calculations. It is
       usually the most detailed Geometry.'
-    - No occurrences of this slot in the graph.
     description: The default Geometry to be used in spatial calculations. It is usually
       the most detailed Geometry.
     domain: geo_Feature
@@ -976,22 +869,22 @@ slots:
     - Duplicate properties defaultGeometry and hasDefaultGeometry exist because of
       an inconsistency between ontology and documentation in GeoSPARQL 1.0. Only hasDefaultGeometry
       is described in the documention.
+    - No occurrences of this slot in the graph.
     range: geo_Geometry
     slot_uri: geo:hasDefaultGeometry
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasGeometry
   geo_hasGeometry:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/feature-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: A spatial representation for a given Feature.'
-    - No occurrences of this slot in the graph.
     description: A spatial representation for a given Feature.
     domain: geo_Feature
     name: geo_hasGeometry
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_Geometry
     slot_uri: geo:hasGeometry
     source: http://www.opengis.net/ont/geosparql#
@@ -999,76 +892,76 @@ slots:
       of another slot in this graph but has not itself been defined.
   geo_hasLength:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The length of a Spatial Object.'
-    - No occurrences of this slot in the graph.
     description: The length of a Spatial Object.
     domain: geo_SpatialObject
     name: geo_hasLength
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasLength
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasSize
   geo_hasMetricArea:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The area of a Spatial Object in square meters.'
-    - No occurrences of this slot in the graph.
     description: The area of a Spatial Object in square meters.
     domain: geo_SpatialObject
     name: geo_hasMetricArea
+    notes:
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricArea
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasMetricSize
   geo_hasMetricLength:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The length of a Spatial Object in meters.'
-    - No occurrences of this slot in the graph.
     description: The length of a Spatial Object in meters.
     domain: geo_SpatialObject
     name: geo_hasMetricLength
+    notes:
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricLength
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasMetricSize
   geo_hasMetricPerimeterLength:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The length of the perimeter of a Spatial Object in meters.'
-    - No occurrences of this slot in the graph.
     description: The length of the perimeter of a Spatial Object in meters.
     domain: geo_SpatialObject
     name: geo_hasMetricPerimeterLength
+    notes:
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricPerimeterLength
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasMetricSize
   geo_hasMetricSize:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: Subproperties of this property are used to indicate the size of
       a Spatial Object, as a measurement or estimate of one or more dimensions of
       the Spatial Object''s spatial presence. Units are always metric (meter, square
       meter or cubic meter).'
-    - No occurrences of this slot in the graph.
     description: Subproperties of this property are used to indicate the size of a
       Spatial Object, as a measurement or estimate of one or more dimensions of the
       Spatial Object's spatial presence. Units are always metric (meter, square meter
       or cubic meter).
     domain: geo_SpatialObject
     name: geo_hasMetricSize
+    notes:
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricSize
     source: http://www.opengis.net/ont/geosparql#
@@ -1078,9 +971,7 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The positional accuracy of the coordinates of a Geometry in meters.'
-    - No occurrences of this slot in the graph.
     description: The positional accuracy of the coordinates of a Geometry in meters.
     domain: geo_Geometry
     name: geo_hasMetricSpatialAccuracy
@@ -1091,6 +982,7 @@ slots:
       surrounding each coordinate within wich the real positions are known to be.
       The accuracy value defines this zone as a distance from the coordinate(s) in
       all directions (e.g. a line, a circle or a sphere, depending on spatial dimension).
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricSpatialAccuracy
     source: http://www.opengis.net/ont/geosparql#
@@ -1098,58 +990,56 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The spatial resolution of a Geometry in meters.'
-    - No occurrences of this slot in the graph.
     description: The spatial resolution of a Geometry in meters.
     domain: geo_Geometry
     name: geo_hasMetricSpatialResolution
     notes:
     - Spatial resolution specifies the level of detail of a Geometry. It the smallest
       dinstinguishable distance between spatially adjacent coordinates.
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricSpatialResolution
     source: http://www.opengis.net/ont/geosparql#
   geo_hasMetricVolume:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The volume of a Spatial Object in cubic meters.'
-    - No occurrences of this slot in the graph.
     description: The volume of a Spatial Object in cubic meters.
     domain: geo_SpatialObject
     name: geo_hasMetricVolume
+    notes:
+    - No occurrences of this slot in the graph.
     range: double
     slot_uri: geo:hasMetricVolume
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasMetricSize
   geo_hasPerimeterLength:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The length of the perimeter of a Spatial Object.'
-    - No occurrences of this slot in the graph.
     description: The length of the perimeter of a Spatial Object.
     domain: geo_SpatialObject
     name: geo_hasPerimeterLength
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasPerimeterLength
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasSize
   geo_hasSerialization:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
+    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: Connects a Geometry object with its text-based serialization.'
-    - No occurrences of this slot in the graph.
     description: Connects a Geometry object with its text-based serialization.
     domain: geo_Geometry
     name: geo_hasSerialization
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: geo:hasSerialization
     source: http://www.opengis.net/ont/geosparql#
@@ -1157,15 +1047,12 @@ slots:
       of another slot in this graph but has not itself been defined.
   geo_hasSize:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/spatial-object-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/spatial-object-properties'
     - 'description: Subproperties of this property are used to indicate the size of
       a Spatial Object as a measurement or estimate of one or more dimensions of the
       Spatial Object''s spatial presence.'
-    - No occurrences of this slot in the graph.
     description: Subproperties of this property are used to indicate the size of a
       Spatial Object as a measurement or estimate of one or more dimensions of the
       Spatial Object's spatial presence.
@@ -1176,6 +1063,7 @@ slots:
       Subproperties of hasSize can be used if more complex expressions are necessary,
       for example if the unit of length can not be converted to meter, or if additional
       data are needed to describe the measurement or estimate.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasSize
     source: http://www.opengis.net/ont/geosparql#
@@ -1185,9 +1073,7 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The positional accuracy of the coordinates of a Geometry.'
-    - No occurrences of this slot in the graph.
     description: The positional accuracy of the coordinates of a Geometry.
     domain: geo_Geometry
     name: geo_hasSpatialAccuracy
@@ -1198,6 +1084,7 @@ slots:
       surrounding each coordinate within wich the real positions are known to be.
       The accuracy value defines this zone as a distance from the coordinate(s) in
       all directions (e.g. a line, a circle or a sphere, depending on spatial dimension).
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasSpatialAccuracy
     source: http://www.opengis.net/ont/geosparql#
@@ -1205,64 +1092,61 @@ slots:
     comments:
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/feature-properties'
     - 'description: The spatial resolution of a Geometry.'
-    - No occurrences of this slot in the graph.
     description: The spatial resolution of a Geometry.
     domain: geo_Geometry
     name: geo_hasSpatialResolution
     notes:
     - Spatial resolution specifies the level of detail of a Geometry. It the smallest
       distinguishable distance between spatially adjacent coordinates.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasSpatialResolution
     source: http://www.opengis.net/ont/geosparql#
   geo_hasVolume:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/spatial-object-properties'
     - 'description: The volume of a three-dimensional Spatial Object.'
-    - No occurrences of this slot in the graph.
     description: The volume of a three-dimensional Spatial Object.
     domain: geo_SpatialObject
     name: geo_hasVolume
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasVolume
     source: http://www.opengis.net/ont/geosparql#
     subproperty_of: geo_hasSize
   geo_isEmpty:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
+    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: (true) if this geometric object is the empty Geometry. If true,
       then this geometric object represents the empty point set for the coordinate
       space.'
-    - No occurrences of this slot in the graph.
     description: (true) if this geometric object is the empty Geometry. If true, then
       this geometric object represents the empty point set for the coordinate space.
     domain: geo_Geometry
     name: geo_isEmpty
+    notes:
+    - No occurrences of this slot in the graph.
     range: boolean
     slot_uri: geo:isEmpty
     source: http://www.opengis.net/ont/geosparql#
   geo_isSimple:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
+    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: (true) if this geometric object has no anomalous geometric points,
       such as self intersection or self tangency.'
-    - No occurrences of this slot in the graph.
     description: (true) if this geometric object has no anomalous geometric points,
       such as self intersection or self tangency.
     domain: geo_Geometry
     name: geo_isSimple
+    notes:
+    - No occurrences of this slot in the graph.
     range: boolean
     see_also:
     - https://portal.ogc.org/files/?artifact_id=25355
@@ -1270,14 +1154,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8dc:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FFTFFTTTT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FFTFFTTTT'
     domain: geo_SpatialObject
@@ -1285,6 +1166,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfDisjoint
     - http://www.opengis.net/ont/geosparql#ehDisjoint
     name: geo_rcc8dc
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1292,14 +1175,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8ec:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially meets the object
       SpatialObject. DE-9IM: FFTFTTTTT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially meets the object
       SpatialObject. DE-9IM: FFTFTTTTT'
     domain: geo_SpatialObject
@@ -1307,6 +1187,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfTouches
     - http://www.opengis.net/ont/geosparql#ehMeet
     name: geo_rcc8ec
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1314,14 +1196,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8eq:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
     domain: geo_SpatialObject
@@ -1329,6 +1208,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfEquals
     - http://www.opengis.net/ont/geosparql#ehEquals
     name: geo_rcc8eq
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1336,18 +1217,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8ntpp:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially inside the
       object SpatialObject. DE-9IM: TFFTFFTTT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially inside the object
       SpatialObject. DE-9IM: TFFTFFTTT'
     domain: geo_SpatialObject
     name: geo_rcc8ntpp
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1355,18 +1235,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8ntppi:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: TTTFFTFFT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: TTTFFTFFT'
     domain: geo_SpatialObject
     name: geo_rcc8ntppi
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1374,14 +1253,11 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8po:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: TTTTTTTTT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: TTTTTTTTT'
     domain: geo_SpatialObject
@@ -1389,6 +1265,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#sfOverlaps
     - http://www.opengis.net/ont/geosparql#ehOverlap
     name: geo_rcc8po
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1396,18 +1274,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8tpp:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially covered by
       the object SpatialObject. DE-9IM: TFFTTFTTT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially covered by the
       object SpatialObject. DE-9IM: TFFTTFTTT'
     domain: geo_SpatialObject
     name: geo_rcc8tpp
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1415,18 +1292,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_rcc8tppi:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially covers the object
       SpatialObject. DE-9IM: TTTFTTFFT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially covers the object
       SpatialObject. DE-9IM: TTTFTTFFT'
     domain: geo_SpatialObject
     name: geo_rcc8tppi
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1434,18 +1310,17 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_sfContains:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/rcc8-spatial-relations'
     - 'description: States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: T*****FF*'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially contains the object
       SpatialObject. DE-9IM: T*****FF*'
     domain: geo_SpatialObject
     name: geo_sfContains
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1456,15 +1331,14 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject spatially crosses the object
       SpatialObject. DE-9IM: T*T******'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially crosses the object
       SpatialObject. DE-9IM: T*T******'
     domain: geo_SpatialObject
     name: geo_sfCrosses
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1475,11 +1349,8 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FF*FF****'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially disjoint from
       the object SpatialObject. DE-9IM: FF*FF****'
     domain: geo_SpatialObject
@@ -1487,6 +1358,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#ehDisjoint
     - http://www.opengis.net/ont/geosparql#rcc8dc
     name: geo_sfDisjoint
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1497,11 +1370,8 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially equals the object
       SpatialObject. DE-9IM: TFFFTFFFT'
     domain: geo_SpatialObject
@@ -1509,6 +1379,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#ehEquals
     - http://www.opengis.net/ont/geosparql#rcc8eq
     name: geo_sfEquals
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1519,15 +1391,14 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject is not spatially disjoint
       from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is not spatially disjoint
       from the object SpatialObject. DE-9IM: T******** ^ *T******* ^ ***T***** ^ ****T****'
     domain: geo_SpatialObject
     name: geo_sfIntersects
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1538,11 +1409,8 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: T*T***T**'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially overlaps the object
       SpatialObject. DE-9IM: T*T***T**'
     domain: geo_SpatialObject
@@ -1550,6 +1418,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#ehOverlap
     - http://www.opengis.net/ont/geosparql#rcc8po
     name: geo_sfOverlaps
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1560,11 +1430,8 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject spatially touches the object
       SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject spatially touches the object
       SpatialObject. DE-9IM: FT******* ^ F**T***** ^ F***T****'
     domain: geo_SpatialObject
@@ -1572,6 +1439,8 @@ slots:
     - http://www.opengis.net/ont/geosparql#ehMeet
     - http://www.opengis.net/ont/geosparql#rcc8ec
     name: geo_sfTouches
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1582,15 +1451,14 @@ slots:
     - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/topology-vocab-extension/sf-spatial-relations'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/topology-vocab-extension/sf-spatial-relations'
     - 'description: States that the subject SpatialObject is spatially within the
       object SpatialObject. DE-9IM: T*F**F***'
-    - No occurrences of this slot in the graph.
     description: 'States that the subject SpatialObject is spatially within the object
       SpatialObject. DE-9IM: T*F**F***'
     domain: geo_SpatialObject
     name: geo_sfWithin
+    notes:
+    - No occurrences of this slot in the graph.
     range: geo_SpatialObject
     see_also:
     - http://dbpedia.org/resource/DE-9IM
@@ -1598,22 +1466,20 @@ slots:
     source: http://www.opengis.net/ont/geosparql#
   geo_spatialDimension:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
+    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
     - 'source: http://www.opengis.net/ont/geosparql#'
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/geometry-properties'
-    - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/geometry-properties'
     - 'description: The number of measurements or axes needed to describe the spatial
       position of this Geometry in a coordinate system.'
-    - No occurrences of this slot in the graph.
     description: The number of measurements or axes needed to describe the spatial
       position of this Geometry in a coordinate system.
     domain: geo_Geometry
     name: geo_spatialDimension
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: geo:spatialDimension
     source: http://www.opengis.net/ont/geosparql#
-title: No schema name specified
 types:
   geo_dggsLiteral:
     comments:
@@ -1641,8 +1507,8 @@ types:
     uri: geo:geoJSONLiteral
   geo_gmlLiteral:
     comments:
-    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/gml-literal'
     - 'source: http://www.opengis.net/spec/geosparql/1.1/req/geometry-extension/gml-literal'
+    - 'source: http://www.opengis.net/spec/geosparql/1.0/req/geometry-extension/gml-literal'
     description: A GML serialization of a Geometry object.
     name: geo_gmlLiteral
     see_also:

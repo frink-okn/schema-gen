@@ -5,9 +5,6 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:OntologyProperty:
-            tag: owl:OntologyProperty
-            value: 2
           rdf:List:
             tag: rdf:List
             value: 1
@@ -20,12 +17,6 @@ annotations:
           rdfs:comment:
             tag: rdfs:comment
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  string:
-                    tag: string
-                    value: 2
               rdf:List:
                 tag: rdf:List
                 value:
@@ -38,24 +29,9 @@ annotations:
                   string:
                     tag: string
                     value: 5
-          rdfs:domain:
-            tag: rdfs:domain
-            value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 2
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  uri:
-                    tag: uri
-                    value: 2
               rdf:List:
                 tag: rdf:List
                 value:
@@ -71,12 +47,6 @@ annotations:
           rdfs:label:
             tag: rdfs:label
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  string:
-                    tag: string
-                    value: 2
               rdf:List:
                 tag: rdf:List
                 value:
@@ -89,15 +59,6 @@ annotations:
                   string:
                     tag: string
                     value: 5
-          rdfs:range:
-            tag: rdfs:range
-            value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 2
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -121,19 +82,13 @@ annotations:
         value:
           rdfs:comment:
             tag: rdfs:comment
-            value: 8
-          rdfs:domain:
-            tag: rdfs:domain
-            value: 2
+            value: 6
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
-            value: 8
+            value: 6
           rdfs:label:
             tag: rdfs:label
-            value: 8
-          rdfs:range:
-            tag: rdfs:range
-            value: 2
+            value: 6
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value: 4
@@ -146,37 +101,18 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:OntologyProperty:
-            tag: owl:OntologyProperty
-            value: owl:imports
           rdf:List:
             tag: rdf:List
             value: rdf:nil
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: rdf:HTML
+            value: rdf:langString
       pairs:
         tag: pairs
         value:
           rdfs:comment:
             tag: rdfs:comment
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: The property that identifies the version IRI of an
-                          ontology.
-                      predicate:
-                        tag: predicate
-                        value: rdfs:comment
-                      subject:
-                        tag: subject
-                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -209,42 +145,9 @@ annotations:
                       subject:
                         tag: subject
                         value: rdf:PlainLiteral
-          rdfs:domain:
-            tag: rdfs:domain
-            value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: owl:Ontology
-                      predicate:
-                        tag: predicate
-                        value: rdfs:domain
-                      subject:
-                        tag: subject
-                        value: owl:versionIRI
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: 'owl:'
-                      predicate:
-                        tag: predicate
-                        value: rdfs:isDefinedBy
-                      subject:
-                        tag: subject
-                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -278,21 +181,6 @@ annotations:
           rdfs:label:
             tag: rdfs:label
             value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: versionIRI
-                      predicate:
-                        tag: predicate
-                        value: rdfs:label
-                      subject:
-                        tag: subject
-                        value: owl:versionIRI
               rdf:List:
                 tag: rdf:List
                 value:
@@ -323,24 +211,6 @@ annotations:
                       subject:
                         tag: subject
                         value: rdf:PlainLiteral
-          rdfs:range:
-            tag: rdfs:range
-            value:
-              owl:OntologyProperty:
-                tag: owl:OntologyProperty
-                value:
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: owl:Ontology
-                      predicate:
-                        tag: predicate
-                        value: rdfs:range
-                      subject:
-                        tag: subject
-                        value: owl:versionIRI
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -527,12 +397,6 @@ classes:
     description: The class of ontology properties.
     is_a: rdf_Property
     name: owl_OntologyProperty
-    slots:
-    - rdfs_range
-    - rdfs_isDefinedBy
-    - rdfs_comment
-    - rdfs_label
-    - rdfs_domain
     source: http://www.w3.org/2002/07/owl#
     title: OntologyProperty
   owl_ReflexiveProperty:
@@ -598,9 +462,9 @@ classes:
     is_a: rdfs_Resource
     name: rdf_List
     slots:
-    - rdfs_isDefinedBy
-    - rdfs_comment
     - rdfs_label
+    - rdfs_comment
+    - rdfs_isDefinedBy
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: List
   rdf_Property:
@@ -653,10 +517,10 @@ classes:
     name: rdfs_Datatype
     slots:
     - rdfs_isDefinedBy
-    - rdfs_seeAlso
-    - rdfs_comment
-    - rdfs_label
     - rdfs_subClassOf
+    - rdfs_seeAlso
+    - rdfs_label
+    - rdfs_comment
     source: http://www.w3.org/2000/01/rdf-schema#
     title: Datatype
   rdfs_Literal:
@@ -674,15 +538,14 @@ classes:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: Resource
 comments:
-- 'title: The OWL 2 Schema vocabulary (OWL 2)'
-- 'source: http://www.w3.org/TR/owl2-rdf-based-semantics/'
-- 'source: http://www.w3.org/TR/owl2-syntax/'
 - 'title: The RDF Schema vocabulary (RDFS)'
+- 'title: The OWL 2 Schema vocabulary (OWL 2)'
 - 'title: The RDF Concepts Vocabulary (RDF)'
-- 'last_updated_on: 2019-12-16'
+- 'source: http://www.w3.org/TR/owl2-syntax/'
+- 'source: http://www.w3.org/TR/owl2-rdf-based-semantics/'
 - 'description: This is the RDF Schema for the RDF vocabulary terms in the RDF Namespace,
   defined in RDF 1.1 Concepts.'
-created_on: '2025-07-17T19:19:24.536838'
+created_on: '2025-09-03T11:21:03.070830'
 default_prefix: okns
 description: "\u240A  This ontology partially describes the built-in classes and\r\
   \u240A  properties that together form the basis of the RDF/XML syntax of OWL 2.\r\
@@ -701,9 +564,9 @@ description: "\u240A  This ontology partially describes the built-in classes and
   \  unexpected, consequences.\r\u240A"
 id: okns:owl-rdf-rdfs
 imports:
-- okns:extended_types
 - linkml:types
-last_updated_on: '2025-07-17T19:19:24.536838'
+- okns:extended_types
+last_updated_on: '2019-12-16'
 name: owl-rdf-rdfs
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -719,540 +582,561 @@ see_also:
 - http://www.w3.org/2000/01/rdf-schema-more
 slots:
   owl_allValuesFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the class that a universal property
       restriction refers to.
     domain: owl_Restriction
     name: owl_allValuesFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: owl:allValuesFrom
     source: http://www.w3.org/2002/07/owl#
     title: allValuesFrom
   owl_annotatedProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the predicate of an annotated axiom
       or annotated annotation.
     domain: rdfs_Resource
     name: owl_annotatedProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:annotatedProperty
     source: http://www.w3.org/2002/07/owl#
     title: annotatedProperty
   owl_annotatedSource:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the subject of an annotated axiom or
       annotated annotation.
     domain: rdfs_Resource
     name: owl_annotatedSource
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:annotatedSource
     source: http://www.w3.org/2002/07/owl#
     title: annotatedSource
   owl_annotatedTarget:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the object of an annotated axiom or
       annotated annotation.
     domain: rdfs_Resource
     name: owl_annotatedTarget
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:annotatedTarget
     source: http://www.w3.org/2002/07/owl#
     title: annotatedTarget
   owl_assertionProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the predicate of a negative property
       assertion.
     domain: owl_NegativePropertyAssertion
     name: owl_assertionProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: owl:assertionProperty
     source: http://www.w3.org/2002/07/owl#
     title: assertionProperty
   owl_backwardCompatibleWith:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The annotation property that indicates that a given ontology is backward
       compatible with another ontology.
     domain: owl_Ontology
     name: owl_backwardCompatibleWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Ontology
     slot_uri: owl:backwardCompatibleWith
     source: http://www.w3.org/2002/07/owl#
     title: backwardCompatibleWith
   owl_bottomDataProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The data property that does not relate any individual to any data
       value.
     domain: owl_Thing
     name: owl_bottomDataProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: owl:bottomDataProperty
     source: http://www.w3.org/2002/07/owl#
     title: bottomDataProperty
   owl_bottomObjectProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The object property that does not relate any two individuals.
     domain: owl_Thing
     name: owl_bottomObjectProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:bottomObjectProperty
     source: http://www.w3.org/2002/07/owl#
     title: bottomObjectProperty
   owl_cardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of an exact cardinality
       restriction.
     domain: owl_Restriction
     name: owl_cardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:cardinality
     source: http://www.w3.org/2002/07/owl#
     title: cardinality
   owl_complementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that a given class is the complement
       of another class.
     domain: owl_Class
     name: owl_complementOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Class
     slot_uri: owl:complementOf
     source: http://www.w3.org/2002/07/owl#
     title: complementOf
   owl_datatypeComplementOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that a given data range is the complement
       of another data range with respect to the data domain.
     domain: rdfs_Datatype
     name: owl_datatypeComplementOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Datatype
     slot_uri: owl:datatypeComplementOf
     source: http://www.w3.org/2002/07/owl#
     title: datatypeComplementOf
   owl_deprecated:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The annotation property that indicates that a given entity has been
       deprecated.
     domain: rdfs_Resource
     name: owl_deprecated
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:deprecated
     source: http://www.w3.org/2002/07/owl#
     title: deprecated
   owl_differentFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given individuals are different.
     domain: owl_Thing
     name: owl_differentFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:differentFrom
     source: http://www.w3.org/2002/07/owl#
     title: differentFrom
   owl_disjointUnionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that a given class is equivalent to
       the disjoint union of a collection of other classes.
     domain: owl_Class
     name: owl_disjointUnionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:disjointUnionOf
     source: http://www.w3.org/2002/07/owl#
     title: disjointUnionOf
   owl_disjointWith:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given classes are disjoint.
     domain: owl_Class
     name: owl_disjointWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Class
     slot_uri: owl:disjointWith
     source: http://www.w3.org/2002/07/owl#
     title: disjointWith
   owl_distinctMembers:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of pairwise different
       individuals in a owl:AllDifferent axiom.
     domain: owl_AllDifferent
     name: owl_distinctMembers
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:distinctMembers
     source: http://www.w3.org/2002/07/owl#
     title: distinctMembers
   owl_equivalentClass:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given classes are equivalent,
       and that is used to specify datatype definitions.
     domain: rdfs_Class
     name: owl_equivalentClass
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: owl:equivalentClass
     source: http://www.w3.org/2002/07/owl#
     title: equivalentClass
   owl_equivalentProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given properties are equivalent.
     domain: rdf_Property
     name: owl_equivalentProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: owl:equivalentProperty
     source: http://www.w3.org/2002/07/owl#
     title: equivalentProperty
   owl_hasKey:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of properties that jointly
       build a key.
     domain: owl_Class
     name: owl_hasKey
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:hasKey
     source: http://www.w3.org/2002/07/owl#
     title: hasKey
   owl_hasSelf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the property that a self restriction
       refers to.
     domain: owl_Restriction
     name: owl_hasSelf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:hasSelf
     source: http://www.w3.org/2002/07/owl#
     title: hasSelf
   owl_hasValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the individual that a has-value restriction
       refers to.
     domain: owl_Restriction
     name: owl_hasValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:hasValue
     source: http://www.w3.org/2002/07/owl#
     title: hasValue
-  owl_incompatibleWith:
-    comments:
+  owl_imports:
+    description: The property that is used for importing other ontologies into a given
+      ontology.
+    domain: owl_Ontology
+    name: owl_imports
+    notes:
     - No occurrences of this slot in the graph.
+    range: owl_Ontology
+    slot_uri: owl:imports
+    source: http://www.w3.org/2002/07/owl#
+    title: imports
+  owl_incompatibleWith:
     description: The annotation property that indicates that a given ontology is incompatible
       with another ontology.
     domain: owl_Ontology
     name: owl_incompatibleWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Ontology
     slot_uri: owl:incompatibleWith
     source: http://www.w3.org/2002/07/owl#
     title: incompatibleWith
   owl_intersectionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of classes or data ranges
       that build an intersection.
     domain: rdfs_Class
     name: owl_intersectionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:intersectionOf
     source: http://www.w3.org/2002/07/owl#
     title: intersectionOf
   owl_inverseOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given properties are inverse.
     domain: owl_ObjectProperty
     name: owl_inverseOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_ObjectProperty
     slot_uri: owl:inverseOf
     source: http://www.w3.org/2002/07/owl#
     title: inverseOf
   owl_maxCardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of a maximum cardinality
       restriction.
     domain: owl_Restriction
     name: owl_maxCardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:maxCardinality
     source: http://www.w3.org/2002/07/owl#
     title: maxCardinality
   owl_maxQualifiedCardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of a maximum qualified
       cardinality restriction.
     domain: owl_Restriction
     name: owl_maxQualifiedCardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:maxQualifiedCardinality
     source: http://www.w3.org/2002/07/owl#
     title: maxQualifiedCardinality
   owl_members:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of members in either
       a owl:AllDifferent, owl:AllDisjointClasses or owl:AllDisjointProperties axiom.
     domain: rdfs_Resource
     name: owl_members
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:members
     source: http://www.w3.org/2002/07/owl#
     title: members
   owl_minCardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of a minimum cardinality
       restriction.
     domain: owl_Restriction
     name: owl_minCardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:minCardinality
     source: http://www.w3.org/2002/07/owl#
     title: minCardinality
   owl_minQualifiedCardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of a minimum qualified
       cardinality restriction.
     domain: owl_Restriction
     name: owl_minQualifiedCardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:minQualifiedCardinality
     source: http://www.w3.org/2002/07/owl#
     title: minQualifiedCardinality
   owl_onClass:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the class that a qualified object cardinality
       restriction refers to.
     domain: owl_Restriction
     name: owl_onClass
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Class
     slot_uri: owl:onClass
     source: http://www.w3.org/2002/07/owl#
     title: onClass
   owl_onDataRange:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the data range that a qualified data
       cardinality restriction refers to.
     domain: owl_Restriction
     name: owl_onDataRange
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Datatype
     slot_uri: owl:onDataRange
     source: http://www.w3.org/2002/07/owl#
     title: onDataRange
   owl_onDatatype:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the datatype that a datatype restriction
       refers to.
     domain: rdfs_Datatype
     name: owl_onDatatype
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Datatype
     slot_uri: owl:onDatatype
     source: http://www.w3.org/2002/07/owl#
     title: onDatatype
   owl_onProperties:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the n-tuple of properties that a property
       restriction on an n-ary data range refers to.
     domain: owl_Restriction
     name: owl_onProperties
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:onProperties
     source: http://www.w3.org/2002/07/owl#
     title: onProperties
   owl_onProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the property that a property restriction
       refers to.
     domain: owl_Restriction
     name: owl_onProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: owl:onProperty
     source: http://www.w3.org/2002/07/owl#
     title: onProperty
   owl_oneOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of individuals or data
       values that build an enumeration.
     domain: rdfs_Class
     name: owl_oneOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:oneOf
     source: http://www.w3.org/2002/07/owl#
     title: oneOf
   owl_priorVersion:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The annotation property that indicates the predecessor ontology of
       a given ontology.
     domain: owl_Ontology
     name: owl_priorVersion
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Ontology
     slot_uri: owl:priorVersion
     source: http://www.w3.org/2002/07/owl#
     title: priorVersion
   owl_propertyChainAxiom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the n-tuple of properties that build
       a sub property chain of a given property.
     domain: owl_ObjectProperty
     name: owl_propertyChainAxiom
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:propertyChainAxiom
     source: http://www.w3.org/2002/07/owl#
     title: propertyChainAxiom
   owl_propertyDisjointWith:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given properties are disjoint.
     domain: rdf_Property
     name: owl_propertyDisjointWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: owl:propertyDisjointWith
     source: http://www.w3.org/2002/07/owl#
     title: propertyDisjointWith
   owl_qualifiedCardinality:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the cardinality of an exact qualified
       cardinality restriction.
     domain: owl_Restriction
     name: owl_qualifiedCardinality
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: owl:qualifiedCardinality
     source: http://www.w3.org/2002/07/owl#
     title: qualifiedCardinality
   owl_sameAs:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines that two given individuals are equal.
     domain: owl_Thing
     name: owl_sameAs
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:sameAs
     source: http://www.w3.org/2002/07/owl#
     title: sameAs
   owl_someValuesFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the class that an existential property
       restriction refers to.
     domain: owl_Restriction
     name: owl_someValuesFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: owl:someValuesFrom
     source: http://www.w3.org/2002/07/owl#
     title: someValuesFrom
   owl_sourceIndividual:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the subject of a negative property assertion.
     domain: owl_NegativePropertyAssertion
     name: owl_sourceIndividual
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:sourceIndividual
     source: http://www.w3.org/2002/07/owl#
     title: sourceIndividual
   owl_targetIndividual:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the object of a negative object property
       assertion.
     domain: owl_NegativePropertyAssertion
     name: owl_targetIndividual
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:targetIndividual
     source: http://www.w3.org/2002/07/owl#
     title: targetIndividual
   owl_targetValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the value of a negative data property
       assertion.
     domain: owl_NegativePropertyAssertion
     name: owl_targetValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: owl:targetValue
     source: http://www.w3.org/2002/07/owl#
     title: targetValue
   owl_topDataProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The data property that relates every individual to every data value.
     domain: owl_Thing
     name: owl_topDataProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: owl:topDataProperty
     source: http://www.w3.org/2002/07/owl#
     title: topDataProperty
   owl_topObjectProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The object property that relates every two individuals.
     domain: owl_Thing
     name: owl_topObjectProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: owl:topObjectProperty
     source: http://www.w3.org/2002/07/owl#
     title: topObjectProperty
   owl_unionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of classes or data ranges
       that build a union.
     domain: rdfs_Class
     name: owl_unionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:unionOf
     source: http://www.w3.org/2002/07/owl#
     title: unionOf
-  owl_versionInfo:
-    comments:
+  owl_versionIRI:
+    description: The property that identifies the version IRI of an ontology.
+    domain: owl_Ontology
+    name: owl_versionIRI
+    notes:
     - No occurrences of this slot in the graph.
+    range: owl_Ontology
+    slot_uri: owl:versionIRI
+    source: http://www.w3.org/2002/07/owl#
+    title: versionIRI
+  owl_versionInfo:
     description: The annotation property that provides version information for an
       ontology or another OWL construct.
     domain: rdfs_Resource
     name: owl_versionInfo
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: owl:versionInfo
     source: http://www.w3.org/2002/07/owl#
     title: versionInfo
   owl_withRestrictions:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property that determines the collection of facet-value pairs
       that define a datatype restriction.
     domain: rdfs_Datatype
     name: owl_withRestrictions
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: owl:withRestrictions
     source: http://www.w3.org/2002/07/owl#
     title: withRestrictions
   rdf_direction:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The base direction component of a CompoundLiteral.
     domain: rdf_CompoundLiteral
     name: rdf_direction
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     see_also:
     - https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties
@@ -1260,21 +1144,21 @@ slots:
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: direction
   rdf_first:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The first item in the subject RDF list.
     domain: rdf_List
     name: rdf_first
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdf:first
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: first
   rdf_language:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The language component of a CompoundLiteral.
     domain: rdf_CompoundLiteral
     name: rdf_language
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     see_also:
     - https://www.w3.org/TR/json-ld11/#the-rdf-compoundliteral-class-and-the-rdf-language-and-rdf-direction-properties
@@ -1282,61 +1166,61 @@ slots:
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: language
   rdf_object:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The object of the subject RDF statement.
     domain: rdf_Statement
     name: rdf_object
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdf:object
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: object
   rdf_predicate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The predicate of the subject RDF statement.
     domain: rdf_Statement
     name: rdf_predicate
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdf:predicate
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: predicate
   rdf_rest:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The rest of the subject RDF list after the first item.
     domain: rdf_List
     name: rdf_rest
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: rdf:rest
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: rest
   rdf_subject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The subject of the subject RDF statement.
     domain: rdf_Statement
     name: rdf_subject
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdf:subject
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: subject
   rdf_type:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The subject is an instance of a class.
     domain: rdfs_Resource
     name: rdf_type
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: rdf:type
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
     title: type
   rdf_value:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Idiomatic property used for structured values.
     domain: rdfs_Resource
     name: rdf_value
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdf:value
     source: http://www.w3.org/1999/02/22-rdf-syntax-ns#
@@ -1356,13 +1240,14 @@ slots:
     description: A domain of the subject property.
     domain: rdf_Property
     name: rdfs_domain
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: rdfs:domain
     source: http://www.w3.org/2000/01/rdf-schema#
     title: domain
   rdfs_isDefinedBy:
     any_of:
-    - range: uri
     - range: owl_Ontology
     - range: rdfs_Resource
     description: The definition of the subject resource.
@@ -1385,11 +1270,11 @@ slots:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: label
   rdfs_member:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A member of the subject resource.
     domain: rdfs_Resource
     name: rdfs_member
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: rdfs:member
     source: http://www.w3.org/2000/01/rdf-schema#
@@ -1398,14 +1283,16 @@ slots:
     description: A range of the subject property.
     domain: rdf_Property
     name: rdfs_range
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: rdfs:range
     source: http://www.w3.org/2000/01/rdf-schema#
     title: range
   rdfs_seeAlso:
     any_of:
-    - range: uri
     - range: rdfs_Resource
+    - range: uri
     description: Further information about the subject resource.
     domain: rdfs_Resource
     name: rdfs_seeAlso
@@ -1422,17 +1309,16 @@ slots:
     source: http://www.w3.org/2000/01/rdf-schema#
     title: subClassOf
   rdfs_subPropertyOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The subject is a subproperty of a property.
     domain: rdf_Property
     name: rdfs_subPropertyOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: rdfs:subPropertyOf
     source: http://www.w3.org/2000/01/rdf-schema#
     title: subPropertyOf
 source: http://www.w3.org/TR/owl2-mapping-to-rdf/
-title: No schema name specified
 types:
   rdf_HTML:
     description: The datatype of RDF literals storing fragments of HTML content

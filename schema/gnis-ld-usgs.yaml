@@ -501,14 +501,13 @@ classes:
     title: Woodland
 comments:
 - 'title: U.S. Geological Survey (USGS)'
-- 'created_on: 2018-03-01'
-created_on: '2025-07-24T16:19:29.300860'
+created_on: '2018-03-01'
 default_prefix: okns
 description: This ontology supports USGS features across datasets.
 id: okns:gnis-ld-usgs
 imports:
 - okns:geo
-last_updated_on: '2025-07-24T16:19:29.300860'
+last_updated_on: '2025-09-03T11:25:32.665613'
 name: gnis-ld-usgs
 prefixes:
   geo: http://www.opengis.net/ont/geosparql#
@@ -517,4 +516,3 @@ prefixes:
   okns: https://purl.org/okn/schema/
   owl: http://www.w3.org/2002/07/owl#
 slots: {}
-title: No schema name specified

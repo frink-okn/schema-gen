@@ -77,57 +77,12 @@ annotations:
           owl:NamedIndividual:
             tag: owl:NamedIndividual
             value: 244
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 303
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 2
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 50
-                  rdfs:Datatype:
-                    tag: rdfs:Datatype
-                    value: 2
-                  uri:
-                    tag: uri
-                    value: 31
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value: 87
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 216
-          owl:someValuesFrom:
-            tag: owl:someValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 166
-                  rdfs:Datatype:
-                    tag: rdfs:Datatype
-                    value: 2
-                  uri:
-                    tag: uri
-                    value: 52
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -317,27 +272,9 @@ annotations:
                   string:
                     tag: string
                     value: 228
-          rdfs:subClassOf:
-            tag: rdfs:subClassOf
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 294
       slots:
         tag: slots
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 83
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 303
-          owl:someValuesFrom:
-            tag: owl:someValuesFrom
-            value: 220
           rdfs:comment:
             tag: rdfs:comment
             value: 19
@@ -347,9 +284,6 @@ annotations:
           rdfs:label:
             tag: rdfs:label
             value: 228
-          rdfs:subClassOf:
-            tag: rdfs:subClassOf
-            value: 294
   examples:
     tag: examples
     value:
@@ -358,58 +292,58 @@ annotations:
         value:
           kwgo:AirPollutant:
             tag: kwgo:AirPollutant
-            value: kwgr:airQualityObservableProperty.Ozone
+            value: kwgr:airQualityObservableProperty.PM10
           kwgo:BlueskyWildfireObservableProperty:
             tag: kwgo:BlueskyWildfireObservableProperty
-            value: kwgr:blueskyObservableProperty.PM25ModeledDailyEmission
+            value: kwgr:blueskyObservableProperty.modeledGrowthArea
           kwgo:CensusObservableProperty:
             tag: kwgo:CensusObservableProperty
-            value: kwgr:censusObservableProperty.totalPopulation
+            value: kwgr:censusObservableProperty.femalePopulation
           kwgo:ClimateObservableProperty:
             tag: kwgo:ClimateObservableProperty
-            value: kwgr:climateObservableProperty.PDSI
+            value: kwgr:climateObservableProperty.CDD
           kwgo:CroplandObservableProperty:
             tag: kwgo:CroplandObservableProperty
-            value: kwgr:croplandObservableProperty.apricotsArea
+            value: kwgr:croplandObservableProperty.walnutsArea
           kwgo:DroughtIntensity:
             tag: kwgo:DroughtIntensity
-            value: kwgr:droughtObservableProperty.DroughtIntensity.D2
+            value: kwgr:droughtObservableProperty.DroughtIntensity.D0
           kwgo:EarthquakeObservableProperty:
             tag: kwgo:EarthquakeObservableProperty
-            value: kwgr:earthquakeObservableProperty.magSource
+            value: kwgr:earthquakeObservableProperty.nst
           kwgo:FireCause:
             tag: kwgo:FireCause
             value: kwgr:nifcFireNaturalCause
           kwgo:HelipadAvailability:
             tag: kwgo:HelipadAvailability
-            value: kwgr:yes
+            value: kwgr:no
           kwgo:HospitalStatus:
             tag: kwgo:HospitalStatus
-            value: kwgr:open
+            value: kwgr:closed
           kwgo:HospitalType:
             tag: kwgo:HospitalType
-            value: kwgr:generalAcuteCare
+            value: kwgr:children
           kwgo:ImpactObservableProperty:
             tag: kwgo:ImpactObservableProperty
-            value: kwgr:impactObservableProperty.damageCrop
+            value: kwgr:impactObservableProperty.damageProperty
           kwgo:LSADArea:
             tag: kwgo:LSADArea
             value: kwgr:LSADArea.M2
           kwgo:MTBSFireObservableProperty:
             tag: kwgo:MTBSFireObservableProperty
-            value: kwgr:mtbsFireObservableProperty.MeandNBRValue
+            value: kwgr:mtbsFireObservableProperty.NumberOfAcresBurned
           kwgo:MagnitudeObservableProperty:
             tag: kwgo:MagnitudeObservableProperty
-            value: kwgr:magnitudeObservableProperty.width
+            value: kwgr:magnitudeObservableProperty.estimateSustainedWidth
           kwgo:NIFCFireObservableProperty:
             tag: kwgo:NIFCFireObservableProperty
             value: kwgr:nifcFireObservableProperty.fireDiscoveryDateTime
           kwgo:PublicHealthObservableProperty:
             tag: kwgo:PublicHealthObservableProperty
-            value: kwgr:publicHealthObservableProperty.diabetesAgeAdjusted20PlusPercent
+            value: kwgr:publicHealthObservableProperty.obesityAgeAdjusted20PlusPercent
           kwgo:RoadType:
             tag: kwgo:RoadType
-            value: kwgr:roadType.M
+            value: kwgr:roadType.S
           kwgo:SmokePlumeObservableProperty:
             tag: kwgo:SmokePlumeObservableProperty
             value: kwgr:smokePlumeObservableProperty.smokeDensity
@@ -421,136 +355,19 @@ annotations:
             value: kwgr:stormTrackObservableProperty.category
           kwgo:StormTrackletObservableProperty:
             tag: kwgo:StormTrackletObservableProperty
-            value: kwgr:stormTrackletObservableProperty.minPressure
+            value: kwgr:stormTrackletObservableProperty.category
           kwgo:VulnerabilityObservableProperty:
             tag: kwgo:VulnerabilityObservableProperty
             value: kwgr:publicHealthObservableProperty.socialVulnerabilityIndex
           owl:NamedIndividual:
             tag: owl:NamedIndividual
-            value: kwgr:climateObservableProperty.PDSI
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n7475141ef9ad436b9f92111d31b27347b295
+            value: kwgr:croplandObservableProperty.walnutsArea
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: wgs:wktLiteral
+            value: xsd:date
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: time:TemporalEntity
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b194
-                  rdfs:Datatype:
-                    tag: rdfs:Datatype
-                    value:
-                      object:
-                        tag: object
-                        value: geo:wktLiteral
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b8
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: rdfs:Literal
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b294
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value:
-                      object:
-                        tag: object
-                        value: kwgo:detailsURL
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b235
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: sosa:observedProperty
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b165
-          owl:someValuesFrom:
-            tag: owl:someValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: kwgo:SmokePlumeObservableProperty
-                      predicate:
-                        tag: predicate
-                        value: owl:someValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b165
-                  rdfs:Datatype:
-                    tag: rdfs:Datatype
-                    value:
-                      object:
-                        tag: object
-                        value: geo:wktLiteral
-                      predicate:
-                        tag: predicate
-                        value: owl:someValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b66
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: rdfs:Literal
-                      predicate:
-                        tag: predicate
-                        value: owl:someValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b235
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -609,13 +426,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: overlap area in square meters
+                        value: days between last and first frost - representative
+                          value
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: kwgr:overlapArea.squareMeter
+                        value: kwgr:soilMapUnitObservableProperty.ffd_r
               owl:NamedIndividual:
                 tag: owl:NamedIndividual
                 value:
@@ -624,13 +442,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'ACS label: Metro Area (suffix)'
+                        value: 'ACS label: HOUSEHOLD TYPE BY UNITS IN STRUCTURE: Total:
+                          Households -- (Estimate)'
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: kwgr:LSADArea.M1
+                        value: kwgr:censusObservableProperty.householdUnits
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -675,13 +494,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Daily Mean Pb Concentration
+                        value: Daily Max 8-hour CO Concentration
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:airQualityObservableProperty.Pb
+                        value: kwgr:airQualityObservableProperty.CO
               kwgo:BlueskyWildfireObservableProperty:
                 tag: kwgo:BlueskyWildfireObservableProperty
                 value:
@@ -690,13 +509,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Modeled Growth Number of Locations
+                        value: Modeled PM2.5 Daily Emission
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:blueskyObservableProperty.modeledGrowthNumLocation
+                        value: kwgr:blueskyObservableProperty.PM25ModeledDailyEmission
               kwgo:CensusObservableProperty:
                 tag: kwgo:CensusObservableProperty
                 value:
@@ -720,13 +539,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: precipitation
+                        value: maximum temperature
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:climateObservableProperty.precipitation
+                        value: kwgr:climateObservableProperty.maxTemp
               kwgo:CroplandObservableProperty:
                 tag: kwgo:CroplandObservableProperty
                 value:
@@ -735,13 +554,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: developed med intensity area
+                        value: camelina area
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:croplandObservableProperty.developedMedIntensityArea
+                        value: kwgr:croplandObservableProperty.camelinaArea
               kwgo:DroughtIntensity:
                 tag: kwgo:DroughtIntensity
                 value:
@@ -765,13 +584,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: unknown cause
+                        value: human cause
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:nifcFireUnknownCause
+                        value: kwgr:nifcFireHumanCause
               kwgo:HelipadAvailability:
                 tag: kwgo:HelipadAvailability
                 value:
@@ -780,13 +599,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: 'no'
+                        value: 'yes'
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:no
+                        value: kwgr:yes
               kwgo:HospitalStatus:
                 tag: kwgo:HospitalStatus
                 value:
@@ -795,13 +614,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: closed
+                        value: open
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:closed
+                        value: kwgr:open
               kwgo:HospitalType:
                 tag: kwgo:HospitalType
                 value:
@@ -810,13 +629,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: children
+                        value: long term care
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:children
+                        value: kwgr:longTermCare
               kwgo:ImpactObservableProperty:
                 tag: kwgo:ImpactObservableProperty
                 value:
@@ -825,13 +644,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: injury indirect
+                        value: death indirect
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:impactObservableProperty.injuryIndirect
+                        value: kwgr:impactObservableProperty.deathIndirect
               kwgo:LSADArea:
                 tag: kwgo:LSADArea
                 value:
@@ -870,13 +689,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: wind estimated gust
+                        value: length
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:magnitudeObservableProperty.windEstimatedGust
+                        value: kwgr:magnitudeObservableProperty.length
               kwgo:NIFCFireObservableProperty:
                 tag: kwgo:NIFCFireObservableProperty
                 value:
@@ -885,13 +704,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: fire out date time
+                        value: calculated acres
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:nifcFireObservableProperty.fireOutDateTime
+                        value: kwgr:nifcFireObservableProperty.calculatedAcres
               kwgo:PublicHealthObservableProperty:
                 tag: kwgo:PublicHealthObservableProperty
                 value:
@@ -900,13 +719,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: below poverty level percent
+                        value: diabetes age adjusted 20 plus percent
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:publicHealthObservableProperty.belowPovertyLevelPercent
+                        value: kwgr:publicHealthObservableProperty.diabetesAgeAdjusted20PlusPercent
               kwgo:RoadType:
                 tag: kwgo:RoadType
                 value:
@@ -915,13 +734,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: county
+                        value: other
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:roadType.C
+                        value: kwgr:roadType.O
               kwgo:SmokePlumeObservableProperty:
                 tag: kwgo:SmokePlumeObservableProperty
                 value:
@@ -945,13 +764,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: overlapArea
+                        value: ffd_r
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:overlapArea.squareMeter
+                        value: kwgr:soilMapUnitObservableProperty.ffd_r
               kwgo:StormTrackObservableProperty:
                 tag: kwgo:StormTrackObservableProperty
                 value:
@@ -1005,54 +824,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Daily Mean Pb Concentration
+                        value: length
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: kwgr:airQualityObservableProperty.Pb
-          rdfs:subClassOf:
-            tag: rdfs:subClassOf
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: kwgo:StormTrackObservation
-                      predicate:
-                        tag: predicate
-                        value: rdfs:subClassOf
-                      subject:
-                        tag: subject
-                        value: n7475141ef9ad436b9f92111d31b27347b235
+                        value: kwgr:magnitudeObservableProperty.length
 classes:
-  gnis-ld-gnis_County:
-    class_uri: gnis-ld-gnis:County
-    comments:
-    - 'description: Source - https://gnis-ld.org/'
-    description: Second-order division of a nation such as parish, borough, county,
-      municipio, or judicial division, and independent cities in Maryland, Missouri,
-      Nevada, and Virginia.
-    is_a: gnis-ld-usgs_Division
-    name: gnis-ld-gnis_County
-    title: County
-  gnis-ld-gnis_State:
-    class_uri: gnis-ld-gnis:State
-    comments:
-    - 'description: Source - https://gnis-ld.org/'
-    description: First-order division of a nation.
-    is_a: gnis-ld-usgs_Division
-    name: gnis-ld-gnis_State
-    title: State
-  gnis-ld-usgs_Feature:
-    class_uri: gnis-ld-usgs:Feature
-    name: gnis-ld-usgs_Feature
-    title: USGS Feature
   http___purl.org_vocab_frbr_core_Endeavour:
     class_uri: http://purl.org/vocab/frbr/core/Endeavour
     description: Source - Functional Requirements for Bibliographic Record (FRBR)
@@ -1383,9 +1162,9 @@ classes:
     is_a: sosa_ObservableProperty
     name: kwgo_CensusObservableProperty
     slots:
-    - rdfs_isDefinedBy
     - rdfs_comment
     - rdfs_label
+    - rdfs_isDefinedBy
     title: American Community Survey 5-Year Estimate Property
   kwgo_ChiefJudge:
     class_uri: kwgo:ChiefJudge
@@ -1635,8 +1414,8 @@ classes:
   kwgo_Hazard:
     class_uri: kwgo:Hazard
     comments:
-    - 'description: The general hazard event class in KWG'
     - 'description: event'
+    - 'description: The general hazard event class in KWG'
     description: Hazard
     name: kwgo_Hazard
     title: Hazard
@@ -1747,8 +1526,8 @@ classes:
       should precede or follow the name of the geographic entity.
     name: kwgo_LSADArea
     slots:
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     title: Legal/Statistical Area Description (LSAD)
   kwgo_Level_I:
     class_uri: kwgo:Level_I
@@ -1840,8 +1619,8 @@ classes:
     is_a: sosa_ObservableProperty
     name: kwgo_MTBSFireObservableProperty
     slots:
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     title: MTBS Fire Observable Property
   kwgo_MTBSFireObservation:
     class_uri: kwgo:MTBSFireObservation
@@ -2466,8 +2245,8 @@ classes:
     is_a: sosa_ObservableProperty
     name: kwgo_SoilMapUnitObservableProperty
     slots:
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     title: Soil Map Unit Observable Property
   kwgo_SoilMapUnitObservation:
     class_uri: kwgo:SoilMapUnitObservation
@@ -2640,14 +2419,6 @@ classes:
     is_a: geo_Feature
     name: kwgo_ZipCodeArea
     title: Zip Code Area
-  sf_#LineString:
-    class_uri: sf:#LineString
-    is_a: geo_Geometry
-    name: sf_#LineString
-  sf_#Point:
-    class_uri: sf:#Point
-    is_a: geo_Geometry
-    name: sf_#Point
   sosa_EarthquakeObservation:
     class_uri: sosa:EarthquakeObservation
     description: Source - USGS (https://earthquake.usgs.gov/earthquakes/search/)
@@ -2689,21 +2460,19 @@ classes:
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
 comments:
-- 'created_on: 2022-02-24'
+- 'created_by: The KnowWhereGraph Project'
 - 'title: KWG Integrated Ontology'
-created_on: '2025-07-24T16:19:50.782559'
+created_on: '2022-02-24'
 default_prefix: okns
 description: This ontology supports the KnowWhereGraph
 id: okns:kwg
 imports:
-- okns:geo
+- linkml:types
 - okns:owl-rdf-rdfs
 - okns:qudt
-- okns:skos
-- okns:gnis-ld-usgs
-- linkml:types
 - okns:extended_types
-last_updated_on: '2025-07-24T16:19:50.782559'
+- okns:geo
+last_updated_on: '2025-09-03T11:26:09.813201'
 name: kwg
 prefixes:
   c4o: http://purl.org/spar/c4o/
@@ -2725,7 +2494,7 @@ prefixes:
   rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   sdos: https://schema.org/
-  sf: http://www.opengis.net/ont/sf
+  sf: http://www.opengis.net/ont/sf#
   skos: http://www.w3.org/2004/02/skos/core#
   sosa: http://www.w3.org/ns/sosa/
   time: http://www.w3.org/2006/time#
@@ -2733,1280 +2502,1146 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   geo_hasName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: geo_hasName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:hasName
     title: has federal judicial district name
   geo_spatialRelation:
-    comments:
-    - No occurrences of this slot in the graph.
     name: geo_spatialRelation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: geo:spatialRelation
-  gnis-ld-gnis_alternativeName:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_alternativeName
-    range: string
-    slot_uri: gnis-ld-gnis:alternativeName
-    title: alternative name
-  gnis-ld-gnis_citation:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_citation
-    range: string
-    slot_uri: gnis-ld-gnis:citation
-    title: citation
-  gnis-ld-gnis_country:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_country
-    range: Any
-    slot_uri: gnis-ld-gnis:country
-    title: country
-  gnis-ld-gnis_county:
-    comments:
-    - No occurrences of this slot in the graph.
-    domain: gnis-ld-gnis_County
-    name: gnis-ld-gnis_county
-    range: Any
-    slot_uri: gnis-ld-gnis:county
-    title: county
-  gnis-ld-gnis_countyCode:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_countyCode
-    range: string
-    slot_uri: gnis-ld-gnis:countyCode
-    title: county code
   gnis-ld-gnis_countyId:
-    comments:
-    - No occurrences of this slot in the graph.
     name: gnis-ld-gnis_countyId
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: gnis-ld-gnis:countyId
     title: county id
-  gnis-ld-gnis_countyName:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_countyName
-    range: string
-    slot_uri: gnis-ld-gnis:countyName
-    title: county name
-  gnis-ld-gnis_dateFeatureCreated:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_dateFeatureCreated
-    range: date
-    slot_uri: gnis-ld-gnis:dateFeatureCreated
-    title: date feature created
-  gnis-ld-gnis_dateFeatureEdited:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_dateFeatureEdited
-    range: date
-    slot_uri: gnis-ld-gnis:dateFeatureEdited
-    title: date feature edited
-  gnis-ld-gnis_dateNameCreated:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_dateNameCreated
-    range: date
-    slot_uri: gnis-ld-gnis:dateNameCreated
-    title: date name created
-  gnis-ld-gnis_description:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_description
-    range: string
-    slot_uri: gnis-ld-gnis:description
-    title: description
-  gnis-ld-gnis_elevation:
-    comments:
-    - No occurrences of this slot in the graph.
-    domain: gnis-ld-usgs_Feature
-    name: gnis-ld-gnis_elevation
-    range: qudt_Quantity
-    slot_uri: gnis-ld-gnis:elevation
-    title: elevation
-  gnis-ld-gnis_featureId:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_featureId
-    range: string
-    slot_uri: gnis-ld-gnis:featureId
-    title: feature id
-  gnis-ld-gnis_history:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_history
-    range: string
-    slot_uri: gnis-ld-gnis:history
-    title: history
-  gnis-ld-gnis_mapName:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_mapName
-    range: string
-    slot_uri: gnis-ld-gnis:mapName
-    title: map name
-  gnis-ld-gnis_officialName:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_officialName
-    range: string
-    slot_uri: gnis-ld-gnis:officialName
-    title: official name
-  gnis-ld-gnis_state:
-    comments:
-    - No occurrences of this slot in the graph.
-    domain: gnis-ld-usgs_Feature
-    name: gnis-ld-gnis_state
-    range: gnis-ld-gnis_State
-    slot_uri: gnis-ld-gnis:state
-    title: state
-  gnis-ld-gnis_stateCode:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_stateCode
-    range: string
-    slot_uri: gnis-ld-gnis:stateCode
-    title: state code
-  gnis-ld-gnis_stateId:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_stateId
-    range: string
-    slot_uri: gnis-ld-gnis:stateId
-    title: state id
-  gnis-ld-gnis_stateName:
-    comments:
-    - No occurrences of this slot in the graph.
-    name: gnis-ld-gnis_stateName
-    range: string
-    slot_uri: gnis-ld-gnis:stateName
-    title: state name
   http___qudt.org_1.1_vocab_unit#numericValue:
-    comments:
-    - No occurrences of this slot in the graph.
     name: http___qudt.org_1.1_vocab_unit#numericValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: http://qudt.org/1.1/vocab/unit#numericValue
   http___qudt.org_1.1_vocab_unit#unit:
-    comments:
-    - No occurrences of this slot in the graph.
     name: http___qudt.org_1.1_vocab_unit#unit
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: http://qudt.org/1.1/vocab/unit#unit
   kwgo_affectedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_affectedByInverse
     name: kwgo_affectedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:affectedBy
     title: affected by
   kwgo_affectedByInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_affectedByInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:affectedByInverse
     title: inverse of affected by
   kwgo_amountApproved_HA:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total amount approved for Housing Assistance from the Individual
       and Households Program in dollars
     name: kwgo_amountApproved_HA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:amountApproved_HA
     title: amount approved for housing assistance
   kwgo_amountApproved_IHP:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total amount approved for the Individual and Households Program
       in dollars
     name: kwgo_amountApproved_IHP
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:amountApproved_IHP
     title: amount approved for individuals and households
   kwgo_amountApproved_ONA:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The total amount approved for Other Needs Assistance from the Individual
       and Households Program in dollars
     name: kwgo_amountApproved_ONA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:amountApproved_ONA
     title: amount approved for other needs assistance
   kwgo_anomaly:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Divisional anomaly (1-month period) for the measured climate property
     name: kwgo_anomaly
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:anomaly
     title: anomaly
   kwgo_cbsaCode:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A core-based statistical area is a U.S. geographic area defined by
       the Office of Management and Budget that consists of one or more counties anchored
       by an urban center of at least 10,000 people plus adjacent counties that are
       socioeconomically tied to the urban center by commuting
     domain: kwgo_AirQualitySite
     name: kwgo_cbsaCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:cbsaCode
     title: cbsa code
   kwgo_cbsaName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A core-based statistical area is a U.S. geographic area defined by
       the Office of Management and Budget that consists of one or more counties anchored
       by an urban center of at least 10,000 people plus adjacent counties that are
       socioeconomically tied to the urban center by commuting
     domain: kwgo_AirQualitySite
     name: kwgo_cbsaName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:cbsaName
     title: cbsa name
   kwgo_censusGeographyTime:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_censusGeographyTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:censusGeographyTime
   kwgo_climateDivisionFIPS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: FIPS code for the climate division boundary
     name: kwgo_climateDivisionFIPS
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:climateDivisionFIPS
     title: climate division FIPS
   kwgo_climateDivisionNCDC_GEO:
-    comments:
-    - No occurrences of this slot in the graph.
     description: National Climatic Data Center identifier
     name: kwgo_climateDivisionNCDC_GEO
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:climateDivisionNCDC_GEO
     title: climate division NCDC GEO
   kwgo_climateDivisionName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Name of climate division boundary
     name: kwgo_climateDivisionName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:climateDivisionName
     title: climate division name
   kwgo_climateDivisionNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     description: NOAA climate division number
     name: kwgo_climateDivisionNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:climateDivisionNumber
     title: climate division number
   kwgo_compositePercentageInformation:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_compositePercentageInformation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:compositePercentageInformation
     title: composite drought zone percentage information
   kwgo_correspondingMapID:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_correspondingMapID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:correspondingMapID
     title: corresponding map ID
   kwgo_dailyAQIValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Air Quality Index values for the specified year and location recorded
       by EPA
     name: kwgo_dailyAQIValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:dailyAQIValue
     title: daily AQI value
   kwgo_dataSource:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_dataSource
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:dataSource
     title: data source
   kwgo_designatedArea:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The name or phrase describing the U.S. county that was included in
       the declaration
     name: kwgo_designatedArea
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:designatedArea
     title: designated area
   kwgo_detailsURL:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_detailsURL
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:detailsURL
   kwgo_endsAt:
     comments:
     - 'title: road segment ends at'
-    - No occurrences of this slot in the graph.
     name: kwgo_endsAt
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:endsAt
     title: hazard ends at
   kwgo_fallsUnderTopic:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_fallsUnderTopic
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:fallsUnderTopic
     title: falls under topic
   kwgo_hasAlias:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasAlias
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasAlias
     title: has alias
   kwgo_hasAzimuth:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: kwgo_Fix
     name: kwgo_hasAzimuth
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:hasAzimuth
     title: has azimuth
   kwgo_hasChiefJudge:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasChiefJudge
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasChiefJudge
     title: has chief judge
   kwgo_hasCode:
     comments:
     - 'title: has drought intensity code'
-    - No occurrences of this slot in the graph.
     description: metropolitan and micropolitan statistical area code
     name: kwgo_hasCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasCode
     title: census area code
   kwgo_hasContributor:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasContributorInverse
     name: kwgo_hasContributor
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasContributor
     title: has contributor
   kwgo_hasContributorInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasContributorInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasContributorInverse
     title: has contributor inverse
   kwgo_hasDBLPID:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasDBLPID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDBLPID
     title: has DBLPID
   kwgo_hasDataSource:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasDataSource
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDataSource
     title: has data source
   kwgo_hasDeclaration:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The relationship between a diasaster and declaration in the OpenFEMA
       dataset
     name: kwgo_hasDeclaration
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDeclaration
     title: has declaration
   kwgo_hasDeclarationDate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The date a declaration was approved
     name: kwgo_hasDeclarationDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDeclarationDate
     title: has declaration date
   kwgo_hasDeclarationID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Unique identifier of each declaration
     name: kwgo_hasDeclarationID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDeclarationID
     title: has declaration ID
   kwgo_hasDeclarationRequestNo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The identifier of the declaration when it was submitted for approval/request
     name: kwgo_hasDeclarationRequestNo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDeclarationRequestNo
     title: has declaration request no
   kwgo_hasDeclarationTitle:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Title of the declaration
     name: kwgo_hasDeclarationTitle
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDeclarationTitle
     title: has declaration title
   kwgo_hasDefaultGeometry:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasDefaultGeometry
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDefaultGeometry
   kwgo_hasDisasterName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Name of the Disaster that the declaration was submitted or approved
       for
     name: kwgo_hasDisasterName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDisasterName
     title: has disaster name
   kwgo_hasDisasterNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The identifier of each disaster - this is unique to the FEMA declaration
       dataset. Storm related disaster are related to NOAA Storm dataset. See property
       kwg-ont:noaaDisasterID
     name: kwgo_hasDisasterNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasDisasterNumber
     title: has disaster number
   kwgo_hasExpertise:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasExpertise
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasExpertise
     title: expertise
   kwgo_hasFieldsOfStudy:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasFieldsOfStudyInverse
     name: kwgo_hasFieldsOfStudy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFieldsOfStudy
     title: has fields of study
   kwgo_hasFieldsOfStudyInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasFieldsOfStudyInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFieldsOfStudyInverse
     title: has fields of study inverse
   kwgo_hasFireCause:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasFireCause
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFireCause
     title: has fire cause
   kwgo_hasFireMappingAssessmentLabel:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasFireMappingAssessmentLabelInverse
     name: kwgo_hasFireMappingAssessmentLabel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFireMappingAssessmentLabel
     title: has fire mapping assessment label
   kwgo_hasFireMappingAssessmentLabelInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasFireMappingAssessmentLabelInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFireMappingAssessmentLabelInverse
     title: has fire mapping label inverse
   kwgo_hasFireName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasFireName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasFireName
     title: has mtbs fire name
   kwgo_hasGeometry:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasGeometry
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasGeometry
     title: kwg - has geometry
   kwgo_hasGeometryCollection:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasGeometryCollection
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasGeometryCollection
     title: has geometry collection
   kwgo_hasGeometryMember:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasGeometryMemberInverse
     name: kwgo_hasGeometryMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasGeometryMember
     title: has geometry member
   kwgo_hasGeometryMemberInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasGeometryMemberInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasGeometryMemberInverse
     title: inverse of has geometry member
   kwgo_hasHomepage:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasHomepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasHomepage
     title: has homepage
   kwgo_hasIncidentName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasIncidentName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasIncidentName
     title: has incident name
   kwgo_hasJudgeInfo:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasJudgeInfo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasJudgeInfo
     title: has judge info
   kwgo_hasLength:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasLength
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasLength
     title: road length
   kwgo_hasMapUnitAreaSymbol:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasMapUnitAreaSymbol
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasMapUnitAreaSymbol
     title: has map unit area symbol
   kwgo_hasMappingProgram:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasMappingProgramInverse
     name: kwgo_hasMappingProgram
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasMappingProgram
     title: has mapping program
   kwgo_hasMappingProgramInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasMappingProgramInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasMappingProgramInverse
     title: has mapping program inverse
   kwgo_hasNarrative:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: kwgo_HazardEpisode
     name: kwgo_hasNarrative
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:hasNarrative
     title: has hazard narrative
   kwgo_hasORCID:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasORCID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasORCID
     title: has ORCID
   kwgo_hasPart:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasPart
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasPart
     title: has part
   kwgo_hasProgram:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The relationship between disaster and program in the OpenFEMA dataset
     name: kwgo_hasProgram
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasProgram
     title: has program
   kwgo_hasProgramCloseOutDate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The date when the relief program was closed
     name: kwgo_hasProgramCloseOutDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasProgramCloseOutDate
     title: has program close out date
   kwgo_hasProgramDescription:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The description of the relief program
     name: kwgo_hasProgramDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasProgramDescription
     title: has program description
   kwgo_hasProgramDesignatedDate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The date when the relief program began
     name: kwgo_hasProgramDesignatedDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasProgramDesignatedDate
     title: has program designated date
   kwgo_hasProgramID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Unique Identifier of the Program
     name: kwgo_hasProgramID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasProgramID
     title: has program ID
   kwgo_hasPublicationYear:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasPublicationYearInverse
     name: kwgo_hasPublicationYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasPublicationYear
     title: has publication year
   kwgo_hasPublicationYearInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasPublicationYearInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasPublicationYearInverse
     title: has publication year inverse
   kwgo_hasRange:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: kwgo_Fix
     name: kwgo_hasRange
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:hasRange
     title: has range
   kwgo_hasRoadName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasRoadName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasRoadName
     title: has road name
   kwgo_hasRoadSign:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasRoadSign
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasRoadSign
     title: has road sign
   kwgo_hasRoadType:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasRoadType
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasRoadType
     title: has road type
   kwgo_hasSegment:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasSegment
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasSegment
     title: has hazard segment
   kwgo_hasSoilMapUnitKey:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasSoilMapUnitKey
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasSoilMapUnitKey
     title: has soil map unit key
   kwgo_hasSoilMapUnitSymbol:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasSoilMapUnitSymbol
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasSoilMapUnitSymbol
     title: has soil map unit symbol
   kwgo_hasStormTracklet:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relation between hurricane storm and smaller storm tracklets
     name: kwgo_hasStormTracklet
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasStormTracklet
     title: has storm tracklet
   kwgo_hasSubTopic:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasSubTopic
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasSubTopic
     title: has sub topic
   kwgo_hasTemporalScope:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The temporal scoping property in KWG to represent the temporal extent
       of a hazard feature
     name: kwgo_hasTemporalScope
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasTemporalScope
     title: has temporal scope
   kwgo_hasTraumaDefinition:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasTraumaDefinition
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasTraumaDefinition
     title: has trauma definition
   kwgo_hasTraumaDescription:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasTraumaDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasTraumaDescription
     title: has trauma description
   kwgo_hasUri:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasUri
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasUri
     title: has URI
   kwgo_hasVenue:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: kwgo_hasVenueInverse
     name: kwgo_hasVenue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasVenue
     title: has venue
   kwgo_hasVenueInverse:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasVenueInverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasVenueInverse
     title: has venue inverse
   kwgo_hasVenueName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasVenueName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasVenueName
     title: has venue name
   kwgo_hasZipCode:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hasZipCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hasZipCode
     title: has zip code
   kwgo_helipadAvailability:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_helipadAvailability
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:helipadAvailability
     title: helipad availability
   kwgo_hospitalAddress:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hospitalAddress
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hospitalAddress
     title: hospital address
   kwgo_hospitalName:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hospitalName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hospitalName
     title: hospital name
   kwgo_hospitalStatus:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hospitalStatus
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hospitalStatus
     title: hospital status
   kwgo_hospitalType:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_hospitalType
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:hospitalType
     title: hospital type
   kwgo_inCircuit:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_inCircuit
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:inCircuit
     title: in circuit
   kwgo_isHMProgramDeclared:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Denotes whether the Hazard Mitigation program was declared
     name: kwgo_isHMProgramDeclared
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:isHMProgramDeclared
     title: is hazard mitigation program declared
   kwgo_isIAProgramDeclared:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Denotes whether the Individual Assistance program was declared
     name: kwgo_isIAProgramDeclared
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:isIAProgramDeclared
     title: is individual assistance program declared
   kwgo_isIHProgramDeclared:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Denotes whether the Individuals and Households program was declared
     name: kwgo_isIHProgramDeclared
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:isIHProgramDeclared
     title: is individual and households program declared
   kwgo_isPAProgramDeclared:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Denotes whether the Public Assistance program was declared
     name: kwgo_isPAProgramDeclared
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:isPAProgramDeclared
     title: is public assistance program declared
   kwgo_locatedIn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_locatedIn
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:locatedIn
     title: located in
   kwgo_mean:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Divisional mean (1901-2000 period) for the measured climate property
     name: kwgo_mean
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:mean
     title: mean
   kwgo_nielsenMarketZoneDMA:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nielsenMarketZoneDMA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nielsenMarketZoneDMA
     title: nielsen market zone DMA
   kwgo_nielsenMarketZoneHHTV:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nielsenMarketZoneHHTV
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nielsenMarketZoneHHTV
     title: nielsen market zone HHTV
   kwgo_nielsenMarketZoneID:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nielsenMarketZoneID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nielsenMarketZoneID
     title: nielsen market zone ID
   kwgo_nielsenMarketZonePUSA:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nielsenMarketZonePUSA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nielsenMarketZonePUSA
     title: nielsen market zone PUSA
   kwgo_nielsenMarketZoneRank:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nielsenMarketZoneRank
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nielsenMarketZoneRank
     title: nielsen market zone rank
   kwgo_noHospitalBeds:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_noHospitalBeds
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:noHospitalBeds
     title: no of hospital beds
   kwgo_noaaDisasterID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Disaster ID from NOAA Storm Event dataset
     name: kwgo_noaaDisasterID
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:noaaDisasterID
     title: noaa disaster impact ID
   kwgo_nominatedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nominatedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nominatedBy
     title: nominated by
   kwgo_nominatedTime:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_nominatedTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:nominatedTime
     title: nominated time
   kwgo_obligatedAmountCat_AB:
-    comments:
-    - No occurrences of this slot in the graph.
     description: 'The Public Assistance grant funding available in dollars to the
       grantee (State), for sub-grantee approved Project Worksheets in categories A
       and B, or Emergency Work. Category A: Debris removal; Category B: Emergency
       protective measures'
     name: kwgo_obligatedAmountCat_AB
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:obligatedAmountCat_AB
     title: obligated amount category AB
   kwgo_obligatedAmountCat_C_G:
-    comments:
-    - No occurrences of this slot in the graph.
     description: 'The Public Assistance grant funding available in dollars to the
       grantee (State), for sub-grantee approved Project Worksheets in categories C
       through G, or Permanent Work. Category C: Roads and bridges; Category D: Water
       control facilities; Category E: Public buildings and contents; Category F: Public
       utilities; Category G: Parks, recreational, and other facilities'
     name: kwgo_obligatedAmountCat_C_G
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:obligatedAmountCat_C_G
     title: obligated amount category C-G
   kwgo_obligatedAmount_HMGP:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Total amount obligated under the Hazard Mitigation Grant Program
       in dollars. The total amount obligated represents the amount obligated for Regular
       Project Costs, Planning Costs, Initiative Project Costs, Recipient Management
       Costs, Recipient Admin Costs and Subrecipient Admin Costs
     name: kwgo_obligatedAmount_HMGP
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:obligatedAmount_HMGP
     title: obligated amount hazard mitigation program
   kwgo_obligatedAmount_PA:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The Public Assistance grant funding available in dollars to the grantee
       (State), for sub-grantee approved Project Worksheets
     name: kwgo_obligatedAmount_PA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:obligatedAmount_PA
     title: obligated amount public assistance
   kwgo_pocValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: EPA Air Quality Instrument ID
     domain: kwgo_AirQualityInstrument
     name: kwgo_pocValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:pocValue
     title: poc value
   kwgo_rank:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Dvisional rank (1-month period)for the measured climate property
     name: kwgo_rank
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:rank
     title: rank
   kwgo_sfContains:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial contains relation
     name: kwgo_sfContains
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfContains
     subproperty_of: kwgo_spatialRelation
     title: contains (simple feature)
   kwgo_sfCrosses:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial comment relation
     name: kwgo_sfCrosses
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfCrosses
     subproperty_of: kwgo_spatialRelation
     title: crosses (simple feature)
   kwgo_sfEquals:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial equal relation
     name: kwgo_sfEquals
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfEquals
     subproperty_of: kwgo_spatialRelation
     title: equals (simple feature)
   kwgo_sfOverlaps:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial overlap relation
     name: kwgo_sfOverlaps
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfOverlaps
     subproperty_of: kwgo_spatialRelation
     title: overlaps (simple feature)
   kwgo_sfTouches:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial touches relation
     name: kwgo_sfTouches
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfTouches
     subproperty_of: kwgo_spatialRelation
     title: touches (simple feature)
   kwgo_sfWithin:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's spatial within relation
     name: kwgo_sfWithin
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:sfWithin
     subproperty_of: kwgo_spatialRelation
     title: within (simple feature)
   kwgo_siteID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: EPA Air Quality Sensor ID
     domain: kwgo_AirQualitySite
     name: kwgo_siteID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:siteID
     title: site ID
   kwgo_siteName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: EPA Air Quality Sensor Name
     domain: kwgo_AirQualitySite
     name: kwgo_siteName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: kwgo:siteName
     title: site name
   kwgo_spatialRelation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: KWG's general spatial relation
     name: kwgo_spatialRelation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:spatialRelation
     title: spatial relation
   kwgo_startsFrom:
     comments:
     - 'title: road segment starts from'
-    - No occurrences of this slot in the graph.
     name: kwgo_startsFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:startsFrom
     title: hazard starts from
   kwgo_target:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property denotes the relation between an observation and a S2
       Cell. This is analogous to a the property sosa:hasFearureOfInterest.
     name: kwgo_target
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:target
     title: target
   kwgo_telephoneNo:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_telephoneNo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:telephoneNo
     title: telephone no
   kwgo_timeScale:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Property that measures the duration over which NOAA's climate division
       observation measurements are made
     name: kwgo_timeScale
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:timeScale
     title: time scale
   kwgo_totalNumberApproved_IA:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The number of disaster assistance applications that were approved
       for Individual Assistance
     name: kwgo_totalNumberApproved_IA
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:totalNumberApproved_IA
     title: total number approved individual assistance
   kwgo_traumaDescriptionForState:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_traumaDescriptionForState
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:traumaDescriptionForState
     title: trauma description for state
   kwgo_traumaDescriptionSource:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_traumaDescriptionSource
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:traumaDescriptionSource
     title: trauma description source
   kwgo_traumaDescriptionSourceDate:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_traumaDescriptionSourceDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:traumaDescriptionSourceDate
     title: trauma description source date
   kwgo_typeOfLSAD:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The legal/statistical area description (LSAD) codes describe the
       particular typology for each geographic entity.
     name: kwgo_typeOfLSAD
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:typeOfLSAD
     title: type of legal/statistical area description (LSAD) area
   kwgo_value:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Divisional value (1-month period)of the measured climate property
     name: kwgo_value
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:value
     title: value
   kwgo_website:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_website
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:website
     title: website
   kwgo_zipCode:
-    comments:
-    - No occurrences of this slot in the graph.
     name: kwgo_zipCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: kwgo:zipCode
     title: zip code
   qudt_unit:
-    comments:
-    - No occurrences of this slot in the graph.
     name: qudt_unit
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: qudt:unit
   sosa_hasABBR:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hasABBR
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasABBR
     title: has abbreviation
   sosa_hasFeatureOfInterest:
-    comments:
-    - No occurrences of this slot in the graph.
     inverse: sosa_isFeatureOfInterestOf
     name: sosa_hasFeatureOfInterest
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasFeatureOfInterest
     title: hasFeatureOfInterest
   sosa_hasMember:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hasMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasMember
     title: hasMember
   sosa_hasObservation:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hasObservation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasObservation
   sosa_hasResult:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hasResult
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasResult
   sosa_hasSimpleResult:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hasSimpleResult
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hasSimpleResult
     title: hasSimpleResult
   sosa_hosts:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_hosts
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:hosts
   sosa_isFeatureOfInterestOf:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_isFeatureOfInterestOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:isFeatureOfInterestOf
   sosa_madeBySensor:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_madeBySensor
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:madeBySensor
   sosa_observedProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_observedProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:observedProperty
     title: observedProperty
   sosa_phenomenonTime:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_phenomenonTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:phenomenonTime
   sosa_resultTime:
-    comments:
-    - No occurrences of this slot in the graph.
     name: sosa_resultTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: sosa:resultTime
   wgs_asWKT:
-    comments:
-    - No occurrences of this slot in the graph.
     name: wgs_asWKT
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wgs:asWKT
-title: No schema name specified
 types:
   wgs_wktLiteral:
     name: wgs_wktLiteral

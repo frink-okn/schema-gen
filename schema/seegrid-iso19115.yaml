@@ -1,0 +1,1554 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          dcam:VocabularyEncodingScheme:
+            tag: dcam:VocabularyEncodingScheme
+            value: 8
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: 9
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 11
+      pairs:
+        tag: pairs
+        value:
+          dct:hasVersion:
+            tag: dct:hasVersion
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value: 8
+          dct:issued:
+            tag: dct:issued
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  date:
+                    tag: date
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  date:
+                    tag: date
+                    value: 8
+          dct:modified:
+            tag: dct:modified
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  date:
+                    tag: date
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  date:
+                    tag: date
+                    value: 8
+              untyped:
+                tag: untyped
+                value:
+                  date:
+                    tag: date
+                    value: 1
+          dct:publisher:
+            tag: dct:publisher
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
+          dct:title:
+            tag: dct:title
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value: 2
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value: 2
+                  uri:
+                    tag: uri
+                    value: 4
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 8
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value: 8
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value: 8
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 8
+                  voaf:Vocabulary:
+                    tag: voaf:Vocabulary
+                    value: 8
+              untyped:
+                tag: untyped
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value: 33
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 8
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 35
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value: 7
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value: 7
+          skos:inScheme:
+            tag: skos:inScheme
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 33
+          skos:member:
+            tag: skos:member
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value: 3
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value: 5
+      slots:
+        tag: slots
+        value:
+          dct:hasVersion:
+            tag: dct:hasVersion
+            value: 8
+          dct:issued:
+            tag: dct:issued
+            value: 8
+          dct:modified:
+            tag: dct:modified
+            value: 9
+          dct:publisher:
+            tag: dct:publisher
+            value: 1
+          dct:title:
+            tag: dct:title
+            value: 1
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value: 8
+          owl:unionOf:
+            tag: owl:unionOf
+            value: 1
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 16
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value: 49
+          rdfs:label:
+            tag: rdfs:label
+            value: 51
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value: 7
+          skos:inScheme:
+            tag: skos:inScheme
+            value: 33
+          skos:member:
+            tag: skos:member
+            value: 3
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value: 5
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          dcam:VocabularyEncodingScheme:
+            tag: dcam:VocabularyEncodingScheme
+            value: dct:TGN
+          owl:NamedIndividual:
+            tag: owl:NamedIndividual
+            value: http://creativecommons.org/licenses/by/3.0/
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: seegrid-basic:ISOClassName
+      pairs:
+        tag: pairs
+        value:
+          dct:hasVersion:
+            tag: dct:hasVersion
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://dublincore.org/usage/terms/history/#DDC-003
+                      predicate:
+                        tag: predicate
+                        value: dct:hasVersion
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://dublincore.org/usage/terms/history/#DDC-003
+                      predicate:
+                        tag: predicate
+                        value: dct:hasVersion
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+          dct:issued:
+            tag: dct:issued
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2000-07-11'
+                      predicate:
+                        tag: predicate
+                        value: dct:issued
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2000-07-11'
+                      predicate:
+                        tag: predicate
+                        value: dct:issued
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+          dct:modified:
+            tag: dct:modified
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2008-01-14'
+                      predicate:
+                        tag: predicate
+                        value: dct:modified
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2008-01-14'
+                      predicate:
+                        tag: predicate
+                        value: dct:modified
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              untyped:
+                tag: untyped
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2012-06-14'
+                      predicate:
+                        tag: predicate
+                        value: dct:modified
+                      subject:
+                        tag: subject
+                        value: 'dct:'
+          dct:publisher:
+            tag: dct:publisher
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://purl.org/dc/aboutdcmi#DCMI
+                      predicate:
+                        tag: predicate
+                        value: dct:publisher
+                      subject:
+                        tag: subject
+                        value: 'dct:'
+          dct:title:
+            tag: dct:title
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DCMI Metadata Terms - other
+                      predicate:
+                        tag: predicate
+                        value: dct:title
+                      subject:
+                        tag: subject
+                        value: 'dct:'
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:Class:
+                    tag: owl:Class
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:integer
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Integer
+                  rdfs:Datatype:
+                    tag: rdfs:Datatype
+                    value:
+                      object:
+                        tag: object
+                        value: N8db131b06d6d4d11ad94873f4d38e5b0
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: xsd:string
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:CharacterString
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The set of conceptual resources specified by the Dewey
+                          Decimal Classification.
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: The set of conceptual resources specified by the Dewey
+                          Decimal Classification.
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: "The common binary Real finite implementation using\
+                          \ base 2. Since such reals can approximate any measure where\
+                          \ absolute accuracy is not possible, this form of numeric\
+                          \ is most often used for measures. In cases were absolute\
+                          \ accuracy is needed, such as currencies, then a decimal\
+                          \ representation may be preferred (assuming the currency\
+                          \ is decimal, such as the US dollar, British pound, etc.).\
+                          \ Where there are no subunits possible, Integer numbers\
+                          \ may be preferred.  \n\nCan be thought of as an integer\
+                          \ part followed by a fractional part given in multiples\
+                          \ of powers of 1/2 (halves)."
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+          rdfs:isDefinedBy:
+            tag: rdfs:isDefinedBy
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: 'dct:'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: 'dct:'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  owl:NamedIndividual:
+                    tag: owl:NamedIndividual
+                    value:
+                      object:
+                        tag: object
+                        value: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+                  voaf:Vocabulary:
+                    tag: voaf:Vocabulary
+                    value:
+                      object:
+                        tag: object
+                        value: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+              untyped:
+                tag: untyped
+                value:
+                  owl:Ontology:
+                    tag: owl:Ontology
+                    value:
+                      object:
+                        tag: object
+                        value: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: seegrid-role:author
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DDC
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: DDC
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: realNumber
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: seegrid-basic:Real
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: author
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: seegrid-role:author
+          rdfs:seeAlso:
+            tag: rdfs:seeAlso
+            value:
+              dcam:VocabularyEncodingScheme:
+                tag: dcam:VocabularyEncodingScheme
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.oclc.org/dewey/
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+              owl:NamedIndividual:
+                tag: owl:NamedIndividual
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://www.oclc.org/dewey/
+                      predicate:
+                        tag: predicate
+                        value: rdfs:seeAlso
+                      subject:
+                        tag: subject
+                        value: dct:DDC
+          skos:inScheme:
+            tag: skos:inScheme
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: seegrid-role:scheme
+                      predicate:
+                        tag: predicate
+                        value: skos:inScheme
+                      subject:
+                        tag: subject
+                        value: seegrid-role:author
+          skos:member:
+            tag: skos:member
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/creation
+                      predicate:
+                        tag: predicate
+                        value: skos:member
+                      subject:
+                        tag: subject
+                        value: http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: creation
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/DateType/creation
+classes:
+  http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#CodeList:
+    class_uri: http://def.seegrid.csiro.au/isotc211/iso19150/2012/hm2owl#CodeList
+    name: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#CodeList
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType:
+    class_uri: http://def.seegrid.csiro.au/isotc211/iso19150/2012/hm2owl#DataType
+    name: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    title: No class (entity type) name specified -- this class is noted as a superclass
+      of another class in this graph but has not itself been defined.
+  seegrid-basic_Acceleration:
+    class_uri: seegrid-basic:Acceleration
+    description: Measure of rate of change of velocity
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Acceleration
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Acceleration
+  seegrid-basic_Angle:
+    class_uri: seegrid-basic:Angle
+    description: measure of arc length or rotation
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Angle
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Angle
+  seegrid-basic_AngularVelocity:
+    class_uri: seegrid-basic:AngularVelocity
+    description: Measure of rate of change of angular position
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_AngularVelocity
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: AngularVelocity
+  seegrid-basic_Area:
+    class_uri: seegrid-basic:Area
+    description: Measure of 2-D extent
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Area
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Area
+  seegrid-basic_Currency:
+    class_uri: seegrid-basic:Currency
+    description: Measure of exchange value
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Currency
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Currency
+  seegrid-basic_Distance:
+    class_uri: seegrid-basic:Distance
+    description: Measure of spatial separation along some 1-D manifold
+    is_a: seegrid-basic_Length
+    name: seegrid-basic_Distance
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Distance
+  seegrid-basic_Length:
+    class_uri: seegrid-basic:Length
+    description: Measure of 1-D extent
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Length
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Length
+  seegrid-basic_Mass:
+    class_uri: seegrid-basic:Mass
+    description: Measure of amount of substance
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Mass
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Mass
+  seegrid-basic_Measure:
+    class_uri: seegrid-basic:Measure
+    comments:
+    - 'title: Mesure'
+    description: Scaled number
+    name: seegrid-basic_Measure
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Measure
+  seegrid-basic_Number:
+    class_uri: seegrid-basic:Number
+    comments:
+    - 'description: The set of numbers'
+    description: 'Note: integer is a specialization of decimal'
+    name: seegrid-basic_Number
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Number
+  seegrid-basic_Scale:
+    class_uri: seegrid-basic:Scale
+    description: Factor by which a representation should be magnified to match the
+      geomstric size of the thing it represents.
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Scale
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Scale
+  seegrid-basic_Time:
+    class_uri: seegrid-basic:Time
+    description: Measure of temporal extent
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Time
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Time
+  seegrid-basic_UnitOfMeasure:
+    class_uri: seegrid-basic:UnitOfMeasure
+    description: Scale for a number describing size or extent
+    name: seegrid-basic_UnitOfMeasure
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Unit of measure
+  seegrid-basic_Vector:
+    class_uri: seegrid-basic:Vector
+    description: A vector is a sequence of a fixed length of Numbers. Normally, the
+      numbers represent some measures, and thus vectors are often used where records
+      of Numbers would be more appropriate. In geometry for example, direct positions
+      are given by undistinguished coordinate vectors, which can be interpreted through
+      the use of coordinate reference systems.
+    name: seegrid-basic_Vector
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Vector
+  seegrid-basic_Velocity:
+    class_uri: seegrid-basic:Velocity
+    description: Measure of rate of change of position
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Velocity
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Velocity
+  seegrid-basic_Volume:
+    class_uri: seegrid-basic:Volume
+    description: Measure of 3-D extent
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Volume
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Volume
+  seegrid-basic_Weight:
+    class_uri: seegrid-basic:Weight
+    description: Measure of force due to a mass in a specific gravitational field
+    is_a: seegrid-basic_Measure
+    name: seegrid-basic_Weight
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Weight
+  seegrid-ci_Address:
+    aliases:
+    - CI_Address
+    class_uri: seegrid-ci:Address
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Address
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Address
+  seegrid-ci_Citation:
+    aliases:
+    - CI_Citation
+    class_uri: seegrid-ci:Citation
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Citation
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Citation
+  seegrid-ci_Contact:
+    aliases:
+    - CI_Contact
+    class_uri: seegrid-ci:Contact
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Contact
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Contact
+  seegrid-ci_Date:
+    aliases:
+    - CI_Date
+    class_uri: seegrid-ci:Date
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Date
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Date
+  seegrid-ci_DateTypeCode:
+    aliases:
+    - CI_DateTypeCode
+    class_uri: seegrid-ci:DateTypeCode
+    is_a: skos_Concept
+    name: seegrid-ci_DateTypeCode
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Date type code
+  seegrid-ci_OnLineFunctionCode:
+    aliases:
+    - CI_OnLineFunctionCode
+    class_uri: seegrid-ci:OnLineFunctionCode
+    is_a: skos_Concept
+    name: seegrid-ci_OnLineFunctionCode
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: On line function code
+  seegrid-ci_OnlineResource:
+    aliases:
+    - CI_OnlineResource
+    class_uri: seegrid-ci:OnlineResource
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_OnlineResource
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Online resource
+  seegrid-ci_PresentationFormCode:
+    aliases:
+    - CI_PresentationFormCode
+    class_uri: seegrid-ci:PresentationFormCode
+    is_a: skos_Concept
+    name: seegrid-ci_PresentationFormCode
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Presentation form code
+  seegrid-ci_ResponsibleParty:
+    aliases:
+    - CI_ResponsibleParty
+    class_uri: seegrid-ci:ResponsibleParty
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_ResponsibleParty
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Responsible party
+  seegrid-ci_RoleCode:
+    aliases:
+    - CI_RoleCode
+    class_uri: seegrid-ci:RoleCode
+    is_a: skos_Concept
+    name: seegrid-ci_RoleCode
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Role code
+  seegrid-ci_Series:
+    aliases:
+    - CI_Series
+    class_uri: seegrid-ci:Series
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Series
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Series
+  seegrid-ci_Telephone:
+    aliases:
+    - CI_Telephone
+    class_uri: seegrid-ci:Telephone
+    is_a: http___def.seegrid.csiro.au_isotc211_iso19150_2012_hm2owl#DataType
+    name: seegrid-ci_Telephone
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Telephone
+comments:
+- 'description: An OWL representation of parts of the Geographic Metadata model described
+  in ISO 19115:2003 with Corrigendum 2006 - CI Package'
+- 'description: This version of the ontology uses # and /code/ patterns as agreed
+  in ISO 19150-2 meeting in Toulouse, June 2012.'
+- "description: An OWL representation of (some of) the basic types described in ISO\
+  \ 19103:2005, required as primitives in other ontologies based on ISO 19100 series\
+  \ standards. \u240A\u240AThis vocabulary is provisional, pending finalization of\
+  \ ISO 19150-2.\u240A\u240AThe URI stem http://def.seegrid.csiro.au/isotc211/ is\
+  \ temporary. The vocabulary is expected to be ultimately published in the domain\
+  \ http://def.isotc211.org/"
+- 'title: OWL representation of ISO 19103 (Basic types package)'
+- 'created_on: 2012-05-18'
+- 'created_on: 2012-07-01'
+- 'last_updated_on: 2012-05-25'
+- 'last_updated_on: 2012-10-26'
+created_on: '2011-01-01T00:00:00'
+default_prefix: okns
+description: An OWL representation of (some of) the basic types described in ISO 19103:2005,
+  required as primitives in other ontologies based on ISO 19100 series standards.
+id: okns:seegrid-iso19115
+imports:
+- okns:extended_types
+- okns:skos
+- okns:dc
+- okns:owl-rdf-rdfs
+- linkml:types
+last_updated_on: '2013-11-14T00:00:00'
+name: seegrid-iso19115
+prefixes:
+  dc: http://purl.org/dc/elements/1.1/
+  dcam: http://purl.org/dc/dcam/
+  dcmitype: http://purl.org/dc/dcmitype/
+  dct: http://purl.org/dc/terms/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  seegrid-basic: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#
+  seegrid-ci: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#
+  seegrid-role: http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/
+  skos: http://www.w3.org/2004/02/skos/core#
+  voaf: http://purl.org/vocommons/voaf#
+  xsd: http://www.w3.org/2001/XMLSchema#
+slots:
+  seegrid-basic_dimension:
+    description: Number of components in the vector
+    domain: seegrid-basic_Vector
+    name: seegrid-basic_dimension
+    notes:
+    - No occurrences of this slot in the graph.
+    range: positiveinteger
+    slot_uri: seegrid-basic:dimension
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: dimension
+  seegrid-basic_measure:
+    description: The value of this property is a scaled number
+    name: seegrid-basic_measure
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-basic_Measure
+    slot_uri: seegrid-basic:measure
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: measure
+  seegrid-basic_ordinates:
+    description: Numerical values of the vector components
+    domain: seegrid-basic_Vector
+    name: seegrid-basic_ordinates
+    notes:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: seegrid-basic:ordinates
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: ordinates
+  seegrid-basic_uom:
+    description: The value of this property designates the units of measure or scale
+      for the quantity
+    name: seegrid-basic_uom
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-basic_UnitOfMeasure
+    slot_uri: seegrid-basic:uom
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: unit of measure
+  seegrid-basic_value:
+    name: seegrid-basic_value
+    notes:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: seegrid-basic:value
+    subproperty_of: rdf_value
+  seegrid-ci_Date.date:
+    domain: seegrid-ci_Date
+    name: seegrid-ci_Date.date
+    notes:
+    - No occurrences of this slot in the graph.
+    range: date
+    slot_uri: seegrid-ci:Date.date
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: Date.date
+  seegrid-ci_ISBN:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_ISBN
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:ISBN
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: ISBN
+  seegrid-ci_ISSN:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_ISSN
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:ISSN
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: ISSN
+  seegrid-ci_address:
+    domain: seegrid-ci_Contact
+    name: seegrid-ci_address
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_Address
+    slot_uri: seegrid-ci:address
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: address
+  seegrid-ci_administrativeArea:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_administrativeArea
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:administrativeArea
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: administrative area
+  seegrid-ci_alternateTitle:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_alternateTitle
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:alternateTitle
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: alternate title
+  seegrid-ci_applicationProfile:
+    domain: seegrid-ci_OnlineResource
+    name: seegrid-ci_applicationProfile
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:applicationProfile
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: application profile
+  seegrid-ci_citedResponsibleParty:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_citedResponsibleParty
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_ResponsibleParty
+    slot_uri: seegrid-ci:citedResponsibleParty
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: cited responsible party
+  seegrid-ci_city:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_city
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:city
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: city
+  seegrid-ci_collectiveTitle:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_collectiveTitle
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:collectiveTitle
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: collective title
+  seegrid-ci_contactInfo:
+    domain: seegrid-ci_ResponsibleParty
+    name: seegrid-ci_contactInfo
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_Contact
+    slot_uri: seegrid-ci:contactInfo
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: contact info
+  seegrid-ci_contactInstructions:
+    domain: seegrid-ci_Contact
+    name: seegrid-ci_contactInstructions
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:contactInstructions
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: contact instructions
+  seegrid-ci_country:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_country
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:country
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: country
+  seegrid-ci_date:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_date
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_Date
+    slot_uri: seegrid-ci:date
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: date
+  seegrid-ci_dateType:
+    domain: seegrid-ci_Date
+    name: seegrid-ci_dateType
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_DateTypeCode
+    slot_uri: seegrid-ci:dateType
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: date type
+  seegrid-ci_deliveryPoint:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_deliveryPoint
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:deliveryPoint
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: delivery point
+  seegrid-ci_description:
+    domain: seegrid-ci_OnlineResource
+    name: seegrid-ci_description
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:description
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: description
+  seegrid-ci_edition:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_edition
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:edition
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: edition
+  seegrid-ci_editionDate:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_editionDate
+    notes:
+    - No occurrences of this slot in the graph.
+    range: date
+    slot_uri: seegrid-ci:editionDate
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: edition date
+  seegrid-ci_electronicMailAddress:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_electronicMailAddress
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:electronicMailAddress
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: electronic mail address
+  seegrid-ci_facsimile:
+    domain: seegrid-ci_Telephone
+    name: seegrid-ci_facsimile
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:facsimile
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: facsimile
+  seegrid-ci_function:
+    domain: seegrid-ci_OnlineResource
+    name: seegrid-ci_function
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_OnLineFunctionCode
+    slot_uri: seegrid-ci:function
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: function
+  seegrid-ci_hoursOfService:
+    domain: seegrid-ci_Contact
+    name: seegrid-ci_hoursOfService
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:hoursOfService
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: hours of service
+  seegrid-ci_identifier:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_identifier
+    notes:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: seegrid-ci:identifier
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: identifier
+  seegrid-ci_individualName:
+    domain: seegrid-ci_ResponsibleParty
+    name: seegrid-ci_individualName
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:individualName
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: individual name
+  seegrid-ci_issueIdentification:
+    domain: seegrid-ci_Series
+    name: seegrid-ci_issueIdentification
+    notes:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: seegrid-ci:issueIdentification
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: issue identification
+  seegrid-ci_linkage:
+    domain: seegrid-ci_OnlineResource
+    name: seegrid-ci_linkage
+    notes:
+    - No occurrences of this slot in the graph.
+    range: Any
+    slot_uri: seegrid-ci:linkage
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: linkage
+  seegrid-ci_name:
+    name: seegrid-ci_name
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:name
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: name
+  seegrid-ci_onlineResource:
+    domain: seegrid-ci_Contact
+    name: seegrid-ci_onlineResource
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_OnlineResource
+    slot_uri: seegrid-ci:onlineResource
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: online resource
+  seegrid-ci_organisationName:
+    domain: seegrid-ci_ResponsibleParty
+    name: seegrid-ci_organisationName
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:organisationName
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: organisation name
+  seegrid-ci_otherCitationDetails:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_otherCitationDetails
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:otherCitationDetails
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: other citation details
+  seegrid-ci_page:
+    domain: seegrid-ci_Series
+    name: seegrid-ci_page
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:page
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: page
+  seegrid-ci_phone:
+    domain: seegrid-ci_Contact
+    name: seegrid-ci_phone
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_Telephone
+    slot_uri: seegrid-ci:phone
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: phone
+  seegrid-ci_positionName:
+    domain: seegrid-ci_ResponsibleParty
+    name: seegrid-ci_positionName
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:positionName
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: position name
+  seegrid-ci_postalCode:
+    domain: seegrid-ci_Address
+    name: seegrid-ci_postalCode
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:postalCode
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: postal code
+  seegrid-ci_presentationForm:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_presentationForm
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_PresentationFormCode
+    slot_uri: seegrid-ci:presentationForm
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: presentation form
+  seegrid-ci_protocol:
+    domain: seegrid-ci_OnlineResource
+    name: seegrid-ci_protocol
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:protocol
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: protocol
+  seegrid-ci_role:
+    domain: seegrid-ci_ResponsibleParty
+    name: seegrid-ci_role
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_RoleCode
+    slot_uri: seegrid-ci:role
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: role
+  seegrid-ci_series:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_series
+    notes:
+    - No occurrences of this slot in the graph.
+    range: seegrid-ci_Series
+    slot_uri: seegrid-ci:series
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: series
+  seegrid-ci_title:
+    domain: seegrid-ci_Citation
+    name: seegrid-ci_title
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:title
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: title
+  seegrid-ci_voice:
+    domain: seegrid-ci_Telephone
+    name: seegrid-ci_voice
+    notes:
+    - No occurrences of this slot in the graph.
+    range: string
+    slot_uri: seegrid-ci:voice
+    source: http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation
+    title: voice
+types:
+  seegrid-basic_Boolean:
+    description: Truth value. Most valuable in the predicate calculus, where items
+      are either True or False, unless they are ill formed.
+    name: seegrid-basic_Boolean
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: boolean
+    typeof: string
+    uri: seegrid-basic:Boolean
+  seegrid-basic_CharacterString:
+    description: sequence of characters
+    name: seegrid-basic_CharacterString
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: characterString
+    typeof: string
+    uri: seegrid-basic:CharacterString
+  seegrid-basic_Date:
+    description: Temporal position expressed with precision of days
+    name: seegrid-basic_Date
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: date
+    typeof: string
+    uri: seegrid-basic:Date
+  seegrid-basic_DateTime:
+    description: Temporal position expressed as a time and date
+    name: seegrid-basic_DateTime
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: dateTime
+    typeof: string
+    uri: seegrid-basic:DateTime
+  seegrid-basic_Decimal:
+    description: "The usually finite representation of a decimal number. It differs\
+      \ from the common binary Real implementation in that it can represent 1/10 (one-tenth)\
+      \ without error, while binary real representation can only represent powers\
+      \ of 1/2 (one-half) exactly. Since many currencies are decimal, these representations\
+      \ are preferred in dealing with such moneys. This is also true for mile markers,\
+      \ which are often given in decimals.\u240A\u240ACan be thought of as an integer\
+      \ part followed by a fractional part given in multiples of powers of 1/10 (tenths)."
+    name: seegrid-basic_Decimal
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: decimal
+    typeof: string
+    uri: seegrid-basic:Decimal
+  seegrid-basic_ISOClassName:
+    name: seegrid-basic_ISOClassName
+    typeof: string
+    uri: seegrid-basic:ISOClassName
+  seegrid-basic_Integer:
+    description: An exact integer value, with no fractional part.
+    name: seegrid-basic_Integer
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: integer
+    typeof: string
+    uri: seegrid-basic:Integer
+  seegrid-basic_LocalName:
+    description: Name in some local context
+    name: seegrid-basic_LocalName
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: localName
+    typeof: string
+    uri: seegrid-basic:LocalName
+  seegrid-basic_Number:
+    comments:
+    - 'description: The set of numbers'
+    description: 'Note: integer is a specialization of decimal'
+    name: seegrid-basic_Number
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: Number
+    typeof: string
+    uri: seegrid-basic:Number
+  seegrid-basic_Real:
+    description: "The common binary Real finite implementation using base 2. Since\
+      \ such reals can approximate any measure where absolute accuracy is not possible,\
+      \ this form of numeric is most often used for measures. In cases were absolute\
+      \ accuracy is needed, such as currencies, then a decimal representation may\
+      \ be preferred (assuming the currency is decimal, such as the US dollar, British\
+      \ pound, etc.). Where there are no subunits possible, Integer numbers may be\
+      \ preferred.  \u240A\u240ACan be thought of as an integer part followed by a\
+      \ fractional part given in multiples of powers of 1/2 (halves)."
+    name: seegrid-basic_Real
+    source: http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic
+    title: realNumber
+    typeof: string
+    uri: seegrid-basic:Real

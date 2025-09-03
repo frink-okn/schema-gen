@@ -356,15 +356,15 @@ classes:
       \ e.g. people, places, bowling balls, as well as abstract areas like cubes."
     name: wgs_SpatialThing
     title: SpatialThing
-created_on: '2025-07-17T19:19:57.326770'
+created_on: '2025-09-03T11:21:37.167863'
 default_prefix: okns
 id: okns:wgs
 imports:
-- okns:dc
 - okns:owl-rdf-rdfs
-- okns:extended_types
 - linkml:types
-last_updated_on: '2025-07-17T19:19:57.326770'
+- okns:dc
+- okns:extended_types
+last_updated_on: '2025-09-03T11:21:37.167863'
 name: wgs
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -377,43 +377,41 @@ prefixes:
   wgs: http://www.w3.org/2003/01/geo/wgs84_pos#
 slots:
   foaf_based_near:
-    comments:
-    - No occurrences of this slot in the graph.
     name: foaf_based_near
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:based_near
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   wgs_alt:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The WGS84 altitude of a SpatialThing (decimal meters \u240Aabove\
       \ the local reference ellipsoid)."
     domain: wgs_SpatialThing
     name: wgs_alt
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wgs:alt
     title: altitude
   wgs_lat:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The WGS84 latitude of a SpatialThing (decimal degrees).
     domain: wgs_SpatialThing
     name: wgs_lat
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wgs:lat
     title: latitude
   wgs_lat_long:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A comma-separated representation of a latitude, longitude coordinate.
     name: wgs_lat_long
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wgs:lat_long
     title: lat/long
   wgs_location:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The relation between something and the point, \u240A or other geometrical\
       \ thing in space, where it is.  For example, the realtionship between\u240A\
       \ a radio tower and a Point with a given lat and long.\u240A Or a relationship\
@@ -423,17 +421,18 @@ slots:
       \ an accuracy appropriate for the size of the object and uses such as mapping\
       \ ."
     name: wgs_location
+    notes:
+    - No occurrences of this slot in the graph.
     range: wgs_SpatialThing
     slot_uri: wgs:location
     subproperty_of: foaf_based_near
     title: location
   wgs_long:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The WGS84 longitude of a SpatialThing (decimal degrees).
     domain: wgs_SpatialThing
     name: wgs_long
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wgs:long
     title: longitude
-title: No schema name specified

@@ -58,7 +58,9 @@ classes:
     title: Ordered Collection
 comments:
 - 'title: SKOS Vocabulary'
-created_on: '2025-07-17T19:19:28.137758'
+- 'created_by: Sean Bechhofer'
+- 'created_by: Alistair Miles'
+created_on: '2025-09-03T11:21:07.953823'
 default_prefix: okns
 description: An RDF vocabulary for describing the basic structure and content of concept
   schemes such as thesauri, classification schemes, subject heading lists, taxonomies,
@@ -66,9 +68,9 @@ description: An RDF vocabulary for describing the basic structure and content of
   in glossaries and terminologies.
 id: okns:skos
 imports:
-- okns:extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T19:19:28.137758'
+- okns:extended_types
+last_updated_on: '2025-09-03T11:21:07.953823'
 name: skos
 prefixes:
   okn: https://purl.org/okn/
@@ -82,24 +84,25 @@ see_also:
 slots:
   skos_altLabel:
     comments:
-    - 'description: The range of skos:altLabel is the class of RDF plain literals.'
     - 'description: skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise
       disjoint properties.'
-    - No occurrences of this slot in the graph.
+    - 'description: The range of skos:altLabel is the class of RDF plain literals.'
     description: An alternative lexical label for a resource.
     name: skos_altLabel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:altLabel
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: rdfs_label
     title: alternative label
   skos_broadMatch:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:broadMatch is used to state a hierarchical mapping link between
       two conceptual resources in different concept schemes.
     inverse: skos_narrowMatch
     name: skos_broadMatch
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:broadMatch
     source: http://www.w3.org/2004/02/skos/core
@@ -109,21 +112,19 @@ slots:
     comments:
     - 'description: Broader concepts are typically rendered as parents in a concept
       hierarchy (tree).'
-    - No occurrences of this slot in the graph.
     description: Relates a concept to a concept that is more general in meaning.
     inverse: skos_narrower
     name: skos_broader
     notes:
     - By convention, skos:broader is only used to assert an immediate (i.e. direct)
       hierarchical link between two conceptual resources.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:broader
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_broaderTransitive
     title: has broader
   skos_broaderTransitive:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:broaderTransitive is a transitive superproperty of skos:broader.
     inverse: skos_narrowerTransitive
     name: skos_broaderTransitive
@@ -132,50 +133,51 @@ slots:
       the properties can be used to draw inferences about the transitive closure of
       the hierarchical relation, which is useful e.g. when implementing a simple query
       expansion algorithm in a search application.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:broaderTransitive
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_semanticRelation
     title: has broader transitive
   skos_changeNote:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A note about a modification to a concept.
     name: skos_changeNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:changeNote
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_note
     title: change note
   skos_closeMatch:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:closeMatch is used to link two concepts that are sufficiently
       similar that they can be used interchangeably in some information retrieval
       applications. In order to avoid the possibility of "compound errors" when combining
       mappings across more than two concept schemes, skos:closeMatch is not declared
       to be a transitive property.
     name: skos_closeMatch
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:closeMatch
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_mappingRelation
     title: has close match
   skos_definition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A statement or formal explanation of the meaning of a concept.
     name: skos_definition
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:definition
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_note
     title: definition
   skos_editorialNote:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A note for an editor, translator or maintainer of the vocabulary.
     name: skos_editorialNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:editorialNote
     source: http://www.w3.org/2004/02/skos/core
@@ -185,36 +187,37 @@ slots:
     comments:
     - 'description: skos:exactMatch is disjoint with each of the properties skos:broadMatch
       and skos:relatedMatch.'
-    - No occurrences of this slot in the graph.
     description: skos:exactMatch is used to link two concepts, indicating a high degree
       of confidence that the concepts can be used interchangeably across a wide range
       of information retrieval applications. skos:exactMatch is a transitive property,
       and is a sub-property of skos:closeMatch.
     name: skos_exactMatch
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:exactMatch
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_closeMatch
     title: has exact match
   skos_example:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An example of the use of a concept.
     name: skos_example
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:example
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_note
     title: example
   skos_hasTopConcept:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates, by convention, a concept scheme to a concept which is topmost
       in the broader/narrower concept hierarchies for that scheme, providing an entry
       point to these hierarchies.
     domain: skos_ConceptScheme
     inverse: skos_topConceptOf
     name: skos_hasTopConcept
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: skos:hasTopConcept
     source: http://www.w3.org/2004/02/skos/core
@@ -224,34 +227,34 @@ slots:
     - 'description: The range of skos:hiddenLabel is the class of RDF plain literals.'
     - 'description: skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise
       disjoint properties.'
-    - No occurrences of this slot in the graph.
     description: A lexical label for a resource that should be hidden when generating
       visual displays of the resource, but should still be accessible to free text
       search operations.
     name: skos_hiddenLabel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:hiddenLabel
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: rdfs_label
     title: hidden label
   skos_historyNote:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A note about the past state/use/meaning of a concept.
     name: skos_historyNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:historyNote
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_note
     title: history note
   skos_inScheme:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a resource (for example a concept) to a concept scheme in
       which it is included.
     name: skos_inScheme
     notes:
     - A concept may be a member of more than one concept scheme.
+    - No occurrences of this slot in the graph.
     range: skos_ConceptScheme
     slot_uri: skos:inScheme
     source: http://www.w3.org/2004/02/skos/core
@@ -265,21 +268,22 @@ slots:
       links within a concept scheme from links between concept schemes. However, this
       pattern of usage is not a formal requirement of the SKOS data model, and relies
       on informal definitions of best practice.'
-    - No occurrences of this slot in the graph.
     description: Relates two concepts coming, by convention, from different schemes,
       and that have comparable meanings
     name: skos_mappingRelation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:mappingRelation
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_semanticRelation
     title: is in mapping relation with
   skos_member:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a collection to one of its members.
     domain: skos_Collection
     name: skos_member
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:member
     source: http://www.w3.org/2004/02/skos/core
@@ -288,21 +292,22 @@ slots:
     comments:
     - "description: For any resource, every item in the list given as the value of\
       \ the\n      skos:memberList property is also a value of the skos:member property."
-    - No occurrences of this slot in the graph.
     description: Relates an ordered collection to the RDF list containing its members.
     domain: skos_OrderedCollection
     name: skos_memberList
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: skos:memberList
     source: http://www.w3.org/2004/02/skos/core
     title: has member list
   skos_narrowMatch:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:narrowMatch is used to state a hierarchical mapping link between
       two conceptual resources in different concept schemes.
     inverse: skos_broadMatch
     name: skos_narrowMatch
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:narrowMatch
     source: http://www.w3.org/2004/02/skos/core
@@ -312,21 +317,19 @@ slots:
     comments:
     - 'description: Narrower concepts are typically rendered as children in a concept
       hierarchy (tree).'
-    - No occurrences of this slot in the graph.
     description: Relates a concept to a concept that is more specific in meaning.
     inverse: skos_broader
     name: skos_narrower
     notes:
     - By convention, skos:broader is only used to assert an immediate (i.e. direct)
       hierarchical link between two conceptual resources.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:narrower
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_narrowerTransitive
     title: has narrower
   skos_narrowerTransitive:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:narrowerTransitive is a transitive superproperty of skos:narrower.
     inverse: skos_broaderTransitive
     name: skos_narrowerTransitive
@@ -335,14 +338,13 @@ slots:
       the properties can be used to draw inferences about the transitive closure of
       the hierarchical relation, which is useful e.g. when implementing a simple query
       expansion algorithm in a search application.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:narrowerTransitive
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_semanticRelation
     title: has narrower transitive
   skos_notation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A notation, also known as classification code, is a string of characters
       such as "T58.5" or "303.4833" used to uniquely identify a concept within the
       scope of a given concept scheme.
@@ -350,18 +352,18 @@ slots:
     notes:
     - By convention, skos:notation is used with a typed literal in the object position
       of the triple.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:notation
     source: http://www.w3.org/2004/02/skos/core
     title: notation
   skos_note:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A general note, for any purpose.
     name: skos_note
     notes:
     - This property may be used directly, or as a super-property for more specific
       note types.
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:note
     source: http://www.w3.org/2004/02/skos/core
@@ -370,12 +372,13 @@ slots:
     comments:
     - 'description: A resource has no more than one value of skos:prefLabel per language
       tag, and no more than one value of skos:prefLabel without language tag.'
-    - 'description: The range of skos:prefLabel is the class of RDF plain literals.'
     - "description: skos:prefLabel, skos:altLabel and skos:hiddenLabel are pairwise\n\
       \      disjoint properties."
-    - No occurrences of this slot in the graph.
+    - 'description: The range of skos:prefLabel is the class of RDF plain literals.'
     description: The preferred lexical label for a resource, in a given language.
     name: skos_prefLabel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:prefLabel
     source: http://www.w3.org/2004/02/skos/core
@@ -384,60 +387,59 @@ slots:
   skos_related:
     comments:
     - 'description: skos:related is disjoint with skos:broaderTransitive'
-    - No occurrences of this slot in the graph.
     description: Relates a concept to a concept with which there is an associative
       semantic relationship.
     name: skos_related
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:related
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_semanticRelation
     title: has related
   skos_relatedMatch:
-    comments:
-    - No occurrences of this slot in the graph.
     description: skos:relatedMatch is used to state an associative mapping link between
       two conceptual resources in different concept schemes.
     name: skos_relatedMatch
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:relatedMatch
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_related
     title: has related match
   skos_scopeNote:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A note that helps to clarify the meaning and/or the use of a concept.
     name: skos_scopeNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: skos:scopeNote
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_note
     title: scope note
   skos_semanticRelation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links a concept to a concept related by meaning.
     domain: skos_Concept
     name: skos_semanticRelation
     notes:
     - This property should not be used directly, but as a super-property for all properties
       denoting a relationship of meaning between concepts.
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: skos:semanticRelation
     source: http://www.w3.org/2004/02/skos/core
     title: is in semantic relation with
   skos_topConceptOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a concept to the concept scheme that it is a top level concept
       of.
     domain: skos_Concept
     inverse: skos_hasTopConcept
     name: skos_topConceptOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_ConceptScheme
     slot_uri: skos:topConceptOf
     source: http://www.w3.org/2004/02/skos/core
     subproperty_of: skos_inScheme
     title: is top concept in scheme
-title: No schema name specified

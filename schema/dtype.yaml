@@ -5,9 +5,6 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 17
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 3
@@ -53,24 +50,6 @@ annotations:
                   string:
                     tag: string
                     value: 1
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 8
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value: 2
           owl:equivalentClass:
             tag: owl:equivalentClass
             value:
@@ -83,36 +62,6 @@ annotations:
                   rdfs:Datatype:
                     tag: rdfs:Datatype
                     value: 1
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value: 6
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value: 5
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 12
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -341,24 +290,9 @@ annotations:
           dct:title:
             tag: dct:title
             value: 1
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 8
-          owl:cardinality:
-            tag: owl:cardinality
-            value: 2
           owl:equivalentClass:
             tag: owl:equivalentClass
             value: 2
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 6
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 17
           owl:unionOf:
             tag: owl:unionOf
             value: 1
@@ -434,12 +368,9 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: N81b04b30c834457db6fcac315fc229f1
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: Nf7041ae783b647c097fb38e12d2fc9cd
+            value: dtype:numericUnion
           vaem:GraphMetaData:
             tag: vaem:GraphMetaData
             value: dtype:GMD_DTYPE
@@ -475,16 +406,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "\nA datatype that is the union of numeric xsd data\
-                          \ types.\n\"dtype:numericUnion\" is equivalent to the xsd\
-                          \ specification that uses an xsd:union of \nmemberTypes=\"\
-                          xsd:decimal xsd:double xsd:float xsd:integer\".\n"
+                        value: A datatype that is the union of date datatypes.
                       predicate:
                         tag: predicate
                         value: dct:description
                       subject:
                         tag: subject
-                        value: dtype:numericUnion
+                        value: dtype:dateUnion
           dct:modified:
             tag: dct:modified
             value:
@@ -521,42 +449,6 @@ annotations:
                       subject:
                         tag: subject
                         value: dtype:GMD_DTYPE
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: dtype:EnumeratedValue
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: N2b430d428fd349f29e5dca365d993b1a
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: Nbf64a63e49df4d10bc4dd92f65fa2d2d
           owl:equivalentClass:
             tag: owl:equivalentClass
             value:
@@ -568,7 +460,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: N0772a5a497b94eaea9c09544f7621072
+                        value: Na55d43ae2c594fccbce168b5ea26a8e3
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -580,79 +472,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Nf7041ae783b647c097fb38e12d2fc9cd
+                        value: N4fe5053960c84d17a6dbae500551c372
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
                       subject:
                         tag: subject
                         value: dtype:numericUnion
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: N52fa1deb04a1407a9442e8133f0cab9e
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:minCardinality
-                      subject:
-                        tag: subject
-                        value: N0e4250f722934782811acf480a71b91b
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value:
-                      object:
-                        tag: object
-                        value: dtype:code
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N52fa1deb04a1407a9442e8133f0cab9e
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: dtype:defaultObjectValue
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N2b430d428fd349f29e5dca365d993b1a
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -670,7 +496,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dtype:numericUnion
+                        value: dtype:dateUnion
               vaem:GraphMetaData:
                 tag: vaem:GraphMetaData
                 value:
@@ -697,13 +523,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: numeric union
+                        value: date union
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dtype:numericUnion
+                        value: dtype:dateUnion
               vaem:GraphMetaData:
                 tag: vaem:GraphMetaData
                 value:
@@ -736,7 +562,7 @@ annotations:
                         value: rdfs:subClassOf
                       subject:
                         tag: subject
-                        value: dtype:numericUnion
+                        value: dtype:dateUnion
           vaem:description:
             tag: vaem:description
             value:
@@ -1167,17 +993,16 @@ classes:
       the domain or range of a slot in this graph but has not itself been defined.
 comments:
 - 'title: Datatype Ontology'
-- 'title: Datatype Ontology'
-created_on: '2025-07-17T19:19:52.707341'
+created_on: '2025-09-03T11:21:29.874408'
 default_prefix: okns
 id: okns:dtype
 imports:
-- linkml:types
 - okns:vaem
-- okns:dc
-- okns:extended_types
 - okns:owl-rdf-rdfs
-last_updated_on: '2025-07-17T19:19:52.707341'
+- okns:extended_types
+- okns:dc
+- linkml:types
+last_updated_on: '2025-09-03T11:21:29.874408'
 name: dtype
 prefixes:
   dct: http://purl.org/dc/terms/
@@ -1196,66 +1021,67 @@ slots:
     - "description: A property for expressing a unique value for a member of an enumeration.\
       \ \nThe range has been set to \"xsd:anySimpleType\" to allow for any scalar\
       \ datatype."
-    - No occurrences of this slot in the graph.
     description: A unique value that is assigned to an enumeration member.
     name: dtype_code
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_anySimpleType
     slot_uri: dtype:code
     source: http://www.linkedmodel.org/schema/dtype
     title: code
   dtype_compositeOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property for constructing composite data structures
     name: dtype_compositeOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:compositeOf
     source: http://www.linkedmodel.org/schema/dtype
     title: composite of
   dtype_defaultObjectValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:defaultValue\" is a general property for specifying\
       \ an object value in situations where \u240Anone is specified."
     name: dtype_defaultObjectValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:defaultObjectValue
     source: http://www.linkedmodel.org/schema/dtype
     title: default object value
   dtype_defaultValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:defaultValue\" is a general property for specifying\
       \ a literal value in situations where \u240Anone is specified."
     name: dtype_defaultValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:defaultValue
     source: http://www.linkedmodel.org/schema/dtype
     title: default value
   dtype_derivedFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property for specifying a derivation relationship.
     name: dtype_derivedFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:derivedFrom
     source: http://www.linkedmodel.org/schema/dtype
     title: derived from
   dtype_hasMember:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property for specifying how member elements make up a data structure.
     name: dtype_hasMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:hasMember
     source: http://www.linkedmodel.org/schema/dtype
     title: has member
   dtype_isInvalid:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A boolean flag to state that a value is invalid with respect to its
       type.
     name: dtype_isInvalid
+    notes:
+    - No occurrences of this slot in the graph.
     range: boolean
     slot_uri: dtype:isInvalid
     source: http://www.linkedmodel.org/schema/dtype
@@ -1268,26 +1094,25 @@ slots:
       \ is not the same as label which is intended for human readable display. \n\
       For example, a code for January may be 1, the literal may be 'J' or 'jan' and\
       \ the label 'January'."
-    - No occurrences of this slot in the graph.
     description: ''
     name: dtype_literal
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: dtype:literal
     source: http://www.linkedmodel.org/schema/dtype
     title: literal
   dtype_objectValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:objectValue\" is a general property for specifying\
       \ an object value in situations where \u240Anone is specified."
     name: dtype_objectValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:objectValue
     source: http://www.linkedmodel.org/schema/dtype
     title: object value
   dtype_order:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:order\" provides a means to specify a precedence.\
       \ \u240AOne use of order is in specifying ordered enumerations such as \"voag:ConfidentialityLevel\"\
       .\u240AA similar property, but with an important type difference, is \"vaem:orderIndex\"\
@@ -1303,6 +1128,8 @@ slots:
       \ than \"medium\" would use the ordinal values and return \u240Athose resources\
       \ that have \u201Cmedium\u201D, \u201Chigh\u201D and \u201Cvery high\u201D ordinality."
     name: dtype_order
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     see_also:
     - http://www.linkedmodel.org/schema/dtype#orderIndex
@@ -1310,8 +1137,6 @@ slots:
     source: http://www.linkedmodel.org/schema/dtype
     title: order
   dtype_orderIndex:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:orderIndex\" is an annotation property to specify\
       \ a position that some value or \u240Astructure will have. \u240AOne use is\
       \ to specify the place that a resource has in a sequence.\u240AAnother use is\
@@ -1320,39 +1145,40 @@ slots:
       \ a representation where ordering has \u240Asome importance, for example, in\
       \ XML Schema sequences."
     name: dtype_orderIndex
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: dtype:orderIndex
     source: http://www.linkedmodel.org/schema/dtype
     title: order index
   dtype_refersTo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An indirection pointer for relating a slot in am occurrence data
       structure, such as "dtype:ValueReference" with another resource.
     name: dtype_refersTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:refersTo
     source: http://www.linkedmodel.org/schema/dtype
     title: refers to
   dtype_type:
-    comments:
-    - No occurrences of this slot in the graph.
     name: dtype_type
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dtype:type
     source: http://www.linkedmodel.org/schema/dtype
     title: datatype
   dtype_value:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The property \"dtype:value\" is a general property for specifying\
       \ a literal value in situations where \u240Anone is specified."
     name: dtype_value
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_anySimpleType
     slot_uri: dtype:value
     source: http://www.linkedmodel.org/schema/dtype
     title: value
-title: No schema name specified
 types:
   dtype_dateUnion:
     description: A datatype that is the union of date datatypes.

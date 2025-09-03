@@ -32,13 +32,13 @@ comments:
   on the status of a vocabulary term; however the status published alongside the term
   may deserve special attention. Future work could include patterns for citing announcements
   and decisions, or using SKOS to decentralise the extension of the basic status levels.'
-created_on: '2025-07-17T19:19:55.015612'
+created_on: '2025-09-03T11:21:33.444359'
 default_prefix: okns
 description: An RDF vocabulary for relating SW vocabulary terms to their status.
 id: okns:swvs
 imports:
 - okns:extended_types
-last_updated_on: '2025-07-17T19:19:55.015612'
+last_updated_on: '2025-09-03T11:21:33.444359'
 name: swvs
 prefixes:
   okn: https://purl.org/okn/
@@ -48,32 +48,31 @@ prefixes:
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
 slots:
   swvs_moreinfo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: more information about the status etc of a term, typically human
       oriented
     name: swvs_moreinfo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: swvs:moreinfo
     source: http://www.w3.org/2003/06/sw-vocab-status/ns#
     title: more info
   swvs_term_status:
-    comments:
-    - No occurrences of this slot in the graph.
     description: the status of a vocabulary term, expressed as a short symbolic string;
       known values include 'unstable','testing', 'stable' and 'archaic'
     name: swvs_term_status
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: swvs:term_status
     source: http://www.w3.org/2003/06/sw-vocab-status/ns#
     title: term status
   swvs_userdocs:
-    comments:
-    - No occurrences of this slot in the graph.
     description: human-oriented documentation, examples etc for use of this term
     name: swvs_userdocs
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: swvs:userdocs
     source: http://www.w3.org/2003/06/sw-vocab-status/ns#
     title: user docs
-title: No schema name specified

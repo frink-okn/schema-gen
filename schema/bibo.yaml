@@ -14,9 +14,6 @@ annotations:
           foaf:Person:
             tag: foaf:Person
             value: 2
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 23
           owl:Thing:
             tag: owl:Thing
             value: 14
@@ -38,42 +35,6 @@ annotations:
                   string:
                     tag: string
                     value: 2
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 13
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value: 1
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value: 9
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 23
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -173,18 +134,6 @@ annotations:
           foaf:name:
             tag: foaf:name
             value: 2
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 13
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 1
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value: 9
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 23
           rdfs:comment:
             tag: rdfs:comment
             value: 12
@@ -208,19 +157,16 @@ annotations:
         value:
           bibo:DocumentStatus:
             tag: bibo:DocumentStatus
-            value: bibo:status/accepted
+            value: bibo:status/forthcoming
           bibo:ThesisDegree:
             tag: bibo:ThesisDegree
             value: bibo:degrees/phd
           foaf:Person:
             tag: foaf:Person
-            value: bibo:fgiasson
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n86910293d572460595196b2fb17ab9b0b97
+            value: bibo:bdarcus
           owl:Thing:
             tag: owl:Thing
-            value: bibo:status/accepted
+            value: bibo:status/forthcoming
       pairs:
         tag: pairs
         value:
@@ -235,13 +181,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Bruce D'Arcus
+                        value: Frederick Giasson
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
+                        value: bibo:fgiasson
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -250,85 +196,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Bruce D'Arcus
+                        value: Frederick Giasson
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: bibo:Issue
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n86910293d572460595196b2fb17ab9b0b92
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: n86910293d572460595196b2fb17ab9b0b89
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:minCardinality
-                      subject:
-                        tag: subject
-                        value: n86910293d572460595196b2fb17ab9b0b104
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: dct:hasPart
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n86910293d572460595196b2fb17ab9b0b104
+                        value: bibo:fgiasson
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -340,13 +214,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Rejected for publication after peer reviewing.
+                        value: Document drafted
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:status/draft
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -370,13 +244,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Rejected for publication after peer reviewing.
+                        value: masters degree in arts
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:degrees/ma
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -394,7 +268,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
+                        value: bibo:fgiasson
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -409,7 +283,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
+                        value: bibo:fgiasson
           rdfs:label:
             tag: rdfs:label
             value:
@@ -421,13 +295,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rejected
+                        value: draft
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:status/draft
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -451,13 +325,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rejected
+                        value: M.A.
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:degrees/ma
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -469,13 +343,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://purl.org/net/darcusb/info#me
+                        value: http://fgiasson.com/me/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
+                        value: bibo:fgiasson
               owl:Thing:
                 tag: owl:Thing
                 value:
@@ -484,13 +358,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://purl.org/net/darcusb/info#me
+                        value: http://fgiasson.com/me/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: bibo:bdarcus
+                        value: bibo:fgiasson
           swvs:term_status:
             tag: swvs:term_status
             value:
@@ -508,7 +382,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:status/draft
               bibo:ThesisDegree:
                 tag: bibo:ThesisDegree
                 value:
@@ -538,7 +412,7 @@ annotations:
                         value: swvs:term_status
                       subject:
                         tag: subject
-                        value: bibo:status/rejected
+                        value: bibo:degrees/ma
 classes:
   bibo_AcademicArticle:
     class_uri: bibo:AcademicArticle
@@ -660,9 +534,9 @@ classes:
     description: The status of the publication of a document.
     name: bibo_DocumentStatus
     slots:
-    - rdfs_comment
     - swvs_term_status
     - rdfs_label
+    - rdfs_comment
     source: http://purl.org/ontology/bibo/
     title: Document Status
   bibo_EditedBook:
@@ -944,9 +818,9 @@ classes:
     description: The academic degree of a Thesis
     name: bibo_ThesisDegree
     slots:
-    - rdfs_comment
     - swvs_term_status
     - rdfs_label
+    - rdfs_comment
     source: http://purl.org/ontology/bibo/
     title: Thesis degree
   bibo_Webpage:
@@ -979,7 +853,7 @@ comments:
 - 'title: The Bibliographic Ontology'
 - 'created_by: http://purl.org/ontology/bibo/fgiasson'
 created_by: http://purl.org/ontology/bibo/bdarcus
-created_on: '2025-07-17T19:20:25.808318'
+created_on: '2025-09-03T11:22:15.747037'
 default_prefix: okns
 description: "The Bibliographic Ontology describe\u240Abibliographic things on the\
   \ semantic Web in RDF.  This ontology can be\u240Aused as a citation ontology, as\
@@ -990,14 +864,14 @@ description: "The Bibliographic Ontology describe\u240Abibliographic things on t
 id: okns:bibo
 imports:
 - okns:wot
-- linkml:types
-- okns:dc
 - okns:owl-rdf-rdfs
-- okns:extended_types
 - okns:foaf
+- okns:extended_types
+- okns:dc
+- linkml:types
 - okns:swvs
 - okns:event
-last_updated_on: '2025-07-17T19:20:25.808318'
+last_updated_on: '2025-09-03T11:22:15.747037'
 name: bibo
 prefixes:
   address: http://schemas.talis.com/2005/address/schema#
@@ -1017,112 +891,110 @@ prefixes:
   swvs: http://www.w3.org/2003/06/sw-vocab-status/ns#
 slots:
   bibo_abstract:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A summary of the resource.
     domain: rdfs_Resource
     name: bibo_abstract
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:abstract
     source: http://purl.org/dc/terms/
     title: abstract
   bibo_affirmedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A legal decision that affirms a ruling.
     domain: bibo_LegalDecision
     name: bibo_affirmedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_LegalDecision
     slot_uri: bibo:affirmedBy
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_subsequentLegalDecision
   bibo_annotates:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Critical or explanatory note for a Document.
     domain: bibo_Note
     name: bibo_annotates
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: bibo:annotates
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_relation
     title: annotates
   bibo_argued:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The date on which a legal case is argued before a court. Date is
       of format xsd:date
     domain: bibo_LegalDocument
     name: bibo_argued
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:argued
     source: http://purl.org/ontology/bibo/
     title: date argued
   bibo_asin:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_asin
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:asin
     subproperty_of: bibo_identifier
   bibo_authorList:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An ordered list of authors. Normally, this list is seen as a priority
       list that order authors by importance.
     domain: bibo_Document
     name: bibo_authorList
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: bibo:authorList
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_contributorList
     title: list of authors
   bibo_chapter:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An chapter number
     domain: bibo_BookSection
     name: bibo_chapter
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:chapter
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: chapter
   bibo_citedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "Relates a document to another document that cites the\u240Afirst\
       \ document."
     domain: bibo_Document
     inverse: bibo_cites
     name: bibo_citedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Document
     slot_uri: bibo:citedBy
     source: http://purl.org/ontology/bibo/
     title: cited by
   bibo_cites:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "Relates a document to another document that is cited\u240Aby the\
       \ first document as reference, comment, review, quotation or for\u240Aanother\
       \ purpose."
     domain: bibo_Document
     name: bibo_cites
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Document
     slot_uri: bibo:cites
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_references
     title: cites
   bibo_coden:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_coden
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:coden
     subproperty_of: bibo_identifier
   bibo_content:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property is for a plain-text rendering of the content of a Document.
       While the plain-text content of an entire document could be described by this
       property.
@@ -1131,35 +1003,34 @@ slots:
     notes:
     - 'bibo:content has been deprecated; we recommend to use ''rdf:value'' for this
       purpose. Here is the rational behind this choice: http://www.w3.org/TR/2004/REC-rdf-primer-20040210/#rdfvalue'
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:content
     source: http://purl.org/ontology/bibo/
     title: content
   bibo_contributorList:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An ordered list of contributors. Normally, this list is seen as a
       priority list that order contributors by importance.
     domain: bibo_Document
     name: bibo_contributorList
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: bibo:contributorList
     source: http://purl.org/ontology/bibo/
     title: list of contributors
   bibo_court:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A court associated with a legal document; for example, that which
       issues a decision.
     domain: bibo_LegalDocument
     name: bibo_court
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Organization
     slot_uri: bibo:court
     source: http://purl.org/ontology/bibo/
     title: court
   bibo_degree:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The thesis degree.
     domain: bibo_Thesis
     name: bibo_degree
@@ -1168,431 +1039,430 @@ slots:
       defined list of bibo:ThesisDegree. We won't do it because we want people to
       be able to define new degress if needed by some special usecases. Creating such
       an enumeration would restrict this to happen.
+    - No occurrences of this slot in the graph.
     range: bibo_ThesisDegree
     slot_uri: bibo:degree
     source: http://purl.org/ontology/bibo/
     title: status
   bibo_director:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A Film director.
     domain: bibo_AudioVisualDocument
     name: bibo_director
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:director
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: director
   bibo_distributor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Distributor of a document or a collection of documents.
     name: bibo_distributor
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:distributor
     source: http://purl.org/ontology/bibo/
     title: distributor
   bibo_doi:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_doi
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:doi
     subproperty_of: bibo_identifier
   bibo_eanucc13:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_eanucc13
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:eanucc13
     subproperty_of: bibo_identifier
   bibo_edition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The name defining a special edition of a document. Normally its a
       literal value composed of a version number and words.
     domain: bibo_Document
     name: bibo_edition
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:edition
     source: http://purl.org/ontology/bibo/
     title: edition
   bibo_editor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A person having managerial and sometimes policy-making responsibility
       for the editorial part of a publishing firm or of a newspaper, magazine, or
       other publication.
     name: bibo_editor
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:editor
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: editor
   bibo_editorList:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An ordered list of editors. Normally, this list is seen as a priority
       list that order editors by importance.
     domain: bibo_Document
     name: bibo_editorList
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: bibo:editorList
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_contributorList
     title: list of editors
   bibo_eissn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_eissn
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:eissn
     subproperty_of: bibo_identifier
   bibo_gtin14:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_gtin14
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:gtin14
     subproperty_of: bibo_identifier
   bibo_handle:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_handle
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:handle
     subproperty_of: bibo_identifier
   bibo_identifier:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_identifier
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:identifier
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   bibo_interviewee:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An agent that is interviewed by another agent.
     domain: foaf_Agent
     name: bibo_interviewee
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:interviewee
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: interviewee
   bibo_interviewer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An agent that interview another agent.
     domain: foaf_Agent
     name: bibo_interviewer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:interviewer
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: interviewer
   bibo_isbn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_isbn
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: bibo:isbn
     subproperty_of: bibo_identifier
   bibo_isbn10:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_isbn10
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:isbn10
     subproperty_of: bibo_isbn
   bibo_isbn13:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_isbn13
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:isbn13
     subproperty_of: bibo_isbn
   bibo_issn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_issn
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:issn
     subproperty_of: bibo_identifier
   bibo_issue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An issue number
     domain: bibo_Issue
     name: bibo_issue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:issue
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: issue
   bibo_issuer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity responsible for issuing often informally published documents
       such as press releases, reports, etc.
     name: bibo_issuer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:issuer
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_publisher
     title: issuer
   bibo_lccn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_lccn
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:lccn
     subproperty_of: bibo_identifier
   bibo_locator:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A description (often numeric) that locates an item within a containing
       document or collection.
     domain: bibo_Document
     name: bibo_locator
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:locator
     source: http://purl.org/ontology/bibo/
     title: locator
   bibo_numPages:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The number of pages contained in a document
     domain: bibo_Document
     name: bibo_numPages
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:numPages
     source: http://purl.org/ontology/bibo/
     title: number of pages
   bibo_numVolumes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The number of volumes contained in a collection of documents (usually
       a series, periodical, etc.).
     domain: bibo_Collection
     name: bibo_numVolumes
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:numVolumes
     source: http://purl.org/ontology/bibo/
     title: number of volumes
   bibo_number:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A generic item or document number. Not to be confused with issue
       number.
     domain: bibo_Document
     name: bibo_number
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:number
     source: http://purl.org/ontology/bibo/
     title: number
   bibo_oclcnum:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_oclcnum
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:oclcnum
     subproperty_of: bibo_identifier
   bibo_organizer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The organizer of an event; includes conference organizers, but also
       government agencies or other bodies that are responsible for conducting hearings.
     domain: event_Event
     name: bibo_organizer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:organizer
     source: http://purl.org/ontology/bibo/
     title: organizer
   bibo_owner:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Owner of a document or a collection of documents.
     name: bibo_owner
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:owner
     source: http://purl.org/ontology/bibo/
     title: owner
   bibo_pageEnd:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Ending page number within a continuous page range.
     domain: bibo_Document
     name: bibo_pageEnd
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:pageEnd
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: page end
   bibo_pageStart:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Starting page number within a continuous page range.
     domain: bibo_Document
     name: bibo_pageStart
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:pageStart
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: page start
   bibo_pages:
-    comments:
-    - No occurrences of this slot in the graph.
     description: 'A string of non-contiguous page spans that locate a Document within
       a Collection. Example: 23-25, 34, 54-56. For continuous page ranges, use the
       pageStart and pageEnd properties.'
     domain: bibo_Document
     name: bibo_pages
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:pages
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: pages
   bibo_performer:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: bibo_Performance
     name: bibo_performer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:performer
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: performer
   bibo_pmid:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_pmid
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:pmid
     subproperty_of: bibo_identifier
   bibo_prefixName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The prefix of a name
     domain: foaf_Agent
     name: bibo_prefixName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:prefixName
     source: http://purl.org/ontology/bibo/
     title: prefix name
   bibo_presentedAt:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a document to an event; for example, a paper to a conference.
     domain: bibo_Document
     name: bibo_presentedAt
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Event
     slot_uri: bibo:presentedAt
     source: http://purl.org/ontology/bibo/
     subproperty_of: event_produced_in
     title: presented at
   bibo_presents:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates an event to associated documents; for example, conference
       to a paper.
     domain: bibo_Event
     inverse: bibo_presentedAt
     name: bibo_presents
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Document
     slot_uri: bibo:presents
     source: http://purl.org/ontology/bibo/
     subproperty_of: event_product
     title: presented at
   bibo_producer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Producer of a document or a collection of documents.
     name: bibo_producer
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:producer
     source: http://purl.org/ontology/bibo/
     title: producer
   bibo_recipient:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An agent that receives a communication document.
     domain: bibo_PersonalCommunicationDocument
     name: bibo_recipient
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:recipient
     source: http://purl.org/ontology/bibo/
     title: recipient
   bibo_reproducedIn:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The resource in which another resource is reproduced.
     domain: bibo_Document
     name: bibo_reproducedIn
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Document
     slot_uri: bibo:reproducedIn
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_isPartOf
   bibo_reversedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A legal decision that reverses a ruling.
     domain: bibo_LegalDecision
     name: bibo_reversedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_LegalDecision
     slot_uri: bibo:reversedBy
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_subsequentLegalDecision
   bibo_reviewOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a review document to a reviewed thing (resource, item, etc.).
     domain: bibo_Document
     name: bibo_reviewOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: bibo:reviewOf
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_relation
     title: review of
   bibo_section:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A section number
     domain: bibo_Document
     name: bibo_section
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:section
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: section
   bibo_shortDescription:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: bibo_Document
     name: bibo_shortDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:shortDescription
   bibo_shortTitle:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The abbreviation of a title.
     domain: bibo_Document
     name: bibo_shortTitle
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:shortTitle
     source: http://purl.org/ontology/bibo/
     title: short title
   bibo_sici:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_sici
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:sici
     subproperty_of: bibo_identifier
   bibo_status:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The publication status of (typically academic) content.
     domain: bibo_Document
     name: bibo_status
@@ -1601,17 +1471,18 @@ slots:
       defined list of bibo:DocumentStatus. We won't do it because we want people to
       be able to define new status if needed by some special usecases. Creating such
       an enumeration would restrict this to happen.
+    - No occurrences of this slot in the graph.
     range: bibo_DocumentStatus
     slot_uri: bibo:status
     source: http://purl.org/ontology/bibo/
     title: status
   bibo_subsequentLegalDecision:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A legal decision on appeal that takes action on a case (affirming
       it, reversing it, etc.).
     domain: bibo_LegalDecision
     name: bibo_subsequentLegalDecision
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_LegalDecision
     slot_uri: bibo:subsequentLegalDecision
     source: http://purl.org/ontology/bibo/
@@ -1619,151 +1490,150 @@ slots:
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   bibo_suffixName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The suffix of a name
     domain: foaf_Agent
     name: bibo_suffixName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:suffixName
     source: http://purl.org/ontology/bibo/
     title: suffix name
   bibo_transcriptOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a document to some transcribed original.
     domain: bibo_Document
     name: bibo_transcriptOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: bibo:transcriptOf
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_relation
     title: transcript of
   bibo_translationOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a translated document to the original document.
     domain: bibo_Document
     name: bibo_translationOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: bibo_Document
     slot_uri: bibo:translationOf
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_isVersionOf
     title: translation of
   bibo_translator:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A person who translates written document from one language to another.
     name: bibo_translator
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: bibo:translator
     source: http://purl.org/ontology/bibo/
     subproperty_of: dct_contributor
     title: translator
   bibo_upc:
-    comments:
-    - No occurrences of this slot in the graph.
     name: bibo_upc
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:upc
     subproperty_of: bibo_identifier
   bibo_uri:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Universal Resource Identifier of a document
     name: bibo_uri
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:uri
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_identifier
     title: uri
   bibo_volume:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A volume number
     domain: bibo_Document
     name: bibo_volume
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: bibo:volume
     source: http://purl.org/ontology/bibo/
     subproperty_of: bibo_locator
     title: volume
   owl2-xml_deprecated:
-    comments:
-    - No occurrences of this slot in the graph.
     name: owl2-xml_deprecated
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: owl2-xml:deprecated
   prism_doi:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/doi
     name: prism_doi
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:doi
   prism_eIssn:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/eissn
     name: prism_eIssn
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:eIssn
   prism_edition:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/edition
     name: prism_edition
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:edition
   prism_endingPage:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/pageEnd
     name: prism_endingPage
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:endingPage
   prism_isbn:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/isbn
     name: prism_isbn
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:isbn
   prism_issn:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/issn
     name: prism_issn
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:issn
   prism_number:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/locator
     name: prism_number
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:number
   prism_volume:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/volume
     name: prism_volume
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:volume
   prism_volumestartingPage:
-    comments:
-    - No occurrences of this slot in the graph.
     exact_mappings:
     - http://purl.org/ontology/bibo/pageStart
     name: prism_volumestartingPage
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prism:volumestartingPage
-title: No schema name specified

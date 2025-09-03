@@ -97,18 +97,18 @@ classes:
     title: Project
 comments:
 - 'title: Friend of a Friend (FOAF) vocabulary'
-created_on: '2025-07-17T19:20:08.379790'
+created_on: '2025-09-03T11:21:52.163667'
 default_prefix: okns
 description: The Friend of a Friend (FOAF) RDF vocabulary, described using W3C RDF
   Schema and the Web Ontology Language.
 id: okns:foaf
 imports:
-- okns:wgs
-- okns:wot
-- okns:owl-rdf-rdfs
 - okns:extended_types
 - okns:skos
-last_updated_on: '2025-07-17T19:20:08.379790'
+- okns:wgs
+- okns:owl-rdf-rdfs
+- okns:wot
+last_updated_on: '2025-09-03T11:21:52.163667'
 name: foaf
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -126,649 +126,648 @@ prefixes:
   wot: http://xmlns.com/wot/0.1/
 slots:
   foaf_account:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates an account held by this agent.
     domain: foaf_Agent
     name: foaf_account
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_OnlineAccount
     slot_uri: foaf:account
     source: http://xmlns.com/foaf/0.1/
     title: account
   foaf_accountName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates the name (identifier) associated with this online account.
     domain: foaf_OnlineAccount
     name: foaf_accountName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:accountName
     source: http://xmlns.com/foaf/0.1/
     title: account name
   foaf_accountServiceHomepage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates a homepage of the service provide for this online account.
     domain: foaf_OnlineAccount
     name: foaf_accountServiceHomepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:accountServiceHomepage
     source: http://xmlns.com/foaf/0.1/
     title: account service homepage
   foaf_age:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The age in years of some agent.
     domain: foaf_Agent
     name: foaf_age
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:age
     source: http://xmlns.com/foaf/0.1/
     title: age
   foaf_aimChatID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An AIM chat ID
     domain: foaf_Agent
     name: foaf_aimChatID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:aimChatID
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_nick
     title: AIM chat ID
   foaf_birthday:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The birthday of this Agent, represented in mm-dd string form, eg.
       '12-31'.
     domain: foaf_Agent
     name: foaf_birthday
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:birthday
     source: http://xmlns.com/foaf/0.1/
     title: birthday
   foaf_currentProject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A current project this person works on.
     domain: foaf_Person
     name: foaf_currentProject
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:currentProject
     source: http://xmlns.com/foaf/0.1/
     title: current project
   foaf_depiction:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A depiction of some thing.
     domain: owl_Thing
     inverse: foaf_depicts
     name: foaf_depiction
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Image
     slot_uri: foaf:depiction
     source: http://xmlns.com/foaf/0.1/
     title: depiction
   foaf_depicts:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A thing depicted in this representation.
     domain: foaf_Image
     inverse: foaf_depiction
     name: foaf_depicts
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:depicts
     source: http://xmlns.com/foaf/0.1/
     title: depicts
   foaf_dnaChecksum:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A checksum for the DNA of some thing. Joke.
     name: foaf_dnaChecksum
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:dnaChecksum
     source: http://xmlns.com/foaf/0.1/
     title: DNA checksum
   foaf_familyName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The family name of some person.
     domain: foaf_Person
     name: foaf_familyName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:familyName
     source: http://xmlns.com/foaf/0.1/
     title: familyName
   foaf_family_name:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The family name of some person.
     domain: foaf_Person
     name: foaf_family_name
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:family_name
     source: http://xmlns.com/foaf/0.1/
     title: family_name
   foaf_firstName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The first name of a person.
     domain: foaf_Person
     name: foaf_firstName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:firstName
     source: http://xmlns.com/foaf/0.1/
     title: firstName
   foaf_focus:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The underlying or 'focal' entity associated with some SKOS-described
       concept.
     domain: skos_Concept
     name: foaf_focus
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:focus
     source: http://xmlns.com/foaf/0.1/
     title: focus
   foaf_fundedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An organization funding a project or person.
     domain: owl_Thing
     name: foaf_fundedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:fundedBy
     source: http://xmlns.com/foaf/0.1/
     title: funded by
   foaf_geekcode:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A textual geekcode for this person, see http://www.geekcode.com/geek.html
     domain: foaf_Person
     name: foaf_geekcode
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:geekcode
     source: http://xmlns.com/foaf/0.1/
     title: geekcode
   foaf_gender:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The gender of this Agent (typically but not necessarily 'male' or
       'female').
     domain: foaf_Agent
     name: foaf_gender
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:gender
     source: http://xmlns.com/foaf/0.1/
     title: gender
   foaf_givenName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The given name of some person.
     name: foaf_givenName
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:givenName
     source: http://xmlns.com/foaf/0.1/
     title: Given name
   foaf_givenname:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The given name of some person.
     name: foaf_givenname
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:givenname
     source: http://xmlns.com/foaf/0.1/
     title: Given name
   foaf_holdsAccount:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates an account held by this agent.
     domain: foaf_Agent
     name: foaf_holdsAccount
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_OnlineAccount
     slot_uri: foaf:holdsAccount
     source: http://xmlns.com/foaf/0.1/
     title: account
   foaf_homepage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A homepage for some thing.
     domain: owl_Thing
     name: foaf_homepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:homepage
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_isPrimaryTopicOf
     title: homepage
   foaf_icqChatID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An ICQ chat ID
     domain: foaf_Agent
     name: foaf_icqChatID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:icqChatID
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_nick
     title: ICQ chat ID
   foaf_img:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An image that can be used to represent some thing (ie. those depictions
       which are particularly representative of something, eg. one's photo on a homepage).
     domain: foaf_Person
     name: foaf_img
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Image
     slot_uri: foaf:img
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_depiction
     title: image
   foaf_interest:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A page about a topic of interest to this person.
     domain: foaf_Agent
     name: foaf_interest
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:interest
     source: http://xmlns.com/foaf/0.1/
     title: interest
   foaf_isPrimaryTopicOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A document that this thing is the primary topic of.
     domain: owl_Thing
     inverse: foaf_primaryTopic
     name: foaf_isPrimaryTopicOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:isPrimaryTopicOf
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_page
     title: is primary topic of
   foaf_jabberID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A jabber ID for something.
     domain: foaf_Agent
     name: foaf_jabberID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:jabberID
     source: http://xmlns.com/foaf/0.1/
     title: jabber ID
   foaf_knows:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A person known by this person (indicating some level of reciprocated
       interaction between the parties).
     domain: foaf_Person
     name: foaf_knows
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Person
     slot_uri: foaf:knows
     source: http://xmlns.com/foaf/0.1/
     title: knows
   foaf_lastName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The last name of a person.
     domain: foaf_Person
     name: foaf_lastName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:lastName
     source: http://xmlns.com/foaf/0.1/
     title: lastName
   foaf_logo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A logo representing some thing.
     domain: owl_Thing
     name: foaf_logo
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:logo
     source: http://xmlns.com/foaf/0.1/
     title: logo
   foaf_made:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Something that was made by this agent.
     domain: foaf_Agent
     inverse: foaf_maker
     name: foaf_made
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:made
     source: http://xmlns.com/foaf/0.1/
     title: made
   foaf_maker:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An agent that  made this thing.
     domain: owl_Thing
     exact_mappings:
     - http://purl.org/dc/terms/creator
     inverse: foaf_made
     name: foaf_maker
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: foaf:maker
     source: http://xmlns.com/foaf/0.1/
     title: maker
   foaf_mbox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A  personal mailbox, ie. an Internet mailbox associated with exactly
       one owner, the first owner of this mailbox. This is a 'static inverse functional
       property', in that  there is (across time and change) at most one individual
       that ever has any particular value for foaf:mbox.
     domain: foaf_Agent
     name: foaf_mbox
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:mbox
     source: http://xmlns.com/foaf/0.1/
     title: personal mailbox
   foaf_mbox_sha1sum:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The sha1sum of the URI of an Internet mailbox associated with exactly
       one owner, the  first owner of the mailbox.
     domain: foaf_Agent
     name: foaf_mbox_sha1sum
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:mbox_sha1sum
     source: http://xmlns.com/foaf/0.1/
     title: sha1sum of a personal mailbox URI name
   foaf_member:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates a member of a Group
     domain: foaf_Group
     name: foaf_member
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: foaf:member
     source: http://xmlns.com/foaf/0.1/
     title: member
   foaf_membershipClass:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates the class of individuals that are a member of a Group
     name: foaf_membershipClass
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:membershipClass
     source: http://xmlns.com/foaf/0.1/
     title: membershipClass
   foaf_msnChatID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An MSN chat ID
     domain: foaf_Agent
     name: foaf_msnChatID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:msnChatID
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_nick
     title: MSN chat ID
   foaf_myersBriggs:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A Myers Briggs (MBTI) personality classification.
     domain: foaf_Person
     name: foaf_myersBriggs
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:myersBriggs
     source: http://xmlns.com/foaf/0.1/
     title: myersBriggs
   foaf_name:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A name for some thing.
     domain: owl_Thing
     name: foaf_name
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:name
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: rdfs_label
     title: name
   foaf_nick:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A short informal nickname characterising an agent (includes login
       identifiers, IRC and other chat nicknames).
     name: foaf_nick
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:nick
     source: http://xmlns.com/foaf/0.1/
     title: nickname
   foaf_openid:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An OpenID for an Agent.
     domain: foaf_Agent
     name: foaf_openid
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:openid
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_isPrimaryTopicOf
     title: openid
   foaf_page:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A page or document about this thing.
     domain: owl_Thing
     inverse: foaf_topic
     name: foaf_page
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:page
     source: http://xmlns.com/foaf/0.1/
     title: page
   foaf_pastProject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A project this person has previously worked on.
     domain: foaf_Person
     name: foaf_pastProject
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:pastProject
     source: http://xmlns.com/foaf/0.1/
     title: past project
   foaf_phone:
-    comments:
-    - No occurrences of this slot in the graph.
     description: 'A phone,  specified using fully qualified tel: URI scheme (refs:
       http://www.w3.org/Addressing/schemes.html#tel).'
     name: foaf_phone
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:phone
     source: http://xmlns.com/foaf/0.1/
     title: phone
   foaf_plan:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A .plan comment, in the tradition of finger and '.plan' files.
     domain: foaf_Person
     name: foaf_plan
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:plan
     source: http://xmlns.com/foaf/0.1/
     title: plan
   foaf_primaryTopic:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The primary topic of some page or document.
     domain: foaf_Document
     inverse: foaf_isPrimaryTopicOf
     name: foaf_primaryTopic
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:primaryTopic
     source: http://xmlns.com/foaf/0.1/
     title: primary topic
   foaf_publications:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A link to the publications of this person.
     domain: foaf_Person
     name: foaf_publications
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:publications
     source: http://xmlns.com/foaf/0.1/
     title: publications
   foaf_schoolHomepage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A homepage of a school attended by the person.
     domain: foaf_Person
     name: foaf_schoolHomepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:schoolHomepage
     source: http://xmlns.com/foaf/0.1/
     title: schoolHomepage
   foaf_sha1:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A sha1sum hash, in hex.
     domain: foaf_Document
     name: foaf_sha1
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:sha1
     source: http://xmlns.com/foaf/0.1/
     title: sha1sum (hex)
   foaf_skypeID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A Skype ID
     domain: foaf_Agent
     name: foaf_skypeID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:skypeID
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_nick
     title: Skype ID
   foaf_status:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A string expressing what the user is happy for the general public
       (normally) to know about their current activity.
     domain: foaf_Agent
     name: foaf_status
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:status
     source: http://xmlns.com/foaf/0.1/
     title: status
   foaf_surname:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The surname of some person.
     domain: foaf_Person
     name: foaf_surname
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:surname
     source: http://xmlns.com/foaf/0.1/
     title: Surname
   foaf_theme:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A theme.
     domain: owl_Thing
     name: foaf_theme
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:theme
     source: http://xmlns.com/foaf/0.1/
     title: theme
   foaf_thumbnail:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A derived thumbnail image.
     domain: foaf_Image
     name: foaf_thumbnail
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Image
     slot_uri: foaf:thumbnail
     source: http://xmlns.com/foaf/0.1/
     title: thumbnail
   foaf_tipjar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A tipjar document for this agent, describing means for payment and
       reward.
     domain: foaf_Agent
     name: foaf_tipjar
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:tipjar
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_page
     title: tipjar
   foaf_title:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Title (Mr, Mrs, Ms, Dr. etc)
     name: foaf_title
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: foaf:title
     source: http://xmlns.com/foaf/0.1/
     title: title
   foaf_topic:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A topic of some page or document.
     domain: foaf_Document
     inverse: foaf_page
     name: foaf_topic
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:topic
     source: http://xmlns.com/foaf/0.1/
     title: topic
   foaf_topic_interest:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A thing of interest to this person.
     domain: foaf_Agent
     name: foaf_topic_interest
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: foaf:topic_interest
     source: http://xmlns.com/foaf/0.1/
     title: topic_interest
   foaf_weblog:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A weblog of some thing (whether person, group, company etc.).
     domain: foaf_Agent
     name: foaf_weblog
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:weblog
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_page
     title: weblog
   foaf_workInfoHomepage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A work info homepage of some person; a page about their work for
       some organization.
     domain: foaf_Person
     name: foaf_workInfoHomepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:workInfoHomepage
     source: http://xmlns.com/foaf/0.1/
     title: work info homepage
   foaf_workplaceHomepage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A workplace homepage of some person; the homepage of an organization
       they work for.
     domain: foaf_Person
     name: foaf_workplaceHomepage
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: foaf:workplaceHomepage
     source: http://xmlns.com/foaf/0.1/
     title: workplace homepage
   foaf_yahooChatID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A Yahoo chat ID
     domain: foaf_Agent
     name: foaf_yahooChatID
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: foaf:yahooChatID
     source: http://xmlns.com/foaf/0.1/
     subproperty_of: foaf_nick
     title: Yahoo chat ID
   wot_src_assurance:
-    comments:
-    - No occurrences of this slot in the graph.
     name: wot_src_assurance
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: wot:src_assurance
-title: No schema name specified

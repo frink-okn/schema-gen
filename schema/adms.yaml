@@ -79,13 +79,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/People/all#phila
+                        value: http://www.w3.org/2011/gld/
                       predicate:
                         tag: predicate
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nd13607343560478591267ebbea5c1917b1
+                        value: nda7e338bb0ea4c5a942d2defd97b76feb5
           foaf:name:
             tag: foaf:name
             value:
@@ -97,13 +97,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Phil Archer
+                        value: Government Linked Data WG, based on output from the
+                          ADMS Working Group
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nd13607343560478591267ebbea5c1917b1
+                        value: nda7e338bb0ea4c5a942d2defd97b76feb5
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -121,7 +122,7 @@ annotations:
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: nd13607343560478591267ebbea5c1917b1
+                        value: nda7e338bb0ea4c5a942d2defd97b76feb1
           sdos:affiliation:
             tag: sdos:affiliation
             value:
@@ -139,7 +140,7 @@ annotations:
                         value: sdos:affiliation
                       subject:
                         tag: subject
-                        value: nd13607343560478591267ebbea5c1917b1
+                        value: nda7e338bb0ea4c5a942d2defd97b76feb1
 classes:
   adms_Asset:
     class_uri: adms:Asset
@@ -212,17 +213,15 @@ classes:
       of another class in this graph but has not itself been defined.
 comments:
 - 'title: Asset Description Metadata Schema (ADMS)'
-- 'title: Asset Description Metadata Schema (ADMS)'
-- 'created_by: nd13607343560478591267ebbea5c1917b2'
-- 'created_by: nd13607343560478591267ebbea5c1917b4'
-- 'last_updated_on: 2013-05-24'
+- 'created_by: nda7e338bb0ea4c5a942d2defd97b76feb2'
+- 'created_by: nda7e338bb0ea4c5a942d2defd97b76feb4'
+- 'last_updated_on: 2015-07-22'
 - 'last_updated_on: 2013-09-16'
 - 'last_updated_on: 2013-12-21'
-- 'last_updated_on: 2015-07-22'
 - 'description: This file specifies the set of RDF classes and properties used in
   ADMS'
-created_by: nd13607343560478591267ebbea5c1917b1
-created_on: '2025-07-17T19:21:11.777414'
+created_by: nda7e338bb0ea4c5a942d2defd97b76feb1
+created_on: '2025-09-03T11:23:26.164531'
 default_prefix: okns
 description: "This is the RDF encoding of the Asset Description Metadata Schema, originally\
   \ \r\u240A    developed under the European Union's ISA Programme and further developed\
@@ -231,14 +230,14 @@ description: "This is the RDF encoding of the Asset Description Metadata Schema,
   \ more."
 id: okns:adms
 imports:
-- okns:xhv
 - okns:owl-rdf-rdfs
-- okns:sdo
-- okns:extended_types
-- linkml:types
 - okns:skos
+- okns:sdo
+- linkml:types
+- okns:extended_types
+- okns:xhv
 - okns:foaf
-last_updated_on: '2025-07-17T19:21:11.777414'
+last_updated_on: '2013-05-24'
 name: adms
 prefixes:
   adms: http://www.w3.org/ns/adms#
@@ -256,136 +255,135 @@ prefixes:
   xhv: http://www.w3.org/1999/xhtml/vocab#
 slots:
   adms_identifier:
-    comments:
-    - No occurrences of this slot in the graph.
     description: adms:identifier is used to link any resource to an instance of adms:Identifier
       which is its range. N.B. it is not appropriate to use dcterms:identifer to link
       to the Identifier class as its range is rdfs:Literal. ADMS uses this to provide
       any identifier for the Asset.
     name: adms_identifier
+    notes:
+    - No occurrences of this slot in the graph.
     range: adms_Identifier
     slot_uri: adms:identifier
     source: http://www.w3.org/TR/vocab-adms
     title: identifier
   adms_includedAsset:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links to an Asset that is contained in the Asset being described,
       e.g. when there are several vocabularies defined in a single document.
     domain: adms_Asset
     name: adms_includedAsset
+    notes:
+    - No occurrences of this slot in the graph.
     range: adms_Asset
     slot_uri: adms:includedAsset
     source: http://www.w3.org/TR/vocab-adms
     title: included asset
   adms_interoperabilityLevel:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links an Asset to its adms:InteroperabilityLevel. Since this is encoded
       using skos:Concept, that is the defined range for this property.
     domain: adms_Asset
     name: adms_interoperabilityLevel
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: adms:interoperabilityLevel
     source: http://www.w3.org/TR/vocab-adms
     title: interoperability level
   adms_last:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A link to the current or latest version of the Asset.
     name: adms_last
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: adms:last
     source: http://www.w3.org/TR/vocab-adms
     subproperty_of: xhv_last
     title: last
   adms_next:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A link to the next version of the Asset.
     name: adms_next
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: adms:next
     source: http://www.w3.org/TR/vocab-adms
     subproperty_of: xhv_next
     title: next
   adms_prev:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A link to the previous version of the Asset.
     name: adms_prev
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: adms:prev
     source: http://www.w3.org/TR/vocab-adms
     subproperty_of: xhv_prev
     title: prev
   adms_representationTechnique:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links an adms:AssetDistribution to a skos:Concept that is its adms:RepresentationTechnique.
     name: adms_representationTechnique
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: adms:representationTechnique
     source: http://www.w3.org/TR/vocab-adms
     title: representation technique
   adms_sample:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links to a sample of an Asset (which is itself an Asset).
     domain: adms_Asset
     name: adms_sample
+    notes:
+    - No occurrences of this slot in the graph.
     range: adms_Asset
     slot_uri: adms:sample
     source: http://www.w3.org/TR/vocab-adms
     title: sample
   adms_schemeAgency:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The name of the agency responsible for issuing the identifier
     domain: adms_Identifier
     name: adms_schemeAgency
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: adms:schemeAgency
     source: http://www.w3.org/TR/vocab-adms
     title: scheme agency
   adms_status:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links to the status of the Asset or Asset Distribution in the context
       of a particular workflow process. Since Status is defined using a skos:Concept,
       that is the defined range for this property.
     name: adms_status
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: adms:status
     source: http://www.w3.org/TR/vocab-adms
     title: status
   adms_supportedSchema:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A schema according to which the Asset Repository can provide data
       about its content, e.g. ADMS
     name: adms_supportedSchema
+    notes:
+    - No occurrences of this slot in the graph.
     range: adms_Asset
     slot_uri: adms:supportedSchema
     source: http://www.w3.org/TR/vocab-adms
     title: supported schema
   adms_translation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Links Assets that are translations of each other.
     name: adms_translation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: adms:translation
     source: http://www.w3.org/TR/vocab-adms
     title: translation
   adms_versionNotes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A description of changes between this version and the previous version
       of the Asset.
     name: adms_versionNotes
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: adms:versionNotes
     source: http://www.w3.org/TR/vocab-adms
     title: version info
-title: No schema name specified

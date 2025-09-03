@@ -8,9 +8,6 @@ annotations:
           org:Role:
             tag: org:Role
             value: 1
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 1
       pairs:
         tag: pairs
         value:
@@ -50,33 +47,6 @@ annotations:
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value: 1
-                  rdf:Property:
-                    tag: rdf:Property
-                    value: 1
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 1
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 1
-                  rdf:Property:
-                    tag: rdf:Property
-                    value: 1
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -113,9 +83,6 @@ annotations:
                   owl:Class:
                     tag: owl:Class
                     value: 1
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 1
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -139,12 +106,6 @@ annotations:
             value: 9
           org:roleProperty:
             tag: org:roleProperty
-            value: 1
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 1
-          owl:onProperty:
-            tag: owl:onProperty
             value: 1
           rdfs:comment:
             tag: rdfs:comment
@@ -170,9 +131,6 @@ annotations:
           org:Role:
             tag: org:Role
             value: org:Head
-          owl:Restriction:
-            tag: owl:Restriction
-            value: nd6242a7371944b23a2b6fb238e560e85b21
       pairs:
         tag: pairs
         value:
@@ -193,7 +151,7 @@ annotations:
                         value: foaf:homepage
                       subject:
                         tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b5
+                        value: n922b10311db64e20be0acaf749ee68adb5
           foaf:mbox:
             tag: foaf:mbox
             value:
@@ -205,13 +163,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: ogiraldo@fi.upm.es
+                        value: antonio.maccioni@agid.gov.it
                       predicate:
                         tag: predicate
                         value: foaf:mbox
                       subject:
                         tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b8
+                        value: n922b10311db64e20be0acaf749ee68adb3
           foaf:name:
             tag: foaf:name
             value:
@@ -223,13 +181,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Olga Ximena Giraldo
+                        value: Antonio Maccioni
                       predicate:
                         tag: predicate
                         value: foaf:name
                       subject:
                         tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b8
+                        value: n922b10311db64e20be0acaf749ee68adb3
           org:roleProperty:
             tag: org:roleProperty
             value:
@@ -248,78 +206,6 @@ annotations:
                       subject:
                         tag: subject
                         value: org:Head
-                  rdf:Property:
-                    tag: rdf:Property
-                    value:
-                      object:
-                        tag: object
-                        value: org:headOf
-                      predicate:
-                        tag: predicate
-                        value: org:roleProperty
-                      subject:
-                        tag: subject
-                        value: org:Head
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: org:Organization
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b21
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: org:Organization
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b21
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: org:hasMember
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b21
-                  rdf:Property:
-                    tag: rdf:Property
-                    value:
-                      object:
-                        tag: object
-                        value: org:hasMember
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: nd6242a7371944b23a2b6fb238e560e85b21
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -392,18 +278,6 @@ annotations:
                       subject:
                         tag: subject
                         value: gr:BusinessEntity
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: org:FormalOrganization
-                      predicate:
-                        tag: predicate
-                        value: rdfs:subClassOf
-                      subject:
-                        tag: subject
-                        value: gr:BusinessEntity
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -426,17 +300,9 @@ classes:
   org_ChangeEvent:
     class_uri: org:ChangeEvent
     comments:
-    - "title: \xC9v\xE8nement"
     - 'title: Evento di cambiamento'
     - 'title: evento de cambio'
-    - "description: Repr\xE9sente un \xC9v\xE8nement impliquant un changement majeur\
-      \ dans l'Organisation, comme une fusion ou une restructuration. Pr\xE9vu pour\
-      \ des situations ou l'organisation finale est suffisamment diff\xE9rente des\
-      \ Organisations originales pour qu'elle ait une identit\xE9 et une URI distinctes.\
-      \ Des vocabulaires d'extension devraient d\xE9finir des sous-classes de celle-ci\
-      \ pour annoter les diff\xE9rentes cat\xE9gories d'\xC9v\xE8nemenents. Le moment\
-      \ ou l'intervalle de l'\xC9v\xE8nement devrait \xEAtre indiqu\xE9 avec `prov:startAtTime`\
-      \ et `prov:endedAtTime`, et une description avec la classe `dct:description`."
+    - "title: \xC9v\xE8nement"
     - "description: Rappresenta un evento risultato essere un importante cambiamento\
       \ per un'organizzazione come ad esempio una fusione o una riorganizzazione.\
       \ \xC8 pensato per quelle situazioni in cui l'organizzazione risultante si distingue\
@@ -445,14 +311,14 @@ classes:
       \ particolari categorie di eventi. L'istante o l'intervallo in cui l'evento\
       \ accade dovrebbe essere espresso tramite `prov:startAtTime` e`prov:endedAtTime`.\
       \ Una descrizione dovrebbe essere fornita attraverso `dct:description`."
-    - "description: \u5408\u4F75\u3084\u5B8C\u5168\u306A\u518D\u7DE8\u306A\u3069\u306E\
-      \u7D44\u7E54\u306B\u5927\u304D\u306A\u5909\u5316\u3092\u3082\u305F\u3089\u3057\
-      \u305F\u51FA\u6765\u4E8B\u3092\u8868\u308F\u3057\u307E\u3059\u3002\u3053\u308C\
-      \u306F\u3001\u7D50\u679C\u3068\u3057\u3066\u4F5C\u6210\u3055\u308C\u308B\u7D44\
-      \u7E54\u3068\u5143\u306E\u7D44\u7E54\u3068\u304C\u3001\u5225\u306E\u30A2\u30A4\
-      \u30C7\u30F3\u30C6\u30A3\u30C6\u30A3\u30FC\u3068\u5225\u306EURI\u3092\u6301\u3064\
-      \u306B\u8DB3\u308B\u307B\u3069\u7570\u306A\u308B\u72B6\u6CC1\u3092\u5BFE\u8C61\
-      \u3068\u3057\u3066\u3044\u307E\u3059\u3002"
+    - "description: Repr\xE9sente un \xC9v\xE8nement impliquant un changement majeur\
+      \ dans l'Organisation, comme une fusion ou une restructuration. Pr\xE9vu pour\
+      \ des situations ou l'organisation finale est suffisamment diff\xE9rente des\
+      \ Organisations originales pour qu'elle ait une identit\xE9 et une URI distinctes.\
+      \ Des vocabulaires d'extension devraient d\xE9finir des sous-classes de celle-ci\
+      \ pour annoter les diff\xE9rentes cat\xE9gories d'\xC9v\xE8nemenents. Le moment\
+      \ ou l'intervalle de l'\xC9v\xE8nement devrait \xEAtre indiqu\xE9 avec `prov:startAtTime`\
+      \ et `prov:endedAtTime`, et une description avec la classe `dct:description`."
     - "description: Evento que da como resultado un cambio sustancial en la organizaci\xF3\
       n, por ejemplo, una fusi\xF3n o una reestructuraci\xF3n total. Est\xE1 pensado\
       \ para situaciones en las que la organizaci\xF3n resultante es lo suficientemente\
@@ -463,6 +329,14 @@ classes:
       \ se deber\xEDa expresar mediante las propiedades `prov:startAtTime` y `prov:endedAtTime`,\
       \ y una descripci\xF3n del mismo se deber\xEDa incluir mediante el uso de la\
       \ propiedad `dct:description`."
+    - "description: \u5408\u4F75\u3084\u5B8C\u5168\u306A\u518D\u7DE8\u306A\u3069\u306E\
+      \u7D44\u7E54\u306B\u5927\u304D\u306A\u5909\u5316\u3092\u3082\u305F\u3089\u3057\
+      \u305F\u51FA\u6765\u4E8B\u3092\u8868\u308F\u3057\u307E\u3059\u3002\u3053\u308C\
+      \u306F\u3001\u7D50\u679C\u3068\u3057\u3066\u4F5C\u6210\u3055\u308C\u308B\u7D44\
+      \u7E54\u3068\u5143\u306E\u7D44\u7E54\u3068\u304C\u3001\u5225\u306E\u30A2\u30A4\
+      \u30C7\u30F3\u30C6\u30A3\u30C6\u30A3\u30FC\u3068\u5225\u306EURI\u3092\u6301\u3064\
+      \u306B\u8DB3\u308B\u307B\u3069\u7570\u306A\u308B\u72B6\u6CC1\u3092\u5BFE\u8C61\
+      \u3068\u3057\u3066\u3044\u307E\u3059\u3002"
     description: Represents an event which resulted in a major change to an organization
       such as a merger or complete restructuring. It is intended for situations where
       the resulting organization is sufficient distinct from the original organizations
@@ -477,27 +351,9 @@ classes:
   org_FormalOrganization:
     class_uri: org:FormalOrganization
     comments:
+    - "title: organizaci\xF3n formal"
     - 'title: Organisation Formelle'
     - 'title: Organizzazione formale'
-    - "title: organizaci\xF3n formal"
-    - "description: Une Organisation reconnue, en particulier par les juridictions\
-      \ locales, ayant des droits et des responsabilit\xE9s. Exemples : entreprises,\
-      \ association \xE0 but non-lucratif, collectivit\xE9, \xE9glise. Notez que c'est\
-      \ une super-classe de `gr:BusinessEntity` et qu'il est recommand\xE9 d'utiliser\
-      \ le vocabulaire GoodRelations pour indiquer les classifications \xE9conomiques\
-      \ comme le code NACE."
-    - "description: Un'organizzazione che \xE8 riconosciuta a livello mondiale o,\
-      \ in generale, all'interno di una qualche giurisdizione, e che quindi possiede\
-      \ diritti e responsabilit\xE0. Ad esempio aziende, enti governativi, associazioni\
-      \ di volontariato. Si noti che questa \xE8 una superclasse di `gr:BusinessEntity`\
-      \ e che quindi \xE8 raccomandabile usare il vocabolario GoodRelations per esprimere\
-      \ classificazioni di tipo industriale e commerciale come DUNS e NAICS."
-    - "description: \u95A2\u9023\u3059\u308B\u6A29\u5229\u3068\u8CAC\u4EFB\u3092\u6709\
-      \u3059\u308B\uFF08\u7279\u306B\u6CD5\u7684\u7BA1\u8F44\u533A\u57DF\u306B\u304A\
-      \u3044\u3066\uFF09\u4E16\u754C\u4E2D\u306B\u5E83\u304F\u8A8D\u8B58\u3055\u308C\
-      \u3066\u3044\u308B\u7D44\u7E54\u3002\u4F8B\u306B\u306F\u3001\u4F01\u696D\u3001\
-      \u6148\u5584\u56E3\u4F53\u3001\u653F\u5E9C\u3084\u6559\u4F1A\u304C\u542B\u307E\
-      \u308C\u307E\u3059\u3002"
     - "description: Organizaci\xF3n reconocida a nivel mundial, en particular en jurisdicciones\
       \ legales, con derechos y responsabilidades asociadas. Algunos ejemplos son:\
       \ organizaci\xF3n corporativa, organizaci\xF3n ben\xE9fica, organizaci\xF3n\
@@ -505,6 +361,24 @@ classes:
       sta es una superclase de `gr:BusinessEntity` y que se recomienda el uso del\
       \ vocabulario GoodRelations para referirse a clasificaciones de negocios tales\
       \ como DUNS o NAICS."
+    - "description: Une Organisation reconnue, en particulier par les juridictions\
+      \ locales, ayant des droits et des responsabilit\xE9s. Exemples : entreprises,\
+      \ association \xE0 but non-lucratif, collectivit\xE9, \xE9glise. Notez que c'est\
+      \ une super-classe de `gr:BusinessEntity` et qu'il est recommand\xE9 d'utiliser\
+      \ le vocabulaire GoodRelations pour indiquer les classifications \xE9conomiques\
+      \ comme le code NACE."
+    - "description: \u95A2\u9023\u3059\u308B\u6A29\u5229\u3068\u8CAC\u4EFB\u3092\u6709\
+      \u3059\u308B\uFF08\u7279\u306B\u6CD5\u7684\u7BA1\u8F44\u533A\u57DF\u306B\u304A\
+      \u3044\u3066\uFF09\u4E16\u754C\u4E2D\u306B\u5E83\u304F\u8A8D\u8B58\u3055\u308C\
+      \u3066\u3044\u308B\u7D44\u7E54\u3002\u4F8B\u306B\u306F\u3001\u4F01\u696D\u3001\
+      \u6148\u5584\u56E3\u4F53\u3001\u653F\u5E9C\u3084\u6559\u4F1A\u304C\u542B\u307E\
+      \u308C\u307E\u3059\u3002"
+    - "description: Un'organizzazione che \xE8 riconosciuta a livello mondiale o,\
+      \ in generale, all'interno di una qualche giurisdizione, e che quindi possiede\
+      \ diritti e responsabilit\xE0. Ad esempio aziende, enti governativi, associazioni\
+      \ di volontariato. Si noti che questa \xE8 una superclasse di `gr:BusinessEntity`\
+      \ e che quindi \xE8 raccomandabile usare il vocabolario GoodRelations per esprimere\
+      \ classificazioni di tipo industriale e commerciale come DUNS e NAICS."
     description: An Organization which is recognized in the world at large, in particular
       in legal jurisdictions, with associated rights and responsibilities. Examples
       include a Corporation, Charity, Government or Church. Note that this is a super
@@ -525,16 +399,16 @@ classes:
       \ Il est possible d'indiquer directement l'appartenance \xE0 une organisation,\
       \ independemment d'un r\xF4le sp\xE9cifique, \xE0 travers l'usage de la propri\xE9\
       t\xE9 `org:memberOf`."
-    - "description: Indica la natura della relazione di appartenenza di un Agent in\
-      \ un'organizzazione. Rappresenta una relazione n-aria tra un'Agent, un Organization\
-      \ e un Role. \xC8 possibile indicare direttamente la membership, indipendentemente\
-      \ dallo specifico Role, attraverso l'uso della propriet\xE0 `org:memberOf`"
-    - "description: \u7D44\u7E54\u306E\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u306E\u69CB\
-      \u6210\u54E1\u306E\u672C\u8CEA\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Pertenencia o afiliaci\xF3n de un agente a una organizaci\xF3\
       n. Es una relaci\xF3n n-aria entre un agente, una organizaci\xF3n y una actividad.\
       \ Es posible indicar pertenencia mediante el uso de la propiedad `org:memberOf`,\
       \ independientemente de la actividad espec\xEDfica que se desempe\xF1e."
+    - "description: \u7D44\u7E54\u306E\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u306E\u69CB\
+      \u6210\u54E1\u306E\u672C\u8CEA\u3092\u793A\u3057\u307E\u3059\u3002"
+    - "description: Indica la natura della relazione di appartenenza di un Agent in\
+      \ un'organizzazione. Rappresenta una relazione n-aria tra un'Agent, un Organization\
+      \ e un Role. \xC8 possibile indicare direttamente la membership, indipendentemente\
+      \ dallo specifico Role, attraverso l'uso della propriet\xE0 `org:memberOf`"
     description: Indicates the nature of an Agent's membership of an organization.
       Represents an n-ary relation between an Agent, an Organization and a Role. It
       is possible to directly indicate membership, independent of the specific Role,
@@ -545,19 +419,9 @@ classes:
   org_Organization:
     class_uri: org:Organization
     comments:
-    - 'title: Organisation'
-    - 'title: Organizzazione'
     - "title: organizaci\xF3n"
-    - "description: Repr\xE9sente un groupe de personnes organis\xE9es en communaut\xE9\
-      \ o\xF9 tout autre forme de structure sociale, commerciale ou politique. Le\
-      \ groupe a un but commun ou une raison d'\xEAtre qui va au-del\xE0 de la somme\
-      \ des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations\
-      \ sont souvent d\xE9composables en structures hi\xE9rarchis\xE9es. Il est recommand\xE9\
-      \ que des labels lexicaux SKOS soient utilis\xE9s pour nommer l'Organisation.\
-      \ En particulier `skos:prefLabel` pour le nom principal (en g\xE9n\xE9ral le\
-      \ nom l\xE9gal), `skos:altLabel` pour les noms alternatifs (marques, sigles,\
-      \ appellations famili\xE8res) et `skos:notation` pour indiquer un code provenant\
-      \ d'une liste de code."
+    - 'title: Organizzazione'
+    - 'title: Organisation'
     - "description: Rappresenta una collezione di persone organizzate all'interno\
       \ di una communit\xE0 o di una qualche struttura sociale, commerciale o politica.\
       \ Il gruppo condivide un obiettivo o una ragione d'essere che va oltre gli stessi\
@@ -578,6 +442,16 @@ classes:
       \u30C8\uFF08\u4EE3\u7406\uFF09\u3092\u52D9\u3081\u308B\u3053\u3068\u304C\u3067\
       \u304D\u307E\u3059\u3002\u7D44\u7E54\u306F\u3001\u591A\u304F\u306E\u5834\u5408\
       \u3001\u968E\u5C64\u69CB\u9020\u306B\u5206\u5272\u3067\u304D\u307E\u3059\u3002"
+    - "description: Repr\xE9sente un groupe de personnes organis\xE9es en communaut\xE9\
+      \ o\xF9 tout autre forme de structure sociale, commerciale ou politique. Le\
+      \ groupe a un but commun ou une raison d'\xEAtre qui va au-del\xE0 de la somme\
+      \ des personnes qui en font partie et peut agir en tant que \"Agent\". Les organisations\
+      \ sont souvent d\xE9composables en structures hi\xE9rarchis\xE9es. Il est recommand\xE9\
+      \ que des labels lexicaux SKOS soient utilis\xE9s pour nommer l'Organisation.\
+      \ En particulier `skos:prefLabel` pour le nom principal (en g\xE9n\xE9ral le\
+      \ nom l\xE9gal), `skos:altLabel` pour les noms alternatifs (marques, sigles,\
+      \ appellations famili\xE8res) et `skos:notation` pour indiquer un code provenant\
+      \ d'une liste de code."
     - "description: Grupo de personas que se organiza en una comunidad u otro tipo\
       \ de estructura social, comercial o pol\xEDtica. Dicho grupo tiene un objetivo\
       \ o motivo com\xFAn para su existencia que va m\xE1s all\xE1 del conjunto de\
@@ -606,18 +480,18 @@ classes:
   org_OrganizationalCollaboration:
     class_uri: org:OrganizationalCollaboration
     comments:
-    - 'title: Partenariat'
     - 'title: Collaborazione'
+    - 'title: Partenariat'
     - "title: proyecto de cooperaci\xF3n empresarial"
-    - "description: Une collaboration entre deux ou plusieurs Organisations, telle\
-      \ qu'un projet commun. Un partenariat peut \xEAtre consid\xE9r\xE9 comme Organisation\
-      \ dans le sens ou il poss\xE8de une identit\xE9 et un But propre ind\xE9pendant\
-      \ de ceux de ses membres, mais ce n'est ni une entit\xE9 l\xE9gale ni une sous-unit\xE9\
-      \ d'une Organisation plus grande. Typiquement, elle peut avoir une dur\xE9e\
-      \ de vie plus courte que les Organisations qui la composent, mais pas n\xE9\
-      cessairement. Tous les membres sont des `org:Organization`s plut\xF4t que des\
-      \ individus et ces Organisations peuvent jouer des R\xF4les particuliers au\
-      \ sein du Partenariat."
+    - "description: Colaboraci\xF3n determinada entre dos o m\xE1s organizaciones,\
+      \ como en el caso de un proyecto com\xFAn. Cumple con los criterios de ser una\
+      \ organizaci\xF3n en s\xED misma, en la medida en que tiene una identidad y\
+      \ un prop\xF3sito definido independiente de sus miembros en particular, pero\
+      \ no es una entidad legal formalmente reconocida ni una sub-unidad dentro de\
+      \ una organizaci\xF3n m\xE1s grande. La duraci\xF3n suele ser m\xE1s corta que\
+      \ la de las organizaciones que lo componen, pero no necesariamente. Todos sus\
+      \ miembros son de tipo `org:Organization` en vez de individuos, y desempe\xF1\
+      an una actividad concreta en el marco del proyecto de cooperaci\xF3n."
     - "description: \xC8 una collaborazione tra due o pi\xF9 Organization come ad\
       \ esempio un progetto. Consente di rappresentare alcune identit\xE0 dell'Organization\
       \ che sono fuori dallo scopo principale e non sono formalmente riconosciute.\
@@ -636,15 +510,15 @@ classes:
       \u308A\u3082\u5B58\u7D9A\u671F\u9593\u304C\u77ED\u3044\u304B\u3082\u3057\u308C\
       \u307E\u305B\u3093\u304C\u3001\u5FC5\u305A\u3057\u3082\u305D\u3046\u3068\u306F\
       \u9650\u308A\u307E\u305B\u3093\u3002"
-    - "description: Colaboraci\xF3n determinada entre dos o m\xE1s organizaciones,\
-      \ como en el caso de un proyecto com\xFAn. Cumple con los criterios de ser una\
-      \ organizaci\xF3n en s\xED misma, en la medida en que tiene una identidad y\
-      \ un prop\xF3sito definido independiente de sus miembros en particular, pero\
-      \ no es una entidad legal formalmente reconocida ni una sub-unidad dentro de\
-      \ una organizaci\xF3n m\xE1s grande. La duraci\xF3n suele ser m\xE1s corta que\
-      \ la de las organizaciones que lo componen, pero no necesariamente. Todos sus\
-      \ miembros son de tipo `org:Organization` en vez de individuos, y desempe\xF1\
-      an una actividad concreta en el marco del proyecto de cooperaci\xF3n."
+    - "description: Une collaboration entre deux ou plusieurs Organisations, telle\
+      \ qu'un projet commun. Un partenariat peut \xEAtre consid\xE9r\xE9 comme Organisation\
+      \ dans le sens ou il poss\xE8de une identit\xE9 et un But propre ind\xE9pendant\
+      \ de ceux de ses membres, mais ce n'est ni une entit\xE9 l\xE9gale ni une sous-unit\xE9\
+      \ d'une Organisation plus grande. Typiquement, elle peut avoir une dur\xE9e\
+      \ de vie plus courte que les Organisations qui la composent, mais pas n\xE9\
+      cessairement. Tous les membres sont des `org:Organization`s plut\xF4t que des\
+      \ individus et ces Organisations peuvent jouer des R\xF4les particuliers au\
+      \ sein du Partenariat."
     description: 'A collaboration between two or more Organizations such as a project.
       It meets the criteria for being an Organization in that it has an identity and
       defining purpose independent of its particular members but is neither a formally
@@ -660,9 +534,9 @@ classes:
   org_OrganizationalUnit:
     class_uri: org:OrganizationalUnit
     comments:
-    - "title: Unit\xE9 op\xE9rationnelle"
     - "title: Unit\xE0 Organizzativa"
     - 'title: unidad organizativa'
+    - "title: Unit\xE9 op\xE9rationnelle"
     - "description: Une organisation telle que le support informatique d'une universit\xE9\
       , qui fait partie d'une Organisation Formelle plus importante et qui ne peut\
       \ \xEAtre reconnue qu'en tant que membre de cette organisation sup\xE9rieure,\
@@ -670,12 +544,12 @@ classes:
       rationnelles peuvent \xEAtre \xE9tendues, complexes et inclure elles-m\xEAmes\
       \ d'autres branches ou Unit\xE9s Op\xE9rationnelles, voire des Organisations\
       \ Formelles."
-    - "description: Un'organizzazione come ad esempio l'unit\xE0 dei sistemi informativi\
-      \ che \xE8 parte di una pi\xF9 grande FormalOrganization e che, pur essendo\
-      \ riconosciuta nel contesto della propria organizzazione di riferimento, non\
-      \ \xE8 legalmente riconosciuta come entit\xE0 a s\xE9 stante. Le unit\xE0 possono\
-      \ essere ampie e complesse e contenere al loro interno sia altre unit\xE0 che\
-      \ addirittura FormalOrganization."
+    - "description: Organizaci\xF3n que forma parte de una organizaci\xF3n formal\
+      \ m\xE1s amplia, como el servicio de inform\xE1tica o centro de c\xE1lculo de\
+      \ una universidad, y que s\xF3lo tiene reconocimiento pleno en el contexto de\
+      \ dicha organizaci\xF3n formal, pero que no es una entidad legal propiamente\
+      \ dicha. Estas unidades pueden ser amplias y complejas, e incluir a otras unidades\
+      \ o incluso a otras organizaciones formales. Denominaciones alternativas: departamento."
     - "description: \u3042\u308B\u3088\u308A\u5927\u304D\u306A\u7D44\u7E54\u306E\u4E00\
       \u90E8\u3067\u3042\u308A\u3001\u305D\u306E\u7D44\u7E54\u306E\u4E2D\u306B\u304A\
       \u3044\u3066\u306E\u307F\u5B8C\u5168\u306B\u8A8D\u8B58\u3055\u308C\u308B\u90E8\
@@ -683,12 +557,12 @@ classes:
       \u3002\u7279\u306B\u3001\u305D\u306E\u5358\u4F4D\u306F\u305D\u308C\u81EA\u4F53\
       \u3067\u306F\u6CD5\u7684\u5B9F\u4F53\u3068\u898B\u306A\u3055\u308C\u307E\u305B\
       \u3093\u3002"
-    - "description: Organizaci\xF3n que forma parte de una organizaci\xF3n formal\
-      \ m\xE1s amplia, como el servicio de inform\xE1tica o centro de c\xE1lculo de\
-      \ una universidad, y que s\xF3lo tiene reconocimiento pleno en el contexto de\
-      \ dicha organizaci\xF3n formal, pero que no es una entidad legal propiamente\
-      \ dicha. Estas unidades pueden ser amplias y complejas, e incluir a otras unidades\
-      \ o incluso a otras organizaciones formales. Denominaciones alternativas: departamento."
+    - "description: Un'organizzazione come ad esempio l'unit\xE0 dei sistemi informativi\
+      \ che \xE8 parte di una pi\xF9 grande FormalOrganization e che, pur essendo\
+      \ riconosciuta nel contesto della propria organizzazione di riferimento, non\
+      \ \xE8 legalmente riconosciuta come entit\xE0 a s\xE9 stante. Le unit\xE0 possono\
+      \ essere ampie e complesse e contenere al loro interno sia altre unit\xE0 che\
+      \ addirittura FormalOrganization."
     description: 'An Organization such as a University Support Unit which is part
       of some larger FormalOrganization and only has full recognition within the context
       of that FormalOrganization, it is not a Legal Entity in its own right. Units
@@ -701,9 +575,9 @@ classes:
   org_Post:
     class_uri: org:Post
     comments:
-    - 'title: Poste'
-    - 'title: Impiego'
     - 'title: puesto'
+    - 'title: Impiego'
+    - 'title: Poste'
     - "description: Un Poste repr\xE9sente une position au sein d'une Organisation\
       \ qui existe ind\xE9pendamment de la personne ou des personnes qui le remplissent.\
       \ Les postes peuvent \xEAtre utilis\xE9s pour repr\xE9senter des situations\
@@ -713,11 +587,14 @@ classes:
       \ physique). Un poste apr\xE8s peut \xEAtre occup\xE9 par plusieurs personnes\
       \ et peut donc \xEAtre consid\xE9r\xE9 comme une Organisation \xE0 part enti\xE8\
       re."
-    - "description: Un Impiego rappresenta una posizione all'interno dell'organizzazione\
-      \ che esiste indipendentemente dalla persona che la ricopre. Gli impieghi possono\
-      \ essere utilizzati per le situazioni in cui una persona \xE8 membro di un'organizzazione\
-      \ o di un ufficio (ad esempio un segretario di stato). Un Impiego pu\xF2 essere\
-      \ ricoperto da pi\xF9 persone."
+    - "description: Puesto o posici\xF3n que representa alg\xFAn tipo de empleo dentro\
+      \ de una organizaci\xF3n, que existe independientemente de la persona o personas\
+      \ que lo desempe\xF1an. Esta clase puede utilizarse para representar situaciones\
+      \ en las que una persona es miembro de una organizaci\xF3n ex oficio (por ejemplo,\
+      \ el Secretario de Estado escoc\xE9s es parte del Gabinete del gobierno brit\xE1\
+      nico por virtud de ser Secretario de Estado en Escocia, y no como individuo).\
+      \ Un puesto puede ser desempe\xF1ado por m\xFAltiples individuos y de aqu\xED\
+      \ que sea tratado como una organizaci\xF3n en s\xED misma."
     - "description: \u30DD\u30B9\u30C8\u306F\u3001\u305D\u308C\u3092\u57CB\u3081\u308B\
       \u4EBA\uFF08\u4EBA\u3005\uFF09\u3068\u306F\u7121\u95A2\u4FC2\u306B\u5B58\u5728\
       \u3059\u308B\u7D44\u7E54\u5185\u306E\u3042\u308B\u4F4D\u7F6E\u3092\u8868\u308F\
@@ -733,14 +610,11 @@ classes:
       \u53EF\u80FD\u3060\u3042\u308B\u305F\u3081\u3001\u305D\u308C\u81EA\u4F53\u3092\
       \u7D44\u7E54\u3068\u3057\u3066\u6271\u3046\u3053\u3068\u304C\u3067\u304D\u307E\
       \u3059\u3002"
-    - "description: Puesto o posici\xF3n que representa alg\xFAn tipo de empleo dentro\
-      \ de una organizaci\xF3n, que existe independientemente de la persona o personas\
-      \ que lo desempe\xF1an. Esta clase puede utilizarse para representar situaciones\
-      \ en las que una persona es miembro de una organizaci\xF3n ex oficio (por ejemplo,\
-      \ el Secretario de Estado escoc\xE9s es parte del Gabinete del gobierno brit\xE1\
-      nico por virtud de ser Secretario de Estado en Escocia, y no como individuo).\
-      \ Un puesto puede ser desempe\xF1ado por m\xFAltiples individuos y de aqu\xED\
-      \ que sea tratado como una organizaci\xF3n en s\xED misma."
+    - "description: Un Impiego rappresenta una posizione all'interno dell'organizzazione\
+      \ che esiste indipendentemente dalla persona che la ricopre. Gli impieghi possono\
+      \ essere utilizzati per le situazioni in cui una persona \xE8 membro di un'organizzazione\
+      \ o di un ufficio (ad esempio un segretario di stato). Un Impiego pu\xF2 essere\
+      \ ricoperto da pi\xF9 persone."
     description: A Post represents some position within an organization that exists
       independently of the person or persons filling it. Posts may be used to represent
       situations where a person is a member of an organization ex officio (for example
@@ -754,25 +628,9 @@ classes:
   org_Role:
     class_uri: org:Role
     comments:
-    - "title: R\xF4le"
     - 'title: Ruolo'
     - 'title: actividad'
-    - "description: Indique le r\xF4le qu'une Personne ou un autre Agent peut avoir\
-      \ dans une Organisation. Les instances de cette classe d\xE9crivent le r\xF4\
-      le dans l'absolu; pour indiquer une personne ayant ce r\xF4le sp\xE9cifique\
-      \ dans une Organisation, utilisez une instance de `org:Membership`. Il est courant\
-      \ que les r\xF4les soient organis\xE9s dans une sorte de taxonomie, ce qui peut\
-      \ \xEAtre repr\xE9sent\xE9 avec SKOS. Les propri\xE9t\xE9s de libell\xE9s standards\
-      \ de SKOS devraient \xEAtre utilis\xE9es pour libeller le R\xF4le. D'autres\
-      \ propri\xE9t\xE9s additionnelles pour ce r\xF4le, comme une fourchette de Salaire\
-      \ peuvent \xEAtre ajout\xE9es par une extension de ce vocabulaire."
-    - "description: Indica il ruolo che una Person o un altro Agent pu\xF2 assumere\
-      \ in un'organizzazione. Le istanze di questa classe descrivono un ruolo astratto;\
-      \ per esprimere il ruolo che una precisa persona ricopre in un'organizzazione\
-      \ si usi un'istanza di `org:Membership`. \xC8 comune organizzare i ruoli in\
-      \ una qualche struttura tassonomica e quindi si raccomanda SKOS per questo.\
-      \ Altre propriet\xE0 descrittive per il Role, come salario, possono essere aggiunte\
-      \ mediante l'uso di altri vocabolari."
+    - "title: R\xF4le"
     - "description: \u4EBA\u307E\u305F\u306F\u305D\u306E\u4ED6\u306E\u30A8\u30FC\u30B8\
       \u30A7\u30F3\u30C8\u304C\u7D44\u7E54\u3067\u62C5\u3046\u3053\u3068\u304C\u3067\
       \u304D\u308B\u5F79\u5272\u3092\u8868\u308F\u3057\u307E\u3059\u3002\u3053\u306E\
@@ -782,6 +640,15 @@ classes:
       \u4EBA\u306E\u7279\u5B9A\u306E\u30A4\u30F3\u30B9\u30BF\u30F3\u30B9\u3092\u793A\
       \u3059\u305F\u3081\u306B\u306F\u3001org:Membership\u306E\u30A4\u30F3\u30B9\u30BF\
       \u30F3\u30B9\u3092\u4F7F\u7528\u3057\u307E\u3059\u3002"
+    - "description: Indique le r\xF4le qu'une Personne ou un autre Agent peut avoir\
+      \ dans une Organisation. Les instances de cette classe d\xE9crivent le r\xF4\
+      le dans l'absolu; pour indiquer une personne ayant ce r\xF4le sp\xE9cifique\
+      \ dans une Organisation, utilisez une instance de `org:Membership`. Il est courant\
+      \ que les r\xF4les soient organis\xE9s dans une sorte de taxonomie, ce qui peut\
+      \ \xEAtre repr\xE9sent\xE9 avec SKOS. Les propri\xE9t\xE9s de libell\xE9s standards\
+      \ de SKOS devraient \xEAtre utilis\xE9es pour libeller le R\xF4le. D'autres\
+      \ propri\xE9t\xE9s additionnelles pour ce r\xF4le, comme une fourchette de Salaire\
+      \ peuvent \xEAtre ajout\xE9es par une extension de ce vocabulaire."
     - "description: Funci\xF3n que una persona o agente desempe\xF1a en el seno de\
       \ una organizaci\xF3n. Las instancias de esta clase describen la actividad en\
       \ abstracto; si lo que se pretende es incluir una instancia que refleje la funci\xF3\
@@ -792,6 +659,13 @@ classes:
       \ a la hora de denominar o etiquetar la actividad desempe\xF1ada. Para a\xF1\
       adir propiedades descriptivas adicionales, como rango salarial, se tendr\xE1\
       \ que recurrir a vocabularios externos."
+    - "description: Indica il ruolo che una Person o un altro Agent pu\xF2 assumere\
+      \ in un'organizzazione. Le istanze di questa classe descrivono un ruolo astratto;\
+      \ per esprimere il ruolo che una precisa persona ricopre in un'organizzazione\
+      \ si usi un'istanza di `org:Membership`. \xC8 comune organizzare i ruoli in\
+      \ una qualche struttura tassonomica e quindi si raccomanda SKOS per questo.\
+      \ Altre propriet\xE0 descrittive per il Role, come salario, possono essere aggiunte\
+      \ mediante l'uso di altri vocabolari."
     description: Denotes a role that a Person or other Agent can take in an organization.
       Instances of this class describe the abstract role; to denote a specific instance
       of a person playing that role in a specific organization use an instance of
@@ -802,19 +676,30 @@ classes:
     is_a: skos_Concept
     name: org_Role
     slots:
-    - skos_prefLabel
-    - rdfs_label
     - org_roleProperty
-    - rdfs_isDefinedBy
+    - rdfs_label
     - rdfs_comment
+    - rdfs_isDefinedBy
+    - skos_prefLabel
     source: http://www.w3.org/ns/org
     title: Role
   org_Site:
     class_uri: org:Site
     comments:
+    - 'title: sede'
     - 'title: Site'
     - 'title: Sede'
-    - 'title: sede'
+    - "description: \u7D44\u7E54\u304C\u4F4D\u7F6E\u3059\u308B\u30AA\u30D5\u30A3\u30B9\
+      \u3084\u305D\u306E\u4ED6\u306E\u6577\u5730\u3002\u591A\u304F\u306E\u7D44\u7E54\
+      \u304C\u8907\u6570\u306E\u30B5\u30A4\u30C8\u306B\u6563\u5728\u3057\u3066\u304A\
+      \u308A\u3001\u591A\u304F\u306E\u30B5\u30A4\u30C8\u304C\u591A\u6570\u306E\u5834\
+      \u6240\u3092\u6301\u3064\u3067\u3057\u3087\u3046\u3002"
+    - "description: Un ufficio o altra sede dovei l'organizzazione \xE8 situata. Molte\
+      \ organizzazione sono distribuite su pi\xF9 sedi e molte sedi ospitano pi\xF9\
+      \ ubicazioni. Nella maggior parte dei casi un Site \xE8 una locazione fisica.\
+      \ Non si esclude la possibilit\xE0 di indicare sedi non fisiche come ad esempio\
+      \ gli uffici virtuali. Le estensioni dell'ontologia potrebbero usare delle sottoclassi\
+      \ per rappresentare i tipi particolari di sede."
     - "description: Un \xE9tablissement ou tout autre lieu dans lequel une Organisation\
       \ est localis\xE9. Beaucoup d'organisations sont dispers\xE9es \xE0 travers\
       \ plusieurs sites. Dans la plupart des cas un Site sera un lieu physique. Toutefois,\
@@ -822,17 +707,6 @@ classes:
       \ virtuel avec une bo\xEEte postale et un service de secr\xE9tariat mutualis\xE9\
       . Des extensions pourraient fournir des sous-classes pour d\xE9crire des types\
       \ de sites particuliers."
-    - "description: Un ufficio o altra sede dovei l'organizzazione \xE8 situata. Molte\
-      \ organizzazione sono distribuite su pi\xF9 sedi e molte sedi ospitano pi\xF9\
-      \ ubicazioni. Nella maggior parte dei casi un Site \xE8 una locazione fisica.\
-      \ Non si esclude la possibilit\xE0 di indicare sedi non fisiche come ad esempio\
-      \ gli uffici virtuali. Le estensioni dell'ontologia potrebbero usare delle sottoclassi\
-      \ per rappresentare i tipi particolari di sede."
-    - "description: \u7D44\u7E54\u304C\u4F4D\u7F6E\u3059\u308B\u30AA\u30D5\u30A3\u30B9\
-      \u3084\u305D\u306E\u4ED6\u306E\u6577\u5730\u3002\u591A\u304F\u306E\u7D44\u7E54\
-      \u304C\u8907\u6570\u306E\u30B5\u30A4\u30C8\u306B\u6563\u5728\u3057\u3066\u304A\
-      \u308A\u3001\u591A\u304F\u306E\u30B5\u30A4\u30C8\u304C\u591A\u6570\u306E\u5834\
-      \u6240\u3092\u6301\u3064\u3067\u3057\u3087\u3046\u3002"
     - "description: Oficina, local o cualquier otro lugar en el que se encuentra una\
       \ organizaci\xF3n. Muchas organizaciones est\xE1n distribuidas en varias sedes,\
       \ que a su vez est\xE1n repartidas en distintas ubicaciones. En muchos casos\
@@ -852,51 +726,45 @@ classes:
 comments:
 - 'title: Core organization ontology'
 - 'title: Ontologie des organisations'
-- 'title: Ontologia delle organizzazioni'
 - "title: Ontolog\xEDa de organizaciones"
-- "description: Vocabolario per descrivere strutture organizzative, le quali possono\
-  \ essere specializzate in una vasta variet\xE0 di tipi di organizzazione"
+- 'title: Ontologia delle organizzazioni'
 - 'description: Vocabulario para describir organizaciones, adaptable a una amplia
   variedad de ellas.'
-- 'created_on: 2010-05-28'
-- 'last_updated_on: 2010-06-09'
+- "description: Vocabolario per descrivere strutture organizzative, le quali possono\
+  \ essere specializzate in una vasta variet\xE0 di tipi di organizzazione"
+- 'last_updated_on: 2014-01-25'
 - 'last_updated_on: 2010-10-08'
-- 'last_updated_on: 2012-09-30'
+- 'last_updated_on: 2013-12-16'
 - 'last_updated_on: 2012-10-06'
 - 'last_updated_on: 2013-02-15'
-- 'last_updated_on: 2013-12-16'
-- 'last_updated_on: 2014-01-02'
-- 'last_updated_on: 2014-01-25'
-- 'last_updated_on: 2014-02-05'
 - 'last_updated_on: 2014-04-12'
-- 'title: Core organization ontology'
-- 'title: Ontologie des organisations'
-- 'title: Ontologia delle organizzazioni'
-- "title: Ontolog\xEDa de organizaciones"
+- 'last_updated_on: 2012-09-30'
+- 'last_updated_on: 2014-01-02'
+- 'last_updated_on: 2014-02-05'
 contributors:
-- nd6242a7371944b23a2b6fb238e560e85b1
-- nd6242a7371944b23a2b6fb238e560e85b2
-- nd6242a7371944b23a2b6fb238e560e85b3
-- nd6242a7371944b23a2b6fb238e560e85b4
-- nd6242a7371944b23a2b6fb238e560e85b5
-- nd6242a7371944b23a2b6fb238e560e85b6
-- nd6242a7371944b23a2b6fb238e560e85b7
-- nd6242a7371944b23a2b6fb238e560e85b8
-- nd6242a7371944b23a2b6fb238e560e85b9
-created_on: '2025-07-17T19:20:38.900125'
+- n922b10311db64e20be0acaf749ee68adb1
+- n922b10311db64e20be0acaf749ee68adb2
+- n922b10311db64e20be0acaf749ee68adb3
+- n922b10311db64e20be0acaf749ee68adb4
+- n922b10311db64e20be0acaf749ee68adb5
+- n922b10311db64e20be0acaf749ee68adb6
+- n922b10311db64e20be0acaf749ee68adb7
+- n922b10311db64e20be0acaf749ee68adb8
+- n922b10311db64e20be0acaf749ee68adb9
+created_on: '2010-05-28'
 default_prefix: okns
 description: Vocabulary for describing organizational structures, specializable to
   a broad variety of types of organization.
 id: okns:org
 imports:
-- okns:extended_types
+- okns:prov
+- linkml:types
+- okns:owl-rdf-rdfs
 - okns:skos
 - okns:foaf
-- okns:owl-rdf-rdfs
 - okns:wot
-- linkml:types
-- okns:prov
-last_updated_on: '2025-07-17T19:20:38.900125'
+- okns:extended_types
+last_updated_on: '2010-06-09'
 name: org
 prefixes:
   foaf: http://xmlns.com/foaf/0.1/
@@ -916,9 +784,11 @@ see_also:
 slots:
   org_basedAt:
     comments:
-    - "title: bas\xE9 \xE0"
-    - 'title: basata a'
     - 'title: trabaja en la sede'
+    - 'title: basata a'
+    - "title: bas\xE9 \xE0"
+    - "description: Lugar en el que trabaja una persona. No se restringe el hecho\
+      \ de que una persona pueda estar adscrita a m\xFAltiples ubicaciones."
     - "description: Indique le site sur lequel une personne est bas\xE9e. Nous ne\
       \ limitons pas le nombre de sites sur lesquels une personne peut \xEAtre bas\xE9\
       e."
@@ -928,42 +798,42 @@ slots:
       \u30C8\u3092\u793A\u3057\u307E\u3059\u3002\u4EBA\u304C\u8907\u6570\u306E\u30B5\
       \u30A4\u30C8\u3092\u57FA\u790E\u3068\u3057\u3066\u3044\u308B\u53EF\u80FD\u6027\
       \u3092\u5236\u9650\u3057\u307E\u305B\u3093\u3002"
-    - "description: Lugar en el que trabaja una persona. No se restringe el hecho\
-      \ de que una persona pueda estar adscrita a m\xFAltiples ubicaciones."
-    - No occurrences of this slot in the graph.
     description: Indicates the site at which a person is based. We do not restrict
       the possibility that a person is based at multiple sites.
     domain: foaf_Person
     name: org_basedAt
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Site
     slot_uri: org:basedAt
     source: http://www.w3.org/ns/org
     title: based At
   org_changedBy:
     comments:
+    - 'title: es modificada por'
     - "title: modifi\xE9e par"
     - 'title: cambiata da'
-    - 'title: es modificada por'
     - 'title: es modificado por'
-    - "description: Indique un \xE9v\xE8nement qui a impliqu\xE9 un changement dans\
-      \ l'Organisation. Selon l'\xE9v\xE8nement, l'Organisation a continu\xE9 \xE0\
-      \ exister apr\xE8s l'\xE9v\xE8nement, ou pas. Inverse de `org:originalOrganization`."
     - "description: Indica un evento che ha contribuito al cambiamento di questa organizzazione.\
       \ A seconda dell'evento, l'organizzazione potrebbe essere esistente dopo l'evento\
       \ o aver cessato la propria esistenza. \xC8 l'inverso di `org:originalOrganization`."
     - "description: \u3053\u306E\u7D44\u7E54\u306E\u5909\u66F4\u306E\u304D\u3063\u304B\
       \u3051\u3068\u306A\u3063\u305F\u51FA\u6765\u4E8B\u3092\u793A\u3057\u307E\u3059\
       \u3002"
+    - "description: Indique un \xE9v\xE8nement qui a impliqu\xE9 un changement dans\
+      \ l'Organisation. Selon l'\xE9v\xE8nement, l'Organisation a continu\xE9 \xE0\
+      \ exister apr\xE8s l'\xE9v\xE8nement, ou pas. Inverse de `org:originalOrganization`."
     - "description: Evento de cambio que resulta en una modificaci\xF3n en la organizaci\xF3\
       n. Dependiendo del evento, la organizaci\xF3n puede dejar de existir tras el\
       \ cambio. Es la relaci\xF3n inversa de `org:originalOrganization`."
-    - No occurrences of this slot in the graph.
     description: Indicates a change event which resulted in a change to this organization.
       Depending on the event the organization may or may not have continued to exist
       after the event. Inverse of `org:originalOrganization`.
     domain: org_Organization
     inverse: org_originalOrganization
     name: org_changedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_ChangeEvent
     slot_uri: org:changedBy
     source: http://www.w3.org/ns/org
@@ -971,15 +841,14 @@ slots:
   org_classification:
     comments:
     - 'title: classification'
-    - 'title: classificazione'
     - "title: pertenece a la clasificaci\xF3n"
-    - "description: Indique une classification pour cette Organisation dans le cadre\
-      \ d'un sch\xE9ma de classification. Il est possible de sp\xE9cialiser cette\
-      \ propri\xE9t\xE9 en utilisant un vocabulaire sp\xE9cialis\xE9 pour que le champ\
-      \ corresponde \xE0 un concept sp\xE9cifique `skos:ConceptScheme`. Cette propri\xE9\
-      t\xE9 est en discussion est pourrait \xEAtre r\xE9vis\xE9e ou supprim\xE9e -\
-      \ dans de nombreux cas, les organisations sont mieux cat\xE9goris\xE9es par\
-      \ une hi\xE9rarchie de sous-classe dans un vocabulaire externe."
+    - 'title: classificazione'
+    - "description: Ordenaci\xF3n jer\xE1rquica que se hace de una organizaci\xF3\
+      n dentro de un esquema de clasificaci\xF3n. Es posible que algunos vocabularios\
+      \ especifiquen esta propiedad de forma que el rango se corresponda con un `skos:ConceptScheme`\
+      \ espec\xEDfico. La conveniencia de incluir esta propiedad se est\xE1 debatiendo\
+      \ y puede que se revise o elimine (en muchos casos las organizaciones se clasifican\
+      \ mejor si se define una jerarqu\xEDa de subclases en un vocabulario aparte)"
     - "description: Indica una classificazione per questa Organization all'interno\
       \ di un qualche schema di classificazione. Alcuni vocabolari potrebbero voler\
       \ specializzare questa propriet\xE0 per avere un codominio corrispondente a\
@@ -992,13 +861,13 @@ slots:
       \u30FC\u3092\u8868\u308F\u3059\u624B\u6BB5\u3068\u3057\u3066\u5B9A\u7FA9\u3059\
       \u308B\u3053\u3068\u3082\u8A31\u5BB9\u3055\u308C\u308B\u3053\u3068\u306B\u6CE8\
       \u610F\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
-    - "description: Ordenaci\xF3n jer\xE1rquica que se hace de una organizaci\xF3\
-      n dentro de un esquema de clasificaci\xF3n. Es posible que algunos vocabularios\
-      \ especifiquen esta propiedad de forma que el rango se corresponda con un `skos:ConceptScheme`\
-      \ espec\xEDfico. La conveniencia de incluir esta propiedad se est\xE1 debatiendo\
-      \ y puede que se revise o elimine (en muchos casos las organizaciones se clasifican\
-      \ mejor si se define una jerarqu\xEDa de subclases en un vocabulario aparte)"
-    - No occurrences of this slot in the graph.
+    - "description: Indique une classification pour cette Organisation dans le cadre\
+      \ d'un sch\xE9ma de classification. Il est possible de sp\xE9cialiser cette\
+      \ propri\xE9t\xE9 en utilisant un vocabulaire sp\xE9cialis\xE9 pour que le champ\
+      \ corresponde \xE0 un concept sp\xE9cifique `skos:ConceptScheme`. Cette propri\xE9\
+      t\xE9 est en discussion est pourrait \xEAtre r\xE9vis\xE9e ou supprim\xE9e -\
+      \ dans de nombreux cas, les organisations sont mieux cat\xE9goris\xE9es par\
+      \ une hi\xE9rarchie de sous-classe dans un vocabulaire externe."
     description: Indicates a classification for this Organization within some classification
       scheme. Extension vocabularies may wish to specialize this property to have
       a range corresponding to a specific `skos:ConceptScheme`. This property is under
@@ -1006,6 +875,8 @@ slots:
       categorized by defining a sub-class hierarchy in an extension vocabulary.
     domain: org_Organization
     name: org_classification
+    notes:
+    - No occurrences of this slot in the graph.
     range: skos_Concept
     slot_uri: org:classification
     source: http://www.w3.org/ns/org
@@ -1013,23 +884,22 @@ slots:
   org_hasMember:
     comments:
     - "title: poss\xE8de un membre"
-    - 'title: ha membro'
     - 'title: tiene miembro'
+    - 'title: ha membro'
+    - "description: Indica una persona che \xE8 membro della data Organization. \xC8\
+      \ l'inverso di `org:memberOf` ed \xE8 fornita per  compatibilit\xE0 con `foaf:member`."
     - "description: Indique une personne membre de l'Organisation sujet. Inverse de\
       \ `org:memberOf`, voyez la description de cette propri\xE9t\xE9 pour plus de\
       \ pr\xE9cisions. Fourni pour la compatibilit\xE9 avec `foaf:member`."
-    - "description: Indica una persona che \xE8 membro della data Organization. \xC8\
-      \ l'inverso di `org:memberOf` ed \xE8 fornita per  compatibilit\xE0 con `foaf:member`."
+    - "description: Persona que es miembro de la organizaci\xF3n en cuesti\xF3n. Es\
+      \ la relaci\xF3n inversa de `org:memberOf`, v\xE9ase la descripci\xF3n de esa\
+      \ propiedad para m\xE1s detalles. Se prev\xE9 compatibilidad con foaf:member`."
     - "description: \u5BFE\u8C61\u7D44\u7E54\u306E\u30E1\u30F3\u30D0\u30FC\u3067\u3042\
       \u308B\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\uFF08\u4EBA\u307E\u305F\u306F\u4ED6\
       \u306E\u7D44\u7E54\uFF09\u3092\u793A\u3057\u307E\u3059\u3002org:memberOf\u306E\
       \u9006\u3002\u3055\u3089\u306B\u660E\u78BA\u306A\u8AAC\u660E\u306B\u3064\u3044\
       \u3066\u306F\u3001\u305D\u306E\u30D7\u30ED\u30D1\u30C6\u30A3\u30FC\u3092\u53C2\
       \u7167\u3057\u3066\u304F\u3060\u3055\u3044\u3002"
-    - "description: Persona que es miembro de la organizaci\xF3n en cuesti\xF3n. Es\
-      \ la relaci\xF3n inversa de `org:memberOf`, v\xE9ase la descripci\xF3n de esa\
-      \ propiedad para m\xE1s detalles. Se prev\xE9 compatibilidad con foaf:member`."
-    - No occurrences of this slot in the graph.
     description: Indicates a person who is a member of the subject Organization. Inverse
       of `org:memberOf`, see that property for further clarification. Provided for
       compatibility with `foaf:member`.
@@ -1038,6 +908,8 @@ slots:
     - http://xmlns.com/foaf/0.1/member
     inverse: org_memberOf
     name: org_hasMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: org:hasMember
     source: http://www.w3.org/ns/org
@@ -1047,39 +919,41 @@ slots:
     - 'title: engagement'
     - 'title: appartenenza'
     - "title: tiene membres\xEDa"
-    - 'description: Indique pour cet Agent un engagement dans une Organisation. Inverse
-      de `org:member`.'
     - "description: Indica una relazione di appartenenza che coinvolge un Agent. \xC8\
       \ l'inverso di `org:member`."
+    - 'description: Indique pour cet Agent un engagement dans une Organisation. Inverse
+      de `org:member`.'
     - "description: \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u304C\u62C5\u3046\u69CB\u6210\
       \u54E1\u95A2\u4FC2\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Relaci\xF3n de pertenencia o afiliaci\xF3n a una organizaci\xF3\
       n en la que el agente desempe\xF1a un cargo o funci\xF3n. Es la relaci\xF3n\
       \ inversa de `org:member`."
-    - No occurrences of this slot in the graph.
     description: Indicates a membership relationship that the Agent plays. Inverse
       of `org:member`.
     domain: foaf_Agent
     inverse: org_member
     name: org_hasMembership
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Membership
     slot_uri: org:hasMembership
     source: http://www.w3.org/ns/org
     title: membership
   org_hasPost:
     comments:
-    - "title: poss\xE8de un poste"
     - 'title: impiego'
     - 'title: tiene puesto'
+    - "title: poss\xE8de un poste"
     - 'description: Indicate un Poste qui existe dans l''Organisation.'
     - "description: Indica il Post che \xE8 presente in una Organization."
     - "description: \u7D44\u7E54\u5185\u306B\u5B58\u5728\u3059\u308B\u30DD\u30B9\u30C8\
       \u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Posici\xF3n que existe en una organizaci\xF3n."
-    - No occurrences of this slot in the graph.
     description: Indicates a Post which exists within the Organization.
     domain: org_Organization
     name: org_hasPost
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Post
     slot_uri: org:hasPost
     source: http://www.w3.org/ns/org
@@ -1087,11 +961,8 @@ slots:
   org_hasPrimarySite:
     comments:
     - 'title: site principal'
-    - 'title: sede principale'
     - 'title: tiene sede principal en'
-    - "description: Indique le site principal d'une Organisation, le moyen par d\xE9\
-      faut par lequel l'Organisation peut \xEAtre contact\xE9e et pas n\xE9cessairement\
-      \ le si\xE8ge social l\xE9gal."
+    - 'title: sede principale'
     - "description: Indica la sede principale per l'Organization. \xC8 da considerarsi\
       \ come la sede di default in cui l'Organization deve essere contattata pur non\
       \ essendo necessariamente il quartier generale."
@@ -1102,12 +973,16 @@ slots:
     - "description: Oficina principal de la organizaci\xF3n, la opci\xF3n por defecto\
       \ para ponerse en contacto con una organizaci\xF3n, aunque no corresponde necesariamente\
       \ con las oficinas centrales de la organizaci\xF3n."
-    - No occurrences of this slot in the graph.
+    - "description: Indique le site principal d'une Organisation, le moyen par d\xE9\
+      faut par lequel l'Organisation peut \xEAtre contact\xE9e et pas n\xE9cessairement\
+      \ le si\xE8ge social l\xE9gal."
     description: Indicates a primary site for the Organization, this is the default
       means by which an Organization can be contacted and is not necessarily the formal
       headquarters.
     domain: org_Organization
     name: org_hasPrimarySite
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Site
     slot_uri: org:hasPrimarySite
     source: http://www.w3.org/ns/org
@@ -1115,14 +990,18 @@ slots:
     title: primary Site
   org_hasRegisteredSite:
     comments:
+    - 'title: tiene sede registrada en'
     - "title: si\xE8ge social"
     - 'title: sede legale'
-    - 'title: tiene sede registrada en'
     - "description: Indique l'\xE9tablissement principal l\xE9galement enregistr\xE9\
       \ pour l'Organisation. Dans de nombreuses juridictions existe l'obligation pour\
       \ une Organisation Formelle d'avoir un tel site principal."
     - "description: Indica la sede legale per l'Organization. In molte giurisdizioni\
       \ \xE8 richiesto che una FormalOrganization abbia una sede di questo tipo."
+    - "description: Oficina o sede legalmente registrada de la organizaci\xF3n. En\
+      \ muchas jurisdicciones legales existe el requisito de que organizaciones formales\
+      \ tales como empresas u organizaciones de beneficencia tengan una sede principal\
+      \ de este tipo."
     - "description: \u7D44\u7E54\u306E\u6CD5\u5F8B\u4E0A\u767B\u9332\u3055\u308C\u305F\
       \u30B5\u30A4\u30C8\u3092\u793A\u3057\u3001\u591A\u304F\u306E\u6CD5\u7684\u7BA1\
       \u8F44\u533A\u57DF\u3067\u306F\u3001\u4F1A\u793E\u3084\u6148\u5584\u56E3\u4F53\
@@ -1130,16 +1009,13 @@ slots:
       \u304C\u305D\u306E\u3088\u3046\u306A\u4E3B\u8981\u30B5\u30A4\u30C8\u3092\u6301\
       \u3063\u3066\u3044\u308B\u3068\u3044\u3046\u8981\u4EF6\u304C\u3042\u308A\u307E\
       \u3059\u3002"
-    - "description: Oficina o sede legalmente registrada de la organizaci\xF3n. En\
-      \ muchas jurisdicciones legales existe el requisito de que organizaciones formales\
-      \ tales como empresas u organizaciones de beneficencia tengan una sede principal\
-      \ de este tipo."
-    - No occurrences of this slot in the graph.
     description: Indicates the legally registered site for the organization, in many
       legal jurisdictions there is a requirement that FormalOrganizations such as
       Companies or Charities have such a primary designed site.
     domain: org_FormalOrganization
     name: org_hasRegisteredSite
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Site
     slot_uri: org:hasRegisteredSite
     source: http://www.w3.org/ns/org
@@ -1148,12 +1024,8 @@ slots:
   org_hasSite:
     comments:
     - 'title: a un site'
-    - 'title: ha sede'
     - 'title: tiene sede en'
-    - "description: Indique un site sur lequel l'Organisation poss\xE8de une pr\xE9\
-      sence, m\xEAme indirecte (domiciliation, boite postale). Inverse de `org:siteOf`."
-    - "description: Indica la sede in cui l'Organization ha una qualche presenza anche\
-      \ in modo indiretto (ad esempio un ufficio virtuale). \xC8 l'inverso di `org:siteOf`."
+    - 'title: ha sede'
     - "description: \u7D44\u7E54\u304C\u3001\u9593\u63A5\uFF08\u4F8B\u3048\u3070\u3001\
       \u4F1A\u793E\u306E\u767B\u9332\u4F4F\u6240\u3068\u3057\u3066\u6A5F\u80FD\u3057\
       \u3066\u3044\u308B\u30D0\u30FC\u30C1\u30E3\u30EB\u30FB\u30AA\u30D5\u30A3\u30B9\
@@ -1161,33 +1033,31 @@ slots:
       \u30D3\u30B9\uFF09\u306E\u307F\u3067\u3042\u3063\u305F\u3068\u3057\u3066\u3082\
       \u3001\u3042\u308B\u5B58\u5728\u611F\u3092\u6301\u3063\u3066\u3044\u308B\u30B5\
       \u30A4\u30C8\u3092\u793A\u3057\u307E\u3059\u3002"
+    - "description: Indica la sede in cui l'Organization ha una qualche presenza anche\
+      \ in modo indiretto (ad esempio un ufficio virtuale). \xC8 l'inverso di `org:siteOf`."
     - "description: Lugar en donde la organizaci\xF3n tiene alg\xFAn tipo de presencia,\
       \ incluso si es de forma indirecta (por ejemplo, una oficina virtual o servicio\
       \ profesional que hagan la funci\xF3n de direcci\xF3n registrada de la compa\xF1\
       \xEDa). Es la relaci\xF3n inversa de `org:siteOf`."
-    - No occurrences of this slot in the graph.
+    - "description: Indique un site sur lequel l'Organisation poss\xE8de une pr\xE9\
+      sence, m\xEAme indirecte (domiciliation, boite postale). Inverse de `org:siteOf`."
     description: Indicates a site at which the Organization has some presence even
       if only indirect (e.g. virtual office or a professional service which is acting
       as the registered address for a company). Inverse of `org:siteOf`.
     domain: org_Organization
     inverse: org_siteOf
     name: org_hasSite
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Site
     slot_uri: org:hasSite
     source: http://www.w3.org/ns/org
     title: has site
   org_hasSubOrganization:
     comments:
-    - 'title: a une Sous-Organization'
     - 'title: ha sotto-Organization'
+    - 'title: a une Sous-Organization'
     - "title: tiene suborganizaci\xF3n"
-    - "description: Indique le statut de d\xE9pendance hi\xE9rarchique pour des Organisations\
-      \ ou des Unit\xE9s Op\xE9rationnelles; indique une Organisation qui est une\
-      \ sous-partie ou une branche d'une Organisation plus large. C'est la propri\xE9\
-      t\xE9 inverse de `org:subOrganizationOf`."
-    - "description: Rappresenta un contenimento gerarchico di una Organization o di\
-      \ una OrganizationalUnit. Indica una organizzazione che \xE8 parte di una organizzazione\
-      \ pi\xF9 grande. \xC8 l'inverso di `org:subOrganizationOf`."
     - "description: \u7D44\u7E54\u307E\u305F\u306F\u7D44\u7E54\u5358\u4F4D\u306E\u968E\
       \u5C64\u7684\u5305\u542B\u3092\u8868\u308F\u3057\u307E\u3059\u3002\u3053\u306E\
       \u7D44\u7E54\u306E\u30B5\u30D6\u30D1\u30FC\u30C8\u307E\u305F\u306F\u5B50\u3067\
@@ -1195,13 +1065,21 @@ slots:
     - "description: Organizaci\xF3n jer\xE1rquica de organizaciones o unidades. Indica\
       \ que una organizaci\xF3n es parte de otra organizaci\xF3n m\xE1s amplia o pertenece\
       \ a ella. Es la relaci\xF3n inversa de `org:subOrganizationOf`."
-    - No occurrences of this slot in the graph.
+    - "description: Indique le statut de d\xE9pendance hi\xE9rarchique pour des Organisations\
+      \ ou des Unit\xE9s Op\xE9rationnelles; indique une Organisation qui est une\
+      \ sous-partie ou une branche d'une Organisation plus large. C'est la propri\xE9\
+      t\xE9 inverse de `org:subOrganizationOf`."
+    - "description: Rappresenta un contenimento gerarchico di una Organization o di\
+      \ una OrganizationalUnit. Indica una organizzazione che \xE8 parte di una organizzazione\
+      \ pi\xF9 grande. \xC8 l'inverso di `org:subOrganizationOf`."
     description: Represents hierarchical containment of Organizations or Organizational
       Units; indicates an organization which is a sub-part or child of this organization.  Inverse
       of `org:subOrganizationOf`.
     domain: org_Organization
     inverse: org_subOrganizationOf
     name: org_hasSubOrganization
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:hasSubOrganization
     source: http://www.w3.org/ns/org
@@ -1222,12 +1100,13 @@ slots:
       \u90E8\u3067\u3042\u308B\u5358\u4F4D\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Unidad que es parte de la organizaci\xF3n, como, por ejemplo,\
       \ un departamento incluido en una organizaci\xF3n formal m\xE1s amplia."
-    - No occurrences of this slot in the graph.
     description: Indicates a unit which is part of this Organization, e.g. a Department
       within a larger FormalOrganization. Inverse of `org:unitOf`.
     domain: org_FormalOrganization
     inverse: org_unitOf
     name: org_hasUnit
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_OrganizationalUnit
     slot_uri: org:hasUnit
     source: http://www.w3.org/ns/org
@@ -1235,31 +1114,32 @@ slots:
     title: has Unit
   org_headOf:
     comments:
-    - 'title: responsable de'
     - 'title: responsabile di'
     - 'title: es director ejecutivo de'
-    - "description: Indique qu'une personne est le directeur ou le responsable formel\
-      \ d'une Organisation. Ceci indique souvent qu'il est au sommet de du graphe\
-      \ acyclique des `org:reportsTo`, m\xEAme si une organisation peut avoir plus\
-      \ d'un responsable."
+    - 'title: responsable de'
     - "description: Indica che una persona \xE8 leader o responsabile formale di una\
       \ Organization. Questo significa che la persona \xE8 alla radice del grafo (aciclico)\
       \ creato dalle `org:reportsTo`, sebbene un'organizzazione possa avere pi\xF9\
       \ di un responsabile."
-    - "description: \u4EBA\uFF08\u307E\u305F\u306F\u4ED6\u306E\u30A8\u30FC\u30B8\u30A7\
-      \u30F3\u30C8\uFF09\u304C\u7D44\u7E54\u306E\u30EA\u30FC\u30C0\u30FC\u3084\u6B63\
-      \u5F0F\u306A\u30C8\u30C3\u30D7\u3067\u3042\u308B\u3053\u3068\u3092\u793A\u3057\
-      \u307E\u3059\u3002"
     - "description: Persona que es jefe o jefa, representante ,,director o directora\
       \ de la organizaci\xF3n. Esto significa que dicha persona es el rango de la\
       \ relaci\xF3n `org:reportsTo` en el organigrama de la organizaci\xF3n (ac\xED\
       clico), aunque una organizaci\xF3n puede tener m\xE1s de un jefe."
-    - No occurrences of this slot in the graph.
+    - "description: Indique qu'une personne est le directeur ou le responsable formel\
+      \ d'une Organisation. Ceci indique souvent qu'il est au sommet de du graphe\
+      \ acyclique des `org:reportsTo`, m\xEAme si une organisation peut avoir plus\
+      \ d'un responsable."
+    - "description: \u4EBA\uFF08\u307E\u305F\u306F\u4ED6\u306E\u30A8\u30FC\u30B8\u30A7\
+      \u30F3\u30C8\uFF09\u304C\u7D44\u7E54\u306E\u30EA\u30FC\u30C0\u30FC\u3084\u6B63\
+      \u5F0F\u306A\u30C8\u30C3\u30D7\u3067\u3042\u308B\u3053\u3068\u3092\u793A\u3057\
+      \u307E\u3059\u3002"
     description: Indicates that a person is the leader or formal head of the Organization.
       This will normally mean that they are the root of the `org:reportsTo` (acyclic)
       graph, though an organization may have more than one head.
     domain: foaf_Agent
     name: org_headOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:headOf
     source: http://www.w3.org/ns/org
@@ -1270,15 +1150,16 @@ slots:
     - "title: occup\xE9 par"
     - 'title: ricoperto da'
     - 'title: ocupado por'
+    - 'description: Agente que ocupa un puesto.'
     - 'description: Indicate un Agent qui occupe le Poste.'
     - 'description: Indica un Agent che ricopre un Post.'
     - "description: \u30DD\u30B9\u30C8\u3092\u4FDD\u6301\u3059\u308B\u30A8\u30FC\u30B8\
       \u30A7\u30F3\u30C8\u3092\u793A\u3057\u307E\u3059\u3002"
-    - 'description: Agente que ocupa un puesto.'
-    - No occurrences of this slot in the graph.
     description: Indicates an Agent which holds a Post.
     domain: org_Post
     name: org_heldBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: org:heldBy
     source: http://www.w3.org/ns/org
@@ -1288,34 +1169,30 @@ slots:
     - 'title: occupe'
     - 'title: ricopre'
     - 'title: ocupa'
-    - "description: Indicate un Poste occup\xE9 par un Agent."
+    - "description: Puesto ocupado por alg\xFAn agente."
     - 'description: Indica un Impiego ricoperto da un Agent.'
     - "description: \u3042\u308B\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u306B\u3088\u3063\
       \u3066\u4FDD\u6301\u3055\u308C\u3066\u3044\u308B\u30DD\u30B9\u30C8\u3092\u793A\
       \u3057\u307E\u3059\u3002"
-    - "description: Puesto ocupado por alg\xFAn agente."
-    - No occurrences of this slot in the graph.
+    - "description: Indicate un Poste occup\xE9 par un Agent."
     description: Indicates a Post held by some Agent.
     domain: foaf_Agent
     inverse: org_heldBy
     name: org_holds
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Post
     slot_uri: org:holds
     source: http://www.w3.org/ns/org
     title: holds
   org_identifier:
     comments:
+    - 'title: tiene identificador'
     - 'title: identifiant'
     - 'title: identificatore'
-    - 'title: tiene identificador'
-    - "description: Donne un identifiant, comme par exemple le num\xE9ro d'enregistrement\
-      \ d'une entreprise, qui peut \xEAtre utilis\xE9 comme identifiant unique pour\
-      \ l'Organisation. De nombreux sch\xE9mas nationaux et internationaux sont disponibles.\
-      \ Cette ontologie reste neutre par rapport au sch\xE9ma utilis\xE9. Le sch\xE9\
-      ma particulier utilis\xE9 devrait \xEAtre indiqu\xE9 par le `datatype` de la\
-      \ valeur de l'identifiant. Utiliser les datatypes pour distinguer les sch\xE9\
-      mas de notation est coh\xE9rent avec les bonnes pratiques pour `skos:notation`\
-      \ dont cette propri\xE9t\xE9 est une sp\xE9cialisation."
+    - "description: \u7D44\u7E54\u3092\u4E00\u610F\u306B\u8B58\u5225\u3059\u308B\u305F\
+      \u3081\u306B\u4F7F\u7528\u3067\u304D\u308B\u4F1A\u793E\u767B\u9332\u756A\u53F7\
+      \u306A\u3069\u306E\u8B58\u5225\u5B50\u3092\u4E0E\u3048\u307E\u3059\u3002"
     - "description: Indica un identificatore univoco per l'organizzazione, come ad\
       \ esempio la partita IVA di un'azienda. Molti schemi di identificazione a livello\
       \ nazionale e internazionale sono disponibili allo scopo. L'ontologia ORG \xE8\
@@ -1324,9 +1201,14 @@ slots:
       \ del datatype per distinguere lo schema di identificazione \xE8 coerente con\
       \ le best practice per `skos:notation`, di cui questa propriet\xE0 \xE8 una\
       \ specializzazione."
-    - "description: \u7D44\u7E54\u3092\u4E00\u610F\u306B\u8B58\u5225\u3059\u308B\u305F\
-      \u3081\u306B\u4F7F\u7528\u3067\u304D\u308B\u4F1A\u793E\u767B\u9332\u756A\u53F7\
-      \u306A\u3069\u306E\u8B58\u5225\u5B50\u3092\u4E0E\u3048\u307E\u3059\u3002"
+    - "description: Donne un identifiant, comme par exemple le num\xE9ro d'enregistrement\
+      \ d'une entreprise, qui peut \xEAtre utilis\xE9 comme identifiant unique pour\
+      \ l'Organisation. De nombreux sch\xE9mas nationaux et internationaux sont disponibles.\
+      \ Cette ontologie reste neutre par rapport au sch\xE9ma utilis\xE9. Le sch\xE9\
+      ma particulier utilis\xE9 devrait \xEAtre indiqu\xE9 par le `datatype` de la\
+      \ valeur de l'identifiant. Utiliser les datatypes pour distinguer les sch\xE9\
+      mas de notation est coh\xE9rent avec les bonnes pratiques pour `skos:notation`\
+      \ dont cette propri\xE9t\xE9 est une sp\xE9cialisation."
     - "description: C\xF3digo o identificador, como por ejemplo el CIF de una empresa,\
       \ que permite identificar de forma inequ\xEDvoca a una organizaci\xF3n. Existen\
       \ muchos c\xF3digos de identificaci\xF3n tanto nacionales como internacionales.\
@@ -1337,7 +1219,6 @@ slots:
       n utilizado est\xE1 en consonancia con las buenas pr\xE1cticas recomendadas\
       \ para el uso de la propiedad `skos:notation`, de la que esta propiedad es una\
       \ especializaci\xF3n."
-    - No occurrences of this slot in the graph.
     description: Gives an identifier, such as a company registration number, that
       can be used to used to uniquely identify the organization. Many different national
       and international identier schemes are available. The org ontology is neutral
@@ -1347,6 +1228,8 @@ slots:
       of which this property is a specialization.
     domain: org_Organization
     name: org_identifier
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:identifier
     source: http://www.w3.org/ns/org
@@ -1354,26 +1237,27 @@ slots:
     title: identifier
   org_linkedTo:
     comments:
-    - "title: reli\xE9 \xE0"
-    - 'title: collegato a'
     - "title: est\xE1 relacionado con"
+    - 'title: collegato a'
     - "title: est\xE1 relacionada con"
+    - "title: reli\xE9 \xE0"
+    - "description: 2\u3064\u306E\u7D44\u7E54\u306E\u4EFB\u610F\u306E\u95A2\u4FC2\u3092\
+      \u793A\u3057\u307E\u3059\u3002"
+    - "description: Relaci\xF3n arbitraria entre dos organizaciones. Las especializaciones\
+      \ de esta relaci\xF3n se pueden utilizar para denotar relaciones de financiaci\xF3\
+      n o suministro, entre otras."
     - "description: Indique une relation arbitraire entre deux Organisations. Des\
       \ sp\xE9cialisations peuvent \xEAtre utilis\xE9es pour, par exemple, qualifier\
       \ une relation de fournisseur ou de financeur."
     - "description: Indica una relazione arbitraria tra due organizzazioni. Ad esempio,\
       \ specializzazioni di questa propriet\xE0 possono essere usate per denotare\
       \ relazioni particolari tipo il finanziamento o la fornitura."
-    - "description: 2\u3064\u306E\u7D44\u7E54\u306E\u4EFB\u610F\u306E\u95A2\u4FC2\u3092\
-      \u793A\u3057\u307E\u3059\u3002"
-    - "description: Relaci\xF3n arbitraria entre dos organizaciones. Las especializaciones\
-      \ de esta relaci\xF3n se pueden utilizar para denotar relaciones de financiaci\xF3\
-      n o suministro, entre otras."
-    - No occurrences of this slot in the graph.
     description: Indicates an arbitrary relationship between two organizations. Specializations
       of this can be used to, for example, denote funding or supply chain relationships.
     domain: org_Organization
     name: org_linkedTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:linkedTo
     source: http://www.w3.org/ns/org
@@ -1381,98 +1265,85 @@ slots:
   org_location:
     comments:
     - 'title: localisation'
-    - 'title: luogo'
-    - "title: est\xE1 ubicado en"
     - "title: est\xE1 ubicada en"
+    - "title: est\xE1 ubicado en"
+    - 'title: luogo'
+    - "description: Lugar o ubicaci\xF3n exacta de una persona en una organizaci\xF3\
+      n con el objetivo de facilitar, por ejemplo, la entrega de correo."
     - "description: Indique la description de l'endroit ou est bas\xE9 une personne\
       \ de l'Organisation, par exemple pour des besoins de messagerie interne (Bureau\
       \ 42)."
-    - "description: Indica la descrizione del luogo presso cui \xE8 possibile reperire\
-      \ una persona dell'organizzazione."
     - "description: \u4F8B\u3048\u3070\u3001\u5185\u90E8\u914D\u9001\u76EE\u7684\u306E\
       \u30E1\u30FC\u30EB\u30FB\u30B9\u30C8\u30C3\u30D7\uFF08Mail Stop\uFF09\u306A\u3069\
       \u306E\u3001\u7D44\u7E54\u5185\u306E\u4EBA\u306E\u4F4D\u7F6E\u8A18\u8FF0\u3092\
       \u63D0\u4F9B\u3057\u307E\u3059\u3002"
-    - "description: Lugar o ubicaci\xF3n exacta de una persona en una organizaci\xF3\
-      n con el objetivo de facilitar, por ejemplo, la entrega de correo."
-    - No occurrences of this slot in the graph.
+    - "description: Indica la descrizione del luogo presso cui \xE8 possibile reperire\
+      \ una persona dell'organizzazione."
     description: Gives a location description for a person within the organization,
       for example a _Mail Stop_ for internal posting purposes.
     domain: foaf_Person
     name: org_location
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: org:location
     source: http://www.w3.org/ns/org
     title: location
   org_member:
     comments:
+    - "title: es condici\xF3n de miembro sobre agente"
     - 'title: membre'
     - 'title: membro'
-    - "title: es condici\xF3n de miembro sobre agente"
     - "description: Indique une personne (ou tout autre Agent, y compris une Organisation)\
       \ impliqu\xE9 dans la relation d'Engagement. Inverse de `org:hasMembership`"
+    - "description: Persona (u otro agente, incluyendo una organizaci\xF3n) que participa\
+      \ en la relaci\xF3n de membres\xEDa. Es la relaci\xF3n inversa de `org:hasMembership`."
     - "description: Indica la Person (o un altro Agent) coinvolto in una relazione\
       \ di Membership. \xC8 l'inverso di `org:hasMembership`."
     - "description: \u69CB\u6210\u54E1\u95A2\u4FC2\u306B\u542B\u307E\u308C\u3066\u3044\
       \u308B\u4EBA\uFF08\u307E\u305F\u306F\u3001\u7D44\u7E54\u3092\u542B\u3093\u3067\
       \u3044\u308B\u4ED6\u306E\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\uFF09\u3092\u793A\
       \u3057\u307E\u3059\u3002"
-    - "description: Persona (u otro agente, incluyendo una organizaci\xF3n) que participa\
-      \ en la relaci\xF3n de membres\xEDa. Es la relaci\xF3n inversa de `org:hasMembership`."
-    - No occurrences of this slot in the graph.
     description: Indicates the Person (or other Agent including Organization) involved
       in the Membership relationship. Inverse of `org:hasMembership`
     domain: org_Membership
     inverse: org_hasMembership
     name: org_member
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Agent
     slot_uri: org:member
     source: http://www.w3.org/ns/org
     title: member
   org_memberDuring:
     comments:
-    - "title: dur\xE9e d'engagement"
-    - 'title: membro durante'
     - 'title: es miembro durante'
-    - "description: Propri\xE9t\xE9 optionnelle pour indiquer l'intervalle durant\
-      \ lequel l'engagemnet est ou \xE9tait valide."
+    - 'title: membro durante'
+    - "title: dur\xE9e d'engagement"
+    - "description: Propiedad opcional que indica el periodo durante el cual la relaci\xF3\
+      n de membres\xEDa o pertenencia a una organizaci\xF3n se mantiene en vigencia."
     - "description: Propriet\xE0 opzionale per indicare l'intervallo per il quale\
       \ l'appartenenza \xE8/\xE8 stata valida."
     - "description: \u69CB\u6210\u54E1\u304C\u6709\u52B9\u3067\u3042\u308B\uFF0F\u3067\
       \u3042\u3063\u305F\u671F\u9593\u3092\u793A\u3059\u305F\u3081\u306E\u30AA\u30D7\
       \u30B7\u30E7\u30F3\u306E\u30D7\u30ED\u30D1\u30C6\u30A3\u30FC\u3002"
-    - "description: Propiedad opcional que indica el periodo durante el cual la relaci\xF3\
-      n de membres\xEDa o pertenencia a una organizaci\xF3n se mantiene en vigencia."
-    - No occurrences of this slot in the graph.
+    - "description: Propri\xE9t\xE9 optionnelle pour indiquer l'intervalle durant\
+      \ lequel l'engagemnet est ou \xE9tait valide."
     description: Optional property to indicate the interval for which the membership
       is/was valid.
     domain: org_Membership
     name: org_memberDuring
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:memberDuring
     source: http://www.w3.org/ns/org
     title: member During
   org_memberOf:
     comments:
+    - 'title: es miembro de'
     - 'title: membre de'
     - 'title: membro di'
-    - 'title: es miembro de'
-    - "description: Indique qu'une personne est membre de l'Organisation sans pr\xE9\
-      cision sur la nature de cet engagement ou du r\xF4le jou\xE9. Notez que le choix\
-      \ du nom de cette propri\xE9t\xE9 ne vise pas \xE0 la limiter aux seuls engagements\
-      \ formels, elle peut \xE9galement couvrir des concepts reli\xE9s comme l'affiliation\
-      \ ou le b\xE9n\xE9volat. Des extensions peuvent sp\xE9cialiser cette relation\
-      \ pour indiquer des r\xF4les particuliers au sein de l'Organisation or des relations\
-      \ plus nuanc\xE9es avec elle. Poss\xE8de une propri\xE9t\xE9 inverse optionnelle,\
-      \ `org:hasmember`."
-    - "description: Indica che una persona \xE8 membro di una Organization senza una\
-      \ precisa indicazione sulla natura di questa appartenenza e sul suo ruolo. Si\
-      \ noti che la scelta del nome di questa propriet\xE0 non intende limitarla alla\
-      \ sola  rappresentazione formalmente di un'appartenenza. La propriet\xE0 pu\xF2\
-      \ coprire anche altri coinvolgimenti nell'organizzazione. Questa propriet\xE0\
-      \ pu\xF2 essere specializzata per indicare ruoli all'interno organizzazione\
-      \ o relazioni di diverse tipologie. Ha `org:hasmember` come propriet\xE0 inversa\
-      \ opzionale."
     - "description: \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\uFF08\u4EBA\u307E\u305F\u306F\
       \u4ED6\u306E\u7D44\u7E54\uFF09\u304C\u7D44\u7E54\u306E\u30E1\u30F3\u30D0\u30FC\
       \u3067\u3042\u308B\u3053\u3068\u3092\u793A\u3057\u307E\u3059\u3002\u305F\u3060\
@@ -1490,6 +1361,14 @@ slots:
       \u3088\u308A\u30CB\u30E5\u30A2\u30F3\u30B9\u3092\u542B\u3093\u3060\u7D44\u7E54\
       \u3068\u306E\u95A2\u4FC2\u3092\u793A\u3059\u3053\u3068\u304C\u3067\u304D\u307E\
       \u3059\u3002"
+    - "description: Indique qu'une personne est membre de l'Organisation sans pr\xE9\
+      cision sur la nature de cet engagement ou du r\xF4le jou\xE9. Notez que le choix\
+      \ du nom de cette propri\xE9t\xE9 ne vise pas \xE0 la limiter aux seuls engagements\
+      \ formels, elle peut \xE9galement couvrir des concepts reli\xE9s comme l'affiliation\
+      \ ou le b\xE9n\xE9volat. Des extensions peuvent sp\xE9cialiser cette relation\
+      \ pour indiquer des r\xF4les particuliers au sein de l'Organisation or des relations\
+      \ plus nuanc\xE9es avec elle. Poss\xE8de une propri\xE9t\xE9 inverse optionnelle,\
+      \ `org:hasmember`."
     - "description: Persona que pertenece a la organizaci\xF3n o es miembro de la\
       \ misma, sin que conste la naturaleza de dicha pertenencia o el papel que desempe\xF1\
       a. Se debe tener en cuenta que la elecci\xF3n de una denominaci\xF3n para esta\
@@ -1499,7 +1378,14 @@ slots:
       n. Se puede hacer uso de extensiones para especializar esta relaci\xF3n de forma\
       \ que incluya tipos espec\xEDficos de pertenencia a las organizaciones o relaciones\
       \ especiales con la organizaci\xF3n."
-    - No occurrences of this slot in the graph.
+    - "description: Indica che una persona \xE8 membro di una Organization senza una\
+      \ precisa indicazione sulla natura di questa appartenenza e sul suo ruolo. Si\
+      \ noti che la scelta del nome di questa propriet\xE0 non intende limitarla alla\
+      \ sola  rappresentazione formalmente di un'appartenenza. La propriet\xE0 pu\xF2\
+      \ coprire anche altri coinvolgimenti nell'organizzazione. Questa propriet\xE0\
+      \ pu\xF2 essere specializzata per indicare ruoli all'interno organizzazione\
+      \ o relazioni di diverse tipologie. Ha `org:hasmember` come propriet\xE0 inversa\
+      \ opzionale."
     description: Indicates that a person is a member of the Organization with no indication
       of the nature of that membership or the role played. Note that the choice of
       property name is not meant to limit the property to only formal membership arrangements,
@@ -1510,40 +1396,39 @@ slots:
     domain: foaf_Agent
     inverse: org_hasMember
     name: org_memberOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:memberOf
     source: http://www.w3.org/ns/org
     title: member of
   org_organization:
     comments:
+    - "title: es condici\xF3n de miembro sobre organizaci\xF3n"
     - 'title: organisation'
     - 'title: organizzazione'
-    - "title: es condici\xF3n de miembro sobre organizaci\xF3n"
-    - 'description: Indique l''Organization dont l''agent est membre.'
+    - "description: Organizaci\xF3n a la que pertenece el agente en calidad de miembro."
     - "description: Indica l'Organization in cui l'Agent \xE8 un membro."
+    - 'description: Indique l''Organization dont l''agent est membre.'
     - "description: \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u304C\u30E1\u30F3\u30D0\u30FC\
       \u3067\u3042\u308B\u7D44\u7E54\u3092\u793A\u3057\u307E\u3059\u3002"
-    - "description: Organizaci\xF3n a la que pertenece el agente en calidad de miembro."
-    - No occurrences of this slot in the graph.
     description: Indicates Organization in which the Agent is a member.
     domain: org_Membership
     name: org_organization
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:organization
     source: http://www.w3.org/ns/org
     title: organization
   org_originalOrganization:
     comments:
-    - 'title: organisation originelle'
     - 'title: organizzazione originale'
     - "title: es organizaci\xF3n original"
+    - 'title: organisation originelle'
     - "description: Indique une ou plusieurs organisations qui ont exist\xE9 avant\
       \ un \xE9v\xE8nement de changement. Selon l'\xE9v\xE8nement, ces organisations\
       \ ont pu continuer \xE0 exister ou non. Inverse de `org:changedBy`."
-    - "description: Indica una o pi\xF9 organizzazioni pregresse rispetto a un evento\
-      \ di cambiamento. A seconda dell'evento, queste organizzazioni potrebbero essere\
-      \ esistenti dopo l'evento o  aver cessato la loro esistenza. \xC8 l'inverso\
-      \ di `org:changedBy`."
     - "description: \u5909\u66F4\u306E\u304D\u3063\u304B\u3051\u3068\u306A\u3063\u305F\
       \u51FA\u6765\u4E8B\u4EE5\u524D\u306B\u5B58\u5728\u3057\u305F1\u3064\u4EE5\u4E0A\
       \u306E\u7D44\u7E54\u3092\u793A\u3057\u307E\u3059\u3002\u51FA\u6765\u4E8B\u306B\
@@ -1554,13 +1439,18 @@ slots:
     - "description: Una o m\xE1s organizaciones que exist\xEDan antes de que sucediera\
       \ el cambio en la organizaci\xF3n. Dependiendo del tipo de cambio, dichas organizaciones\
       \ pueden haber dejado de existir o no. Es la relaci\xF3n inversa de `org:changedBy`."
-    - No occurrences of this slot in the graph.
+    - "description: Indica una o pi\xF9 organizzazioni pregresse rispetto a un evento\
+      \ di cambiamento. A seconda dell'evento, queste organizzazioni potrebbero essere\
+      \ esistenti dopo l'evento o  aver cessato la loro esistenza. \xC8 l'inverso\
+      \ di `org:changedBy`."
     description: Indicates one or more organizations that existed before the change
       event. Depending on the event they may or may not have continued to exist after
       the event. Inverse of `org:changedBy`.
     domain: org_ChangeEvent
     inverse: org_changedBy
     name: org_originalOrganization
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:originalOrganization
     source: http://www.w3.org/ns/org
@@ -1568,48 +1458,29 @@ slots:
     title: original organization
   org_postIn:
     comments:
+    - 'title: es un puesto en'
     - 'title: poste chez'
     - 'title: impiego in'
-    - 'title: es un puesto en'
     - 'description: Indicate l''Organisation dans laquelle le Poste existe.'
     - "description: Indica l'Organization in cui il Post \xE8 presente."
+    - "description: Organizaci\xF3n en la que existe el puesto."
     - "description: \u30DD\u30B9\u30C8\u304C\u5B58\u5728\u3059\u308B\u7D44\u7E54\u3092\
       \u793A\u3057\u307E\u3059\u3002"
-    - "description: Organizaci\xF3n en la que existe el puesto."
-    - No occurrences of this slot in the graph.
     description: Indicates the Organization in which the Post exists.
     domain: org_Post
     inverse: org_hasPost
     name: org_postIn
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:postIn
     source: http://www.w3.org/ns/org
     title: post in
   org_purpose:
     comments:
-    - 'title: but'
-    - 'title: obiettivo'
     - 'title: tiene objetivo'
-    - "description: Indique le but de cette Organisation. Il peut exister plusieurs\
-      \ buts \xE0 diff\xE9rents niveaux d'abstraction mais la nature d'une organisation\
-      \ est d'avoir une raison d'exister et cette propri\xE9t\xE9 doit servir \xE0\
-      \ documenter cette raison d'\xEAtre. Une Organisation peut avoir plusieurs Buts.\
-      \ Il est recommand\xE9 que le but soit libell\xE9 \xE0 l'aide d'un vocabulaire\
-      \ contr\xF4l\xE9 ou autre code \xE9tabli, id\xE9alement avec un concept `skos:Concept`.\
-      \ Toutefois, le champ de cette propri\xE9t\xE9 est laiss\xE9 ouvert et pourrait\
-      \ accepter d'autres sch\xE9mas de description. Il est pr\xE9f\xE9rable que les\
-      \ sp\xE9cialisations ou les profils d'applications de ce vocabulaire contraignent\
-      \ le champ de cette propri\xE9t\xE9."
-    - "description: Indica l'obiettivo di questa Organization. In generale, si possono\
-      \ esprimere gli obiettivi di un'organizzazione secondo diversi livelli di astrazione,\
-      \ ma la natura stessa dell'organizzazione ha una ragione d'essere ed \xE8 proprio\
-      \ questa che deve essere catturata con tale propriet\xE0. Inoltre, un'Organization\
-      \ pu\xF2 avere obiettivi multipli. \xC8 raccomandabile che l'obiettivo faccia\
-      \ parte di una code list, e che sia preferibilmente un `skos:Concept`. Ad ogni\
-      \ modo, il codominio della propriet\xE0 \xE8 lasciato aperto per consentire\
-      \ altri tipi di di descrizione. Conseguentemente, eventuali specializzazioni\
-      \ o profili applicativi possono utilizzare quel vocabolario come codominio della\
-      \ propriet\xE0."
+    - 'title: obiettivo'
+    - 'title: but'
     - "description: \u3053\u306E\u7D44\u7E54\u306E\u76EE\u7684\u3092\u793A\u3057\u307E\
       \u3059\u3002\u7570\u306A\u308B\u62BD\u8C61\u30EC\u30D9\u30EB\u306E\u591A\u304F\
       \u306E\u76EE\u7684\u304C\u3042\u308A\u3048\u307E\u3059\u304C\u3001\u7D44\u7E54\
@@ -1632,7 +1503,26 @@ slots:
       \ alternativas: \xE1rea_ _jurisdicci\xF3n_ _ responsabilidad _ (especialmente\
       \ cuando se aplica a unidades tales como ministerios o divisiones administrativas\
       \ de los gobiernos)"
-    - No occurrences of this slot in the graph.
+    - "description: Indique le but de cette Organisation. Il peut exister plusieurs\
+      \ buts \xE0 diff\xE9rents niveaux d'abstraction mais la nature d'une organisation\
+      \ est d'avoir une raison d'exister et cette propri\xE9t\xE9 doit servir \xE0\
+      \ documenter cette raison d'\xEAtre. Une Organisation peut avoir plusieurs Buts.\
+      \ Il est recommand\xE9 que le but soit libell\xE9 \xE0 l'aide d'un vocabulaire\
+      \ contr\xF4l\xE9 ou autre code \xE9tabli, id\xE9alement avec un concept `skos:Concept`.\
+      \ Toutefois, le champ de cette propri\xE9t\xE9 est laiss\xE9 ouvert et pourrait\
+      \ accepter d'autres sch\xE9mas de description. Il est pr\xE9f\xE9rable que les\
+      \ sp\xE9cialisations ou les profils d'applications de ce vocabulaire contraignent\
+      \ le champ de cette propri\xE9t\xE9."
+    - "description: Indica l'obiettivo di questa Organization. In generale, si possono\
+      \ esprimere gli obiettivi di un'organizzazione secondo diversi livelli di astrazione,\
+      \ ma la natura stessa dell'organizzazione ha una ragione d'essere ed \xE8 proprio\
+      \ questa che deve essere catturata con tale propriet\xE0. Inoltre, un'Organization\
+      \ pu\xF2 avere obiettivi multipli. \xC8 raccomandabile che l'obiettivo faccia\
+      \ parte di una code list, e che sia preferibilmente un `skos:Concept`. Ad ogni\
+      \ modo, il codominio della propriet\xE0 \xE8 lasciato aperto per consentire\
+      \ altri tipi di di descrizione. Conseguentemente, eventuali specializzazioni\
+      \ o profili applicativi possono utilizzare quel vocabolario come codominio della\
+      \ propriet\xE0."
     description: 'Indicates the purpose of this Organization. There can be many purposes
       at different levels of abstraction but the nature of an organization is to have
       a reason for existence and this property is a means to document that reason.
@@ -1644,37 +1534,40 @@ slots:
       (esp. if applied to OrganizationalUnits such as Government Departments).'
     domain: org_Organization
     name: org_purpose
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:purpose
     source: http://www.w3.org/ns/org
     title: purpose
   org_remuneration:
     comments:
-    - "title: r\xE9muneration"
     - 'title: remunerazione'
+    - "title: r\xE9muneration"
     - "title: recibe remuneraci\xF3n"
-    - "description: Indique un salaire ou tout autre compensation associ\xE9e au R\xF4\
-      le. Typiquement, ceci sera annot\xE9 en utilisant un sch\xE9ma existant comme\
-      \  `gr:PriceSpecification` mais le champ de cette propri\xE9t\xE9 est laiss\xE9\
-      \ ouvert afin de permettre aux applications de la sp\xE9cialiser (par exemple\
-      \ remunerationEuro)."
-    - "description: Indica il salario o altra forma di remunerazione associata al\
-      \ ruolo. In genere, questo si denota usando uno schema di rappresentazione esistente\
-      \ come il `gr:PriceSpecification` ma il codominio \xE8 lasciato libero di essere\
-      \ specializzato a seconda delle applicazioni."
-    - "description: \u5F79\u5272\u306B\u95A2\u4FC2\u3059\u308B\u7D66\u6599\u3084\u305D\
-      \u306E\u4ED6\u306E\u5831\u916C\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Salario o cualquier otra remuneraci\xF3n asociada con la actividad.\
       \ La forma usual de referirse a dicha remuneraci\xF3n ser\xE1 utilizando un\
       \ esquema de representaci\xF3n como el propuesto en la ontolog\xEDa GoodRelations\
       \ `gr:PriceSpecification`, pero el rango se deja abierto a que las distintas\
       \ aplicaciones lo especialicen (por ejemplo, remunerationInGBP)"
-    - No occurrences of this slot in the graph.
+    - "description: \u5F79\u5272\u306B\u95A2\u4FC2\u3059\u308B\u7D66\u6599\u3084\u305D\
+      \u306E\u4ED6\u306E\u5831\u916C\u3092\u793A\u3057\u307E\u3059\u3002"
+    - "description: Indica il salario o altra forma di remunerazione associata al\
+      \ ruolo. In genere, questo si denota usando uno schema di rappresentazione esistente\
+      \ come il `gr:PriceSpecification` ma il codominio \xE8 lasciato libero di essere\
+      \ specializzato a seconda delle applicazioni."
+    - "description: Indique un salaire ou tout autre compensation associ\xE9e au R\xF4\
+      le. Typiquement, ceci sera annot\xE9 en utilisant un sch\xE9ma existant comme\
+      \  `gr:PriceSpecification` mais le champ de cette propri\xE9t\xE9 est laiss\xE9\
+      \ ouvert afin de permettre aux applications de la sp\xE9cialiser (par exemple\
+      \ remunerationEuro)."
     description: Indicates a salary or other reward associated with the role. Typically
       this will be denoted using an existing representation scheme such as `gr:PriceSpecification`
       but the range is left open to allow applications to specialize it (e.g. to remunerationInGBP).
     domain: org_Role
     name: org_remuneration
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:remuneration
     source: http://www.w3.org/ns/org
@@ -1682,8 +1575,15 @@ slots:
   org_reportsTo:
     comments:
     - "title: est subordonn\xE9 \xE0"
-    - 'title: riporta a'
     - 'title: responde ante'
+    - 'title: riporta a'
+    - "description: \u7D44\u7E54\u56F3\u3067\u63CF\u304B\u308C\u308B\u304B\u3082\u3057\
+      \u308C\u306A\u3044\u3088\u3046\u306A\u4E0A\u4E0B\u95A2\u4FC2\u3092\u793A\u3057\
+      \u307E\u3059\u3002\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u9593\u307E\u305F\u306F\
+      \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u304C\u5C31\u304F\u3053\u3068\u304C\u3067\
+      \u304D\u308B\u30DD\u30B9\u30C8\u9593\u306E\u4E0A\u4E0B\u95A2\u4FC2\u3092\u76F4\
+      \u63A5\u7684\u306B\u793A\u3059\u305F\u3081\u306B\u4F7F\u7528\u3067\u304D\u307E\
+      \u3059\u3002"
     - "description: Indique une relation de subordination comme elle pourrait figurer\
       \ dans un organigramme. La s\xE9mantique pr\xE9cise de cette subordination pourra\
       \ varier selon l'Organisation mais vise \xE0 englober aussi bien les relations\
@@ -1694,13 +1594,6 @@ slots:
       \ La semantica precisa pu\xF2 variare a seconda dell'organizzazione, per esempio\
       \ pu\xF2 essere usata per rappresentare la propriet\xE0 di supervisione oppure\
       \ per le relazioni di rendicontazione."
-    - "description: \u7D44\u7E54\u56F3\u3067\u63CF\u304B\u308C\u308B\u304B\u3082\u3057\
-      \u308C\u306A\u3044\u3088\u3046\u306A\u4E0A\u4E0B\u95A2\u4FC2\u3092\u793A\u3057\
-      \u307E\u3059\u3002\u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u9593\u307E\u305F\u306F\
-      \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u304C\u5C31\u304F\u3053\u3068\u304C\u3067\
-      \u304D\u308B\u30DD\u30B9\u30C8\u9593\u306E\u4E0A\u4E0B\u95A2\u4FC2\u3092\u76F4\
-      \u63A5\u7684\u306B\u793A\u3059\u305F\u3081\u306B\u4F7F\u7528\u3067\u304D\u307E\
-      \u3059\u3002"
     - "description: Relaci\xF3n de subordinaci\xF3n que se representa en los organigramas\
       \ de las organizaciones. La sem\xE1ntica de la relaci\xF3n de subordinaci\xF3\
       n var\xEDa seg\xFAn las organizaciones, pero su intenci\xF3n es abarcar tanto\
@@ -1708,37 +1601,39 @@ slots:
       \ la autoridad determina los objetivos o el salario) como a las relaciones de\
       \ subordinaci\xF3n m\xE1s generales (por ejemplo, las llamadas l\xEDneas de\
       \ autoridad o de mando (y responsabilidad) (http://www.promonegocios.net/organigramas/tipos-de-organigramas.html))."
-    - No occurrences of this slot in the graph.
     description: Indicates a reporting relationship as might be depicted on an organizational
       chart. The precise semantics of the reporting relationship will vary by organization
       but is intended to encompass both direct supervisory relationships (e.g. carrying
       objective and salary setting authority) and more general reporting or accountability
       relationships (e.g. so called _dotted line_ reporting).
     name: org_reportsTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:reportsTo
     source: http://www.w3.org/ns/org
     title: reports to
   org_resultedFrom:
     comments:
-    - 'title: issue de'
     - 'title: risultato da'
+    - 'title: issue de'
     - 'title: es el resultado de'
+    - "description: Evento que tiene como resultado la creaci\xF3n de una organizaci\xF3\
+      n."
+    - "description: \u3053\u306E\u7D44\u7E54\u306B\u306A\u3063\u305F\uFF08\u5C0E\u3044\
+      \u305F\u3001\u4F5C\u6210\u3055\u308C\u305F\uFF09\u304D\u3063\u304B\u3051\u3068\
+      \u306A\u3063\u305F\u51FA\u6765\u4E8B\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Indique un \xE9v\xE8nement dont est issue l'Organisation. Inverse\
       \ de `org:resultingOrganization`."
     - "description: Indica l'evento che ha permesso all'organizzazione di instaurarsi.\
       \ \xC8 l'inverso di `org:resultingOrganization`."
-    - "description: \u3053\u306E\u7D44\u7E54\u306B\u306A\u3063\u305F\uFF08\u5C0E\u3044\
-      \u305F\u3001\u4F5C\u6210\u3055\u308C\u305F\uFF09\u304D\u3063\u304B\u3051\u3068\
-      \u306A\u3063\u305F\u51FA\u6765\u4E8B\u3092\u793A\u3057\u307E\u3059\u3002"
-    - "description: Evento que tiene como resultado la creaci\xF3n de una organizaci\xF3\
-      n."
-    - No occurrences of this slot in the graph.
     description: Indicates an event which resulted in this organization. Inverse of
       `org:resultingOrganization`.
     domain: org_Organization
     inverse: org_resultingOrganization
     name: org_resultedFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_ChangeEvent
     slot_uri: org:resultedFrom
     source: http://www.w3.org/ns/org
@@ -1749,44 +1644,46 @@ slots:
     - "title: a donn\xE9 naissance \xE0"
     - 'title: risultato in'
     - 'title: resulta en'
-    - "description: Indique une organisation qui a \xE9t\xE9 cr\xE9\xE9e ou a \xE9\
-      t\xE9 modifi\xE9e \xE0 la suite d'un \xC9v\xE8nement de changement. Inverse\
-      \ de `org:resultedFrom`."
-    - "description: Indica l'organizzazione che \xE8 stata creata o mutata a seguito\
-      \ dell'evento. \xC8 l'inverso di `org:resultedFrom`."
     - "description: \u51FA\u6765\u4E8B\u306E\u7D50\u679C\u3001\u4F5C\u6210\u3001\u5909\
       \u66F4\u3055\u308C\u305F\u7D44\u7E54\u3092\u793A\u3057\u307E\u3059\u3002"
     - "description: Organizaci\xF3n que ha sido creada o modificada tras un evento\
       \ espec\xEDfico.\_ Es la relaci\xF3n inversa de `org:resultedFrom`."
-    - No occurrences of this slot in the graph.
+    - "description: Indica l'organizzazione che \xE8 stata creata o mutata a seguito\
+      \ dell'evento. \xC8 l'inverso di `org:resultedFrom`."
+    - "description: Indique une organisation qui a \xE9t\xE9 cr\xE9\xE9e ou a \xE9\
+      t\xE9 modifi\xE9e \xE0 la suite d'un \xC9v\xE8nement de changement. Inverse\
+      \ de `org:resultedFrom`."
     description: Indicates an organization which was created or changed as a result
       of the event. Inverse of `org:resultedFrom`.
     domain: org_ChangeEvent
     inverse: org_resultedFrom
     name: org_resultingOrganization
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:resultingOrganization
     source: http://www.w3.org/ns/org
     title: resulted in
   org_role:
     comments:
-    - "title: r\xF4le"
     - 'title: ruolo'
     - "title: desempe\xF1a la actividad de"
-    - "description: Indique le R\xF4le de l'Agent dans son Engagement avec l'Organisation."
-    - 'description: Indica il Role che un Agent ricopre in una relazione di Membership
-      con una Organization'
+    - "title: r\xF4le"
+    - "description: Actividad que el agente desempe\xF1a en una relaci\xF3n de pertenencia\
+      \ a una organizaci\xF3n."
     - "description: \u30A8\u30FC\u30B8\u30A7\u30F3\u30C8\u304C\u7D44\u7E54\u3068\u306E\
       \u69CB\u6210\u54E1\u95A2\u4FC2\u306B\u304A\u3044\u3066\u62C5\u3046\u5F79\u5272\
       \u3092\u793A\u3057\u307E\u3059\u3002\u30DD\u30B9\u30C8\u306E\u4FDD\u6301\u8005\
       \u304C\u62C5\u3046\u5F79\u5272\u3092\u793A\u3059\u305F\u3081\u306Borg:Post\u3067\
       \u7528\u3044\u308B\u3053\u3068\u3082\u3067\u304D\u307E\u3059\u3002"
-    - "description: Actividad que el agente desempe\xF1a en una relaci\xF3n de pertenencia\
-      \ a una organizaci\xF3n."
-    - No occurrences of this slot in the graph.
+    - 'description: Indica il Role che un Agent ricopre in una relazione di Membership
+      con una Organization'
+    - "description: Indique le R\xF4le de l'Agent dans son Engagement avec l'Organisation."
     description: Indicates the Role that the Agent plays in a Membership relationship
       with an Organization.
     name: org_role
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Role
     slot_uri: org:role
     source: http://www.w3.org/ns/org
@@ -1797,8 +1694,8 @@ slots:
     - range: rdf_Property
     comments:
     - "title: r\xF4le (propri\xE9t\xE9)"
-    - "title: ruolo (propriet\xE0)"
     - "title: desempe\xF1a la actividad de (propiedad)"
+    - "title: ruolo (propriet\xE0)"
     - "description: Ceci est une m\xE9ta-propri\xE9t\xE9 utilis\xE9e pour annoter\
       \ une instance de `org:Role` ayant une sous-propri\xE9t\xE9 `org:memberOf` qui\
       \ peut \xEAtre utilis\xE9e pour indiquer directement le r\xF4le et pouvoir faire\
@@ -1806,6 +1703,13 @@ slots:
       \ impliquant l'existence d'une relation de propri\xE9t\xE9 directe \xE0 travers\
       \ d'une r\xE8gle d'inf\xE9rence de la forme:  `{ [] org:member ?p; org:organization\
       \ ?o; org:role [org:roleProperty ?r] } -> {?p ?r ?o}`."
+    - 'description: Meta-propiedad que se utiliza para anotar una instancia de `org:Role`
+      con una sub-propiedad de `org:memberOf`, que puede ser utilizada para indicar
+      directamente la actividad a fin de facilitar las consultas a los datos. The
+      intended semantics is that a Membership relation involving the Role implies
+      the existence of a direct property relationship through an inference rule of
+      the form: { [] org:member ?a; org:organization ?o; org:role [org:roleProperty
+      ?r] } -> {?a ?r ?o}'
     - "description: Questa \xE8 una meta-propriet\xE0 usata per annotare un'istanza\
       \ di `org:Role` con una sotto-propriet\xE0 di `org:memberOf` e pu\xF2 essere\
       \ usata per indicare direttamente il ruolo per facilitare un'interrogazione\
@@ -1817,13 +1721,6 @@ slots:
       \u30F3\u30B9\u3092\u6CE8\u91C8\u3059\u308B\u305F\u3081\u306B\u7528\u3044\u3089\
       \u308C\u308B\u30E1\u30BF\u30EC\u30D9\u30EB\u306E\u30D7\u30ED\u30D1\u30C6\u30A3\
       \u30FC\u3067\u3059\u3002"
-    - 'description: Meta-propiedad que se utiliza para anotar una instancia de `org:Role`
-      con una sub-propiedad de `org:memberOf`, que puede ser utilizada para indicar
-      directamente la actividad a fin de facilitar las consultas a los datos. The
-      intended semantics is that a Membership relation involving the Role implies
-      the existence of a direct property relationship through an inference rule of
-      the form: { [] org:member ?a; org:organization ?o; org:role [org:roleProperty
-      ?r] } -> {?a ?r ?o}'
     description: 'This is a metalevel property which is used to annotate an `org:Role`
       instance with a sub-property of `org:memberOf` that can be used to directly
       indicate the role for easy of query. The intended semantics is a Membership
@@ -1838,9 +1735,9 @@ slots:
     title: role (property)
   org_siteAddress:
     comments:
-    - 'title: adresse du Site'
-    - 'title: indirizzo della sede'
     - "title: es la direcci\xF3n de la sede"
+    - 'title: indirizzo della sede'
+    - 'title: adresse du Site'
     - "description: Indique une adresse pour le site dans un encodage appropri\xE9\
       . L'usage du vocabulaire vCard ( http://www.w3.org/TR/vcard-rdf/) est encourag\xE9\
       , mais le range est ouvert pour permettre l'utilisation d'autres vocabulaires.\
@@ -1852,6 +1749,12 @@ slots:
       \ vCard (http://www.w3.org/TR/vcard-rdf/). L'indirizzo pu\xF2 includere email,\
       \ numero di telefono e informazioni di geolocalizzazione e non \xE8 vincolato\
       \ ad essere un indirizzo fisico."
+    - "description: Direcci\xF3n de la sede seg\xFAn una codificaci\xF3n adecuada.\
+      \ Se recomienda el uso de vCard (que utiliza el vocabulario en http://www.w3.org/TR/vcard-rdf/),\
+      \ pero el rango no se restringe \xFAnicamente al uso de este vocabulario sino\
+      \ que se permite el uso de otros c\xF3digos. La direcci\xF3n puede constar de\
+      \ una direcci\xF3n de correo electr\xF3nico, un n\xFAmero de tel\xE9fono o informaci\xF3\
+      n de geo-localizaci\xF3n, y no se limita a una direcci\xF3n postal f\xEDsica."
     - "description: \u9069\u5207\u306B\u30B3\u30FC\u30C9\u5316\u3055\u308C\u305F\u30B5\
       \u30A4\u30C8\u306E\u30A2\u30C9\u30EC\u30B9\u3092\u793A\u3057\u307E\u3059\u3002\
       vCard[vcard-rdf]\u8A9E\u5F59\u306A\u3069\u306E\u6709\u540D\u306A\u30A2\u30C9\
@@ -1864,13 +1767,6 @@ slots:
       \u60C5\u5831\u3092\u542B\u3080\u3053\u3068\u304C\u3067\u304D\u3001\u7269\u7406\
       \u7684\u306A\u30A2\u30C9\u30EC\u30B9\u306B\u5236\u9650\u3055\u308C\u307E\u305B\
       \u3093\u3002"
-    - "description: Direcci\xF3n de la sede seg\xFAn una codificaci\xF3n adecuada.\
-      \ Se recomienda el uso de vCard (que utiliza el vocabulario en http://www.w3.org/TR/vcard-rdf/),\
-      \ pero el rango no se restringe \xFAnicamente al uso de este vocabulario sino\
-      \ que se permite el uso de otros c\xF3digos. La direcci\xF3n puede constar de\
-      \ una direcci\xF3n de correo electr\xF3nico, un n\xFAmero de tel\xE9fono o informaci\xF3\
-      n de geo-localizaci\xF3n, y no se limita a una direcci\xF3n postal f\xEDsica."
-    - No occurrences of this slot in the graph.
     description: Indicates an address for the site in a suitable encoding. Use of
       vCard (using the http://www.w3.org/TR/vcard-rdf/ vocabulary) is encouraged but
       the range is left open to allow other encodings to be used. The address may
@@ -1878,6 +1774,8 @@ slots:
       to a physical address.
     domain: org_Site
     name: org_siteAddress
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: org:siteAddress
     source: http://www.w3.org/ns/org
@@ -1885,50 +1783,52 @@ slots:
   org_siteOf:
     comments:
     - 'title: site de'
-    - 'title: sede di'
     - 'title: es sede de'
-    - "description: Indique une Organisation qui a une pr\xE9sence sur le site en\
-      \ question. Inverse de `org:hasSite`."
+    - 'title: sede di'
+    - "description: Organizaci\xF3n que tiene ubicaci\xF3n en un lugar. Es la relaci\xF3\
+      n inversa de `org:hasSite`."
     - "description: Indica un'Organization che ha una qualche presenza nella data\
       \ sede. \xC8 l'inverso di `org:hasSite`."
+    - "description: Indique une Organisation qui a une pr\xE9sence sur le site en\
+      \ question. Inverse de `org:hasSite`."
     - "description: \u3042\u308B\u30B5\u30A4\u30C8\u3067\u3042\u308B\u5B58\u5728\u611F\
       \u3092\u6301\u3063\u3066\u3044\u308B\u7D44\u7E54\u3092\u793A\u3057\u307E\u3059\
       \u3002"
-    - "description: Organizaci\xF3n que tiene ubicaci\xF3n en un lugar. Es la relaci\xF3\
-      n inversa de `org:hasSite`."
-    - No occurrences of this slot in the graph.
     description: Indicates an Organization which has some presence at the given site.
       This is the inverse of `org:hasSite`.
     domain: org_Site
     inverse: org_hasSite
     name: org_siteOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:siteOf
     source: http://www.w3.org/ns/org
     title: site Of
   org_subOrganizationOf:
     comments:
-    - 'title: sous-Organization de'
     - 'title: sotto-Organization di'
     - "title: es suborganizaci\xF3n de"
-    - "description: Repr\xE9sente une relation hierarchique des Organisations ou des\
-      \ Unit\xE9s Op\xE9rationnelles; indique une Organisation sujet qui contient\
-      \ cette Organisation. Inverse de `org:hasSubOrganization`."
-    - "description: Rappresenta un contenimento gerarchico di una Organization o di\
-      \ una OrganizationalUnit. \xC8 l'inverso di `org:hasSubOrganization`. Ha nome\
-      \ come nome alternativo hasSubOrg."
+    - 'title: sous-Organization de'
     - "description: \u7D44\u7E54\u307E\u305F\u306F\u7D44\u7E54\u5358\u4F4D\u306E\u968E\
       \u5C64\u7684\u5305\u542B\u3092\u8868\u308F\u3057\u307E\u3059\u3002\u3053\u306E\
       \u7D44\u7E54\u3092\u542B\u3080\u7D44\u7E54\u3092\u793A\u3057\u307E\u3059\u3002"
+    - "description: Rappresenta un contenimento gerarchico di una Organization o di\
+      \ una OrganizationalUnit. \xC8 l'inverso di `org:hasSubOrganization`. Ha nome\
+      \ come nome alternativo hasSubOrg."
     - "description: Distribuci\xF3n jer\xE1rquica de organizaciones o unidades. Indica\
       \ que una organizaci\xF3n contiene a otra organizaci\xF3n. Es la relaci\xF3\
       n inversa de `org:hasSubOrganization`"
-    - No occurrences of this slot in the graph.
+    - "description: Repr\xE9sente une relation hierarchique des Organisations ou des\
+      \ Unit\xE9s Op\xE9rationnelles; indique une Organisation sujet qui contient\
+      \ cette Organisation. Inverse de `org:hasSubOrganization`."
     description: Represents hierarchical containment of Organizations or OrganizationalUnits;
       indicates an Organization which contains this Organization. Inverse of `org:hasSubOrganization`.
     domain: org_Organization
     inverse: org_hasSubOrganization
     name: org_subOrganizationOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:subOrganizationOf
     source: http://www.w3.org/ns/org
@@ -1936,15 +1836,21 @@ slots:
     title: subOrganization of
   org_transitiveSubOrganizationOf:
     comments:
-    - 'title: sous-Organization transitive de'
     - 'title: sotto-Organization transitiva'
-    - "title: es suborganizaci\xF3n de manera transitiva de"
     - "title: es suborganizaci\xF3n de (transitiva)"
+    - 'title: sous-Organization transitive de'
+    - "title: es suborganizaci\xF3n de manera transitiva de"
     - "description: La version transitive de la propri\xE9t\xE9 subOrganizationOf,\
       \ renvoie une repr\xE9sentation de toutes les organisations qui contiennent\
       \ celle-ci. Notez que ceci est une super-propri\xE9t\xE9 de la relation transitive\
       \ donc elle pourrait contenir des assertions additionnelles mais cet usage n'est\
       \ pas recommand\xE9."
+    - "description: La versi\xF3n transitiva de la propiedad \u201CsubOrganizationOf\u201D\
+      , es decir, la representaci\xF3n de todas las organizaciones en las que esta\
+      \ est\xE1 contenida. T\xE9ngase en cuenta que desde el punto de vista t\xE9\
+      cnico esta es una propiedad que contiene a todas las propiedades transitivas,\
+      \ de forma que podr\xEDa contener afirmaciones adicionales, aunque su uso no\
+      \ est\xE1 aconsejado."
     - "description: \xC8 la chiusura transitiva di subOrganizationOf, quindi rappresenta\
       \ tutte le organizzazioni che la contengono. Tecnicamente, essendo una chiusura\
       \ transitiva, pu\xF2 contenere asserzioni che non la riguardano e quindi il\
@@ -1958,49 +1864,44 @@ slots:
       \u306E\u3088\u3046\u306A\u4F7F\u7528\u6CD5\u306F\u304A\u52E7\u3081\u3067\u304D\
       \u306A\u3044\u3053\u3068\u306B\u6CE8\u610F\u3057\u3066\u304F\u3060\u3055\u3044\
       \u3002"
-    - "description: La versi\xF3n transitiva de la propiedad \u201CsubOrganizationOf\u201D\
-      , es decir, la representaci\xF3n de todas las organizaciones en las que esta\
-      \ est\xE1 contenida. T\xE9ngase en cuenta que desde el punto de vista t\xE9\
-      cnico esta es una propiedad que contiene a todas las propiedades transitivas,\
-      \ de forma que podr\xEDa contener afirmaciones adicionales, aunque su uso no\
-      \ est\xE1 aconsejado."
-    - No occurrences of this slot in the graph.
     description: The transitive closure of subOrganizationOf, giving a representation
       of all organizations that contain this one. Note that technically this is a
       super property of the transitive closure so it could contain additional assertions
       but such usage is discouraged.
     domain: org_Organization
     name: org_transitiveSubOrganizationOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_Organization
     slot_uri: org:transitiveSubOrganizationOf
     source: http://www.w3.org/ns/org
     title: transitive sub-organization
   org_unitOf:
     comments:
+    - 'title: es unidad de'
     - "title: unit\xE9 de"
     - "title: unit\xE0 di"
-    - 'title: es unidad de'
-    - "description: Indique l'Organisation dont cette Organisation ou Unit\xE9 fait\
-      \ partie, par exemple un D\xE9partment au sein d'une Organisation Formelle plus\
-      \ large. Inverse de `org:hasUnit`."
-    - "description: Indica un Organization di cui questa Unit fa parte, come ad esempio\
-      \ un dipartimento all'interno di una pi\xF9 vasta FormalOrganization. \xC8 l'inverso\
-      \ di `org:hasUnit`."
     - "description: \u4F8B\u3048\u3070\u3001\u3088\u308A\u5927\u304D\u306A\u7D44\u7E54\
       \u5185\u306E\u90E8\u5C40\u306A\u3069\u3001\u3053\u306E\u5358\u4F4D\u304C\u305D\
       \u306E\u4E00\u90E8\u5206\u3067\u3042\u308B\u7D44\u7E54\u3092\u793A\u3057\u307E\
       \u3059\u3002"
     - "description: Organizaci\xF3n de la que es parte esta unidad, por ejemplo, un\
       \ departamento incluido en una organizaci\xF3n formal m\xE1s amplia."
-    - No occurrences of this slot in the graph.
+    - "description: Indique l'Organisation dont cette Organisation ou Unit\xE9 fait\
+      \ partie, par exemple un D\xE9partment au sein d'une Organisation Formelle plus\
+      \ large. Inverse de `org:hasUnit`."
+    - "description: Indica un Organization di cui questa Unit fa parte, come ad esempio\
+      \ un dipartimento all'interno di una pi\xF9 vasta FormalOrganization. \xC8 l'inverso\
+      \ di `org:hasUnit`."
     description: Indicates an Organization of which this Unit is a part, e.g. a Department
       within a larger FormalOrganization. This is the inverse of `org:hasUnit`.
     domain: org_OrganizationalUnit
     inverse: org_hasUnit
     name: org_unitOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: org_FormalOrganization
     slot_uri: org:unitOf
     source: http://www.w3.org/ns/org
     subproperty_of: org_subOrganizationOf
     title: unit Of
-title: No schema name specified

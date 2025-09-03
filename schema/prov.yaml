@@ -8,9 +8,6 @@ annotations:
           owl:Axiom:
             tag: owl:Axiom
             value: 8
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 7
       pairs:
         tag: pairs
         value:
@@ -47,15 +44,6 @@ annotations:
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value: 5
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  int32:
-                    tag: int32
-                    value: 4
           owl:inverseOf:
             tag: owl:inverseOf
             value:
@@ -68,39 +56,6 @@ annotations:
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value: 37
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value: 1
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  int32:
-                    tag: int32
-                    value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value: 2
-                  owl:FunctionalProperty:
-                    tag: owl:FunctionalProperty
-                    value: 2
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 5
           prov:definition:
             tag: prov:definition
             value:
@@ -158,21 +113,9 @@ annotations:
           owl:annotatedTarget:
             tag: owl:annotatedTarget
             value: 8
-          owl:cardinality:
-            tag: owl:cardinality
-            value: 4
           owl:inverseOf:
             tag: owl:inverseOf
             value: 37
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 1
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 7
           prov:definition:
             tag: prov:definition
             value: 3
@@ -196,10 +139,7 @@ annotations:
         value:
           owl:Axiom:
             tag: owl:Axiom
-            value: n27d9c6ab782d40f999c8352e9082270ab68
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n27d9c6ab782d40f999c8352e9082270ab1
+            value: n8901107d5e5d4cb79cacb2c44389fe11b57
       pairs:
         tag: pairs
         value:
@@ -214,13 +154,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: rdfs:domain
+                        value: rdfs:subPropertyOf
                       predicate:
                         tag: predicate
                         value: owl:annotatedProperty
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab62
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b68
           owl:annotatedSource:
             tag: owl:annotatedSource
             value:
@@ -238,19 +178,19 @@ annotations:
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab68
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b68
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
                       object:
                         tag: object
-                        value: prov:wasInfluencedBy
+                        value: prov:wasRevisionOf
                       predicate:
                         tag: predicate
                         value: owl:annotatedSource
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab62
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b68
           owl:annotatedTarget:
             tag: owl:annotatedTarget
             value:
@@ -262,13 +202,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: n27d9c6ab782d40f999c8352e9082270ab63
+                        value: prov:Entity
                       predicate:
                         tag: predicate
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab62
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b53
                   owl:ObjectProperty:
                     tag: owl:ObjectProperty
                     value:
@@ -280,25 +220,7 @@ annotations:
                         value: owl:annotatedTarget
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab54
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  int32:
-                    tag: int32
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab71
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b68
           owl:inverseOf:
             tag: owl:inverseOf
             value:
@@ -322,91 +244,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: prov:hadGeneration
+                        value: prov:hadPrimarySource
                       predicate:
                         tag: predicate
                         value: owl:inverseOf
                       subject:
                         tag: subject
-                        value: prov:generatedAsDerivation
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
-                        value: '0'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab1
-          owl:minCardinality:
-            tag: owl:minCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  int32:
-                    tag: int32
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:minCardinality
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab72
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value:
-                      object:
-                        tag: object
-                        value: prov:removedKey
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab74
-                  owl:FunctionalProperty:
-                    tag: owl:FunctionalProperty
-                    value:
-                      object:
-                        tag: object
-                        value: prov:pairEntity
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab70
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: prov:insertedKeyEntityPair
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab72
+                        value: prov:wasPrimarySourceOf
           prov:definition:
             tag: prov:definition
             value:
@@ -425,7 +269,7 @@ annotations:
                         value: prov:definition
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab62
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b62
           prov:dm:
             tag: prov:dm
             value:
@@ -437,13 +281,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-influence
+                        value: http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-collection
                       predicate:
                         tag: predicate
                         value: prov:dm
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab62
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b53
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -455,16 +299,18 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: hadPrimarySource property is a particular case of wasDerivedFrom
-                          (see http://www.w3.org/TR/prov-dm/#term-original-source)
-                          that aims to give credit to the source that originated some
-                          information.
+                        value: "Revision is a derivation (see http://www.w3.org/TR/prov-dm/#term-Revision).\
+                          \ Moreover, according to \nhttp://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision\
+                          \ 23 April 2012 'wasRevisionOf is a strict sub-relation\
+                          \ of wasDerivedFrom since two entities e2 and e1 may satisfy\
+                          \ wasDerivedFrom(e2,e1) without being a variant of each\
+                          \ other.'"
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: n27d9c6ab782d40f999c8352e9082270ab54
+                        value: n8901107d5e5d4cb79cacb2c44389fe11b68
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -482,7 +328,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: prov:generatedAsDerivation
+                        value: prov:wasPrimarySourceOf
           rdfs:label:
             tag: rdfs:label
             value:
@@ -494,13 +340,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: generatedAsDerivation
+                        value: wasPrimarySourceOf
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: prov:generatedAsDerivation
+                        value: prov:wasPrimarySourceOf
 classes:
   prov_Accept:
     class_uri: prov:Accept
@@ -699,13 +545,13 @@ classes:
   prov_Dictionary:
     class_uri: prov:Dictionary
     comments:
+    - 'description: A given dictionary forms a given structure for its members. A
+      different structure (obtained either by insertion or removal of members) constitutes
+      a different dictionary.'
     - 'description: This concept allows for the provenance of the dictionary, but
       also of its constituents to be expressed. Such a notion of dictionary corresponds
       to a wide variety of concrete data structures, such as a maps or associative
       arrays.'
-    - 'description: A given dictionary forms a given structure for its members. A
-      different structure (obtained either by insertion or removal of members) constitutes
-      a different dictionary.'
     description: A dictionary is an entity that provides a structure to some constituents,
       which are themselves entities. These constituents are said to be member of the
       dictionary.
@@ -1065,12 +911,11 @@ classes:
     source: http://www.w3.org/ns/prov-o#
     title: Usage
 comments:
+- 'title: W3C PROVenance Interchange Ontology (PROV-O) Dictionary Extension'
 - 'title: W3C PROVenance Interchange'
-- "description: This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\
-  \ \u240A\u240AIf you wish to make comments regarding this document, please send\
-  \ them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org,\
-  \ archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback\
-  \ is welcome."
+- 'title: Dublin Core extensions of the W3C PROVenance Interchange Ontology (PROV-O)'
+- 'title: PROV Access and Query Ontology'
+- 'title: W3C PROV Linking Across Provenance Bundles Ontology (PROV-LINKS)'
 - 'title: W3C PROVenance Interchange Ontology (PROV-O)'
 - 'description: 0.2'
 - "description: This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\
@@ -1078,25 +923,16 @@ comments:
   \ them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org,\
   \ archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback\
   \ is welcome."
-- 'title: PROV Access and Query Ontology'
-- 'title: Dublin Core extensions of the W3C PROVenance Interchange Ontology (PROV-O)'
 - "description: This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\
-  \ \u240A\u240AIf you wish to make comments regarding this document, please send\
-  \ them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org,\
-  \ archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback\
-  \ is welcome."
+  \ If you wish to make comments regarding this document, please send them to public-prov-comments@w3.org\
+  \ (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/\u240A\
+  ). All feedback is welcome."
 - "description: This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\
   \ \r\u240A\r\u240AIf you wish to make comments regarding this document, please send\
   \ them to public-prov-comments@w3.org (subscribe public-prov-comments-request@w3.org,\
   \ archives http://lists.w3.org/Archives/Public/public-prov-comments/). All feedback\
   \ is welcome."
-- 'title: W3C PROVenance Interchange Ontology (PROV-O) Dictionary Extension'
-- "description: This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\
-  \ If you wish to make comments regarding this document, please send them to public-prov-comments@w3.org\
-  \ (subscribe public-prov-comments-request@w3.org, archives http://lists.w3.org/Archives/Public/public-prov-comments/\u240A\
-  ). All feedback is welcome."
-- 'title: W3C PROV Linking Across Provenance Bundles Ontology (PROV-LINKS)'
-created_on: '2025-07-17T19:19:26.079956'
+created_on: '2025-09-03T11:21:04.530332'
 default_prefix: okns
 description: "This document is published by the Provenance Working Group (http://www.w3.org/2011/prov/wiki/Main_Page).\u240A\
   \u240AIf you wish to make comments regarding this document, please send them to\
@@ -1105,10 +941,10 @@ description: "This document is published by the Provenance Working Group (http:/
   \ is welcome."
 id: okns:prov
 imports:
-- okns:owl-rdf-rdfs
 - linkml:types
+- okns:owl-rdf-rdfs
 - okns:extended_types
-last_updated_on: '2025-07-17T19:19:26.079956'
+last_updated_on: '2025-09-03T11:21:04.530332'
 name: prov
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -1130,33 +966,33 @@ see_also:
 - http://www.w3.org/TR/prov-links/
 slots:
   prov_actedOnBehalfOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An object property to express the accountability of an agent towards
       another agent. The subordinate agent acted on behalf of the responsible agent
       in an actual activity.
     domain: prov_Agent
     name: prov_actedOnBehalfOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Agent
     slot_uri: prov:actedOnBehalfOf
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: actedOnBehalfOf
   prov_activity:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: prov_ActivityInfluence
     name: prov_activity
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Activity
     slot_uri: prov:activity
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_influencer
     title: activity
   prov_agent:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: prov_AgentInfluence
     name: prov_agent
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Agent
     slot_uri: prov:agent
     source: http://www.w3.org/ns/prov-o#
@@ -1165,13 +1001,14 @@ slots:
   prov_alternateOf:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     description: Two alternate entities present aspects of the same thing. These aspects
       may be the same or different, and the alternate entities may or may not overlap
       in time.
     domain: prov_Entity
     inverse: prov_alternateOf
     name: prov_alternateOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     see_also:
     - http://www.w3.org/ns/prov#specializationOf
@@ -1181,21 +1018,22 @@ slots:
   prov_aq:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     name: prov_aq
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:aq
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: rdfs_seeAlso
   prov_asInBundle:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "prov:asInBundle is used to specify which bundle the general entity\
       \ of a prov:mentionOf property is described.\u240A\u240AWhen :x prov:mentionOf\
       \ :y and :y is described in Bundle :b, the triple :x prov:asInBundle :b is also\
       \ asserted to cite the Bundle in which :y was described."
     domain: prov_Entity
     name: prov_asInBundle
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Bundle
     slot_uri: prov:asInBundle
     source: http://www.w3.org/ns/prov-links#
@@ -1204,20 +1042,21 @@ slots:
     comments:
     - 'description: This property has multiple RDFS domains to suit multiple OWL Profiles.
       See <a href="#owl-profile">PROV-O OWL Profile</a>.'
-    - No occurrences of this slot in the graph.
     description: The Location of any resource.
     name: prov_atLocation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Location
     slot_uri: prov:atLocation
     source: http://www.w3.org/ns/prov-o#
     title: atLocation
   prov_atTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time at which an InstantaneousEvent occurred, in the form of
       xsd:dateTime.
     domain: prov_InstantaneousEvent
     name: prov_atTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: prov:atTime
     source: http://www.w3.org/ns/prov-o#
@@ -1225,33 +1064,36 @@ slots:
   prov_category:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: Classify prov-o terms into three categories, including 'starting-point',
       'qualifed', and 'extended'. This classification is used by the prov-o html document
       to gently introduce prov-o terms to its users.
     name: prov_category
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:category
     source: http://www.w3.org/ns/prov-o#
   prov_component:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: Classify prov-o terms into six components according to prov-dm, including
       'agents-responsibility', 'alternate', 'annotations', 'collections', 'derivations',
       and 'entities-activities'. This classification is used so that readers of prov-o
       specification can find its correspondence with the prov-dm specification.
     name: prov_component
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:component
     source: http://www.w3.org/ns/prov-o#
   prov_constraints:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: A reference to the principal section of the PROV-CONSTRAINTS document
       that describes this concept.
     name: prov_constraints
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:constraints
     source: http://www.w3.org/ns/prov-o#
@@ -1266,55 +1108,55 @@ slots:
     slot_uri: prov:definition
     source: http://www.w3.org/ns/prov-o#
   prov_derivedByInsertionFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dictionary was derived from the other by insertion. prov:qualifiedInsertion
       shows details of the insertion, in particular the inserted key-entity pairs.
     domain: prov_Dictionary
     name: prov_derivedByInsertionFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Dictionary
     slot_uri: prov:derivedByInsertionFrom
     source: http://www.w3.org/ns/prov#
     subproperty_of: prov_wasDerivedFrom
     title: derivedByInsertionFrom
   prov_derivedByRemovalFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dictionary was derived from the other by removal. prov:qualifiedRemoval
       shows details of the removal, in particular the removed key-entity pairs.
     domain: prov_Dictionary
     name: prov_derivedByRemovalFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Dictionary
     slot_uri: prov:derivedByRemovalFrom
     source: http://www.w3.org/ns/prov#
     subproperty_of: prov_wasDerivedFrom
     title: derivedByRemovalFrom
   prov_describesService:
-    comments:
-    - No occurrences of this slot in the graph.
     description: relates a generic provenance query service resource (type prov:ServiceDescription)
       to a specific query service description (e.g. a prov:DirectQueryService or a
       sd:Service).
     name: prov_describesService
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:describesService
     source: http://www.w3.org/ns/prov#
     title: describesService
   prov_dictionary:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The property used by a prov:Insertion and prov:Removal to cite the
       prov:Dictionary that was prov:derivedByInsertionFrom or prov:derivedByRemovalFrom
       another dictionary.
     name: prov_dictionary
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Dictionary
     slot_uri: prov:dictionary
     source: http://www.w3.org/ns/prov#
     subproperty_of: prov_entity
     title: dictionary
     union_of:
-    - prov_Insertion
     - prov_Removal
+    - prov_Insertion
   prov_dm:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
@@ -1328,40 +1170,42 @@ slots:
   prov_editorialNote:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: A note by the OWL development team about how this term expresses
       the PROV-DM concept, or how it should be used in context of semantic web or
       linked data.
     name: prov_editorialNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:editorialNote
     source: http://www.w3.org/ns/prov-o#
   prov_editorsDefinition:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: When the prov-o term does not have a definition drawn from prov-dm,
       and the prov-o editor provides one.
     name: prov_editorsDefinition
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:editorsDefinition
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_definition
   prov_endedAtTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time at which an activity ended. See also prov:startedAtTime.
     domain: prov_Activity
     name: prov_endedAtTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: prov:endedAtTime
     source: http://www.w3.org/ns/prov-o#
     title: endedAtTime
   prov_entity:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: prov_EntityInfluence
     name: prov_entity
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:entity
     source: http://www.w3.org/ns/prov-o#
@@ -1370,22 +1214,23 @@ slots:
   prov_generated:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     domain: prov_Activity
     inverse: prov_wasGeneratedBy
     name: prov_generated
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:generated
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_influenced
     title: generated
   prov_generatedAtTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time at which an entity was completely created and is available
       for use.
     domain: prov_Entity
     name: prov_generatedAtTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: prov:generatedAtTime
     source: http://www.w3.org/ns/prov-o#
@@ -1394,63 +1239,64 @@ slots:
     comments:
     - 'description: This property has multiple RDFS domains to suit multiple OWL Profiles.
       See <a href="#owl-profile">PROV-O OWL Profile</a>.'
-    - No occurrences of this slot in the graph.
     description: The _optional_ Activity of an Influence, which used, generated, invalidated,
       or was the responsibility of some Entity. This property is _not_ used by ActivityInfluence
       (use prov:activity instead).
     domain: prov_Influence
     name: prov_hadActivity
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Activity
     slot_uri: prov:hadActivity
     source: http://www.w3.org/ns/prov-o#
     title: hadActivity
   prov_hadDictionaryMember:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Describes the key-entity pair that was member of a prov:Dictionary.
       A dictionary can have multiple members.
     domain: prov_Dictionary
     name: prov_hadDictionaryMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_KeyEntityPair
     slot_uri: prov:hadDictionaryMember
     source: http://www.w3.org/ns/prov#
     title: hadDictionaryMember
   prov_hadGeneration:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The _optional_ Generation involved in an Entity's Derivation.
     domain: prov_Derivation
     name: prov_hadGeneration
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Generation
     slot_uri: prov:hadGeneration
     source: http://www.w3.org/ns/prov-o#
     title: hadGeneration
   prov_hadMember:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: prov_Collection
     name: prov_hadMember
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:hadMember
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: hadMember
   prov_hadPlan:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The _optional_ Plan adopted by an Agent in Association with some
       Activity. Plan specifications are out of the scope of this specification.
     domain: prov_Association
     name: prov_hadPlan
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Plan
     slot_uri: prov:hadPlan
     source: http://www.w3.org/ns/prov-o#
     title: hadPlan
   prov_hadPrimarySource:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: prov_Entity
     name: prov_hadPrimarySource
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:hadPrimarySource
     source: http://www.w3.org/ns/prov-o#
@@ -1460,12 +1306,13 @@ slots:
     comments:
     - 'description: This property has multiple RDFS domains to suit multiple OWL Profiles.
       See <a href="#owl-profile">PROV-O OWL Profile</a>.'
-    - No occurrences of this slot in the graph.
     description: The _optional_ Role that an Entity assumed in the context of an Activity.
       For example, :baking prov:used :spoon; prov:qualified [ a prov:Usage; prov:entity
       :spoon; prov:hadRole roles:mixing_implement ].
     domain: prov_Influence
     name: prov_hadRole
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Role
     slot_uri: prov:hadRole
     source: http://www.w3.org/ns/prov-o#
@@ -1473,39 +1320,40 @@ slots:
   prov_hadUsage:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: The _optional_ Usage involved in an Entity's Derivation.
     domain: prov_Derivation
     name: prov_hadUsage
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Usage
     slot_uri: prov:hadUsage
     source: http://www.w3.org/ns/prov-o#
     title: hadUsage
   prov_has_anchor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates anchor URI for a potentially dynamic resource instance.
     name: prov_has_anchor
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:has_anchor
     source: http://www.w3.org/ns/prov#
     title: has_anchor
   prov_has_provenance:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates a provenance-URI for a resource; the resource identified
       by this property presents a provenance record about its subject or anchor resource.
     name: prov_has_provenance
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:has_provenance
     source: http://www.w3.org/ns/prov#
     title: has_provenance
   prov_has_query_service:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Indicates a provenance query service that can access provenance related
       to its subject or anchor resource.
     name: prov_has_query_service
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:has_query_service
     source: http://www.w3.org/ns/prov#
@@ -1513,33 +1361,34 @@ slots:
   prov_influenced:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     inverse: prov_wasInfluencedBy
     name: prov_influenced
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:influenced
     source: http://www.w3.org/ns/prov-o#
     title: influenced
   prov_influencer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Subproperties of prov:influencer are used to cite the object of an
       unqualified PROV-O triple whose predicate is a subproperty of prov:wasInfluencedBy
       (e.g. prov:used, prov:wasGeneratedBy). prov:influencer is used much like rdf:object
       is used.
     domain: prov_Influence
     name: prov_influencer
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_Thing
     slot_uri: prov:influencer
     source: http://www.w3.org/ns/prov-o#
     title: influencer
   prov_insertedKeyEntityPair:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An object property to refer to the prov:KeyEntityPair inserted into
       a prov:Dictionary.
     domain: prov_Insertion
     name: prov_insertedKeyEntityPair
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_KeyEntityPair
     slot_uri: prov:insertedKeyEntityPair
     source: http://www.w3.org/ns/prov#
@@ -1547,21 +1396,22 @@ slots:
   prov_invalidated:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     domain: prov_Activity
     inverse: prov_wasInvalidatedBy
     name: prov_invalidated
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:invalidated
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_influenced
     title: invalidated
   prov_invalidatedAtTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time at which an entity was invalidated (i.e., no longer usable).
     domain: prov_Entity
     name: prov_invalidatedAtTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: prov:invalidatedAtTime
     source: http://www.w3.org/ns/prov-o#
@@ -1569,25 +1419,26 @@ slots:
   prov_inverse:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: PROV-O does not define all property inverses. The directionalities
       defined in PROV-O should be given preference over those not defined. However,
       if users wish to name the inverse of a PROV-O property, the local name given
       by prov:inverse should be used.
     name: prov_inverse
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     see_also:
     - http://www.w3.org/TR/prov-o/#names-of-inverse-properties
     slot_uri: prov:inverse
     source: http://www.w3.org/ns/prov-o#
   prov_mentionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "prov:mentionOf is used to specialize an entity as described in another\
       \ bundle. It is to be used in conjuction with prov:asInBundle.\u240A\u240Aprov:asInBundle\
       \ is used to cite the Bundle in which the generalization was mentioned."
     domain: prov_Entity
     name: prov_mentionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:mentionOf
     source: http://www.w3.org/ns/prov-links#
@@ -1598,137 +1449,138 @@ slots:
     - 'description: A reference to the principal section of the PROV-M document that
       describes this concept.'
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: A reference to the principal section of the PROV-DM document that
       describes this concept.
     name: prov_n
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:n
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: rdfs_seeAlso
   prov_order:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The position that this OWL term should be listed within documentation.
       The scope of the documentation (e.g., among all terms, among terms within a
       prov:category, among properties applying to a particular class, etc.) is unspecified.
     name: prov_order
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:order
     source: http://www.w3.org/ns/prov-o#
   prov_pairEntity:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The value of a KeyEntityPair.
     domain: prov_KeyEntityPair
     name: prov_pairEntity
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:pairEntity
     source: http://www.w3.org/ns/prov#
     title: pairKey
   prov_pairKey:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The key of a KeyEntityPair, which is an element of a prov:Dictionary.
     domain: prov_KeyEntityPair
     name: prov_pairKey
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: prov:pairKey
     source: http://www.w3.org/ns/prov#
     title: pairKey
   prov_pingback:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a resource to a provenance pingback service that may receive
       additional provenance links about the resource.
     name: prov_pingback
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:pingback
     source: http://www.w3.org/ns/prov#
     title: provenance pingback
   prov_provenanceUriTemplate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Relates a provenance service to a URI template string for constructing
       provenance-URIs.
     name: prov_provenanceUriTemplate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:provenanceUriTemplate
     source: http://www.w3.org/ns/prov#
     title: provenanceUriTemplate
   prov_qualifiedAssociation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:wasAssociatedWith Agent :ag, then it can qualify
       the Association using prov:qualifiedAssociation [ a prov:Association;  prov:agent
       :ag; :foo :bar ].
     domain: prov_Activity
     name: prov_qualifiedAssociation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Association
     slot_uri: prov:qualifiedAssociation
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedAssociation
   prov_qualifiedAttribution:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:wasAttributedTo Agent :ag, then it can qualify
       how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent
       :ag; :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedAttribution
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Attribution
     slot_uri: prov:qualifiedAttribution
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedAttribution
   prov_qualifiedCommunication:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:wasInformedBy Activity :a, then it can qualify
       how it was influenced using prov:qualifiedCommunication [ a prov:Communication;  prov:activity
       :a; :foo :bar ].
     domain: prov_Activity
     name: prov_qualifiedCommunication
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Communication
     slot_uri: prov:qualifiedCommunication
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedCommunication
   prov_qualifiedDelegation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Agent prov:actedOnBehalfOf Agent :ag, then it can qualify
       how with prov:qualifiedResponsibility [ a prov:Responsibility;  prov:agent :ag;
       :foo :bar ].
     domain: prov_Agent
     name: prov_qualifiedDelegation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Delegation
     slot_uri: prov:qualifiedDelegation
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedDelegation
   prov_qualifiedDerivation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:wasDerivedFrom Entity :e, then it can qualify
       how it was derived using prov:qualifiedDerivation [ a prov:Derivation;  prov:entity
       :e; :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedDerivation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Derivation
     slot_uri: prov:qualifiedDerivation
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedDerivation
   prov_qualifiedEnd:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:wasEndedBy Entity :e1, then it can qualify
       how it was ended using prov:qualifiedEnd [ a prov:End;  prov:entity :e1; :foo
       :bar ].
     domain: prov_Activity
     name: prov_qualifiedEnd
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_End
     slot_uri: prov:qualifiedEnd
     source: http://www.w3.org/ns/prov-o#
@@ -1737,7 +1589,6 @@ slots:
   prov_qualifiedForm:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: "This annotation property links a subproperty of prov:wasInfluencedBy\
       \ with the subclass of prov:Influence and the qualifying property that are used\
       \ to qualify it. \u240A\u240AExample annotation:\u240A\u240A    prov:wasGeneratedBy\
@@ -1750,142 +1601,144 @@ slots:
       \ influence (prov:wasGeneratedBy :activity1) is mirrored as the value of the\
       \ prov:activity (or prov:entity, or prov:agent) property on the influence class."
     name: prov_qualifiedForm
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:qualifiedForm
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: rdfs_seeAlso
   prov_qualifiedGeneration:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:generated Entity :e, then it can qualify how
       it performed the Generation using prov:qualifiedGeneration [ a prov:Generation;  prov:entity
       :e; :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedGeneration
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Generation
     slot_uri: prov:qualifiedGeneration
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedGeneration
   prov_qualifiedInfluence:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Because prov:qualifiedInfluence is a broad relation, the more specific
       relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.)
       should be used when applicable.
     name: prov_qualifiedInfluence
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Influence
     slot_uri: prov:qualifiedInfluence
     source: http://www.w3.org/ns/prov-o#
     title: qualifiedInfluence
   prov_qualifiedInsertion:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dictionary was derived from the other by insertion. prov:qualifiedInsertion
       shows details of the insertion, in particular the inserted key-entity pairs.
     domain: prov_Dictionary
     name: prov_qualifiedInsertion
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Insertion
     slot_uri: prov:qualifiedInsertion
     source: http://www.w3.org/ns/prov#
     subproperty_of: prov_qualifiedDerivation
     title: qualifiedInsertion
   prov_qualifiedInvalidation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:wasInvalidatedBy Activity :a, then it can qualify
       how it was invalidated using prov:qualifiedInvalidation [ a prov:Invalidation;  prov:activity
       :a; :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedInvalidation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Invalidation
     slot_uri: prov:qualifiedInvalidation
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedInvalidation
   prov_qualifiedPrimarySource:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:hadPrimarySource Entity :e, then it can qualify
       how using prov:qualifiedPrimarySource [ a prov:PrimarySource; prov:entity :e;
       :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedPrimarySource
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_PrimarySource
     slot_uri: prov:qualifiedPrimarySource
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedPrimarySource
   prov_qualifiedQuotation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:wasQuotedFrom Entity :e, then it can qualify
       how using prov:qualifiedQuotation [ a prov:Quotation;  prov:entity :e; :foo
       :bar ].
     domain: prov_Entity
     name: prov_qualifiedQuotation
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Quotation
     slot_uri: prov:qualifiedQuotation
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedQuotation
   prov_qualifiedRemoval:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The dictionary was derived from the other by removal. prov:qualifiedRemoval
       shows details of the removal, in particular the removed keys.
     domain: prov_Dictionary
     name: prov_qualifiedRemoval
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Removal
     slot_uri: prov:qualifiedRemoval
     source: http://www.w3.org/ns/prov#
     subproperty_of: prov_qualifiedDerivation
     title: qualifiedRemoval
   prov_qualifiedRevision:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Entity prov:wasRevisionOf Entity :e, then it can qualify
       how it was revised using prov:qualifiedRevision [ a prov:Revision;  prov:entity
       :e; :foo :bar ].
     domain: prov_Entity
     name: prov_qualifiedRevision
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Revision
     slot_uri: prov:qualifiedRevision
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedRevision
   prov_qualifiedStart:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:wasStartedBy Entity :e1, then it can qualify
       how it was started using prov:qualifiedStart [ a prov:Start;  prov:entity :e1;
       :foo :bar ].
     domain: prov_Activity
     name: prov_qualifiedStart
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Start
     slot_uri: prov:qualifiedStart
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedStart
   prov_qualifiedUsage:
-    comments:
-    - No occurrences of this slot in the graph.
     description: If this Activity prov:used Entity :e, then it can qualify how it
       used it using prov:qualifiedUsage [ a prov:Usage; prov:entity :e; :foo :bar
       ].
     domain: prov_Activity
     name: prov_qualifiedUsage
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Usage
     slot_uri: prov:qualifiedUsage
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_qualifiedInfluence
     title: qualifiedUsage
   prov_removedKey:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The key removed in a Removal.
     domain: prov_Removal
     name: prov_removedKey
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: prov:removedKey
     source: http://www.w3.org/ns/prov#
@@ -1893,8 +1746,9 @@ slots:
   prov_sharesDefinitionWith:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     name: prov_sharesDefinitionWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:sharesDefinitionWith
     source: http://www.w3.org/ns/prov-o#
@@ -1902,7 +1756,6 @@ slots:
   prov_specializationOf:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: An entity that is a specialization of another shares all aspects
       of the latter, and additionally presents more specific aspects of the same thing
       as the latter. In particular, the lifetime of the entity being specialized contains
@@ -1910,6 +1763,8 @@ slots:
       and a context associated with the entity.
     domain: prov_Entity
     name: prov_specializationOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     see_also:
     - http://www.w3.org/ns/prov#alternateOf
@@ -1918,62 +1773,63 @@ slots:
     subproperty_of: owl_topObjectProperty
     title: specializationOf
   prov_startedAtTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time at which an activity started. See also prov:endedAtTime.
     domain: prov_Activity
     name: prov_startedAtTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: prov:startedAtTime
     source: http://www.w3.org/ns/prov-o#
     title: startedAtTime
   prov_todo:
-    comments:
-    - No occurrences of this slot in the graph.
     name: prov_todo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:todo
   prov_unqualifiedForm:
     comments:
     - 'source: http://www.w3.org/ns/prov#'
-    - No occurrences of this slot in the graph.
     description: Classes and properties used to qualify relationships are annotated
       with prov:unqualifiedForm to indicate the property used to assert an unqualified
       provenance relation.
     name: prov_unqualifiedForm
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:unqualifiedForm
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: rdfs_seeAlso
   prov_used:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A prov:Entity that was used by this prov:Activity. For example, :baking
       prov:used :spoon, :egg, :oven .
     domain: prov_Activity
     name: prov_used
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:used
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: used
   prov_value:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Provides a value that is a direct representation of an entity.
     domain: prov_Entity
     name: prov_value
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:value
     source: http://www.w3.org/ns/prov-o#
     title: value
   prov_wasAssociatedWith:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An prov:Agent that had some (unspecified) responsibility for the
       occurrence of this prov:Activity.
     domain: prov_Activity
     name: prov_wasAssociatedWith
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Agent
     slot_uri: prov:wasAssociatedWith
     source: http://www.w3.org/ns/prov-o#
@@ -1982,10 +1838,11 @@ slots:
   prov_wasAttributedTo:
     comments:
     - 'description: Attribution is the ascribing of an entity to an agent.'
-    - No occurrences of this slot in the graph.
     description: Attribution is the ascribing of an entity to an agent.
     domain: prov_Entity
     name: prov_wasAttributedTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Agent
     slot_uri: prov:wasAttributedTo
     source: http://www.w3.org/ns/prov-o#
@@ -1996,23 +1853,24 @@ slots:
     - 'description: A derivation is a transformation of an entity into another, an
       update of an entity resulting in a new one, or the construction of a new entity
       based on a pre-existing entity.'
-    - No occurrences of this slot in the graph.
     description: The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom,
       prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.
     domain: prov_Entity
     name: prov_wasDerivedFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:wasDerivedFrom
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: wasDerivedFrom
   prov_wasEndedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: End is when an activity is deemed to have ended. An end may refer
       to an entity, known as trigger, that terminated the activity.
     domain: prov_Activity
     name: prov_wasEndedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:wasEndedBy
     source: http://www.w3.org/ns/prov-o#
@@ -2021,10 +1879,11 @@ slots:
   prov_wasGeneratedBy:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     domain: prov_Entity
     inverse: prov_generated
     name: prov_wasGeneratedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Activity
     slot_uri: prov:wasGeneratedBy
     source: http://www.w3.org/ns/prov-o#
@@ -2035,23 +1894,24 @@ slots:
     - 'description: This property has multiple RDFS domains to suit multiple OWL Profiles.
       See <a href="#owl-profile">PROV-O OWL Profile</a>.'
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     description: Because prov:wasInfluencedBy is a broad relation, its more specific
       subproperties (e.g. prov:wasInformedBy, prov:actedOnBehalfOf, prov:wasEndedBy,
       etc.) should be used when applicable.
     inverse: prov_influenced
     name: prov_wasInfluencedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: prov:wasInfluencedBy
     source: http://www.w3.org/ns/prov-o#
     title: wasInfluencedBy
   prov_wasInformedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An activity a2 is dependent on or informed by another activity a1,
       by way of some unspecified entity that is generated by a1 and used by a2.
     domain: prov_Activity
     name: prov_wasInformedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Activity
     slot_uri: prov:wasInformedBy
     source: http://www.w3.org/ns/prov-o#
@@ -2060,50 +1920,50 @@ slots:
   prov_wasInvalidatedBy:
     comments:
     - 'source: http://www.w3.org/ns/prov-o-inverses#'
-    - No occurrences of this slot in the graph.
     domain: prov_Entity
     inverse: prov_invalidated
     name: prov_wasInvalidatedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Activity
     slot_uri: prov:wasInvalidatedBy
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: wasInvalidatedBy
   prov_wasQuotedFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An entity is derived from an original entity by copying, or 'quoting',
       some or all of it.
     domain: prov_Entity
     name: prov_wasQuotedFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:wasQuotedFrom
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasDerivedFrom
     title: wasQuotedFrom
   prov_wasRevisionOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A revision is a derivation that revises an entity into a revised
       version.
     domain: prov_Entity
     name: prov_wasRevisionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:wasRevisionOf
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasDerivedFrom
     title: wasRevisionOf
   prov_wasStartedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Start is when an activity is deemed to have started. A start may
       refer to an entity, known as trigger, that initiated the activity.
     domain: prov_Activity
     name: prov_wasStartedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: prov_Entity
     slot_uri: prov:wasStartedBy
     source: http://www.w3.org/ns/prov-o#
     subproperty_of: prov_wasInfluencedBy
     title: wasStartedBy
 source: http://www.w3.org/ns/prov
-title: No schema name specified

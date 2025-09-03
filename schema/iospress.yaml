@@ -20,24 +20,12 @@ annotations:
           owl:NamedIndividual:
             tag: owl:NamedIndividual
             value: 1
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 2
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 8
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 2
           owl:differentFrom:
             tag: owl:differentFrom
             value:
@@ -68,15 +56,6 @@ annotations:
                   uri:
                     tag: uri
                     value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 2
           rdfs:label:
             tag: rdfs:label
             value:
@@ -110,9 +89,6 @@ annotations:
       slots:
         tag: slots
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 2
           owl:differentFrom:
             tag: owl:differentFrom
             value: 1
@@ -122,9 +98,6 @@ annotations:
           owl:onDatatype:
             tag: owl:onDatatype
             value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 2
           owl:unionOf:
             tag: owl:unionOf
             value: 3
@@ -155,33 +128,12 @@ annotations:
           owl:NamedIndividual:
             tag: owl:NamedIndividual
             value: iospress:nil
-          owl:Restriction:
-            tag: owl:Restriction
-            value: ncf584365fa2e46f6b6b6bcf09e5535e1b19
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: iospress-datatype:issn
+            value: iospress-datatype:pIssn
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: iospress:ContributorList
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: ncf584365fa2e46f6b6b6bcf09e5535e1b20
           owl:differentFrom:
             tag: owl:differentFrom
             value:
@@ -211,7 +163,7 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: ncf584365fa2e46f6b6b6bcf09e5535e1b5
+                        value: n8517358c5a234684bf39d428553c064fb5
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
@@ -223,13 +175,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: ncf584365fa2e46f6b6b6bcf09e5535e1b12
+                        value: n8517358c5a234684bf39d428553c064fb8
                       predicate:
                         tag: predicate
                         value: owl:equivalentClass
                       subject:
                         tag: subject
-                        value: iospress-datatype:pageReference
+                        value: iospress-datatype:yearOrYearMonth
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -247,25 +199,7 @@ annotations:
                         value: owl:onDatatype
                       subject:
                         tag: subject
-                        value: ncf584365fa2e46f6b6b6bcf09e5535e1b11
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: iospress:rest
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: ncf584365fa2e46f6b6b6bcf09e5535e1b20
+                        value: n8517358c5a234684bf39d428553c064fb11
           rdfs:label:
             tag: rdfs:label
             value:
@@ -367,8 +301,8 @@ classes:
     class_uri: iospress:Accessibility
     name: iospress_Accessibility
     slots:
-    - rdfs_label
     - owl_differentFrom
+    - rdfs_label
   iospress_Article:
     class_uri: iospress:Article
     is_a: iospress_Publication
@@ -436,8 +370,8 @@ classes:
     class_uri: iospress:Role
     name: iospress_Role
     slots:
-    - rdfs_subClassOf
     - rdfs_label
+    - rdfs_subClassOf
     title: Role
   iospress_Series:
     class_uri: iospress:Series
@@ -457,15 +391,15 @@ classes:
     name: xsd_anyUri
     title: No class (entity type) name specified -- this class is noted as being in
       the domain or range of a slot in this graph but has not itself been defined.
-created_on: '2025-07-24T16:18:52.734643'
+created_on: '2025-09-03T11:25:21.042403'
 default_prefix: okns
 id: okns:iospress
 imports:
-- okns:owl-rdf-rdfs
-- okns:extended_types
 - linkml:types
+- okns:owl-rdf-rdfs
 - okns:time
-last_updated_on: '2025-07-24T16:18:52.734643'
+- okns:extended_types
+last_updated_on: '2025-09-03T11:25:21.042403'
 name: iospress
 prefixes:
   geo: http://www.opengis.net/ont/geosparql#
@@ -481,539 +415,538 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   http___awesemantic-geo.link_ontology_geometry:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: http___awesemantic-geo.link_ontology_geometry
+    notes:
+    - No occurrences of this slot in the graph.
     range: http___awesemantic-geo.link_ontology_Geometry
     slot_uri: http://awesemantic-geo.link/ontology/geometry
     title: Geometry
   iospress-geocode_city:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: iospress-geocode_city
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress-geocode:city
     title: City
   iospress-geocode_country:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: iospress-geocode_country
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress-geocode:country
     title: Country
   iospress-geocode_postalCode:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: iospress-geocode_postalCode
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress-geocode:postalCode
     title: Postal Code
   iospress-geocode_region:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: iospress-geocode_region
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress-geocode:region
     title: Region
   iospress-geocode_zone:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_GeocodedLocation
     name: iospress-geocode_zone
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress-geocode:zone
     title: Zone
   iospress_articleInIssue:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Article
     name: iospress_articleInIssue
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Issue
     slot_uri: iospress:articleInIssue
     title: Article In Issue
   iospress_bookInSeries:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Book
     name: iospress_bookInSeries
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Series
     slot_uri: iospress:bookInSeries
     title: Book In Series
   iospress_bookName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Book
     name: iospress_bookName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:bookName
     title: Name
   iospress_bookNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Book
     name: iospress_bookNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_collectionNumber
     slot_uri: iospress:bookNumber
     title: Book Number
   iospress_bookYear:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Book
     name: iospress_bookYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_gYear
     slot_uri: iospress:bookYear
     title: Year
   iospress_category:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_category
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Category
     slot_uri: iospress:category
     title: Category
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
   iospress_chapterInBook:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Chapter
     name: iospress_chapterInBook
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Book
     slot_uri: iospress:chapterInBook
     title: Chapter In Book
   iospress_contributorAffiliation:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorAffiliation
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Organization
     slot_uri: iospress:contributorAffiliation
     title: Affiliation
   iospress_contributorFirstName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorFirstName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:contributorFirstName
     title: First Name
   iospress_contributorFullName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorFullName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:contributorFullName
     title: Full Name
   iospress_contributorLastName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorLastName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:contributorLastName
     title: Last Name
   iospress_contributorNote:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:contributorNote
     title: Notes
   iospress_contributorRole:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Contributor
     name: iospress_contributorRole
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Role
     slot_uri: iospress:contributorRole
     title: Role
   iospress_eIssn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_eIssn
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_eIssn
     slot_uri: iospress:eIssn
     title: eISSN
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
   iospress_first:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_List
     name: iospress_first
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_List
     slot_uri: iospress:first
   iospress_geocodingInput:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_geocodingInput
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:geocodingInput
     title: Geocoding Input
   iospress_geocodingOutput:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_geocodingOutput
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_GeocodedLocation
     slot_uri: iospress:geocodingOutput
     title: Geocoding Output
   iospress_id:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_id
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:id
     title: ID
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
     - iospress_Publication
   iospress_isbn:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Book
     name: iospress_isbn
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_isbn
     slot_uri: iospress:isbn
     title: ISBN
   iospress_issn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_issn
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_issn
     slot_uri: iospress:issn
     title: ISSN
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
   iospress_issueDate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Isssue
     name: iospress_issueDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_yearOrYearMonth
     slot_uri: iospress:issueDate
     title: Issue Date
   iospress_issueInVolume:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Isssue
     name: iospress_issueInVolume
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Volume
     slot_uri: iospress:issueInVolume
     title: Issue In Volume
   iospress_issueName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Issue
     name: iospress_issueName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:issueName
     title: Name
   iospress_issueNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Issue
     name: iospress_issueNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_collectionNumber
     slot_uri: iospress:issueNumber
     title: Issue Number
   iospress_journalName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Journal
     name: iospress_journalName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:journalName
     title: Name
   iospress_organizationCountry:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_organizationCountry
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:organizationCountry
     title: Country
   iospress_organizationInstitution:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_organizationInstitution
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:organizationInstitution
     title: Institution
   iospress_organizationName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_organizationName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:organizationName
     title: Name
   iospress_organizationPlace:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Organization
     name: iospress_organizationPlace
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:organizationPlace
     title: Place
   iospress_pIssn:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_pIssn
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_pIssn
     slot_uri: iospress:pIssn
     title: pISSN
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
   iospress_partOf:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_partOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: iospress:partOf
     title: Part Of
   iospress_publicationAbstract:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationAbstract
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:publicationAbstract
     title: Abstract
   iospress_publicationAcceptedDate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationAcceptedDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: iospress:publicationAcceptedDate
     title: Accepted Date
   iospress_publicationAccessibility:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationAccessibility
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Accessibility
     slot_uri: iospress:publicationAccessibility
     title: Accessibility
   iospress_publicationAuthorList:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationAuthorList
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_ContributorList
     slot_uri: iospress:publicationAuthorList
     title: Author List
   iospress_publicationDate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: iospress:publicationDate
     title: Publication Date
   iospress_publicationDoi:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationDoi
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_doi
     slot_uri: iospress:publicationDoi
     title: DOI
   iospress_publicationDoiUrl:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationDoiUrl
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_anyUri
     slot_uri: iospress:publicationDoiUrl
     title: DOI URL
   iospress_publicationEditorList:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationEditorList
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_ContributorList
     slot_uri: iospress:publicationEditorList
     title: Editor List
   iospress_publicationId:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationId
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_artifactId
     slot_uri: iospress:publicationId
     title: Publication ID
   iospress_publicationInChapter:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationInChapter
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Chapter
     slot_uri: iospress:publicationInChapter
     title: Publication In Chapter
   iospress_publicationInIssue:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationInIssue
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Issue
     slot_uri: iospress:publicationInIssue
     title: Publication In Issue
   iospress_publicationIncludesKeyword:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationIncludesKeyword
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:publicationIncludesKeyword
     title: Includes Keyword
   iospress_publicationPageEnd:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationPageEnd
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_pageReference
     slot_uri: iospress:publicationPageEnd
     title: Page End
   iospress_publicationPageStart:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationPageStart
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_pageReference
     slot_uri: iospress:publicationPageStart
     title: Page Start
   iospress_publicationPreprintDate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationPreprintDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: iospress:publicationPreprintDate
     title: Preprint Date
   iospress_publicationReceivedDate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationReceivedDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: iospress:publicationReceivedDate
     title: Received Date
   iospress_publicationTitle:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_publicationTitle
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:publicationTitle
     title: Title
   iospress_publisher:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_publisher
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_publisher
     slot_uri: iospress:publisher
     title: Publisher
     union_of:
-    - iospress_Series
     - iospress_Journal
+    - iospress_Series
     - iospress_Publication
   iospress_publisherLocationName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publisher
     name: iospress_publisherLocationName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:publisherLocationName
     title: Location Name
   iospress_publisherName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publisher
     name: iospress_publisherName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:publisherName
     title: Name
   iospress_reflectsYear:
-    comments:
-    - No occurrences of this slot in the graph.
     name: iospress_reflectsYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_gYear
     slot_uri: iospress:reflectsYear
     title: Reflects Year
     union_of:
-    - iospress_Chapter
     - iospress_Volume
+    - iospress_Chapter
   iospress_rest:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_List
     name: iospress_rest
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_List
     slot_uri: iospress:rest
   iospress_seriesName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Series
     name: iospress_seriesName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:seriesName
     title: Name
   iospress_sourceFile:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Publication
     name: iospress_sourceFile
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:sourceFile
     title: Source File
   iospress_volumeInJournal:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Volume
     name: iospress_volumeInJournal
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress_Journal
     slot_uri: iospress:volumeInJournal
     title: Volume In Journal
   iospress_volumeName:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Volume
     name: iospress_volumeName
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: iospress:volumeName
     title: Name
   iospress_volumeNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Volume
     name: iospress_volumeNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: iospress-datatype_collectionNumber
     slot_uri: iospress:volumeNumber
     title: Volume Number
   iospress_volumeReflectsYear:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: iospress_Volume
     name: iospress_volumeReflectsYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_gYear
     slot_uri: iospress:volumeReflectsYear
     title: Reflects Year
-title: No schema name specified
 types:
   iospress-datatype_doi:
     name: iospress-datatype_doi

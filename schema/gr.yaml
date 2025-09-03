@@ -280,28 +280,28 @@ annotations:
         value:
           gr:BusinessEntityType:
             tag: gr:BusinessEntityType
-            value: gr:Business
+            value: gr:Reseller
           gr:BusinessFunction:
             tag: gr:BusinessFunction
-            value: gr:Dispose
+            value: gr:ProvideService
           gr:DayOfWeek:
             tag: gr:DayOfWeek
-            value: gr:Wednesday
+            value: gr:Saturday
           gr:DeliveryMethod:
             tag: gr:DeliveryMethod
-            value: gr:DeliveryModeOwnFleet
+            value: gr:DeliveryModeFreight
           gr:DeliveryModeParcelService:
             tag: gr:DeliveryModeParcelService
             value: gr:DHL
           gr:Offering:
             tag: gr:Offering
-            value: N144c82c6055b4be0b95be4161689e222
+            value: N3ccceb24b2ab4c75ba63c8daa864bd6b
           gr:PaymentMethod:
             tag: gr:PaymentMethod
-            value: gr:PayPal
+            value: gr:PaySwarm
           gr:PaymentMethodCreditCard:
             tag: gr:PaymentMethodCreditCard
-            value: gr:AmericanExpress
+            value: gr:VISA
           gr:WarrantyScope:
             tag: gr:WarrantyScope
             value: gr:Labor-BringIn
@@ -325,7 +325,7 @@ annotations:
                         value: gr:category
                       subject:
                         tag: subject
-                        value: N144c82c6055b4be0b95be4161689e222
+                        value: N3ccceb24b2ab4c75ba63c8daa864bd6b
           gr:description:
             tag: gr:description
             value:
@@ -343,7 +343,7 @@ annotations:
                         value: gr:description
                       subject:
                         tag: subject
-                        value: N144c82c6055b4be0b95be4161689e222
+                        value: N3ccceb24b2ab4c75ba63c8daa864bd6b
           gr:displayPosition:
             tag: gr:displayPosition
             value:
@@ -446,16 +446,14 @@ annotations:
                       object:
                         tag: object
                         value: This gr:BusinessFunction indicates that the gr:BusinessEntity
-                          offers (or seeks) the evaluation of the chances for repairing,
-                          and, if positive, repair of the specified gr:ProductOrService.
-                          Repairing means actions that restore the originally intended
-                          function of a product that suffers from outage or malfunction.
+                          offers (or seeks) the temporary right to use the specified
+                          gr:ProductOrService.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Repair
+                        value: gr:LeaseOut
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -479,15 +477,17 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery of the goods by picking them up at one of
-                          the stores etc. (gr:Location) during the opening hours as
-                          specified by respective instances of gr:OpeningHoursSpecification.
+                        value: Delivery of the goods via direct download from the
+                          Internet, i.e., the offering gr:BusinessEntity provides
+                          the buying party with details on how to retrieve the goods
+                          online. Connection fees and other costs of using the infrastructure
+                          are to be carried by the buying party.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:DeliveryModePickUp
+                        value: gr:DeliveryModeDirectDownload
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -511,13 +511,18 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Payment by cash upon delivery or pickup.
+                        value: 'Payment by bank transfer in advance, i.e., the offering
+                          gr:BusinessEntity will inform the buying party about their
+                          bank account details and will deliver the goods upon receipt
+                          of the due amount.
+
+                          This is equivalent to payment by wire transfer.'
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:Cash
+                        value: gr:ByBankTransferInAdvance
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -526,14 +531,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Payment by credit or debit cards issued by the Diner's
-                          Club network.
+                        value: Payment by credit or debit cards issued by the American
+                          Express network.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: gr:DinersClub
+                        value: gr:AmericanExpress
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -591,7 +596,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Repair
+                        value: gr:LeaseOut
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -621,7 +626,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:DeliveryModePickUp
+                        value: gr:DeliveryModeDirectDownload
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -651,7 +656,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:Cash
+                        value: gr:ByBankTransferInAdvance
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -666,7 +671,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: gr:DinersClub
+                        value: gr:AmericanExpress
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -708,13 +713,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Repair (business function)
+                        value: Lease Out (business function)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Repair
+                        value: gr:LeaseOut
               gr:DayOfWeek:
                 tag: gr:DayOfWeek
                 value:
@@ -738,13 +743,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Delivery mode pick up (delivery method)
+                        value: Delivery mode direct download (delivery method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:DeliveryModePickUp
+                        value: gr:DeliveryModeDirectDownload
               gr:DeliveryModeParcelService:
                 tag: gr:DeliveryModeParcelService
                 value:
@@ -768,13 +773,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Cash (payment method)
+                        value: By bank transfer in advance (payment method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:Cash
+                        value: gr:ByBankTransferInAdvance
               gr:PaymentMethodCreditCard:
                 tag: gr:PaymentMethodCreditCard
                 value:
@@ -783,13 +788,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Diners Club (payment method)
+                        value: American Express (payment method)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: gr:DinersClub
+                        value: gr:AmericanExpress
               gr:WarrantyScope:
                 tag: gr:WarrantyScope
                 value:
@@ -852,8 +857,8 @@ classes:
     name: gr_BusinessEntityType
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Business entity type
   gr_BusinessFunction:
@@ -870,9 +875,9 @@ classes:
     name: gr_BusinessFunction
     slots:
     - rdfs_isDefinedBy
+    - rdfs_comment
     - owl_deprecated
     - rdfs_label
-    - rdfs_comment
     source: http://purl.org/goodrelations/v1
     title: Business function
   gr_DayOfWeek:
@@ -883,11 +888,11 @@ classes:
     name: gr_DayOfWeek
     slots:
     - rdfs_label
-    - gr_displayPosition
     - rdfs_isDefinedBy
     - rdfs_comment
-    - gr_hasPrevious
     - gr_hasNext
+    - gr_displayPosition
+    - gr_hasPrevious
     source: http://purl.org/goodrelations/v1
     title: Day of week
   gr_DeliveryChargeSpecification:
@@ -929,8 +934,8 @@ classes:
     name: gr_DeliveryMethod
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Delivery method
   gr_DeliveryModeParcelService:
@@ -941,8 +946,8 @@ classes:
     name: gr_DeliveryModeParcelService
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Delivery mode parcel service
   gr_Individual:
@@ -1084,8 +1089,8 @@ classes:
     name: gr_PaymentMethod
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Payment method
   gr_PaymentMethodCreditCard:
@@ -1099,8 +1104,8 @@ classes:
     name: gr_PaymentMethodCreditCard
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Payment method credit card
   gr_PriceSpecification:
@@ -1314,14 +1319,14 @@ classes:
     name: gr_WarrantyScope
     slots:
     - rdfs_isDefinedBy
-    - rdfs_label
     - rdfs_comment
+    - rdfs_label
     source: http://purl.org/goodrelations/v1
     title: Warranty scope
 comments:
-- 'title: The GoodRelations Vocabulary for Semantic Web-based E-Commerce'
 - 'title: GoodRelations Ontology'
-created_on: '2025-07-17T19:21:06.079502'
+- 'title: The GoodRelations Vocabulary for Semantic Web-based E-Commerce'
+created_on: '2025-09-03T11:23:16.245018'
 default_prefix: okns
 description: "The GoodRelations ontology provides the vocabulary for annotating e-commerce\
   \ offerings (1) to sell, lease, repair, dispose, or maintain commodity products\
@@ -1341,11 +1346,11 @@ description: "The GoodRelations ontology provides the vocabulary for annotating 
   \ Acitrezza, Italy, Springer LNCS, Vol. 5268, pp. 332-347.\u240A\u240APDF at http://www.heppnetz.de/publications/"
 id: okns:gr
 imports:
-- okns:sdo
 - okns:owl-rdf-rdfs
+- okns:sdo
 - okns:extended_types
 - linkml:types
-last_updated_on: '2025-07-17T19:21:06.079502'
+last_updated_on: '2025-09-03T11:23:16.245018'
 name: gr
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -1362,31 +1367,29 @@ prefixes:
   xsd: http://www.w3.org/2001/XMLSchema#
 slots:
   gr_acceptedPaymentMethods:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The gr:PaymentMethod or methods accepted by the gr:BusinessEntity
       for the given gr:Offering.
     name: gr_acceptedPaymentMethods
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_PaymentMethod
     slot_uri: gr:acceptedPaymentMethods
     source: http://purl.org/goodrelations/v1
     title: accepted payment methods (0..*)
   gr_addOn:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property points from a gr:Offering to additional offerings that
       can only be obtained in combination with the first offering. This can be used
       to model supplements and extensions that are available for a surcharge. Any
       gr:PriceSpecification attached to the secondary offering is to be understood
       as an additional charge.
     name: gr_addOn
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Offering
     slot_uri: gr:addOn
     source: http://purl.org/goodrelations/v1
     title: add-on (0..*)
   gr_advanceBookingRequirement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The minimal and maximal amount of time that is required between\
       \ accepting the gr:Offering and the actual usage of the resource or service.\
       \ This is mostly relevant for offers regarding hotel rooms, the rental of objects,\
@@ -1402,47 +1405,47 @@ slots:
       \ specifies the acceptable relative amount of time between accepting the offer\
       \ and the fulfilment or usage."
     name: gr_advanceBookingRequirement
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValueInteger
     slot_uri: gr:advanceBookingRequirement
     source: http://purl.org/goodrelations/v1
     title: advance booking requirement (0..1)
   gr_amountOfThisGood:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property specifies the quantity of the goods included in the
       gr:Offering via this gr:TypeAndQuantityNode. The quantity is given in the unit
       of measurement attached to the gr:TypeAndQuantityNode.
     domain: gr_TypeAndQuantityNode
     name: gr_amountOfThisGood
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:amountOfThisGood
     source: http://purl.org/goodrelations/v1
     title: amount of this good (1..1)
   gr_appliesToDeliveryMethod:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property specifies the gr:DeliveryMethod to which the gr:DeliveryChargeSpecification
       applies.
     domain: gr_DeliveryChargeSpecification
     name: gr_appliesToDeliveryMethod
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_DeliveryMethod
     slot_uri: gr:appliesToDeliveryMethod
     source: http://purl.org/goodrelations/v1
     title: applies to delivery method (0..*)
   gr_appliesToPaymentMethod:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property specifies the gr:PaymentMethod to which the gr:PaymentChargeSpecification
       applies.
     domain: gr_PaymentChargeSpecification
     name: gr_appliesToPaymentMethod
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_PaymentMethod
     slot_uri: gr:appliesToPaymentMethod
     source: http://purl.org/goodrelations/v1
     title: applies to payment method (1..*)
   gr_availabilityEnds:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the end of the availability of the gr:ProductOrService\
       \ included in the gr:Offering.\u240AThe difference to the properties gr:validFrom\
       \ and gr:validThrough is that those specify the period of time during which\
@@ -1457,13 +1460,13 @@ slots:
       \ indicate the gr:Location (e.g. store or shop) from which the goods would be\
       \ available."
     name: gr_availabilityEnds
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: gr:availabilityEnds
     source: http://purl.org/goodrelations/v1
     title: availability ends (0..1)
   gr_availabilityStarts:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the beginning of the availability of the\
       \ gr:ProductOrService included in the gr:Offering.\u240AThe difference to the\
       \ properties gr:validFrom and gr:validThrough is that those specify the period\
@@ -1478,33 +1481,33 @@ slots:
       \ indicate the gr:Location (e.g. store or shop) from which the goods would be\
       \ available."
     name: gr_availabilityStarts
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: gr:availabilityStarts
     source: http://purl.org/goodrelations/v1
     title: availability starts (0..1)
   gr_availableAtOrFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This states that a particular gr:Offering is available at or from
       the given gr:Location (e.g. shop or branch).
     name: gr_availableAtOrFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Location
     slot_uri: gr:availableAtOrFrom
     source: http://purl.org/goodrelations/v1
     title: available at or from (0..*)
   gr_availableDeliveryMethods:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This specifies the gr:DeliveryMethod or methods available for a given
       gr:Offering.
     name: gr_availableDeliveryMethods
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_DeliveryMethod
     slot_uri: gr:availableDeliveryMethods
     source: http://purl.org/goodrelations/v1
     title: available delivery methods (0..*)
   gr_billingIncrement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the minimal quantity and rounding increment\
       \ that will be the basis for the billing. \u240AThe unit of measurement is specified\
       \ by the UN/CEFACT code attached to the gr:UnitPriceSpecification via the gr:hasUnitOfMeasurement\
@@ -1515,14 +1518,16 @@ slots:
       \ of gr:Offering that include not more than one type of good or service."
     domain: gr_UnitPriceSpecification
     name: gr_billingIncrement
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:billingIncrement
     source: http://purl.org/goodrelations/v1
     title: billing increment (0..1)
   gr_category:
     any_of:
-    - range: string
     - range: rdfs_Literal
+    - range: string
     description: "The name of a category to which this gr:ProductOrService, gr:Offering,\
       \ gr:BusinessEntity, or gr:Location belongs.\u240A\t\u240ANote 1: For products,\
       \ it is better to add an rdf:type statement referring to a GoodRelations-compliant\
@@ -1536,8 +1541,6 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: category (0..*)
   gr_closes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The closing  hour of the gr:Location on the given gr:DayOfWeek.\u240A\
       If no time-zone suffix is included, the time is given in the local time valid\
       \ at the gr:Location.\u240A\u240AFor a time in GMT/UTC, simply add a \"Z\" following\
@@ -1553,33 +1556,33 @@ slots:
       \ gr:OpeningHoursSpecification."
     domain: gr_OpeningHoursSpecification
     name: gr_closes
+    notes:
+    - No occurrences of this slot in the graph.
     range: time
     slot_uri: gr:closes
     source: http://purl.org/goodrelations/v1
     title: closes (1..1)
   gr_color:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The color of the product.
     name: gr_color
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:color
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_datatypeProductOrServiceProperty
     title: color (0..1)
   gr_condition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A textual description of the condition of the product or service,
       or the products or services included in the offer (when attached to a gr:Offering)
     name: gr_condition
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:condition
     source: http://purl.org/goodrelations/v1
     title: condition (0..1)
   gr_datatypeProductOrServiceProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property is the super property for all pure datatype properties\
       \ that can be used to describe a gr:ProductOrService.\u240A\u240AIn products\
       \ and services ontologies, only such properties that are no quantitative properties\
@@ -1589,13 +1592,13 @@ slots:
       \ (as long as no predefined values exist), for boolean datatype properties,\
       \ and for dates and times."
     name: gr_datatypeProductOrServiceProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:datatypeProductOrServiceProperty
     source: http://purl.org/goodrelations/v1
     title: datatype product or service property (0..*)
   gr_deliveryLeadTime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property can be used to indicate the promised delay between\
       \ the receipt of the order and the goods leaving the warehouse.\u240A\u240A\
       The duration is specified by attaching an instance of gr:QuantitativeValueInteger.\
@@ -1606,16 +1609,18 @@ slots:
       \ suitable for durations, e.g. MON (months), DAY (days), HUR (hours), or MIN\
       \ (minutes)."
     name: gr_deliveryLeadTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValueInteger
     slot_uri: gr:deliveryLeadTime
     source: http://purl.org/goodrelations/v1
     title: delivery lead time (0..1)
   gr_depth:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The depth of the product.\u240ATypical unit code(s): CMT for centimeters,\
       \ INH for inches"
     name: gr_depth
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:depth
     source: http://purl.org/goodrelations/v1
@@ -1623,8 +1628,8 @@ slots:
     title: depth (0..1)
   gr_description:
     any_of:
-    - range: string
     - range: rdfs_Literal
+    - range: string
     description: "A short textual description of the resource. \u240A\u240AThis property\
       \ is semantically equivalent to rdfs:comment and just meant as a handy shortcut\
       \ for marking up data."
@@ -1646,29 +1651,27 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: display position (0..1)
   gr_durationOfWarrantyInMonths:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property specifies the duration of the gr:WarrantyPromise in
       months.
     domain: gr_WarrantyPromise
     name: gr_durationOfWarrantyInMonths
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:durationOfWarrantyInMonths
     source: http://purl.org/goodrelations/v1
     title: duration of warranty in months (0..1)
   gr_eligibleCustomerTypes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The types of customers (gr:BusinessEntityType) for which the given
       gr:Offering is valid.
     name: gr_eligibleCustomerTypes
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_BusinessEntityType
     slot_uri: gr:eligibleCustomerTypes
     source: http://purl.org/goodrelations/v1
     title: eligible customer types (0..*)
   gr_eligibleDuration:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The minimal and maximal duration for which the given gr:Offering\
       \ or gr:License is valid. This is mostly used for offers regarding accommodation,\
       \ the rental of objects, or software licenses. The duration is specified by\
@@ -1682,26 +1685,26 @@ slots:
       \ interval during which the gr:Offering or gr:License is valid, while gr:eligibleDuration\
       \ specifies the acceptable duration of the contract or usage."
     name: gr_eligibleDuration
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:eligibleDuration
     source: http://purl.org/goodrelations/v1
     title: eligible duration (0..1)
   gr_eligibleRegions:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the geo-political region or regions for\
       \ which the gr:Offering, gr:License, or gr:DeliveryChargeSpecification is valid\
       \ using the two-character version of ISO 3166-1 (ISO 3166-1 alpha-2)  for regions\
       \ or ISO 3166-2 , which breaks down the countries from ISO 3166-1 into administrative\
       \ subdivisions.\u240A\u240AImportant: Do NOT use 3-letter ISO 3166-1 codes!"
     name: gr_eligibleRegions
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:eligibleRegions
     source: http://purl.org/goodrelations/v1
     title: eligible regions (0..*)
   gr_eligibleTransactionVolume:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property can be used to indicate the transaction volume, in\
       \ a monetary unit, for which the gr:Offering or gr:PriceSpecification is valid.\
       \ This is mostly used to specify a minimal purchasing volume, to express free\
@@ -1711,59 +1714,59 @@ slots:
       \ to indicate the lower and upper boundaries and gr:hasCurrency to indicate\
       \ the currency using the ISO 4217 standard (3 characters)."
     name: gr_eligibleTransactionVolume
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_PriceSpecification
     slot_uri: gr:eligibleTransactionVolume
     source: http://purl.org/goodrelations/v1
     title: eligible transaction volume (0..1)
   gr_equal:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for qualitative values indicates that the
       subject is equal to the object.
     domain: gr_QualitativeValue
     inverse: gr_equal
     name: gr_equal
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:equal
     source: http://purl.org/goodrelations/v1
     title: equal (0..*)
   gr_greater:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for qualitative values indicates that the
       subject is greater than the object.
     domain: gr_QualitativeValue
     inverse: gr_lesser
     name: gr_greater
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:greater
     source: http://purl.org/goodrelations/v1
     title: greater (0..*)
   gr_greaterOrEqual:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for qualitative values indicates that the
       subject is greater than or equal to the object.
     domain: gr_QualitativeValue
     inverse: gr_lesserOrEqual
     name: gr_greaterOrEqual
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:greaterOrEqual
     source: http://purl.org/goodrelations/v1
     title: greater or equal (0..*)
   gr_hasBrand:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This specifies the brand or brands (gr:Brand) associated with a gr:ProductOrService,
       or the brand or brands maintained by a gr:BusinessEntity.
     name: gr_hasBrand
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Brand
     slot_uri: gr:hasBrand
     source: http://purl.org/goodrelations/v1
     title: has brand (0..*)
   gr_hasBusinessFunction:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This specifies the business function of the gr:Offering, i.e. whether\
       \ the gr:BusinessEntity is offering to sell, to lease, or to repair the particular\
       \ type of product. In the case of bundles, it is also possible to attach individual\
@@ -1776,24 +1779,24 @@ slots:
       \ functions to the same gr:Offering, since the gr:UnitPriceSpecification for\
       \ the varying business functions will typically be very different."
     name: gr_hasBusinessFunction
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_BusinessFunction
     slot_uri: gr:hasBusinessFunction
     source: http://purl.org/goodrelations/v1
     title: has business function (1..*)
   gr_hasCurrency:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The currency for all prices in the gr:PriceSpecification given using
       the ISO 4217 standard (3 characters).
     domain: gr_PriceSpecification
     name: gr_hasCurrency
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasCurrency
     source: http://purl.org/goodrelations/v1
     title: has currency (1..1)
   gr_hasCurrencyValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the amount of money for a price per unit,\
       \ shipping charges, or payment charges. The currency and other relevant details\
       \ are attached to the respective gr:PriceSpecification etc.\u240A\u240AFor a\
@@ -1808,25 +1811,25 @@ slots:
       \ y, x gr:hasMaxCurrencyValue y."
     domain: gr_PriceSpecification
     name: gr_hasCurrencyValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasCurrencyValue
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMaxCurrencyValue
     title: has currency value (0..1)
   gr_hasDUNS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The Dun & Bradstreet DUNS number for identifying a gr:BusinessEntity.
       The Dun & Bradstreet DUNS is a nine-digit number used to identify legal entities
       (but usually not branches or locations of logistical importance only).
     name: gr_hasDUNS
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasDUNS
     source: http://purl.org/goodrelations/v1
     title: has DUNS (0..1)
   gr_hasEAN_UCC-13:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The EAN\xB7UCC-13 code of the given gr:ProductOrService or gr:Offering.\
       \ This code is now officially called GTIN-13 (Global Trade Identifier Number)\
       \ or EAN\xB7UCC-13. Former 12-digit UPC codes can be converted into EAN\xB7\
@@ -1838,14 +1841,14 @@ slots:
       \ \"978\" or \"979\" as prefix. Since the old ISBN-10 is now deprecated, GoodRelations\
       \ does not provide a property for ISBNs."
     name: gr_hasEAN_UCC-13
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasEAN_UCC-13
     source: http://purl.org/goodrelations/v1
     subproperty_of: sdos_productID
     title: has EAN/UCC-13 (0..*)
   gr_hasEligibleQuantity:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This specifies the interval and unit of measurement of ordering\
       \ quantities for which the gr:Offering or gr:PriceSpecification is valid. This\
       \ allows e.g. specifying that a certain freight charge is valid only for a certain\
@@ -1855,73 +1858,73 @@ slots:
       \ refers to units of this bundle. In other words, \"C62\" for \"Units or pieces\"\
       \ is usually the appropriate unit of measurement."
     name: gr_hasEligibleQuantity
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:hasEligibleQuantity
     source: http://purl.org/goodrelations/v1
     title: has eligible quantity (0..1)
   gr_hasGTIN-14:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The Global Trade Item Number (GTIN-14) of the given gr:ProductOrService
       or gr:Offering.
     name: gr_hasGTIN-14
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasGTIN-14
     source: http://purl.org/goodrelations/v1
     subproperty_of: sdos_productID
     title: has GTIN-14 (0..*)
   gr_hasGTIN-8:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The 8-digit Global Trade Item Number (GTIN-8) of the given gr:ProductOrService
       or gr:Offering, also known as EAN/UCC-8 (8-digit EAN).
     name: gr_hasGTIN-8
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasGTIN-8
     source: http://purl.org/goodrelations/v1
     subproperty_of: sdos_productID
     title: has GTIN-8 (0..*)
   gr_hasGlobalLocationNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The Global Location Number (GLN, sometimes also referred to as International\
       \ Location Number or ILN) of the respective gr:BusinessEntity or gr:Location.\u240A\
       The Global Location Number is a thirteen-digit number used to identify parties\
       \ and physical locations."
     name: gr_hasGlobalLocationNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasGlobalLocationNumber
     source: http://purl.org/goodrelations/v1
     title: has Global Location Number (0..1)
   gr_hasISICv4:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The International Standard of Industrial Classification of All Economic\
       \ Activities (ISIC), Revision 4 code for a particular gr:BusinessEntity or gr:Location.\
       \ See http://unstats.un.org/unsd/cr/registry/isic-4.asp for more information.\u240A\
       \u240ANote: While ISIC codes are sometimes misused for classifying products\
       \ or services, they are designed and suited only for classifying business establishments."
     name: gr_hasISICv4
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:hasISICv4
     source: http://purl.org/goodrelations/v1
     title: has ISIC v4 (0..*)
   gr_hasInventoryLevel:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the current approximate inventory level\
       \ for gr:SomeItems. The unit of measurement and the point value or interval\
       \ are indicated using the attached gr:QuantitativeValueFloat instance.\u240A\
       \u240AThis property can also be attached to a gr:Offering in cases where the\
       \ included products are not modeled in more detail."
     name: gr_hasInventoryLevel
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValueFloat
     slot_uri: gr:hasInventoryLevel
     source: http://purl.org/goodrelations/v1
     title: has inventory level (0..1)
   gr_hasMPN:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The Manufacturer Part Number or MPN is a unique identifier for a\
       \ product, service, or bundle from the perspective of a particular manufacturer.\
       \ MPNs can be assigned to products or product datasheets, or bundles. Accordingly,\
@@ -1935,36 +1938,36 @@ slots:
       \ are much more reliable identifiers, because they are globally unique.\u240A\
       \u240ASee also http://en.wikipedia.org/wiki/Part_number"
     name: gr_hasMPN
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasMPN
     source: http://purl.org/goodrelations/v1
     subproperty_of: sdos_productID
     title: has MPN (0..*)
   gr_hasMakeAndModel:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This states that an actual product instance (gr:Individual) or a\
       \ placeholder instance for multiple, unidentified such instances (gr:SomeItems)\
       \ is one occurence of a particular gr:ProductOrServiceModel.\u240A\u240AExample:\
       \ myFordT hasMakeAndModel FordT."
     name: gr_hasMakeAndModel
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrServiceModel
     slot_uri: gr:hasMakeAndModel
     source: http://purl.org/goodrelations/v1
     title: has make and model (0..1)
   gr_hasManufacturer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This object property links a gr:ProductOrService to the gr:BusinessEntity
       that produces it. Mostly used with gr:ProductOrServiceModel.
     name: gr_hasManufacturer
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_BusinessEntity
     slot_uri: gr:hasManufacturer
     source: http://purl.org/goodrelations/v1
     title: has manufacturer (0..1)
   gr_hasMaxCurrencyValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the UPPER BOUND of the amount of money for\
       \ a price RANGE per unit, shipping charges, or payment charges. The currency\
       \ and other relevant details are attached to the respective gr:PriceSpecification\
@@ -1977,48 +1980,48 @@ slots:
       \ x gr:hasMinCurrencyValue y, x gr:hasMaxCurrencyValue y."
     domain: gr_PriceSpecification
     name: gr_hasMaxCurrencyValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasMaxCurrencyValue
     source: http://purl.org/goodrelations/v1
     title: has max currency value (1..1)
   gr_hasMaxValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the upper limit of a gr:QuantitativeValue
       instance.
     domain: gr_QuantitativeValue
     name: gr_hasMaxValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:hasMaxValue
     source: http://purl.org/goodrelations/v1
     title: has max value (0..1)
   gr_hasMaxValueFloat:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the upper limit of a gr:QuantitativeValueFloat
       instance.
     domain: gr_QuantitativeValueFloat
     name: gr_hasMaxValueFloat
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasMaxValueFloat
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMaxValue
     title: has max value float (1..1)
   gr_hasMaxValueInteger:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the upper limit of a gr:QuantitativeValueInteger
       instance.
     domain: gr_QuantitativeValueInteger
     name: gr_hasMaxValueInteger
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:hasMaxValueInteger
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMaxValue
     title: has max value integer (1..1)
   gr_hasMinCurrencyValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the LOWER BOUND of the amount of money for\
       \ a price RANGE per unit, shipping charges, or payment charges. The currency\
       \ and other relevant details are attached to the respective gr:PriceSpecification\
@@ -2031,54 +2034,56 @@ slots:
       \ x gr:hasMinCurrencyValue y, x gr:hasMaxCurrencyValue y."
     domain: gr_PriceSpecification
     name: gr_hasMinCurrencyValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasMinCurrencyValue
     source: http://purl.org/goodrelations/v1
     title: has min currency value (1..1)
   gr_hasMinValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the lower limit of a gr:QuantitativeValue
       instance.
     domain: gr_QuantitativeValue
     name: gr_hasMinValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:hasMinValue
     source: http://purl.org/goodrelations/v1
     title: has min value (0..1)
   gr_hasMinValueFloat:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the lower limit of a gr:QuantitativeValueFloat
       instance.
     domain: gr_QuantitativeValueFloat
     name: gr_hasMinValueFloat
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasMinValueFloat
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMinValue
     title: has min value float (1..1)
   gr_hasMinValueInteger:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property captures the lower limit of a gr:QuantitativeValueInteger
       instance.
     domain: gr_QuantitativeValueInteger
     name: gr_hasMinValueInteger
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:hasMinValueInteger
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMinValue
     title: has min value integer (1..1)
   gr_hasNAICS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The North American Industry Classification System (NAICS) code for\
       \ a particular gr:BusinessEntity.\u240ASee http://www.census.gov/eos/www/naics/\
       \ for more details.\u240A\u240ANote: While NAICS codes are sometimes misused\
       \ for classifying products or services, they are designed and suited only for\
       \ classifying business establishments."
     name: gr_hasNAICS
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:hasNAICS
     source: http://purl.org/goodrelations/v1
@@ -2095,33 +2100,33 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: has next (0..1)
   gr_hasOpeningHoursDayOfWeek:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This specifies the gr:DayOfWeek to which the gr:OpeningHoursSpecification\
       \ is related.\u240A\u240ANote: Use multiple instances of gr:OpeningHoursSpecification\
       \ for specifying the opening hours for multiple days if the opening hours differ."
     domain: gr_OpeningHoursSpecification
     name: gr_hasOpeningHoursDayOfWeek
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_DayOfWeek
     slot_uri: gr:hasOpeningHoursDayOfWeek
     source: http://purl.org/goodrelations/v1
     title: has opening hours day of week (1..*)
   gr_hasOpeningHoursSpecification:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property links a gr:Location to a gr:OpeningHoursSpecification.
     name: gr_hasOpeningHoursSpecification
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_OpeningHoursSpecification
     slot_uri: gr:hasOpeningHoursSpecification
     source: http://purl.org/goodrelations/v1
     title: has opening hours specification (0..*)
   gr_hasPOS:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property states that the respective gr:Location is a point of
       sale for the respective gr:BusinessEntity. It allows linking those two types
       of entities without the need for a particular gr:Offering.
     name: gr_hasPOS
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Location
     slot_uri: gr:hasPOS
     source: http://purl.org/goodrelations/v1
@@ -2139,8 +2144,6 @@ slots:
     source: http://purl.org/goodrelations/v1
     title: has previous (0..1)
   gr_hasPriceSpecification:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This links a gr:Offering to a gr:PriceSpecification or specifications.\
       \ There can be unit price specifications, payment charge specifications, and\
       \ delivery charge specifications. For each type, multiple specifications for\
@@ -2149,13 +2152,13 @@ slots:
       \ target destinations.\u240A\u240ARecommended retail prices etc. can be marked\
       \ by the gr:priceType property of the gr:UnitPriceSpecification."
     name: gr_hasPriceSpecification
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_PriceSpecification
     slot_uri: gr:hasPriceSpecification
     source: http://purl.org/goodrelations/v1
     title: has price specification (0..*)
   gr_hasStockKeepingUnit:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The Stock Keeping Unit, or SKU is a unique identifier for a product,\
       \ service, or bundle from the perspective of a particular supplier, i.e. SKUs\
       \ are mostly assigned and serialized at the merchant level. \u240AExamples of\
@@ -2176,97 +2179,97 @@ slots:
       Usually, the properties gr:hasEAN_UCC-13 and gr:hasGTIN-14 are much more reliable\
       \ identifiers, because they are globally unique.\u240A\u240ASee also http://en.wikipedia.org/wiki/Stock_Keeping_Unit."
     name: gr_hasStockKeepingUnit
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasStockKeepingUnit
     source: http://purl.org/goodrelations/v1
     subproperty_of: sdos_productID
     title: has Stock Keeping Unit (0..*)
   gr_hasUnitOfMeasurement:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The unit of measurement for a gr:QuantitativeValue, a gr:UnitPriceSpecification,
       or a gr:TypeAndQuantityNode given using the UN/CEFACT Common Code (3 characters).
     name: gr_hasUnitOfMeasurement
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:hasUnitOfMeasurement
     source: http://purl.org/goodrelations/v1
     title: has unit of measurement (1..1)
   gr_hasValue:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This subproperty specifies that the upper and lower limit of the
       given gr:QuantitativeValue are identical and have the respective value. It is
       a shortcut for such cases where a quantitative property is (at least practically)
       a single point value and not an interval.
     domain: gr_QuantitativeValue
     name: gr_hasValue
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:hasValue
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMinValue
     title: has value (0..1)
   gr_hasValueFloat:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This subproperty specifies that the upper and lower limit of the
       given gr:QuantitativeValueFloat are identical and have the respective float
       value. It is a shortcut for such cases where a quantitative property is (at
       least practically) a single point value and not an interval.
     domain: gr_QuantitativeValueFloat
     name: gr_hasValueFloat
+    notes:
+    - No occurrences of this slot in the graph.
     range: float
     slot_uri: gr:hasValueFloat
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMinValueFloat
     title: has value float (0..1)
   gr_hasValueInteger:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This subproperty specifies that the upper and lower limit of the
       given gr:QuantitativeValueInteger are identical and have the respective integer
       value. It is a shortcut for such cases where a quantitative property is (at
       least practically) a single point value and not an interval.
     domain: gr_QuantitativeValueInteger
     name: gr_hasValueInteger
+    notes:
+    - No occurrences of this slot in the graph.
     range: int32
     slot_uri: gr:hasValueInteger
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_hasMaxValueInteger
     title: has value integer (0..1)
   gr_hasWarrantyPromise:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This specifies the gr:WarrantyPromise made by the gr:BusinessEntity
       for the given gr:Offering.
     name: gr_hasWarrantyPromise
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_WarrantyPromise
     slot_uri: gr:hasWarrantyPromise
     source: http://purl.org/goodrelations/v1
     title: has warranty promise (0..*)
   gr_hasWarrantyScope:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This states the gr:WarrantyScope of a given gr:WarrantyPromise.
     domain: gr_WarrantyPromise
     name: gr_hasWarrantyScope
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_WarrantyScope
     slot_uri: gr:hasWarrantyScope
     source: http://purl.org/goodrelations/v1
     title: has warranty scope (0..1)
   gr_height:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The height of the product.\u240ATypical unit code(s): CMT for centimeters,\
       \ INH for inches"
     name: gr_height
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:height
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_quantitativeProductOrServiceProperty
     title: height (0..1)
   gr_includes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This object property is a shortcut for the original gr:includesObject\
       \ property for the common case of having exactly one single gr:ProductOrService\
       \ instance included in an Offering. \u240A\u240AWhen linking to an instance\
@@ -2280,43 +2283,43 @@ slots:
       C62\"^^xsd:string and gr:amountOfThisGood=\"1.0\"^^xsd:float for that good."
     domain: gr_Offering
     name: gr_includes
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrService
     slot_uri: gr:includes
     source: http://purl.org/goodrelations/v1
     title: includes (0..1)
   gr_includesObject:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This object property links a gr:Offering to one or multiple gr:TypeAndQuantityNode
       or nodes that specify the components that are included in the respective offer.
     name: gr_includesObject
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_TypeAndQuantityNode
     slot_uri: gr:includesObject
     source: http://purl.org/goodrelations/v1
     title: includes object (0..*)
   gr_isAccessoryOrSparePartFor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This states that a particular gr:ProductOrService is an accessory
       or spare part for another product or service.
     name: gr_isAccessoryOrSparePartFor
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrService
     slot_uri: gr:isAccessoryOrSparePartFor
     source: http://purl.org/goodrelations/v1
     title: is accessory or spare part for (0..*)
   gr_isConsumableFor:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This states that a particular gr:ProductOrService is a consumable
       for another product or service.
     name: gr_isConsumableFor
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrService
     slot_uri: gr:isConsumableFor
     source: http://purl.org/goodrelations/v1
     title: is consumable for (0..*)
   gr_isListPrice:
-    comments:
-    - No occurrences of this slot in the graph.
     deprecated: 'true'
     description: "This boolean attribute indicates whether a gr:UnitPriceSpecification\
       \ is a list price (usually a vendor recommendation) or not. \"true\"  indicates\
@@ -2324,24 +2327,24 @@ slots:
       \ gr:priceType property instead."
     domain: gr_UnitPriceSpecification
     name: gr_isListPrice
+    notes:
+    - No occurrences of this slot in the graph.
     range: boolean
     slot_uri: gr:isListPrice
     source: http://purl.org/goodrelations/v1
     title: is list price (DEPRECATED)
   gr_isSimilarTo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This states that a given gr:ProductOrService is similar to another
       product or service. Of course, this is a subjective statement; when interpreting
       it, the trust in the origin of the statement should be taken into account.
     name: gr_isSimilarTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrService
     slot_uri: gr:isSimilarTo
     source: http://purl.org/goodrelations/v1
     title: is similar to (0..*)
   gr_isVariantOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This states that a particular gr:ProductOrServiceModel is a variant\
       \ of another product or service model. It is pretty safe to infer that the variant\
       \ inherits all gr:quantitativeProductOrServiceProperty, gr:qualitativeProductOrServiceProperty,\
@@ -2350,79 +2353,79 @@ slots:
       \ foo:Ford_T_Model"
     domain: gr_ProductOrServiceModel
     name: gr_isVariantOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrServiceModel
     slot_uri: gr:isVariantOf
     source: http://purl.org/goodrelations/v1
     title: is variant of (0..1)
   gr_legalName:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The legal name of the gr:BusinessEntity.
     name: gr_legalName
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:legalName
     source: http://purl.org/goodrelations/v1
     title: legal name (0..1)
   gr_lesser:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for gr:QualitativeValue pairs indicates that
       the subject is lesser than the object.
     domain: gr_QualitativeValue
     inverse: gr_greater
     name: gr_lesser
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:lesser
     source: http://purl.org/goodrelations/v1
     title: lesser (0..*)
   gr_lesserOrEqual:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for gr:QualitativeValue pairs indicates that
       the subject is lesser than or equal to the object.
     domain: gr_QualitativeValue
     inverse: gr_greaterOrEqual
     name: gr_lesserOrEqual
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:lesserOrEqual
     source: http://purl.org/goodrelations/v1
     title: lesser or equal (0..*)
   gr_name:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A short text describing the respective resource.\u240A\u240AThis\
       \ property is semantically equivalent to dcterms:title and rdfs:label and just\
       \ meant as a handy shortcut for marking up data."
     name: gr_name
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: gr:name
     source: http://purl.org/goodrelations/v1
     title: name (0..1)
   gr_nonEqual:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This ordering relation for gr:QualitativeValue pairs indicates that
       the subject is not equal to the object.
     domain: gr_QualitativeValue
     inverse: gr_nonEqual
     name: gr_nonEqual
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:nonEqual
     source: http://purl.org/goodrelations/v1
     title: non equal (0..*)
   gr_offers:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This links a gr:BusinessEntity to the offers (gr:Offering) it makes.
       If you want to express interest in receiving offers, use gr:seeks instead.
     name: gr_offers
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Offering
     slot_uri: gr:offers
     source: http://purl.org/goodrelations/v1
     title: offers (0..*)
   gr_opens:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The opening hour of the gr:Location on the given gr:DayOfWeek.\u240A\
       If no time-zone suffix is included, the time is given in the local time valid\
       \ at the gr:Location.\u240A\u240AFor a time in GMT/UTC, simply add a \"Z\" following\
@@ -2437,39 +2440,39 @@ slots:
       \ create a second instance of gr:OpeningHoursSpecification."
     domain: gr_OpeningHoursSpecification
     name: gr_opens
+    notes:
+    - No occurrences of this slot in the graph.
     range: time
     slot_uri: gr:opens
     source: http://purl.org/goodrelations/v1
     title: opens (1..1)
   gr_owns:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property indicates that a particular person or business owns\
       \ a particular product. It can be used to expose the products in one's posession\
       \ in order to empower recommender systems to suggest matching offers.\u240A\u240A\
       Note that the product must be an instance of the class gr:Individual.\u240A\u240A\
       This property can also be safely applied to foaf:Agent instances."
     name: gr_owns
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Individual
     slot_uri: gr:owns
     source: http://purl.org/goodrelations/v1
     title: owns (0..*)
   gr_predecessorOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property indicates that the subject is a previous, often discontinued\
       \ variant of the gr:ProductOrServiceModel used as the object.\u240A\u240AExample:\
       \ Golf III predecessorOf Golf IV\u240A\u240AThis relation is transitive."
     domain: gr_ProductOrServiceModel
     inverse: gr_successorOf
     name: gr_predecessorOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrServiceModel
     slot_uri: gr:predecessorOf
     source: http://purl.org/goodrelations/v1
     title: predecessor of (0..*)
   gr_priceType:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This attribute can be used to distinguish multiple different price\
       \ specifications for the same gr:Offering. It supersedes the former gr:isListPrice\
       \ property. The following values are recommended:\u240A\u240AThe absence of\
@@ -2481,36 +2484,36 @@ slots:
       \ excluding rebates and charges."
     domain: gr_UnitPriceSpecification
     name: gr_priceType
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:priceType
     source: http://purl.org/goodrelations/v1
     title: price type (0..1)
   gr_qualitativeProductOrServiceProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This is the super property of all qualitative properties for products
       and services. All properties in product or service ontologies for which gr:QualitativeValue
       instances are specified are subproperties of this property.
     name: gr_qualitativeProductOrServiceProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QualitativeValue
     slot_uri: gr:qualitativeProductOrServiceProperty
     source: http://purl.org/goodrelations/v1
     title: qualitative product or service property (0..*)
   gr_quantitativeProductOrServiceProperty:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This is the super property of all quantitative  properties for products
       and services. All properties in product or service ontologies that specify quantitative
       characteristics, for which an interval is at least theoretically an appropriate
       value, are subproperties of this property.
     name: gr_quantitativeProductOrServiceProperty
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:quantitativeProductOrServiceProperty
     source: http://purl.org/goodrelations/v1
     title: quantitative product or service property (0..*)
   gr_relatedWebService:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The URI of a SOAP or REST Web Service from which additional information\
       \ about the gr:BusinessEntity, gr:Offering, gr:PriceSpecification, or gr:ProductOrService,\
       \ or any other element,  can be obtained. The recommended range is xsd:anyURI\
@@ -2520,25 +2523,25 @@ slots:
       \ and (b) the GoodRelations description can be found via the Web Service URI\
       \ value used with this gr:relatedWebService property."
     name: gr_relatedWebService
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: gr:relatedWebService
     source: http://purl.org/goodrelations/v1
     title: related Web Service (0..*)
   gr_seeks:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This links a gr:BusinessEntity to gr:Offering nodes that describe
       what the business entity is interested in (i.e., the buy side). If you want
       to express interest in offering something, use gr:offers instead. Note that
       this substitutes the former gr:BusinessFunction gr:Buy, which is now deprecated.
     name: gr_seeks
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_Offering
     slot_uri: gr:seeks
     source: http://purl.org/goodrelations/v1
     title: seeks (0..*)
   gr_serialNumber:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The serial number or any alphanumeric identifier of a particular\
       \ product. Note that serial number are unique only for the same brand or the\
       \ same model, so you cannot infer from two occurrences of the same serial number\
@@ -2546,47 +2549,47 @@ slots:
       \ property can also be attached to a gr:Offering in cases where the included\
       \ products are not modeled in more detail."
     name: gr_serialNumber
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:serialNumber
     source: http://purl.org/goodrelations/v1
     title: serial number (0..*)
   gr_successorOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property indicates that the subject is a newer, often updated\
       \ or improved variant of the gr:ProductOrServiceModel used as the object.\u240A\
       \u240AExample: Golf III successorOf Golf II\u240A\u240AThis relation is transitive."
     domain: gr_ProductOrServiceModel
     inverse: gr_predecessorOf
     name: gr_successorOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_ProductOrServiceModel
     slot_uri: gr:successorOf
     source: http://purl.org/goodrelations/v1
     title: successor of (0..*)
   gr_taxID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The Tax / Fiscal ID of the gr:BusinessEntity, e.g. the TIN in the
       US or the CIF/NIF in Spain. It is usually assigned by the country of residence
     name: gr_taxID
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:taxID
     source: http://purl.org/goodrelations/v1
     title: Tax ID (0..1)
   gr_typeOfGood:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This specifies the gr:ProductOrService that the gr:TypeAndQuantityNode
       is referring to.
     domain: gr_TypeAndQuantityNode
     name: gr_typeOfGood
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: gr:typeOfGood
     source: http://purl.org/goodrelations/v1
     title: type of good (1..1)
   gr_validFrom:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the beginning of the validity of the gr:Offering,\
       \ gr:PriceSpecification, gr:License, or gr:OpeningHoursSpecification.\u240A\
       A time-zone should be specified. For a time in GMT/UTC, simply add a \"Z\" following\
@@ -2600,13 +2603,13 @@ slots:
       \ without validity information.\u240A2. Among conflicting nodes both having\
       \ validity information, the one with the shorter validity span ranks higher."
     name: gr_validFrom
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: gr:validFrom
     source: http://purl.org/goodrelations/v1
     title: valid from (0..1)
   gr_validThrough:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies the end of the validity of the gr:Offering,\
       \ gr:PriceSpecification, gr:License, or gr:OpeningHoursSpecification.\u240A\
       A time-zone should be specified. For a time in GMT/UTC, simply add a \"Z\" following\
@@ -2621,66 +2624,67 @@ slots:
       \ the one with the shorter validity span ranks higher.\u240ANote 2: For Google,\
       \ attaching a gr:validThrough statement to a gr:UnitPriceSpecification is mandatory."
     name: gr_validThrough
+    notes:
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: gr:validThrough
     source: http://purl.org/goodrelations/v1
     title: valid through (0..1)
   gr_valueAddedTaxIncluded:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "This property specifies whether the applicable value-added tax (VAT)\
       \  is included in the price of the gr:PriceSpecification or not.\u240A\u240A\
       Note: This is a simple representation which may not properly reflect all details\
       \ of local taxation."
     domain: gr_PriceSpecification
     name: gr_valueAddedTaxIncluded
+    notes:
+    - No occurrences of this slot in the graph.
     range: boolean
     slot_uri: gr:valueAddedTaxIncluded
     source: http://purl.org/goodrelations/v1
     title: value added tax included (0..1)
   gr_valueReference:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The superclass of properties that link a gr:QuantitativeValue or
       a gr:QualitativeValue to a second gr:QuantitativeValue or a gr:QualitativeValue
       that provides additional information on the original value. A good modeling
       practice is to define specializations of this property (e.g. foo:referenceTemperature)
       for your particular domain.
     name: gr_valueReference
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: gr:valueReference
     source: http://purl.org/goodrelations/v1
     title: value reference (0..*)
   gr_vatID:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The Value-added Tax ID of the gr:BusinessEntity. See http://en.wikipedia.org/wiki/Value_added_tax_identification_number
       for details.
     name: gr_vatID
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: gr:vatID
     source: http://purl.org/goodrelations/v1
     title: VAT ID (0..1)
   gr_weight:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The weight of the gr:ProductOrService.\u240ATypical unit code(s):\
       \ GRM for gram, KGM for kilogram, LBR for pound"
     name: gr_weight
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:weight
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_quantitativeProductOrServiceProperty
     title: weight (0..1)
   gr_width:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "The width of the gr:ProductOrService.\u240ATypical unit code(s):\
       \ CMT for centimeters, INH for inches"
     name: gr_width
+    notes:
+    - No occurrences of this slot in the graph.
     range: gr_QuantitativeValue
     slot_uri: gr:width
     source: http://purl.org/goodrelations/v1
     subproperty_of: gr_quantitativeProductOrServiceProperty
     title: width (0..1)
-title: No schema name specified

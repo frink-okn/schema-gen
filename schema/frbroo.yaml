@@ -1724,16 +1724,16 @@ classes:
       \ objects, geographic features, events or geo-political units."
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: Place
-created_on: '2025-07-17T19:20:29.115679'
+created_on: '2025-09-03T11:22:20.535416'
 default_prefix: okns
 id: okns:frbroo
 imports:
-- okns:owl-rdf-rdfs
-- linkml:types
-- okns:dc
-- okns:skos
 - okns:extended_types
-last_updated_on: '2025-07-17T19:20:29.115679'
+- okns:dc
+- okns:owl-rdf-rdfs
+- okns:skos
+- linkml:types
+last_updated_on: '2025-09-03T11:22:20.535416'
 name: frbroo
 prefixes:
   cidoc-crm: http://www.cidoc-crm.org/cidoc-crm/
@@ -1748,273 +1748,273 @@ prefixes:
   skos: http://www.w3.org/2004/02/skos/core#
 slots:
   cidoc-crm_P106_is_composed_of:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P106_is_composed_of
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P106_is_composed_of
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P106i_forms_part_of:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P106i_forms_part_of
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P106i_forms_part_of
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P108_has_produced:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P108_has_produced
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P108_has_produced
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P108i_was_produced_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P108i_was_produced_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P108i_was_produced_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P128_carries:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P128_carries
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P128_carries
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P128i_is_carried_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P128i_is_carried_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P128i_is_carried_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P130_shows_features_of:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P130_shows_features_of
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P130_shows_features_of
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P130i_features_are_also_found_on:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P130i_features_are_also_found_on
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P130i_features_are_also_found_on
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P140_assigned_attribute_to:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P140_assigned_attribute_to
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P140_assigned_attribute_to
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P140i_was_attributed_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P140i_was_attributed_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P140i_was_attributed_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P141_assigned:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P141_assigned
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P141_assigned
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P141i_was_assigned_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P141i_was_assigned_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P141i_was_assigned_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P148_has_component:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P148_has_component
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P148_has_component
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P148i_is_component_of:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P148i_is_component_of
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P148i_is_component_of
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P14_carried_out_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P14_carried_out_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P14_carried_out_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P14i_performed:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P14i_performed
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P14i_performed
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P15_was_influenced_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P15_was_influenced_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P15_was_influenced_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P15i_influenced:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P15i_influenced
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P15i_influenced
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P16_used_specific_object:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P16_used_specific_object
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P16_used_specific_object
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P16i_was_used_for:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P16i_was_used_for
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P16i_was_used_for
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P2_has_type:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P2_has_type
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P2_has_type
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P2i_is_type_of:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P2i_is_type_of
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P2i_is_type_of
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P33_used_specific_technique:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P33_used_specific_technique
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P33_used_specific_technique
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P33i_was_used_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P33i_was_used_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P33i_was_used_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P33i_was_used_in:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P33i_was_used_in
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P33i_was_used_in
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P37_assigned:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P37_assigned
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P37_assigned
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P37i_was_assigned_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P37i_was_assigned_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P37i_was_assigned_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P3_has_note:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P3_has_note
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P3_has_note
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P67_refers_to:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P67_refers_to
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P67_refers_to
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P67i_is_referred_to_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P67i_is_referred_to_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P67i_is_referred_to_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P69_has_association_with:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P69_has_association_with
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P69_has_association_with
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P69i_is_associated_with:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P69i_is_associated_with
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P69i_is_associated_with
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P94_has_created:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P94_has_created
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P94_has_created
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
       of another slot in this graph but has not itself been defined.
   cidoc-crm_P94i_was_created_by:
-    comments:
-    - No occurrences of this slot in the graph.
     name: cidoc-crm_P94i_was_created_by
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: cidoc-crm:P94i_was_created_by
     title: No slot (predicate) name specified -- this slot is noted as a subproperty
@@ -2027,7 +2027,6 @@ slots:
       of that publication. The rights covered by this property may include: acquisition
       or access authorisation; terms of availability; access restrictions on the Manifestation
       Product Type; etc.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E30 Right, which applies to all exemplars
       of that publication, as long as they are recognised as exemplars of that publication.
@@ -2040,19 +2039,20 @@ slots:
     - 'The rights covered by this property may include: acquisition or access authorisation;
       terms of availability; access restrictions on the Manifestation Product Type;
       etc.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E30_Right
     slot_uri: frbroo:CLP104
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: subject to
   frbroo_CLP104i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP104_subject_to.
     domain: cidoc-crm_E30_Right
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP104i_applies_to
     inverse: frbroo_CLP104
     name: frbroo_CLP104i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP104i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2063,7 +2063,6 @@ slots:
       Manifestation Product Type, with an instance of E39 Actor, who holds an instance
       of E30 Right on all exemplars of that publication, as long as they are recognised
       as exemplars of that publication.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E39 Actor, who holds an instance of E30 Right
       on all exemplars of that publication, as long as they are recognised as exemplars
@@ -2073,19 +2072,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP105_right_held_by
     inverse: frbroo_CLP105i
     name: frbroo_CLP105
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E39_Actor
     slot_uri: frbroo:CLP105
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: right held by
   frbroo_CLP105i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP105_right_held_by.
     domain: cidoc-crm_E39_Actor
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP105i_right_on
     inverse: frbroo_CLP105
     name: frbroo_CLP105i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP105i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2103,7 +2104,6 @@ slots:
       or subset of exemplars, originally produced, or intended to be produced, with
       that characteristic, accidentally lacks it. This fact should be recorded as
       a property of F5 Item, and not of F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E55 Type, which all exemplars of that publication
       should belong to, as long as they are recognised as exemplars of that publication.
@@ -2121,19 +2121,20 @@ slots:
       originally produced, or intended to be produced, with that characteristic, accidentally
       lacks it. This fact should be recorded as a property of F5 Item, and not of
       F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E55_Type
     slot_uri: frbroo:CLP2
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: should have type
   frbroo_CLP2i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP2_should_have_type.
     domain: cidoc-crm_E55_Type
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP2i_should_be_type_of
     inverse: frbroo_CLP2
     name: frbroo_CLP2i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP2i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2151,7 +2152,6 @@ slots:
       exemplar, or subset of exemplars, originally produced, or intended to be produced,
       with that characteristic, accidentally lacks it. This fact should be recorded
       as a property of F5 Item, and not of F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E54 Dimension, which all exemplars of that
       publication should have, as long as they are recognised as exemplars of that
@@ -2170,19 +2170,20 @@ slots:
       originally produced, or intended to be produced, with that characteristic, accidentally
       lacks it. This fact should be recorded as a property of F5 Item, and not of
       F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E54_Dimension
     slot_uri: frbroo:CLP43
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: should have dimension
   frbroo_CLP43i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP43_should_have_dimension.
     domain: cidoc-crm_E54_Dimension
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP43i_should_be_dimension_of
     inverse: frbroo_CLP43
     name: frbroo_CLP43i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP43i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2200,7 +2201,6 @@ slots:
       or subset of exemplars, originally produced, or intended to be produced, with
       that characteristic, accidentally lacks it. This fact should be recorded as
       a property of F5 Item, and not of F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E57 Material, which all exemplars of that
       publication should consist of, as long as they are recognised as exemplars of
@@ -2219,19 +2219,20 @@ slots:
       originally produced, or intended to be produced, with that characteristic, accidentally
       lacks it. This fact should be recorded as a property of F5 Item, and not of
       F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E57_Material
     slot_uri: frbroo:CLP45
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: should consist of
   frbroo_CLP45i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP45_should_consist_of.
     domain: cidoc-crm_E57_Material
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP45i_should_be_incorporated_in
     inverse: frbroo_CLP45
     name: frbroo_CLP45i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP45i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2242,7 +2243,6 @@ slots:
       Type which prescribes that all its Items will contain as parts an Item of another
       instance of F3 Manifestation Product Type with that instance of F3 Manifestation
       Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F3 Manifestation Product
       Type which prescribes that all its Items will contain as parts an Item of another
       instance of F3 Manifestation Product Type with that instance of F3 Manifestation
@@ -2252,19 +2252,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP46_should_be_composed_of
     inverse: frbroo_CLP46i
     name: frbroo_CLP46
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP46
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: should be composed of
   frbroo_CLP46i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLP46_should_be_composed_of.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLP46i_may_form_part_of
     inverse: frbroo_CLP46
     name: frbroo_CLP46i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLP46i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2282,7 +2284,6 @@ slots:
       a given exemplar, or subset of exemplars, originally produced, or intended to
       be produced, with that characteristic, accidentally lacks it. This fact should
       be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of E60 Number, which denotes the number of physical
       units all exemplars of that publication should consist of, as long as they are
@@ -2299,6 +2300,7 @@ slots:
       that a given exemplar, or subset of exemplars, originally produced, or intended
       to be produced, with that characteristic, accidentally lacks it. This fact should
       be recorded as a property of F5 Item, and not of F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E60_Number
     slot_uri: frbroo:CLP57
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2317,7 +2319,6 @@ slots:
       that characteristic, accidentally lacks part of the publication expression.
       This fact should be recorded as a property of F5 Item, and not of F3 Manifestation
       Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of F24 Publication Expression, which all exemplars
       of that publication should carry, as long as they are recognised as complete
@@ -2336,19 +2337,20 @@ slots:
       to be produced with that characteristic, accidentally lacks part of the publication
       expression. This fact should be recorded as a property of F5 Item, and not of
       F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F24
     slot_uri: frbroo:CLR6
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: should carry
   frbroo_CLR6i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of CLR6_should_carry.
     domain: frbroo_F24
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/CLR6i_should_be_carried_by
     inverse: frbroo_CLR6
     name: frbroo_CLR6i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:CLR6i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2357,7 +2359,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F1 Work which logically
       continues the content of another instance of F1 Work with the latter.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F1 Work which logically continues
       the content of another instance of F1 Work with the latter.
     domain: frbroo_F1
@@ -2365,14 +2366,14 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R1_is_logical_successor_of
     inverse: frbroo_R1i
     name: frbroo_R1
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R1
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P130_shows_features_of
     title: is logical successor of
   frbroo_R10:
-    comments:
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F15 Complex Work with an
       instance of F1 Work that forms part of it. The Work becomes complex by the fact
       that it has other instances of Work as members.
@@ -2381,20 +2382,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R10_has_member
     inverse: frbroo_R10i
     name: frbroo_R10
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R10
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P148_has_component
     title: has member
   frbroo_R10i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R10_has_member.
     domain: frbroo_F1
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R10i_is_member_of
     inverse: frbroo_R10
     name: frbroo_R10i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F15
     slot_uri: frbroo:R10i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2407,7 +2410,6 @@ slots:
       by this Work, such as sequencing pattern, expected frequency and expected regularity.
       This property is a shortcut of the full path: F18 Serial Work R23B was realised
       through F30 Publication Event P16 used specific object E29 Design or Procedure.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F18 Serial Work with the
       instance of E29 Design or Procedure that specifies the issuing policy planned
       by this Work, such as sequencing pattern, expected frequency and expected regularity.
@@ -2419,19 +2421,20 @@ slots:
     notes:
     - 'This property is a shortcut of the full path: F18 Serial Work R23B was realised
       through F30 Publication Event P16 used specific object E29 Design or Procedure.'
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E29_Design_or_Procedure
     slot_uri: frbroo:R11
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: has issuing rule
   frbroo_R11i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R11_has_issuing_rule.
     domain: cidoc-crm_E29_Design_or_Procedure
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R11i_is_issuing_rule_of
     inverse: frbroo_R11
     name: frbroo_R11i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F18
     slot_uri: frbroo:R11i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2442,7 +2445,6 @@ slots:
       an instance of F25 Performance Plan that consists of signs (words, figures,
       etc.) which express the directions the instance of F20 Performance Work consists
       of.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F20 Performance Work with
       an instance of F25 Performance Plan that consists of signs (words, figures,
       etc.) which express the directions the instance of F20 Performance Work consists
@@ -2452,20 +2454,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R12_is_realised_in
     inverse: frbroo_R12i
     name: frbroo_R12
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F25
     slot_uri: frbroo:R12
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R3
     title: is realised in Performance Plan of Performance Work
   frbroo_R12i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R12_is_realised_in.
     domain: frbroo_F25
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R12i_realises
     inverse: frbroo_R12
     name: frbroo_R12i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F20
     slot_uri: frbroo:R12i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2478,7 +2482,6 @@ slots:
       is a shortcut of the more elaborated path through R22 was realised through,
       F29 Recording Event and R21 created, which should be used when information about
       the recording event is available.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F21 Recording Work with an
       instance of F26 Recording realising the instance of F21 Recording work.
     domain: frbroo_F21
@@ -2490,20 +2493,21 @@ slots:
     - This is a shortcut of the more elaborated path through R22 was realised through,
       F29 Recording Event and R21 created, which should be used when information about
       the recording event is available.
+    - No occurrences of this slot in the graph.
     range: frbroo_F26
     slot_uri: frbroo:R13
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R3
     title: is realised in Recording of Recording Work
   frbroo_R13i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R13_is_realised_in.
     domain: frbroo_F26
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R13i_realises
     inverse: frbroo_R13
     name: frbroo_R13i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F21
     slot_uri: frbroo:R13i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2524,7 +2528,6 @@ slots:
       or a CD booklet, the integration of textual quotations, the presence of lyrics
       in a song that sets those lyrics to music, the presence of the text of a play
       in a movie based on that play, etc.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F22 Self-Contained Expression
       with an instance of F2 Expression that was included in it and that is a realisation
       of an independent work. The incorporated expression may be self-contained or
@@ -2545,20 +2548,21 @@ slots:
       booklet, the integration of textual quotations, the presence of lyrics in a
       song that sets those lyrics to music, the presence of the text of a play in
       a movie based on that play, etc.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R14
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P106_is_composed_of
     title: incorporates
   frbroo_R14i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R14_incorporates.
     domain: frbroo_F2
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R14i_is_incorporated_in
     inverse: frbroo_R14
     name: frbroo_R14i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F22
     slot_uri: frbroo:R14i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2568,7 +2572,6 @@ slots:
     comments:
     - 'description: This property associates the fragment of an expression and the
       expression of which it is a fragment.'
-    - No occurrences of this slot in the graph.
     description: This property associates the fragment of an expression and the expression
       of which it is a fragment.
     domain: frbroo_F2
@@ -2576,20 +2579,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R15_has_fragment
     inverse: frbroo_R15i
     name: frbroo_R15
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F23
     slot_uri: frbroo:R15
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P106_is_composed_of
     title: has fragment
   frbroo_R15i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R15_has_fragment.
     domain: frbroo_F23
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R15i_is_fragment_of
     inverse: frbroo_R15
     name: frbroo_R15i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R15i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2602,7 +2607,6 @@ slots:
       in cataloguing practice as it is only exceptionally documented in real life
       but is required in this semantic model as it marks the origin of the causality
       chain that results in a work''s coming into existence.'
-    - No occurrences of this slot in the graph.
     description: This property associates the first conception of a work and the work
       itself that ensued from a given initial idea.
     domain: frbroo_F27
@@ -2614,20 +2618,21 @@ slots:
     - It is usually not recorded in cataloguing practice as it is only exceptionally
       documented in real life but is required in this semantic model as it marks the
       origin of the causality chain that results in a work's coming into existence.
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R16
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P94_has_created
     title: initiated
   frbroo_R16i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R16_initiated.
     domain: frbroo_F1
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R16i_was_initiated_by
     inverse: frbroo_R16
     name: frbroo_R16i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F27
     slot_uri: frbroo:R16i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2637,7 +2642,6 @@ slots:
     comments:
     - 'description: This property associates the expression that was first externalised
       during a particular creation event with that particular creation event.'
-    - No occurrences of this slot in the graph.
     description: This property associates the expression that was first externalised
       during a particular creation event with that particular creation event.
     domain: frbroo_F28
@@ -2645,20 +2649,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R17_created
     inverse: frbroo_R17i
     name: frbroo_R17
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R17
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P94_has_created
     title: created Expression from Expression Creation
   frbroo_R17i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R17_created.
     domain: frbroo_F2
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R17i_was_created_by
     inverse: frbroo_R17
     name: frbroo_R17i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F28
     slot_uri: frbroo:R17i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2669,7 +2675,6 @@ slots:
     - 'description: This property associates an instance of F28 Expression Creation
       with the first physical objects in which the resulting instance of F2 Expression
       was embodied.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F28 Expression Creation with
       the first physical objects in which the resulting instance of F2 Expression
       was embodied.
@@ -2678,20 +2683,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R18_created
     inverse: frbroo_R18i
     name: frbroo_R18
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F4
     slot_uri: frbroo:R18
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P108_has_produced
     title: created Manifestation Singleton from Expression Creation
   frbroo_R18i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R18_created.
     domain: frbroo_F4
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R18i_was_created_by
     inverse: frbroo_R18
     name: frbroo_R18i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F28
     slot_uri: frbroo:R18i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2703,7 +2710,6 @@ slots:
       with the corresponding instance of F14 Individual Work or an instance of F15
       Complex Work of which the corresponding instance of F14 Individual Work is a
       member.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F28 Expression Creation with
       the corresponding instance of F14 Individual Work or an instance of F15 Complex
       Work of which the corresponding instance of F14 Individual Work is a member.
@@ -2712,34 +2718,36 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R19_created_a_realization_of
     inverse: frbroo_R19i
     name: frbroo_R19
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R19
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16_used_specific_object
     title: created a realization of Work by Expression Creation
   frbroo_R19i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R19_created_a_realization_of.
     domain: frbroo_F1
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R19i_was_realised_through
     inverse: frbroo_R19
     name: frbroo_R19i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F28
     slot_uri: frbroo:R19i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16i_was_used_for
     title: was realised through Expression Creation for Work
   frbroo_R1i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R1_is_logical_successor_of.
     domain: frbroo_F1
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R1i_has_successor
     inverse: frbroo_R1
     name: frbroo_R1i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R1i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2751,7 +2759,6 @@ slots:
       the content of another instance of F1 Work with the latter. The property R2.1
       has type of this property allows for specifying the kind of derivation, such
       as adaptation, summarisation etc.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F1 Work which modifies the
       content of another instance of F1 Work with the latter.
     domain: frbroo_F1
@@ -2762,6 +2769,7 @@ slots:
     notes:
     - The property R2.1 has type of this property allows for specifying the kind of
       derivation, such as adaptation, summarisation etc.
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R2
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2771,7 +2779,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F29 Recording Event with
       the instance of E5 Event which was captured.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F29 Recording Event with
       the instance of E5 Event which was captured.
     domain: frbroo_F29
@@ -2779,20 +2786,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R20_recorded
     inverse: frbroo_R20i
     name: frbroo_R20
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E2_Temporal_Entity
     slot_uri: frbroo:R20
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P15_was_influenced_by
     title: recorded
   frbroo_R20i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R20_recorded.
     domain: cidoc-crm_E2_Temporal_Entity
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R20i_was_recorded_through
     inverse: frbroo_R20
     name: frbroo_R20i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F29
     slot_uri: frbroo:R20i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2802,7 +2811,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F29 Recording Event with
       the instance of F26 Recording that was created.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F29 Recording Event with
       the instance of F26 Recording that was created.
     domain: frbroo_F29
@@ -2810,20 +2818,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R21_created
     inverse: frbroo_R21i
     name: frbroo_R21
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F26
     slot_uri: frbroo:R21
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R17
     title: created Recording from Recording Event
   frbroo_R21i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R21_created.
     domain: frbroo_F26
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R21i_was_created_through
     inverse: frbroo_R21
     name: frbroo_R21i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F29
     slot_uri: frbroo:R21i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2833,7 +2843,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F29 Recording Event with
       the instance of F21 Recording Work it realised.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F29 Recording Event with
       the instance of F21 Recording Work it realised.
     domain: frbroo_F29
@@ -2841,20 +2850,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R22_created_a_realization_of
     inverse: frbroo_R22i
     name: frbroo_R22
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F21
     slot_uri: frbroo:R22
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R19
     title: created a realization of Recording Work by Recording Event
   frbroo_R22i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R22_created_a_realization_of.
     domain: frbroo_F21
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R22i_was_realised_through
     inverse: frbroo_R22
     name: frbroo_R22i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F29
     slot_uri: frbroo:R22i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2864,7 +2875,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F30 Publication Event
       with the instance of F19 Publication Work it realised.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F30 Publication Event with
       the instance of F19 Publication Work it realised.
     domain: frbroo_F30
@@ -2872,20 +2882,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R23_created_a_realization_of
     inverse: frbroo_R23i
     name: frbroo_R23
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F19
     slot_uri: frbroo:R23
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R19
     title: created a realization of Publication Work by Publication Event
   frbroo_R23i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R23_created_a_realization_of.
     domain: frbroo_F19
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R23i_was_realised_through
     inverse: frbroo_R23
     name: frbroo_R23i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F30
     slot_uri: frbroo:R23i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2896,7 +2908,6 @@ slots:
     - 'description: This property associates the instance of F24 Publication Expression
       that was created during a particular F30 Publication Event with that F30 Publication
       Event.'
-    - No occurrences of this slot in the graph.
     description: This property associates the instance of F24 Publication Expression
       that was created during a particular F30 Publication Event with that F30 Publication
       Event.
@@ -2905,20 +2916,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R24_created
     inverse: frbroo_R24i
     name: frbroo_R24
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F24
     slot_uri: frbroo:R24
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R17
     title: created Publication Expression from Publication Event
   frbroo_R24i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R24_created.
     domain: frbroo_F24
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R24i_was_created_through
     inverse: frbroo_R24
     name: frbroo_R24i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F30
     slot_uri: frbroo:R24i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2929,7 +2942,6 @@ slots:
     - 'description: This property associates an instance of F31 Performance with the
       instance of F25 Performance Plan to which all those participating in the performance
       were supposed to conform.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F31 Performance with the
       instance of F25 Performance Plan to which all those participating in the performance
       were supposed to conform.
@@ -2938,20 +2950,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R25_performed
     inverse: frbroo_R25i
     name: frbroo_R25
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F25
     slot_uri: frbroo:R25
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P33_used_specific_technique
     title: performed Performance Plan by Performance
   frbroo_R25i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R25_performed.
     domain: frbroo_F25
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R25i_was_performed_in
     inverse: frbroo_R25
     name: frbroo_R25i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F31
     slot_uri: frbroo:R25i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2961,7 +2975,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F32 Carrier Production
       Event with the instance of F3 Manifestation Product Type it produced items of.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F32 Carrier Production Event
       with the instance of F3 Manifestation Product Type it produced items of.
     domain: frbroo_F32
@@ -2969,19 +2982,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R26_produced_things_of_type
     inverse: frbroo_R26i
     name: frbroo_R26
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:R26
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: produced things of type
   frbroo_R26i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R26_produced_things_of_type.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R26i_was_produced_by
     inverse: frbroo_R26
     name: frbroo_R26i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F32
     slot_uri: frbroo:R26i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -2991,7 +3006,6 @@ slots:
     - 'description: This property associates an instance of F32 Carrier Production
       Event with the set of signs provided by the publisher to be carried by all of
       the produced items.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F32 Carrier Production Event
       with the set of signs provided by the publisher to be carried by all of the
       produced items.
@@ -3000,20 +3014,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R27_used_as_source_material
     inverse: frbroo_R27i
     name: frbroo_R27
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F24
     slot_uri: frbroo:R27
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16_used_specific_object
     title: used as source material
   frbroo_R27i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R27_used_as_source_material.
     domain: frbroo_F24
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R27i_was_used_by
     inverse: frbroo_R27
     name: frbroo_R27i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F32
     slot_uri: frbroo:R27i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3023,7 +3039,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F32 Carrier Production
       Event with any one of the produced items (i.e., the instances of F5 Item).'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F32 Carrier Production Event
       with any one of the produced items (i.e., the instances of F5 Item).
     domain: frbroo_F32
@@ -3031,20 +3046,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R28_produced
     inverse: frbroo_R28i
     name: frbroo_R28
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F5
     slot_uri: frbroo:R28
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P108_has_produced
     title: produced Item from Carrier Production Event
   frbroo_R28i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R28_produced.
     domain: frbroo_F5
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R28i_was_produced_by
     inverse: frbroo_R28
     name: frbroo_R28i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F32
     slot_uri: frbroo:R28i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3054,7 +3071,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F33 Reproduction Event
       with an instance of E84 Information Carrier it reproduces.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F33 Reproduction Event with
       an instance of E84 Information Carrier it reproduces.
     domain: frbroo_F33
@@ -3062,34 +3078,36 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R29_reproduced
     inverse: frbroo_R29i
     name: frbroo_R29
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E84_Information_Carrier
     slot_uri: frbroo:R29
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16_used_specific_object
     title: reproduced
   frbroo_R29i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R29_reproduced.
     domain: cidoc-crm_E84_Information_Carrier
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R29i_was_reproduced_by
     inverse: frbroo_R29
     name: frbroo_R29i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F33
     slot_uri: frbroo:R29i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16i_was_used_for
     title: was reproduced by
   frbroo_R2i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R2_is_derivative_of.
     domain: frbroo_F1
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R2i_has_derivative
     inverse: frbroo_R2
     name: frbroo_R2i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R2i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3108,7 +3126,6 @@ slots:
       how a given work is realised into an expression is often limited and this property
       makes it possible to express the association between instances of F22 Self-Contained
       Expression and the work it conveys without using the more developed paths.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F22 Self-Contained Expression
       with an instance of F1 Work.
     domain: frbroo_F1
@@ -3127,6 +3144,7 @@ slots:
       into an expression is often limited and this property makes it possible to express
       the association between instances of F22 Self-Contained Expression and the work
       it conveys without using the more developed paths.
+    - No occurrences of this slot in the graph.
     range: frbroo_F22
     slot_uri: frbroo:R3
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3136,7 +3154,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F33 Reproduction Event
       with an instance of E84 Information Carrier it produces.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F33 Reproduction Event with
       an instance of E84 Information Carrier it produces.
     domain: frbroo_F33
@@ -3144,20 +3161,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R30_produced
     inverse: frbroo_R30i
     name: frbroo_R30
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E84_Information_Carrier
     slot_uri: frbroo:R30
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P108_has_produced
     title: produced Information Carrier from Reproduction Event
   frbroo_R30i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R30_produced.
     domain: cidoc-crm_E84_Information_Carrier
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R30i_was_produced_by
     inverse: frbroo_R30
     name: frbroo_R30i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F33
     slot_uri: frbroo:R30i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3173,7 +3192,6 @@ slots:
       only one original. This property is a shortcut of the more fully developed path
       from E84 Information Carrier through R30 produced (was produced by), F33 Reproduction
       Event R29 reproduced (was reproduced by) to E84 Information Carrier.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of E84 Information Carrier which
       is a reproduction of another instance of E84 Information Carrier with the latter.
     domain: cidoc-crm_E84_Information_Carrier
@@ -3188,20 +3206,21 @@ slots:
       original. This property is a shortcut of the more fully developed path from
       E84 Information Carrier through R30 produced (was produced by), F33 Reproduction
       Event R29 reproduced (was reproduced by) to E84 Information Carrier.
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E84_Information_Carrier
     slot_uri: frbroo:R31
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P130_shows_features_of
     title: is reproduction of Information Carrier for Information Carrier
   frbroo_R31i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R31_is_reproduction_of.
     domain: cidoc-crm_E84_Information_Carrier
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R31i_has_reproduction
     inverse: frbroo_R31
     name: frbroo_R31i
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E84_Information_Carrier
     slot_uri: frbroo:R31i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3214,7 +3233,6 @@ slots:
       of the particular nomen in the stated sense. The association between this name
       use activity and a source for it may be described by the property P70 documents
       (is documented in).'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       an instance of F52 Name Use Activity which provides evidence for the use of
       the particular nomen in the stated sense.
@@ -3226,20 +3244,21 @@ slots:
     notes:
     - The association between this name use activity and a source for it may be described
       by the property P70 documents (is documented in).
+    - No occurrences of this slot in the graph.
     range: frbroo_F52
     slot_uri: frbroo:R32
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67_refers_to
     title: is reproduction of Name Use Activity for Nomen Use Statement
   frbroo_R32i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R32_is_warranted_by.
     domain: frbroo_F52
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R32i_warrants
     inverse: frbroo_R32
     name: frbroo_R32i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R32i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3255,7 +3274,6 @@ slots:
       E55 Type allows for specifying the encoding of a particular associated content
       model. Together with this specification, a content model allows for unambiguously
       defining a nomen independently from the encoding used for representing the content.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F12 Nomen with one or more
       equivalent serialized content models for it.
     domain: frbroo_F12
@@ -3270,6 +3288,7 @@ slots:
       of a particular associated content model. Together with this specification,
       a content model allows for unambiguously defining a nomen independently from
       the encoding used for representing the content.'
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: frbroo:R33
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3285,7 +3304,6 @@ slots:
       \ be the union of the time-spans of the KOS in which the Nomen was declared\
       \ to have the particular validity status (provisional, accepted, obsolete etc.\
       \ \u2026)."
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F34 KOS with the instance
       of E52 Time-Span describing the period for which the particular KOS Expression
       was regarded as valid by its maintainers.
@@ -3300,19 +3318,20 @@ slots:
       \ a validity state of a nomen would be the union of the time-spans of the KOS\
       \ in which the Nomen was declared to have the particular validity status (provisional,\
       \ accepted, obsolete \u2026)."
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E52_Time-Span
     slot_uri: frbroo:R34
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: has validity period
   frbroo_R34i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R34_has_validity_period.
     domain: cidoc-crm_E52_Time-Span
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R34i_is_validity_period_of
     inverse: frbroo_R34
     name: frbroo_R34i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F34
     slot_uri: frbroo:R34i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3324,7 +3343,6 @@ slots:
       The property R35.1 allows for specifying the particular status of the nomen
       use statement within the KOS. An instance of R35 is specified by should have
       only one status.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       an instance of F34 KOS in which the Nomen Use Statement has a given status.
     domain: frbroo_F35
@@ -3336,20 +3354,21 @@ slots:
     - The property R35.1 allows for specifying the particular status of the nomen
       use statement within the KOS. An instance of R35 is specified by should have
       only one status.
+    - No occurrences of this slot in the graph.
     range: frbroo_F34
     slot_uri: frbroo:R35
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P148_has_component
     title: specified by
   frbroo_R35i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R35_specified_by.
     domain: frbroo_F34
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R35i_specifies
     inverse: frbroo_R35
     name: frbroo_R35i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R35i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3363,7 +3382,6 @@ slots:
       may not be explicitly mentioned. Is shortcut of: F35 Nomen Use Statement R17
       was created by (created) F28 Expression Creation P33 used specific technique
       (was used by) E29 Design or Procedure.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of F36 Script Conversion that was used to create the Nomen referred
       to in the Nomen Use Statement.
@@ -3376,19 +3394,20 @@ slots:
     - 'The source of this conversion may or may not be explicitly mentioned. Is shortcut
       of: F35 Nomen Use Statement R17 was created by (created) F28 Expression Creation
       P33 used specific technique (was used by) E29 Design or Procedure.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F36
     slot_uri: frbroo:R36
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: uses script conversion
   frbroo_R36i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R36_uses_script_conversion.
     domain: frbroo_F36
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R36i_is_script_conversion_used_in
     inverse: frbroo_R36
     name: frbroo_R36i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R36i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3397,7 +3416,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F35 Nomen Use Statement
       with the instance of F12 Nomen for which it declares usage'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of F12 Nomen for which it declares usage
     domain: frbroo_F35
@@ -3405,20 +3423,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R37_states_as_nomen
     inverse: frbroo_R37i
     name: frbroo_R37
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F12
     slot_uri: frbroo:R37
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67_refers_to
     title: states as nomen
   frbroo_R37i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R37_states_as_nomen.
     domain: frbroo_F12
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R37i_is_stated_as_nomen_in
     inverse: frbroo_R37
     name: frbroo_R37i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R37i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3428,7 +3448,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F35 Nomen Use Statement
       with the instance of E1 CRM Entity for which it declares the usage of a nomen.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of E1 CRM Entity for which it declares the usage of a nomen.
     domain: frbroo_F35
@@ -3436,19 +3455,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R38_refers_to_thema
     inverse: frbroo_R38i
     name: frbroo_R38
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E1_CRM_Entity
     slot_uri: frbroo:R38
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: refers to thema
   frbroo_R38i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R38_refers_to_thema.
     domain: cidoc-crm_E1_CRM_Entity
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R38i_is_thema_of
     inverse: frbroo_R38
     name: frbroo_R38i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R38i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3459,7 +3480,6 @@ slots:
       with an instance of E74 Group which is the target audience for which the associated
       nomen use is intended. To indicate that the associated nomen is declared as
       preferred in all contexts, the instance of E74 Group is "mankind".'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       an instance of E74 Group which is the target audience for which the associated
       nomen use is intended.
@@ -3471,34 +3491,35 @@ slots:
     notes:
     - To indicate that the associated nomen is declared as preferred in all contexts,
       the instance of E74 Group is "mankind".
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E74_Group
     slot_uri: frbroo:R39
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67_refers_to
     title: is intended for
   frbroo_R39i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R39_is_intended_for.
     domain: cidoc-crm_E74_Group
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R39i_is_target_audience_in
     inverse: frbroo_R39
     name: frbroo_R39i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R39i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67i_is_referred_to_by
     title: is target audience in
   frbroo_R3i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R3_is_realised_in.
     domain: frbroo_F22
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R3i_realises
     inverse: frbroo_R3
     name: frbroo_R3i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R3i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3513,7 +3534,6 @@ slots:
       of a publication, and extrapolated to all other exemplars of the same publication.
       This property is a shortcut of: F2 Expression R14B is incorporated in F24 Publication
       Expression CLR6B should be carried by F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication, i.e. an instance of F3 Manifestation
       Product Type, with an instance of F2 Expression, which all exemplars of that
       publication should carry, as long as they are recognised as complete exemplars
@@ -3528,6 +3548,7 @@ slots:
       extrapolated to all other exemplars of the same publication. This property is
       a shortcut of: F2 Expression R14B is incorporated in F24 Publication Expression
       CLR6B should be carried by F3 Manifestation Product Type.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:R4
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3560,7 +3581,6 @@ slots:
       for Shakespeare''s work, will require the use of a uniform title). R40 has representative
       expression is a shortcut of the more developed path F1 Work R50B was assigned
       by F42 Representative Expression Assignment R51 assigned F2 Expression.'
-    - No occurrences of this slot in the graph.
     description: This property identifies an instance of F22 Self-Contained Expression
       that has been chosen as the most characteristic expression of the instance of
       F1 Work of which it is an expression.
@@ -3593,20 +3613,21 @@ slots:
       use of a uniform title). R40 has representative expression is a shortcut of
       the more developed path F1 Work R50B was assigned by F42 Representative Expression
       Assignment R51 assigned F2 Expression.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F22
     slot_uri: frbroo:R40
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R3
     title: has representative expression
   frbroo_R40i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R40_has_representative_expression.
     domain: frbroo_F22
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R40i_is_representative_expression_for
     inverse: frbroo_R40
     name: frbroo_R40i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F1
     slot_uri: frbroo:R40i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3626,7 +3647,6 @@ slots:
       Product Type. R41 has representative manifestation product type is a shortcut
       of the more developed path F2 Expression R48B was assigned by F41 Representative
       Manifestation Assignment R49 assigned F3 Manifestation Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property identifies an instance of F3 Manifestation Product
       Type that has been chosen as the most characteristic Manifestation Product Type
       of the instance of F2 Expression of which it is a manifestation.
@@ -3645,20 +3665,21 @@ slots:
       Product Type. R41 has representative manifestation product type is a shortcut
       of the more developed path F2 Expression R48B was assigned by F41 Representative
       Manifestation Assignment R49 assigned F3 Manifestation Product Type.
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:R41
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R4
     title: has representative manifestation product type
   frbroo_R41i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R41_has_representative_manifestation_product_type.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R41i_is_representative_manifestation_product_type_for
     inverse: frbroo_R41
     name: frbroo_R41i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R41i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3680,7 +3701,6 @@ slots:
       Singleton. It is a shortcut for the more developed path: F2 Expression R48B
       was assigned by F41 Representative Manifestation Assignment R53 assigned F4
       Manifestation Singleton.'
-    - No occurrences of this slot in the graph.
     description: This property identifies an instance of Manifestation Singleton that
       has been declared as the unique representative for an instance of F2 Expression
       by some bibliographic agency. This property identifies an instance of F4 Manifestation
@@ -3701,20 +3721,21 @@ slots:
       Singleton. It is a shortcut for the more developed path: F2 Expression R48B
       was assigned by F41 Representative Manifestation Assignment R53 assigned F4
       Manifestation Singleton.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R42
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P128_carries
     title: is representative manifestation singleton for
   frbroo_R42i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R42_is_representative_manifestation_singleton_for.
     domain: frbroo_F2
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R42i_has_representative_manifestation_singleton
     inverse: frbroo_R42
     name: frbroo_R42i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F4
     slot_uri: frbroo:R42i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3731,7 +3752,6 @@ slots:
       the "Source" field with information about the publication that contains the
       expression that was used by the bibliographic agency to establish the uniform
       title for the work realised in that expression.'
-    - No occurrences of this slot in the graph.
     description: This property associates a bibliographic agency (represented by one
       or more of its cataloguers) and the assigning of which Manifestation (i.e.,
       which instance of F3 Manifestation Product Type or F4 Manifestation Singleton)
@@ -3747,20 +3767,21 @@ slots:
       record for a given work and fills the "Source" field with information about
       the publication that contains the expression that was used by the bibliographic
       agency to establish the uniform title for the work realised in that expression.
+    - No occurrences of this slot in the graph.
     range: frbroo_F44
     slot_uri: frbroo:R43
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P14_carried_out_by
     title: carried out by Bibliographic Agency in Representative Manifestation Assignment
   frbroo_R43i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R43_carried_out_by.
     domain: frbroo_F44
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R43i_performed
     inverse: frbroo_R43
     name: frbroo_R43i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F41
     slot_uri: frbroo:R43i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3776,7 +3797,6 @@ slots:
       with information about the publication that contains the expression that was
       used by the bibliographic agency to establish the uniform title for the work
       realised in that expression.'
-    - No occurrences of this slot in the graph.
     description: This property associates a bibliographic agency (represented by one
       or more of its cataloguers) and the assigning of which expression is representative
       for a given Work.
@@ -3791,20 +3811,21 @@ slots:
       record for a given work and fills the "Source" field with information about
       the publication that contains the expression that was used by the bibliographic
       agency to establish the uniform title for the work realised in that expression.
+    - No occurrences of this slot in the graph.
     range: frbroo_F44
     slot_uri: frbroo:R44
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P14_carried_out_by
     title: carried out by Bibliographic Agency in Representative Expression Assignment
   frbroo_R44i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R44_carried_out_by.
     domain: frbroo_F44
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R44i_performed
     inverse: frbroo_R44
     name: frbroo_R44i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F42
     slot_uri: frbroo:R44i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3814,7 +3835,6 @@ slots:
     comments:
     - 'description: This property identifies the entity to which an actor, such as
       a bibliographic agency, assigned an instance of F13 Identifier.'
-    - No occurrences of this slot in the graph.
     description: This property identifies the entity to which an actor, such as a
       bibliographic agency, assigned an instance of F13 Identifier.
     domain: frbroo_F40
@@ -3822,20 +3842,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R45_assigned_to
     inverse: frbroo_R45i
     name: frbroo_R45
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E1_CRM_Entity
     slot_uri: frbroo:R45
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P140_assigned_attribute_to
     title: assigned to Entity by Identifier Assignment
   frbroo_R45i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R45_assigned_to.
     domain: cidoc-crm_E1_CRM_Entity
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R45i_was_assigned_by
     inverse: frbroo_R45
     name: frbroo_R45i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F40
     slot_uri: frbroo:R45i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3845,7 +3867,6 @@ slots:
     comments:
     - 'description: This property associates the instance of F13 Identifier assigned
       to an instance of E1 CRM Entity and the event of assigning it.'
-    - No occurrences of this slot in the graph.
     description: This property associates the instance of F13 Identifier assigned
       to an instance of E1 CRM Entity and the event of assigning it.
     domain: frbroo_F40
@@ -3853,20 +3874,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R46_assigned_to
     inverse: frbroo_R46i
     name: frbroo_R46
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F13
     slot_uri: frbroo:R46
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P37_assigned
     title: assigned to Identifier by Identifier Assignment
   frbroo_R46i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R46_assigned_to.
     domain: frbroo_F13
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R46i_was_assigned_by
     inverse: frbroo_R46
     name: frbroo_R46i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F40
     slot_uri: frbroo:R46i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3877,7 +3900,6 @@ slots:
     - 'description: This property associates the event of assigning an instance of
       F13 Identifier to an entity with the elements that an actor used to compose
       that identifier.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning an instance of F13
       Identifier to an entity with the elements that an actor used to compose that
       identifier.
@@ -3886,20 +3908,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R47_used_constituent
     inverse: frbroo_R47i
     name: frbroo_R47
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E90_Symbolic_Object
     slot_uri: frbroo:R47
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P16_used_specific_object
     title: used constituent
   frbroo_R47i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R47_used_constituent.
     domain: cidoc-crm_E90_Symbolic_Object
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R47i_was_used_in
     inverse: frbroo_R47
     name: frbroo_R47i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F40
     slot_uri: frbroo:R47i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3910,7 +3934,6 @@ slots:
     - 'description: This property associates the event of assigning a representative
       instance of F3 Manifestation Product Type or F4 Manifestation Singleton with
       the expression to which it was assigned.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning a representative
       instance of F3 Manifestation Product Type or F4 Manifestation Singleton with
       the expression to which it was assigned.
@@ -3919,20 +3942,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R48_assigned_to
     inverse: frbroo_R48i
     name: frbroo_R48
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R48
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P140_assigned_attribute_to
     title: assigned to Expression by Representative Manifestation Assignment
   frbroo_R48i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R48_assigned_to.
     domain: frbroo_F2
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R48i_assigned
     inverse: frbroo_R48
     name: frbroo_R48i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F41
     slot_uri: frbroo:R48i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3943,7 +3968,6 @@ slots:
     - 'description: This property associates the event of assigning a representative
       instance of F3 Manifestation Product Type with the F3 Manifestation Product
       Type which has been assigned.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning a representative
       instance of F3 Manifestation Product Type with the F3 Manifestation Product
       Type which has been assigned.
@@ -3952,20 +3976,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R49_assigned
     inverse: frbroo_R49i
     name: frbroo_R49
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:R49
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P141_assigned
     title: assigned Manifestation Product Type from Representative Manifestation Assignment
   frbroo_R49i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R49_assigned.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R49i_was_assigned_by
     inverse: frbroo_R49
     name: frbroo_R49i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F41
     slot_uri: frbroo:R49i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3973,14 +3999,14 @@ slots:
     title: was assigned by Representative Manifestation Assignment for Manifestation
       Product Type
   frbroo_R4i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R4_carriers_provided_by.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R4i_comprises_carriers_of
     inverse: frbroo_R4
     name: frbroo_R4i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R4i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -3994,7 +4020,6 @@ slots:
       that exists between pre-existing expressions that are re-used in a new, larger
       expression and that new, larger expression. Such a relationship is modelled
       by R14 incorporates.'
-    - No occurrences of this slot in the graph.
     description: This property associates an F2 Expression X with a structural component
       Y that conveys in itself the complete concept of a work that is member of (R10)
       the overall work realized by X.
@@ -4007,6 +4032,7 @@ slots:
     - It does not cover the relationship that exists between pre-existing expressions
       that are re-used in a new, larger expression and that new, larger expression.
       Such a relationship is modelled by R14 incorporates.
+    - No occurrences of this slot in the graph.
     range: frbroo_F22
     slot_uri: frbroo:R5
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4017,7 +4043,6 @@ slots:
     - 'description: This property associates the event of assigning a representative
       instance of F2 Expression with the instance of F15 Complex Work to which it
       was assigned.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning a representative
       instance of F2 Expression with the instance of F15 Complex Work to which it
       was assigned.
@@ -4026,20 +4051,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R50_assigned_to
     inverse: frbroo_R50i
     name: frbroo_R50
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F15
     slot_uri: frbroo:R50
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P140_assigned_attribute_to
     title: assigned to Complex Work by Representative Expression Assignment
   frbroo_R50i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R50_assigned_to.
     domain: frbroo_F15
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R50i_was_assigned_by
     inverse: frbroo_R50
     name: frbroo_R50i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F42
     slot_uri: frbroo:R50i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4049,7 +4076,6 @@ slots:
     comments:
     - 'description: This property associates the event of assigning a representative
       instance of F2 Expression with the F2 Expression which has been assigned.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning a representative
       instance of F2 Expression with the F2 Expression which has been assigned.
     domain: frbroo_F42
@@ -4057,20 +4083,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R51_assigned
     inverse: frbroo_R51i
     name: frbroo_R51
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R51
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P141_assigned
     title: assigned Expression from Representative Expression Assignment
   frbroo_R51i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R51_assigned.
     domain: frbroo_F2
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R51i_was_assigned_by
     inverse: frbroo_R51
     name: frbroo_R51i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F42
     slot_uri: frbroo:R51i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4081,7 +4109,6 @@ slots:
     - 'description: This property associates the event of assigning an instance of
       F13 Identifier with the instructions followed by an actor, such as a Bibliographic
       Agency, in creating that identifier.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning an instance of F13
       Identifier with the instructions followed by an actor, such as a Bibliographic
       Agency, in creating that identifier.
@@ -4090,20 +4117,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R52_used_rule
     inverse: frbroo_R52i
     name: frbroo_R52
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F43
     slot_uri: frbroo:R52
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P33_used_specific_technique
     title: used rule
   frbroo_R52i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R52_used_rule.
     domain: frbroo_F43
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R52i_was_the_rule_used_by
     inverse: frbroo_R52
     name: frbroo_R52i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F40
     slot_uri: frbroo:R52i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4114,7 +4143,6 @@ slots:
     - 'description: This property associates the event of assigning a representative
       instance of F4 Manifestation Singleton with the F4 Manifestation Singleton which
       has been assigned.'
-    - No occurrences of this slot in the graph.
     description: This property associates the event of assigning a representative
       instance of F4 Manifestation Singleton with the F4 Manifestation Singleton which
       has been assigned.
@@ -4123,20 +4151,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R53_assigned
     inverse: frbroo_R53i
     name: frbroo_R53
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F4
     slot_uri: frbroo:R53
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P141_assigned
     title: assigned Manifestation Singleton from Representative Manifestation Assignment
   frbroo_R53i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R53_assigned.
     domain: frbroo_F4
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R53i_was_assigned_by
     inverse: frbroo_R53
     name: frbroo_R53i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F41
     slot_uri: frbroo:R53i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4148,7 +4178,6 @@ slots:
     - 'description: This property associates an instance of F35 Nomen Use Statement
       with an instance of E56 Language which is a target language for the associated
       nomen use.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       an instance of E56 Language which is a target language for the associated nomen
       use.
@@ -4157,20 +4186,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R54_has_nomen_language
     inverse: frbroo_R54i
     name: frbroo_R54
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E56_Language
     slot_uri: frbroo:R54
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67_refers_to
     title: has nomen language
   frbroo_R54i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R54_has_nomen_language.
     domain: cidoc-crm_E56_Language
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R54i_is_language_of_nomen_in
     inverse: frbroo_R54
     name: frbroo_R54i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R54i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4182,7 +4213,6 @@ slots:
       with the instance of E55 Type that characterizes the Nomen referred to in the
       Nomen Use Statement, such as abbreviation, full name etc. In the case of abbreviations,
       the source of this form may or may not be explicitly mentioned.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       the instance of E55 Type that characterizes the Nomen referred to in the Nomen
       Use Statement, such as abbreviation, full name etc. In the case of abbreviations,
@@ -4192,20 +4222,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R55_has_nomen_form
     inverse: frbroo_R55i
     name: frbroo_R55
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E55_Type
     slot_uri: frbroo:R55
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P67_refers_to
     title: has nomen form
   frbroo_R55i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R55_has_nomen_form.
     domain: cidoc-crm_E55_Type
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R55i_is_nomen_form_in
     inverse: frbroo_R55
     name: frbroo_R55i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R55i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4218,7 +4250,6 @@ slots:
       some context, such as alternative, lexical variant, replacing former use etc.
       The property R56.1 allows for specifying the particular kind of the nomen use
       statement relationship.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F35 Nomen Use Statement with
       another instance of F35 Nomen Use Statement which has a related use in some
       context, such as alternative, lexical variant, replacing former use etc.
@@ -4230,20 +4261,21 @@ slots:
     notes:
     - The property R56.1 allows for specifying the particular kind of the nomen use
       statement relationship.
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R56
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P69_has_association_with
     title: has related use
   frbroo_R56i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R56_has_related_use.
     domain: frbroo_F35
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R56i_is_related_use_for
     inverse: frbroo_R56
     name: frbroo_R56i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F35
     slot_uri: frbroo:R56i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4255,7 +4287,6 @@ slots:
       instance of E39 Actor that the character is motivated by or is intended to represent.
       An instance of F38 Character may be based on a combination of features taken
       from several actors.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F38 Character with an instance
       of E39 Actor that the character is motivated by or is intended to represent.
     domain: frbroo_F38
@@ -4266,19 +4297,20 @@ slots:
     notes:
     - An instance of F38 Character may be based on a combination of features taken
       from several actors.
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E39_Actor
     slot_uri: frbroo:R57
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: is based on
   frbroo_R57i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R57_is_based_on.
     domain: cidoc-crm_E39_Actor
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R57i_is_basis_for
     inverse: frbroo_R57
     name: frbroo_R57i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F38
     slot_uri: frbroo:R57i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4288,7 +4320,6 @@ slots:
     - 'description: This property associates an instance of F38 Character representing
       a group with another instance of F38 Character that is presented in relevant
       fiction as a member of the fictional group.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F38 Character representing
       a group with another instance of F38 Character that is presented in relevant
       fiction as a member of the fictional group.
@@ -4297,19 +4328,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R58_has_fictional_member
     inverse: frbroo_R58i
     name: frbroo_R58
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F38
     slot_uri: frbroo:R58
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: has fictional member
   frbroo_R58i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R58_has_fictional_member.
     domain: frbroo_F38
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R58i_is_fictional_member_of
     inverse: frbroo_R58
     name: frbroo_R58i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F38
     slot_uri: frbroo:R58i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4319,7 +4352,6 @@ slots:
     - 'description: This property associates an instance of F51 Pursuit with the instance
       of E1 CRM Entity that is the typical subject of the associated activity, such
       as an area of expertise in which the actor is engaged or was engaged.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F51 Pursuit with the instance
       of E1 CRM Entity that is the typical subject of the associated activity, such
       as an area of expertise in which the actor is engaged or was engaged.
@@ -4328,32 +4360,34 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R59_had_typical_subject
     inverse: frbroo_R59i
     name: frbroo_R59
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E1_CRM_Entity
     slot_uri: frbroo:R59
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: had typical subject
   frbroo_R59i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R59_had_typical_subject.
     domain: cidoc-crm_E1_CRM_Entity
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R59i_was_typical_subject_of
     inverse: frbroo_R59
     name: frbroo_R59i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F51
     slot_uri: frbroo:R59i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: was typical subject of
   frbroo_R5i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R5_has_component.
     domain: frbroo_F22
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R5i_is_component_of
     inverse: frbroo_R5
     name: frbroo_R5i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F2
     slot_uri: frbroo:R5i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4363,7 +4397,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F5 Item with the unique
       instance of F24 Publication Expression it carries.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F5 Item with the unique instance
       of F24 Publication Expression it carries.
     domain: frbroo_F5
@@ -4371,6 +4404,8 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R6_carries
     inverse: frbroo_R6i
     name: frbroo_R6
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F24
     slot_uri: frbroo:R6
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4382,7 +4417,6 @@ slots:
       of E56 Language that was characteristically used for the products of the associated
       activity. The property R60.1 has type of use allows for specifying a particular
       form of use.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F51 Pursuit with the instance
       of E56 Language that was characteristically used for the products of the associated
       activity.
@@ -4394,19 +4428,20 @@ slots:
     notes:
     - The property R60.1 has type of use allows for specifying a particular form of
       use.
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E56_Language
     slot_uri: frbroo:R60
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: used to use language
   frbroo_R60i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R60_used_to_use_language.
     domain: cidoc-crm_E56_Language
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R60i_was_language_used_by
     inverse: frbroo_R60
     name: frbroo_R60i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F51
     slot_uri: frbroo:R60i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4416,7 +4451,6 @@ slots:
     - 'description: This property associates an instance of F52 Name Use Activity
       with the instance of E55 Type that characterizes the kind of role or context
       within which the associated name was used.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E55 Type that characterizes the kind of role or context within
       which the associated name was used.
@@ -4425,19 +4459,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R61_occured_in_kind_of_context
     inverse: frbroo_R61i
     name: frbroo_R61
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E55_Type
     slot_uri: frbroo:R61
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: occured in kind of context
   frbroo_R61i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R61_occured_in_kind_of_context.
     domain: cidoc-crm_E55_Type
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R61i_was_kind_of_context_for
     inverse: frbroo_R61
     name: frbroo_R61i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F52
     slot_uri: frbroo:R61i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4447,7 +4483,6 @@ slots:
     - 'description: This property associates an instance of F52 Name Use Activity
       with the instance of E74 Group that characterizes the context within which the
       associated name was used as the membership in that group.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E74 Group that characterizes the context within which the associated
       name was used as the membership in that group.
@@ -4456,19 +4491,21 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R62_was_used_for_membership_in
     inverse: frbroo_R62i
     name: frbroo_R62
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E74_Group
     slot_uri: frbroo:R62
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     title: was used for membership in
   frbroo_R62i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R62_was_used_for_membership_in.
     domain: cidoc-crm_E74_Group
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R62i_was_context_for
     inverse: frbroo_R62
     name: frbroo_R62i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F52
     slot_uri: frbroo:R62i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4477,7 +4514,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F52 Name Use Activity
       with the instance of E1 CRM Entity that the associated name was used for.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E1 CRM Entity that the associated name was used for.
     domain: frbroo_F52
@@ -4485,20 +4521,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R63_named
     inverse: frbroo_R63i
     name: frbroo_R63
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E1_CRM_Entity
     slot_uri: frbroo:R63
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P140_assigned_attribute_to
     title: named
   frbroo_R63i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R63_named.
     domain: cidoc-crm_E1_CRM_Entity
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R63i_was_named_by
     inverse: frbroo_R63
     name: frbroo_R63i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F52
     slot_uri: frbroo:R63i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4508,7 +4546,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F52 Name Use Activity
       with the instance of E41 Appellation that was used for the associated entity.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F52 Name Use Activity with
       the instance of E41 Appellation that was used for the associated entity.
     domain: frbroo_F52
@@ -4516,34 +4553,36 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R64_used_name
     inverse: frbroo_R64i
     name: frbroo_R64
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E41_Appellation
     slot_uri: frbroo:R64
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P141_assigned
     title: used name
   frbroo_R64i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R64_used_name.
     domain: cidoc-crm_E41_Appellation
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R64i_was_name_used_by
     inverse: frbroo_R64
     name: frbroo_R64i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F52
     slot_uri: frbroo:R64i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P141i_was_assigned_by
     title: was name used by
   frbroo_R6i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R6_carries.
     domain: frbroo_F24
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R6i_is_carried_by
     inverse: frbroo_R6
     name: frbroo_R6i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F5
     slot_uri: frbroo:R6i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4555,7 +4594,6 @@ slots:
       It is a shortcut of the more developed path: F5 Item R28B was produced by F32
       Carrier Production R26 produced things of type (was produced by): F3 Manifestation
       Product Type.'
-    - No occurrences of this slot in the graph.
     description: This property associates a publication with one of its exemplars.
     domain: frbroo_F5
     exact_mappings:
@@ -4566,20 +4604,21 @@ slots:
     - 'It is a shortcut of the more developed path: F5 Item R28B was produced by F32
       Carrier Production R26 produced things of type (was produced by): F3 Manifestation
       Product Type.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F3
     slot_uri: frbroo:R7
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P2_has_type
     title: is example of
   frbroo_R7i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R7_is_example_of.
     domain: frbroo_F3
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R7i_has_example
     inverse: frbroo_R7
     name: frbroo_R7i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F5
     slot_uri: frbroo:R7i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4589,7 +4628,6 @@ slots:
     comments:
     - 'description: This property associates an instance of F13 Identifier with one
       of the non-syntactic instances of E90 Symbolic Object which form part of it.'
-    - No occurrences of this slot in the graph.
     description: This property associates an instance of F13 Identifier with one of
       the non-syntactic instances of E90 Symbolic Object which form part of it.
     domain: frbroo_F13
@@ -4597,20 +4635,22 @@ slots:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R8_consists_of
     inverse: frbroo_R8i
     name: frbroo_R8
+    notes:
+    - No occurrences of this slot in the graph.
     range: cidoc-crm_E90_Symbolic_Object
     slot_uri: frbroo:R8
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: cidoc-crm_P106_is_composed_of
     title: consists of
   frbroo_R8i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R8_consists_of.
     domain: cidoc-crm_E90_Symbolic_Object
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R8i_forms_part_of
     inverse: frbroo_R8
     name: frbroo_R8i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F13
     slot_uri: frbroo:R8i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
@@ -4622,7 +4662,6 @@ slots:
       F22 Self-Contained Expression that completely conveys it. It is a short cut
       for the more developed path: F14 Individual Work R19B was realised through F28
       Expression Creation R17 created F22 Self-Contained Expression.'
-    - No occurrences of this slot in the graph.
     description: This property associates an F14 Individual Work with the unique F22
       Self-Contained Expression that completely conveys it.
     domain: frbroo_F14
@@ -4633,23 +4672,23 @@ slots:
     notes:
     - 'It is a short cut for the more developed path: F14 Individual Work R19B was
       realised through F28 Expression Creation R17 created F22 Self-Contained Expression.'
+    - No occurrences of this slot in the graph.
     range: frbroo_F22
     slot_uri: frbroo:R9
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R3
     title: is realised in Self-Contained Expression of Individual Work
   frbroo_R9i:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Inverse of R9_is_realised_in.
     domain: frbroo_F22
     exact_mappings:
     - http://iflastandards.info/ns/fr/frbr/frbroo/R9i_realises
     inverse: frbroo_R9
     name: frbroo_R9i
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbroo_F14
     slot_uri: frbroo:R9i
     source: http://iflastandards.info/ns/fr/frbr/frbroo/
     subproperty_of: frbroo_R3i
     title: realises Individual Work by Self-Contained Expression
-title: No schema name specified

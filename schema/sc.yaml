@@ -1,0 +1,196 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Thing:
+            tag: owl:Thing
+            value: 2
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: 2
+      pairs:
+        tag: pairs
+        value:
+          http://def.isotc211.org/iso19150-2/2012/base#isEnumeration:
+            tag: http://def.isotc211.org/iso19150-2/2012/base#isEnumeration
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  boolean:
+                    tag: boolean
+                    value: 1
+          skos:defnition:
+            tag: skos:defnition
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 1
+          skos:notation:
+            tag: skos:notation
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  ncname:
+                    tag: ncname
+                    value: 2
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value: 2
+      slots:
+        tag: slots
+        value:
+          http://def.isotc211.org/iso19150-2/2012/base#isEnumeration:
+            tag: http://def.isotc211.org/iso19150-2/2012/base#isEnumeration
+            value: 1
+          owl:oneOf:
+            tag: owl:oneOf
+            value: 1
+          skos:defnition:
+            tag: skos:defnition
+            value: 1
+          skos:notation:
+            tag: skos:notation
+            value: 2
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value: 2
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          owl:Thing:
+            tag: owl:Thing
+            value: sc:-
+          rdfs:Datatype:
+            tag: rdfs:Datatype
+            value: sc:Measure
+      pairs:
+        tag: pairs
+        value:
+          http://def.isotc211.org/iso19150-2/2012/base#isEnumeration:
+            tag: http://def.isotc211.org/iso19150-2/2012/base#isEnumeration
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  boolean:
+                    tag: boolean
+                    value:
+                      object:
+                        tag: object
+                        value: 'true'
+                      predicate:
+                        tag: predicate
+                        value: http://def.isotc211.org/iso19150-2/2012/base#isEnumeration
+                      subject:
+                        tag: subject
+                        value: sc:Sign
+          skos:defnition:
+            tag: skos:defnition
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: A text representation of a measure value. The decimal
+                          value is followed by a space and the unit of the measure.
+                      predicate:
+                        tag: predicate
+                        value: skos:defnition
+                      subject:
+                        tag: subject
+                        value: sc:Measure
+          skos:notation:
+            tag: skos:notation
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  ncname:
+                    tag: ncname
+                    value:
+                      object:
+                        tag: object
+                        value: Sign
+                      predicate:
+                        tag: predicate
+                        value: skos:notation
+                      subject:
+                        tag: subject
+                        value: sc:Sign
+          skos:prefLabel:
+            tag: skos:prefLabel
+            value:
+              rdfs:Datatype:
+                tag: rdfs:Datatype
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: sign
+                      predicate:
+                        tag: predicate
+                        value: skos:prefLabel
+                      subject:
+                        tag: subject
+                        value: sc:Sign
+classes: {}
+comments:
+- 'title: ShapeChange base'
+created_on: '2025-09-03T12:58:19.556283'
+default_prefix: okns
+description: Types and properties used in application schemas.
+id: okns:sc
+imports:
+- okns:skos
+- linkml:types
+- okns:owl-rdf-rdfs
+last_updated_on: '2025-09-03T12:58:19.556283'
+name: sc
+prefixes:
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sc: http://shapechange.net/resources/ont/base#
+  skos: http://www.w3.org/2004/02/skos/core#
+slots:
+  http___def.isotc211.org_iso19150-2_2012_base#isEnumeration:
+    range: boolean
+    slot_uri: http://def.isotc211.org/iso19150-2/2012/base#isEnumeration
+  skos_defnition:
+    range: string
+    slot_uri: skos:defnition
+types:
+  sc_Measure:
+    name: sc_Measure
+    typeof: string
+    uri: sc:Measure
+  sc_Sign:
+    name: sc_Sign
+    typeof: string
+    uri: sc:Sign

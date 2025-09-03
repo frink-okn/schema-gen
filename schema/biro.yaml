@@ -4,118 +4,22 @@ annotations:
     value:
       classes:
         tag: classes
-        value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 9
+        value: {}
       pairs:
         tag: pairs
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 8
-                  owl:Restriction:
-                    tag: owl:Restriction
-                    value: 1
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 5
-                  uri:
-                    tag: uri
-                    value: 4
+        value: {}
       slots:
         tag: slots
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 9
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 9
+        value: {}
   examples:
     tag: examples
     value:
       classes:
         tag: classes
-        value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: nd77a005d98c44fefb8b5a3dc866bd49cb8
+        value: {}
       pairs:
         tag: pairs
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: biro:BibliographicList
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: nd77a005d98c44fefb8b5a3dc866bd49cb9
-                  owl:Restriction:
-                    tag: owl:Restriction
-                    value:
-                      object:
-                        tag: object
-                        value: nd77a005d98c44fefb8b5a3dc866bd49cb14
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: nd77a005d98c44fefb8b5a3dc866bd49cb13
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: frbr:realization
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: nd77a005d98c44fefb8b5a3dc866bd49cb9
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: http://purl.org/co/element
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: nd77a005d98c44fefb8b5a3dc866bd49cb13
+        value: {}
 classes:
   biro_BibliographicCollection:
     class_uri: biro:BibliographicCollection
@@ -203,7 +107,6 @@ classes:
     title: No class (entity type) name specified -- this class is noted as a superclass
       of another class in this graph but has not itself been defined.
 comments:
-- 'last_updated_on: 2013-05-11'
 - "description: BiRO, the Bibliographic Reference Ontology, is an ontology structured\
   \ according to the FRBR model to define bibliographic records (as subclasses of\
   \ frbr:Work) and bibliographic references (as subclasses of frbr:Expression), and\
@@ -217,7 +120,8 @@ comments:
   \ of the publisher, and the ISSN or ISBN of the publication;\u240A- to collections\
   \ of bibliographic records such as library catatlogues; and\u240A- to bibliographic\
   \ lists, such as reference lists."
-- 'title: BiRO, the Bibliographic Reference Ontology'
+- 'description: This ontology is available at http://purl.org/spar/biro, and uses
+  the namespace prefix biro.'
 - "description: The Bibliographic Reference Ontology (BiRO) is an ontology meant to\
   \ define bibliographic records, bibliographic references, and their compilation\
   \ into bibliographic collections and bibliographic lists, respectively.\u240A\u240A\
@@ -228,24 +132,21 @@ comments:
   \ as:** Di Iorio, A., Nuzzolese, A. G., Peroni, S., Shotton, D., Vitali, F. (2014).\
   \ Describing bibliographic references in RDF. In Proceedings of 4th Workshop on\
   \ Semantic Publishing (SePublica 2014). http://ceur-ws.org/Vol-1155/paper-05.pdf"
-- 'description: This ontology is available at http://purl.org/spar/biro, and uses
-  the namespace prefix biro.'
-created_on: '2025-07-24T16:16:42.830849'
+- 'title: BiRO, the Bibliographic Reference Ontology'
+created_on: '2025-09-03T11:24:47.816904'
 default_prefix: okns
 description: http://purl.org/spar/biro/biro.png
 id: okns:biro
 imports:
-- okns:owl-rdf-rdfs
 - okns:frbr
-- linkml:types
+- okns:owl-rdf-rdfs
 - okns:extended_types
-last_updated_on: '2025-07-24T16:16:42.830849'
+last_updated_on: '2013-05-11'
 name: biro
 prefixes:
   biro: http://purl.org/spar/biro/
   dc: http://purl.org/dc/elements/1.1/
   frbr: http://purl.org/vocab/frbr/core#
-  linkml: https://w3id.org/linkml/
   okn: https://purl.org/okn/
   okns: https://purl.org/okn/schema/
   owl: http://www.w3.org/2002/07/owl#
@@ -253,25 +154,24 @@ prefixes:
   rdfs: http://www.w3.org/2000/01/rdf-schema#
 slots:
   biro_isReferencedBy:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The relation between a publication and the bibliographic record or
       bibliographic reference describing it.
     domain: frbr_Endeavour
     name: biro_isReferencedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: biro:isReferencedBy
     subproperty_of: owl_topObjectProperty
     title: is referenced by
   biro_references:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The relation between a bibliographic record or a bibliographic reference
       and the publication being referenced.
     inverse: biro_isReferencedBy
     name: biro_references
+    notes:
+    - No occurrences of this slot in the graph.
     range: frbr_Endeavour
     slot_uri: biro:references
     subproperty_of: owl_topObjectProperty
     title: references
-title: No schema name specified

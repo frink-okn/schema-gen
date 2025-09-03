@@ -85,9 +85,8 @@ classes:
     source: http://xmlns.com/wot/0.1/
     title: Key User
 comments:
-- 'last_updated_on: 2004-02-23'
 - 'title: Web Of Trust vocabulary'
-created_on: '2025-07-17T19:20:02.171434'
+created_on: '2025-09-03T11:21:44.509077'
 default_prefix: okns
 description: Web Of Trust (wot) RDF vocabulary, described using W3C RDF Schema and
   the Web Ontology Language.
@@ -95,7 +94,7 @@ id: okns:wot
 imports:
 - linkml:types
 - okns:ical
-last_updated_on: '2025-07-17T19:20:02.171434'
+last_updated_on: '2004-02-23'
 name: wot
 prefixes:
   foaf: http://xmlns.com/foaf/0.1/
@@ -111,137 +110,136 @@ see_also:
 - http://xmlns.com/foaf/0.1/
 slots:
   wot_assurance:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking a document to an endorsement resource containing
       a detached ascii signature.
     domain: foaf_Document
     name: wot_assurance
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_Endorsement
     slot_uri: wot:assurance
     source: http://xmlns.com/wot/0.1/
     title: Assurance
   wot_encryptedTo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking an encrypted document to a recipient.
     domain: wot_EncryptedDocument
     name: wot_encryptedTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_PubKey
     slot_uri: wot:encryptedTo
     source: http://xmlns.com/wot/0.1/
     title: Encrypted to
   wot_encrypter:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking an encrypted document to the public key that was
       used to encrypt it.
     domain: wot_EncryptedDocument
     name: wot_encrypter
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_PubKey
     slot_uri: wot:encrypter
     source: http://xmlns.com/wot/0.1/
     title: Encrypted by
   wot_fingerprint:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A public key hex fingerprint string (40 digits, white space insignificant).
     domain: wot_PubKey
     name: wot_fingerprint
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: wot:fingerprint
     source: http://xmlns.com/wot/0.1/
     title: Fingerprint
   wot_hasKey:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property to link a PubKey from a User
     domain: wot_User
     inverse: wot_identity
     name: wot_hasKey
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_PubKey
     slot_uri: wot:hasKey
     source: http://xmlns.com/wot/0.1/
     title: has Key
   wot_hex_id:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A public key hex identifier string (8 digits).
     domain: wot_PubKey
     name: wot_hex_id
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: wot:hex_id
     source: http://xmlns.com/wot/0.1/
     title: Hex identifier
   wot_identity:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking a public key to the user of the key.
     domain: wot_PubKey
     name: wot_identity
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_User
     slot_uri: wot:identity
     source: http://xmlns.com/wot/0.1/
     title: Identity
   wot_length:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A numeric string representing the length, in bytes, of a public key.
     domain: wot_PubKey
     name: wot_length
+    notes:
+    - No occurrences of this slot in the graph.
     range: integer
     slot_uri: wot:length
     source: http://xmlns.com/wot/0.1/
     title: Length
   wot_pubkeyAddress:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The location of an ascii version of a public key.
     domain: wot_PubKey
     name: wot_pubkeyAddress
+    notes:
+    - No occurrences of this slot in the graph.
     range: foaf_Document
     slot_uri: wot:pubkeyAddress
     source: http://xmlns.com/wot/0.1/
     title: Address
   wot_sigdate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The date of a public key signature event.
     domain: wot_SigEvent
     name: wot_sigdate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: wot:sigdate
     source: http://xmlns.com/wot/0.1/
     title: Signature date
   wot_signed:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking a public key to a public key signature event.
     domain: wot_PubKey
     name: wot_signed
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_SigEvent
     slot_uri: wot:signed
     source: http://xmlns.com/wot/0.1/
     title: Signed
   wot_signer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A property linking a public key signature event to the public key
       that was used to sign.
     domain: wot_SigEvent
     name: wot_signer
+    notes:
+    - No occurrences of this slot in the graph.
     range: wot_PubKey
     slot_uri: wot:signer
     source: http://xmlns.com/wot/0.1/
     title: Signer
   wot_sigtime:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The time (of day) of a public key signature event.
     domain: wot_SigEvent
     name: wot_sigtime
+    notes:
+    - No occurrences of this slot in the graph.
     range: time
     slot_uri: wot:sigtime
     source: http://xmlns.com/wot/0.1/
     title: Signature time
-title: No schema name specified

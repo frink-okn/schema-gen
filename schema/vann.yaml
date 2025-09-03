@@ -192,19 +192,19 @@ classes: {}
 comments:
 - 'title: VANN: A vocabulary for annotating vocabulary descriptions'
 created_by: http://iandavis.com/id/me
-created_on: '2025-07-17T19:20:17.221129'
+created_on: '2025-09-03T11:22:03.618348'
 default_prefix: okns
 description: This document describes a vocabulary for annotating descriptions of vocabularies
   with examples and usage notes.
 id: okns:vann
 imports:
+- linkml:types
 - okns:foaf
 - okns:extended_types
-- linkml:types
-- okns:owl-rdf-rdfs
 - okns:dc
+- okns:owl-rdf-rdfs
 - okns:cc
-last_updated_on: '2025-07-17T19:20:17.221129'
+last_updated_on: '2025-09-03T11:22:03.618348'
 name: vann
 prefixes:
   cc: http://web.resource.org/cc/
@@ -219,34 +219,33 @@ prefixes:
   vann: http://purl.org/vocab/vann/
 slots:
   vann_example:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A reference to a resource that provides an example of how this resource
       can be used.
     name: vann_example
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:example
     source: http://purl.org/vocab/vann/
     subproperty_of: rdfs_seeAlso
     title: Example
   vann_termGroup:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A group of related terms in a vocabulary.
     name: vann_termGroup
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:termGroup
     source: http://purl.org/vocab/vann/
     title: Term Group
   vann_usageNote:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A reference to a resource that provides information on how this resource
       is to be used.
     name: vann_usageNote
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: vann:usageNote
     source: http://purl.org/vocab/vann/
     subproperty_of: rdfs_seeAlso
     title: Usage Note
-title: No schema name specified

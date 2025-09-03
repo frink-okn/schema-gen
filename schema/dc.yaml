@@ -8,6 +8,9 @@ annotations:
           dcam:VocabularyEncodingScheme:
             tag: dcam:VocabularyEncodingScheme
             value: 9
+          dct:AgentClass:
+            tag: dct:AgentClass
+            value: 1
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 12
@@ -32,6 +35,12 @@ annotations:
                   date:
                     tag: date
                     value: 9
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  date:
+                    tag: date
+                    value: 1
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -74,6 +83,12 @@ annotations:
                   string:
                     tag: string
                     value: 9
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  string:
+                    tag: string
+                    value: 1
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -89,6 +104,12 @@ annotations:
                   uri:
                     tag: uri
                     value: 9
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  uri:
+                    tag: uri
+                    value: 1
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -104,6 +125,12 @@ annotations:
                   string:
                     tag: string
                     value: 9
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  string:
+                    tag: string
+                    value: 1
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -133,7 +160,7 @@ annotations:
             value: 3
           dct:issued:
             tag: dct:issued
-            value: 21
+            value: 22
           dct:modified:
             tag: dct:modified
             value: 4
@@ -145,13 +172,13 @@ annotations:
             value: 4
           rdfs:comment:
             tag: rdfs:comment
-            value: 21
+            value: 22
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
-            value: 21
+            value: 22
           rdfs:label:
             tag: rdfs:label
-            value: 21
+            value: 22
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value: 20
@@ -163,10 +190,13 @@ annotations:
         value:
           dcam:VocabularyEncodingScheme:
             tag: dcam:VocabularyEncodingScheme
-            value: dct:NLM
+            value: dct:LCC
+          dct:AgentClass:
+            tag: dct:AgentClass
+            value: dct:Agent
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: dct:Box
+            value: dct:RFC5646
       pairs:
         tag: pairs
         value:
@@ -199,13 +229,28 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2000-07-11'
+                        value: '2005-06-13'
                       predicate:
                         tag: predicate
                         value: dct:issued
                       subject:
                         tag: subject
-                        value: dct:IMT
+                        value: dct:NLM
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  date:
+                    tag: date
+                    value:
+                      object:
+                        tag: object
+                        value: '2008-01-14'
+                      predicate:
+                        tag: predicate
+                        value: dct:issued
+                      subject:
+                        tag: subject
+                        value: dct:Agent
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -214,13 +259,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '2000-07-11'
+                        value: '2008-01-14'
                       predicate:
                         tag: predicate
                         value: dct:issued
                       subject:
                         tag: subject
-                        value: dct:URI
+                        value: dct:RFC4646
           dct:modified:
             tag: dct:modified
             value:
@@ -238,7 +283,7 @@ annotations:
                         value: dct:modified
                       subject:
                         tag: subject
-                        value: 'dc:'
+                        value: 'dct:'
           dct:publisher:
             tag: dct:publisher
             value:
@@ -256,7 +301,7 @@ annotations:
                         value: dct:publisher
                       subject:
                         tag: subject
-                        value: 'dc:'
+                        value: 'dct:'
           dct:title:
             tag: dct:title
             value:
@@ -268,13 +313,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Dublin Core Metadata Element Set, Version 1.1
+                        value: DCMI Metadata Terms - other
                       predicate:
                         tag: predicate
                         value: dct:title
                       subject:
                         tag: subject
-                        value: 'dc:'
+                        value: 'dct:'
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -286,14 +331,29 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The set of media types specified by the Internet Assigned
-                          Numbers Authority.
+                        value: The set of conceptual resources specified by the National
+                          Library of Medicine Classification.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: dct:IMT
+                        value: dct:NLM
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: A resource that acts or has the power to act.
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: dct:Agent
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -302,15 +362,14 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: The set of identifiers constructed according to the
-                          generic syntax for Uniform Resource Identifiers as specified
-                          by the Internet Engineering Task Force.
+                        value: The set of tags constructed according to RFC 4646 for
+                          the identification of languages.
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: dct:URI
+                        value: dct:RFC4646
           rdfs:isDefinedBy:
             tag: rdfs:isDefinedBy
             value:
@@ -328,7 +387,22 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dct:IMT
+                        value: dct:NLM
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  uri:
+                    tag: uri
+                    value:
+                      object:
+                        tag: object
+                        value: 'dct:'
+                      predicate:
+                        tag: predicate
+                        value: rdfs:isDefinedBy
+                      subject:
+                        tag: subject
+                        value: dct:Agent
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -343,7 +417,7 @@ annotations:
                         value: rdfs:isDefinedBy
                       subject:
                         tag: subject
-                        value: dct:URI
+                        value: dct:RFC4646
           rdfs:label:
             tag: rdfs:label
             value:
@@ -355,13 +429,28 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: IMT
+                        value: NLM
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dct:IMT
+                        value: dct:NLM
+              dct:AgentClass:
+                tag: dct:AgentClass
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Agent
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: dct:Agent
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -370,13 +459,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: URI
+                        value: RFC 4646
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: dct:URI
+                        value: dct:RFC4646
           rdfs:seeAlso:
             tag: rdfs:seeAlso
             value:
@@ -388,13 +477,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.iana.org/assignments/media-types/
+                        value: http://wwwcf.nlm.nih.gov/class/
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: dct:IMT
+                        value: dct:NLM
               rdfs:Datatype:
                 tag: rdfs:Datatype
                 value:
@@ -403,13 +492,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: http://www.ietf.org/rfc/rfc3986.txt
+                        value: http://www.ietf.org/rfc/rfc4646.txt
                       predicate:
                         tag: predicate
                         value: rdfs:seeAlso
                       subject:
                         tag: subject
-                        value: dct:URI
+                        value: dct:RFC4646
 classes:
   dcam_VocabularyEncodingScheme:
     class_uri: dcam:VocabularyEncodingScheme
@@ -418,10 +507,10 @@ classes:
     see_also:
     - https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/
     slots:
-    - rdfs_seeAlso
+    - dct_issued
     - rdfs_label
     - rdfs_comment
-    - dct_issued
+    - rdfs_seeAlso
     - rdfs_isDefinedBy
     source: http://purl.org/dc/dcam/
     title: Vocabulary Encoding Scheme
@@ -556,6 +645,11 @@ classes:
     description: A group of agents.
     is_a: rdfs_Class
     name: dct_AgentClass
+    slots:
+    - rdfs_label
+    - rdfs_comment
+    - dct_issued
+    - rdfs_isDefinedBy
     source: http://purl.org/dc/terms/
     title: Agent Class
   dct_BibliographicResource:
@@ -701,14 +795,14 @@ classes:
     name: dct_Standard
     source: http://purl.org/dc/terms/
     title: Standard
-created_on: '2025-07-17T19:19:29.946818'
+created_on: '2025-09-03T11:21:09.750143'
 default_prefix: okns
 id: okns:dc
 imports:
 - okns:owl-rdf-rdfs
 - okns:extended_types
 - linkml:types
-last_updated_on: '2025-07-17T19:19:29.946818'
+last_updated_on: '2025-09-03T11:21:09.750143'
 name: dc
 prefixes:
   dc: http://purl.org/dc/elements/1.1/
@@ -725,7 +819,6 @@ slots:
   dc_contributor:
     comments:
     - 'description: An entity responsible for making contributions to the resource.'
-    - No occurrences of this slot in the graph.
     description: The guidelines for using names of persons or organizations as creators
       also apply to contributors.  Typically, the name of a Contributor should be
       used to indicate the entity.
@@ -735,6 +828,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:contributor
     source: http://purl.org/dc/elements/1.1/
@@ -743,7 +837,6 @@ slots:
     comments:
     - 'description: The spatial or temporal topic of the resource, spatial applicability
       of the resource, or jurisdiction under which the resource is relevant.'
-    - No occurrences of this slot in the graph.
     description: Spatial topic and spatial applicability may be a named place or a
       location specified by its geographic coordinates. Temporal topic may be a named
       period, date, or date range. A jurisdiction may be a named administrative entity
@@ -758,6 +851,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:coverage
     source: http://purl.org/dc/elements/1.1/
@@ -765,7 +859,6 @@ slots:
   dc_creator:
     comments:
     - 'description: An entity primarily responsible for making the resource.'
-    - No occurrences of this slot in the graph.
     description: Examples of a Creator include a person, an organization, or a service.
       Typically, the name of a Creator should be used to indicate the entity.
     name: dc_creator
@@ -774,6 +867,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:creator
     source: http://purl.org/dc/elements/1.1/
@@ -782,7 +876,6 @@ slots:
     comments:
     - 'description: A point or period of time associated with an event in the lifecycle
       of the resource.'
-    - No occurrences of this slot in the graph.
     description: Date may be used to express temporal information at any level of
       granularity.  Recommended practice is to express the date, date/time, or period
       of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)]
@@ -799,6 +892,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:date
     source: http://purl.org/dc/elements/1.1/
@@ -806,7 +900,6 @@ slots:
   dc_description:
     comments:
     - 'description: An account of the resource.'
-    - No occurrences of this slot in the graph.
     description: 'Description may include but is not limited to: an abstract, a table
       of contents, a graphical representation, or a free-text account of the resource.'
     name: dc_description
@@ -815,6 +908,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:description
     source: http://purl.org/dc/elements/1.1/
@@ -822,7 +916,6 @@ slots:
   dc_format:
     comments:
     - 'description: The file format, physical medium, or dimensions of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a controlled vocabulary where available.
       For example, for file formats one could use the list of Internet Media Types
       [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].
@@ -832,6 +925,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:format
     source: http://purl.org/dc/elements/1.1/
@@ -839,7 +933,6 @@ slots:
   dc_identifier:
     comments:
     - 'description: An unambiguous reference to the resource within a given context.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the resource by means of a string
       conforming to an identification system.
     name: dc_identifier
@@ -848,6 +941,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:identifier
     source: http://purl.org/dc/elements/1.1/
@@ -855,7 +949,6 @@ slots:
   dc_language:
     comments:
     - 'description: A language of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use either a non-literal value representing
       a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a
       literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)]
@@ -866,6 +959,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:language
     source: http://purl.org/dc/elements/1.1/
@@ -873,7 +967,6 @@ slots:
   dc_publisher:
     comments:
     - 'description: An entity responsible for making the resource available.'
-    - No occurrences of this slot in the graph.
     description: Examples of a Publisher include a person, an organization, or a service.
       Typically, the name of a Publisher should be used to indicate the entity.
     name: dc_publisher
@@ -882,6 +975,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:publisher
     source: http://purl.org/dc/elements/1.1/
@@ -889,7 +983,6 @@ slots:
   dc_relation:
     comments:
     - 'description: A related resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the related resource by means
       of a URI. If this is not possible or feasible, a string conforming to a formal
       identification system may be provided.
@@ -899,6 +992,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:relation
     source: http://purl.org/dc/elements/1.1/
@@ -906,7 +1000,6 @@ slots:
   dc_rights:
     comments:
     - 'description: Information about rights held in and over the resource.'
-    - No occurrences of this slot in the graph.
     description: Typically, rights information includes a statement about various
       property rights associated with the resource, including intellectual property
       rights.
@@ -916,6 +1009,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:rights
     source: http://purl.org/dc/elements/1.1/
@@ -923,7 +1017,6 @@ slots:
   dc_source:
     comments:
     - 'description: A related resource from which the described resource is derived.'
-    - No occurrences of this slot in the graph.
     description: The described resource may be derived from the related resource in
       whole or in part. Recommended best practice is to identify the related resource
       by means of a string conforming to a formal identification system.
@@ -933,6 +1026,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:source
     source: http://purl.org/dc/elements/1.1/
@@ -940,7 +1034,6 @@ slots:
   dc_subject:
     comments:
     - 'description: The topic of the resource.'
-    - No occurrences of this slot in the graph.
     description: Typically, the subject will be represented using keywords, key phrases,
       or classification codes.  Recommended best practice is to use a controlled vocabulary.
     name: dc_subject
@@ -949,13 +1042,12 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:subject
     source: http://purl.org/dc/elements/1.1/
     title: Subject
   dc_title:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A name given to the resource.
     name: dc_title
     notes:
@@ -963,6 +1055,7 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:title
     source: http://purl.org/dc/elements/1.1/
@@ -970,7 +1063,6 @@ slots:
   dc_type:
     comments:
     - 'description: The nature or genre of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a controlled vocabulary such as the
       DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)].
       To describe the file format, physical medium, or dimensions of the resource,
@@ -981,25 +1073,26 @@ slots:
       with the same name as this property has been declared in the [dcterms: namespace](http://purl.org/dc/terms/).  See
       the Introduction to the document [DCMI Metadata Terms](/specifications/dublin-core/dcmi-terms/)
       for an explanation.'
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dc:type
     source: http://purl.org/dc/elements/1.1/
     title: Type
   dcam_domainIncludes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A suggested class for subjects of this property.
     name: dcam_domainIncludes
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dcam:domainIncludes
     source: http://purl.org/dc/dcam/
     title: Domain Includes
   dcam_memberOf:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A relationship between a resource and a vocabulary encoding scheme
       which indicates that the resource is a member of a set.
     name: dcam_memberOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: dcam_VocabularyEncodingScheme
     see_also:
     - https://www.dublincore.org/specifications/dublin-core/2007/06/04/abstract-model/
@@ -1007,19 +1100,19 @@ slots:
     source: http://purl.org/dc/dcam/
     title: Member Of
   dcam_rangeIncludes:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A suggested class for values of this property.
     name: dcam_rangeIncludes
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dcam:rangeIncludes
     source: http://purl.org/dc/dcam/
     title: Range Includes
   dct_abstract:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A summary of the resource.
     name: dct_abstract
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:abstract
     source: http://purl.org/dc/terms/
@@ -1029,10 +1122,11 @@ slots:
     comments:
     - 'description: Information about who access the resource or an indication of
       its security status.'
-    - No occurrences of this slot in the graph.
     description: Access Rights may include information regarding access or restrictions
       based on privacy, security, or other policies.
     name: dct_accessRights
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:accessRights
     source: http://purl.org/dc/terms/
@@ -1041,11 +1135,12 @@ slots:
   dct_accrualMethod:
     comments:
     - 'description: The method by which items are added to a collection.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a value from the Collection Description
       Accrual Method Vocabulary [[DCMI-ACCRUALMETHOD](https://dublincore.org/groups/collections/accrual-method/)].
     domain: dcmitype_Collection
     name: dct_accrualMethod
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:accrualMethod
     source: http://purl.org/dc/terms/
@@ -1053,11 +1148,12 @@ slots:
   dct_accrualPeriodicity:
     comments:
     - 'description: The frequency with which items are added to a collection.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a value from the Collection Description
       Frequency Vocabulary [[DCMI-COLLFREQ](https://dublincore.org/groups/collections/frequency/)].
     domain: dcmitype_Collection
     name: dct_accrualPeriodicity
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:accrualPeriodicity
     source: http://purl.org/dc/terms/
@@ -1065,11 +1161,12 @@ slots:
   dct_accrualPolicy:
     comments:
     - 'description: The policy governing the addition of items to a collection.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a value from the Collection Description
       Accrual Policy Vocabulary [[DCMI-ACCRUALPOLICY](https://dublincore.org/groups/collections/accrual-policy/)].
     domain: dcmitype_Collection
     name: dct_accrualPolicy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:accrualPolicy
     source: http://purl.org/dc/terms/
@@ -1077,9 +1174,10 @@ slots:
   dct_alternative:
     comments:
     - 'description: An alternative name for the resource.'
-    - No occurrences of this slot in the graph.
     description: The distinction between titles and alternative titles is application-specific.
     name: dct_alternative
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:alternative
     source: http://purl.org/dc/terms/
@@ -1088,10 +1186,11 @@ slots:
   dct_audience:
     comments:
     - 'description: A class of agents for whom the resource is intended or useful.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use this property with non-literal values
       from a vocabulary of audience types.
     name: dct_audience
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:audience
     source: http://purl.org/dc/terms/
@@ -1099,10 +1198,11 @@ slots:
   dct_available:
     comments:
     - 'description: Date that the resource became or will become available.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.
     name: dct_available
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:available
     source: http://purl.org/dc/terms/
@@ -1111,20 +1211,21 @@ slots:
   dct_bibliographicCitation:
     comments:
     - 'description: A bibliographic reference for the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to include sufficient bibliographic detail
       to identify the resource as unambiguously as possible.
     name: dct_bibliographicCitation
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:bibliographicCitation
     source: http://purl.org/dc/terms/
     subproperty_of: dct_identifier
     title: Bibliographic Citation
   dct_conformsTo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: An established standard to which the described resource conforms.
     name: dct_conformsTo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:conformsTo
     source: http://purl.org/dc/terms/
@@ -1133,10 +1234,11 @@ slots:
   dct_contributor:
     comments:
     - 'description: An entity responsible for making contributions to the resource.'
-    - No occurrences of this slot in the graph.
     description: The guidelines for using names of persons or organizations as creators
       apply to contributors.
     name: dct_contributor
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:contributor
     source: http://purl.org/dc/terms/
@@ -1146,7 +1248,6 @@ slots:
     comments:
     - 'description: The spatial or temporal topic of the resource, spatial applicability
       of the resource, or jurisdiction under which the resource is relevant.'
-    - No occurrences of this slot in the graph.
     description: Spatial topic and spatial applicability may be a named place or a
       location specified by its geographic coordinates. Temporal topic may be a named
       period, date, or date range. A jurisdiction may be a named administrative entity
@@ -1158,6 +1259,8 @@ slots:
       so broadly defined, it is preferable to use the more specific subproperties
       Temporal Coverage and Spatial Coverage.
     name: dct_coverage
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:coverage
     source: http://purl.org/dc/terms/
@@ -1166,10 +1269,11 @@ slots:
   dct_created:
     comments:
     - 'description: Date of creation of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.
     name: dct_created
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:created
     source: http://purl.org/dc/terms/
@@ -1178,13 +1282,14 @@ slots:
   dct_creator:
     comments:
     - 'description: An entity responsible for making the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the creator with a URI.  If this
       is not possible or feasible, a literal value that identifies the creator may
       be provided.
     exact_mappings:
     - http://xmlns.com/foaf/0.1/maker
     name: dct_creator
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:creator
     source: http://purl.org/dc/terms/
@@ -1194,7 +1299,6 @@ slots:
     comments:
     - 'description: A point or period of time associated with an event in the lifecycle
       of the resource.'
-    - No occurrences of this slot in the graph.
     description: Date may be used to express temporal information at any level of
       granularity.  Recommended practice is to express the date, date/time, or period
       of time according to ISO 8601-1 [[ISO 8601-1](https://www.iso.org/iso-8601-date-and-time-format.html)]
@@ -1206,6 +1310,8 @@ slots:
       in which start and end dates are separated by a '/' (slash) character.  Either
       the start or end date may be missing.
     name: dct_date
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:date
     source: http://purl.org/dc/terms/
@@ -1214,12 +1320,13 @@ slots:
   dct_dateAccepted:
     comments:
     - 'description: Date of acceptance of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.  Examples
       of resources to which a date of acceptance may be relevant are a thesis (accepted
       by a university department) or an article (accepted by a journal).
     name: dct_dateAccepted
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:dateAccepted
     source: http://purl.org/dc/terms/
@@ -1228,11 +1335,12 @@ slots:
   dct_dateCopyrighted:
     comments:
     - 'description: Date of copyright of the resource.'
-    - No occurrences of this slot in the graph.
     description: Typically a year.  Recommended practice is to describe the date,
       date/time, or period of time as recommended for the property Date, of which
       this is a subproperty.
     name: dct_dateCopyrighted
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:dateCopyrighted
     source: http://purl.org/dc/terms/
@@ -1241,12 +1349,13 @@ slots:
   dct_dateSubmitted:
     comments:
     - 'description: Date of submission of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.  Examples
       of resources to which a 'Date Submitted' may be relevant include a thesis (submitted
       to a university department) or an article (submitted to a journal).
     name: dct_dateSubmitted
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:dateSubmitted
     source: http://purl.org/dc/terms/
@@ -1264,11 +1373,11 @@ slots:
     subproperty_of: dc_description
     title: Description
   dct_educationLevel:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A class of agents, defined in terms of progression through an educational
       or training context, for which the described resource is intended.
     name: dct_educationLevel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:educationLevel
     source: http://purl.org/dc/terms/
@@ -1277,10 +1386,11 @@ slots:
   dct_extent:
     comments:
     - 'description: The size or duration of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to specify the file size in megabytes and
       duration in ISO 8601 format.
     name: dct_extent
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:extent
     source: http://purl.org/dc/terms/
@@ -1289,12 +1399,13 @@ slots:
   dct_format:
     comments:
     - 'description: The file format, physical medium, or dimensions of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a controlled vocabulary where available.
       For example, for file formats one could use the list of Internet Media Types
       [[MIME](https://www.iana.org/assignments/media-types/media-types.xhtml)].  Examples
       of dimensions include size and duration.
     name: dct_format
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:format
     source: http://purl.org/dc/terms/
@@ -1304,10 +1415,11 @@ slots:
     comments:
     - 'description: A related resource that is substantially the same as the pre-existing
       described resource, but in another format.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Is Format Of.
     name: dct_hasFormat
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:hasFormat
     source: http://purl.org/dc/terms/
@@ -1317,10 +1429,11 @@ slots:
     comments:
     - 'description: A related resource that is included either physically or logically
       in the described resource.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Is Part Of.
     name: dct_hasPart
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:hasPart
     source: http://purl.org/dc/terms/
@@ -1330,11 +1443,12 @@ slots:
     comments:
     - 'description: A related resource that is a version, edition, or adaptation of
       the described resource.'
-    - No occurrences of this slot in the graph.
     description: Changes in version imply substantive changes in content rather than
       differences in format. This property is intended to be used with non-literal
       values. This property is an inverse property of Is Version Of.
     name: dct_hasVersion
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:hasVersion
     source: http://purl.org/dc/terms/
@@ -1343,12 +1457,13 @@ slots:
   dct_identifier:
     comments:
     - 'description: An unambiguous reference to the resource within a given context.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the resource by means of a string
       conforming to an identification system. Examples include International Standard
       Book Number (ISBN), Digital Object Identifier (DOI), and Uniform Resource Name
       (URN).  Persistent identifiers should be provided as HTTP URIs.
     name: dct_identifier
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:identifier
     source: http://purl.org/dc/terms/
@@ -1358,7 +1473,6 @@ slots:
     comments:
     - 'description: A process, used to engender knowledge, attitudes and skills, that
       the described resource is designed to support.'
-    - No occurrences of this slot in the graph.
     description: Instructional Method typically includes ways of presenting instructional
       materials or conducting instructional activities, patterns of learner-to-learner
       and learner-to-instructor interactions, and mechanisms by which group and individual
@@ -1366,6 +1480,8 @@ slots:
       of the instruction and learning processes from planning and implementation through
       evaluation and feedback.
     name: dct_instructionalMethod
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:instructionalMethod
     source: http://purl.org/dc/terms/
@@ -1374,10 +1490,11 @@ slots:
     comments:
     - 'description: A pre-existing related resource that is substantially the same
       as the described resource, but in another format.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Has Format.
     name: dct_isFormatOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isFormatOf
     source: http://purl.org/dc/terms/
@@ -1387,10 +1504,11 @@ slots:
     comments:
     - 'description: A related resource in which the described resource is physically
       or logically included.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Has Part.
     name: dct_isPartOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isPartOf
     source: http://purl.org/dc/terms/
@@ -1400,10 +1518,11 @@ slots:
     comments:
     - 'description: A related resource that references, cites, or otherwise points
       to the described resource.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of References.
     name: dct_isReferencedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isReferencedBy
     source: http://purl.org/dc/terms/
@@ -1413,10 +1532,11 @@ slots:
     comments:
     - 'description: A related resource that supplants, displaces, or supersedes the
       described resource.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Replaces.
     name: dct_isReplacedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isReplacedBy
     source: http://purl.org/dc/terms/
@@ -1426,10 +1546,11 @@ slots:
     comments:
     - 'description: A related resource that requires the described resource to support
       its function, delivery, or coherence.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Requires.
     name: dct_isRequiredBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isRequiredBy
     source: http://purl.org/dc/terms/
@@ -1439,11 +1560,12 @@ slots:
     comments:
     - 'description: A related resource of which the described resource is a version,
       edition, or adaptation.'
-    - No occurrences of this slot in the graph.
     description: Changes in version imply substantive changes in content rather than
       differences in format. This property is intended to be used with non-literal
       values. This property is an inverse property of Has Version.
     name: dct_isVersionOf
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:isVersionOf
     source: http://purl.org/dc/terms/
@@ -1451,8 +1573,8 @@ slots:
     title: Is Version Of
   dct_issued:
     any_of:
-    - range: rdfs_Literal
     - range: date
+    - range: rdfs_Literal
     comments:
     - 'description: Date of formal issuance of the resource.'
     description: Recommended practice is to describe the date, date/time, or period
@@ -1466,12 +1588,13 @@ slots:
   dct_language:
     comments:
     - 'description: A language of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use either a non-literal value representing
       a language from a controlled vocabulary such as ISO 639-2 or ISO 639-3, or a
       literal value consisting of an IETF Best Current Practice 47 [[IETF-BCP47](https://tools.ietf.org/html/bcp47)]
       language tag.
     name: dct_language
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:language
     source: http://purl.org/dc/terms/
@@ -1481,11 +1604,12 @@ slots:
     comments:
     - 'description: A legal document giving official permission to do something with
       the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the license document with a URI.
       If this is not possible or feasible, a literal value that identifies the license
       may be provided.
     name: dct_license
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:license
     source: http://purl.org/dc/terms/
@@ -1494,20 +1618,21 @@ slots:
   dct_mediator:
     comments:
     - 'description: An entity that mediates access to the resource.'
-    - No occurrences of this slot in the graph.
     description: In an educational context, a mediator might be a parent, teacher,
       teaching assistant, or care-giver.
     name: dct_mediator
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:mediator
     source: http://purl.org/dc/terms/
     subproperty_of: dct_audience
     title: Mediator
   dct_medium:
-    comments:
-    - No occurrences of this slot in the graph.
     description: The material or physical carrier of the resource.
     name: dct_medium
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:medium
     source: http://purl.org/dc/terms/
@@ -1515,8 +1640,8 @@ slots:
     title: Medium
   dct_modified:
     any_of:
-    - range: rdfs_Literal
     - range: date
+    - range: rdfs_Literal
     comments:
     - 'description: Date on which the resource was changed.'
     description: Recommended practice is to describe the date, date/time, or period
@@ -1532,10 +1657,11 @@ slots:
     - 'description: A statement of any changes in ownership and custody of the resource
       since its creation that are significant for its authenticity, integrity, and
       interpretation.'
-    - No occurrences of this slot in the graph.
     description: The statement may include a description of any changes successive
       custodians made to the resource.
     name: dct_provenance
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:provenance
     source: http://purl.org/dc/terms/
@@ -1552,10 +1678,11 @@ slots:
     comments:
     - 'description: A related resource that is referenced, cited, or otherwise pointed
       to by the described resource.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Is Referenced By.
     name: dct_references
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:references
     source: http://purl.org/dc/terms/
@@ -1564,11 +1691,12 @@ slots:
   dct_relation:
     comments:
     - 'description: A related resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to identify the related resource by means
       of a URI.  If this is not possible or feasible, a string conforming to a formal
       identification system may be provided.
     name: dct_relation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:relation
     source: http://purl.org/dc/terms/
@@ -1578,10 +1706,11 @@ slots:
     comments:
     - 'description: A related resource that is supplanted, displaced, or superseded
       by the described resource.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Is Replaced By.
     name: dct_replaces
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:replaces
     source: http://purl.org/dc/terms/
@@ -1591,10 +1720,11 @@ slots:
     comments:
     - 'description: A related resource that is required by the described resource
       to support its function, delivery, or coherence.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. This
       property is an inverse property of Is Required By.
     name: dct_requires
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:requires
     source: http://purl.org/dc/terms/
@@ -1603,13 +1733,14 @@ slots:
   dct_rights:
     comments:
     - 'description: Information about rights held in and over the resource.'
-    - No occurrences of this slot in the graph.
     description: Typically, rights information includes a statement about various
       property rights associated with the resource, including intellectual property
       rights.  Recommended practice is to refer to a rights statement with a URI.  If
       this is not possible or feasible, a literal value (name, label, or short text)
       may be provided.
     name: dct_rights
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:rights
     source: http://purl.org/dc/terms/
@@ -1618,11 +1749,12 @@ slots:
   dct_rightsHolder:
     comments:
     - 'description: A person or organization owning or managing rights over the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to refer to the rights holder with a URI.
       If this is not possible or feasible, a literal value that identifies the rights
       holder may be provided.
     name: dct_rightsHolder
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:rightsHolder
     source: http://purl.org/dc/terms/
@@ -1630,22 +1762,23 @@ slots:
   dct_source:
     comments:
     - 'description: A related resource from which the described resource is derived.'
-    - No occurrences of this slot in the graph.
     description: This property is intended to be used with non-literal values. The
       described resource may be derived from the related resource in whole or in part.
       Best practice is to identify the related resource by means of a URI or a string
       conforming to a formal identification system.
     name: dct_source
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:source
     source: http://purl.org/dc/terms/
     subproperty_of: dct_relation
     title: Source
   dct_spatial:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Spatial characteristics of the resource.
     name: dct_spatial
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:spatial
     source: http://purl.org/dc/terms/
@@ -1654,31 +1787,32 @@ slots:
   dct_subject:
     comments:
     - 'description: A topic of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to refer to the subject with a URI. If this
       is not possible or feasible, a literal value that identifies the subject may
       be provided. Both should preferably refer to a subject in a controlled vocabulary.
     name: dct_subject
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:subject
     source: http://purl.org/dc/terms/
     subproperty_of: dc_subject
     title: Subject
   dct_tableOfContents:
-    comments:
-    - No occurrences of this slot in the graph.
     description: A list of subunits of the resource.
     name: dct_tableOfContents
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:tableOfContents
     source: http://purl.org/dc/terms/
     subproperty_of: dct_description
     title: Table Of Contents
   dct_temporal:
-    comments:
-    - No occurrences of this slot in the graph.
     description: Temporal characteristics of the resource.
     name: dct_temporal
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:temporal
     source: http://purl.org/dc/terms/
@@ -1686,8 +1820,8 @@ slots:
     title: Temporal Coverage
   dct_title:
     any_of:
-    - range: rdfs_Literal
     - range: string
+    - range: rdfs_Literal
     description: A name given to the resource.
     name: dct_title
     range: Any
@@ -1698,12 +1832,13 @@ slots:
   dct_type:
     comments:
     - 'description: The nature or genre of the resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to use a controlled vocabulary such as the
       DCMI Type Vocabulary [[DCMI-TYPE](http://dublincore.org/documents/dcmi-type-vocabulary/)].
       To describe the file format, physical medium, or dimensions of the resource,
       use the property Format.
     name: dct_type
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: dct:type
     source: http://purl.org/dc/terms/
@@ -1712,16 +1847,16 @@ slots:
   dct_valid:
     comments:
     - 'description: Date (often a range) of validity of a resource.'
-    - No occurrences of this slot in the graph.
     description: Recommended practice is to describe the date, date/time, or period
       of time as recommended for the property Date, of which this is a subproperty.
     name: dct_valid
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Literal
     slot_uri: dct:valid
     source: http://purl.org/dc/terms/
     subproperty_of: dct_date
     title: Date Valid
-title: No schema name specified
 types:
   dct_Box:
     description: The set of regions in space defined by their geographic coordinates

@@ -5,9 +5,6 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 54
           rdfs:Datatype:
             tag: rdfs:Datatype
             value: 3
@@ -20,51 +17,6 @@ annotations:
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  uri:
-                    tag: uri
-                    value: 10
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value: 7
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value: 14
-          owl:hasValue:
-            tag: owl:hasValue
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value: 1
-                  time:TemporalUnit:
-                    tag: time:TemporalUnit
-                    value: 2
-                  uri:
-                    tag: uri
-                    value: 2
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value: 18
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -74,21 +26,6 @@ annotations:
                   uri:
                     tag: uri
                     value: 3
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value: 43
-                  owl:FunctionalProperty:
-                    tag: owl:FunctionalProperty
-                    value: 4
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 11
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -224,24 +161,9 @@ annotations:
       slots:
         tag: slots
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 10
-          owl:cardinality:
-            tag: owl:cardinality
-            value: 21
-          owl:hasValue:
-            tag: owl:hasValue
-            value: 5
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 18
           owl:onDatatype:
             tag: owl:onDatatype
             value: 3
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 54
           owl:withRestrictions:
             tag: owl:withRestrictions
             value: 3
@@ -287,129 +209,18 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: n7945815d8ca04cdcac45748eb5394e70b1
           rdfs:Datatype:
             tag: rdfs:Datatype
-            value: time:generalMonth
+            value: time:generalYear
           time:DayOfWeek:
             tag: time:DayOfWeek
-            value: time:Monday
+            value: time:Wednesday
           time:TemporalUnit:
             tag: time:TemporalUnit
-            value: time:unitWeek
+            value: time:unitSecond
       pairs:
         tag: pairs
         value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: xsd:gMonth
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b2
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  integer:
-                    tag: integer
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b59
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
-                        value: '0'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b41
-          owl:hasValue:
-            tag: owl:hasValue
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: --01
-                      predicate:
-                        tag: predicate
-                        value: owl:hasValue
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b36
-                  time:TemporalUnit:
-                    tag: time:TemporalUnit
-                    value:
-                      object:
-                        tag: object
-                        value: time:unitMonth
-                      predicate:
-                        tag: predicate
-                        value: owl:hasValue
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b44
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: http://www.opengis.net/def/uom/ISO-8601/0/Gregorian
-                      predicate:
-                        tag: predicate
-                        value: owl:hasValue
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b14
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  unsignedinteger:
-                    tag: unsignedinteger
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b17
           owl:onDatatype:
             tag: owl:onDatatype
             value:
@@ -427,49 +238,7 @@ annotations:
                         value: owl:onDatatype
                       subject:
                         tag: subject
-                        value: time:generalDay
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:DatatypeProperty:
-                    tag: owl:DatatypeProperty
-                    value:
-                      object:
-                        tag: object
-                        value: time:week
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b41
-                  owl:FunctionalProperty:
-                    tag: owl:FunctionalProperty
-                    value:
-                      object:
-                        tag: object
-                        value: time:hasTRS
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b47
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: time:dayOfWeek
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b17
+                        value: time:generalMonth
           rdfs:comment:
             tag: rdfs:comment
             value:
@@ -481,19 +250,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Day of month - formulated as a text string with a\
+                        value: "Month of year - formulated as a text string with a\
                           \ pattern constraint to reproduce the same lexical form\
-                          \ as gDay, except that values up to 99 are permitted, in\
-                          \ order to support calendars with more than 31 days in a\
-                          \ month. \nNote that the value-space is not defined, so\
-                          \ a generic OWL2 processor cannot compute ordering relationships\
+                          \ as gMonth, except that values up to 20 are permitted,\
+                          \ in order to support calendars with more than 12 months\
+                          \ in the year. \nNote that the value-space is not defined,\
+                          \ so a generic OWL2 processor cannot compute ordering relationships\
                           \ of values of this type."
                       predicate:
                         tag: predicate
                         value: rdfs:comment
                       subject:
                         tag: subject
-                        value: time:generalDay
+                        value: time:generalMonth
           rdfs:label:
             tag: rdfs:label
             value:
@@ -505,13 +274,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Generalized day
+                        value: Generalized month
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:generalDay
+                        value: time:generalMonth
               time:DayOfWeek:
                 tag: time:DayOfWeek
                 value:
@@ -520,13 +289,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Tuesday
+                        value: Friday
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:Tuesday
+                        value: time:Friday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -535,13 +304,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Month (unit of temporal duration)
+                        value: Minute (unit of temporal duration)
                       predicate:
                         tag: predicate
                         value: rdfs:label
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
               untyped:
                 tag: untyped
                 value:
@@ -568,19 +337,19 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: "Day of month - formulated as a text string with a\
+                        value: "Month of year - formulated as a text string with a\
                           \ pattern constraint to reproduce the same lexical form\
-                          \ as gDay, except that values up to 99 are permitted, in\
-                          \ order to support calendars with more than 31 days in a\
-                          \ month. \nNote that the value-space is not defined, so\
-                          \ a generic OWL2 processor cannot compute ordering relationships\
+                          \ as gMonth, except that values up to 20 are permitted,\
+                          \ in order to support calendars with more than 12 months\
+                          \ in the year. \nNote that the value-space is not defined,\
+                          \ so a generic OWL2 processor cannot compute ordering relationships\
                           \ of values of this type."
                       predicate:
                         tag: predicate
                         value: skos:definition
                       subject:
                         tag: subject
-                        value: time:generalDay
+                        value: time:generalMonth
           skos:prefLabel:
             tag: skos:prefLabel
             value:
@@ -592,13 +361,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: Dienstag
+                        value: Freitag
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:Tuesday
+                        value: time:Friday
               time:TemporalUnit:
                 tag: time:TemporalUnit
                 value:
@@ -607,13 +376,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: maand
+                        value: Minute
                       predicate:
                         tag: predicate
                         value: skos:prefLabel
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:days:
             tag: time:days
             value:
@@ -631,7 +400,7 @@ annotations:
                         value: time:days
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:hours:
             tag: time:hours
             value:
@@ -649,27 +418,9 @@ annotations:
                         value: time:hours
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:minutes:
             tag: time:minutes
-            value:
-              time:TemporalUnit:
-                tag: time:TemporalUnit
-                value:
-                  decimal:
-                    tag: decimal
-                    value:
-                      object:
-                        tag: object
-                        value: '0'
-                      predicate:
-                        tag: predicate
-                        value: time:minutes
-                      subject:
-                        tag: subject
-                        value: time:unitMonth
-          time:months:
-            tag: time:months
             value:
               time:TemporalUnit:
                 tag: time:TemporalUnit
@@ -682,10 +433,28 @@ annotations:
                         value: '1'
                       predicate:
                         tag: predicate
+                        value: time:minutes
+                      subject:
+                        tag: subject
+                        value: time:unitMinute
+          time:months:
+            tag: time:months
+            value:
+              time:TemporalUnit:
+                tag: time:TemporalUnit
+                value:
+                  decimal:
+                    tag: decimal
+                    value:
+                      object:
+                        tag: object
+                        value: '0'
+                      predicate:
+                        tag: predicate
                         value: time:months
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:seconds:
             tag: time:seconds
             value:
@@ -703,7 +472,7 @@ annotations:
                         value: time:seconds
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:weeks:
             tag: time:weeks
             value:
@@ -721,7 +490,7 @@ annotations:
                         value: time:weeks
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           time:years:
             tag: time:years
             value:
@@ -739,7 +508,7 @@ annotations:
                         value: time:years
                       subject:
                         tag: subject
-                        value: time:unitMonth
+                        value: time:unitMinute
           xsd:pattern:
             tag: xsd:pattern
             value:
@@ -751,13 +520,13 @@ annotations:
                     value:
                       object:
                         tag: object
-                        value: '---(0[1-9]|[1-9][0-9])(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?'
+                        value: -?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?
                       predicate:
                         tag: predicate
                         value: xsd:pattern
                       subject:
                         tag: subject
-                        value: n7945815d8ca04cdcac45748eb5394e70b60
+                        value: n73d97f524a7247cb86dc16b9318c23e9b64
 classes:
   time_DateTimeDescription:
     class_uri: time:DateTimeDescription
@@ -767,17 +536,12 @@ classes:
       \ referencia temporal est\xE1 fijado al calendario gregoriano, y el rango de\
       \ las propiedades a\xF1o, mes, d\xEDa restringidas a los correspondientes tipos\
       \ del XML Schema xsd:gYear, xsd:gMonth y xsd:gDay respectivamente."
-    - "title: descripci\xF3n de fecha-tiempo"
     - 'description: Description of date and time structured with separate values for
       the various elements of a calendar-clock system. The temporal reference system
       is fixed to Gregorian Calendar, and the range of year, month, day properties
       restricted to corresponding XML Schema types xsd:gYear, xsd:gMonth and xsd:gDay,
       respectively.'
-    - "description: Descripci\xF3n de fecha y tiempo estructurada con valores separados\
-      \ para los diferentes elementos de un sistema calendario-reloj. El sistema de\
-      \ referencia temporal est\xE1 fijado al calendario gregoriano, y el rango de\
-      \ las propiedades a\xF1o, mes, d\xEDa restringidas a los correspondientes tipos\
-      \ del XML Schema xsd:gYear, xsd:gMonth y xsd:gDay respectivamente."
+    - "title: descripci\xF3n de fecha-tiempo"
     description: Description of date and time structured with separate values for
       the various elements of a calendar-clock system. The temporal reference system
       is fixed to Gregorian Calendar, and the range of year, month, day properties
@@ -789,13 +553,11 @@ classes:
   time_DateTimeInterval:
     class_uri: time:DateTimeInterval
     comments:
-    - "description: 'intervalo de fecha-hora' es una subclase de 'intervalo propio',\
-      \ definida utilizando el multi-elemento 'descripci\xF3n de fecha-hora'."
-    - 'title: intervalo de fecha-hora'
     - 'description: DateTimeInterval is a subclass of ProperInterval, defined using
       the multi-element DateTimeDescription.'
     - "description: 'intervalo de fecha-hora' es una subclase de 'intervalo propio',\
       \ definida utilizando el multi-elemento 'descripci\xF3n de fecha-hora'."
+    - 'title: intervalo de fecha-hora'
     description: DateTimeInterval is a subclass of ProperInterval, defined using the
       multi-element DateTimeDescription.
     is_a: time_ProperInterval
@@ -817,9 +579,8 @@ classes:
     class_uri: time:DayOfWeek
     comments:
     - "description: El d\xEDa de la semana"
-    - "title: d\xEDa de la semana"
     - 'description: The day of week'
-    - "description: El d\xEDa de la semana"
+    - "title: d\xEDa de la semana"
     description: The day of week
     is_a: owl_Thing
     name: time_DayOfWeek
@@ -835,19 +596,17 @@ classes:
     - "La pertenencia a la clase 'd\xEDa de la semana' est\xE1 abierta, para permitir\
       \ longitudes de semana alternativas y diferentes nombres de d\xEDas."
     slots:
-    - skos_prefLabel
     - rdfs_label
+    - skos_prefLabel
     title: Day of week
   time_Duration:
     class_uri: time:Duration
     comments:
-    - "description: Duraci\xF3n de una extensi\xF3n temporal expresada como un n\xFA\
-      mero escalado por una unidad temporal."
-    - "title: duraci\xF3n de tiempo"
     - 'description: Duration of a temporal extent expressed as a number scaled by
       a temporal unit'
     - "description: Duraci\xF3n de una extensi\xF3n temporal expresada como un n\xFA\
       mero escalado por una unidad temporal."
+    - "title: duraci\xF3n de tiempo"
     description: Duration of a temporal extent expressed as a number scaled by a temporal
       unit
     is_a: time_TemporalDuration
@@ -865,15 +624,11 @@ classes:
       \ separados para los distintos elementos de un sistema de horario-calendario.\
       \ El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo\
       \ de cada una de las propiedades num\xE9ricas se restringe a xsd:decimal."
-    - "title: descripci\xF3n de duraci\xF3n"
     - 'description: Description of temporal extent structured with separate values
       for the various elements of a calendar-clock system. The temporal reference
       system is fixed to Gregorian Calendar, and the range of each of the numeric
       properties is restricted to xsd:decimal'
-    - "description: Descripci\xF3n de extensi\xF3n temporal estructurada con valores\
-      \ separados para los distintos elementos de un sistema de horario-calendario.\
-      \ El sistema de referencia temporal se fija al calendario gregoriano, y el intervalo\
-      \ de cada una de las propiedades num\xE9ricas se restringe a xsd:decimal."
+    - "title: descripci\xF3n de duraci\xF3n"
     description: Description of temporal extent structured with separate values for
       the various elements of a calendar-clock system. The temporal reference system
       is fixed to Gregorian Calendar, and the range of each of the numeric properties
@@ -891,13 +646,11 @@ classes:
   time_GeneralDateTimeDescription:
     class_uri: time:GeneralDateTimeDescription
     comments:
-    - "description: Descripci\xF3n de fecha y hora estructurada con valores separados\
-      \ para los distintos elementos de un sistema calendario-reloj."
-    - "title: descripci\xF3n de fecha-hora generalizada"
     - 'description: Description of date and time structured with separate values for
       the various elements of a calendar-clock system'
     - "description: Descripci\xF3n de fecha y hora estructurada con valores separados\
       \ para los distintos elementos de un sistema calendario-reloj."
+    - "title: descripci\xF3n de fecha-hora generalizada"
     description: Description of date and time structured with separate values for
       the various elements of a calendar-clock system
     is_a: time_TemporalPosition
@@ -916,13 +669,11 @@ classes:
   time_GeneralDurationDescription:
     class_uri: time:GeneralDurationDescription
     comments:
-    - "description: Descripci\xF3n de extensi\xF3n temporal estructurada con valores\
-      \ separados para los distintos elementos de un sistema de horario-calendario."
-    - "title: descripci\xF3n de duraci\xF3n generalizada"
     - 'description: Description of temporal extent structured with separate values
       for the various elements of a calendar-clock system.'
     - "description: Descripci\xF3n de extensi\xF3n temporal estructurada con valores\
       \ separados para los distintos elementos de un sistema de horario-calendario."
+    - "title: descripci\xF3n de duraci\xF3n generalizada"
     description: Description of temporal extent structured with separate values for
       the various elements of a calendar-clock system.
     is_a: time_TemporalDuration
@@ -947,9 +698,8 @@ classes:
     class_uri: time:Instant
     comments:
     - "description: Una entidad temporal con una extensi\xF3n o duraci\xF3n cero."
-    - 'title: instante de tiempo.'
     - 'description: A temporal entity with zero extent or duration'
-    - "description: Una entidad temporal con una extensi\xF3n o duraci\xF3n cero."
+    - 'title: instante de tiempo.'
     description: A temporal entity with zero extent or duration
     is_a: time_TemporalEntity
     name: time_Instant
@@ -957,10 +707,9 @@ classes:
   time_Interval:
     class_uri: time:Interval
     comments:
-    - "description: Una entidad temporal con una extensi\xF3n o duraci\xF3n."
-    - 'title: intervalo de tiempo'
     - 'description: A temporal entity with an extent or duration'
     - "description: Una entidad temporal con una extensi\xF3n o duraci\xF3n."
+    - 'title: intervalo de tiempo'
     description: A temporal entity with an extent or duration
     is_a: time_TemporalEntity
     name: time_Interval
@@ -979,9 +728,8 @@ classes:
     class_uri: time:MonthOfYear
     comments:
     - "description: El mes del a\xF1o."
-    - "title: mes del a\xF1o"
     - 'description: The month of the year'
-    - "description: El mes del a\xF1o."
+    - "title: mes del a\xF1o"
     description: The month of the year
     is_a: time_DateTimeDescription
     name: time_MonthOfYear
@@ -997,15 +745,12 @@ classes:
   time_ProperInterval:
     class_uri: time:ProperInterval
     comments:
-    - "description: Una entidad temporal con extensi\xF3n o duraci\xF3n distinta de\
-      \ cero, es decir, para la cual los valores de principio y fin del intervalo\
-      \ son diferentes."
-    - 'title: intervalo propio'
     - 'description: A temporal entity with non-zero extent or duration, i.e. for which
       the value of the beginning and end are different'
     - "description: Una entidad temporal con extensi\xF3n o duraci\xF3n distinta de\
       \ cero, es decir, para la cual los valores de principio y fin del intervalo\
       \ son diferentes."
+    - 'title: intervalo propio'
     description: A temporal entity with non-zero extent or duration, i.e. for which
       the value of the beginning and end are different
     is_a: time_Interval
@@ -1014,12 +759,6 @@ classes:
   time_TRS:
     class_uri: time:TRS
     comments:
-    - "description: Un sistema de referencia temporal, tal como un sistema de coordenadas\
-      \ temporales (con un origen, una direcci\xF3n y una escala), una combinaci\xF3\
-      n calendario-reloj, o un sistema ordinal (posiblemente jer\xE1rquico).\n   \
-      \     Esta clase comod\xEDn representa el conjunto de todos los sistemas de\
-      \ referencia temporal."
-    - 'title: sistema de referencia temporal'
     - "description: A temporal reference system, such as a temporal coordinate system\
       \ (with an origin, direction, and scale), a calendar-clock combination, or a\
       \ (possibly hierarchical) ordinal system. \n\nThis is a stub class, representing\
@@ -1027,8 +766,14 @@ classes:
     - "description: Un sistema de referencia temporal, tal como un sistema de coordenadas\
       \ temporales (con un origen, una direcci\xF3n y una escala), una combinaci\xF3\
       n calendario-reloj, o un sistema ordinal (posiblemente jer\xE1rquico).\n   \
+      \     Esta clase comod\xEDn representa el conjunto de todos los sistemas de\
+      \ referencia temporal."
+    - "description: Un sistema de referencia temporal, tal como un sistema de coordenadas\
+      \ temporales (con un origen, una direcci\xF3n y una escala), una combinaci\xF3\
+      n calendario-reloj, o un sistema ordinal (posiblemente jer\xE1rquico).\n   \
       \ Esta clase comod\xEDn representa el conjunto de todos los sistemas de referencia\
       \ temporal."
+    - 'title: sistema de referencia temporal'
     description: "A temporal reference system, such as a temporal coordinate system\
       \ (with an origin, direction, and scale), a calendar-clock combination, or a\
       \ (possibly hierarchical) ordinal system. \u240A\u240AThis is a stub class,\
@@ -1051,11 +796,9 @@ classes:
     comments:
     - "description: Extensi\xF3n de tiempo; duraci\xF3n de un intervalo de tiempo\
       \ independiente de su posici\xF3n de inicio particular."
-    - "title: duraci\xF3n temporal"
     - 'description: Time extent; duration of a time interval separate from its particular
       start position'
-    - "description: Extensi\xF3n de tiempo; duraci\xF3n de un intervalo de tiempo\
-      \ independiente de su posici\xF3n de inicio particular."
+    - "title: duraci\xF3n temporal"
     description: Time extent; duration of a time interval separate from its particular
       start position
     name: time_TemporalDuration
@@ -1063,10 +806,9 @@ classes:
   time_TemporalEntity:
     class_uri: time:TemporalEntity
     comments:
-    - 'description: Un intervalo temporal o un instante.'
-    - 'title: entidad temporal'
     - 'description: A temporal interval or instant.'
     - 'description: Un intervalo temporal o un instante.'
+    - 'title: entidad temporal'
     description: A temporal interval or instant.
     is_a: owl_Thing
     name: time_TemporalEntity
@@ -1075,24 +817,20 @@ classes:
     class_uri: time:TemporalPosition
     comments:
     - "description: Una posici\xF3n sobre una l\xEDnea de tiempo."
-    - "title: posici\xF3n temporal"
     - 'description: A position on a time-line'
-    - "description: Una posici\xF3n sobre una l\xEDnea de tiempo."
+    - "title: posici\xF3n temporal"
     description: A position on a time-line
     name: time_TemporalPosition
     title: Temporal position
   time_TemporalUnit:
     class_uri: time:TemporalUnit
     comments:
-    - "description: Una duraci\xF3n est\xE1ndar, que proporciona un factor de escala\
-      \ para una extensi\xF3n de tiempo, o la granularidad o precisi\xF3n para una\
-      \ posici\xF3n de tiempo."
-    - 'title: unidad de tiempo'
     - 'description: A standard duration, which provides a scale factor for a time
       extent, or the granularity or precision for a time position.'
     - "description: Una duraci\xF3n est\xE1ndar, que proporciona un factor de escala\
       \ para una extensi\xF3n de tiempo, o la granularidad o precisi\xF3n para una\
       \ posici\xF3n de tiempo."
+    - 'title: unidad de tiempo'
     description: A standard duration, which provides a scale factor for a time extent,
       or the granularity or precision for a time position.
     is_a: time_TemporalDuration
@@ -1110,15 +848,15 @@ classes:
       \ otras unidades de tiempo utilizadas en algunas aplicaciones t\xE9cnicas (por\
       \ ejemplo, millones de a\xF1os o el mes Baha'i)."
     slots:
-    - skos_prefLabel
-    - time_months
-    - time_seconds
-    - time_hours
     - time_weeks
-    - time_minutes
-    - time_days
+    - time_months
+    - time_hours
     - time_years
     - rdfs_label
+    - skos_prefLabel
+    - time_days
+    - time_seconds
+    - time_minutes
     title: Temporal unit
   time_TimePosition:
     class_uri: time:TimePosition
@@ -1126,12 +864,9 @@ classes:
     - "description: Una posici\xF3n temporal descrita utilizando bien un valor (nominal)\
       \ de un sistema de referencia ordinal, o un valor (num\xE9rico) en un sistema\
       \ de coordenadas temporales."
-    - "title: posici\xF3n de tiempo"
     - 'description: A temporal position described using either a (nominal) value from
       an ordinal reference system, or a (numeric) value in a temporal coordinate system.'
-    - "description: Una posici\xF3n temporal descrita utilizando bien un valor (nominal)\
-      \ de un sistema de referencia ordinal, o un valor (num\xE9rico) en un sistema\
-      \ de coordenadas temporales."
+    - "title: posici\xF3n de tiempo"
     description: A temporal position described using either a (nominal) value from
       an ordinal reference system, or a (numeric) value in a temporal coordinate system.
     is_a: time_TemporalPosition
@@ -1140,24 +875,24 @@ classes:
   time_TimeZone:
     class_uri: time:TimeZone
     comments:
-    - "description: Un huso horario especifica la cantidad en que la hora local est\xE1\
-      \ desplazada con respecto a UTC.\n        Un huso horario normalmente se denota\
-      \ geogr\xE1ficamente (p.ej. el horario de verano del este de Australia), con\
-      \ un valor constante en una regi\xF3n dada.\n        La regi\xF3n donde aplica\
-      \ y el desplazamiento desde UTC las especifica una autoridad gubernamental localmente\
-      \ reconocida."
-    - 'title: huso horario'
     - "description: A Time Zone specifies the amount by which the local time is offset\
       \ from UTC. \n\tA time zone is usually denoted geographically (e.g. Australian\
       \ Eastern Daylight Time), with a constant value in a given region. \nThe region\
       \ where it applies and the offset from UTC are specified by a locally recognised\
       \ governing authority."
     - "description: Un huso horario especifica la cantidad en que la hora local est\xE1\
+      \ desplazada con respecto a UTC.\n        Un huso horario normalmente se denota\
+      \ geogr\xE1ficamente (p.ej. el horario de verano del este de Australia), con\
+      \ un valor constante en una regi\xF3n dada.\n        La regi\xF3n donde aplica\
+      \ y el desplazamiento desde UTC las especifica una autoridad gubernamental localmente\
+      \ reconocida."
+    - "description: Un huso horario especifica la cantidad en que la hora local est\xE1\
       \ desplazada con respecto a UTC.\n    Un huso horario normalmente se denota\
       \ geogr\xE1ficamente (p.ej. el horario de verano del este de Australia), con\
       \ un valor constante en una regi\xF3n dada.\n    La regi\xF3n donde aplica y\
       \ el desplazamiento desde UTC las especifica una autoridad gubernamental localmente\
       \ reconocida."
+    - 'title: huso horario'
     description: "A Time Zone specifies the amount by which the local time is offset\
       \ from UTC. \u240A\tA time zone is usually denoted geographically (e.g. Australian\
       \ Eastern Daylight Time), with a constant value in a given region. \u240AThe\
@@ -1251,25 +986,23 @@ classes:
     title: No class (entity type) name specified -- this class is noted as being in
       the domain or range of a slot in this graph but has not itself been defined.
 comments:
-- 'created_on: 2006-09-27'
 - 'created_by: https://en.wikipedia.org/wiki/Jerry_Hobbs'
 - 'created_by: mailto:panfeng66@gmail.com'
-- 'last_updated_on: 2017-04-06'
 - 'title: OWL-Time'
 - 'title: Tiempo en OWL'
 contributors:
 - mailto:chris.little@metoffice.gov.uk
 - https://orcid.org/0000-0001-8269-8171
 created_by: http://orcid.org/0000-0002-3884-3420
-created_on: '2025-07-17T19:19:31.860469'
+created_on: '2006-09-27'
 default_prefix: okns
 id: okns:time
 imports:
 - okns:skos
-- linkml:types
-- okns:owl-rdf-rdfs
 - okns:extended_types
-last_updated_on: '2025-07-17T19:19:31.860469'
+- okns:owl-rdf-rdfs
+- linkml:types
+last_updated_on: '2017-04-06'
 name: time
 notes:
 - '2016-06-15 - initial update of OWL-Time - modified to support arbitrary temporal
@@ -1304,18 +1037,16 @@ slots:
     - "description: Asume una direcci\xF3n en el tiempo. Si una entidad temporal T1\
       \ est\xE1 despu\xE9s de otra entidad temporal T2, entonces el principio de T1\
       \ est\xE1 despu\xE9s del final de T2."
-    - "title: despu\xE9s"
     - 'description: Gives directionality to time. If a temporal entity T1 is after
       another temporal entity T2, then the beginning of T1 is after the end of T2.'
-    - "description: Asume una direcci\xF3n en el tiempo. Si una entidad temporal T1\
-      \ est\xE1 despu\xE9s de otra entidad temporal T2, entonces el principio de T1\
-      \ est\xE1 despu\xE9s del final de T2."
-    - No occurrences of this slot in the graph.
+    - "title: despu\xE9s"
     description: Gives directionality to time. If a temporal entity T1 is after another
       temporal entity T2, then the beginning of T1 is after the end of T2.
     domain: time_TemporalEntity
     inverse: time_before
     name: time_after
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TemporalEntity
     slot_uri: time:after
     title: after
@@ -1325,83 +1056,78 @@ slots:
       \ est\xE1 antes que otra entidad temporal T2, entonces el final de T1 est\xE1\
       \ antes que el principio de T2. As\xED, \"antes\" se puede considerar b\xE1\
       sica para instantes y derivada para intervalos."
-    - 'title: antes'
     - 'description: Gives directionality to time. If a temporal entity T1 is before
       another temporal entity T2, then the end of T1 is before the beginning of T2.
       Thus, "before" can be considered to be basic to instants and derived for intervals.'
-    - "description: Asume una direcci\xF3n en el tiempo. Si una entidad temporal T1\
-      \ est\xE1 antes que otra entidad temporal T2, entonces el final de T1 est\xE1\
-      \ antes que el principio de T2. As\xED, \"antes\" se puede considerar b\xE1\
-      sica para instantes y derivada para intervalos."
-    - No occurrences of this slot in the graph.
+    - 'title: antes'
     description: Gives directionality to time. If a temporal entity T1 is before another
       temporal entity T2, then the end of T1 is before the beginning of T2. Thus,
       "before" can be considered to be basic to instants and derived for intervals.
     domain: time_TemporalEntity
     inverse: time_after
     name: time_before
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TemporalEntity
     slot_uri: time:before
     title: before
   time_day:
     comments:
     - "description: Posici\xF3n de d\xEDa en un sistema calendario-reloj."
-    - "title: d\xEDa"
+    - "description: Posici\xF3n de d\xEDa en un sistema calendario-reloj.\n\nEl rango\
+      \ de esta propiedad no est\xE1 especificado, por tanto, se puede reemplazar\
+      \ por una representaci\xF3n espec\xEDfica de un d\xEDa de calendario de cualquier\
+      \ calendario."
     - 'description: Day position in a calendar-clock system.
 
 
       The range of this property is not specified, so can be replaced by any specific
       representation of a calendar day from any calendar.'
-    - "description: Posici\xF3n de d\xEDa en un sistema calendario-reloj.\n\nEl rango\
-      \ de esta propiedad no est\xE1 especificado, por tanto, se puede reemplazar\
-      \ por una representaci\xF3n espec\xEDfica de un d\xEDa de calendario de cualquier\
-      \ calendario."
-    - No occurrences of this slot in the graph.
+    - "title: d\xEDa"
     description: "Day position in a calendar-clock system.\u240A\u240AThe range of\
       \ this property is not specified, so can be replaced by any specific representation\
       \ of a calendar day from any calendar."
     domain: time_GeneralDateTimeDescription
     name: time_day
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: time:day
     title: day
   time_dayOfWeek:
     comments:
-    - "description: El d\xEDa de la semana, cuyo valor es un miembro de la clase 'd\xED\
-      a de la semana'."
-    - "title: d\xEDa de la semana"
     - 'description: The day of week, whose value is a member of the class time:DayOfWeek'
     - "description: El d\xEDa de la semana, cuyo valor es un miembro de la clase 'd\xED\
       a de la semana'."
-    - No occurrences of this slot in the graph.
+    - "title: d\xEDa de la semana"
     description: The day of week, whose value is a member of the class time:DayOfWeek
     domain: time_GeneralDateTimeDescription
     name: time_dayOfWeek
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_DayOfWeek
     slot_uri: time:dayOfWeek
     title: day of week
   time_dayOfYear:
     comments:
     - "description: El n\xFAmero de d\xEDa en el a\xF1o."
-    - "title: d\xEDa del a\xF1o"
     - 'description: The number of the day within the year'
-    - "description: El n\xFAmero de d\xEDa en el a\xF1o."
-    - No occurrences of this slot in the graph.
+    - "title: d\xEDa del a\xF1o"
     description: The number of the day within the year
     domain: time_GeneralDateTimeDescription
     name: time_dayOfYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: time:dayOfYear
     title: day of year
   time_days:
     comments:
-    - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
-      \ expresada en d\xEDas."
-    - "title: duraci\xF3n en d\xEDas"
     - 'description: length of, or element of the length of, a temporal extent expressed
       in days'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en d\xEDas."
+    - "title: duraci\xF3n en d\xEDas"
     description: length of, or element of the length of, a temporal extent expressed
       in days
     domain: time_GeneralDurationDescription
@@ -1412,13 +1138,13 @@ slots:
   time_hasBeginning:
     comments:
     - 'description: Comienzo de una entidad temporal.'
-    - 'title: tiene principio'
     - 'description: Beginning of a temporal entity.'
-    - 'description: Comienzo de una entidad temporal.'
-    - No occurrences of this slot in the graph.
+    - 'title: tiene principio'
     description: Beginning of a temporal entity
     domain: time_TemporalEntity
     name: time_hasBeginning
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_Instant
     slot_uri: time:hasBeginning
     subproperty_of: time_hasTime
@@ -1428,35 +1154,34 @@ slots:
     - "description: Valor de intervalo de fecha-hora expresado como un valor estructurado.\
       \ El principio y el final del intervalo coincide con los l\xEDmites del elemento\
       \ m\xE1s corto en la descripci\xF3n."
-    - "title: tiene descripci\xF3n fecha-hora"
     - 'description: Value of DateTimeInterval expressed as a structured value. The
       beginning and end of the interval coincide with the limits of the shortest element
       in the description.'
-    - "description: Valor de intervalo de fecha-hora expresado como un valor estructurado.\
-      \ El principio y el final del intervalo coincide con los l\xEDmites del elemento\
-      \ m\xE1s corto en la descripci\xF3n."
-    - No occurrences of this slot in the graph.
+    - "title: tiene descripci\xF3n fecha-hora"
     description: Value of DateTimeInterval expressed as a structured value. The beginning
       and end of the interval coincide with the limits of the shortest element in
       the description.
     domain: time_DateTimeInterval
     name: time_hasDateTimeDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_GeneralDateTimeDescription
     slot_uri: time:hasDateTimeDescription
     title: has Date-Time description
   time_hasDuration:
     comments:
-    - "description: Duraci\xF3n de una entidad temporal, expresada como un valor escalado\
-      \ o un valor nominal."
-    - "title: tiene duraci\xF3n"
     - 'description: Duration of a temporal entity, event or activity, or thing, expressed
       as a scaled value'
     - "description: Duraci\xF3n de una entidad temporal, evento o actividad, o cosa,\
       \ expresada como un valor escalado."
-    - No occurrences of this slot in the graph.
+    - "description: Duraci\xF3n de una entidad temporal, expresada como un valor escalado\
+      \ o un valor nominal."
+    - "title: tiene duraci\xF3n"
     description: Duration of a temporal entity, expressed as a scaled value or nominal
       value
     name: time_hasDuration
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_Duration
     slot_uri: time:hasDuration
     subproperty_of: time_hasTemporalDuration
@@ -1465,13 +1190,12 @@ slots:
     comments:
     - "description: Duraci\xF3n de una entidad temporal, expresada utilizando una\
       \ descripci\xF3n estructurada."
-    - "title: tiene descripci\xF3n de duraci\xF3n"
     - 'description: Duration of a temporal entity, expressed using a structured description'
-    - "description: Duraci\xF3n de una entidad temporal, expresada utilizando una\
-      \ descripci\xF3n estructurada."
-    - No occurrences of this slot in the graph.
+    - "title: tiene descripci\xF3n de duraci\xF3n"
     description: Duration of a temporal entity, expressed using a structured description
     name: time_hasDurationDescription
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_GeneralDurationDescription
     slot_uri: time:hasDurationDescription
     subproperty_of: time_hasTemporalDuration
@@ -1479,43 +1203,42 @@ slots:
   time_hasEnd:
     comments:
     - 'description: Final de una entidad temporal.'
-    - 'title: tiene fin'
     - 'description: End of a temporal entity.'
-    - 'description: Final de una entidad temporal.'
-    - No occurrences of this slot in the graph.
+    - 'title: tiene fin'
     description: End of a temporal entity.
     domain: time_TemporalEntity
     name: time_hasEnd
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_Instant
     slot_uri: time:hasEnd
     subproperty_of: time_hasTime
     title: has end
   time_hasTRS:
     comments:
-    - "description: El sistema de referencia temporal utilizado por una posici\xF3\
-      n temporal o descripci\xF3n de extensi\xF3n."
-    - 'title: sistema de referencia temporal utilizado'
     - 'description: The temporal reference system used by a temporal position or extent
       description.'
     - "description: El sistema de referencia temporal utilizado por una posici\xF3\
       n temporal o descripci\xF3n de extensi\xF3n."
-    - No occurrences of this slot in the graph.
+    - 'title: sistema de referencia temporal utilizado'
     description: The temporal reference system used by a temporal position or extent
       description.
     name: time_hasTRS
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TRS
     slot_uri: time:hasTRS
     title: Temporal reference system used
   time_hasTemporalDuration:
     comments:
     - "description: Duraci\xF3n de una entidad temporal."
-    - "title: tiene duraci\xF3n temporal"
     - 'description: Duration of a temporal entity.'
-    - "description: Duraci\xF3n de una entidad temporal."
-    - No occurrences of this slot in the graph.
+    - "title: tiene duraci\xF3n temporal"
     description: Duration of a temporal entity.
     domain: time_TemporalEntity
     name: time_hasTemporalDuration
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TemporalDuration
     slot_uri: time:hasTemporalDuration
     title: has temporal duration
@@ -1523,12 +1246,9 @@ slots:
     comments:
     - "description: Proporciona soporte a la asociaci\xF3n de una entidad temporal\
       \ (instante o intervalo) a cualquier cosa."
-    - 'title: tiene tiempo'
     - 'description: Supports the association of a temporal entity (instant or interval)
       to any thing'
-    - "description: Proporciona soporte a la asociaci\xF3n de una entidad temporal\
-      \ (instante o intervalo) a cualquier cosa."
-    - No occurrences of this slot in the graph.
+    - 'title: tiene tiempo'
     description: Supports the association of a temporal entity (instant or interval)
       to any thing
     name: time_hasTime
@@ -1536,16 +1256,15 @@ slots:
     - 'Feature at risk - added in 2017 revision, and not yet widely used. '
     - "Caracter\xEDstica arriesgada -a\xF1adida en la revisi\xF3n del 2017 que no\
       \ ha sido todav\xEDa utilizada de forma amplia."
+    - No occurrences of this slot in the graph.
     range: time_TemporalEntity
     slot_uri: time:hasTime
     title: has time
   time_hasXSDDuration:
     comments:
-    - "description: Extensi\xF3n de una entidad temporal, expresada utilizando xsd:duration."
-    - "title: tiene duraci\xF3n XSD"
     - 'description: Extent of a temporal entity, expressed using xsd:duration'
     - "description: Extensi\xF3n de una entidad temporal, expresada utilizando xsd:duration."
-    - No occurrences of this slot in the graph.
+    - "title: tiene duraci\xF3n XSD"
     description: Extent of a temporal entity, expressed using xsd:duration
     domain: time_TemporalEntity
     name: time_hasXSDDuration
@@ -1553,31 +1272,30 @@ slots:
     - 'Feature at risk - added in 2017 revision, and not yet widely used. '
     - "Caracter\xEDstica arriesgada - a\xF1adida en la revisi\xF3n de 2017, y todav\xED\
       a no ampliamente utilizada."
+    - No occurrences of this slot in the graph.
     range: xsd_duration
     slot_uri: time:hasXSDDuration
     title: has XSD duration
   time_hour:
     comments:
-    - "description: Posici\xF3n de hora en un sistema calendario-reloj."
-    - 'title: hora'
     - 'description: Hour position in a calendar-clock system.'
     - "description: Posici\xF3n de hora en un sistema calendario-reloj."
-    - No occurrences of this slot in the graph.
+    - 'title: hora'
     description: Hour position in a calendar-clock system.
     domain: time_GeneralDateTimeDescription
     name: time_hour
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: time:hour
     title: hour
   time_hours:
     comments:
-    - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
-      \ expresada en horas."
-    - "title: duraci\xF3n en horas"
     - 'description: length of, or element of the length of, a temporal extent expressed
       in hours'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en horas."
+    - "title: duraci\xF3n en horas"
     description: length of, or element of the length of, a temporal extent expressed
       in hours
     domain: time_GeneralDurationDescription
@@ -1587,70 +1305,66 @@ slots:
     title: hours duration
   time_inDateTime:
     comments:
-    - "description: Posici\xF3n de un instante, expresada utilizando una descripci\xF3\
-      n estructurada."
-    - "title: en descripci\xF3n de fecha-hora"
     - 'description: Position of an instant, expressed using a structured description'
     - "description: Posici\xF3n de un instante, expresada utilizando una descripci\xF3\
       n estructurada."
-    - No occurrences of this slot in the graph.
+    - "title: en descripci\xF3n de fecha-hora"
     description: Position of an instant, expressed using a structured description
     domain: time_Instant
     name: time_inDateTime
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_GeneralDateTimeDescription
     slot_uri: time:inDateTime
     subproperty_of: time_inTemporalPosition
     title: in date-time description
   time_inTemporalPosition:
     comments:
-    - "description: Posici\xF3n de un instante de tiempo."
-    - "title: posici\xF3n temporal"
     - 'description: Position of a time instant'
     - "description: Posici\xF3n de un instante de tiempo."
-    - No occurrences of this slot in the graph.
+    - "title: posici\xF3n temporal"
     description: Position of a time instant
     domain: time_Instant
     name: time_inTemporalPosition
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TemporalPosition
     slot_uri: time:inTemporalPosition
     title: Temporal position
   time_inTimePosition:
     comments:
-    - "description: Posici\xF3n de un instante, expresada como una coordenada temporal\
-      \ o un valor nominal."
-    - "title: posici\xF3n de tiempo"
     - 'description: Position of a time instant expressed as a TimePosition'
     - "description: Posici\xF3n de un instante, expresada como una coordenada temporal\
       \ o un valor nominal."
-    - No occurrences of this slot in the graph.
+    - "title: posici\xF3n de tiempo"
     description: Position of an instant, expressed as a temporal coordinate or nominal
       value
     domain: time_Instant
     name: time_inTimePosition
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TimePosition
     slot_uri: time:inTimePosition
     subproperty_of: time_inTemporalPosition
     title: Time position
   time_inXSDDate:
     comments:
-    - "description: Posici\xF3n de un instante, expresado utilizando xsd:date."
-    - 'title: en fecha XSD'
     - 'description: Position of an instant, expressed using xsd:date'
     - "description: Posici\xF3n de un instante, expresado utilizando xsd:date."
-    - No occurrences of this slot in the graph.
+    - 'title: en fecha XSD'
     description: Position of an instant, expressed using xsd:date
     domain: time_Instant
     name: time_inXSDDate
+    notes:
+    - No occurrences of this slot in the graph.
     range: date
     slot_uri: time:inXSDDate
     title: in XSD date
   time_inXSDDateTime:
     comments:
-    - "description: Posici\xF3n de un instante, expresado utilizando xsd:dateTime."
-    - 'title: en fecha-tiempo XSD'
     - 'description: Position of an instant, expressed using xsd:dateTime'
     - "description: Posici\xF3n de un instante, expresado utilizando xsd:dateTime."
-    - No occurrences of this slot in the graph.
+    - 'title: en fecha-tiempo XSD'
     deprecated: 'true'
     description: Position of an instant, expressed using xsd:dateTime
     domain: time_Instant
@@ -1660,80 +1374,79 @@ slots:
       time-zone field mandatory.
     - La propiedad 'en fecha-hora XSD' ha sido reemplazada por 'en fecha-sello de
       tiempo XSD' que hace obligatorio el campo 'huso horario'.
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: time:inXSDDateTime
     title: in XSD Date-Time
   time_inXSDDateTimeStamp:
     comments:
     - "description: Posici\xF3n de un instante, expresado utilizando xsd:dateTimeStamp."
-    - 'title: en fecha-sello de tiempo XSD'
     - 'description: Position of an instant, expressed using xsd:dateTimeStamp'
-    - "description: Posici\xF3n de un instante, expresado utilizando xsd:dateTimeStamp."
-    - No occurrences of this slot in the graph.
+    - 'title: en fecha-sello de tiempo XSD'
     description: Position of an instant, expressed using xsd:dateTimeStamp
     domain: time_Instant
     name: time_inXSDDateTimeStamp
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_dateTimeStamp
     slot_uri: time:inXSDDateTimeStamp
     title: in XSD Date-Time-Stamp
   time_inXSDgYear:
     comments:
-    - "description: Posici\xF3n de un instante, expresado utilizando xsd:gYear."
-    - "title: en a\xF1o gregoriano XSD"
     - 'description: Position of an instant, expressed using xsd:gYear'
     - "description: Posici\xF3n de un instante, expresado utilizando xsd:gYear."
-    - No occurrences of this slot in the graph.
+    - "title: en a\xF1o gregoriano XSD"
     description: Position of an instant, expressed using xsd:gYear
     domain: time_Instant
     name: time_inXSDgYear
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_gYear
     slot_uri: time:inXSDgYear
     title: in XSD g-Year
   time_inXSDgYearMonth:
     comments:
-    - "description: Posici\xF3n de un instante, expresado utilizando xsd:gYearMonth."
-    - "title: en a\xF1o-mes gregoriano XSD"
     - 'description: Position of an instant, expressed using xsd:gYearMonth'
     - "description: Posici\xF3n de un instante, expresado utilizando xsd:gYearMonth."
-    - No occurrences of this slot in the graph.
+    - "title: en a\xF1o-mes gregoriano XSD"
     description: Position of an instant, expressed using xsd:gYearMonth
     domain: time_Instant
     name: time_inXSDgYearMonth
+    notes:
+    - No occurrences of this slot in the graph.
     range: xsd_gYearMonth
     slot_uri: time:inXSDgYearMonth
     title: in XSD g-YearMonth
   time_inside:
     comments:
-    - "description: Un instante que cae dentro del intervalo. Se asume que no es ni\
-      \ el principio ni el final de ning\xFAn intervalo."
-    - 'title: tiene instante de tiempo dentro'
     - 'description: An instant that falls inside the interval. It is not intended
       to include beginnings and ends of intervals.'
     - "description: Un instante que cae dentro del intervalo. Se asume que no es ni\
       \ el principio ni el final de ning\xFAn intervalo."
-    - No occurrences of this slot in the graph.
+    - 'title: tiene instante de tiempo dentro'
     description: An instant that falls inside the interval. It is not intended to
       include beginnings and ends of intervals.
     domain: time_Interval
     name: time_inside
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_Instant
     slot_uri: time:inside
     title: has time instant inside
   time_intervalAfter:
     comments:
-    - "description: Si un intervalo propio T1 es posterior a otro intervalo propio\
-      \ T2, entonces el principio de T1 est\xE1 despu\xE9s que el final de T2."
-    - 'title: intervalo posterior'
     - 'description: If a proper interval T1 is intervalAfter another proper interval
       T2, then the beginning of T1 is after the end of T2.'
     - "description: Si un intervalo propio T1 es posterior a otro intervalo propio\
       \ T2, entonces el principio de T1 est\xE1 despu\xE9s que el final de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo posterior'
     description: If a proper interval T1 is intervalAfter another proper interval
       T2, then the beginning of T1 is after the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalBefore
     name: time_intervalAfter
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalAfter
     subproperty_of: time_intervalDisjoint
@@ -1742,40 +1455,37 @@ slots:
     comments:
     - "description: Si un intervalo propio T1 est\xE1 antes que otro intervalo propio\
       \ T2, entonces el final de T1 est\xE1 antes que el principio de T2."
-    - 'title: intervalo anterior'
     - 'description: If a proper interval T1 is intervalBefore another proper interval
       T2, then the end of T1 is before the beginning of T2.'
-    - "description: Si un intervalo propio T1 est\xE1 antes que otro intervalo propio\
-      \ T2, entonces el final de T1 est\xE1 antes que el principio de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo anterior'
     description: If a proper interval T1 is intervalBefore another proper interval
       T2, then the end of T1 is before the beginning of T2.
     domain: time_ProperInterval
     inverse: time_intervalAfter
     name: time_intervalBefore
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalBefore
     subproperty_of: time_intervalDisjoint
     title: interval before
   time_intervalContains:
     comments:
-    - "description: Si un intervalo propio T1 contiene otro intervalo propio T2, entonces\
-      \ el principio de T1 est\xE1 antes que el principio de T2, y el final de T1\
-      \ est\xE1 despu\xE9s del final de T2."
-    - 'title: intervalo contiene'
     - 'description: If a proper interval T1 is intervalContains another proper interval
       T2, then the beginning of T1 is before the beginning of T2, and the end of T1
       is after the end of T2.'
     - "description: Si un intervalo propio T1 contiene otro intervalo propio T2, entonces\
       \ el principio de T1 est\xE1 antes que el principio de T2, y el final de T1\
       \ est\xE1 despu\xE9s del final de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo contiene'
     description: If a proper interval T1 is intervalContains another proper interval
       T2, then the beginning of T1 is before the beginning of T2, and the end of T1
       is after the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalDuring
     name: time_intervalContains
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalContains
     title: interval contains
@@ -1785,16 +1495,11 @@ slots:
       \ T2, entonces el principio de T1 est\xE1 despu\xE9s del final de T2, o el final\
       \ de T1 est\xE1 antes que el principio de T2, es decir, los intervalos no se\
       \ solapan de ninguna forma, aunque su relaci\xF3n de orden no se conozca."
-    - 'title: intervalo disjunto'
     - 'description: If a proper interval T1 is intervalDisjoint another proper interval
       T2, then the beginning of T1 is after the end of T2, or the end of T1 is before
       the beginning of T2, i.e. the intervals do not overlap in any way, but their
       ordering relationship is not known.'
-    - "description: Si un intervalo propio T1 es disjunto con otro intervalo propio\
-      \ T2, entonces el principio de T1 est\xE1 despu\xE9s del final de T2, o el final\
-      \ de T1 est\xE1 antes que el principio de T2, es decir, los intervalos no se\
-      \ solapan de ninguna forma, aunque su relaci\xF3n de orden no se conozca."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo disjunto'
     description: If a proper interval T1 is intervalDisjoint another proper interval
       T2, then the beginning of T1 is after the end of T2, or the end of T1 is before
       the beginning of T2, i.e. the intervals do not overlap in any way, but their
@@ -1812,50 +1517,47 @@ slots:
       \ fuera de la expresividad de OWL2, por tanto, est\xE1 implementado como una\
       \ propiedad expl\xEDcita, con 'intervalo anterior' e 'intervalo posterior' como\
       \ sub-propiedades."
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalDisjoint
     title: interval disjoint
   time_intervalDuring:
     comments:
-    - "description: Si un intervalo propio T1 est\xE1 durante otro intervalo propio\
-      \ T2, entonces del principio de T1 est\xE1 despu\xE9s del principio de T2, y\
-      \ el final de T1 est\xE1 antes que el final de T2."
-    - 'title: intervalo durante'
     - 'description: If a proper interval T1 is intervalDuring another proper interval
       T2, then the beginning of T1 is after the beginning of T2, and the end of T1
       is before the end of T2.'
     - "description: Si un intervalo propio T1 est\xE1 durante otro intervalo propio\
       \ T2, entonces del principio de T1 est\xE1 despu\xE9s del principio de T2, y\
       \ el final de T1 est\xE1 antes que el final de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo durante'
     description: If a proper interval T1 is intervalDuring another proper interval
       T2, then the beginning of T1 is after the beginning of T2, and the end of T1
       is before the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalContains
     name: time_intervalDuring
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalDuring
     subproperty_of: time_intervalIn
     title: interval during
   time_intervalEquals:
     comments:
-    - 'description: Si un intervalo propio T1 es igual a otro intervalo propio T2,
-      entonces el principio de T1 coincide con el principio de T2, y el final de T1
-      coincide con el final de T2.'
-    - 'title: intervalo igual'
     - 'description: If a proper interval T1 is intervalEquals another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is coincident with the end of T2.'
     - 'description: Si un intervalo propio T1 es igual a otro intervalo propio T2,
       entonces el principio de T1 coincide con el principio de T2, y el final de T1
       coincide con el final de T2.'
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo igual'
     description: If a proper interval T1 is intervalEquals another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is coincident with the end of T2.
     domain: time_ProperInterval
     name: time_intervalEquals
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalEquals
     title: interval equals
@@ -1864,42 +1566,38 @@ slots:
     - "description: Si un intervalo propio T1 est\xE1 terminado por otro intervalo\
       \ propio T2, entonces el principio de T1 est\xE1 antes que el principio de T2,\
       \ y el final de T1 coincide con el final de T2."
-    - 'title: intervalo terminado por'
     - 'description: If a proper interval T1 is intervalFinishedBy another proper interval
       T2, then the beginning of T1 is before the beginning of T2, and the end of T1
       is coincident with the end of T2.'
-    - "description: Si un intervalo propio T1 est\xE1 terminado por otro intervalo\
-      \ propio T2, entonces el principio de T1 est\xE1 antes que el principio de T2,\
-      \ y el final de T1 coincide con el final de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo terminado por'
     description: If a proper interval T1 is intervalFinishedBy another proper interval
       T2, then the beginning of T1 is before the beginning of T2, and the end of T1
       is coincident with the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalFinishes
     name: time_intervalFinishedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalFinishedBy
     title: interval finished by
   time_intervalFinishes:
     comments:
-    - "description: Si un intervalo propio T1 termina otro intervalo propio T2, entonces\
-      \ del principio de T1 est\xE1 despu\xE9s del principio de T2, y el final de\
-      \ T1 coincide con el final de T2."
-    - 'title: intervalo termina'
     - 'description: If a proper interval T1 is intervalFinishes another proper interval
       T2, then the beginning of T1 is after the beginning of T2, and the end of T1
       is coincident with the end of T2.'
     - "description: Si un intervalo propio T1 termina otro intervalo propio T2, entonces\
       \ del principio de T1 est\xE1 despu\xE9s del principio de T2, y el final de\
       \ T1 coincide con el final de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo termina'
     description: If a proper interval T1 is intervalFinishes another proper interval
       T2, then the beginning of T1 is after the beginning of T2, and the end of T1
       is coincident with the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalFinishedBy
     name: time_intervalFinishes
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalFinishes
     subproperty_of: time_intervalIn
@@ -1912,19 +1610,12 @@ slots:
       \ final de T2, o coincide con el final de T2, excepto que el final de T1 puede\
       \ no coincidir con el final de T2 si el principio de T1 coincide con el principio\
       \ de T2."
-    - 'title: intervalo interior'
     - 'description: If a proper interval T1 is intervalIn another proper interval
       T2, then the beginning of T1 is after the beginning of T2 or is coincident with
       the beginning of T2, and the end of T1 is before the end of T2, or is coincident
       with the end of T2, except that end of T1 may not be coincident with the end
       of T2 if the beginning of T1 is coincident with the beginning of T2.'
-    - "description: Si un intervalo propio T1 es un intervalo interior a otro intervalo\
-      \ propio T2, entonces el principio de T1 est\xE1 despu\xE9s del principio de\
-      \ T2 o coincide con el principio de T2, y el final de T1 est\xE1 antes que el\
-      \ final de T2, o coincide con el final de T2, excepto que el final de T1 puede\
-      \ no coincidir con el final de T2 si el principio de T1 coincide con el principio\
-      \ de T2."
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo interior'
     description: If a proper interval T1 is intervalIn another proper interval T2,
       then the beginning of T1 is after the beginning of T2 or is coincident with
       the beginning of T2, and the end of T1 is before the end of T2, or is coincident
@@ -1946,6 +1637,7 @@ slots:
       \ embargo, esto est\xE1 fuera de la expresividad de OWL2, por tanto, se implementa\
       \ como una propiedad expl\xEDcita, con 'intervalo empieza', 'intervalo durante'\
       \ e 'intervalo termina' como sub-propiedades."
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalIn
     title: interval in
@@ -1953,35 +1645,33 @@ slots:
     comments:
     - 'description: Si un intervalo propio T1 se encuentra con otro intervalo propio
       T2, entonces el final de T1 coincide con el principio de T2.'
-    - 'title: intervalo se encuentra'
     - 'description: If a proper interval T1 is intervalMeets another proper interval
       T2, then the end of T1 is coincident with the beginning of T2.'
-    - 'description: Si un intervalo propio T1 se encuentra con otro intervalo propio
-      T2, entonces el final de T1 coincide con el principio de T2.'
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo se encuentra'
     description: If a proper interval T1 is intervalMeets another proper interval
       T2, then the end of T1 is coincident with the beginning of T2.
     domain: time_ProperInterval
     inverse: time_intervalMetBy
     name: time_intervalMeets
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalMeets
     title: interval meets
   time_intervalMetBy:
     comments:
-    - 'description: Si un intervalo propio T1 es ''intervalo encontrado por'' otro
-      intervalo propio T2, entonces el principio de T1 coincide con el final de T2.'
-    - 'title: intervalo encontrado por'
     - 'description: If a proper interval T1 is intervalMetBy another proper interval
       T2, then the beginning of T1 is coincident with the end of T2.'
     - 'description: Si un intervalo propio T1 es ''intervalo encontrado por'' otro
       intervalo propio T2, entonces el principio de T1 coincide con el final de T2.'
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo encontrado por'
     description: If a proper interval T1 is intervalMetBy another proper interval
       T2, then the beginning of T1 is coincident with the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalMeets
     name: time_intervalMetBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalMetBy
     title: interval met by
@@ -1991,48 +1681,42 @@ slots:
       propio T2, entonces el principio de T1 es posterior al principio de T2, y el
       principio de T1 es anterior al final de T2, y el final de T1 es posterior al
       final de T2.'
-    - 'title: intervalo solapado por'
     - 'description: If a proper interval T1 is intervalOverlappedBy another proper
       interval T2, then the beginning of T1 is after the beginning of T2, the beginning
       of T1 is before the end of T2, and the end of T1 is after the end of T2.'
-    - 'description: Si un intervalo propio T1 es ''intervalo solapado por'' otro intervalo
-      propio T2, entonces el principio de T1 es posterior al principio de T2, y el
-      principio de T1 es anterior al final de T2, y el final de T1 es posterior al
-      final de T2.'
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo solapado por'
     description: If a proper interval T1 is intervalOverlappedBy another proper interval
       T2, then the beginning of T1 is after the beginning of T2, the beginning of
       T1 is before the end of T2, and the end of T1 is after the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalOverlaps
     name: time_intervalOverlappedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalOverlappedBy
     title: interval overlapped by
   time_intervalOverlaps:
     comments:
-    - 'description: Si un intervalo propio T1 se solapa con otro intervalo propio
-      T2, entonces el principio de T1 es anterior al principio de T2, el final de
-      T1 es posterior al principio de T2, y el final de T1 es anterior al final de
-      T2.'
-    - "description: Asume una direcci\xF3n en el tiempo. Si una entidad temporal T1\
-      \ est\xE1 despu\xE9s de otra entidad temporal T2, entonces el principio de T1\
-      \ est\xE1 despu\xE9s del final de T2."
-    - 'title: intervalo se solapa'
     - 'description: If a proper interval T1 is intervalOverlaps another proper interval
       T2, then the beginning of T1 is before the beginning of T2, the end of T1 is
       after the beginning of T2, and the end of T1 is before the end of T2.'
+    - "description: Asume una direcci\xF3n en el tiempo. Si una entidad temporal T1\
+      \ est\xE1 despu\xE9s de otra entidad temporal T2, entonces el principio de T1\
+      \ est\xE1 despu\xE9s del final de T2."
     - 'description: Si un intervalo propio T1 se solapa con otro intervalo propio
       T2, entonces el principio de T1 es anterior al principio de T2, el final de
       T1 es posterior al principio de T2, y el final de T1 es anterior al final de
       T2.'
-    - No occurrences of this slot in the graph.
+    - 'title: intervalo se solapa'
     description: If a proper interval T1 is intervalOverlaps another proper interval
       T2, then the beginning of T1 is before the beginning of T2, the end of T1 is
       after the beginning of T2, and the end of T1 is before the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalOverlappedBy
     name: time_intervalOverlaps
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalOverlaps
     title: interval overlaps
@@ -2044,38 +1728,37 @@ slots:
     - 'description: If a proper interval T1 is intervalStarted another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is after the end of T2.'
-    - 'description: Si un intervalo propio T1 es empezado por otro intervalo propio
-      T2, entonces el principio de T1 coincide con el principio de T2, y el final
-      de T1 es posterior al final de T2.'
-    - No occurrences of this slot in the graph.
     description: If a proper interval T1 is intervalStarted another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is after the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalStarts
     name: time_intervalStartedBy
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalStartedBy
     title: interval started by
   time_intervalStarts:
     comments:
-    - 'description: Si un intervalo propio T1 empieza otro intervalo propio T2, entonces
-      del principio de T1 con el principio de T2, y el final de T1 es anterior al
-      final de T2.'
-    - 'title: intervalo empieza'
     - 'description: If a proper interval T1 is intervalStarts another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is before the end of T2.'
     - 'description: Si un intervalo propio T1 empieza otro intervalo propio T2, entonces
       del principio de T1 con el final de T2, y el final de T1 es anterior al final
       de T2.'
-    - No occurrences of this slot in the graph.
+    - 'description: Si un intervalo propio T1 empieza otro intervalo propio T2, entonces
+      del principio de T1 con el principio de T2, y el final de T1 es anterior al
+      final de T2.'
+    - 'title: intervalo empieza'
     description: If a proper interval T1 is intervalStarts another proper interval
       T2, then the beginning of T1 is coincident with the beginning of T2, and the
       end of T1 is before the end of T2.
     domain: time_ProperInterval
     inverse: time_intervalStartedBy
     name: time_intervalStarts
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_ProperInterval
     slot_uri: time:intervalStarts
     subproperty_of: time_intervalIn
@@ -2083,24 +1766,22 @@ slots:
   time_minute:
     comments:
     - "description: Posici\xF3n de minuto en un sistema calendario-reloj."
-    - 'title: minuto'
     - 'description: Minute position in a calendar-clock system.'
-    - "description: Posici\xF3n de minuto en un sistema calendario-reloj."
-    - No occurrences of this slot in the graph.
+    - 'title: minuto'
     description: Minute position in a calendar-clock system.
     domain: time_GeneralDateTimeDescription
     name: time_minute
+    notes:
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: time:minute
     title: minute
   time_minutes:
     comments:
-    - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
-      \ expresada en minutos."
-    - 'title: minutos'
     - 'description: length, or element of, a temporal extent expressed in minutes'
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en minutos."
+    - 'title: minutos'
     description: length, or element of, a temporal extent expressed in minutes
     domain: time_GeneralDurationDescription
     name: time_minutes
@@ -2109,38 +1790,36 @@ slots:
     title: minutes
   time_month:
     comments:
+    - "description: Posici\xF3n de mes en un sistema calendario-reloj.\n         \
+      \   El rango de esta propiedad no est\xE1 especificado, por tanto, se puede\
+      \ reemplazar por cualquier representaci\xF3n espec\xEDfica de un mes de calendario\
+      \ de un calendario cualquiera."
     - "description: Posici\xF3n de mes en un sistema calendario-reloj.\n    El rango\
       \ de esta propiedad no est\xE1 especificado, por tanto, se puede reemplazar\
       \ por cualquier representaci\xF3n espec\xEDfica de un mes de calendario de un\
       \ calendario cualquiera."
-    - 'title: mes'
     - 'description: Month position in a calendar-clock system.
 
 
       The range of this property is not specified, so can be replaced by any specific
       representation of a calendar month from any calendar.'
-    - "description: Posici\xF3n de mes en un sistema calendario-reloj.\n         \
-      \   El rango de esta propiedad no est\xE1 especificado, por tanto, se puede\
-      \ reemplazar por cualquier representaci\xF3n espec\xEDfica de un mes de calendario\
-      \ de un calendario cualquiera."
-    - No occurrences of this slot in the graph.
+    - 'title: mes'
     description: "Month position in a calendar-clock system.\u240A\u240AThe range\
       \ of this property is not specified, so can be replaced by any specific representation\
       \ of a calendar month from any calendar."
     domain: time_GeneralDateTimeDescription
     name: time_month
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: time:month
     title: month
   time_monthOfYear:
     comments:
-    - "description: El mes del a\xF1o, cuyo valor es un miembro de la clase 'mes del\
-      \ a\xF1o'."
-    - "title: mes del a\xF1o"
     - 'description: The month of the year, whose value is a member of the class time:MonthOfYear'
     - "description: El mes del a\xF1o, cuyo valor es un miembro de la clase 'mes del\
       \ a\xF1o'."
-    - No occurrences of this slot in the graph.
+    - "title: mes del a\xF1o"
     description: The month of the year, whose value is a member of the class time:MonthOfYear
     domain: time_GeneralDateTimeDescription
     name: time_monthOfYear
@@ -2148,6 +1827,7 @@ slots:
     - 'Feature at risk - added in 2017 revision, and not yet widely used. '
     - "Caracter\xEDstica arriesgada - a\xF1adida en la revisi\xF3n de 2017, y todav\xED\
       a no ampliamente utilizada."
+    - No occurrences of this slot in the graph.
     range: time_MonthOfYear
     slot_uri: time:monthOfYear
     title: month of year
@@ -2155,11 +1835,9 @@ slots:
     comments:
     - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
       \ expresada en meses."
-    - "title: duraci\xF3n en meses"
     - 'description: length of, or element of the length of, a temporal extent expressed
       in months'
-    - "description: Longitud de, o elemento de la longitud de, una extensi\xF3n temporal\
-      \ expresada en meses."
+    - "title: duraci\xF3n en meses"
     description: length of, or element of the length of, a temporal extent expressed
       in months
     domain: time_GeneralDurationDescription
@@ -2169,18 +1847,17 @@ slots:
     title: months duration
   time_nominalPosition:
     comments:
-    - "description: El valor (nominal) que indica posici\xF3n temporal en un sistema\
-      \ de referencia ordinal."
-    - "title: nombre de posici\xF3n temporal"
     - 'description: The (nominal) value indicating temporal position in an ordinal
       reference system'
     - "description: El valor (nominal) que indica posici\xF3n temporal en un sistema\
       \ de referencia ordinal."
-    - No occurrences of this slot in the graph.
+    - "title: nombre de posici\xF3n temporal"
     description: The (nominal) value indicating temporal position in an ordinal reference
       system
     domain: time_TimePosition
     name: time_nominalPosition
+    notes:
+    - No occurrences of this slot in the graph.
     range: string
     slot_uri: time:nominalPosition
     title: Name of temporal position
@@ -2188,33 +1865,31 @@ slots:
     comments:
     - "description: Valor de una extensi\xF3n temporal expresada como un n\xFAmero\
       \ decimal escalado por una unidad de tiempo."
-    - "title: valor num\xE9rico de duraci\xF3n temporal"
     - 'description: Value of a temporal extent expressed as a decimal number scaled
       by a temporal unit'
-    - "description: Valor de una extensi\xF3n temporal expresada como un n\xFAmero\
-      \ decimal escalado por una unidad de tiempo."
-    - No occurrences of this slot in the graph.
+    - "title: valor num\xE9rico de duraci\xF3n temporal"
     description: Value of a temporal extent expressed as a decimal number scaled by
       a temporal unit
     domain: time_Duration
     name: time_numericDuration
+    notes:
+    - No occurrences of this slot in the graph.
     range: decimal
     slot_uri: time:numericDuration
     title: Numeric value of temporal duration
   time_numericPosition:
     comments:
-    - "description: El valor (num\xE9rico) que indica posici\xF3n temporal en un sistema\
-      \ de referencia ordinal."
-    - "title: valor num\xE9rico de posici\xF3n temporal"
     - 'description: The (numeric) value indicating position within a temporal coordinate
       system'
     - "description: El valor (num\xE9rico) que indica posici\xF3n temporal en un sistema\
       \ de referencia ordinal."
-    - No occurrences of this slot in the graph.
+    - "title: valor num\xE9rico de posici\xF3n temporal"
     description: The (numeric) value indicating position within a temporal coordinate
       system
     domain: time_TimePosition
     name: time_numericPosition
+    notes:
+    - No occurrences of this slot in the graph.
     range: decimal
     slot_uri: time:numericPosition
     title: Numeric value of temporal position
@@ -2222,10 +1897,11 @@ slots:
     comments:
     - "description: Posici\xF3n de segundo en un sistema calendario-reloj."
     - 'title: segundo'
-    - No occurrences of this slot in the graph.
     description: Second position in a calendar-clock system.
     domain: time_GeneralDateTimeDescription
     name: time_second
+    notes:
+    - No occurrences of this slot in the graph.
     range: decimal
     slot_uri: time:second
     title: second
@@ -2246,7 +1922,6 @@ slots:
   time_timeZone:
     comments:
     - 'title: en huso horario'
-    - No occurrences of this slot in the graph.
     description: The time zone for clock elements in the temporal position
     domain: time_GeneralDateTimeDescription
     name: time_timeZone
@@ -2283,6 +1958,7 @@ slots:
       \ individual con una URI adecuada individual (por ejemplo, https://www.timeanddate.com/time/zones/acwst).\
       \ \xC9stos, y otros recursos similares, se puden usar como un valor de la propiedad\
       \ 'huso horario'."
+    - No occurrences of this slot in the graph.
     range: time_TimeZone
     slot_uri: time:timeZone
     title: in time zone
@@ -2291,10 +1967,11 @@ slots:
     - "description: La unidad de tiempo que proporciona la precisi\xF3n de un valor\
       \ fecha-hora o la escala de una extensi\xF3n temporal."
     - 'title: tipo de unidad temporal'
-    - No occurrences of this slot in the graph.
     description: The temporal unit which provides the precision of a date-time value
       or scale of a temporal extent
     name: time_unitType
+    notes:
+    - No occurrences of this slot in the graph.
     range: time_TemporalUnit
     slot_uri: time:unitType
     title: temporal unit type
@@ -2302,7 +1979,6 @@ slots:
     comments:
     - "description: N\xFAmero de semana en el a\xF1o."
     - 'title: semana'
-    - No occurrences of this slot in the graph.
     description: Week number within the year.
     domain: time_GeneralDateTimeDescription
     name: time_week
@@ -2318,6 +1994,7 @@ slots:
       \ al menos cuatro d\xEDas, y que el lunes es el primer d\xEDa de la semana.\
       \ En ese sistema, la semana 1 es la semana que contiene el primer jueves del\
       \ a\xF1o."
+    - No occurrences of this slot in the graph.
     range: unsignedinteger
     slot_uri: time:week
     title: week
@@ -2337,7 +2014,6 @@ slots:
     comments:
     - 'description: Valor de ''intervalo de fecha-hora'' expresado como un valor compacto.'
     - 'title: tiene fecha-hora XSD'
-    - No occurrences of this slot in the graph.
     deprecated: 'true'
     description: Value of DateTimeInterval expressed as a compact value.
     domain: time_DateTimeInterval
@@ -2360,6 +2036,7 @@ slots:
       \ deseado no se puede distinguir del intervalo correspondiente al pr\xF3ximo\
       \ rango m\xE1s alto. Debido a esta ambig\xFCedad esencial, no se recomienda\
       \ el uso de esta propiedad y est\xE1 desaprobada."
+    - No occurrences of this slot in the graph.
     range: datetime
     slot_uri: time:xsdDateTime
     title: has XSD date-time
@@ -2369,12 +2046,13 @@ slots:
       \ de esta propiedad no est\xE1 especificado, por tanto, se puede reemplazar\
       \ por cualquier representaci\xF3n espec\xEDfica de un a\xF1o de calendario de\
       \ un calendario cualquiera."
-    - No occurrences of this slot in the graph.
     description: "Year position in a calendar-clock system.\u240A\u240AThe range of\
       \ this property is not specified, so can be replaced by any specific representation\
       \ of a calendar year from any calendar."
     domain: time_GeneralDateTimeDescription
     name: time_year
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: time:year
     title: year
@@ -2393,17 +2071,9 @@ slots:
   xsd_pattern:
     range: string
     slot_uri: xsd:pattern
-title: No schema name specified
 types:
   time_generalDay:
     comments:
-    - "description: D\xEDa del mes - formulado como una cadena de texto con una restricci\xF3\
-      n patr\xF3n para reproducir la misma forma l\xE9xica que gDay, excepto que se\
-      \ permiten valores hasta el 99, con el prop\xF3sito de proporcionar soporte\
-      \ a calendarios con meses con m\xE1s de 31 d\xEDas.\n            N\xF3tese que\
-      \ el espacio de valores no est\xE1 definido, por tanto, un procesador gen\xE9\
-      rico de OWL2 no puede computar relaciones de orden de valores de este tipo."
-    - "title: D\xEDa generalizado"
     - "description: Day of month - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gDay, except that values up to 99 are\
       \ permitted, in order to support calendars with more than 31 days in a month.\
@@ -2415,6 +2085,7 @@ types:
       \ a calendarios con meses con m\xE1s de 31 d\xEDas.\n            N\xF3tese que\
       \ el espacio de valores no est\xE1 definido, por tanto, un procesador gen\xE9\
       rico de OWL2 no puede computar relaciones de orden de valores de este tipo."
+    - "title: D\xEDa generalizado"
     description: "Day of month - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gDay, except that values up to 99 are\
       \ permitted, in order to support calendars with more than 31 days in a month.\
@@ -2432,18 +2103,12 @@ types:
       \ a calendarios con a\xF1os con m\xE1s de 12 meses.\n            N\xF3tese que\
       \ el espacio de valores no est\xE1 definido, por tanto, un procesador gen\xE9\
       rico de OWL2 no puede computar relaciones de orden de valores de este tipo."
-    - 'title: Mes generalizado'
     - "description: Month of year - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gMonth, except that values up to 20\
       \ are permitted, in order to support calendars with more than 12 months in the\
       \ year. \nNote that the value-space is not defined, so a generic OWL2 processor\
       \ cannot compute ordering relationships of values of this type."
-    - "description: Mes del a\xF1o - formulado como una cadena de texto con una restricci\xF3\
-      n patr\xF3n para reproducir la misma forma l\xE9xica que gMonth, excepto que\
-      \ se permiten valores hasta el 20, con el prop\xF3sito de proporcionar soporte\
-      \ a calendarios con a\xF1os con m\xE1s de 12 meses.\n            N\xF3tese que\
-      \ el espacio de valores no est\xE1 definido, por tanto, un procesador gen\xE9\
-      rico de OWL2 no puede computar relaciones de orden de valores de este tipo."
+    - 'title: Mes generalizado'
     description: "Month of year - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gMonth, except that values up to 20\
       \ are permitted, in order to support calendars with more than 12 months in the\
@@ -2455,13 +2120,6 @@ types:
     uri: time:generalMonth
   time_generalYear:
     comments:
-    - "description: N\xFAmero de a\xF1o - formulado como una cadena de texto con una\
-      \ restricci\xF3n patr\xF3n para reproducir la misma forma l\xE9xica que gYear,\
-      \ aunque no est\xE1 restringido a valores del calendario gregoriano.\n     \
-      \       N\xF3tese que el espacio de valores no est\xE1 definido, por tanto,\
-      \ un procesador gen\xE9rico de OWL2 no puede computar relaciones de orden de\
-      \ valores de este tipo."
-    - "title: A\xF1o generalizado"
     - "description: Year number - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gYear, but not restricted to values\
       \ from the Gregorian calendar. \nNote that the value-space is not defined, so\
@@ -2473,6 +2131,7 @@ types:
       \       N\xF3tese que el espacio de valores no est\xE1 definido, por tanto,\
       \ un procesador gen\xE9rico de OWL2 no puede computar relaciones de orden de\
       \ valores de este tipo."
+    - "title: A\xF1o generalizado"
     description: "Year number - formulated as a text string with a pattern constraint\
       \ to reproduce the same lexical form as gYear, but not restricted to values\
       \ from the Gregorian calendar. \u240ANote that the value-space is not defined,\

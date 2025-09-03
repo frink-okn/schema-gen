@@ -46,7 +46,7 @@ annotations:
         value:
           rdf:Bag:
             tag: rdf:Bag
-            value: xhv:relrev-properties
+            value: xhv:role-properties
       pairs:
         tag: pairs
         value:
@@ -87,14 +87,14 @@ annotations:
                         tag: subject
                         value: http://www.w3.org/1999/xhtml/vocab
 classes: {}
-created_on: '2025-07-17T19:20:05.660050'
+created_on: '2025-09-03T11:21:48.287307'
 default_prefix: okns
 id: okns:xhv
 imports:
+- linkml:types
 - okns:owl-rdf-rdfs
 - okns:extended_types
-- linkml:types
-last_updated_on: '2025-07-17T19:20:05.660050'
+last_updated_on: '2025-09-03T11:21:48.287307'
 name: xhv
 prefixes:
   linkml: https://w3id.org/linkml/
@@ -105,575 +105,575 @@ prefixes:
   xhv: http://www.w3.org/1999/xhtml/vocab#
 slots:
   xhv_alert:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A message\u240A      with important, and usually time-sensitive,\
       \ information. Also see alertdialog\u240A      and status."
     name: xhv_alert
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:alert
   xhv_alertdialog:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A\u240A      type of dialog that contains an alert message, where\
       \ initial focus goes\u240A      an element within the dialog. Also see alert\
       \ and dialog."
     name: xhv_alertdialog
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:alertdialog
   xhv_alternate:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "alternate \u240A    designates alternate versions for a resource."
     name: xhv_alternate
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:alternate
   xhv_appendix:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "appendix refers to a resource serving\u240A      as an appendix\
       \ in a collection."
     name: xhv_appendix
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:appendix
   xhv_application:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A\u240A      region declared as a web application, as opposed to\
       \ a web document."
     name: xhv_application
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:application
   xhv_article:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A section\u240A      of a page that consists of a composition that\
       \ forms an independent part\u240A      of a document, page, or site."
     name: xhv_article
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:article
   xhv_banner:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "contains\u240A      the prime heading or internal title of a page."
     name: xhv_banner
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:banner
   xhv_bookmark:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "bookmark refers to a bookmark - a link\u240A      to a key entry\
       \ point within an extended document."
     name: xhv_bookmark
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:bookmark
   xhv_button:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An input\u240A      that allows for user-triggered actions when\
       \ clicked or pressed. Also see\u240A      link."
     name: xhv_button
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:button
   xhv_chapter:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "chapter refers to a resource serving\u240A      as a chapter in\
       \ a collection."
     name: xhv_chapter
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:chapter
   xhv_checkbox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A checkable\u240A      input that has three possible values: true,\
       \ false, or mixed."
     name: xhv_checkbox
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:checkbox
   xhv_cite:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "cite refers to a resource that defines\u240A      a citation."
     name: xhv_cite
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:cite
   xhv_columnheader:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A\u240A      cell containing header information for a column."
     name: xhv_columnheader
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:columnheader
   xhv_combobox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A presentation\u240A      of a select; usually similar to a textbox\
       \ where users can type ahead to\u240A      select an option, or type to enter\
       \ arbitrary text as a new item in the\u240A      list. Also see listbox."
     name: xhv_combobox
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:combobox
   xhv_complementary:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "indicates that the section supports but is\u240A      separable\
       \ from the main content of resource."
     name: xhv_complementary
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:complementary
   xhv_contentinfo:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "contains meta information about the\u240A      content on the page\
       \ or the page as a whole."
     name: xhv_contentinfo
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:contentinfo
   xhv_contents:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "contents refers to a resource serving\u240A      as a table of contents."
     name: xhv_contents
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:contents
   xhv_copyright:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "copyright refers to a copyright\u240A      statement for the resource."
     name: xhv_copyright
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:copyright
   xhv_definition:
-    comments:
-    - No occurrences of this slot in the graph.
     description: indicates the definition of a term or concept.
     name: xhv_definition
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:definition
   xhv_dialog:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A dialog\u240A      is an application window that is designed to\
       \ interrupt the current processing\u240A      of an application in order to\
       \ prompt the user to enter information or require\u240A      a response. Also\
       \ see alertdialog."
     name: xhv_dialog
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:dialog
   xhv_directory:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A list\u240A      of references to members of a group, such as a\
       \ static table of contents."
     name: xhv_directory
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:directory
   xhv_document:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A region\u240A      containing related information that is declared\
       \ as document content, as\u240A      opposed to a web application."
     name: xhv_document
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:document
   xhv_first:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "first refers the first item in a\u240A      collection (see also\
       \ start and top)."
     name: xhv_first
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:first
   xhv_form:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A landmark\u240A      region that contains a collection of items\
       \ and objects that, as a whole,\u240A      combine to create a form. Also see\
       \ search."
     name: xhv_form
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:form
   xhv_glossary:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "glossary refers to a resource\u240A      providing a glossary of\
       \ terms."
     name: xhv_glossary
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:glossary
   xhv_grid:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A grid is\u240A      an interactive control which contains cells\
       \ of tabular data arranged in\u240A      rows and columns, like a table."
     name: xhv_grid
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:grid
   xhv_gridcell:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A cell\u240A      in a grid or treegrid."
     name: xhv_gridcell
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:gridcell
   xhv_group:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A set of\u240A      user interface objects which are not intended\
       \ to be included in a page\u240A      summary or table of contents by assistive\
       \ technologies."
     name: xhv_group
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:group
   xhv_heading:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A heading\u240A      for a section of the page."
     name: xhv_heading
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:heading
   xhv_help:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "help refers to a resource offering\u240A      help."
     name: xhv_help
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:help
   xhv_icon:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "icon refers to a resource that\u240A      represents an icon."
     name: xhv_icon
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:icon
   xhv_img:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A container\u240A      for a collection of elements that form an\
       \ image."
     name: xhv_img
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:img
   xhv_index:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "index refers to a resource providing\u240A      an index."
     name: xhv_index
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:index
   xhv_itsRules:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "itsRules indicates that the designated\u240A      resource is an\
       \ [ITS] rule set."
     name: xhv_itsRules
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:itsRules
   xhv_last:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "last refers to the last resource in a\u240A      collection of resources."
     name: xhv_last
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:last
   xhv_license:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "license refers to a resource that\u240A      defines the associated\
       \ license."
     name: xhv_license
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:license
   xhv_link:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An interactive\u240A      reference to an internal or external resource\
       \ that, when activated, causes\u240A      the user agent to navigate to that\
       \ resource. Also see button."
     name: xhv_link
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:link
   xhv_list:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A group of\u240A      non-interactive list items. Also see listbox."
     name: xhv_list
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:list
   xhv_listbox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A widget\u240A      that allows the user to select one or more items\
       \ from a list of choices.\u240A      Also see combobox and list."
     name: xhv_listbox
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:listbox
   xhv_listitem:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A single\u240A      item in a list or directory."
     name: xhv_listitem
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:listitem
   xhv_log:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A type of\u240A      live region where new information is added\
       \ in meaningful order and old\u240A      information may disappear. Also see\
       \ marquee."
     name: xhv_log
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:log
   xhv_main:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "acts as the\u240A      main content of the document."
     name: xhv_main
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:main
   xhv_marquee:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A type\u240A      of live region where non-essential information\
       \ changes frequently. Also\u240A      see log."
     name: xhv_marquee
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:marquee
   xhv_math:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "Content that\u240A      represents a mathematical expression."
     name: xhv_math
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:math
   xhv_menu:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A type of\u240A      widget that offers a list of choices to the\
       \ user."
     name: xhv_menu
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:menu
   xhv_menubar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A presentation\u240A      of menu that usually remains visible and\
       \ is usually presented horizontally."
     name: xhv_menubar
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:menubar
   xhv_menuitem:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An option\u240A      in a group of choices contained by a menu or\
       \ menubar."
     name: xhv_menuitem
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:menuitem
   xhv_menuitemcheckbox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A\u240A      checkable menuitem that has three possible values:\
       \ true, false, or mixed."
     name: xhv_menuitemcheckbox
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:menuitemcheckbox
   xhv_menuitemradio:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A\u240A      checkable menuitem in a group of menuitemradio roles,\
       \ only one of which\u240A      can be checked at a time."
     name: xhv_menuitemradio
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:menuitemradio
   xhv_meta:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "meta refers to a resource that\u240A      provides metadata."
     name: xhv_meta
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:meta
   xhv_navigation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "indicates a collection of items suitable for\u240A      navigating\
       \ the document or related documents."
     name: xhv_navigation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:navigation
   xhv_next:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "next refers to the next resource\u240A      (after the current one)\
       \ in an ordered collection of resources."
     name: xhv_next
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:next
   xhv_note:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "indicates\u240A      the content is parenthetic or ancillary to\
       \ the main content of the\u240A      resource."
     name: xhv_note
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:note
   xhv_option:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A selectable\u240A      item in a select list."
     name: xhv_option
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:option
   xhv_p3pv1:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "p3pv1 refers to a P3P Policy Reference\u240A      File [P3P]."
     name: xhv_p3pv1
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:p3pv1
   xhv_presentation:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An\u240A      element whose implicit native role semantics will\
       \ not be mapped to the\u240A      accessibility API."
     name: xhv_presentation
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:presentation
   xhv_prev:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "prev refers to a previous resource\u240A      (before the current\
       \ one) in an ordered collection of resources."
     name: xhv_prev
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:prev
   xhv_progressbar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An\u240A      element that displays the progress status for tasks\
       \ that take a long time."
     name: xhv_progressbar
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:progressbar
   xhv_radio:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A checkable\u240A      input in a group of radio roles, only one\
       \ of which can be checked at a\u240A      time."
     name: xhv_radio
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:radio
   xhv_radiogroup:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A group\u240A      of radio buttons."
     name: xhv_radiogroup
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:radiogroup
   xhv_region:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A large\u240A      perceivable section of a web page or document,\
       \ that the author feels is\u240A      important enough to be included in a page\
       \ summary or table of contents,\u240A      for example, an area of the page\
       \ containing live sporting event statistics."
     name: xhv_region
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:region
   xhv_role:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "role indicates the purpose of the\u240A      resource. See the XHTML\
       \ Role\u240A      Vocabulary for roles in this vocabulary space, and XHTMLROLE\
       \ for information on extending the\u240A      collection of roles."
     name: xhv_role
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:role
   xhv_row:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A row of cells\u240A      in a grid."
     name: xhv_row
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:row
   xhv_rowgroup:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A group\u240A      containing one or more row elements in a grid."
     name: xhv_rowgroup
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:rowgroup
   xhv_rowheader:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A cell\u240A      containing header information for a row in a grid."
     name: xhv_rowheader
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:rowheader
   xhv_scrollbar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A graphical\u240A      object that controls the scrolling of content\
       \ within a viewing area, regardless\u240A      of whether the content is fully\
       \ displayed within the viewing area."
     name: xhv_scrollbar
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:scrollbar
   xhv_search:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "indicates\u240A      that the section provides a search facility."
     name: xhv_search
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:search
   xhv_section:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "section refers to a resource serving\u240A      as a section in\
       \ a collection."
     name: xhv_section
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:section
   xhv_separator:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A divider\u240A      that separates and distinguishes sections of\
       \ content or groups of menuitems."
     name: xhv_separator
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:separator
   xhv_slider:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A user\u240A      input where the user selects a value from within\
       \ a given range."
     name: xhv_slider
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:slider
   xhv_spinbutton:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A form\u240A      of range that expects a user to select from amongst\
       \ discrete choices."
     name: xhv_spinbutton
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:spinbutton
   xhv_start:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "start refers to the first resource in\u240A      a collection of\
       \ resources."
     name: xhv_start
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:start
   xhv_status:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A container\u240A      whose content is advisory information for\
       \ the user but is not important\u240A      enough to justify an alert. Also\
       \ see alert."
     name: xhv_status
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:status
   xhv_stylesheet:
@@ -683,107 +683,106 @@ slots:
     range: uri
     slot_uri: xhv:stylesheet
   xhv_subsection:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "subsection refers to a resource\u240A      serving as a subsection\
       \ in a collection."
     name: xhv_subsection
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:subsection
   xhv_tab:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A grouping\u240A      label providing a mechanism for selecting\
       \ the tab content that is to be\u240A      rendered to the user."
     name: xhv_tab
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:tab
   xhv_tablist:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A list\u240A      of tab elements, which are references to tabpanel\
       \ elements."
     name: xhv_tablist
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:tablist
   xhv_tabpanel:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A container\u240A      for the resources associated with a tab,\
       \ where each tab is contained in\u240A      a tablist."
     name: xhv_tabpanel
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:tabpanel
   xhv_textbox:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "Input\u240A      that allows free-form text as its value."
     name: xhv_textbox
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:textbox
   xhv_timer:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A type of\u240A      live region containing a numerical counter\
       \ which indicates an amount of\u240A      elapsed time from a start point, or\
       \ the time remaining until an end point."
     name: xhv_timer
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:timer
   xhv_toolbar:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A collection\u240A      of commonly used function buttons represented\
       \ in compact visual form."
     name: xhv_toolbar
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:toolbar
   xhv_tooltip:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A contextual\u240A      popup that displays a description for an\
       \ element."
     name: xhv_tooltip
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:tooltip
   xhv_top:
-    comments:
-    - No occurrences of this slot in the graph.
     description: top is a synonym for start.
     name: xhv_top
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:top
   xhv_tree:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A type of\u240A      list that may contain sub-level nested groups\
       \ that can be collapsed and\u240A      expanded."
     name: xhv_tree
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:tree
   xhv_treegrid:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "A grid\u240A      whose rows can be expanded and collapsed in the\
       \ same manner as for a tree."
     name: xhv_treegrid
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:treegrid
   xhv_treeitem:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "An option\u240A      item of a tree. This is an element within a\
       \ tree that may be expanded or\u240A      collapsed if it contains a sub-level\
       \ group of treeitems."
     name: xhv_treeitem
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:treeitem
   xhv_up:
-    comments:
-    - No occurrences of this slot in the graph.
     description: "up refers to a resource \"above\" in a\u240A      hierarchically\
       \ structured set."
     name: xhv_up
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: xhv:up
-title: No schema name specified

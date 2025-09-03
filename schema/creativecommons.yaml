@@ -1,0 +1,400 @@
+annotations:
+  counts:
+    tag: counts
+    value:
+      classes:
+        tag: classes
+        value:
+          creativecommons:Permission:
+            tag: creativecommons:Permission
+            value: 4
+          creativecommons:Prohibition:
+            tag: creativecommons:Prohibition
+            value: 2
+          creativecommons:Requirement:
+            tag: creativecommons:Requirement
+            value: 6
+      pairs:
+        tag: pairs
+        value:
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  creativecommons:Permission:
+                    tag: creativecommons:Permission
+                    value: 3
+                  creativecommons:Prohibition:
+                    tag: creativecommons:Prohibition
+                    value: 1
+                  creativecommons:Requirement:
+                    tag: creativecommons:Requirement
+                    value: 4
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              creativecommons:Permission:
+                tag: creativecommons:Permission
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              creativecommons:Prohibition:
+                tag: creativecommons:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              creativecommons:Requirement:
+                tag: creativecommons:Requirement
+                value:
+                  string:
+                    tag: string
+                    value: 6
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              creativecommons:Permission:
+                tag: creativecommons:Permission
+                value:
+                  string:
+                    tag: string
+                    value: 4
+              creativecommons:Prohibition:
+                tag: creativecommons:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value: 2
+              creativecommons:Requirement:
+                tag: creativecommons:Requirement
+                value:
+                  string:
+                    tag: string
+                    value: 6
+      slots:
+        tag: slots
+        value:
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value: 8
+          rdfs:comment:
+            tag: rdfs:comment
+            value: 12
+          rdfs:label:
+            tag: rdfs:label
+            value: 12
+  examples:
+    tag: examples
+    value:
+      classes:
+        tag: classes
+        value:
+          creativecommons:Permission:
+            tag: creativecommons:Permission
+            value: creativecommons:DerivativeWorks
+          creativecommons:Prohibition:
+            tag: creativecommons:Prohibition
+            value: creativecommons:HighIncomeNationUse
+          creativecommons:Requirement:
+            tag: creativecommons:Requirement
+            value: creativecommons:ShareAlike
+      pairs:
+        tag: pairs
+        value:
+          owl:equivalentClass:
+            tag: owl:equivalentClass
+            value:
+              untyped:
+                tag: untyped
+                value:
+                  creativecommons:Permission:
+                    tag: creativecommons:Permission
+                    value:
+                      object:
+                        tag: object
+                        value: creativecommons:Reproduction
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: cc:Reproduction
+                  creativecommons:Prohibition:
+                    tag: creativecommons:Prohibition
+                    value:
+                      object:
+                        tag: object
+                        value: creativecommons:CommercialUse
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: cc:CommercialUse
+                  creativecommons:Requirement:
+                    tag: creativecommons:Requirement
+                    value:
+                      object:
+                        tag: object
+                        value: creativecommons:Notice
+                      predicate:
+                        tag: predicate
+                        value: owl:equivalentClass
+                      subject:
+                        tag: subject
+                        value: cc:Notice
+          rdfs:comment:
+            tag: rdfs:comment
+            value:
+              creativecommons:Permission:
+                tag: creativecommons:Permission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: distribution, public display, and publicly performance
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: creativecommons:Distribution
+              creativecommons:Prohibition:
+                tag: creativecommons:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: exercising rights for commercial purposes
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: creativecommons:CommercialUse
+              creativecommons:Requirement:
+                tag: creativecommons:Requirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: credit be given to copyright holder and/or author
+                      predicate:
+                        tag: predicate
+                        value: rdfs:comment
+                      subject:
+                        tag: subject
+                        value: creativecommons:Attribution
+          rdfs:label:
+            tag: rdfs:label
+            value:
+              creativecommons:Permission:
+                tag: creativecommons:Permission
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Distribution
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: creativecommons:Distribution
+              creativecommons:Prohibition:
+                tag: creativecommons:Prohibition
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Commercial Use
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: creativecommons:CommercialUse
+              creativecommons:Requirement:
+                tag: creativecommons:Requirement
+                value:
+                  string:
+                    tag: string
+                    value:
+                      object:
+                        tag: object
+                        value: Attribution
+                      predicate:
+                        tag: predicate
+                        value: rdfs:label
+                      subject:
+                        tag: subject
+                        value: creativecommons:Attribution
+classes:
+  creativecommons_Jurisdiction:
+    class_uri: creativecommons:Jurisdiction
+    description: the legal jurisdiction of a license
+    name: creativecommons_Jurisdiction
+    title: Jurisdiction
+  creativecommons_License:
+    class_uri: creativecommons:License
+    description: a set of requests/permissions to users of a Work, e.g. a copyright
+      license, the public domain, information for distributors
+    is_a: dct_LicenseDocument
+    name: creativecommons_License
+    title: License
+  creativecommons_Permission:
+    class_uri: creativecommons:Permission
+    description: an action that may or may not be allowed or desired
+    name: creativecommons_Permission
+    slots:
+    - rdfs_comment
+    - rdfs_label
+    title: Permission
+  creativecommons_Prohibition:
+    class_uri: creativecommons:Prohibition
+    description: something you may be asked not to do
+    name: creativecommons_Prohibition
+    slots:
+    - rdfs_comment
+    - rdfs_label
+    title: Prohibition
+  creativecommons_Requirement:
+    class_uri: creativecommons:Requirement
+    description: an action that may or may not be requested of you
+    name: creativecommons_Requirement
+    slots:
+    - rdfs_comment
+    - rdfs_label
+    title: Requirement
+  creativecommons_Work:
+    class_uri: creativecommons:Work
+    description: a potentially copyrightable work
+    name: creativecommons_Work
+    title: Work
+  http___www.w3.org_2001_XMLSchema-datatypes#date:
+    class_uri: http://www.w3.org/2001/XMLSchema-datatypes#date
+    name: http___www.w3.org_2001_XMLSchema-datatypes#date
+    title: No class (entity type) name specified -- this class is noted as being in
+      the domain or range of a slot in this graph but has not itself been defined.
+created_on: '2025-09-03T12:47:54.740340'
+default_prefix: okns
+id: okns:creativecommons
+imports:
+- okns:owl-rdf-rdfs
+- okns:dc
+- linkml:types
+last_updated_on: '2025-09-03T12:47:54.740340'
+name: creativecommons
+prefixes:
+  cc: http://web.resource.org/cc/
+  creativecommons: http://creativecommons.org/ns#
+  dct: http://purl.org/dc/terms/
+  linkml: https://w3id.org/linkml/
+  okn: https://purl.org/okn/
+  okns: https://purl.org/okn/schema/
+  owl: http://www.w3.org/2002/07/owl#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  xhv: http://www.w3.org/1999/xhtml/vocab#
+slots:
+  creativecommons_attributionName:
+    domain: creativecommons_Work
+    name: creativecommons_attributionName
+    notes:
+    - No occurrences of this slot in the graph.
+    range: rdfs_Literal
+    slot_uri: creativecommons:attributionName
+  creativecommons_attributionURL:
+    domain: creativecommons_Work
+    name: creativecommons_attributionURL
+    notes:
+    - No occurrences of this slot in the graph.
+    range: rdfs_Resource
+    slot_uri: creativecommons:attributionURL
+  creativecommons_deprecatedOn:
+    domain: creativecommons_License
+    name: creativecommons_deprecatedOn
+    notes:
+    - No occurrences of this slot in the graph.
+    range: http___www.w3.org_2001_XMLSchema-datatypes#date
+    slot_uri: creativecommons:deprecatedOn
+    title: deprecated on
+  creativecommons_jurisdiction:
+    domain: creativecommons_License
+    name: creativecommons_jurisdiction
+    notes:
+    - No occurrences of this slot in the graph.
+    range: creativecommons_Jurisdiction
+    slot_uri: creativecommons:jurisdiction
+    title: jurisdiction
+  creativecommons_legalcode:
+    domain: creativecommons_License
+    name: creativecommons_legalcode
+    notes:
+    - No occurrences of this slot in the graph.
+    range: rdfs_Resource
+    slot_uri: creativecommons:legalcode
+  creativecommons_license:
+    domain: creativecommons_Work
+    exact_mappings:
+    - http://www.w3.org/1999/xhtml/vocab#license
+    name: creativecommons_license
+    notes:
+    - No occurrences of this slot in the graph.
+    range: creativecommons_License
+    slot_uri: creativecommons:license
+    subproperty_of: dct_license
+    title: has license
+  creativecommons_morePermissions:
+    domain: creativecommons_Work
+    name: creativecommons_morePermissions
+    notes:
+    - No occurrences of this slot in the graph.
+    range: rdfs_Resource
+    slot_uri: creativecommons:morePermissions
+    subproperty_of: dct_relation
+  creativecommons_permits:
+    domain: creativecommons_License
+    name: creativecommons_permits
+    notes:
+    - No occurrences of this slot in the graph.
+    range: creativecommons_Permission
+    slot_uri: creativecommons:permits
+    title: permits
+  creativecommons_prohibits:
+    domain: creativecommons_License
+    name: creativecommons_prohibits
+    notes:
+    - No occurrences of this slot in the graph.
+    range: creativecommons_Prohibition
+    slot_uri: creativecommons:prohibits
+    title: prohibits
+  creativecommons_requires:
+    domain: creativecommons_License
+    name: creativecommons_requires
+    notes:
+    - No occurrences of this slot in the graph.
+    range: creativecommons_Requirement
+    slot_uri: creativecommons:requires
+    title: requires
+  creativecommons_useGuidelines:
+    domain: creativecommons_Work
+    name: creativecommons_useGuidelines
+    notes:
+    - No occurrences of this slot in the graph.
+    range: rdfs_Resource
+    slot_uri: creativecommons:useGuidelines
+    subproperty_of: dct_relation

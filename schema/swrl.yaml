@@ -5,213 +5,27 @@ annotations:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: 40
           swrl:AtomList:
             tag: swrl:AtomList
             value: 1
       pairs:
         tag: pairs
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value: 5
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value: 2
-                  uri:
-                    tag: uri
-                    value: 15
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value: 18
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value: 28
-                  rdf:Property:
-                    tag: rdf:Property
-                    value: 36
-                  uri:
-                    tag: uri
-                    value: 4
+        value: {}
       slots:
         tag: slots
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value: 20
-          owl:cardinality:
-            tag: owl:cardinality
-            value: 18
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value: 2
-          owl:onProperty:
-            tag: owl:onProperty
-            value: 40
+        value: {}
   examples:
     tag: examples
     value:
       classes:
         tag: classes
         value:
-          owl:Restriction:
-            tag: owl:Restriction
-            value: Nfb4254cc3cdf4119b2f068f177af308c
           swrl:AtomList:
             tag: swrl:AtomList
             value: rdf:nil
       pairs:
         tag: pairs
-        value:
-          owl:allValuesFrom:
-            tag: owl:allValuesFrom
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:Class:
-                    tag: owl:Class
-                    value:
-                      object:
-                        tag: object
-                        value: swrl:Builtin
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: Ncac10a9da1784bf5b6cf1c1e53ff28f7
-                  rdfs:Class:
-                    tag: rdfs:Class
-                    value:
-                      object:
-                        tag: object
-                        value: swrl:Builtin
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: Ncac10a9da1784bf5b6cf1c1e53ff28f7
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: owl:Thing
-                      predicate:
-                        tag: predicate
-                        value: owl:allValuesFrom
-                      subject:
-                        tag: subject
-                        value: N79678df76b2049198720c63eef81004f
-          owl:cardinality:
-            tag: owl:cardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:cardinality
-                      subject:
-                        tag: subject
-                        value: N2a949ec52a064410ad12da98ff123833
-          owl:maxCardinality:
-            tag: owl:maxCardinality
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  string:
-                    tag: string
-                    value:
-                      object:
-                        tag: object
-                        value: '1'
-                      predicate:
-                        tag: predicate
-                        value: owl:maxCardinality
-                      subject:
-                        tag: subject
-                        value: Nec71f09e4c7045718eaa04261e4022cf
-          owl:onProperty:
-            tag: owl:onProperty
-            value:
-              owl:Restriction:
-                tag: owl:Restriction
-                value:
-                  owl:ObjectProperty:
-                    tag: owl:ObjectProperty
-                    value:
-                      object:
-                        tag: object
-                        value: swrl:classPredicate
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N2a949ec52a064410ad12da98ff123833
-                  rdf:Property:
-                    tag: rdf:Property
-                    value:
-                      object:
-                        tag: object
-                        value: swrl:classPredicate
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N2a949ec52a064410ad12da98ff123833
-                  uri:
-                    tag: uri
-                    value:
-                      object:
-                        tag: object
-                        value: rdf:rest
-                      predicate:
-                        tag: predicate
-                        value: owl:onProperty
-                      subject:
-                        tag: subject
-                        value: N13317ef7a61c405e93471b8f138d0673
+        value: {}
 classes:
   swrl_Atom:
     class_uri: swrl:Atom
@@ -294,18 +108,16 @@ classes:
 comments:
 - 'description: RDF Schema definition of the RDF Concrete Syntax for the Semantic
   Web Rule Language'
-created_on: '2025-07-24T16:16:21.631787'
+created_on: '2025-09-03T11:24:37.098198'
 default_prefix: okns
 description: OWL definition of the RDF Concrete Syntax for the Semantic Web Rule Language
 id: okns:swrl
 imports:
 - okns:owl-rdf-rdfs
 - okns:extended_types
-- linkml:types
-last_updated_on: '2025-07-24T16:16:21.631787'
+last_updated_on: '2025-09-03T11:24:37.098198'
 name: swrl
 prefixes:
-  linkml: https://w3id.org/linkml/
   okn: https://purl.org/okn/
   okns: https://purl.org/okn/schema/
   owl: http://www.w3.org/2002/07/owl#
@@ -314,71 +126,72 @@ prefixes:
   swrl: http://www.w3.org/2003/11/swrl#
 slots:
   swrl_argument1:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_Atom
     name: swrl_argument1
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Resource
     slot_uri: swrl:argument1
   swrl_argument2:
-    comments:
-    - No occurrences of this slot in the graph.
     description: can be a Literal or Resource
     domain: swrl_Atom
     name: swrl_argument2
+    notes:
+    - No occurrences of this slot in the graph.
     range: Any
     slot_uri: swrl:argument2
   swrl_arguments:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_BuiltinAtom
     name: swrl_arguments
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: swrl:arguments
   swrl_body:
     comments:
     - 'description: rule body (antecedent):  List of Atom'
-    - No occurrences of this slot in the graph.
     description: 'rule body (antecedent):  List of Atom'
     domain: swrl_Imp
     name: swrl_body
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: swrl:body
   swrl_builtin:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_BuiltinAtom
     name: swrl_builtin
+    notes:
+    - No occurrences of this slot in the graph.
     range: swrl_Builtin
     slot_uri: swrl:builtin
   swrl_classPredicate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_ClassAtom
     name: swrl_classPredicate
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdfs_Class
     slot_uri: swrl:classPredicate
   swrl_dataRange:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_DataRangeAtom
     name: swrl_dataRange
+    notes:
+    - No occurrences of this slot in the graph.
     range: owl_DataRange
     slot_uri: swrl:dataRange
   swrl_head:
     comments:
     - 'description: rule head (consequent):  List of Atom'
-    - No occurrences of this slot in the graph.
     description: 'rule head (consequent):  List of Atom'
     domain: swrl_Imp
     name: swrl_head
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_List
     slot_uri: swrl:head
   swrl_propertyPredicate:
-    comments:
-    - No occurrences of this slot in the graph.
     domain: swrl_Atom
     name: swrl_propertyPredicate
+    notes:
+    - No occurrences of this slot in the graph.
     range: rdf_Property
     slot_uri: swrl:propertyPredicate
-title: No schema name specified
