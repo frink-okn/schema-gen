@@ -54,6 +54,7 @@ replacement_prefixes = {
     'xsd2000': Namespace('http://www.w3.org/2000/10/XMLSchema#'), # XML Schema (older version)
     'owl2-xml': Namespace('http://www.w3.org/2006/12/owl2-xml#'), # "used temporarily by the OWL Working Group. This namespace is expected to change."
     'cc': Namespace('http://web.resource.org/cc/'), # CC schema
+    'creativecommons': Namespace('http://creativecommons.org/ns#'), # Creative Commons
     'event': Namespace('http://purl.org/NET/c4dm/event.owl#'), # Event Ontology
     'address': Namespace('http://schemas.talis.com/2005/address/schema#'), # Address Schema
     'gr': Namespace('http://purl.org/goodrelations/v1#'), # GoodRelations
@@ -65,6 +66,7 @@ replacement_prefixes = {
     'ao': Namespace('http://purl.org/ontology/ao/core#'), # Association Ontology
     'sim': Namespace('http://purl.org/ontology/similarity/'), # Similarity Ontology
     'rev': Namespace('http://purl.org/stuff/rev#'), # RDF Review Vocabulary
+    'pav': Namespace('http://purl.org/pav/'), # Provenance, Authoring and Versioning
     'kwgos': Namespace('https://stko-kwg.geog.ucsb.edu/lod/ontology'), # KnowWhereGraph ontology
     'kwgo': Namespace('http://stko-kwg.geog.ucsb.edu/lod/ontology/'), # KnowWhereGraph ontology
     'kwgr': Namespace('http://stko-kwg.geog.ucsb.edu/lod/resource/'), # KnowWhereGraph resource
@@ -90,8 +92,17 @@ replacement_prefixes = {
     'semsci': Namespace('http://semanticscience.org/resource/SIO_'), # Semanticscience Integrated Ontology
     'niehs': Namespace('https://ice.ntp.niehs.nih.gov/property/'), # Integrated Chemical Environment
     'umls': Namespace('https://identifiers.org/umls:'), # Unified Medical Language System
-    'hyf': Namespace('https://www.opengis.net/def/schema/hy_features/hyf'), # OGC ontology
-    'sf': Namespace('http://www.opengis.net/ont/sf'), # OGC ontology
+    'hyf': Namespace('https://www.opengis.net/def/schema/hy_features/hyf/'), # OGC ontology
+    'sc': Namespace('http://shapechange.net/resources/ont/base#'), # ShapeChange
+    'seegrid-basic': Namespace('http://def.seegrid.csiro.au/isotc211/iso19103/2005/basic#'), # SEEGrid
+    'seegrid-ci': Namespace('http://def.seegrid.csiro.au/isotc211/iso19115/2003/citation#'), # SEEGrid
+    'seegrid-role': Namespace('http://def.seegrid.csiro.au/isotc211/iso19115/2003/code/Role/'), # SEEGrid
+    'spin': Namespace('http://spinrdf.org/spin#'), # SPARQL Inferencing Notation
+    'spin-spl': Namespace('http://spinrdf.org/spl#'), # SPARQL Inferencing Notation
+    'spin-sp': Namespace('http://spinrdf.org/sp#'), # SPARQL Inferencing Notation
+    'spin-arg': Namespace('http://spinrdf.org/arg#'), # SPARQL Inferencing Notation
+    'spin-spif': Namespace('http://spinrdf.org/spif#'), # SPARQL Inferencing Notation
+    'sf': Namespace('http://www.opengis.net/ont/sf#'), # OGC ontology
     'gwml22': Namespace('http://www.opengis.net/gwml-main/2.2/'), # OGC ontology
     'hyfo': Namespace('https://www.opengis.net/def/hy_features/ontology/hyf/'), # OGC ontology
     'hyfa': Namespace('https://www.opengis.net/def/appschema/hy_features/hyf/'), # OGC ontology
@@ -131,6 +142,7 @@ replacement_prefixes = {
     'stad': Namespace('http://purl.org/spatialai/stad/v2/core/'), # from SAWGRAPH
     'fio': Namespace('http://w3id.org/fio/v1/fio#'), # from SAWGRAPH
     'fio-epa-frs': Namespace('http://w3id.org/fio/v1/epa-frs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
+    'fio-epa-frs-data': Namespace('http://w3id.org/fio/v1/epa-frs-data#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
     'naics': Namespace('http://w3id.org/fio/v1/naics#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
     'il_isgs': Namespace('http://sawgraph.spatialai.org/v1/il-isgs#'), # from SAWGRAPH; should be substituted with a working IRI prefix.
     'il_isgs_data': Namespace('http://sawgraph.spatialai.org/v1/il-isgs-data#'), # from SAWGRAPH: should be substituted with a working IRI prefix.

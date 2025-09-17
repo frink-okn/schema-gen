@@ -191,12 +191,36 @@ external_ontologies_dict = {
         'from_path': 'okns:gnis-ld-usgs'
     },
     'gnis-ld-gnis': {
-        'read_path': 'https://purl.org/okn/schema/gnis-ld-usgs',
+        'read_path': 'https://purl.org/okn/schema/gnis-ld-gnis',
         'from_path': 'okns:gnis-ld-gnis'
+    },
+    'sf': {
+        'read_path': 'https://purl.org/okn/schema/sf',
+        'from_path': 'okns:sf'
     },
     'kwg': {
         'read_path': 'https://purl.org/okn/schema/kwg',
         'from_path': 'okns:kwg'
+    },
+    'creativecommons': {
+        'read_path': 'https://purl.org/okn/schema/creativecommons',
+        'from_path': 'okns:creativecommons'
+    },
+    'spinrdf': {
+        'read_path': 'https://purl.org/okn/schema/spinrdf',
+        'from_path': 'okns:spinrdf'
+    },
+    'seegrid-iso19115': {
+        'read_path': 'https://purl.org/okn/schema/seegrid-iso19115',
+        'from_path': 'okns:seegrid-iso19115'
+    },
+    'sc': {
+        'read_path': 'https://purl.org/okn/schema/sc',
+        'from_path': 'okns:sc'
+    },
+    'hyf': {
+        'read_path': 'https://purl.org/okn/schema/hyf',
+        'from_path': 'okns:hyf'
     },
     # iof
     # bfo

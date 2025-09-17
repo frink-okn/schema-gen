@@ -1,8 +1,6 @@
-import datetime
 from collections import defaultdict
 
 def linkml_schema(graph_name, graph_title):
-    update_time = f"{datetime.datetime.now().isoformat()}"
     output_schema = {
         "id": 'okns:' + graph_name,
         # version
@@ -48,7 +46,7 @@ def linkml_schema(graph_name, graph_title):
         },
         # description
         # alt_descriptions
-        "title": graph_title or "No schema name specified",
+        "title": graph_title or "",
         # deprecated
         # todos
         # notes
@@ -72,8 +70,8 @@ def linkml_schema(graph_name, graph_title):
         # broad_mappings
         # created_by
         # contributors
-        "created_on": update_time,
-        "last_updated_on": update_time,
+        # created_on
+        # last_updated_on
         # modified_by
         # status
         # rank
@@ -192,7 +190,7 @@ def linkml_class():
         # deprecated
         # todos
         'notes': [],
-        # comments
+        'comments': defaultdict(set),
         # examples
         # in_subset
         # from_schema
@@ -313,7 +311,7 @@ def linkml_slot():
         # deprecated
         # todos
         # notes
-        'comments': [],
+        'comments': defaultdict(set),
         # examples
         # in_subset
         # from_schema

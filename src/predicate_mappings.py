@@ -15,6 +15,7 @@ SLOT_TYPES = {
     OWL.DatatypeProperty: {},
     OWL.AnnotationProperty: {},
     OWL.ObjectProperty: {},
+    OWL.OntologyProperty: {},
     OWL.DeprecatedProperty: {'deprecated': 'This property is noted as being deprecated, without an explicit reason given.'},
     OWL.SymmetricProperty: {'symmetric': True},
     OWL.AsymmetricProperty: {'asymmetric': True},
@@ -119,6 +120,18 @@ datatype_to_type = {
     XSD.unsignedShort: ['uint16', extended_types_url, linkml_prefixes],
     XSD.unsignedInt: ['uint32', extended_types_url, linkml_prefixes],
     XSD.unsignedLong: ['uint64', extended_types_url, linkml_prefixes],
+    XSD.positiveInteger: ['positiveinteger', extended_types_url, linkml_prefixes],
+    XSD.nonPositiveInteger: ['nonpositiveinteger', extended_types_url, linkml_prefixes],
+    XSD.negativeInteger: ['negativeinteger', extended_types_url, linkml_prefixes],
+    XSD.token: ['token', extended_types_url, linkml_prefixes],
+    XSD.normalizedString: ['normalizedstring', extended_types_url, linkml_prefixes],
+    XSD.language: ['language', extended_types_url, linkml_prefixes],
+    XSD.hexBinary: ['hexbinary', extended_types_url, linkml_prefixes],
+    XSD.base64Binary: ['base64binary', extended_types_url, linkml_prefixes],
+    XSD.Name: ['name', extended_types_url, linkml_prefixes],
+    XSD.NMTOKEN: ['nmtoken', extended_types_url, linkml_prefixes],
+    OWL.rational: ['rational', extended_types_url, linkml_prefixes],
+    OWL.real: ['real', extended_types_url, linkml_prefixes],
     # float16, float32, float64
 }
 linkml_type_names = [v[0] for v in datatype_to_type.values()]
