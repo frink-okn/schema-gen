@@ -12,6 +12,7 @@ from functools import lru_cache
 from graphlib import TopologicalSorter, CycleError
 from itertools import chain
 from sys import argv
+from urllib.parse import urlparse
 
 import frontmatter
 import linkml_runtime
@@ -205,6 +206,8 @@ class GraphCharacterizer:
         self.entities_without_type = set()
         self.entities_without_type_count = 0
         self.multiple_typed_object_counts = defaultdict(int)
+        self.type_uris_found = defaultdict(set)
+        self.object_uris_found = defaultdict(set)
 
     def add_str_to_multiple(self, obj_in, pred, string_to_store):
         current_slot, current_datatype = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
@@ -613,6 +616,10 @@ class GraphCharacterizer:
             subj_uri, subj_key = self.produce_curie_key(subj)
             if subj_uri in URIs_to_ontologies:
                 continue
+            parse_result = None
+            if isinstance(subj, URIRef):
+                parsed_uri = urlparse(subj)
+                parse_result = (parsed_uri.scheme, parsed_uri.netloc)
 
             subject_types_initial = list(set([(subject_type, *(self.produce_curie_key(subject_type))) for subject_type in self.g.objects(subject=subj, predicate=RDF.type)]))
             subject_types = set()
@@ -646,6 +653,8 @@ class GraphCharacterizer:
                 self.schema['annotations']['counts']['classes'][subject_type_uri] += 1
                 if subject_type_key not in self.schema['annotations']['examples']['classes']:
                     self.schema['annotations']['examples']['classes'][subject_type_uri] = str(subj_uri)
+                if parse_result:
+                    self.type_uris_found[subject_type_key].add(parse_result)
 
             for pred, obj in self.g.predicate_objects(subject=subj):
                 if pred == RDF.type:
@@ -664,6 +673,16 @@ class GraphCharacterizer:
                 if re.match(str(RDF) + r'_\d+', str(pred)):
                     # TODO: handle these predicates
                     continue
+
+                parse_result = None
+                if isinstance(obj, URIRef):
+                    parsed_uri = urlparse(obj)
+                    parse_result = (parsed_uri.scheme, parsed_uri.netloc)
+                    if len(subject_types) > 0:
+                        for (subject_type_uri, subject_type_key) in subject_type_uris_keys:
+                            self.type_uris_found[(subject_type_key, pred_key)].add(parse_result)
+                    else:
+                        self.type_uris_found[(None, pred_key)].add(parse_result)
 
                 try:
                     target_entity, target_ontology = self.check_for_import(pred_uri)
