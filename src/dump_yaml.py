@@ -553,9 +553,8 @@ class GraphCharacterizer:
                     self.schema['imports'].add(extended_types_url)
             for set_type_curie_key in list(slot_dict['union_of']):
                 self.check_for_missing_domain_range_type(set_type_curie_key)
-            if len(slot_dict['any_of']) == 0:
-                if slot_dict['range'] == 'Any':
-                    self.schema['imports'].add(extended_types_url)
+            if slot_dict['range'] == 'Any':
+                self.schema['imports'].add(extended_types_url)
             for set_type_curie_key in list(slot_dict['any_of']):
                 self.check_for_missing_domain_range_type(set_type_curie_key)
 
