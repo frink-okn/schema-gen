@@ -27,6 +27,7 @@ from rdflib_hdt import HDTStore
 
 from common_functions import *
 from external_ontologies import external_ontologies_dict
+from formatter_url_parsing import *
 from linkml_structures import linkml_class, linkml_schema, linkml_slot
 from predicate_mappings import *
 
@@ -43,6 +44,7 @@ URIs_to_ontologies = { # slots from extended_types
 }
 URI_entity_types = {}
 subclass_tree = defaultdict(set)
+formatter_urls = None
 
 def load_external_ontologies(source=external_ontologies_dict, external_ontology_path=None):
     for name, external_ontology in source.items():
@@ -177,7 +179,7 @@ class GraphCharacterizer:
         self.g = get_graph(args.graph_to_read)
         self.list_untyped_entities = args.list_untyped_entities
 
-        if(args.okn_registry_id):
+        if args.okn_registry_id:
             target_url = f'https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs/{args.okn_registry_id}.md'
             response = requests.get(target_url)
             post = frontmatter.loads(response.content)
@@ -208,6 +210,7 @@ class GraphCharacterizer:
         self.multiple_typed_object_counts = defaultdict(int)
         self.type_uris_found = defaultdict(set)
         self.object_uris_found = defaultdict(set)
+        self.formatter_urls_found = defaultdict(int)
 
     def add_str_to_multiple(self, obj_in, pred, string_to_store):
         current_slot, current_datatype = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
@@ -620,6 +623,10 @@ class GraphCharacterizer:
             if isinstance(subj, URIRef):
                 parsed_uri = urlparse(subj)
                 parse_result = (parsed_uri.scheme, parsed_uri.netloc)
+                if parsed_uri.netloc in formatter_urls:
+                    for prop, formatter, formatter_type in formatter_urls[parsed_uri.netloc]:
+                        if formatter.match(subj):
+                            self.formatter_urls_found[(prop, formatter)] += 1
 
             subject_types_initial = list(set([(subject_type, *(self.produce_curie_key(subject_type))) for subject_type in self.g.objects(subject=subj, predicate=RDF.type)]))
             subject_types = set()
@@ -680,9 +687,9 @@ class GraphCharacterizer:
                     parse_result = (parsed_uri.scheme, parsed_uri.netloc)
                     if len(subject_types) > 0:
                         for (subject_type_uri, subject_type_key) in subject_type_uris_keys:
-                            self.type_uris_found[(subject_type_key, pred_key)].add(parse_result)
+                            self.object_uris_found[(subject_type_key, pred_key)].add(parse_result)
                     else:
-                        self.type_uris_found[(None, pred_key)].add(parse_result)
+                        self.object_uris_found[(None, pred_key)].add(parse_result)
 
                 try:
                     target_entity, target_ontology = self.check_for_import(pred_uri)
@@ -813,6 +820,7 @@ if __name__ == '__main__':
     parser.add_argument('graph_name')
     parser.add_argument('graph_to_read')
     parser.add_argument('graph_title', nargs='?', default=None)
+    parser.add_argument('--formatter-url-list', help='Location of TSV results from running a query (https://w.wiki/Ff7j) of different formatter URLs and their origins.', default='.')
     parser.add_argument('--list-untyped-entities', action='store_true', help='Provides a list of untyped subject entities in the graph.')
     parser.add_argument('--generate-base-schemas', type=int, help='Of the ontologies listed in external_ontologies.py, which (1-indexed) to generate while leaving the others above it intact.')
     parser.add_argument('--okn-registry-id', help='Name of the graph in the OKN registry.')
@@ -825,6 +833,7 @@ if __name__ == '__main__':
         source = dict(previous_entries)
     else:
         source = external_ontologies_dict
+    formatter_urls = get_formatter_urls(args.formatter_url_list)
     load_external_ontologies(source, args.external_ontology_path)
 
     GraphCharacterizer(args).characterize()
