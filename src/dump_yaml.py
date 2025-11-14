@@ -179,29 +179,37 @@ class GraphCharacterizer:
         self.g = get_graph(args.graph_to_read)
         self.list_untyped_entities = args.list_untyped_entities
 
-        if args.okn_registry_id:
-            target_url = f'https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs/{args.okn_registry_id}.md'
+        if(args.okn_registry_id):
+            target_url = f'https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs.yaml'
             response = requests.get(target_url)
-            post = frontmatter.loads(response.content)
-            self.graph_name = post['shortname']
-            self.schema = linkml_schema(self.graph_name, post['title'])
-            self.schema['description'] = post['description']
-            self.schema['see_also'] = []
-            for metadata_key in ['stats', 'funding', 'sparql', 'tpf']:
-                if metadata_key in post:
-                    self.schema['see_also'].append(post[metadata_key])
-            current_url = None
-            if post['contact']['email']:
-                current_url = 'mailto:' + post['contact']['email']
-            elif post['contact']['github']:
-                current_url = post['contact']['github']
-            if current_url:
-                if 'contributors' in self.schema:
-                    self.schema['contributors'].append(current_url)
-                else:
-                    self.schema['contributors'] = [current_url]
-        else:
+            kgs = yaml.safe_load(response.text)
+            post = {}
+            logging.info(f"Getting info for {args.okn_registry_id}")
             self.graph_name = args.graph_name
+            self.schema = linkml_schema(self.graph_name, post.get('title') or args.graph_title)
+            for kg in kgs['kgs']:
+                if kg['shortname'] == args.okn_registry_id:
+                    post = kg
+            if post:
+                logging.info(f"found data {post}")
+                self.graph_name = post['shortname']
+
+                self.schema['description'] = post['description']
+                self.schema['see_also'] = []
+                for metadata_key in ['stats', 'funding', 'sparql', 'tpf']:
+                    if metadata_key in post:
+                        self.schema['see_also'].append(post[metadata_key])
+                current_url = None
+                if post['contact']['email']:
+                    current_url = 'mailto:' + post['contact']['email']
+                elif post['contact']['github']:
+                    current_url = post['contact']['github']
+                if current_url:
+                    if 'contributors' in self.schema:
+                        self.schema['contributors'].append(current_url)
+                    else:
+                        self.schema['contributors'] = [current_url]
+        else:
             self.schema = linkml_schema(self.graph_name, args.graph_title)
 
         self.restrictions = defaultdict(dict)
@@ -261,7 +269,7 @@ class GraphCharacterizer:
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     self.add_str_to_multiple(self.schema, pred, string_to_store)
                 elif pred in SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY:
-                    self.add_str_to_single(self.schema, pred, string_to_store, SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY)
+                    add_str_to_single(self.schema, pred, string_to_store, SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY)
 
     def add_class(self, subj_key, subj_uri=None, subj_title=None, extra_info=None, from_schema=None):
         """ Adds a new class to the schema. """
@@ -819,7 +827,7 @@ if __name__ == '__main__':
     parser.add_argument('graph_name')
     parser.add_argument('graph_to_read')
     parser.add_argument('graph_title', nargs='?', default=None)
-    parser.add_argument('--formatter-url-list', help='Location of TSV results from running a query (https://w.wiki/Ff7j) of different formatter URLs and their origins.', default='.')
+    parser.add_argument('--formatter-url-list', help='Location of TSV results from running a query (https://w.wiki/Ff7j) of different formatter URLs and their origins.', default='/code/src/formatterurls.tsv')
     parser.add_argument('--list-untyped-entities', action='store_true', help='Provides a list of untyped subject entities in the graph.')
     parser.add_argument('--generate-base-schemas', type=int, help='Of the ontologies listed in external_ontologies.py, which (1-indexed) to generate while leaving the others above it intact.')
     parser.add_argument('--okn-registry-id', help='Name of the graph in the OKN registry.')

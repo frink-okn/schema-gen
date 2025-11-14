@@ -22,7 +22,7 @@ def get_formatter_urls(filepath='query.tsv'):
 
             formatter_mappings[parsed_iri.netloc].add((prop, formatter_regex, formatter_type))
             if prefix != '':
-                identifiers_org_formatter = re.escape('https://identifiers.org/') + prefix + ':(.*)'
+                identifiers_org_formatter = re.compile(re.escape('https://identifiers.org/') + prefix + ':(.*)')
                 formatter_mappings['identifiers.org'].add((prop, identifiers_org_formatter, 'http://www.wikidata.org/entity/P4793'))
 
     return formatter_mappings

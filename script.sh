@@ -62,9 +62,9 @@ cd ..
 
 # Generate schema
 if [ -z "$CUSTOM_GRAPH_TITLE" ]; then
-    python3 src/dump_yaml.py "$GRAPH_NAME" "$GRAPH_DATA_PATH"
+    python3 src/dump_yaml.py "$GRAPH_NAME" "$GRAPH_DATA_PATH" --okn-registry-id CUSTOM_GRAPH_TITLE
 else
-    python3 src/dump_yaml.py "$GRAPH_NAME" "$GRAPH_DATA_PATH" "$CUSTOM_GRAPH_TITLE"
+    python3 src/dump_yaml.py "$GRAPH_NAME" "$GRAPH_DATA_PATH" "$CUSTOM_GRAPH_TITLE" --okn-registry-id CUSTOM_GRAPH_TITLE
 fi
 
 # Generate documentation
