@@ -114,7 +114,7 @@ def get_graph(graph_to_read):
                     except rdflib.exceptions.ParserError:
                         continue
                 if not current_file_read:
-                    raise RuntimeError('Unable to read ' + current_file_path)                
+                    raise RuntimeError('Unable to read ' + current_file_path)
             elif current_file_path.endswith('.hdt'):
                 g = rdflib.Graph(store=HDTStore(current_file_path))
                 break
@@ -127,7 +127,8 @@ def add_str_to_single(obj_in, pred, string_to_store, source_mapping=None):
     else:
         current_slot, current_datatype = source_mapping[pred]
     if value_is_valid(string_to_store, current_datatype, pred, obj_in['name']):
-        if current_slot not in obj_in or (current_slot in obj_in and obj_in[current_slot].endswith("but has not itself been defined.")): # TODO: is this phrase likely to occur at the end of strings in actual schemas?
+        if current_slot not in obj_in or (current_slot in obj_in and obj_in[current_slot].endswith(
+                "but has not itself been defined.")):  # TODO: is this phrase likely to occur at the end of strings in actual schemas?
             obj_in[current_slot] = string_to_store.strip()
         else:
             if "comments" not in obj_in:
@@ -166,7 +167,7 @@ def find_shortest_path_helper(start, end, path=[]):
 def find_shortest_path(start, end):
     """ Ripped and modified from https://www.python.org/doc/essays/graphs/ """
     return find_shortest_path_helper(start, end)
-    
+
 def check_for_cycles(subj_key, obj_key):
     try:
         TopologicalSorter({**subclass_tree, obj_key: set([subj_key])}).prepare()
@@ -179,37 +180,29 @@ class GraphCharacterizer:
         self.g = get_graph(args.graph_to_read)
         self.list_untyped_entities = args.list_untyped_entities
 
-        if(args.okn_registry_id):
-            target_url = f'https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs.yaml'
+        if args.okn_registry_id:
+            target_url = f'https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs/{args.okn_registry_id}.md'
             response = requests.get(target_url)
-            kgs = yaml.safe_load(response.text)
-            post = {}
-            logging.info(f"Getting info for {args.okn_registry_id}")
-            self.graph_name = args.graph_name
-            self.schema = linkml_schema(self.graph_name, post.get('title') or args.graph_title)
-            for kg in kgs['kgs']:
-                if kg['shortname'] == args.okn_registry_id:
-                    post = kg
-            if post:
-                logging.info(f"found data {post}")
-                self.graph_name = post['shortname']
-
-                self.schema['description'] = post['description']
-                self.schema['see_also'] = []
-                for metadata_key in ['stats', 'funding', 'sparql', 'tpf']:
-                    if metadata_key in post:
-                        self.schema['see_also'].append(post[metadata_key])
-                current_url = None
-                if post['contact']['email']:
-                    current_url = 'mailto:' + post['contact']['email']
-                elif post['contact']['github']:
-                    current_url = post['contact']['github']
-                if current_url:
-                    if 'contributors' in self.schema:
-                        self.schema['contributors'].append(current_url)
-                    else:
-                        self.schema['contributors'] = [current_url]
+            post = frontmatter.loads(response.content)
+            self.graph_name = post['shortname']
+            self.schema = linkml_schema(self.graph_name, post['title'])
+            self.schema['description'] = post['description']
+            self.schema['see_also'] = []
+            for metadata_key in ['stats', 'funding', 'sparql', 'tpf']:
+                if metadata_key in post:
+                    self.schema['see_also'].append(post[metadata_key])
+            current_url = None
+            if post['contact']['email']:
+                current_url = 'mailto:' + post['contact']['email']
+            elif post['contact']['github']:
+                current_url = post['contact']['github']
+            if current_url:
+                if 'contributors' in self.schema:
+                    self.schema['contributors'].append(current_url)
+                else:
+                    self.schema['contributors'] = [current_url]
         else:
+            self.graph_name = args.graph_name
             self.schema = linkml_schema(self.graph_name, args.graph_title)
 
         self.restrictions = defaultdict(dict)
@@ -220,12 +213,48 @@ class GraphCharacterizer:
         self.object_uris_found = defaultdict(set)
         self.formatter_urls_found = defaultdict(int)
 
+        # OPTIMIZATION: Pre-build indexes
+        self._build_indexes()
+
+    def _build_indexes(self):
+        """Pre-build indexes for faster lookups"""
+        print("Building indexes for faster processing...")
+
+        # Index: entity -> types
+        self.entity_types_index = defaultdict(set)
+        for s, o in tqdm.tqdm(list(self.g.subject_objects(predicate=RDF.type)), desc="Indexing types"):
+            self.entity_types_index[s].add(o)
+
+        # Index: Parse all URIRefs once
+        self.parsed_uris = {}
+        all_uris = set()
+        for s, p, o in self.g:
+            if isinstance(s, URIRef):
+                all_uris.add(s)
+            if isinstance(p, URIRef):
+                all_uris.add(p)
+            if isinstance(o, URIRef):
+                all_uris.add(o)
+
+        for uri in tqdm.tqdm(all_uris, desc="Parsing URIs"):
+            parsed = urlparse(uri)
+            self.parsed_uris[uri] = (parsed.scheme, parsed.netloc)
+
+        # Index: Build curie cache
+        self.curie_cache = {}
+        for uri in tqdm.tqdm(all_uris, desc="Building CURIE cache"):
+            self.curie_cache[uri] = self._produce_curie_key_uncached(uri)
+
+        print(f"Indexed {len(self.entity_types_index)} entities with types")
+        print(f"Parsed {len(self.parsed_uris)} URIs")
+        print(f"Cached {len(self.curie_cache)} CURIEs")
+
     def add_str_to_multiple(self, obj_in, pred, string_to_store):
         current_slot, current_datatype = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
         if value_is_valid(string_to_store, current_datatype, pred, obj_in['name']):
             if current_slot == 'exact_mappings':
                 current_curie = self.replace_prefixes(string_to_store)
-                if current_curie in [obj_in.get(key,'') for key in ['class_uri','slot_uri','uri']]:
+                if current_curie in [obj_in.get(key, '') for key in ['class_uri', 'slot_uri', 'uri']]:
                     return
             if not current_slot in obj_in:
                 obj_in[current_slot] = [string_to_store]
@@ -239,10 +268,19 @@ class GraphCharacterizer:
             self.schema['prefixes'][replacement] = str(prefix)
         return node
 
-    def produce_curie_key(self, uri):
+    def _produce_curie_key_uncached(self, uri):
+        """Original implementation without cache"""
         output_curie = self.replace_prefixes(uri)
-        output_key = output_curie.replace(':','_').replace('/','_')
+        output_key = output_curie.replace(':', '_').replace('/', '_')
         return output_curie, output_key
+
+    def produce_curie_key(self, uri):
+        """Cached version"""
+        if uri in self.curie_cache:
+            return self.curie_cache[uri]
+        result = self._produce_curie_key_uncached(uri)
+        self.curie_cache[uri] = result
+        return result
 
     def process_restrictions(self):
         for (entity, _, _) in tqdm.tqdm(self.g.triples((None, RDF.type, OWL.Restriction)), desc='Restrictions'):
@@ -260,16 +298,17 @@ class GraphCharacterizer:
                         self.restrictions[target_property][SINGLE_VALUE_RESTRICTIONS[pred]] = obj
 
     def process_ontologies(self):
-        ontologies = [entity for (entity, _, _) in tqdm.tqdm(self.g.triples((None, RDF.type, OWL.Ontology)), desc='Ontologies')]
+        ontologies = [entity for (entity, _, _) in
+                      tqdm.tqdm(self.g.triples((None, RDF.type, OWL.Ontology)), desc='Ontologies')]
         for entity in ontologies:
             for subj, pred, obj in self.g.triples((entity, None, None)):
-                string_to_store = str(obj).replace("\n",'␊')
+                string_to_store = str(obj).replace("\n", '␊')
                 if pred in SLOTS_TO_PREDICATES_SINGLE:
                     add_str_to_single(self.schema, pred, string_to_store)
                 elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                     self.add_str_to_multiple(self.schema, pred, string_to_store)
                 elif pred in SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY:
-                    add_str_to_single(self.schema, pred, string_to_store, SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY)
+                    self.add_str_to_single(self.schema, pred, string_to_store, SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY)
 
     def add_class(self, subj_key, subj_uri=None, subj_title=None, extra_info=None, from_schema=None):
         """ Adds a new class to the schema. """
@@ -329,7 +368,7 @@ class GraphCharacterizer:
             for entity in progress_bar:
                 if entity in datatype_to_type:
                     continue
-                if isinstance(entity, BNode) or str(entity).startswith('_:'): # TODO: handle these
+                if isinstance(entity, BNode) or str(entity).startswith('_:'):  # TODO: handle these
                     continue
                 if (entity, RDF.type, OWL.Restriction) in self.g:
                     continue
@@ -337,9 +376,12 @@ class GraphCharacterizer:
                 if subj_uri in URIs_to_ontologies:
                     continue
 
-                if subj_key in self.schema['classes'] and ("title" in self.schema['classes'][subj_key] and "but has not itself been defined" not in self.schema['classes'][subj_key]['title']):
+                if subj_key in self.schema['classes'] and (
+                        "title" in self.schema['classes'][subj_key] and "but has not itself been defined" not in
+                        self.schema['classes'][subj_key]['title']):
                     if 'deprecated' in self.schema['classes'][subj_key] and 'deprecated' in extra_info:
-                        self.schema['classes'][subj_key].update({**extra_info, 'deprecated': self.schema['classes'][subj_key]['deprecated']})
+                        self.schema['classes'][subj_key].update(
+                            {**extra_info, 'deprecated': self.schema['classes'][subj_key]['deprecated']})
                     else:
                         self.schema['classes'][subj_key].update(extra_info)
                     continue
@@ -353,7 +395,7 @@ class GraphCharacterizer:
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                         self.add_str_to_multiple(self.schema['classes'][subj_key], pred, str(obj))
                     elif pred in {RDFS.subClassOf}:
-                        if isinstance(obj, BNode) or str(obj).startswith('_:'): # TODO: handle these
+                        if isinstance(obj, BNode) or str(obj).startswith('_:'):  # TODO: handle these
                             continue
                         if obj_key != subj_key:
                             if not check_for_cycles(subj_key, obj_key):
@@ -364,7 +406,8 @@ class GraphCharacterizer:
                                 pass
                             self.schema['classes'][subj_key]['is_a'] = obj_key
                         if (obj_key not in self.schema['classes']) and (obj_uri not in URIs_to_ontologies):
-                            self.add_class(obj_key, obj_uri, "No class (entity type) name specified -- this class is noted as a superclass of another class in this graph but has not itself been defined.")
+                            self.add_class(obj_key, obj_uri,
+                                           "No class (entity type) name specified -- this class is noted as a superclass of another class in this graph but has not itself been defined.")
 
     def process_types(self):
         for class_type, extra_info in TYPE_TYPES.items():
@@ -375,11 +418,13 @@ class GraphCharacterizer:
             for entity in progress_bar:
                 if (entity, RDF.type, OWL.Restriction) in self.g:
                     continue
-                if isinstance(entity, BNode) or str(entity).startswith('_:'): # TODO: handle these
+                if isinstance(entity, BNode) or str(entity).startswith('_:'):  # TODO: handle these
                     continue
                 subj_uri, subj_key = self.produce_curie_key(entity)
 
-                if subj_key in self.schema['types'] and ("title" in self.schema['types'][subj_key] and "but has not itself been defined" not in self.schema['types'][subj_key]['title']):
+                if subj_key in self.schema['types'] and (
+                        "title" in self.schema['types'][subj_key] and "but has not itself been defined" not in
+                        self.schema['types'][subj_key]['title']):
                     continue
                 if entity in datatype_to_type:
                     continue
@@ -395,7 +440,7 @@ class GraphCharacterizer:
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                         self.add_str_to_multiple(self.schema['types'][subj_key], pred, str(obj))
                     elif pred in {RDFS.subClassOf}:
-                        if isinstance(obj, BNode) or str(obj).startswith('_:'): # TODO: handle these
+                        if isinstance(obj, BNode) or str(obj).startswith('_:'):  # TODO: handle these
                             continue
                         if obj_key != subj_key:
                             if not check_for_cycles(subj_key, obj_key):
@@ -412,7 +457,8 @@ class GraphCharacterizer:
                                 current_typeof = obj_key
                             self.schema['types'][subj_key]['typeof'] = current_typeof
                         if (obj_key not in self.schema['types']) and (obj_uri not in URIs_to_ontologies):
-                            self.add_class(obj_key, obj_uri, "No (data)type name specified -- this type is noted as a supertype of another type in this graph but has not itself been defined.")
+                            self.add_class(obj_key, obj_uri,
+                                           "No (data)type name specified -- this type is noted as a supertype of another type in this graph but has not itself been defined.")
 
     def process_slots(self):
         for slot_type, extra_info in SLOT_TYPES.items():
@@ -433,7 +479,9 @@ class GraphCharacterizer:
                     # TODO: handle these predicates
                     continue
 
-                if subj_key in self.schema['slots'] and ("title" in self.schema['slots'][subj_key] and "but has not itself been defined" not in self.schema['slots'][subj_key]['title']):
+                if subj_key in self.schema['slots'] and (
+                        "title" in self.schema['slots'][subj_key] and "but has not itself been defined" not in
+                        self.schema['slots'][subj_key]['title']):
                     continue
                 self.add_slot(subj_key, subj_uri, extra_info=extra_info)
 
@@ -446,7 +494,7 @@ class GraphCharacterizer:
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                         self.add_str_to_multiple(self.schema['slots'][subj_key], pred, str(obj))
                     elif pred in {RDFS.domain, SDO.domainIncludes}:
-                        if isinstance(obj, BNode) or str(obj).startswith('_:'): # TODO: handle these
+                        if isinstance(obj, BNode) or str(obj).startswith('_:'):  # TODO: handle these
                             continue
                         normalized_type, current_import, current_prefixes = linkml_type_mapping(obj)
                         if normalized_type != obj:
@@ -455,7 +503,7 @@ class GraphCharacterizer:
                             obj_curie_key = self.produce_curie_key(normalized_type)
                         self.add_to_domain(subj_key, obj_curie_key)
                     elif pred in {RDFS.range, SDO.rangeIncludes}:
-                        if isinstance(obj, BNode) or str(obj).startswith('_:'): # TODO: handle these
+                        if isinstance(obj, BNode) or str(obj).startswith('_:'):  # TODO: handle these
                             continue
                         normalized_type, current_import, current_prefixes = linkml_type_mapping(obj)
                         if normalized_type != obj:
@@ -473,7 +521,8 @@ class GraphCharacterizer:
                                 pass
                             self.schema['slots'][subj_key]['subproperty_of'] = obj_key
                         if (obj_key not in self.schema['slots']) and (obj_uri not in URIs_to_ontologies):
-                            self.add_slot(obj_key, obj_uri, "No slot (predicate) name specified -- this slot is noted as a subproperty of another slot in this graph but has not itself been defined.")
+                            self.add_slot(obj_key, obj_uri,
+                                          "No slot (predicate) name specified -- this slot is noted as a subproperty of another slot in this graph but has not itself been defined.")
 
     def increment_usage_count(self, subject_type_uri, pred_uri, object_type_uri):
         """ Increments the usage of a particular subject-type, predicate, object-type triple. """
@@ -552,7 +601,8 @@ class GraphCharacterizer:
                 target_entity, target_ontology = self.check_for_import(set_type_uri)
             except KeyError:
                 if set_type_key not in linkml_type_names:
-                    self.add_class(set_type_key, set_type_uri, "No class (entity type) name specified -- this class is noted as being in the domain or range of a slot in this graph but has not itself been defined.")
+                    self.add_class(set_type_key, set_type_uri,
+                                   "No class (entity type) name specified -- this class is noted as being in the domain or range of a slot in this graph but has not itself been defined.")
 
     def add_missing_domain_range_types(self):
         for _, slot_dict in self.schema['slots'].items():
@@ -576,7 +626,7 @@ class GraphCharacterizer:
                     del class_dict['slots']
 
             if 'description' in class_dict:
-                class_dict["description"] = class_dict["description"].replace("\n",'␊')
+                class_dict["description"] = class_dict["description"].replace("\n", '␊')
             if class_dict['name'] == '':
                 class_dict['name'] = class_key
             if 'comments' in class_dict and len(class_dict['comments']) > 0:
@@ -590,7 +640,7 @@ class GraphCharacterizer:
         for key, slot_dict in self.schema["slots"].items():
             slot_uri = slot_dict['slot_uri']
             if 'description' in slot_dict:
-                slot_dict["description"] = slot_dict["description"].replace("\n",'␊')
+                slot_dict["description"] = slot_dict["description"].replace("\n", '␊')
             if self.schema['annotations']['counts']['slots'][slot_uri] == 0:
                 if 'notes' in slot_dict:
                     slot_dict['notes'].append('No occurrences of this slot in the graph.')
@@ -621,33 +671,52 @@ class GraphCharacterizer:
                     (k + ': ' + v) for k in slot_dict['comments'] for v in list(slot_dict['comments'][k])
                 ]
 
+    def _get_filtered_types(self, type_list):
+        """Filter types to only keep most specific ones (no ancestors)"""
+        filtered = set()
+        for st, stc, stk in type_list:
+            if not any(find_shortest_path(stk, other_stk) for other_st, other_stc, other_stk in type_list if
+                       other_st != st):
+                filtered.add((st, stc, stk))
+        return filtered
+
     def assemble_counts(self):
-        for subj in tqdm.tqdm(self.g.subjects(unique=True)):
+        """OPTIMIZED: Process triples with pre-built indexes"""
+        print("Processing triples with optimized indexes...")
+
+        # Get all subjects once
+        all_subjects = set(self.g.subjects(unique=True))
+
+        for subj in tqdm.tqdm(all_subjects, desc="Processing subjects"):
             subj_uri, subj_key = self.produce_curie_key(subj)
             if subj_uri in URIs_to_ontologies:
                 continue
-            parse_result = None
-            if isinstance(subj, URIRef):
-                parsed_uri = urlparse(subj)
-                parse_result = (parsed_uri.scheme, parsed_uri.netloc)
-                if parsed_uri.netloc in formatter_urls:
-                    for prop, formatter, formatter_type in formatter_urls[parsed_uri.netloc]:
-                        if formatter.match(subj):
-                            self.formatter_urls_found[(prop, formatter)] += 1
 
-            subject_types_initial = list(set([(subject_type, *(self.produce_curie_key(subject_type))) for subject_type in self.g.objects(subject=subj, predicate=RDF.type)]))
+            # OPTIMIZATION: Use pre-parsed URIs
+            parse_result = self.parsed_uris.get(subj) if isinstance(subj, URIRef) else None
+            if parse_result and parse_result[1] in formatter_urls:
+                for prop, formatter, formatter_type in formatter_urls[parse_result[1]]:
+                    if formatter.match(subj):
+                        self.formatter_urls_found[(prop, formatter)] += 1
+
+            # OPTIMIZATION: Use pre-built type index
+            subject_types_initial = [(st, *(self.produce_curie_key(st)))
+                                     for st in self.entity_types_index.get(subj, set())]
+
+            # Filter to most specific types
             subject_types = set()
             subject_type_uris_keys = set()
-            for st, stc, stk in subject_types_initial:
-                if not any(find_shortest_path(stk, other_stk) for other_st, other_stc, other_stk in subject_types_initial if other_st != st):
-                    if (st, RDF.type, OWL.Restriction) not in self.g:
-                        subject_types.add(st)
-                        subject_type_uris_keys.add((stc, stk))
+            for st, stc, stk in self._get_filtered_types(subject_types_initial):
+                if (st, RDF.type, OWL.Restriction) not in self.g:
+                    subject_types.add(st)
+                    subject_type_uris_keys.add((stc, stk))
 
-            if any(((subject_type in [OWL.Ontology, OWL.Restriction]) or (subject_type in CLASS_TYPES) or (subject_type in SLOT_TYPES)) for subject_type in list(subject_types)):
+            # Skip metadata types
+            if any(((subject_type in [OWL.Ontology, OWL.Restriction]) or
+                    (subject_type in CLASS_TYPES) or
+                    (subject_type in SLOT_TYPES)) for subject_type in list(subject_types)):
                 continue
             elif OWL.AllDisjointClasses in subject_types:
-                # TODO: handle AllDisjointClasses
                 continue
 
             if len(subject_types) > 1:
@@ -655,23 +724,29 @@ class GraphCharacterizer:
             elif len(subject_types) == 0:
                 self.entities_without_type_count += 1
 
+            # Process subject types
             for (subject_type_uri, subject_type_key) in subject_type_uris_keys:
                 try:
                     target_entity, target_ontology = self.check_for_import(subject_type_uri)
-#                    self.add_class(subject_type_key, subject_type_uri, from_schema=target_ontology)
                 except KeyError:
-                    if not (subject_type_key in self.schema['classes'] or subject_type_key in self.schema['types'] or subject_type_uri in URIs_to_ontologies):
+                    if not (subject_type_key in self.schema['classes'] or
+                            subject_type_key in self.schema['types'] or
+                            subject_type_uri in URIs_to_ontologies):
                         self.add_class(subject_type_key, subject_type_uri)
 
-                # Absolute occurrence count
                 self.schema['annotations']['counts']['classes'][subject_type_uri] += 1
                 if subject_type_key not in self.schema['annotations']['examples']['classes']:
                     self.schema['annotations']['examples']['classes'][subject_type_uri] = str(subj_uri)
                 if parse_result:
                     self.type_uris_found[subject_type_key].add(parse_result)
 
+            # Process predicates and objects
             for pred, obj in self.g.predicate_objects(subject=subj):
                 if pred == RDF.type:
+                    continue
+
+                # Skip special predicates
+                if pred in [RDF.first, RDF.rest] or re.match(str(RDF) + r'_\d+', str(pred)):
                     continue
 
                 pred_curie_key = self.produce_curie_key(pred)
@@ -680,18 +755,9 @@ class GraphCharacterizer:
                 obj_uri, obj_key = obj_curie_key
                 example = (subj_uri, pred_uri, obj_uri)
 
-                if pred in [RDF.first, RDF.rest]:
-                    # TODO: handle these predicates
-                    continue
-
-                if re.match(str(RDF) + r'_\d+', str(pred)):
-                    # TODO: handle these predicates
-                    continue
-
-                parse_result = None
-                if isinstance(obj, URIRef):
-                    parsed_uri = urlparse(obj)
-                    parse_result = (parsed_uri.scheme, parsed_uri.netloc)
+                # OPTIMIZATION: Use pre-parsed URIs for objects
+                parse_result = self.parsed_uris.get(obj) if isinstance(obj, URIRef) else None
+                if parse_result:
                     if len(subject_types) > 0:
                         for (subject_type_uri, subject_type_key) in subject_type_uris_keys:
                             self.object_uris_found[(subject_type_key, pred_key)].add(parse_result)
@@ -700,20 +766,20 @@ class GraphCharacterizer:
 
                 try:
                     target_entity, target_ontology = self.check_for_import(pred_uri)
-#                    self.add_slot(pred_key, pred_uri, from_schema=target_ontology)
                 except KeyError:
                     self.schema['slots'][pred_key]['slot_uri'] = str(pred_uri)
 
-                object_types_initial = list(set([(object_type, *(self.produce_curie_key(object_type))) for object_type in self.g.objects(subject=obj, predicate=RDF.type)]))
+                # OPTIMIZATION: Use pre-built type index for objects
+                object_types_initial = [(ot, *(self.produce_curie_key(ot)))
+                                        for ot in self.entity_types_index.get(obj, set())]
+
                 object_types = set()
                 object_type_uris_keys = set()
-                for ot, otc, otk in object_types_initial:
-                    if not any(find_shortest_path(otk, other_otk) for other_ot, other_otc, other_otk in object_types_initial if other_ot != ot):
-                        if (ot, RDF.type, OWL.Restriction) not in self.g:
-                            object_types.add(ot)
-                            object_type_uris_keys.add((otc, otk))
+                for ot, otc, otk in self._get_filtered_types(object_types_initial):
+                    if (ot, RDF.type, OWL.Restriction) not in self.g:
+                        object_types.add(ot)
+                        object_type_uris_keys.add((otc, otk))
 
-                # Absolute occurrence count
                 self.schema['annotations']['counts']['slots'][str(pred_uri)] += 1
 
                 if len(object_types) > 0:
@@ -727,15 +793,15 @@ class GraphCharacterizer:
                                 self.schema['classes'][subject_type_key]['slots'].add(pred_key)
 
                             for object_type_curie_key in list(object_type_uris_keys):
-                                self.account_for_triple(subject_type_curie_key, pred_curie_key, object_type_curie_key, example)
+                                self.account_for_triple(subject_type_curie_key, pred_curie_key, object_type_curie_key,
+                                                        example)
                     else:
                         if self.list_untyped_entities:
                             self.entities_without_type.add(subj)
                         for object_type_curie_key in list(object_type_uris_keys):
                             self.account_for_triple(None, pred_curie_key, object_type_curie_key, example)
                 else:
-                    # TODO: add object datatypes to self.schema['types']
-                    if isinstance(obj, BNode) or str(obj).startswith('_:'): # skip blank nodes for now, revisit restrictions in QUDT TTL
+                    if isinstance(obj, BNode) or str(obj).startswith('_:'):
                         continue
                     object_datatype = get_object_datatype(obj)
                     object_type_mapping, current_import, current_prefixes = linkml_type_mapping(object_datatype)
@@ -754,7 +820,8 @@ class GraphCharacterizer:
                                 if subject_type_key not in self.schema['classes']:
                                     self.add_class(subject_type_key, subject_type_uri)
                                 self.schema['classes'][subject_type_key]['slots'].add(pred_key)
-                            self.account_for_triple(subject_type_curie_key, pred_curie_key, object_datatype_curie_key, example)
+                            self.account_for_triple(subject_type_curie_key, pred_curie_key, object_datatype_curie_key,
+                                                    example)
                     else:
                         if self.list_untyped_entities:
                             self.entities_without_type.add(subj)
@@ -782,9 +849,9 @@ class GraphCharacterizer:
             ]
 
     def export_results(self):
-        yaml_file_basename = self.graph_name.replace('/','__')
+        yaml_file_basename = self.graph_name.replace('/', '__')
 
-        with open(yaml_file_basename + '.yaml','w') as f:
+        with open(yaml_file_basename + '.yaml', 'w') as f:
             yaml.dump(self.schema, f)
 
         if self.list_untyped_entities:
@@ -817,21 +884,27 @@ class GraphCharacterizer:
 
         self.export_results()
 
+
 if __name__ == '__main__':
     # Reads the graphs...
     parser = argparse.ArgumentParser(
         prog='LinkML Schema Generator',
         description='Produces LinkML schemas from RDF data'
     )
-    
+
     parser.add_argument('graph_name')
     parser.add_argument('graph_to_read')
     parser.add_argument('graph_title', nargs='?', default=None)
-    parser.add_argument('--formatter-url-list', help='Location of TSV results from running a query (https://w.wiki/Ff7j) of different formatter URLs and their origins.', default='/code/src/formatterurls.tsv')
-    parser.add_argument('--list-untyped-entities', action='store_true', help='Provides a list of untyped subject entities in the graph.')
-    parser.add_argument('--generate-base-schemas', type=int, help='Of the ontologies listed in external_ontologies.py, which (1-indexed) to generate while leaving the others above it intact.')
+    parser.add_argument('--formatter-url-list',
+                        help='Location of TSV results from running a query (https://w.wiki/Ff7j) of different formatter URLs and their origins.',
+                        default='.')
+    parser.add_argument('--list-untyped-entities', action='store_true',
+                        help='Provides a list of untyped subject entities in the graph.')
+    parser.add_argument('--generate-base-schemas', type=int,
+                        help='Of the ontologies listed in external_ontologies.py, which (1-indexed) to generate while leaving the others above it intact.')
     parser.add_argument('--okn-registry-id', help='Name of the graph in the OKN registry.')
-    parser.add_argument('--external-ontology-path', help='Path to where external ontologies are stored: the prefix "https://purl.org/okn/schema/" will be substituted with the value of this argument.')
+    parser.add_argument('--external-ontology-path',
+                        help='Path to where external ontologies are stored: the prefix "https://purl.org/okn/schema/" will be substituted with the value of this argument.')
 
     args = parser.parse_args()
     if args.generate_base_schemas is not None:
