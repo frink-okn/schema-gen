@@ -5,3 +5,4 @@ rdflib-hdt
 eralchemy
 requests
 python-frontmatter
+oxrdflib
