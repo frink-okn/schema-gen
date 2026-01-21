@@ -1,12 +1,30 @@
 from collections import defaultdict
 
-def linkml_schema(graph_name, graph_title):
+
+def empty_annotations():
+    return {
+        "counts": {
+            "classes": defaultdict(int),
+            "slots": defaultdict(int),
+            "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(int))),
+        },
+        "examples": {
+            "classes": defaultdict(str),
+            "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(dict))),
+        },
+    }
+
+
+def linkml_schema(graph_name, graph_title, graph_description):
     output_schema = {
-        "id": 'okns:' + graph_name,
+        "id": "okns:" + graph_name,
         # version
         "imports": set([]),
         # license
-        "prefixes": {"okns": "https://purl.org/okn/schema/", "okn": "https://purl.org/okn/"},
+        "prefixes": {
+            "okns": "https://purl.org/okn/schema/",
+            "okn": "https://purl.org/okn/",
+        },
         # emit_prefixes
         # default_curi_maps
         "default_prefix": "okns",
@@ -33,18 +51,8 @@ def linkml_schema(graph_name, graph_title):
         # implements
         # instantiates
         # extensions
-        "annotations": {
-            "counts": {
-                "classes": defaultdict(int),
-                "slots": defaultdict(int),
-                "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
-            },
-            "examples": {
-                "classes": defaultdict(str),
-                "pairs": defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
-            }
-        },
-        # description
+        "annotations": empty_annotations(),
+        "description": graph_description or "",
         # alt_descriptions
         "title": graph_title or "",
         # deprecated
@@ -80,11 +88,12 @@ def linkml_schema(graph_name, graph_title):
     }
     return output_schema
 
+
 def linkml_type():
     return {
-        'typeof': "string",
+        "typeof": "string",
         # base
-        'uri': "",
+        "uri": "",
         # repr
         # union_of
         # pattern
@@ -100,7 +109,7 @@ def linkml_type():
         # exactly_one_of
         # any_of
         # all_of
-        'name': "",
+        "name": "",
         # id_prefixes
         # id_prefixes_are_closed
         # definition_uri
@@ -115,7 +124,7 @@ def linkml_type():
         # title
         # deprecated
         # todos
-        'notes': [],
+        "notes": [],
         # comments
         # examples
         # in_subset
@@ -145,9 +154,10 @@ def linkml_type():
         # keywords
     }
 
+
 def linkml_class():
     return {
-        'slots': set(),
+        "slots": set(),
         # slot_usage
         # attributes
         # class_uri
@@ -174,7 +184,7 @@ def linkml_class():
         # apply_to
         # values_from
         # string_serialization
-        'name': "",
+        "name": "",
         # id_prefixes
         # id_prefixes_are_closed
         # definition_uri
@@ -189,8 +199,8 @@ def linkml_class():
         # title
         # deprecated
         # todos
-        'notes': [],
-        'comments': defaultdict(set),
+        "notes": [],
+        "comments": defaultdict(set),
         # examples
         # in_subset
         # from_schema
@@ -218,6 +228,7 @@ def linkml_class():
         # categories
         # keywords
     }
+
 
 def linkml_slot():
     return {
@@ -257,9 +268,9 @@ def linkml_slot():
         # path_rule
         # disjoint_with
         # children_are_mutually_disjoint
-        'union_of': set(),
+        "union_of": set(),
         # type_mappings
-        'range': 'Any',
+        "range": "Any",
         # range_expression
         # enum_range
         # bindings
@@ -286,7 +297,7 @@ def linkml_slot():
         # all_members
         # none_of
         # exactly_one_of
-        'any_of': set(),
+        "any_of": set(),
         # all_of
         # is_a
         # abstract
@@ -311,7 +322,7 @@ def linkml_slot():
         # deprecated
         # todos
         # notes
-        'comments': defaultdict(set),
+        "comments": defaultdict(set),
         # examples
         # in_subset
         # from_schema
@@ -339,4 +350,3 @@ def linkml_slot():
         # categories
         # keywords
     }
-

@@ -1,13 +1,16 @@
 import logging
+from graphlib import CycleError, TopologicalSorter
+
 from rdflib import URIRef
-from rdflib.namespace import XSD, SDO
+from rdflib.namespace import SDO, XSD
 
 from prefix_definitions import replacements
 
+
 def find_prefix(node):
-    """ Replaces a URI prefix with the abbreviation as given in 'replacements' above. """
-    replacement = ''
-    prefix = ''
+    """Replaces a URI prefix with the abbreviation as given in 'replacements' above."""
+    replacement = ""
+    prefix = ""
     for current_replacement, current_prefix in replacements:
         removed = node.removeprefix(str(current_prefix))
         if removed != str(node):
@@ -17,13 +20,14 @@ def find_prefix(node):
             # TODO: maintain in sync with prefix-definitions
             # TODO: see if everyone can be put on the same page regarding schema.org protocol
             # TODO: check existing schematizations of RDF protocols for use of http://schema.org
-            if replacement == 'schema':
-                replacement = 'sdos'
+            if replacement == "schema":
+                replacement = "sdos"
                 prefix = str(SDO)
 
-            removed = replacement + ':' + removed
+            removed = replacement + ":" + removed
             node = removed
     return node, replacement, prefix
+
 
 def get_object_datatype(obj):
     if isinstance(obj, URIRef):
@@ -34,10 +38,27 @@ def get_object_datatype(obj):
         object_datatype = XSD.string
     return object_datatype
 
+
 def value_is_valid(string_to_store, datatype, pred, obj_name):
     if datatype == str:
         return True
     if datatype.is_valid(string_to_store):
         return True
-    logging.warning('Attempted to add value "%s" for predicate %s to object %s', string_to_store, pred, obj_name)
+    logging.warning(
+        'Attempted to add value "%s" for predicate %s to object %s',
+        string_to_store,
+        pred,
+        obj_name,
+    )
     return False
+
+
+def check_for_cycles(subclass_tree, subj_key, obj_key):
+    try:
+        TopologicalSorter({**subclass_tree, obj_key: set([subj_key])}).prepare()
+    except CycleError as e:
+        logging.warning(
+            "Found a cycle in the subclass tree, which is being disregarded: %s",
+            e.args[1],
+        )
+        return e.args[1]
