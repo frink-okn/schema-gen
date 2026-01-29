@@ -17,6 +17,7 @@ from collections import defaultdict
 from copy import deepcopy
 
 import linkml_runtime
+import tqdm
 
 from common_functions import check_for_cycles
 
@@ -142,7 +143,7 @@ def load_external_ontologies(
     URI_entity_types = {}
     subclass_tree = defaultdict(set)
 
-    for name, external_ontology in source.items():
+    for name, external_ontology in tqdm.tqdm(source.items(), desc="Loading external ontologies"):
         current_from_path = external_ontology["from_path"]
         current_read_path = external_ontology["read_path"]
         if external_ontology_path:
@@ -195,6 +196,7 @@ def load_external_ontologies(
                 URI_entity_types[current_uri] = "slot"
                 URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
 
+    print("Loaded", len(URIs_to_ontologies), "terms from external ontologies")
     return {
         "URIs_to_entities": URIs_to_entities,
         "URI_entity_types": URI_entity_types,

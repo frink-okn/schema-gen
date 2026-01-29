@@ -4,11 +4,9 @@ import json
 import logging
 import os
 from collections import defaultdict
-from copy import deepcopy
 from functools import lru_cache
 from itertools import chain
 
-import linkml_runtime
 import rdflib
 import rdflib.exceptions
 import tqdm
@@ -135,29 +133,6 @@ def convert_annotations(annotations):
     }
 
 
-def find_shortest_path_helper(subclass_tree, start, end, path=()):
-    # Optimization: Use tuple for path (immutable)
-    path = path + (start,)
-    if start == end:
-        return path
-    if start not in subclass_tree:
-        return None
-    shortest = None
-    # Copy to list to avoid runtime modification issues during recursion
-    for node in list(subclass_tree[start]):
-        if node not in path:
-            newpath = find_shortest_path_helper(node, end, path)
-            if newpath:
-                if not shortest or len(newpath) < len(shortest):
-                    shortest = newpath
-    return shortest
-
-
-@lru_cache(maxsize=4096)
-def find_shortest_path(subclass_tree, start, end):
-    return find_shortest_path_helper(subclass_tree, start, end)
-
-
 class GraphCharacterizer:
     def __init__(self, args, uri_mappings):
         self.args = args
@@ -194,6 +169,27 @@ class GraphCharacterizer:
         # Optimization: Pre-build indexes immediately
         self._build_indexes()
 
+    def find_shortest_path_helper(self, start, end, path=()):
+        # Optimization: Use tuple for path (immutable)
+        path = path + (start,)
+        if start == end:
+            return path
+        if start not in self.subclass_tree:
+            return None
+        shortest = None
+        # Copy to list to avoid runtime modification issues during recursion
+        for node in list(self.subclass_tree[start]):
+            if node not in path:
+                newpath = self.find_shortest_path_helper(node, end, path)
+                if newpath:
+                    if not shortest or len(newpath) < len(shortest):
+                        shortest = newpath
+        return shortest
+
+    @lru_cache(maxsize=4096)
+    def find_shortest_path(self, start, end):
+        return self.find_shortest_path_helper(start, end)
+
     def _build_indexes(self):
         """Pre-build indexes for faster lookups"""
         print("Building indexes for faster processing...")
@@ -212,7 +208,7 @@ class GraphCharacterizer:
             ]
             for st, stc, stk in subject_types_initial:
                 if any(
-                    find_shortest_path(self.subclass_tree, stk, other_stk)
+                    self.find_shortest_path(stk, other_stk)
                     for other_st, other_stc, other_stk in subject_types_initial
                     if other_st != st
                 ):
@@ -389,7 +385,7 @@ class GraphCharacterizer:
                 self.add_class(subj_key, subj_uri, extra_info=extra_info)
 
                 for _, pred, obj in self.g.triples((entity, None, None)):
-                    _, obj_key = self.produce_curie_key(obj)  # Only need key often
+                    obj_uri, obj_key = self.produce_curie_key(obj)
 
                     if pred in SLOTS_TO_PREDICATES_SINGLE:
                         add_str_to_single(
@@ -409,17 +405,17 @@ class GraphCharacterizer:
                                 self.subclass_tree[obj_key].add(subj_key)
                             try:
                                 self.check_for_import(
-                                    str(obj)
-                                )  # Using str(obj) as URI approx
+                                    obj_uri
+                                )
                             except KeyError:
                                 pass
                             self.schema["classes"][subj_key]["is_a"] = obj_key
                         if (obj_key not in self.schema["classes"]) and (
-                            str(obj) not in self.URIs_to_ontologies
+                            obj_uri not in self.URIs_to_ontologies
                         ):
                             self.add_class(
                                 obj_key,
-                                str(obj),
+                                obj_uri,
                                 "No class name specified -- this class is noted as a superclass but not defined.",
                             )
 
@@ -737,13 +733,12 @@ class GraphCharacterizer:
 
             # 2. Process Predicate
             p_curie, p_key = produce_curie_key(p)
-            schema_counts_slots[str(p)] += 1
+            schema_counts_slots[p_curie] += 1
 
-            if (
-                p_curie not in self.URIs_to_entities
-                and p_key not in self.schema["slots"]
-            ):
-                self.add_slot(p_key, p, f"Auto-generated slot for {p_key}")
+            try:
+                target_entity, target_ontology = self.check_for_import(p_curie)
+            except KeyError:
+                self.schema['slots'][p_key]['slot_uri'] = str(p_curie)
 
             # 3. Identify Object Type
             object_type_uris_keys = []
@@ -817,7 +812,7 @@ class GraphCharacterizer:
 
     def convert_class_dicts(self):
         for class_key, class_dict in chain(
-            self.schema["classes"].items(), self.schema["types"].items()
+            self.schema.get("classes",{}).items(), self.schema.get("types", {}).items()
         ):
             if "notes" in class_dict and len(class_dict["notes"]) == 0:
                 del class_dict["notes"]
@@ -888,9 +883,10 @@ class GraphCharacterizer:
 
     def clean_up_json(self):
         self.schema["classes"] = dict(self.schema["classes"])
-        self.schema["types"] = dict(self.schema["types"])
-        if len(self.schema["types"]) == 0:
-            del self.schema["types"]
+        if "types" in self.schema:
+            self.schema["types"] = dict(self.schema["types"])
+            if len(self.schema["types"]) == 0:
+                del self.schema["types"]
         self.schema["slots"] = dict(self.schema["slots"])
         self.schema["imports"] = list(self.schema["imports"])
         self.schema["annotations"] = json.loads(json.dumps(self.schema["annotations"]))
@@ -990,11 +986,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--process-counts",
         action=argparse.BooleanOptionalAction,
+        default=True,
         help="Assembles exhaustive counts of occurrences of particular entity types and predicates.",
     )
     parser.add_argument(
         "--process-ontologies",
         action=argparse.BooleanOptionalAction,
+        default=True,
         help="Processes ontologies, classes, types, slots, (and restrictions) present in the data.",
     )
 
@@ -1011,3 +1009,4 @@ if __name__ == "__main__":
     )
 
     GraphCharacterizer(args, uri_mappings).characterize()
+

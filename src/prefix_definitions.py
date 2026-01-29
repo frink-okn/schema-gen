@@ -85,11 +85,8 @@ replacement_prefixes = {
     'niemfips50': Namespace(' http://release.niem.gov/niem/codes/fips/5.0/'), # NIEM FIPS 5.0
     'jxdm72': Namespace('http://release.niem.gov/niem/domains/jxdm/7.2/'), # NIEM Justice 7.2
     'nibrs': Namespace('http://fbi.gov/cjis/nibrs/2023.0/'), # CJIS NIBRS (is this a real prefix?)
-    'obo': Namespace('http://purl.obolibrary.org/obo/'), # OBO Foundry (general)
-    'cheminf': Namespace('http://purl.obolibrary.org/obo/CHEMINF_'), # Chemical Information Ontology
     'bao': Namespace('http://www.bioassayontology.org/bao#BAO_'), # Bioassay Ontology
     'edam': Namespace('http://edamontology.org/'), # EDAM ontology
-    'semsci': Namespace('http://semanticscience.org/resource/SIO_'), # Semanticscience Integrated Ontology
     'niehs': Namespace('https://ice.ntp.niehs.nih.gov/property/'), # Integrated Chemical Environment
     'umls': Namespace('https://identifiers.org/umls:'), # Unified Medical Language System
     'hyf': Namespace('https://www.opengis.net/def/schema/hy_features/hyf/'), # OGC ontology
@@ -160,6 +157,25 @@ replacement_prefixes = {
     'sudokn': Namespace('http://asu.edu/semantics/SUDOKN/'), # from SUDOKN: should be substituted with a working IRI prefix.
     'sudokn2': Namespace('Utilities:communication/'), # Not a real prefix; should be substituted wherever it occurs.
     'sudokn3': Namespace('Utilities:water/'), # Not a real prefix; should be substituted wherever it occurs.
+    'aopkb': Namespace('http://aopkb.org/aop_ontology#'), # Adverse Outcome Pathways
+    'biolink': Namespace('https://w3id.org/biolink/vocab/'), # Biolink Model
+    'spoke-genelab': Namespace('https://spoke.ucsf.edu/genelab/'), # SPOKE GeneLab (non-functional prefix)
+    'nasa-gesdisc': Namespace('https://nasa-gesdisc.proto-okn.net/kg/schema/'), # NASA GESDISC (non-functional prefix)
+    # OBO graphs (obolibrary.org)
+    'bfo': Namespace('http://purl.obolibrary.org/obo/BFO_'), # Basic Formal Ontology
+    'bto': Namespace('http://purl.obolibrary.org/obo/BTO_'), # BRENDA Tissue Ontology (not in Ubergraph)
+    'cl': Namespace('http://purl.obolibrary.org/obo/CL_'), # Cell Ontology
+    'go': Namespace('http://purl.obolibrary.org/obo/GO_'), # Gene Ontology
+    'hancestro': Namespace('http://purl.obolibrary.org/obo/HANCESTRO_'), # Human Ancestry Ontology (not in Ubergraph)
+    'hp': Namespace('http://purl.obolibrary.org/obo/HP_'), # Human Phenotype Ontology
+    'ncbitaxon': Namespace('http://purl.obolibrary.org/obo/NCBITaxon_'), # NCBI Taxonomy
+    'ncit': Namespace('http://purl.obolibrary.org/obo/NCIT_'), # National Cancer Institute Thesaurus
+    'mmo': Namespace('http://purl.obolibrary.org/obo/MMO_'), # Measurement Method Ontology
+    'pato': Namespace('http://purl.obolibrary.org/obo/PATO_'), # Phenotype and Trait Ontology
+    'uberon': Namespace('http://purl.obolibrary.org/obo/UBERON_'), # Uber-anatomy ontology
+    # Other OLS4 graphs
+    'cheminf': Namespace('http://semanticscience.org/resource/CHEMINF_'), # Chemical Information Ontology
+    'sio': Namespace('http://semanticscience.org/resource/SIO_'), # Semanticscience Integrated Ontology
 }
 
 replacements = list(replacement_prefixes.items())

@@ -1,8 +1,10 @@
+from collections import defaultdict
+
 import frontmatter
 import requests
 import yaml
 
-from linkml_structures import empty_annotations, linkml_schema
+from linkml_structures import empty_annotations, linkml_schema, linkml_class, linkml_slot, linkml_type
 
 
 def read_from_registry(okn_registry_id):
@@ -47,6 +49,12 @@ def read_from_registry(okn_registry_id):
 
 def schema_from_existing(old_schema_path):
     with open(old_schema_path) as f:
-        old_schema = yaml.load(f.read())
+        old_schema = yaml.safe_load(f.read())
     old_schema["annotations"] = empty_annotations()
+    old_schema["imports"] = set(old_schema["imports"])
+    old_schema["classes"] = defaultdict(linkml_class, old_schema["classes"])
+    old_schema["slots"] = defaultdict(linkml_slot, old_schema["slots"])
+    if "types" not in old_schema:
+        old_schema["types"] = defaultdict(linkml_type)
     return old_schema
+
