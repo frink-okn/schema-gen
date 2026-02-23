@@ -3,7 +3,7 @@ YAML Schema to RDF Generator
 
 Generate a JSON LD representation of the model
 
-Modified to use custom JSON-LD generator by Mahir Morshed <mmorshed@scripps.edu>
+Modified to use custom JSON-LD generator by Mahir Morshed <morshedm@renci.org>
 """
 
 import os
@@ -55,7 +55,6 @@ class RDFGenerator(Generator):
             metadata=self.emit_metadata,
             importmap=self.importmap,
         )
-        print(context)
         # Iterate over permissible text strings making them URI compatible
         for e in gen.schema.enums.values():
             for pv in e.permissible_values.values():

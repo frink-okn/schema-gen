@@ -1,15 +1,18 @@
 """Generate JSONld from a LinkML schema.
 
-Modified to eliminate imported classes/slots/types by Mahir Morshed <mmorshed@scripps.edu>
+Modified by Mahir Morshed <morshedm@renci.org> to do several things:
+    - Eliminate imported classes/slots/types
+    - Convert entity/triple counts in annotations to VoID
 """
 
+import logging
 import os
 from copy import deepcopy
 from dataclasses import dataclass
 from typing import Any, Optional
 
 import click
-from jsonasobj2 import as_json, items, loads
+from jsonasobj2 import as_dict, as_json, items, loads
 from linkml_runtime.linkml_model.meta import (
     ClassDefinition,
     ClassDefinitionName,
@@ -30,6 +33,69 @@ from linkml._version import __version__
 from linkml.generators.jsonldcontextgen import ContextGenerator
 from linkml.utils.generator import Generator, shared_arguments
 
+def convert_to_void(counts, examples, graph_name, prefixes):
+    new_counts = {
+        "@type": "void:Dataset",
+        # TODO: get void:distinctSubjects, void:distinctObjects, void:triples in dump_yaml
+        # TODO: make determination of void:entities in dump_yaml configurable (e.g. exclude rdf:Statement)
+        "void:classes": len(as_dict(counts)["value"]["classes"]["value"]),
+        "void:properties": len(as_dict(counts)["value"]["slots"]["value"]),
+        "void:vocabulary": [{"@id": prefix["prefix_reference"]} for tag, prefix in as_dict(prefixes).items()],
+        "void:uriLookupEndpoint": {"@id": "https://frink.apps.renci.org/term/"}, # TODO: make this overridable
+        "void:sparqlEndpoint": {"@id": f"https://frink.apps.renci.org/{graph_name}/sparql"}, # TODO: don't hardcode this
+        "void:classPartition": [],
+        "void:propertyPartition": []
+    }
+
+    for tag, class_partition in as_dict(counts["value"]["classes"]["value"]).items():
+        new_class_partition = {
+            "@type": "void:Dataset",
+            "void:class": {"@id": tag},
+            "void:entities": class_partition["value"],
+            "void:exampleResource": {"@id": as_dict(examples["value"]["classes"]["value"])[tag]["value"]}
+        }
+        new_counts["void:classPartition"].append(new_class_partition)
+
+    for tag, slot_partition in as_dict(counts["value"]["slots"]["value"]).items():
+        new_slot_partition = {
+            "@type": "void:Dataset",
+            "void:property": {"@id": tag},
+            "void:triples": slot_partition["value"]
+        }
+        new_counts["void:propertyPartition"].append(new_slot_partition)
+
+    for pred_tag, pred_data in as_dict(counts["value"]["pairs"]["value"]).items():
+        for subj_tag, subj_data in pred_data["value"].items():
+            subj_partition = next(k for k in new_counts["void:classPartition"] if k["void:class"]["@id"] == subj_tag)
+            subj_property_partitions = subj_partition.setdefault("void:propertyPartition",[])
+            new_property_partition = {
+                "@type": "void:Dataset",
+                "void:property": {"@id": pred_tag},
+                "void-ext:objectClassPartition": []
+            }
+            for obj_tag, obj_data in subj_data["value"].items():
+                new_object_partition = {
+                    "@type": "void:Dataset",
+                    "void:class": {"@id": obj_tag},
+                    "void:triples": obj_data["value"],
+                }
+
+                try:
+                    pair_example = as_dict(examples)["value"]["pairs"]["value"][pred_tag]["value"][subj_tag]["value"][obj_tag]["value"]
+                except KeyError:
+                    pass
+                else:
+                    new_object_partition["skos:example"] = [{
+                        "@type": "rdf:Statement",
+                        "rdf:subject": {"@id": pair_example["subject"]["value"]},
+                        "rdf:predicate": {"@id": pair_example["predicate"]["value"]},
+                        "rdf:object": ({"@id": str(pair_example["object"]["value"])} if (':' in pair_example["object"]["value"]) else str(pair_example["object"]["value"])), # TODO: find a better way to distinguish literals from non-literals
+                    }]
+
+                new_property_partition["void-ext:objectClassPartition"].append(new_object_partition)
+            subj_property_partitions.append(new_property_partition)
+
+    return [new_counts]
 
 @dataclass
 class JSONLDGenerator(Generator):
@@ -152,7 +218,7 @@ class JSONLDGenerator(Generator):
     def visit_subset(self, ss: SubsetDefinition) -> None:
         self._visit(ss)
 
-    def end_schema(self, context: str = None, **_) -> str:
+    def end_schema(self, context: Optional[str] = None, **_) -> str:
         self._add_type(self.schema)
         base_prefix = self.default_prefix()
 
@@ -188,9 +254,19 @@ class JSONLDGenerator(Generator):
                 self.schema["@context"].append({"@base": base_prefix})
         # json_obj["@id"] = self.schema.id
 
+        # Filter only for classes defined in graph
         self.schema['classes'] = {k: v for k, v in self.schema['classes'].items() if v['from_schema'] == self.schema['id']}
         self.schema['slots'] = {k: v for k, v in self.schema['slots'].items() if v['from_schema'] == self.schema['id']}
         self.schema['types'] = {k: v for k, v in self.schema['types'].items() if v['from_schema'] == self.schema['id']}
+
+        # Convert counts to VOID
+        self.schema["@context"].append({"void-ext": "http://ldf.fi/void-ext#"})
+        self.schema['annotations'] = convert_to_void(
+            self.schema['annotations']['counts'],
+            self.schema['annotations']['examples'],
+            self.schema['name'],
+            self.schema['prefixes']
+        )
 
         out = str(as_json(self.schema, indent="  ")) + "\n"
         self.schema = self.original_schema
