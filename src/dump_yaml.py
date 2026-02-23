@@ -3,6 +3,7 @@ import datetime
 import json
 import logging
 import os
+import os.path
 from collections import defaultdict
 from functools import lru_cache
 from itertools import chain
@@ -143,6 +144,7 @@ class GraphCharacterizer:
 
         self.g = get_graph(args.graph_to_read)
         self.list_untyped_entities = args.list_untyped_entities
+        self.output_path = args.output_path
 
         if args.okn_registry_id:
             self.schema = read_from_registry(args.okn_registry_id)
@@ -907,14 +909,16 @@ class GraphCharacterizer:
 
     def export_schema(self):
         yaml_file_basename = self.graph_name.replace("/", "__")
+        output_file_path = os.path.join(self.output_path, yaml_file_basename + ".yaml")
 
-        with open(yaml_file_basename + ".yaml", "w") as f:
+        with open(output_file_path, "w") as f:
             yaml.dump(self.schema, f)
 
     def export_untyped_entities(self):
         yaml_file_basename = self.graph_name.replace("/", "__")
+        output_file_path = os.path.join(self.output_path, yaml_file_basename + "_untyped.txt")
 
-        with open(yaml_file_basename + "_untyped.txt", "w") as f:
+        with open(output_file_path, "w") as f:
             f.writelines(str(e) + "\n" for e in self.entities_without_type)
 
     def characterize(self):
@@ -968,6 +972,11 @@ if __name__ == "__main__":
         help="Provides a list of untyped subject entities in the graph.",
     )
     parser.add_argument(
+        "--output-path",
+        default=".",
+        help="Path into which any outputs from the characterization (schemas, untyped entity lists, etc.) should be saved."
+    )
+    parser.add_argument(
         "--generate-base-schemas",
         type=int,
         help="Of the ontologies listed in external_ontologies.py, which (1-indexed) to generate while leaving the others above it intact.",
@@ -1009,4 +1018,3 @@ if __name__ == "__main__":
     )
 
     GraphCharacterizer(args, uri_mappings).characterize()
-

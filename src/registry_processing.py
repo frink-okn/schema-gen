@@ -37,11 +37,11 @@ def read_from_registry(okn_registry_id):
         for contact in post.get("contacts"):
             if contact.get("email"):
                 schema.setdefault("contributors", []).append(
-                    "mailto:" + contact["contact"]["email"]
+                    "mailto:" + contact["email"]
                 )
             elif contact.get("github"):
                 schema.setdefault("contributors", []).append(
-                    "https://github.com/" + contact["contact"]["github"]
+                    "https://github.com/" + contact["github"]
                 )
 
     return schema
