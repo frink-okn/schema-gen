@@ -8,7 +8,7 @@ This script automates the process of generating schema documentation for a given
 - Python 3 installed
 - Git installed and configured
 - GitHub SSH access with a valid deploy key
-- Required Python scripts available: `dump_yaml.py` and `docgen-frink.py`
+- Required Python scripts available: `dump_yaml.py` and `docgen-okn.py`
 - `gh` (GitHub CLI) installed and authenticated
 
 ## Usage
@@ -34,7 +34,7 @@ This script automates the process of generating schema documentation for a given
    - Checks out the specified branch or creates it if not existing.
 5. **Runs Schema and Documentation Generation:**
    - Calls `dump_yaml.py` to generate the schema.
-   - Calls `docgen-frink.py` to generate documentation.
+   - Calls `docgen-okn.py` to generate documentation.
 6. **Commits and Pushes Changes to GitHub:**
    - Adds and commits updated documentation.
    - Pushes changes and creates a pull request using GitHub CLI.

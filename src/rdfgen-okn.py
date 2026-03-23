@@ -20,7 +20,7 @@ from rdflib.plugin import plugins as rdflib_plugins
 
 from linkml import METAMODEL_CONTEXT_URI
 from linkml._version import __version__
-from jsonldgen_frink import JSONLDGenerator
+from jsonldgen_okn import JSONLDGenerator
 from linkml.utils.generator import Generator, shared_arguments
 
 

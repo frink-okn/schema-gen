@@ -27,7 +27,7 @@ from linkml_runtime.utils.formatutils import camelcase, underscore
 from linkml_runtime.utils.schemaview import SchemaView
 
 from linkml._version import __version__
-from erdiagramgen_frink import ERDiagramGenerator
+from erdiagramgen_okn import ERDiagramGenerator
 from linkml.generators.plantumlgen import PlantumlGenerator
 from linkml.utils.generator import Generator, shared_arguments
 from linkml.workspaces.example_runner import ExampleRunner

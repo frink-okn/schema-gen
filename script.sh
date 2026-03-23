@@ -23,7 +23,7 @@ echo "Processing: "
 ls $GRAPH_DATA_PATH
 # Configure Git
 git config --global user.email "frink-okn@renci.org"
-git config --global user.name "Frink documentation bot"
+git config --global user.name "OKN documentation bot"
 
 # Clone repository using HTTPS with access token
 REPO_URL="https://${GH_TOKEN}@github.com/frink-okn/graph-descriptions.git"
@@ -69,8 +69,8 @@ fi
 
 # Generate documentation
 DOCS_DIR="repo/$GRAPH_NAME"
-python3 src/docgen-frink.py "/code/${GRAPH_NAME}.yaml" \
-    --template-directory /code/src/docgen-frink-templates \
+python3 src/docgen-okn.py "/code/${GRAPH_NAME}.yaml" \
+    --template-directory /code/src/docgen-okn-templates \
     --directory "$DOCS_DIR" \
     --include-top-level-diagram \
     --diagram-type mermaid_class_diagram \

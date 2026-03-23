@@ -8,7 +8,7 @@
 # python3 dump_yaml.py $graph /path/to/$graph
 # gen-jsonld-context $graph.yaml >$graph".context.jsonld"
 # gen-rdf $graph.yaml >$graph".ttl"
-# python3 docgen-frink.py -v $graph".yaml" --diagram-type mermaid_class_diagram --directory ~/graph-descriptions/$graph --no-mergeimports --subfolder-type-separation --include-top-level-diagram --template-directory docgen-frink
+# python3 docgen-okn.py -v $graph".yaml" --diagram-type mermaid_class_diagram --directory ~/graph-descriptions/$graph --no-mergeimports --subfolder-type-separation --include-top-level-diagram --template-directory docgen-okn
 #
 # for each graph $graph .
 
