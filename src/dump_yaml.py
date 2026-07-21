@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import os.path
+import re
 from collections import defaultdict
 from functools import lru_cache
 from itertools import chain
@@ -44,6 +45,20 @@ from registry_processing import read_from_registry, schema_from_existing
 
 # --- Global State ---
 formatter_urls = None
+UNPREFIXED_IRI_WARNING_LIMIT = 1000
+INVALID_LINKML_KEY_CHARACTERS = re.compile(r"[^A-Za-z0-9_]+")
+REPEATED_UNDERSCORES = re.compile(r"_+")
+
+
+def sanitize_linkml_key(value):
+    """Create a conservative LinkML element name without changing its RDF IRI."""
+    key = INVALID_LINKML_KEY_CHARACTERS.sub("_", value)
+    key = REPEATED_UNDERSCORES.sub("_", key).strip("_")
+    if not key:
+        key = "iri"
+    if key[0].isdigit():
+        key = f"iri_{key}"
+    return key
 
 
 def get_graph(graph_to_read):
@@ -167,6 +182,9 @@ class GraphCharacterizer:
         self.formatter_urls_found = defaultdict(int)
 
         self.parsed_uris = {}
+        self.unprefixed_iris = set()
+        self.unprefixed_iri_warnings_suppressed = False
+        self.linkml_key_iris = {}
 
         # Optimization: Pre-build indexes immediately
         self._build_indexes()
@@ -238,6 +256,33 @@ class GraphCharacterizer:
             self.schema["prefixes"][replacement] = str(prefix)
         return node
 
+    def warn_unprefixed_iri(self, iri, output_key):
+        if iri in self.unprefixed_iris:
+            return
+
+        if len(self.unprefixed_iris) < UNPREFIXED_IRI_WARNING_LIMIT:
+            self.unprefixed_iris.add(iri)
+            logging.warning(
+                "IRI could not be converted to a CURIE; using LinkML key %s: %s",
+                output_key,
+                iri,
+            )
+        elif not self.unprefixed_iri_warnings_suppressed:
+            logging.warning(
+                "Suppressing warnings for additional IRIs that could not be converted "
+                "to CURIEs after %d unique IRIs",
+                UNPREFIXED_IRI_WARNING_LIMIT,
+            )
+            self.unprefixed_iri_warnings_suppressed = True
+
+    def check_linkml_key_collision(self, iri, output_key):
+        previous_iri = self.linkml_key_iris.setdefault(output_key, iri)
+        if previous_iri != iri:
+            raise ValueError(
+                f"IRIs {previous_iri!r} and {iri!r} produce the same LinkML key "
+                f"{output_key!r}"
+            )
+
     @lru_cache(maxsize=100000)
     def produce_curie_key(self, uri):
         """
@@ -246,7 +291,18 @@ class GraphCharacterizer:
         """
         uri_str = str(uri)
         output_curie = self.replace_prefixes(uri_str)
-        output_key = output_curie.replace(":", "_").replace("/", "_")
+        is_unprefixed_iri = isinstance(uri, URIRef) and output_curie == uri_str
+
+        if is_unprefixed_iri:
+            output_key = sanitize_linkml_key(output_curie)
+            self.warn_unprefixed_iri(uri_str, output_key)
+        else:
+            # Preserve existing keys for recognized CURIEs and non-IRI values.
+            output_key = output_curie.replace(":", "_").replace("/", "_")
+
+        if isinstance(uri, URIRef):
+            self.check_linkml_key_collision(uri_str, output_key)
+
         return output_curie, output_key
 
     def process_restrictions(self):
