@@ -25,8 +25,9 @@ def make_characterizer():
     [
         ("frbr:Endeavour", "frbr_Endeavour"),
         ("http://example.test/Foo.Bar#Baz", "http_example_test_Foo_Bar_Baz"),
-        ("https://example.test/a-b?x=1", "https_example_test_a_b_x_1"),
+        ("https://example.test/a-b?x=1", "https_example_test_a-b_x_1"),
         ("123", "iri_123"),
+        ("3DModel", "iri_3DModel"),
         ("///", "iri"),
     ],
 )
@@ -67,6 +68,35 @@ def test_produce_curie_key_preserves_existing_curie_key_format(caplog):
     assert output_curie == "gnis-ld-gnis:County"
     assert output_key == "gnis-ld-gnis_County"
     assert "IRI could not be converted to a CURIE" not in caplog.text
+
+
+@pytest.mark.parametrize(
+    ("iri", "expected_curie", "expected_key"),
+    [
+        (
+            "http://w3id.org/fio/v1/epa-frs#Agency.Agriculture",
+            "fio-epa-frs:Agency.Agriculture",
+            "fio-epa-frs_Agency_Agriculture",
+        ),
+        (
+            "http://sail.ua.edu/ruralkg/justice/DataElement14-TypePropertyLoss_Etc.",
+            "rural:justice/DataElement14-TypePropertyLoss_Etc.",
+            "rural_justice_DataElement14-TypePropertyLoss_Etc",
+        ),
+        (
+            "https://stko-kwg.geog.ucsb.edu/lod/ontology#S2Cell",
+            "kwgos:#S2Cell",
+            "kwgos_S2Cell",
+        ),
+    ],
+)
+def test_produce_curie_key_sanitizes_prefixed_iris(iri, expected_curie, expected_key):
+    characterizer = make_characterizer()
+
+    output_curie, output_key = characterizer.produce_curie_key(URIRef(iri))
+
+    assert output_curie == expected_curie
+    assert output_key == expected_key
 
 
 def test_produce_curie_key_deduplicates_unprefixed_iri_warning(caplog):
@@ -112,7 +142,7 @@ def test_unprefixed_iri_warnings_are_capped(caplog):
 
 def test_linkml_key_collision_fails_fast():
     characterizer = make_characterizer()
-    characterizer.produce_curie_key(URIRef("https://unregistered.example.test/a-b"))
+    characterizer.produce_curie_key(URIRef("https://unregistered.example.test/a.b"))
 
     with pytest.raises(ValueError, match="produce the same LinkML key"):
         characterizer.produce_curie_key(URIRef("https://unregistered.example.test/a_b"))

@@ -12,6 +12,8 @@ from linkml_runtime.utils.schemaview import SchemaView
 from linkml._version import __version__
 from linkml.utils.generator import Generator, shared_arguments
 
+from identifier_utils import sanitize_identifier
+
 MERMAID_SERIALIZATION = str
 
 
@@ -223,7 +225,7 @@ class ERDiagramGenerator(Generator):
     def add_upstream_class(self, class_name: ClassDefinitionName, targets: Set[str], diagram: ERDiagram) -> None:
         sv = self.schemaview
         cls = sv.get_class(class_name)
-        entity = Entity(name=camelcase(cls.name))
+        entity = Entity(name=sanitize_identifier(camelcase(cls.name)))
         diagram.entities.append(entity)
         for slot in sv.class_induced_slots(class_name):
             if slot.range in targets:
@@ -241,7 +243,7 @@ class ERDiagramGenerator(Generator):
             return
         sv = self.schemaview
         cls = sv.get_class(class_name)
-        entity = Entity(name=camelcase(cls.name))
+        entity = Entity(name=sanitize_identifier(camelcase(cls.name)))
         diagram.entities.append(entity)
         for slot in sv.class_induced_slots(class_name):
             # TODO: schemaview should infer this
@@ -274,18 +276,25 @@ class ERDiagramGenerator(Generator):
                     rel = Relationship(
                         first_entity=entity.name,
                         relationship_type=rel_type,
-                        second_entity=camelcase(sv.get_class(any_of_type.range).name),
+                        second_entity=sanitize_identifier(
+                            camelcase(sv.get_class(any_of_type.range).name)
+                        ),
                         relationship_label=slot.name,
                     )
                     diagram.relationships.append(rel)
                 except AttributeError:
-                    attr = Attribute(name=underscore(slot.name), datatype=any_of_type.range)
+                    attr = Attribute(
+                        name=sanitize_identifier(underscore(slot.name)),
+                        datatype=sanitize_identifier(any_of_type.range),
+                    )
                     entity.attributes.append(attr)
         else:
             rel = Relationship(
                 first_entity=entity.name,
                 relationship_type=rel_type,
-                second_entity=camelcase(sv.get_class(slot.range).name),
+                second_entity=sanitize_identifier(
+                    camelcase(sv.get_class(slot.range).name)
+                ),
                 relationship_label=slot.name,
             )
             diagram.relationships.append(rel)
@@ -304,7 +313,10 @@ class ERDiagramGenerator(Generator):
         if slot.multivalued:
             # NOTE: mermaid does not support []s or *s in attribute types
             dt = f"{dt}List"
-        attr = Attribute(name=underscore(slot.name), datatype=dt)
+        attr = Attribute(
+            name=sanitize_identifier(underscore(slot.name)),
+            datatype=sanitize_identifier(dt),
+        )
         entity.attributes.append(attr)
 
 

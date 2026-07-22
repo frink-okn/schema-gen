@@ -4,7 +4,6 @@ import json
 import logging
 import os
 import os.path
-import re
 from collections import defaultdict
 from functools import lru_cache
 from itertools import chain
@@ -26,6 +25,7 @@ from common_functions import (
 )
 from external_ontologies import external_ontologies_dict, load_external_ontologies
 from formatter_url_parsing import get_formatter_urls
+from identifier_utils import sanitize_identifier
 from linkml_structures import linkml_schema
 from predicate_mappings import (
     CLASS_TYPES,
@@ -46,19 +46,11 @@ from registry_processing import read_from_registry, schema_from_existing
 # --- Global State ---
 formatter_urls = None
 UNPREFIXED_IRI_WARNING_LIMIT = 1000
-INVALID_LINKML_KEY_CHARACTERS = re.compile(r"[^A-Za-z0-9_]+")
-REPEATED_UNDERSCORES = re.compile(r"_+")
 
 
 def sanitize_linkml_key(value):
     """Create a conservative LinkML element name without changing its RDF IRI."""
-    key = INVALID_LINKML_KEY_CHARACTERS.sub("_", value)
-    key = REPEATED_UNDERSCORES.sub("_", key).strip("_")
-    if not key:
-        key = "iri"
-    if key[0].isdigit():
-        key = f"iri_{key}"
-    return key
+    return sanitize_identifier(value)
 
 
 def get_graph(graph_to_read):
@@ -293,12 +285,11 @@ class GraphCharacterizer:
         output_curie = self.replace_prefixes(uri_str)
         is_unprefixed_iri = isinstance(uri, URIRef) and output_curie == uri_str
 
+        output_key = sanitize_linkml_key(
+            output_curie.replace(":", "_").replace("/", "_")
+        )
         if is_unprefixed_iri:
-            output_key = sanitize_linkml_key(output_curie)
             self.warn_unprefixed_iri(uri_str, output_key)
-        else:
-            # Preserve existing keys for recognized CURIEs and non-IRI values.
-            output_key = output_curie.replace(":", "_").replace("/", "_")
 
         if isinstance(uri, URIRef):
             self.check_linkml_key_collision(uri_str, output_key)
