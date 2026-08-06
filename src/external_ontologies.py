@@ -1,25 +1,34 @@
-# This is a list of LinkML schemas representing external ontologies
-# (i.e. those not defined by LinkML itself or by a Proto-OKN graph).
-#
-# Most of these were generated in order by excluding it and all entries below it
-# from the external ontologies list
-# and then rerunning the generation scripts
-#
-# python3 dump_yaml.py $graph /path/to/$graph
-# gen-jsonld-context $graph.yaml >$graph".context.jsonld"
-# gen-rdf $graph.yaml >$graph".ttl"
-# python3 docgen-okn.py -v $graph".yaml" --diagram-type mermaid_class_diagram --directory ~/graph-descriptions/$graph --no-mergeimports --subfolder-type-separation --include-top-level-diagram --template-directory docgen-okn
-#
-# for each graph $graph .
+"""This is a list of LinkML schemas representing external ontologies
+(i.e. those not defined by LinkML itself or by a Proto-OKN graph).
+
+Most of these were generated in order by excluding it and all entries below it
+from the external ontologies list
+and then rerunning the generation scripts
+
+python3 dump_yaml.py $graph /path/to/$graph
+gen-jsonld-context $graph.yaml >$graph".context.jsonld"
+gen-rdf $graph.yaml >$graph".ttl"
+python3 docgen-okn.py -v $graph".yaml" --diagram-type mermaid_class_diagram --directory ~/graph-descriptions/$graph --no-mergeimports --subfolder-type-separation --include-top-level-diagram --template-directory docgen-okn
+
+for each graph $graph .
+"""
 
 import logging
+import pickle
 from collections import defaultdict
+from collections.abc import Iterable
 from copy import deepcopy
+from dataclasses import dataclass
+from typing import Any, TypedDict
 
-import linkml_runtime
 import tqdm
+from linkml_runtime import SchemaView
+from linkml_runtime.linkml_model import (ClassDefinition, Element,
+                                         SlotDefinition, TypeDefinition)
 
 from common_functions import check_for_cycles
+
+logger = logging.getLogger(__name__)
 
 external_ontologies_dict = {
     "owl-rdf-rdfs": {
@@ -125,23 +134,36 @@ external_ontologies_dict = {
     # cheminf
 }
 
+@dataclass
+class ExternalOntologyInfo:
+    URIs_to_entities: dict[str, Element]
+    URI_entity_types: dict[str, str]
+    URIs_to_ontologies: dict[str, str]
+    subclass_tree: defaultdict[str, set[str]]
 
 # --- External Ontology Loading ---
 def load_external_ontologies(
-    source=external_ontologies_dict,
-    external_ontology_path=None,
-):
-    URIs_to_entities = {}
-    URIs_to_ontologies = {
+    source: dict[str, dict[str, str]]=external_ontologies_dict,
+    external_ontology_path: str | None=None,
+) -> ExternalOntologyInfo:
+    try:
+        with open('external_ontologies.pkl','rb') as f:
+            old_details = pickle.load(f)
+            if not isinstance(old_details, ExternalOntologyInfo):
+                raise ValueError('Pickled information of wrong type')
+            print("Loaded", len(old_details.URIs_to_ontologies), "terms from external ontologies")
+            return old_details
+    except (FileNotFoundError, ValueError):
+        pass
+
+    eoi = ExternalOntologyInfo({}, {
         "xsd:length": "okns:extended_types",
         "xsd:minLength": "okns:extended_types",
         "xsd:maxLength": "okns:extended_types",
         "xsd:minExclusive": "okns:extended_types",
         "xsd:maxExclusive": "okns:extended_types",
         "rdf:langRange": "okns:extended_types",
-    }
-    URI_entity_types = {}
-    subclass_tree = defaultdict(set)
+    }, {}, defaultdict(set))
 
     for name, external_ontology in tqdm.tqdm(source.items(), desc="Loading external ontologies"):
         current_from_path = external_ontology["from_path"]
@@ -152,54 +174,82 @@ def load_external_ontologies(
             )
 
         try:
-            current_schema = linkml_runtime.SchemaView(current_read_path + ".yaml")
+            current_schema = SchemaView(current_read_path + ".yaml")
         except (FileNotFoundError, OSError) as e:
-            logging.warning(f"Could not load external ontology {name}: {e}")
+            logger.warning(f"Could not load external ontology {name}: {e}")
             continue
 
+        if current_schema.schema is None:
+            raise ValueError('No schema in provided YAML?')
+        if current_schema.schema.classes is None:
+            raise ValueError("No classes in provided YAML's schema?")
+        if current_schema.schema.types is None:
+            raise ValueError("No types in provided YAML's schema?")
+        if current_schema.schema.slots is None:
+            raise ValueError("No slots in provided YAML's schema?")
+
+        type_list: Iterable[dict[Any, Any] | TypeDefinition]
+        class_list: Iterable[dict[Any, Any] | ClassDefinition]
+        slot_list: Iterable[dict[Any, Any] | SlotDefinition]
+        if isinstance(current_schema.schema.types, list):
+            type_list = current_schema.schema.types
+        else:
+            type_list = current_schema.schema.types.values()
+        if isinstance(current_schema.schema.classes, list):
+            class_list = current_schema.schema.classes
+        else:
+            class_list = current_schema.schema.classes.values()
+        if isinstance(current_schema.schema.slots, list):
+            slot_list = current_schema.schema.slots
+        else:
+            slot_list = current_schema.schema.slots.values()
+
         # Optimization: Localize lookups within loop
-        for current_type in current_schema.schema.types.values():
+        for current_type in type_list:
+            if not isinstance(current_type, TypeDefinition):
+                current_type = TypeDefinition(**current_type)
             if (
                 "uri" in current_type
-                and (current_type["uri"] not in URIs_to_ontologies)
+                and (current_type["uri"] not in eoi.URIs_to_ontologies)
                 and (current_type["from_schema"] != current_from_path)
             ):
                 current_uri = current_type["uri"]
-                URIs_to_entities[current_uri] = current_type
-                URI_entity_types[current_uri] = "type"
-                URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_to_entities[current_uri] = current_type
+                eoi.URI_entity_types[current_uri] = "type"
+                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
 
-        for current_class in current_schema.schema.classes.values():
+        for current_class in class_list:
+            if not isinstance(current_class, ClassDefinition):
+                current_class = ClassDefinition(**current_class)
             if (
                 "class_uri" in current_class
-                and (current_class["class_uri"] not in URIs_to_ontologies)
+                and (current_class["class_uri"] not in eoi.URIs_to_ontologies)
                 and (current_class["from_schema"] != current_from_path)
             ):
                 current_uri = current_class["class_uri"]
-                URIs_to_entities[current_uri] = current_class
-                URI_entity_types[current_uri] = "class"
-                URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_to_entities[current_uri] = current_class
+                eoi.URI_entity_types[current_uri] = "class"
+                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
                 if current_class.is_a is not None:
                     if not check_for_cycles(
-                        subclass_tree, current_class.name, current_class.is_a
+                        eoi.subclass_tree, current_class.name, current_class.is_a
                     ):
-                        subclass_tree[current_class.is_a].add(current_class.name)
+                        eoi.subclass_tree[current_class.is_a].add(current_class.name)
 
-        for current_slot in current_schema.schema.slots.values():
+        for current_slot in slot_list:
+            if not isinstance(current_slot, SlotDefinition):
+                current_slot = SlotDefinition(**current_slot)
             if (
                 "slot_uri" in current_slot
-                and (current_slot["slot_uri"] not in URIs_to_ontologies)
+                and (current_slot["slot_uri"] not in eoi.URIs_to_ontologies)
                 and (current_slot["from_schema"] != current_from_path)
             ):
                 current_uri = current_slot["slot_uri"]
-                URIs_to_entities[current_uri] = current_slot
-                URI_entity_types[current_uri] = "slot"
-                URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_to_entities[current_uri] = current_slot
+                eoi.URI_entity_types[current_uri] = "slot"
+                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
 
-    print("Loaded", len(URIs_to_ontologies), "terms from external ontologies")
-    return {
-        "URIs_to_entities": URIs_to_entities,
-        "URI_entity_types": URI_entity_types,
-        "URIs_to_ontologies": URIs_to_ontologies,
-        "subclass_tree": subclass_tree,
-    }
+    with open('external_ontologies.pkl','wb') as f:
+        pickle.dump(eoi, f)
+    print("Loaded", len(eoi.URIs_to_ontologies), "terms from external ontologies")
+    return eoi

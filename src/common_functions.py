@@ -1,13 +1,17 @@
 import logging
 from graphlib import CycleError, TopologicalSorter
+from typing import Any, TypeAlias
 
+from linkml_runtime.utils.metamodelcore import URIorCURIE, XSDDateTime
 from rdflib import URIRef
 from rdflib.namespace import SDO, XSD
+from rdflib.term import Node
 
 from prefix_definitions import replacements
 
+logger = logging.getLogger()
 
-def find_prefix(node):
+def find_prefix(node: str) -> tuple[str, str, str]:
     """Replaces a URI prefix with the abbreviation as given in 'replacements' above."""
     replacement = ""
     prefix = ""
@@ -29,7 +33,7 @@ def find_prefix(node):
     return node, replacement, prefix
 
 
-def get_object_datatype(obj):
+def get_object_datatype(obj: Any) -> URIRef:
     if isinstance(obj, URIRef):
         object_datatype = XSD.anyURI
     else:
@@ -39,12 +43,13 @@ def get_object_datatype(obj):
     return object_datatype
 
 
-def value_is_valid(string_to_store, datatype, pred, obj_name):
+def value_is_valid(string_to_store: str, datatype: Any, pred: Node, obj_name: str) -> bool:
     if datatype == str:
         return True
-    if datatype.is_valid(string_to_store):
-        return True
-    logging.warning(
+    if datatype in {URIorCURIE, XSDDateTime}:
+        if datatype.is_valid(string_to_store):
+            return True
+    logger.warning(
         'Attempted to add value "%s" for predicate %s to object %s',
         string_to_store,
         pred,
@@ -52,13 +57,15 @@ def value_is_valid(string_to_store, datatype, pred, obj_name):
     )
     return False
 
+SubclassTree: TypeAlias = dict[str, set[str]]
 
-def check_for_cycles(subclass_tree, subj_key, obj_key):
+def check_for_cycles(subclass_tree: SubclassTree, subj_key: str, obj_key: str) -> Any:
     try:
         TopologicalSorter({**subclass_tree, obj_key: set([subj_key])}).prepare()
     except CycleError as e:
-        logging.warning(
+        logger.warning(
             "Found a cycle in the subclass tree, which is being disregarded: %s",
             e.args[1],
         )
         return e.args[1]
+    return None

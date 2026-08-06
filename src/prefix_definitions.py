@@ -1,25 +1,27 @@
-from rdflib.namespace import Namespace, DCAT, DCAM, DCMITYPE, DCTERMS, GEO, OWL, RDF, PROV, SDO, SOSA, SKOS, RDFS, XSD, DC, VOID, FOAF, WGS, TIME, VANN, ORG
+from rdflib.namespace import (DC, DCAM, DCAT, DCMITYPE, DCTERMS, FOAF, GEO,
+                              ORG, OWL, PROV, RDF, RDFS, SDO, SKOS, SOSA, TIME,
+                              VANN, VOID, XSD, Namespace)
 
 replacement_prefixes = {
-    'dc': DC, # from rdflib.namespace
-    'dcam': DCAM, # from rdflib.namespace
-    'dcat': DCAT, # from rdflib.namespace
-    'dcmitype': DCMITYPE, # from rdflib.namespace
-    'dct': DCTERMS, # from rdflib.namespace
-    'foaf': FOAF, # from rdflib.namespace
-    'geo': GEO, # from rdflib.namespace
-    'org': ORG, # from rdflib.namespace
-    'owl': OWL, # from rdflib.namespace
-    'prov': PROV, # from rdflib.namespace
-    'rdf': RDF, # from rdflib.namespace
-    'rdfs': RDFS, # from rdflib.namespace
-    'sdos': SDO, # from rdflib.namespace
-    'skos': SKOS, # from rdflib.namespace
-    'sosa': SOSA, # from rdflib.namespace
-    'time': TIME, # from rdflib.namespace
-    'vann': VANN, # from rdflib.namespace
-    'void': VOID, # from rdflib.namespace
-    'xsd': XSD, # from rdflib.namespace
+    'dc': DC._NS, # from rdflib.namespace
+    'dcam': DCAM._NS, # from rdflib.namespace
+    'dcat': DCAT._NS, # from rdflib.namespace
+    'dcmitype': DCMITYPE._NS, # from rdflib.namespace
+    'dct': DCTERMS._NS, # from rdflib.namespace
+    'foaf': FOAF._NS, # from rdflib.namespace
+    'geo': GEO._NS, # from rdflib.namespace
+    'org': ORG._NS, # from rdflib.namespace
+    'owl': OWL._NS, # from rdflib.namespace
+    'prov': PROV._NS, # from rdflib.namespace
+    'rdf': RDF._NS, # from rdflib.namespace
+    'rdfs': RDFS._NS, # from rdflib.namespace
+    'sdos': SDO._NS, # from rdflib.namespace
+    'skos': SKOS._NS, # from rdflib.namespace
+    'sosa': SOSA._NS, # from rdflib.namespace
+    'time': TIME._NS, # from rdflib.namespace
+    'vann': VANN._NS, # from rdflib.namespace
+    'void': VOID._NS, # from rdflib.namespace
+    'xsd': XSD._NS, # from rdflib.namespace
     'schema': Namespace('http://schema.org/'),
     'ical': Namespace('http://www.w3.org/2002/12/cal/ical#'), # RDF schema for iCalendar data
     'icalspec': Namespace('http://www.w3.org/2002/12/cal/icalSpec#'), # RDF schema for iCalendar data
@@ -129,7 +131,7 @@ replacement_prefixes = {
     'attribute': Namespace('http://attribute.org/'), # Not a real prefix; should be substituted wherever it occurs.
     'relation': Namespace('http://relation.org/'), # Not a real prefix; should be substituted wherever it occurs.
     'badwdt': Namespace('https://www.wikidata.org/wiki/Property:'), # Not a real RDF prefix; should be substituted wherever it occurs.
-    'dreamkg': Namespace('http://www.semanticweb.org/dreamkg/ijcai/'), # from DREAM-KG; should be substituted with a working IRI prefix.
+    'dreamkg': Namespace('https://purl.org/okn/frink/kg/dreamkg/'), # from DREAM-KG
     'scales': Namespace('http://schemas.scales-okn.org/rdf/scales#'), # from SCALES; should be substituted with a working IRI prefix.
     'sockg': Namespace('https://idir.uta.edu/sockg-ontology/docs/'), # from SOC-KG
     'securechain': Namespace('https://w3id.org/secure-chain/'), # from Secure Chain-KG

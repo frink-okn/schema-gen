@@ -1,15 +1,21 @@
+from typing import Any, TypeAlias
+
 from linkml_runtime.utils.metamodelcore import URIorCURIE, XSDDateTime
 from rdflib import URIRef
-from rdflib.namespace import Namespace, XSD, SKOS, DCTERMS, DCAT, RDF, RDFS, OWL, SDO, PROV, DC
+from rdflib.namespace import (DC, DCAT, DCTERMS, OWL, PROV, RDF, RDFS, SDO,
+                              SKOS, XSD, Namespace)
+from rdflib.term import Node
+
+SlotMapping: TypeAlias = dict[Node, tuple[str, Any]]
 
 SHEX = Namespace("http://www.w3.org/ns/shex#")
 
-CLASS_TYPES = {
+CLASS_TYPES: dict[URIRef, dict[str, Any]] = {
     RDFS.Class: {},
     OWL.Class: {},
     OWL.DeprecatedClass: {'deprecated': 'This class is noted as being deprecated, without an explicit reason given.'},
 }
-SLOT_TYPES = {
+SLOT_TYPES: dict[URIRef, dict[str, Any]] = {
     RDF.Property: {},
     RDFS.ContainerMembershipProperty: {},
     OWL.DatatypeProperty: {},
@@ -25,12 +31,12 @@ SLOT_TYPES = {
     OWL.FunctionalProperty: {'multivalued': False},
     OWL.InverseFunctionalProperty: {'key': True},
 }
-TYPE_TYPES = {
+TYPE_TYPES: dict[URIRef, dict[str, Any]] = {
     RDFS.Datatype: {}
 }
 METADATA_TYPES = {OWL.Ontology, OWL.AllDisjointClasses, OWL.Restriction} | set(CLASS_TYPES.keys()) | set(SLOT_TYPES.keys()) | set(TYPE_TYPES.keys()) | {RDF.List}
 
-SLOTS_TO_PREDICATES_SINGLE = {
+SLOTS_TO_PREDICATES_SINGLE: SlotMapping = {
     DCTERMS.conformsTo: ("conforms_to", str),
     DCTERMS.description: ("description", str),
     DC.description: ("description", str),
@@ -50,7 +56,7 @@ SLOTS_TO_PREDICATES_SINGLE = {
     DCTERMS.modified: ("last_updated_on", XSDDateTime),
     DC.date: ("last_updated_on", XSDDateTime),
 }
-SLOTS_TO_PREDICATES_MULTIPLE_STR = {
+SLOTS_TO_PREDICATES_MULTIPLE_STR: SlotMapping = {
     PROV.todo: ("todos", str),
     SKOS.note: ("notes", str),
     SKOS.changeNote: ("notes", str),
@@ -74,11 +80,11 @@ SLOTS_TO_PREDICATES_MULTIPLE_STR = {
     DCAT.keyword: ("keywords", str),
     SDO.keywords: ("keywords", str),
 }
-SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY = {
+SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY: SlotMapping = {
     DCTERMS.hasVersion: ("version", str),
 }
 
-SINGLE_VALUE_RESTRICTIONS = {
+SINGLE_VALUE_RESTRICTIONS: dict[Node, str] = {
     OWL.cardinality: 'exact_cardinality',
     OWL.minCardinality: 'minimum_cardinality',
     OWL.maxCardinality: 'maximum_cardinality',
@@ -93,49 +99,49 @@ types_url = 'linkml:types'
 extended_types_url = 'okns:extended_types'
 
 # Only mappings to LinkML types are listed here.
-datatype_to_type = {
-    XSD.string: ['string', types_url, linkml_prefixes],
-    XSD.integer: ['integer', types_url, linkml_prefixes],
-    XSD.boolean: ['boolean', types_url, linkml_prefixes],
-    XSD.float: ['float', types_url, linkml_prefixes],
-    XSD.double: ['double', types_url, linkml_prefixes],
-    XSD.decimal: ['decimal', types_url, linkml_prefixes],
-    XSD.time: ['time', types_url, linkml_prefixes],
-    XSD.date: ['date', types_url, linkml_prefixes],
-    XSD.dateTime: ['datetime', types_url, linkml_prefixes],
-    XSD.anyURI: ['uri', types_url, linkml_prefixes],
+datatype_to_type: dict[Node, tuple[str, str, dict[str, str]]] = {
+    XSD.string: ('string', types_url, linkml_prefixes),
+    XSD.integer: ('integer', types_url, linkml_prefixes),
+    XSD.boolean: ('boolean', types_url, linkml_prefixes),
+    XSD.float: ('float', types_url, linkml_prefixes),
+    XSD.double: ('double', types_url, linkml_prefixes),
+    XSD.decimal: ('decimal', types_url, linkml_prefixes),
+    XSD.time: ('time', types_url, linkml_prefixes),
+    XSD.date: ('date', types_url, linkml_prefixes),
+    XSD.dateTime: ('datetime', types_url, linkml_prefixes),
+    XSD.anyURI: ('uri', types_url, linkml_prefixes),
     # date_or_datetime, uriorcurie, curie
-    XSD.NCName: ['ncname', types_url, linkml_prefixes],
-    SHEX.iri: ['objectidentifier', types_url, linkml_prefixes],
-    SHEX.nonLiteral: ['nodeidentifier', types_url, linkml_prefixes],
+    XSD.NCName: ('ncname', types_url, linkml_prefixes),
+    SHEX.iri: ('objectidentifier', types_url, linkml_prefixes),
+    SHEX.nonLiteral: ('nodeidentifier', types_url, linkml_prefixes),
     # jsonpointer, jsonpath, sparqlpath
 
     # any_number, signedInteger
-    XSD.nonNegativeInteger: ['unsignedinteger', extended_types_url, linkml_prefixes],
-    XSD.byte: ['int8', extended_types_url, linkml_prefixes],
-    XSD.short: ['int16', extended_types_url, linkml_prefixes],
-    XSD.int: ['int32', extended_types_url, linkml_prefixes],
-    XSD.long: ['int64', extended_types_url, linkml_prefixes],
-    XSD.unsignedByte: ['uint8', extended_types_url, linkml_prefixes],
-    XSD.unsignedShort: ['uint16', extended_types_url, linkml_prefixes],
-    XSD.unsignedInt: ['uint32', extended_types_url, linkml_prefixes],
-    XSD.unsignedLong: ['uint64', extended_types_url, linkml_prefixes],
-    XSD.positiveInteger: ['positiveinteger', extended_types_url, linkml_prefixes],
-    XSD.nonPositiveInteger: ['nonpositiveinteger', extended_types_url, linkml_prefixes],
-    XSD.negativeInteger: ['negativeinteger', extended_types_url, linkml_prefixes],
-    XSD.token: ['token', extended_types_url, linkml_prefixes],
-    XSD.normalizedString: ['normalizedstring', extended_types_url, linkml_prefixes],
-    XSD.language: ['language', extended_types_url, linkml_prefixes],
-    XSD.hexBinary: ['hexbinary', extended_types_url, linkml_prefixes],
-    XSD.base64Binary: ['base64binary', extended_types_url, linkml_prefixes],
-    XSD.Name: ['name', extended_types_url, linkml_prefixes],
-    XSD.NMTOKEN: ['nmtoken', extended_types_url, linkml_prefixes],
-    OWL.rational: ['rational', extended_types_url, linkml_prefixes],
-    OWL.real: ['real', extended_types_url, linkml_prefixes],
+    XSD.nonNegativeInteger: ('unsignedinteger', extended_types_url, linkml_prefixes),
+    XSD.byte: ('int8', extended_types_url, linkml_prefixes),
+    XSD.short: ('int16', extended_types_url, linkml_prefixes),
+    XSD.int: ('int32', extended_types_url, linkml_prefixes),
+    XSD.long: ('int64', extended_types_url, linkml_prefixes),
+    XSD.unsignedByte: ('uint8', extended_types_url, linkml_prefixes),
+    XSD.unsignedShort: ('uint16', extended_types_url, linkml_prefixes),
+    XSD.unsignedInt: ('uint32', extended_types_url, linkml_prefixes),
+    XSD.unsignedLong: ('uint64', extended_types_url, linkml_prefixes),
+    XSD.positiveInteger: ('positiveinteger', extended_types_url, linkml_prefixes),
+    XSD.nonPositiveInteger: ('nonpositiveinteger', extended_types_url, linkml_prefixes),
+    XSD.negativeInteger: ('negativeinteger', extended_types_url, linkml_prefixes),
+    XSD.token: ('token', extended_types_url, linkml_prefixes),
+    XSD.normalizedString: ('normalizedstring', extended_types_url, linkml_prefixes),
+    XSD.language: ('language', extended_types_url, linkml_prefixes),
+    XSD.hexBinary: ('hexbinary', extended_types_url, linkml_prefixes),
+    XSD.base64Binary: ('base64binary', extended_types_url, linkml_prefixes),
+    XSD.Name: ('name', extended_types_url, linkml_prefixes),
+    XSD.NMTOKEN: ('nmtoken', extended_types_url, linkml_prefixes),
+    OWL.rational: ('rational', extended_types_url, linkml_prefixes),
+    OWL.real: ('real', extended_types_url, linkml_prefixes),
     # float16, float32, float64
 }
 linkml_type_names = [v[0] for v in datatype_to_type.values()]
 
-def linkml_type_mapping(object_datatype):
+def linkml_type_mapping(object_datatype: Node) -> tuple[Node | str, str, dict[str, str]]:
     """Substitutes a type with its reference from the LinkML types file."""
-    return datatype_to_type.get(object_datatype, [object_datatype, '', {}])
+    return datatype_to_type.get(object_datatype, (object_datatype, '', linkml_prefixes))

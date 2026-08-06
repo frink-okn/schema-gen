@@ -38,8 +38,8 @@ def convert_to_void(counts, examples, graph_name, prefixes):
         "@type": "void:Dataset",
         # TODO: get void:distinctSubjects, void:distinctObjects, void:triples in dump_yaml
         # TODO: make determination of void:entities in dump_yaml configurable (e.g. exclude rdf:Statement)
-        "void:classes": len(as_dict(counts)["value"]["classes"]["value"]),
-        "void:properties": len(as_dict(counts)["value"]["slots"]["value"]),
+        "void:classes": len(as_dict(counts)["classes"]),
+        "void:properties": len(as_dict(counts)["slots"]),
         "void:vocabulary": [{"@id": prefix["prefix_reference"]} for tag, prefix in as_dict(prefixes).items()],
         "void:uriLookupEndpoint": {"@id": "https://frink.apps.renci.org/term/"}, # TODO: make this overridable
         "void:sparqlEndpoint": {"@id": f"https://frink.apps.renci.org/{graph_name}/sparql"}, # TODO: don't hardcode this
@@ -47,25 +47,25 @@ def convert_to_void(counts, examples, graph_name, prefixes):
         "void:propertyPartition": []
     }
 
-    for tag, class_partition in as_dict(counts["value"]["classes"]["value"]).items():
+    for tag, class_partition in as_dict(counts["classes"]).items():
         new_class_partition = {
             "@type": "void:Dataset",
             "void:class": {"@id": tag},
-            "void:entities": class_partition["value"],
-            "void:exampleResource": {"@id": as_dict(examples["value"]["classes"]["value"])[tag]["value"]}
+            "void:entities": class_partition,
+            "void:exampleResource": {"@id": as_dict(examples["classes"])[tag]}
         }
         new_counts["void:classPartition"].append(new_class_partition)
 
-    for tag, slot_partition in as_dict(counts["value"]["slots"]["value"]).items():
+    for tag, slot_partition in as_dict(counts["slots"]).items():
         new_slot_partition = {
             "@type": "void:Dataset",
             "void:property": {"@id": tag},
-            "void:triples": slot_partition["value"]
+            "void:triples": slot_partition
         }
         new_counts["void:propertyPartition"].append(new_slot_partition)
 
-    for pred_tag, pred_data in as_dict(counts["value"]["pairs"]["value"]).items():
-        for subj_tag, subj_data in pred_data["value"].items():
+    for pred_tag, pred_data in as_dict(counts["pairs"]).items():
+        for subj_tag, subj_data in pred_data.items():
             subj_partition = next(k for k in new_counts["void:classPartition"] if k["void:class"]["@id"] == subj_tag)
             subj_property_partitions = subj_partition.setdefault("void:propertyPartition",[])
             new_property_partition = {
@@ -73,23 +73,23 @@ def convert_to_void(counts, examples, graph_name, prefixes):
                 "void:property": {"@id": pred_tag},
                 "void-ext:objectClassPartition": []
             }
-            for obj_tag, obj_data in subj_data["value"].items():
+            for obj_tag, obj_data in subj_data.items():
                 new_object_partition = {
                     "@type": "void:Dataset",
                     "void:class": {"@id": obj_tag},
-                    "void:triples": obj_data["value"],
+                    "void:triples": obj_data,
                 }
 
                 try:
-                    pair_example = as_dict(examples)["value"]["pairs"]["value"][pred_tag]["value"][subj_tag]["value"][obj_tag]["value"]
+                    pair_example = as_dict(examples)["pairs"][pred_tag][subj_tag][obj_tag]
                 except KeyError:
                     pass
                 else:
                     new_object_partition["skos:example"] = [{
                         "@type": "rdf:Statement",
-                        "rdf:subject": {"@id": pair_example["subject"]["value"]},
-                        "rdf:predicate": {"@id": pair_example["predicate"]["value"]},
-                        "rdf:object": ({"@id": str(pair_example["object"]["value"])} if (':' in pair_example["object"]["value"]) else str(pair_example["object"]["value"])), # TODO: find a better way to distinguish literals from non-literals
+                        "rdf:subject": {"@id": pair_example["subject"]},
+                        "rdf:predicate": {"@id": pair_example["predicate"]},
+                        "rdf:object": ({"@id": str(pair_example["object"])} if (':' in pair_example["object"]) else str(pair_example["object"])), # TODO: find a better way to distinguish literals from non-literals
                     }]
 
                 new_property_partition["void-ext:objectClassPartition"].append(new_object_partition)
@@ -262,8 +262,8 @@ class JSONLDGenerator(Generator):
         # Convert counts to VOID
         self.schema["@context"].append({"void-ext": "http://ldf.fi/void-ext#"})
         self.schema['annotations'] = convert_to_void(
-            self.schema['annotations']['counts'],
-            self.schema['annotations']['examples'],
+            self.schema['annotations']['counts']["value"],
+            self.schema['annotations']['examples']["value"],
             self.schema['name'],
             self.schema['prefixes']
         )

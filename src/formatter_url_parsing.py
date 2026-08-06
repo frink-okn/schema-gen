@@ -2,7 +2,8 @@ import re
 from collections import defaultdict
 from urllib.parse import urlparse
 
-def get_formatter_urls(filepath='query.tsv'):
+
+def get_formatter_urls(filepath: str='query.tsv') -> defaultdict[str, set[tuple[str, re.Pattern[str], str]]]:
     formatter_mappings = defaultdict(set)
 
     with open(filepath) as f:

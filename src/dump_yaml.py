@@ -1,19 +1,36 @@
 import argparse
 import datetime
-import json
 import logging
 import os
 import os.path
+from argparse import Namespace
 from collections import defaultdict
 from functools import lru_cache
-from itertools import chain
+from typing import Any, TypeAlias, cast
 
 import rdflib
 import rdflib.exceptions
 import tqdm
-import yaml
-from rdflib import BNode, URIRef
+from linkml_runtime.dumpers import yaml_dumper
+from linkml_runtime.linkml_model import (
+    Annotation,
+    ClassDefinition,
+    ClassDefinitionName,
+    Element,
+    Prefix,
+    PrefixPrefixPrefix,
+    SchemaDefinition,
+    SlotDefinition,
+    SlotDefinitionName,
+    TypeDefinition,
+    TypeDefinitionName,
+)
+from linkml_runtime.linkml_model.annotations import AnnotationTag
+from linkml_runtime.linkml_model.meta import AnonymousSlotExpression
+from linkml_runtime.utils.metamodelcore import URIorCURIE
+from rdflib import BNode, Graph, URIRef
 from rdflib.namespace import OWL, RDF, RDFS, SDO
+from rdflib.term import Node
 from rdflib_hdt import HDTStore
 
 # Assumes these are available from your original environment
@@ -23,18 +40,22 @@ from common_functions import (
     get_object_datatype,
     value_is_valid,
 )
-from external_ontologies import external_ontologies_dict, load_external_ontologies
+from external_ontologies import (
+    ExternalOntologyInfo,
+    external_ontologies_dict,
+    load_external_ontologies,
+)
 from formatter_url_parsing import get_formatter_urls
 from linkml_structures import linkml_schema
 from predicate_mappings import (
     CLASS_TYPES,
-    METADATA_TYPES,
     SINGLE_VALUE_RESTRICTIONS,
     SLOT_TYPES,
     SLOTS_TO_PREDICATES_MULTIPLE_STR,
     SLOTS_TO_PREDICATES_SINGLE,
     SLOTS_TO_PREDICATES_SINGLE_ONTOLOGY,
     TYPE_TYPES,
+    SlotMapping,
     datatype_to_type,
     extended_types_url,
     linkml_type_mapping,
@@ -42,11 +63,14 @@ from predicate_mappings import (
 )
 from registry_processing import read_from_registry, schema_from_existing
 
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+
 # --- Global State ---
 formatter_urls = None
 
 
-def get_graph(graph_to_read):
+def get_graph(graph_to_read: str) -> Graph:
     """
     Reads in a set of TTL/RDF files.
     Optimization: explicit check for oxrdflib for speed.
@@ -56,9 +80,9 @@ def get_graph(graph_to_read):
     try:
         import oxrdflib
 
-        logging.info("oxrdflib detected. Parsing will be significantly faster.")
+        logger.info("oxrdflib detected. Parsing will be significantly faster.")
     except ImportError:
-        logging.info("oxrdflib not found. Using standard rdflib parser.")
+        logger.info("oxrdflib not found. Using standard rdflib parser.")
 
     if graph_to_read[0] == "/":
         folder_to_visit = graph_to_read
@@ -86,7 +110,7 @@ def get_graph(graph_to_read):
                     except Exception:
                         continue
                 if not current_file_read:
-                    logging.warning(f"Unable to read {current_file_path}")
+                    logger.warning(f"Unable to read {current_file_path}")
 
             elif any(current_file_path.endswith(suffix) for suffix in [".nq"]):
                 g = rdflib.Dataset()
@@ -105,7 +129,20 @@ def get_graph(graph_to_read):
     return g
 
 
-def add_str_to_single(obj_in, pred, string_to_store, source_mapping=None):
+def add_comment(entity: Element, comment: str) -> None:
+    if entity.comments is None:
+        entity.comments = []
+    elif isinstance(entity.comments, str):
+        entity.comments = [entity.comments]
+    entity.comments.append(comment)
+
+
+def add_str_to_single(
+    obj_in: Element,
+    pred: Node,
+    string_to_store: str,
+    source_mapping: SlotMapping | None = None,
+) -> None:
     mapping = source_mapping if source_mapping else SLOTS_TO_PREDICATES_SINGLE
     current_slot, current_datatype = mapping[pred]
 
@@ -117,30 +154,135 @@ def add_str_to_single(obj_in, pred, string_to_store, source_mapping=None):
         ):
             obj_in[current_slot] = string_to_store.strip()
         else:
-            obj_in.setdefault("comments", defaultdict(set))[current_slot].add(
-                string_to_store.strip()
-            )
+            add_comment(obj_in, f"{current_slot}: {string_to_store.strip()}")
     else:
-        obj_in.setdefault("comments", defaultdict(set))[current_slot].add(
-            string_to_store.strip()
+        add_comment(obj_in, f"{current_slot}: {string_to_store.strip()}")
+
+
+# Redefinitions for clarity from linkml_runtime.linkml_model.meta
+PrefixesFieldList: TypeAlias = list[dict[str, Any] | Prefix]
+PrefixesFieldDict: TypeAlias = dict[str | PrefixPrefixPrefix, dict[str, Any] | Prefix]
+ClassesFieldDict: TypeAlias = dict[
+    str | ClassDefinitionName, dict[str, Any] | ClassDefinition
+]
+SlotsFieldDict: TypeAlias = dict[
+    str | SlotDefinitionName, dict[str, Any] | SlotDefinition
+]
+TypesFieldDict: TypeAlias = dict[
+    str | TypeDefinitionName, dict[str, Any] | TypeDefinition
+]
+AnnotationsFieldDict: TypeAlias = dict[str | AnnotationTag, dict[str, Any] | Annotation]
+
+# Simplified versions of the above; TODO: can LinkML use those instead?
+AnnotationsDict: TypeAlias = dict[str, Annotation]
+ClassesDict: TypeAlias = dict[str, ClassDefinition]
+SlotsDict: TypeAlias = dict[str, SlotDefinition]
+TypesDict: TypeAlias = dict[str, TypeDefinition]
+
+
+def convert_prefixes_to_dict(prefix_list: PrefixesFieldList) -> PrefixesFieldDict:
+    new_prefix_dict: PrefixesFieldDict = {}
+    for prefix in prefix_list:
+        if isinstance(prefix, dict):
+            new_prefix_dict[prefix["prefix_prefix"]] = Prefix(**prefix)
+        else:
+            new_prefix_dict[prefix.prefix_prefix] = prefix
+    return new_prefix_dict
+
+
+def get_schema_classes(schema: SchemaDefinition) -> ClassesDict:
+    if schema.classes is None:
+        schema.classes = {}
+    elif isinstance(schema.classes, list):
+        new_classes: ClassesFieldDict = {}
+        for entity in schema.classes:
+            if isinstance(entity, dict):
+                new_classes[entity["name"]] = ClassDefinition(**entity)
+            else:
+                new_classes[entity.name] = entity
+        schema.classes = new_classes
+    return cast(
+        ClassesDict, schema.classes
+    )  # TODO: find a way to do away with the cast
+
+
+def get_schema_slots(schema: SchemaDefinition) -> SlotsDict:
+    if schema.slots is None:
+        schema.slots = {}
+    elif isinstance(schema.slots, list):
+        new_slots: SlotsFieldDict = {}
+        for entity in schema.slots:
+            if isinstance(entity, dict):
+                new_slots[entity["name"]] = SlotDefinition(**entity)
+            else:
+                new_slots[entity.name] = entity
+        schema.slots = new_slots
+    return cast(SlotsDict, schema.slots)  # TODO: find a way to do away with the cast
+
+
+def get_schema_types(schema: SchemaDefinition) -> TypesDict:
+    if schema.types is None:
+        schema.types = {}
+    elif isinstance(schema.types, list):
+        new_types: TypesFieldDict = {}
+        for entity in schema.types:
+            if isinstance(entity, dict):
+                new_types[entity["name"]] = TypeDefinition(**entity)
+            else:
+                new_types[entity.name] = entity
+        schema.types = new_types
+    return cast(TypesDict, schema.types)  # TODO: find a way to do away with the cast
+
+
+def get_schema_annotations(schema: SchemaDefinition) -> AnnotationsDict:
+    if schema.annotations is None:
+        schema.annotations = {
+            "counts": Annotation(
+                "counts",
+                {
+                    "classes": {},  # defaultdict(int)
+                    "slots": {},  # defaultdict(int)
+                    "pairs": {},  # defaultdict(lambda: defaultdict(lambda: defaultdict(int))),
+                },
+            ),
+            "examples": Annotation(
+                "examples",
+                {
+                    "classes": {},  # defaultdict(str),
+                    "pairs": {},  # defaultdict(lambda: defaultdict(lambda: defaultdict(dict))),
+                },
+            ),
+        }
+    elif isinstance(schema.annotations, list):
+        new_annotations: AnnotationsFieldDict = {}
+        for entity in schema.annotations:
+            if isinstance(entity, dict):
+                new_annotations[entity["tag"]] = Annotation(**entity)
+            else:
+                new_annotations[entity.tag] = entity
+        schema.annotations = new_annotations
+    return cast(
+        AnnotationsDict, schema.annotations
+    )  # TODO: find a way to do away with the cast
+
+
+def in_any_of(any_of: list[dict[str, Any] | AnonymousSlotExpression], key: str) -> bool:
+    return not any(
+        (
+            (isinstance(entry, dict) and "range" in entry and entry["range"] == key)
+            or (isinstance(entry, AnonymousSlotExpression) and entry.range == key)
         )
-
-
-def convert_annotations(annotations):
-    if not isinstance(annotations, dict):
-        return annotations
-    return {
-        k: {"tag": k, "value": convert_annotations(v)} for k, v in annotations.items()
-    }
+        for entry in any_of
+    )
 
 
 class GraphCharacterizer:
-    def __init__(self, args, uri_mappings):
+    def __init__(self, args: Namespace, uri_mappings: ExternalOntologyInfo):
         self.args = args
-        self.URIs_to_entities = uri_mappings["URIs_to_entities"]
-        self.URI_entity_types = uri_mappings["URI_entity_types"]
-        self.URIs_to_ontologies = uri_mappings["URIs_to_ontologies"]
-        self.subclass_tree = uri_mappings["subclass_tree"]
+        self.URIs_to_entities = uri_mappings.URIs_to_entities
+        self.URI_entity_types = uri_mappings.URI_entity_types
+        self.URIs_to_ontologies = uri_mappings.URIs_to_ontologies
+        self.subclass_tree = uri_mappings.subclass_tree
 
         self.g = get_graph(args.graph_to_read)
         self.list_untyped_entities = args.list_untyped_entities
@@ -148,37 +290,38 @@ class GraphCharacterizer:
 
         if args.okn_registry_id:
             self.schema = read_from_registry(args.okn_registry_id)
-            self.graph_name = self.schema["name"]
+            self.graph_name = self.schema.name
         elif args.old_schema_path:
             self.schema = schema_from_existing(args.old_schema_path)
-            self.graph_name = self.schema["name"]
+            self.graph_name = self.schema.name
         else:
             self.graph_name = args.graph_name
             self.schema = linkml_schema(
                 self.graph_name, args.graph_title, args.graph_description
             )
 
-        self.restrictions = defaultdict(dict)
-        self.entities_without_type = set()
+        self.restrictions: defaultdict[Node, dict[str, Any]] = defaultdict(dict)
+        self.entities_without_type: set[Node] = set()
         self.entities_without_type_count = 0
-        self.multiple_typed_object_counts = defaultdict(int)
-        self.type_uris_found = defaultdict(set)
-        self.object_uris_found = defaultdict(set)
-        self.formatter_urls_found = defaultdict(int)
-
-        self.parsed_uris = {}
+        self.multiple_typed_object_counts: defaultdict[frozenset[Node], int] = (
+            defaultdict(int)
+        )
+        self.entity_types_index: defaultdict[Node, set[Node]] = defaultdict(set)
+        self.domain_range_keys_to_uris: dict[str, str] = {}
 
         # Optimization: Pre-build indexes immediately
         self._build_indexes()
 
-    def find_shortest_path_helper(self, start, end, path=()):
+    def find_shortest_path_helper(
+        self, start: str, end: str, path: tuple[str, ...] = ()
+    ) -> tuple[str, ...]:
         # Optimization: Use tuple for path (immutable)
         path = path + (start,)
         if start == end:
             return path
         if start not in self.subclass_tree:
-            return None
-        shortest = None
+            return ()
+        shortest: tuple[str, ...] = ()
         # Copy to list to avoid runtime modification issues during recursion
         for node in list(self.subclass_tree[start]):
             if node not in path:
@@ -189,13 +332,12 @@ class GraphCharacterizer:
         return shortest
 
     @lru_cache(maxsize=4096)
-    def find_shortest_path(self, start, end):
+    def find_shortest_path(self, start: str, end: str) -> tuple[str, ...]:
         return self.find_shortest_path_helper(start, end)
 
-    def _build_indexes(self):
+    def _build_indexes(self) -> None:
         """Pre-build indexes for faster lookups"""
         print("Building indexes for faster processing...")
-        self.entity_types_index = defaultdict(set)
 
         # Iterate only RDF.type triples directly via generator
         for s, o in tqdm.tqdm(
@@ -210,7 +352,7 @@ class GraphCharacterizer:
             ]
             for st, stc, stk in subject_types_initial:
                 if any(
-                    self.find_shortest_path(stk, other_stk)
+                    (self.find_shortest_path(stk, other_stk) != ())
                     for other_st, other_stc, other_stk in subject_types_initial
                     if other_st != st
                 ):
@@ -218,7 +360,9 @@ class GraphCharacterizer:
 
         print(f"Indexed {len(self.entity_types_index)} entities with types")
 
-    def add_str_to_multiple(self, obj_in, pred, string_to_store):
+    def add_str_to_multiple(
+        self, obj_in: Element, pred: Node, string_to_store: str
+    ) -> None:
         current_slot, current_datatype = SLOTS_TO_PREDICATES_MULTIPLE_STR[pred]
         if value_is_valid(string_to_store, current_datatype, pred, obj_in["name"]):
             if current_slot == "exact_mappings":
@@ -232,14 +376,20 @@ class GraphCharacterizer:
             if string_to_store not in obj_list:
                 obj_list.append(string_to_store.strip())
 
-    def replace_prefixes(self, node):
+    def replace_prefixes(self, node: str) -> str:
         node, replacement, prefix = find_prefix(node)
         if replacement != "":
-            self.schema["prefixes"][replacement] = str(prefix)
+            if self.schema.prefixes is None:
+                self.schema.prefixes = {}
+            elif isinstance(self.schema.prefixes, list):
+                self.schema.prefixes = convert_prefixes_to_dict(self.schema.prefixes)
+            self.schema.prefixes[replacement] = Prefix(
+                prefix_prefix=replacement, prefix_reference=str(prefix)
+            )
         return node
 
     @lru_cache(maxsize=100000)
-    def produce_curie_key(self, uri):
+    def produce_curie_key(self, uri: URIRef) -> tuple[str, str]:
         """
         Generates a CURIE and a safe key from a URI.
         Cached to avoid re-parsing strings and regex overhead.
@@ -249,7 +399,7 @@ class GraphCharacterizer:
         output_key = output_curie.replace(":", "_").replace("/", "_")
         return output_curie, output_key
 
-    def process_restrictions(self):
+    def process_restrictions(self) -> None:
         # Optimization: Generator based iteration
         for entity, _, _ in tqdm.tqdm(
             self.g.triples((None, RDF.type, OWL.Restriction)), desc="Restrictions"
@@ -264,7 +414,7 @@ class GraphCharacterizer:
                             SINGLE_VALUE_RESTRICTIONS[pred]
                         ] = obj
 
-    def process_ontologies(self):
+    def process_ontologies(self) -> None:
         for entity in tqdm.tqdm(
             self.g.subjects(RDF.type, OWL.Ontology), desc="Ontologies"
         ):
@@ -284,80 +434,130 @@ class GraphCharacterizer:
 
     def add_class(
         self,
-        subj_key,
-        subj_uri=None,
-        subj_title=None,
-        extra_info=None,
-        from_schema=None,
-    ):
-        target = self.schema["classes"][subj_key]
-        target["name"] = subj_key
+        subj_key: str,
+        subj_uri: str | None = None,
+        subj_title: str | None = None,
+        extra_info: dict[str, Any] | None = None,
+        from_schema: str | None = None,
+    ) -> None:
+        if self.schema.classes is None:
+            raise ValueError("No classes in newly created schema?")
+        if isinstance(self.schema.classes, list):
+            target = ClassDefinition(name=subj_key)
+            self.schema.classes.append(target)
+        else:
+            try:
+                target_possible = self.schema.classes[subj_key]
+            except KeyError:
+                target = ClassDefinition(name=subj_key)
+                self.schema.classes[subj_key] = target
+            else:
+                if isinstance(target_possible, dict):
+                    target = ClassDefinition(**target_possible)
+                else:
+                    target = target_possible
+                target.name = subj_key
+
         if subj_uri:
-            target["class_uri"] = str(subj_uri)
+            target.class_uri = str(subj_uri)
         if from_schema:
-            target["from_schema"] = from_schema
-            target.pop("title", None)
-            target.pop("description", None)
+            target.from_schema = from_schema
+            target.title = None
+            target.description = None
             return
         if subj_title:
-            target["title"] = subj_title
+            target.title = subj_title
         if extra_info:
             target.update(extra_info)
 
     def add_type(
         self,
-        subj_type,
-        subj_key,
-        subj_uri=None,
-        subj_title=None,
-        extra_info=None,
-        from_schema=None,
-    ):
+        subj_type: Node,
+        subj_key: str,
+        subj_uri: str | None = None,
+        subj_title: str | None = None,
+        extra_info: dict[str, Any] | None = None,
+        from_schema: str | None = None,
+    ) -> None:
         if subj_type in datatype_to_type:
             return
-        target = self.schema["types"][subj_key]
-        target["name"] = subj_key
+
+        if self.schema.types is None:
+            raise ValueError("No types in newly created schema?")
+        if isinstance(self.schema.types, list):
+            target = TypeDefinition(name=subj_key)
+            self.schema.types.append(target)
+        else:
+            try:
+                target_possible = self.schema.types[subj_key]
+            except KeyError:
+                target = TypeDefinition(name=subj_key)
+                self.schema.types[subj_key] = target
+            else:
+                if isinstance(target_possible, dict):
+                    target = TypeDefinition(**target_possible)
+                else:
+                    target = target_possible
+                target.name = subj_key
+
         if subj_uri:
-            target["uri"] = str(subj_uri)
+            target.uri = str(subj_uri)
         if from_schema:
-            target["from_schema"] = from_schema
-            target["imported_from"] = from_schema
-            target.pop("title", None)
-            target.pop("description", None)
+            target.from_schema = from_schema
+            target.imported_from = from_schema
+            target.title = None
+            target.description = None
             return
         if subj_title:
-            target["title"] = subj_title
+            target.title = subj_title
         if extra_info:
             target.update(extra_info)
 
     def add_slot(
         self,
-        subj_key,
-        subj_uri=None,
-        subj_title=None,
-        extra_info=None,
-        from_schema=None,
-    ):
-        target = self.schema["slots"][subj_key]
-        target["name"] = subj_key
+        subj_key: str,
+        subj_uri: str | Node | None = None,
+        subj_title: str | None = None,
+        extra_info: dict[str, Any] | None = None,
+        from_schema: str | None = None,
+    ) -> None:
+        if self.schema.slots is None:
+            raise ValueError("No slots in newly created schema?")
+        if isinstance(self.schema.slots, list):
+            target = SlotDefinition(name=subj_key)
+            self.schema.slots.append(target)
+        else:
+            try:
+                target_possible = self.schema.slots[subj_key]
+            except KeyError:
+                target = SlotDefinition(name=subj_key)
+                self.schema.slots[subj_key] = target
+            else:
+                if isinstance(target_possible, dict):
+                    target = SlotDefinition(**target_possible)
+                else:
+                    target = target_possible
+                target.name = subj_key
+
         if subj_uri:
-            target["slot_uri"] = str(subj_uri)
+            target.slot_uri = str(subj_uri)
         if from_schema:
-            target["from_schema"] = from_schema
-            target["imported_from"] = from_schema
-            target.pop("title", None)
-            target.pop("description", None)
+            target.from_schema = from_schema
+            target.imported_from = from_schema
+            target.title = None
+            target.description = None
             return
         if subj_title:
-            target["title"] = subj_title
+            target.title = subj_title
         if extra_info:
             target.update(extra_info)
 
-    def process_classes(self):
+    def process_classes(self) -> None:
+        schema_classes = get_schema_classes(self.schema)
         for class_type, extra_info in CLASS_TYPES.items():
             # Optimization: Use generator directly
             for entity in tqdm.tqdm(
-                self.g.subjects(RDF.type, class_type), desc=f"Classes {str(class_type)}"
+                self.g.subjects(RDF.type, class_type), desc=f"Classes {class_type}"
             ):
                 if entity in datatype_to_type:
                     continue
@@ -372,12 +572,9 @@ class GraphCharacterizer:
                 if subj_uri in self.URIs_to_ontologies:
                     continue
 
-                if subj_key in self.schema["classes"]:
-                    cls = self.schema["classes"][subj_key]
-                    if (
-                        "title" in cls
-                        and "but has not itself been defined" not in cls["title"]
-                    ):
+                if subj_key in schema_classes:
+                    cls = schema_classes[subj_key]
+                    if "title" in cls and "but not defined" not in cls["title"]:
                         if "deprecated" in cls and "deprecated" in extra_info:
                             cls.update({**extra_info, "deprecated": cls["deprecated"]})
                         else:
@@ -390,12 +587,10 @@ class GraphCharacterizer:
                     obj_uri, obj_key = self.produce_curie_key(obj)
 
                     if pred in SLOTS_TO_PREDICATES_SINGLE:
-                        add_str_to_single(
-                            self.schema["classes"][subj_key], pred, str(obj)
-                        )
+                        add_str_to_single(schema_classes[subj_key], pred, str(obj))
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
                         self.add_str_to_multiple(
-                            self.schema["classes"][subj_key], pred, str(obj)
+                            schema_classes[subj_key], pred, str(obj)
                         )
                     elif pred in {RDFS.subClassOf}:
                         if isinstance(obj, BNode) or str(obj).startswith("_:"):
@@ -406,13 +601,11 @@ class GraphCharacterizer:
                             ):
                                 self.subclass_tree[obj_key].add(subj_key)
                             try:
-                                self.check_for_import(
-                                    obj_uri
-                                )
+                                self.check_for_import(obj_uri)
                             except KeyError:
                                 pass
-                            self.schema["classes"][subj_key]["is_a"] = obj_key
-                        if (obj_key not in self.schema["classes"]) and (
+                            schema_classes[subj_key].is_a = obj_key
+                        if (obj_key not in schema_classes) and (
                             obj_uri not in self.URIs_to_ontologies
                         ):
                             self.add_class(
@@ -421,10 +614,22 @@ class GraphCharacterizer:
                                 "No class name specified -- this class is noted as a superclass but not defined.",
                             )
 
-    def process_types(self):
+    def type_previously_defined(self, subj_key: str) -> bool:
+        schema_types = get_schema_types(self.schema)
+        if subj_key in schema_types:
+            current_type = schema_types[subj_key]
+            if (
+                current_type.title is not None
+                and "but not defined" not in current_type.title
+            ):
+                return True
+        return False
+
+    def process_types(self) -> None:
+        schema_types = get_schema_types(self.schema)
         for class_type, extra_info in TYPE_TYPES.items():
             for entity in tqdm.tqdm(
-                self.g.subjects(RDF.type, class_type), desc=f"Types {str(class_type)}"
+                self.g.subjects(RDF.type, class_type), desc=f"Types {class_type}"
             ):
                 if (entity, RDF.type, OWL.Restriction) in self.g:
                     continue
@@ -433,11 +638,7 @@ class GraphCharacterizer:
 
                 subj_uri, subj_key = self.produce_curie_key(entity)
 
-                if subj_key in self.schema["types"] and (
-                    "title" in self.schema["types"][subj_key]
-                    and "but has not itself been defined"
-                    not in self.schema["types"][subj_key]["title"]
-                ):
+                if self.type_previously_defined(subj_key):
                     continue
                 if entity in datatype_to_type:
                     continue
@@ -450,13 +651,9 @@ class GraphCharacterizer:
                     obj_uri, obj_key = self.produce_curie_key(obj)
 
                     if pred in SLOTS_TO_PREDICATES_SINGLE:
-                        add_str_to_single(
-                            self.schema["types"][subj_key], pred, str(obj)
-                        )
+                        add_str_to_single(schema_types[subj_key], pred, str(obj))
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
-                        self.add_str_to_multiple(
-                            self.schema["types"][subj_key], pred, str(obj)
-                        )
+                        self.add_str_to_multiple(schema_types[subj_key], pred, str(obj))
                     elif pred in {RDFS.subClassOf}:
                         if isinstance(obj, BNode) or str(obj).startswith("_:"):
                             continue
@@ -477,9 +674,9 @@ class GraphCharacterizer:
                                 current_typeof = "string"
                             else:
                                 current_typeof = obj_key
-                            self.schema["types"][subj_key]["typeof"] = current_typeof
+                            schema_types[subj_key].typeof = current_typeof
 
-                        if (obj_key not in self.schema["types"]) and (
+                        if (obj_key not in schema_types) and (
                             obj_uri not in self.URIs_to_ontologies
                         ):
                             self.add_class(
@@ -488,11 +685,40 @@ class GraphCharacterizer:
                                 "No type name specified -- noted as supertype but not defined.",
                             )
 
-    def process_slots(self):
+    def slot_previously_defined(self, subj_key: str) -> bool:
+        schema_slots = get_schema_slots(self.schema)
+        if subj_key in schema_slots:
+            current_slot = schema_slots[subj_key]
+            if (current_slot.title is not None) and (
+                "but not defined" not in current_slot.title
+            ):
+                return True
+        return False
+
+    def add_import(self, current_import: str) -> None:
+        if self.schema.imports is None:
+            self.schema.imports = []
+        elif isinstance(self.schema.imports, (str, URIorCURIE)):
+            self.schema.imports = [self.schema.imports]
+        if current_import not in self.schema.imports:
+            self.schema.imports.append(current_import)
+
+    def update_prefixes(self, current_prefixes: dict[str, str]) -> None:
+        if self.schema.prefixes is None:
+            self.schema.prefixes = {}
+        elif isinstance(self.schema.prefixes, list):
+            self.schema.prefixes = convert_prefixes_to_dict(self.schema.prefixes)
+        for replacement, prefix in current_prefixes.items():
+            self.schema.prefixes[replacement] = Prefix(
+                prefix_prefix=replacement, prefix_reference=str(prefix)
+            )
+
+    def process_slots(self) -> None:
+        schema_slots = get_schema_slots(self.schema)
         for slot_type, extra_info in SLOT_TYPES.items():
             for entity in tqdm.tqdm(
                 self.g.subjects(RDF.type, slot_type),
-                desc=f"Predicates ({str(slot_type)})",
+                desc=f"Predicates ({slot_type})",
             ):
                 subj_curie_key = self.produce_curie_key(entity)
                 subj_uri, subj_key = subj_curie_key
@@ -506,11 +732,7 @@ class GraphCharacterizer:
                 if str(entity).startswith(str(RDF) + "_"):
                     continue
 
-                if subj_key in self.schema["slots"] and (
-                    "title" in self.schema["slots"][subj_key]
-                    and "but has not itself been defined"
-                    not in self.schema["slots"][subj_key]["title"]
-                ):
+                if self.slot_previously_defined(subj_key):
                     continue
 
                 self.add_slot(subj_key, subj_uri, extra_info=extra_info)
@@ -520,13 +742,9 @@ class GraphCharacterizer:
                     obj_uri, obj_key = obj_curie_key
 
                     if pred in SLOTS_TO_PREDICATES_SINGLE:
-                        add_str_to_single(
-                            self.schema["slots"][subj_key], pred, str(obj)
-                        )
+                        add_str_to_single(schema_slots[subj_key], pred, str(obj))
                     elif pred in SLOTS_TO_PREDICATES_MULTIPLE_STR:
-                        self.add_str_to_multiple(
-                            self.schema["slots"][subj_key], pred, str(obj)
-                        )
+                        self.add_str_to_multiple(schema_slots[subj_key], pred, str(obj))
                     elif pred in {RDFS.domain, SDO.domainIncludes}:
                         if isinstance(obj, BNode) or str(obj).startswith("_:"):
                             continue
@@ -534,10 +752,10 @@ class GraphCharacterizer:
                             linkml_type_mapping(obj)
                         )
                         if normalized_type != obj:
-                            self.schema["imports"].add(current_import)
-                            self.schema["prefixes"].update(current_prefixes)
+                            self.add_import(current_import)
+                            self.update_prefixes(current_prefixes)
                             obj_curie_key = self.produce_curie_key(normalized_type)
-                        self.add_to_domain(subj_key, obj_curie_key[1])  # Pass key
+                        self.add_to_domain(subj_curie_key, obj_curie_key)
                     elif pred in {RDFS.range, SDO.rangeIncludes}:
                         if isinstance(obj, BNode) or str(obj).startswith("_:"):
                             continue
@@ -545,20 +763,20 @@ class GraphCharacterizer:
                             linkml_type_mapping(obj)
                         )
                         if normalized_type != obj:
-                            self.schema["imports"].add(current_import)
-                            self.schema["prefixes"].update(current_prefixes)
+                            self.add_import(current_import)
+                            self.update_prefixes(current_prefixes)
                             obj_curie_key = self.produce_curie_key(normalized_type)
                         self.add_to_range(subj_curie_key, obj_curie_key)
                     elif pred in {OWL.inverseOf, SDO.inverseOf}:
-                        self.schema["slots"][subj_key]["inverse"] = obj_key
+                        schema_slots[subj_key].inverse = obj_key
                     elif pred in {RDFS.subPropertyOf}:
                         if subj_key != obj_key:
                             try:
                                 self.check_for_import(obj_uri)
                             except KeyError:
                                 pass
-                            self.schema["slots"][subj_key]["subproperty_of"] = obj_key
-                        if (obj_key not in self.schema["slots"]) and (
+                            schema_slots[subj_key].subproperty_of = obj_key
+                        if (obj_key not in schema_slots) and (
                             obj_uri not in self.URIs_to_ontologies
                         ):
                             self.add_slot(
@@ -567,26 +785,18 @@ class GraphCharacterizer:
                                 "No slot name specified -- noted as subproperty but not defined.",
                             )
 
-    def check_for_import(self, type_uri):
+    def check_for_import(self, type_uri: str) -> tuple[Element, str]:
         target_ontology = self.URIs_to_ontologies[type_uri]
-        self.schema["imports"].add(target_ontology)
-        target_entity = self.URIs_to_entities.get(type_uri, "")
+        self.add_import(target_ontology)
+        target_entity = self.URIs_to_entities.get(type_uri, Element(""))
         return target_entity, target_ontology
 
-    def check_for_missing_domain_range_type(self, set_type_curie_key):
-        # The previous code called this with a tuple or list, unpacking logic needed
-        if isinstance(set_type_curie_key, (list, tuple)):
-            set_type_uri, set_type_key = set_type_curie_key
-        else:
-            # Fallback if only key passed
-            set_type_key = set_type_curie_key
-            set_type_uri = None
+    def check_for_missing_domain_range_type(self, set_type_key: str) -> None:
+        schema_classes = get_schema_classes(self.schema)
+        schema_types = get_schema_types(self.schema)
 
-        if (
-            set_type_key not in self.schema["classes"]
-            and set_type_key not in self.schema["types"]
-        ):
-            if set_type_uri:
+        if set_type_key not in schema_classes and set_type_key not in schema_types:
+            if set_type_uri := self.domain_range_keys_to_uris.get(set_type_key):
                 try:
                     self.check_for_import(set_type_uri)
                 except KeyError:
@@ -597,58 +807,115 @@ class GraphCharacterizer:
                             "No class name specified -- noted in domain/range but not defined.",
                         )
 
-    def add_missing_domain_range_types(self):
-        for _, slot_dict in self.schema["slots"].items():
-            if len(slot_dict["union_of"]) == 0:
-                if "domain" in slot_dict and slot_dict["domain"] == "Any":
-                    self.schema["imports"].add(extended_types_url)
-            for set_type_curie_key in list(slot_dict["union_of"]):
-                # Optimization: The logic for 'check_for_missing_domain_range_type' relies on URIs
-                # stored in union_of. Check if they are keys or full tuples.
-                # In add_to_domain we stored just keys.
-                # If we only have keys, we can't look up URI imports effectively unless we scan map.
-                # For now, passing key.
-                self.check_for_missing_domain_range_type(set_type_curie_key)
+    def add_missing_domain_range_types(self) -> None:
+        schema_slots = get_schema_slots(self.schema)
+        for _, slot in schema_slots.items():
+            if slot.union_of is None:
+                slot.union_of = []
+            elif isinstance(slot.union_of, (str, SlotDefinitionName)):
+                slot.union_of = [slot.union_of]
+            if len(slot.union_of) == 0:
+                if slot.domain == "Any":
+                    self.add_import(extended_types_url)
+            for union_set_type_key in slot.union_of:
+                self.check_for_missing_domain_range_type(union_set_type_key)
 
-            if slot_dict["range"] == "Any":
-                self.schema["imports"].add(extended_types_url)
-            for set_type_curie_key in list(slot_dict["any_of"]):
-                self.check_for_missing_domain_range_type(set_type_curie_key)
+            if slot.range == "Any":
+                self.add_import(extended_types_url)
+            if slot.any_of is None:
+                slot.any_of = []
+            elif isinstance(slot.any_of, (dict, AnonymousSlotExpression)):
+                slot.any_of = [slot.any_of]
+            for any_set_type_curie_key in slot.any_of:
+                if isinstance(any_set_type_curie_key, dict):
+                    self.check_for_missing_domain_range_type(
+                        any_set_type_curie_key["range"]
+                    )
+                elif any_set_type_curie_key.range is not None:
+                    self.check_for_missing_domain_range_type(
+                        any_set_type_curie_key.range
+                    )
 
     # Included to ensure dependency closure
-    def add_to_domain(self, pred_key, obj_key):
-        if obj_key not in self.schema["slots"][pred_key]["union_of"]:
-            self.schema["slots"][pred_key]["union_of"].add(obj_key)
+    def add_to_domain(
+        self, pred_curie_key: tuple[str, str], obj_curie_key: tuple[str, str]
+    ) -> None:
+        schema_slots = get_schema_slots(self.schema)
+        _, pred_key = pred_curie_key
+        obj_uri, obj_key = obj_curie_key
+        self.domain_range_keys_to_uris[obj_key] = obj_uri
+        current_slot = schema_slots[pred_key]
+        if current_slot.union_of is None:
+            current_slot.union_of = []
+        elif isinstance(current_slot.union_of, (str, SlotDefinitionName)):
+            current_slot.union_of = [current_slot.union_of]
+        if obj_key not in current_slot.union_of:
+            current_slot.union_of.append(obj_key)
 
-    def add_to_range(self, pred_curie_key, obj_curie_key):
+    def add_to_range(
+        self, pred_curie_key: tuple[str, str], obj_curie_key: tuple[str | None, str]
+    ) -> None:
+        schema_slots = get_schema_slots(self.schema)
         pred_uri, pred_key = pred_curie_key
         obj_uri, obj_key = obj_curie_key
 
         if pred_uri in self.URIs_to_ontologies:
             return
+        if obj_uri is not None:
+            self.domain_range_keys_to_uris[obj_key] = obj_uri
 
-        if obj_key not in self.schema["slots"][pred_key]["any_of"]:
-            self.schema["slots"][pred_key]["any_of"].add(obj_key)
+        current_slot = schema_slots[pred_key]
+        if current_slot.any_of is None:
+            current_slot.any_of = []
+        elif isinstance(current_slot.any_of, (dict, AnonymousSlotExpression)):
+            current_slot.any_of = [current_slot.any_of]
+        if not in_any_of(current_slot.any_of, obj_key):
+            current_slot.any_of.append(AnonymousSlotExpression(range=obj_key))
 
-    def increment_usage_count(self, subject_type_uri, pred_uri, object_type_uri):
-        base = self.schema["annotations"]["counts"]["pairs"][pred_uri]
+    def increment_usage_count(
+        self, subject_type_uri: str | None, pred_uri: str, object_type_uri: str | None
+    ) -> None:
+        schema_annotations = get_schema_annotations(self.schema)
+        if pred_uri not in schema_annotations["counts"].value["pairs"]:
+            schema_annotations["counts"].value["pairs"][pred_uri] = {}
+        base = schema_annotations["counts"].value["pairs"][pred_uri]
         st = subject_type_uri if subject_type_uri else "untyped"
-        base[st][object_type_uri] += 1
+        ot = object_type_uri if object_type_uri else "untyped"
+        if st not in base:
+            base[st] = {}
+        if ot not in base[st]:
+            base[st][ot] = 0
+        base[st][ot] += 1
 
-    def add_example(self, subject_type_uri, pred_uri, object_type_uri, example):
+    def add_example(
+        self,
+        subject_type_uri: str | None,
+        pred_uri: str,
+        object_type_uri: str | None,
+        example: tuple[str, str, str],
+    ) -> None:
+        schema_annotations = get_schema_annotations(self.schema)
         suri = subject_type_uri or "untyped"
         ouri = object_type_uri or "untyped"
-        target = self.schema["annotations"]["examples"]["pairs"][pred_uri][suri]
-        if not target.get(ouri):
-            target[ouri] = {
+        example_pairs = schema_annotations["examples"].value["pairs"]
+        if pred_uri not in example_pairs:
+            example_pairs[pred_uri] = {}
+        if suri not in example_pairs[pred_uri]:
+            example_pairs[pred_uri][suri] = {}
+        if ouri not in example_pairs[pred_uri][suri]:
+            example_pairs[pred_uri][suri][ouri] = {
                 "subject": example[0],
                 "predicate": example[1],
                 "object": example[2],
             }
 
     def account_for_triple(
-        self, subj_type_curie_key, pred_curie_key, obj_type_curie_key, example
-    ):
+        self,
+        subj_type_curie_key: tuple[str, str] | None,
+        pred_curie_key: tuple[str, str],
+        obj_type_curie_key: tuple[str | None, str],
+        example: tuple[str, str, str],
+    ) -> None:
         subj_type_uri = subj_type_curie_key[0] if subj_type_curie_key else None
         pred_uri = pred_curie_key[0]
         obj_type_uri = obj_type_curie_key[0]
@@ -657,35 +924,27 @@ class GraphCharacterizer:
         self.add_example(subj_type_uri, pred_uri, obj_type_uri, example)
         self.add_to_range(pred_curie_key, obj_type_curie_key)
 
-    def add_missing_classes(self, subj_uri, object_types, object_type_uris_keys):
-        if not any(obj in METADATA_TYPES for obj in list(object_types)):
-            for obj_uri, obj_key in object_type_uris_keys:
-                if (
-                    obj_key not in self.schema["classes"]
-                    and obj_uri not in self.URIs_to_ontologies
-                ):
-                    self.add_class(obj_key, obj_uri)
-                    if obj_key not in self.schema["annotations"]["examples"]["classes"]:
-                        self.schema["annotations"]["examples"]["classes"][obj_uri] = (
-                            str(subj_uri)
-                        )
+    def process_counts(self) -> None:
+        """Actually counts triples in the graph.
 
-    def process_counts(self):
-        """
-        MAJOR OPTIMIZATION:
-        Instead of iterating subjects -> predicate_objects (N+1 queries),
-        we iterate all triples linearly (1 pass).
+        Triples pertaining to a restriction, ontology, class, datatype, or property are excluded.
+        
+        All triples are iterated linearly, meaning only one pass over the graph is taken.
         """
         print("Processing triples (Linear Scan Optimization)...")
 
         produce_curie_key = self.produce_curie_key
         types_index = self.entity_types_index
-        schema_counts_slots = self.schema["annotations"]["counts"]["slots"]
-        schema_classes = self.schema["classes"]
+        schema_annotations = get_schema_annotations(self.schema)
+        schema_classes = get_schema_classes(self.schema)
+        schema_slots = get_schema_slots(self.schema)
+        schema_types = get_schema_types(self.schema)
+        schema_counts_slots = schema_annotations["counts"].value["slots"]
 
         skip_predicates = {RDF.type, RDF.first, RDF.rest}
 
         for s, p, o in tqdm.tqdm(self.g, desc="Analyzing Triples"):
+            # Skip anything related to RDF lists
             if p in skip_predicates:
                 continue
             p_str = str(p)
@@ -696,7 +955,7 @@ class GraphCharacterizer:
             s_types_raw = types_index.get(s, set())
 
             subject_type_uris_keys = []
-            subject_types_filtered = set()
+            subject_types_filtered: set[Node] = set()
 
             if s_types_raw:
                 for st in s_types_raw:
@@ -708,14 +967,13 @@ class GraphCharacterizer:
                         continue
 
                     st_curie, st_key = produce_curie_key(st)
-
-                    self.schema["annotations"]["counts"]["classes"][st_curie] += 1
-                    if (
-                        st_curie
-                        not in self.schema["annotations"]["examples"]["classes"]
-                    ):
-                        self.schema["annotations"]["examples"]["classes"][st_curie] = (
-                            str(s)
+                    # count untyped triples as well
+                    if st_curie not in schema_annotations["counts"].value["classes"]:
+                        schema_annotations["counts"].value["classes"][st_curie] = 0
+                    schema_annotations["counts"].value["classes"][st_curie] += 1
+                    if st_curie not in schema_annotations["examples"].value["classes"]:
+                        schema_annotations["examples"].value["classes"][st_curie] = str(
+                            s
                         )
 
                     subject_type_uris_keys.append((st_curie, st_key))
@@ -735,12 +993,16 @@ class GraphCharacterizer:
 
             # 2. Process Predicate
             p_curie, p_key = produce_curie_key(p)
+            if p_curie not in schema_counts_slots:
+                schema_counts_slots[p_curie] = 0
             schema_counts_slots[p_curie] += 1
 
             try:
-                target_entity, target_ontology = self.check_for_import(p_curie)
+                self.check_for_import(p_curie)
             except KeyError:
-                self.schema['slots'][p_key]['slot_uri'] = str(p_curie)
+                if p_key not in schema_slots:
+                    self.add_slot(p_key)
+                schema_slots[p_key].slot_uri = str(p_curie)
 
             # 3. Identify Object Type
             object_type_uris_keys = []
@@ -759,13 +1021,13 @@ class GraphCharacterizer:
                     object_datatype
                 )
                 if current_import:
-                    self.schema["imports"].add(current_import)
+                    self.add_import(current_import)
 
                 dt_curie, dt_key = produce_curie_key(object_type_mapping)
                 object_type_uris_keys.append((dt_curie, dt_key))
 
                 if (
-                    dt_key not in self.schema["types"]
+                    dt_key not in schema_types
                     and dt_curie not in self.URIs_to_ontologies
                 ):
                     self.add_type(object_datatype, dt_key, dt_curie)
@@ -780,10 +1042,13 @@ class GraphCharacterizer:
                     if st_curie not in self.URIs_to_ontologies:
                         if st_key not in schema_classes:
                             self.add_class(st_key, st_curie)
-                        if "slots" not in schema_classes[st_key]:
-                            schema_classes[st_key]["slots"] = []
-                        if p_key not in schema_classes[st_key]["slots"]:
-                            schema_classes[st_key]["slots"].add(p_key)
+                        current_class = schema_classes[st_key]
+                        if current_class.slots is None:
+                            current_class.slots = []
+                        elif isinstance(current_class.slots, (str, SlotDefinitionName)):
+                            current_class.slots = [current_class.slots]
+                        if p_key not in current_class.slots:
+                            current_class.slots.append(p_key)
 
                     if object_type_uris_keys:
                         for ot_curie_key in object_type_uris_keys:
@@ -812,116 +1077,29 @@ class GraphCharacterizer:
                         None, pred_curie_key, (None, "untyped"), example
                     )
 
-    def convert_class_dicts(self):
-        for class_key, class_dict in chain(
-            self.schema.get("classes",{}).items(), self.schema.get("types", {}).items()
-        ):
-            if "notes" in class_dict and len(class_dict["notes"]) == 0:
-                del class_dict["notes"]
-            if "slots" in class_dict:
-                class_dict["slots"] = list(set(class_dict["slots"]))  # Dedupe
-                if len(class_dict["slots"]) == 0:
-                    del class_dict["slots"]
-
-            if "description" in class_dict:
-                class_dict["description"] = class_dict["description"].replace("\n", "␊")
-            if class_dict["name"] == "":
-                class_dict["name"] = class_key
-            if "comments" in class_dict and len(class_dict["comments"]) > 0:
-                class_dict["comments"] = [
-                    (k + ": " + v)
-                    for k in class_dict["comments"]
-                    for v in list(class_dict["comments"][k])
-                ]
-            elif "comments" in class_dict:
-                del class_dict["comments"]
-
-    def convert_slot_dicts(self):
-        for key, slot_dict in self.schema["slots"].items():
-            slot_uri = slot_dict["slot_uri"]
-            if "description" in slot_dict:
-                slot_dict["description"] = slot_dict["description"].replace("\n", "␊")
-
-            if self.schema["annotations"]["counts"]["slots"][slot_uri] == 0:
-                if "notes" in slot_dict:
-                    slot_dict["notes"].append(
-                        "No occurrences of this slot in the graph."
-                    )
-                else:
-                    slot_dict["notes"] = ["No occurrences of this slot in the graph."]
-                del self.schema["annotations"]["counts"]["slots"][slot_uri]
-
-            # Convert sets to lists of dicts for YAML output
-            slot_dict["any_of"] = [
-                {"range": typename[1] if isinstance(typename, tuple) else typename}
-                for typename in list(slot_dict["any_of"])
-            ]
-
-            if len(slot_dict["any_of"]) == 1:
-                slot_dict["range"] = slot_dict["any_of"][0]["range"]
-                del slot_dict["any_of"]
-            elif len(slot_dict["any_of"]) == 0:
-                del slot_dict["any_of"]
-
-            slot_dict["union_of"] = [
-                typename for typename in list(slot_dict["union_of"])
-            ]
-            if len(slot_dict["union_of"]) == 1:
-                slot_dict["domain"] = slot_dict["union_of"][0]
-                del slot_dict["union_of"]
-            elif len(slot_dict["union_of"]) == 0:
-                del slot_dict["union_of"]
-
-            if "notes" in slot_dict and len(slot_dict["notes"]) == 0:
-                del slot_dict["notes"]
-            if "comments" in slot_dict and len(slot_dict["comments"]) == 0:
-                del slot_dict["comments"]
-            elif "comments" in slot_dict:
-                slot_dict["comments"] = [
-                    (k + ": " + v)
-                    for k in slot_dict["comments"]
-                    for v in list(slot_dict["comments"][k])
-                ]
-
-    def clean_up_json(self):
-        self.schema["classes"] = dict(self.schema["classes"])
-        if "types" in self.schema:
-            self.schema["types"] = dict(self.schema["types"])
-            if len(self.schema["types"]) == 0:
-                del self.schema["types"]
-        self.schema["slots"] = dict(self.schema["slots"])
-        self.schema["imports"] = list(self.schema["imports"])
-        self.schema["annotations"] = json.loads(json.dumps(self.schema["annotations"]))
-        self.schema["annotations"] = convert_annotations(self.schema["annotations"])
-
+    def clean_up_json(self) -> None:
         update_time = f"{datetime.datetime.now().isoformat()}"
-        self.schema.setdefault("created_on", update_time)
-        if self.schema.get("title") == "":
-            del self.schema["title"]
-        self.schema.setdefault("last_updated_on", update_time)
+        if self.schema.created_on is None:
+            self.schema.created_on = update_time
+        if self.schema.last_updated_on is None:
+            self.schema.last_updated_on = update_time
 
-        if "comments" in self.schema:
-            self.schema["comments"] = [
-                (k + ": " + v)
-                for k, vals in self.schema["comments"].items()
-                for v in vals
-            ]
-
-    def export_schema(self):
+    def export_schema(self) -> None:
         yaml_file_basename = self.graph_name.replace("/", "__")
         output_file_path = os.path.join(self.output_path, yaml_file_basename + ".yaml")
 
-        with open(output_file_path, "w") as f:
-            yaml.dump(self.schema, f)
+        yaml_dumper.dump(self.schema, output_file_path)
 
-    def export_untyped_entities(self):
+    def export_untyped_entities(self) -> None:
         yaml_file_basename = self.graph_name.replace("/", "__")
-        output_file_path = os.path.join(self.output_path, yaml_file_basename + "_untyped.txt")
+        output_file_path = os.path.join(
+            self.output_path, yaml_file_basename + "_untyped.txt"
+        )
 
         with open(output_file_path, "w") as f:
             f.writelines(str(e) + "\n" for e in self.entities_without_type)
 
-    def characterize(self):
+    def characterize(self) -> None:
         if self.args.process_ontologies:
             self.process_restrictions()
             self.process_ontologies()
@@ -933,10 +1111,6 @@ class GraphCharacterizer:
             self.process_counts()
 
         self.add_missing_domain_range_types()
-
-        self.convert_class_dicts()
-
-        self.convert_slot_dicts()
 
         self.clean_up_json()
 
@@ -974,7 +1148,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--output-path",
         default=".",
-        help="Path into which any outputs from the characterization (schemas, untyped entity lists, etc.) should be saved."
+        help="Path into which any outputs from the characterization (schemas, untyped entity lists, etc.) should be saved.",
     )
     parser.add_argument(
         "--generate-base-schemas",

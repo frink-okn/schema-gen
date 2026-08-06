@@ -3,58 +3,85 @@ from collections import defaultdict
 import frontmatter
 import requests
 import yaml
+from linkml_runtime.linkml_model import Annotation, SchemaDefinition
 
-from linkml_structures import empty_annotations, linkml_schema, linkml_class, linkml_slot, linkml_type
+from linkml_structures import linkml_schema
 
 
-def read_from_registry(okn_registry_id):
+def read_from_registry(okn_registry_id: str) -> SchemaDefinition:
     target_url = f"https://raw.githubusercontent.com/frink-okn/okn-registry/refs/heads/main/docs/registry/kgs/{okn_registry_id}.md"
     response = requests.get(target_url)
-    post = frontmatter.loads(response.content)
+    post = frontmatter.loads(response.text)
 
-    schema = linkml_schema(
-        post["shortname"],
-        post["title"],
-        post.get("description", "No description available."),
-    )
-    schema["description"] = post.get("description", "")
+    if "shortname" in post:
+        if isinstance(post["shortname"], str):
+            shortname = post["shortname"]
+        else:
+            shortname = "untitled"
+    else:
+        shortname = "untitled"
+
+    if "title" in post:
+        if isinstance(post["title"], str):
+            title = post["title"]
+        else:
+            title = "Untitled"
+    else:
+        title = "Untitled"
+
+    if "description" in post:
+        if isinstance(post["description"], str):
+            description = post["description"]
+        else:
+            description = "No description available."
+    else:
+        description = "No description available."
+
+    schema = linkml_schema(shortname, title, description)
     schema["see_also"] = []
     for metadata_key in ["stats", "funding", "sparql", "tpf"]:
         if metadata_key in post:
             schema["see_also"].append(post[metadata_key])
 
     if "contact" in post:
-        contact_info = post.get("contact")
-        if contact_info.get("email"):
+        contact_info = post["contact"]
+        if hasattr(contact_info, "email"):
             schema.setdefault("contributors", []).append(
-                "mailto:" + post["contact"]["email"]
+                "mailto:" + contact_info.email
             )
-        elif contact_info.get("github"):
+        elif hasattr(contact_info, "github"):
             schema.setdefault("contributors", []).append(
-                "https://github.com/" + post["contact"]["github"]
+                "https://github.com/" + contact_info.github
             )
     elif "contacts" in post:
-        for contact in post.get("contacts"):
-            if contact.get("email"):
-                schema.setdefault("contributors", []).append(
-                    "mailto:" + contact["email"]
-                )
-            elif contact.get("github"):
-                schema.setdefault("contributors", []).append(
-                    "https://github.com/" + contact["github"]
-                )
+        if not isinstance(post["contacts"], list):
+            print('Contact list is not a list')
+        else:
+            for contact in post["contacts"]:
+                if "email" in contact:
+                    schema.setdefault("contributors", []).append(
+                        "mailto:" + contact["email"]
+                    )
+                elif "github" in contact:
+                    schema.setdefault("contributors", []).append(
+                        "https://github.com/" + contact["github"]
+                    )
 
     return schema
 
 
-def schema_from_existing(old_schema_path):
+def schema_from_existing(old_schema_path: str) -> SchemaDefinition:
     with open(old_schema_path) as f:
-        old_schema = yaml.safe_load(f.read())
-    old_schema["annotations"] = empty_annotations()
-    old_schema["imports"] = set(old_schema["imports"])
-    old_schema["classes"] = defaultdict(linkml_class, old_schema["classes"])
-    old_schema["slots"] = defaultdict(linkml_slot, old_schema["slots"])
-    if "types" not in old_schema:
-        old_schema["types"] = defaultdict(linkml_type)
+        old_schema = SchemaDefinition(**(yaml.safe_load(f.read())))
+    old_schema.annotations = {
+        "counts": Annotation("counts", {
+            "classes": {}, # defaultdict(int)
+            "slots": {}, # defaultdict(int)
+            "pairs": {} # defaultdict(lambda: defaultdict(lambda: defaultdict(int))),
+        }),
+        "examples": Annotation("examples", {
+            "classes": {}, # defaultdict(str),
+            "pairs": {} # defaultdict(lambda: defaultdict(lambda: defaultdict(dict))),
+        }),
+    }
     return old_schema
-
