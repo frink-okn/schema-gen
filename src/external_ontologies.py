@@ -136,9 +136,7 @@ external_ontologies_dict = {
 
 @dataclass
 class ExternalOntologyInfo:
-    URIs_to_entities: dict[str, Element]
-    URI_entity_types: dict[str, str]
-    URIs_to_ontologies: dict[str, str]
+    URIs_in_ontologies: dict[str, tuple[str, Element | None, str]]
     subclass_tree: defaultdict[str, set[str]]
 
 # --- External Ontology Loading ---
@@ -151,19 +149,19 @@ def load_external_ontologies(
             old_details = pickle.load(f)
             if not isinstance(old_details, ExternalOntologyInfo):
                 raise ValueError('Pickled information of wrong type')
-            print("Loaded", len(old_details.URIs_to_ontologies), "terms from external ontologies")
+            print("Loaded", len(old_details.URIs_in_ontologies), "terms from external ontologies")
             return old_details
     except (FileNotFoundError, ValueError):
         pass
 
-    eoi = ExternalOntologyInfo({}, {
-        "xsd:length": "okns:extended_types",
-        "xsd:minLength": "okns:extended_types",
-        "xsd:maxLength": "okns:extended_types",
-        "xsd:minExclusive": "okns:extended_types",
-        "xsd:maxExclusive": "okns:extended_types",
-        "rdf:langRange": "okns:extended_types",
-    }, {}, defaultdict(set))
+    eoi = ExternalOntologyInfo({
+        "xsd:length": ("okns:extended_types", None, "slot"),
+        "xsd:minLength": ("okns:extended_types", None, "slot"),
+        "xsd:maxLength": ("okns:extended_types", None, "slot"),
+        "xsd:minExclusive": ("okns:extended_types", None, "slot"),
+        "xsd:maxExclusive": ("okns:extended_types", None, "slot"),
+        "rdf:langRange": ("okns:extended_types", None, "slot"),
+    }, defaultdict(set))
 
     for name, external_ontology in tqdm.tqdm(source.items(), desc="Loading external ontologies"):
         current_from_path = external_ontology["from_path"]
@@ -210,26 +208,22 @@ def load_external_ontologies(
                 current_type = TypeDefinition(**current_type)
             if (
                 "uri" in current_type
-                and (current_type["uri"] not in eoi.URIs_to_ontologies)
+                and (current_type["uri"] not in eoi.URIs_in_ontologies)
                 and (current_type["from_schema"] != current_from_path)
             ):
                 current_uri = current_type["uri"]
-                eoi.URIs_to_entities[current_uri] = current_type
-                eoi.URI_entity_types[current_uri] = "type"
-                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_in_ontologies[current_uri] = (deepcopy(current_from_path), current_type, "type")
 
         for current_class in class_list:
             if not isinstance(current_class, ClassDefinition):
                 current_class = ClassDefinition(**current_class)
             if (
                 "class_uri" in current_class
-                and (current_class["class_uri"] not in eoi.URIs_to_ontologies)
+                and (current_class["class_uri"] not in eoi.URIs_in_ontologies)
                 and (current_class["from_schema"] != current_from_path)
             ):
                 current_uri = current_class["class_uri"]
-                eoi.URIs_to_entities[current_uri] = current_class
-                eoi.URI_entity_types[current_uri] = "class"
-                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_in_ontologies[current_uri] = (deepcopy(current_from_path), current_class, "class")
                 if current_class.is_a is not None:
                     if not check_for_cycles(
                         eoi.subclass_tree, current_class.name, current_class.is_a
@@ -241,15 +235,13 @@ def load_external_ontologies(
                 current_slot = SlotDefinition(**current_slot)
             if (
                 "slot_uri" in current_slot
-                and (current_slot["slot_uri"] not in eoi.URIs_to_ontologies)
+                and (current_slot["slot_uri"] not in eoi.URIs_in_ontologies)
                 and (current_slot["from_schema"] != current_from_path)
             ):
                 current_uri = current_slot["slot_uri"]
-                eoi.URIs_to_entities[current_uri] = current_slot
-                eoi.URI_entity_types[current_uri] = "slot"
-                eoi.URIs_to_ontologies[current_uri] = deepcopy(current_from_path)
+                eoi.URIs_in_ontologies[current_uri] = (deepcopy(current_from_path), current_slot, "slot")
 
     with open('external_ontologies.pkl','wb') as f:
         pickle.dump(eoi, f)
-    print("Loaded", len(eoi.URIs_to_ontologies), "terms from external ontologies")
+    print("Loaded", len(eoi.URIs_in_ontologies), "terms from external ontologies")
     return eoi

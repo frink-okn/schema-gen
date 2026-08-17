@@ -73,15 +73,5 @@ def read_from_registry(okn_registry_id: str) -> SchemaDefinition:
 def schema_from_existing(old_schema_path: str) -> SchemaDefinition:
     with open(old_schema_path) as f:
         old_schema = SchemaDefinition(**(yaml.safe_load(f.read())))
-    old_schema.annotations = {
-        "counts": Annotation("counts", {
-            "classes": {}, # defaultdict(int)
-            "slots": {}, # defaultdict(int)
-            "pairs": {} # defaultdict(lambda: defaultdict(lambda: defaultdict(int))),
-        }),
-        "examples": Annotation("examples", {
-            "classes": {}, # defaultdict(str),
-            "pairs": {} # defaultdict(lambda: defaultdict(lambda: defaultdict(dict))),
-        }),
-    }
+    old_schema.annotations = {}
     return old_schema

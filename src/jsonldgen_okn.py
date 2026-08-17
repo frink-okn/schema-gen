@@ -38,25 +38,25 @@ def convert_to_void(counts, examples, graph_name, prefixes):
         "@type": "void:Dataset",
         # TODO: get void:distinctSubjects, void:distinctObjects, void:triples in dump_yaml
         # TODO: make determination of void:entities in dump_yaml configurable (e.g. exclude rdf:Statement)
-        "void:classes": len(as_dict(counts)["classes"]),
-        "void:properties": len(as_dict(counts)["slots"]),
-        "void:vocabulary": [{"@id": prefix["prefix_reference"]} for tag, prefix in as_dict(prefixes).items()],
+        "void:classes": len(counts["classes"]),
+        "void:properties": len(counts["slots"]),
+        "void:vocabulary": [{"@id": prefix["prefix_reference"]} for tag, prefix in prefixes.items()],
         "void:uriLookupEndpoint": {"@id": "https://frink.apps.renci.org/term/"}, # TODO: make this overridable
         "void:sparqlEndpoint": {"@id": f"https://frink.apps.renci.org/{graph_name}/sparql"}, # TODO: don't hardcode this
         "void:classPartition": [],
         "void:propertyPartition": []
     }
 
-    for tag, class_partition in as_dict(counts["classes"]).items():
+    for tag, class_partition in counts["classes"].items():
         new_class_partition = {
             "@type": "void:Dataset",
             "void:class": {"@id": tag},
             "void:entities": class_partition,
-            "void:exampleResource": {"@id": as_dict(examples["classes"])[tag]}
+            "void:exampleResource": {"@id": examples["classes"][tag]}
         }
         new_counts["void:classPartition"].append(new_class_partition)
 
-    for tag, slot_partition in as_dict(counts["slots"]).items():
+    for tag, slot_partition in counts["slots"].items():
         new_slot_partition = {
             "@type": "void:Dataset",
             "void:property": {"@id": tag},
@@ -64,7 +64,7 @@ def convert_to_void(counts, examples, graph_name, prefixes):
         }
         new_counts["void:propertyPartition"].append(new_slot_partition)
 
-    for pred_tag, pred_data in as_dict(counts["pairs"]).items():
+    for pred_tag, pred_data in counts["pairs"].items():
         for subj_tag, subj_data in pred_data.items():
             subj_partition = next(k for k in new_counts["void:classPartition"] if k["void:class"]["@id"] == subj_tag)
             subj_property_partitions = subj_partition.setdefault("void:propertyPartition",[])
@@ -81,7 +81,7 @@ def convert_to_void(counts, examples, graph_name, prefixes):
                 }
 
                 try:
-                    pair_example = as_dict(examples)["pairs"][pred_tag][subj_tag][obj_tag]
+                    pair_example = examples["pairs"][pred_tag][subj_tag][obj_tag]
                 except KeyError:
                     pass
                 else:
@@ -260,13 +260,13 @@ class JSONLDGenerator(Generator):
         self.schema['types'] = {k: v for k, v in self.schema['types'].items() if v['from_schema'] == self.schema['id']}
 
         # Convert counts to VOID
-        self.schema["@context"].append({"void-ext": "http://ldf.fi/void-ext#"})
-        self.schema['annotations'] = convert_to_void(
-            self.schema['annotations']['counts']["value"],
-            self.schema['annotations']['examples']["value"],
-            self.schema['name'],
-            self.schema['prefixes']
-        )
+        self.schema["@context"].append({"voidext": "http://ldf.fi/void-ext#"})
+        # self.schema['annotations'] = convert_to_void(
+        #     as_dict(self.schema['annotations']['counts']["value"]),
+        #     as_dict(self.schema['annotations']['examples']["value"]),
+        #     self.schema['name'],
+        #     as_dict(self.schema['prefixes'])
+        # )
 
         out = str(as_json(self.schema, indent="  ")) + "\n"
         self.schema = self.original_schema
