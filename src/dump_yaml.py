@@ -275,7 +275,9 @@ class GraphCharacterizer:
                 }:
                     return
 
-            obj_list = obj_in.setdefault(current_slot, [])
+            if not isinstance(getattr(obj_in, current_slot), list):
+                setattr(obj_in, current_slot, [])
+            obj_list = getattr(obj_in, current_slot)
             if string_to_store not in obj_list:
                 obj_list.append(string_to_store.strip())
 
