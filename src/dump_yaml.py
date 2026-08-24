@@ -209,10 +209,18 @@ class GraphCharacterizer:
         self.multiple_typed_object_counts: defaultdict[frozenset[Node], int] = (
             defaultdict(int)
         )
-        self.entity_types_index: defaultdict[Node, set[Node]] = defaultdict(set)
 
-        # Optimization: Pre-build indexes immediately
-        self._build_indexes()
+        if self.args.type_index_size:
+            self.get_entity_types = lru_cache(maxsize=self.args.type_index_size)(self.get_entity_types_uncached)
+        else:
+            self.entity_types_index: defaultdict[Node, set[Node]] = defaultdict(set)
+            # Optimization: Pre-build indexes immediately
+            self._build_indexes()
+            self.get_entity_types = lambda x: self.entity_types_index.get(x, set())
+
+    def get_entity_types_uncached(self, entity: Node) -> set[Node]:
+        """Finds types for a given entity in the graph."""
+        return {o for o in self.g.objects(subject=entity, predicate=RDF.type)}
 
     def find_shortest_path_helper(
         self, start: str, end: str, path: tuple[str, ...] = ()
@@ -780,7 +788,6 @@ class GraphCharacterizer:
         print("Processing triples (Linear Scan Optimization)...")
 
         produce_curie_key = self.produce_curie_key
-        types_index = self.entity_types_index
         schema_annotations = get_schema_annotations(self.schema)
         schema_classes = get_schema_classes(self.schema)
         schema_slots = get_schema_slots(self.schema)
@@ -804,7 +811,7 @@ class GraphCharacterizer:
             o_curie_key = produce_curie_key(o)
 
             # 1. Identify Subject Types from Index
-            s_types_raw = types_index.get(s, set())
+            s_types_raw = self.get_entity_types(s)
 
             subject_type_uris_keys: list[tuple[str | None, str, str]] = []
             subject_types_filtered: set[Node] = set()
@@ -844,7 +851,7 @@ class GraphCharacterizer:
             object_type_uris_keys: list[tuple[str | None, str, str]] = []
 
             if isinstance(o, (URIRef, BNode)):
-                o_types_raw = types_index.get(o, set())
+                o_types_raw = self.get_entity_types(o)
                 if len(o_types_raw) > 0:
                     for ot in list(o_types_raw):
                         if ot in CLASS_TYPES or ot in SLOT_TYPES:
@@ -1015,6 +1022,11 @@ if __name__ == "__main__":
         action=argparse.BooleanOptionalAction,
         default=True,
         help="If an entity has both a class and one of its superclasses as types, disregard the superclass for statistical purposes.",
+    )
+    parser.add_argument(
+        "--type-index-size",
+        type=int,
+        help="Size of the index of entity types. If not specified, all entity types are computed and cached; otherwise types will be obtained on the fly.",
     )
 
     args = parser.parse_args()
