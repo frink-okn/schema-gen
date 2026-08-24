@@ -41,10 +41,6 @@ _{{ element_description_line }}_
 * __NOTE__: this is an abstract class and should not be instantiated directly
 {% endif %}
 
-{% if element.class_uri in schemaview.schema.annotations['counts'].value['classes'].value %}
-This class occurs {{ schemaview.schema.annotations['counts'].value['classes'].value[element.class_uri].value }} times.
-{% endif %}
-
 URI: {{ gen.uri_link(element) }}
 
 
@@ -70,16 +66,16 @@ URI: {{ gen.uri_link(element) }}
 
 ## Slots
 
-| Name | Cardinality and Range | Description | Inheritance | Occurrences |
-| ---  | --- | --- | --- | --- |
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
 {% if gen.get_direct_slots(element)|length > 0 %}
 {%- for slot in gen.get_direct_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct | {% if slot.slot_uri in schemaview.schema.annotations['counts'].value['pairs'].value and element.class_uri in schemaview.schema.annotations['counts'].value['pairs'].value[slot.slot_uri].value %}{{ schemaview.schema.annotations['counts'].value['pairs'].value[slot.slot_uri].value[element.class_uri].value._values() | sum(attribute='value') }}{% endif %} |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} <br/> {% for comment in slot.comments -%}{{ comment }}{%- if not loop.last -%} <br/> {%- endif -%}{%- endfor %} | direct |
 {% endfor -%}
 {% endif -%}
 {% if gen.get_indirect_slots(element)|length > 0 %}
 {%- for slot in gen.get_indirect_slots(element) -%}
-| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} | {% if slot.slot_uri in schemaview.schema.annotations['counts'].value['pairs'].value and element.class_uri in schemaview.schema.annotations['counts'].value['pairs'].value[slot.slot_uri].value %}{{ schemaview.schema.annotations['counts'].value['pairs'].value[slot.slot_uri].value[element.class_uri].value._values() | sum(attribute='value') }}{% endif %} |
+| {{ gen.link(slot) }} | {{ gen.cardinality(slot) }} <br/> {{ compute_range(slot) }} | {{ slot.description|enshorten }} | {{ gen.links(gen.get_slot_inherited_from(element.name, slot.name))|join(', ') }} |
 {% endfor -%}
 {% endif %}
 

@@ -2,7 +2,6 @@
 
 Modified by Mahir Morshed <morshedm@renci.org> to do several things:
     - Eliminate imported classes/slots/types
-    - Convert entity/triple counts in annotations to VoID
 """
 
 import logging
@@ -261,12 +260,6 @@ class JSONLDGenerator(Generator):
 
         # Convert counts to VOID
         self.schema["@context"].append({"voidext": "http://ldf.fi/void-ext#"})
-        # self.schema['annotations'] = convert_to_void(
-        #     as_dict(self.schema['annotations']['counts']["value"]),
-        #     as_dict(self.schema['annotations']['examples']["value"]),
-        #     self.schema['name'],
-        #     as_dict(self.schema['prefixes'])
-        # )
 
         out = str(as_json(self.schema, indent="  ")) + "\n"
         self.schema = self.original_schema

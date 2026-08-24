@@ -7,21 +7,13 @@
 {% endif %}
 
 
-{% if 'examples' in schemaview.schema.annotations and element.name in schemaview.schema.annotations['examples'].value['pairs'].value %}
+{% if element.examples %}
 ## Examples
-{% if element.any_of or element.range %}
-| Subject type | Object type | Example subject | Example object | Occurrences |
-| --- | --- | --- | --- | --- |
-{% for y in schemaview.schema.annotations['examples'].value['pairs'].value[element.name].value._keys() -%}{% for z in schemaview.schema.annotations['examples'].value['pairs'].value[element.name].value[y].value._keys() -%}
-| {{ y }} | {{ z }} | {{ schemaview.schema.annotations['examples'].value['pairs'].value[element.name].value[y].value[z].value['subject'].value }} | {{ schemaview.schema.annotations['examples'].value['pairs'].value[element.name].value[y].value[z].value['object'].value }} | {{ schemaview.schema.annotations['counts'].value['pairs'].value[element.name].value[y].value[z].value }} |
-{% endfor -%}{%- endfor %}
-{% else %}
 | Value |
 | --- |
 {% for x in element.examples -%}
 | {{ x.value }} |
 {% endfor %}
-{% endif %}
 {% endif -%}
 
 {% if element.comments -%}

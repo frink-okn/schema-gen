@@ -5,7 +5,7 @@ from copy import deepcopy
 from dataclasses import dataclass, field
 from enum import Enum
 from pathlib import Path
-from typing import Dict, Iterable, Iterator, List, Optional, Tuple, Union
+from typing import Any, Dict, Iterable, Iterator, List, Optional, Tuple, Union
 
 import click
 from jinja2 import Environment, FileSystemLoader, Template
@@ -83,6 +83,30 @@ def _ensure_ranked(elements: Iterable[Element]):
     for x in elements:
         if x.rank is None:
             x.rank = MAX_RANK
+
+
+def list_all_classes(dataset: Any) -> set[str]:
+    class_list = set()
+    if isinstance(dataset, dict):
+        if "void:class" in dataset:
+            class_list.add(dataset["void:class"])
+        for v in dataset.values():
+            class_list |= list_all_classes(v)
+    elif isinstance(dataset, list):
+        class_list |= set.union(*[list_all_classes(x) for x in dataset])
+    return class_list
+
+
+def list_all_slots(dataset: Any) -> set[str]:
+    class_list = set()
+    if isinstance(dataset, dict):
+        if "void:property" in dataset:
+            class_list.add(dataset["void:property"])
+        for v in dataset.values():
+            class_list |= list_all_slots(v)
+    elif isinstance(dataset, list):
+        class_list |= set.union(*[list_all_slots(x) for x in dataset])
+    return class_list
 
 
 @dataclass
@@ -239,9 +263,10 @@ class DocGenerator(Generator):
 
         # List of classes with instances in this schema
         try:
-            instantiated_classes = sv.schema.annotations['counts'].value['classes'].value._as_json_obj()
+            instantiated_classes = list(list_all_classes(sv.schema.annotations['counts'].value._as_dict))
         except KeyError:
             instantiated_classes = {}
+        print("classes", instantiated_classes)
 
         # Process defined classes
         self.logger.debug("Processing Classes...")
@@ -257,10 +282,13 @@ class DocGenerator(Generator):
             self._write(out_str, f"{directory}/{CLASS_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
             processed_classes.add(c.class_uri)
         # Finish remaining instantiated classes
-        for k, v in instantiated_classes.items():
+        for k in instantiated_classes:
             if k in processed_classes:
                 continue
-            c = class_uris_to_classes[k]
+            try:
+                c = class_uris_to_classes[k]
+            except KeyError:
+                continue
             n = self.name(c)
             self.logger.debug(f"  Generating doc for {n}")
             out_str = template.render(gen=self, element=c, schemaview=sv, **template_vars)
@@ -276,9 +304,10 @@ class DocGenerator(Generator):
 
         # List of slots with instances in this schema
         try:
-            instantiated_slots = sv.schema.annotations['counts'].value['slots'].value._as_json_obj()
+            instantiated_slots = list(list_all_slots(sv.schema.annotations['counts'].value._as_dict))
         except KeyError:
             instantiated_slots = {}
+        print("slots", instantiated_slots)
 
         # Process defined slots
         self.logger.debug("Processing Slots...")
@@ -293,7 +322,7 @@ class DocGenerator(Generator):
             self._write(out_str, f"{directory}/{SLOT_SUBFOLDER}" if self.subfolder_type_separation else directory, n)
             processed_slots.add(s.slot_uri)
         # Finish remaining used slots
-        for k, v in instantiated_slots.items():
+        for k in instantiated_slots:
             if k in processed_slots:
                 continue
             c = slot_uris_to_slots[k]
