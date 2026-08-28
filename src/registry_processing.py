@@ -46,11 +46,19 @@ def read_from_registry(okn_registry_id: str) -> SchemaDefinition:
     if "contact" in post:
         contact_info = post["contact"]
         if hasattr(contact_info, "email"):
-            schema.setdefault("contributors", []).append(
+            if schema.contributors is None:
+                schema.contributors = []
+            elif isinstance(schema.contributors, str):
+                schema.contributors = [schema.contributors]
+            schema.contributors.append(
                 "mailto:" + contact_info.email
             )
         elif hasattr(contact_info, "github"):
-            schema.setdefault("contributors", []).append(
+            if schema.contributors is None:
+                schema.contributors = []
+            elif isinstance(schema.contributors, str):
+                schema.contributors = [schema.contributors]
+            schema.contributors.append(
                 "https://github.com/" + contact_info.github
             )
     elif "contacts" in post:
@@ -59,11 +67,19 @@ def read_from_registry(okn_registry_id: str) -> SchemaDefinition:
         else:
             for contact in post["contacts"]:
                 if "email" in contact:
-                    schema.setdefault("contributors", []).append(
+                    if schema.contributors is None:
+                        schema.contributors = []
+                    elif isinstance(schema.contributors, str):
+                        schema.contributors = [schema.contributors]
+                    schema.contributors.append(
                         "mailto:" + contact["email"]
                     )
                 elif "github" in contact:
-                    schema.setdefault("contributors", []).append(
+                    if schema.contributors is None:
+                        schema.contributors = []
+                    elif isinstance(schema.contributors, str):
+                        schema.contributors = [schema.contributors]
+                    schema.contributors.append(
                         "https://github.com/" + contact["github"]
                     )
 
