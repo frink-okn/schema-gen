@@ -488,7 +488,7 @@ class GraphCharacterizer:
 
                 if subj_key in schema_classes:
                     cls = schema_classes[subj_key]
-                    if "title" in cls and "but not defined" not in cls["title"]:
+                    if cls.title is not None and "but not defined" not in cls.title:
                         if "deprecated" in cls and "deprecated" in extra_info:
                             cls.update({**extra_info, "deprecated": cls["deprecated"]})
                         else:
@@ -1014,7 +1014,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--void-partition-order",
-        default="void:classPartition,void:propertyPartition,voidext:objectClassPartition",
+        default="void:classPartition,voidext:subjectIRILengthPartition,voidext:subjectNamespacePartition,void:propertyPartition,voidext:objectClassPartition,voidext:objectIRILengthPartition,voidext:objectNamespacePartition,voidext:datatypePartition,voidext:literalLengthPartition",
         help="Partitions to be used for separating triple counts.",
     )
     parser.add_argument(

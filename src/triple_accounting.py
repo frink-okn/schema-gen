@@ -1,6 +1,7 @@
 from collections import defaultdict
 from dataclasses import dataclass, field
 from typing import Any, Literal, NotRequired, TypeAlias, TypedDict, Union, get_args
+from urllib.parse import urlsplit, urlunsplit
 
 from linkml_runtime.linkml_model.meta import AnonymousSlotExpression, SchemaDefinition
 from rdflib import BNode, Literal as rdfLiteral, Namespace, URIRef
@@ -62,29 +63,38 @@ def get_partition_indicator(
 
     match indicator:
         case "void:classPartition":
-            if subj_type[0] is None:
+            if not isinstance(example[0], URIRef):
                 raise TypeError
-            indicator_str = subj_type[0]
+            indicator_str = subj_type[0] or "untyped"
         case "voidext:propertyClassPartition":
-            if pred_type is None or pred_type[0] is None:
+            if not isinstance(example[1], URIRef):
                 raise TypeError
-            indicator_str = pred_type[0]
+            if pred_type is None:
+                indicator_str = "untyped"
+            else:
+                indicator_str = pred_type[0] or "untyped"
         case "voidext:objectClassPartition":
-            if obj_type[0] is None:
+            if not isinstance(example[2], (BNode, URIRef)):
                 raise TypeError
-            indicator_str = obj_type[0]
+            indicator_str = obj_type[0] or "untyped"
         case "voidext:subjectNamespacePartition":
             if not isinstance(example[0], URIRef):
                 raise TypeError
             indicator_str = example_curie_keys[0][2]
+            if indicator_str == "":
+                indicator_str = urlunsplit(urlsplit(str(example[0]))[:2] + ("","",""))
         case "voidext:propertyNamespacePartition":
             if not isinstance(example[1], URIRef):
                 raise TypeError
             indicator_str = example_curie_keys[1][2]
+            if indicator_str == "":
+                indicator_str = urlunsplit(urlsplit(str(example[1]))[:2] + ("","",""))
         case "voidext:objectNamespacePartition":
             if not isinstance(example[2], URIRef):
                 raise TypeError
             indicator_str = example_curie_keys[2][2]
+            if indicator_str == "":
+                indicator_str = urlunsplit(urlsplit(str(example[2]))[:2] + ("","",""))
         case "voidext:subjectIRILengthPartition":
             if not isinstance(example[0], URIRef):
                 raise TypeError
@@ -137,30 +147,40 @@ def account_for_triple(
     for obj_type_curie_key in obj_type_uris_keys:
         add_to_range(schema, pred_curie_key, obj_type_curie_key)
 
-    perform_counts(void_partition_order, base_counts, example, example_curie_keys, subj_type_uris_keys, obj_type_uris_keys)
+    partition_indicators: defaultdict[PartitionType, set[tuple[IndicatorType, str]]] = defaultdict(lambda: set())
+    for level in void_partition_order:
+        for subj_type_curie_key in subj_type_uris_keys:
+            for obj_type_curie_key in obj_type_uris_keys:
+                try:
+                    indicator_key, indicator_str = get_partition_indicator(level, example, example_curie_keys, subj_type_curie_key, obj_type_curie_key)
+                    partition_indicators[level].add((indicator_key, indicator_str))
+                except TypeError:
+                    continue
+
+    perform_counts(void_partition_order, partition_indicators, base_counts, example)
 
 
 def perform_counts(
     void_partition_order: list[PartitionType],
+    partition_indicators: dict[PartitionType, set[tuple[IndicatorType, str]]],
     base_partition: VoidDataset,
     example: tuple[Node, Node, Node],
-    example_curie_keys: tuple[tuple[str, str, str], tuple[str, str, str], tuple[str, str, str]],
-    subj_type_uris_keys: list[tuple[str | None, str, str]],
-    obj_type_uris_keys: list[tuple[str | None, str, str]],
 ) -> None:
     if len(void_partition_order) == 0:
         return
 
     level = void_partition_order[0]
-    partition_indicators: set[tuple[PartitionType, IndicatorType, str]] = set()
-    for subj_type_curie_key in subj_type_uris_keys:
-        for obj_type_curie_key in obj_type_uris_keys:
-            try:
-                indicator_key, indicator_str = get_partition_indicator(level, example, example_curie_keys, subj_type_curie_key, obj_type_curie_key)
-                partition_indicators.add((level, indicator_key, indicator_str))
-            except TypeError:
-                continue
-    for level, indicator_key, partition_indicator in list(partition_indicators):
-        current_partition = base_partition.get_partition(level, indicator_key, partition_indicator)
-        current_partition.increment_counts(example, example_curie_keys, subj_type_curie_key, obj_type_curie_key)
-        perform_counts(void_partition_order[1:], current_partition, example, example_curie_keys, subj_type_uris_keys, obj_type_uris_keys)
+    level_index = len(void_partition_order) - 1
+
+    if len(partition_indicators) == 0:
+        base_partition.level_index = 0
+        base_partition.increment_counts(example)
+    elif level not in partition_indicators:
+        perform_counts(void_partition_order[1:], partition_indicators, base_partition, example)
+    else:
+        for indicator_key, partition_indicator in list(partition_indicators[level]):
+            current_partition = base_partition.get_partition(level, indicator_key, partition_indicator)
+            current_partition.level_index = level_index
+            current_partition.increment_counts(example)
+            new_partition_indicators = {k: v for k, v in partition_indicators.items() if k != level}
+            perform_counts(void_partition_order[1:], new_partition_indicators, current_partition, example)

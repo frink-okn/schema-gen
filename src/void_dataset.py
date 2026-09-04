@@ -4,7 +4,7 @@ from functools import lru_cache
 from typing import Any, Literal, NotRequired, TypeAlias, TypedDict, Union, get_args
 
 from linkml_runtime.linkml_model.meta import AnonymousSlotExpression, SchemaDefinition
-from rdflib import Literal as rdfLiteral, Namespace, URIRef
+from rdflib import BNode, Literal as rdfLiteral, Namespace, URIRef
 from rdflib.namespace import VOID
 from rdflib.term import Identifier, Node
 
@@ -164,11 +164,11 @@ VoidDatasetDict = TypedDict(
         "void:properties": NotRequired[int],
         "void:distinctObjects": NotRequired[int],
         "void:distinctSubjects": NotRequired[int],
-        "voidext:averageIRILength": NotRequired[int],
-        "voidext:averageLiteralLength": NotRequired[int],
-        "voidext:averageObjectIRILength": NotRequired[int],
-        "voidext:averagePropertyIRILength": NotRequired[int],
-        "voidext:averageSubjectIRILength": NotRequired[int],
+        "voidext:averageIRILength": NotRequired[float],
+        "voidext:averageLiteralLength": NotRequired[float],
+        "voidext:averageObjectIRILength": NotRequired[float],
+        "voidext:averagePropertyIRILength": NotRequired[float],
+        "voidext:averageSubjectIRILength": NotRequired[float],
         "voidext:datatypes": NotRequired[int],
         "voidext:distinctBlankNodeObjects": NotRequired[int],
         "voidext:distinctBlankNodes": NotRequired[int],
@@ -237,25 +237,21 @@ StatsDict = TypedDict(
     "StatsDict",
     {
         "void:classes": NotRequired[int],
-        "void:distinctObjects": NotRequired[int],
-        "void:distinctSubjects": NotRequired[int],
+        "void:distinctObjects": NotRequired[tuple[set[Node], set[Node]]],
+        "void:distinctSubjects": NotRequired[tuple[set[Node], set[Node]]],
         "void:properties": NotRequired[int],
         "void:triples": NotRequired[int],
-        "voidext:averageIRILength": NotRequired[int],
-        "voidext:averageLiteralLength": NotRequired[int],
-        "voidext:averageObjectIRILength": NotRequired[int],
-        "voidext:averagePropertyIRILength": NotRequired[int],
-        "voidext:averageSubjectIRILength": NotRequired[int],
-        "voidext:datatypes": NotRequired[int],
-        "voidext:distinctBlankNodeObjects": NotRequired[int],
+        "voidext:averageIRILength": NotRequired[tuple[int, int]],
+        "voidext:averageLiteralLength": NotRequired[tuple[int, int]],
+        "voidext:averageObjectIRILength": NotRequired[tuple[int, int]],
+        "voidext:averagePropertyIRILength": NotRequired[tuple[int, int]],
+        "voidext:averageSubjectIRILength": NotRequired[tuple[int, int]],
+        "voidext:datatypes": NotRequired[set[Node]],
         "voidext:distinctBlankNodes": NotRequired[int],
-        "voidext:distinctBlankNodeSubjects": NotRequired[int],
-        "voidext:distinctIRIReferenceObjects": NotRequired[int],
         "voidext:distinctIRIReferences": NotRequired[int],
-        "voidext:distinctIRIReferenceSubjects": NotRequired[int],
-        "voidext:distinctLiterals": NotRequired[int],
+        "voidext:distinctLiterals": NotRequired[set[Node]],
         "voidext:distinctRDFNodes": NotRequired[int],
-        "voidext:languages": NotRequired[int],
+        "voidext:languages": NotRequired[set[str]],
         "voidext:objectClasses": NotRequired[int],
         "voidext:propertyClasses": NotRequired[int],
         "voidext:subjectClasses": NotRequired[int],
@@ -265,17 +261,21 @@ StatsDict = TypedDict(
 
 IndicatorType: TypeAlias = Literal["void:class", "void:property", "voidext:datatype", "voidext:language", "voidext:length", "voidext:namespace", "voidext:object", "voidext:subject"]
 PartitionType: TypeAlias = Literal["void:classPartition", "void:propertyPartition", "voidext:datatypePartition", "voidext:iriLengthPartition", "voidext:languagePartition", "voidext:literalLengthPartition", "voidext:objectClassPartition", "voidext:objectIRILengthPartition", "voidext:objectNamespacePartition", "voidext:objectPartition", "voidext:propertyClassPartition", "voidext:propertyIRILengthPartition", "voidext:propertyNamespacePartition", "voidext:subjectIRILengthPartition", "voidext:subjectNamespacePartition", "voidext:subjectPartition"]
-StatType: TypeAlias = Literal["void:classes", "void:distinctObjects", "void:distinctSubjects", "void:properties", "void:triples", "voidext:averageIRILength", "voidext:averageLiteralLength", "voidext:averageObjectIRILength", "voidext:averagePropertyIRILength", "voidext:averageSubjectIRILength", "voidext:datatypes", "voidext:distinctBlankNodeObjects", "voidext:distinctBlankNodes", "voidext:distinctBlankNodeSubjects", "voidext:distinctIRIReferenceObjects", "voidext:distinctIRIReferences", "voidext:distinctIRIReferenceSubjects", "voidext:distinctLiterals", "voidext:distinctRDFNodes", "voidext:languages", "voidext:objectClasses", "voidext:propertyClasses", "voidext:subjectClasses"]
+StatType: TypeAlias = Literal["void:classes", "void:properties", "void:triples", "voidext:distinctIRIReferences", "voidext:distinctRDFNodes", "voidext:objectClasses", "voidext:propertyClasses", "voidext:subjectClasses"]
+StatAverageType: TypeAlias = Literal[
+    "voidext:averageIRILength", "voidext:averageLiteralLength", "voidext:averageObjectIRILength", "voidext:averagePropertyIRILength", "voidext:averageSubjectIRILength"
+]
 
-
+DUMMY_EXAMPLE = (Identifier(""), Identifier(""), Identifier(""))
 
 @dataclass
 class VoidDataset:
     indicator_type: IndicatorType = "void:class"
     indicator_value: str = ""
-    example: tuple[Node, Node, Node] = (Identifier(""), Identifier(""), Identifier(""))
+    example: tuple[Node, Node, Node] = DUMMY_EXAMPLE
     stats: StatsDict = field(default_factory=StatsDict)
     partitions: PartitionsDict = field(default_factory=PartitionsDict)
+    level_index: int = 0
 
     def __jsonout__(self) -> VoidDatasetDict:
         base_dict: VoidDatasetDict = {
@@ -287,7 +287,7 @@ class VoidDataset:
             base_dict[self.indicator_type] = self.indicator_value
 
         # Example
-        if self.example[0] != Identifier(""):
+        if self.example != DUMMY_EXAMPLE:
             base_dict["skos:example"] = {
                 "@type": "rdf:Statement",
                 "subject": str(self.example[0]),
@@ -297,9 +297,40 @@ class VoidDataset:
 
         # Statistics
         stat_types: tuple[StatType, ...] = get_args(StatType)
+        stat_average_types: tuple[StatAverageType, ...] = get_args(StatAverageType)
         for stat_type in stat_types:
             if stat_type in self.stats and self.stats[stat_type] > 0:
                 base_dict[stat_type] = self.stats[stat_type]
+        for stat_average_type in stat_average_types:
+            if stat_average_type in self.stats:
+                dividend, divisor = self.stats[stat_average_type]
+                base_dict[stat_average_type] = dividend/divisor
+        if "void:distinctSubjects" in self.stats:
+            iri_subjs, blank_subjs = self.stats["void:distinctSubjects"]
+            iri_subjs_len, blank_subjs_len = len(iri_subjs), len(blank_subjs)
+            base_dict["voidext:distinctBlankNodeSubjects"] = blank_subjs_len
+            base_dict["voidext:distinctIRIReferenceSubjects"] = iri_subjs_len
+        else:  # TODO: aggregate from partitions
+            pass
+        if "void:distinctObjects" in self.stats:
+            iri_objs, blank_objs = self.stats["void:distinctObjects"]
+            iri_objs_len, blank_objs_len = len(iri_objs), len(blank_objs)
+            base_dict["voidext:distinctBlankNodeObjects"] = blank_objs_len
+            base_dict["voidext:distinctIRIReferenceObjects"] = iri_objs_len
+        else:  # TODO: aggregate from partitions
+            pass
+        if "voidext:distinctLiterals" in self.stats:
+            base_dict["voidext:distinctLiterals"] = len(self.stats["voidext:distinctLiterals"])
+        else:  # TODO: aggregate from partitions
+            pass
+        if "voidext:datatypes" in self.stats:
+            base_dict["voidext:datatypes"] = len(self.stats["voidext:datatypes"])
+        else:  # TODO: aggregate from partitions
+            pass
+        if "voidext:languages" in self.stats:
+            base_dict["voidext:languages"] = len(self.stats["voidext:languages"])
+        else:  # TODO: aggregate from partitions
+            pass
 
         # Partitions
         partition_types: tuple[PartitionType, ...] = get_args(PartitionType)
@@ -330,11 +361,43 @@ class VoidDataset:
     def increment_counts(
         self,
         example: tuple[Node, Node, Node],
-        example_curie_keys: tuple[tuple[str, str, str], tuple[str, str, str], tuple[str, str, str]],
-        subj_type_uris_keys: tuple[str | None, str, str],
-        obj_type_uris_keys: tuple[str | None, str, str],
     ) -> None:
         if "void:triples" not in self.stats:
             self.stats["void:triples"] = 0
         self.stats["void:triples"] += 1
-        self.example = example
+
+        if self.level_index == 0:
+            try:
+                iri_subjs, blank_subjs = self.stats["void:distinctSubjects"]
+            except KeyError:
+                iri_subjs, blank_subjs = set(), set()
+                self.stats["void:distinctSubjects"] = (iri_subjs, blank_subjs)
+            if isinstance(example[0], BNode):
+                blank_subjs.add(example[0])
+            elif isinstance(example[0], URIRef) and example[0] not in iri_subjs:
+                self.stats["void:distinctSubjects"][0].add(example[0])
+            try:
+                iri_objs, blank_objs = self.stats["void:distinctObjects"]
+            except KeyError:
+                iri_objs, blank_objs = set(), set()
+                self.stats["void:distinctObjects"] = (iri_objs, blank_objs)
+            try:
+                distinct_literals = self.stats["voidext:distinctLiterals"]
+            except KeyError:
+                distinct_literals = set()
+                self.stats["voidext:distinctLiterals"] = distinct_literals
+            if isinstance(example[2], BNode):
+                blank_objs.add(example[2])
+            elif isinstance(example[2], URIRef) and example[2] not in iri_objs:
+                iri_objs.add(example[2])
+            elif isinstance(example[2], rdfLiteral) and example[2] not in distinct_literals:
+                literal_datatype = example[2].datatype
+                literal_language = example[2].language
+                distinct_literals.add(example[2])
+                if literal_datatype is not None:
+                    self.stats.setdefault("voidext:datatypes", set()).add(literal_datatype)
+                if literal_language is not None:
+                    self.stats.setdefault("voidext:languages", set()).add(literal_language)
+
+        if self.example == DUMMY_EXAMPLE:
+            self.example = example
